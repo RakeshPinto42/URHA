@@ -1,6 +1,8 @@
 # 3D cinematic engine: audit and plan
 
-Phases 1 to 3 of the owner's brief of 2026-11-07, dated the same day. Nothing in this document has been built. **Building starts when §8 is answered.**
+Phases 1 to 3 of the owner's brief of 2026-11-07.
+
+**Status:** the owner chose to build in URHA and start with the engine. Steps 1 and 2 of §9 are built. Steps 3 to 8 are not.
 
 ## 1. Bottom line
 
@@ -124,11 +126,28 @@ The brief's phases 4 to 7, in order. Each step ends with something visible.
 
 | Step | Work | Done when |
 |---|---|---|
-| 1 | Engine core: schema, runtime, disposal, quality tiers | The Well loads from JSON and looks the same |
-| 2 | Real rendering: PBR, shadows, tone mapping, environment map, bloom | The Home journey has real light and depth, on all tiers |
+| 1 | **Built.** Engine core: schema, runtime, disposal, quality tiers | The whole journey loads from `public/cinema/scenes/journey.json` |
+| 2 | **Built.** Real rendering: PBR, shadows, tone mapping, reflections captured from the sky, bloom | The Home journey has real light and depth, on all tiers |
 | 3 | Studio: hierarchy, transforms, lights, materials, cameras | A scene can be edited without touching code |
 | 4 | Export and import | A scene round-trips through JSON exactly (tested) |
 | 5 | GLB pipeline and first real models | Primitive landmarks are replaced by optimised models |
 | 6 | Animation: object, camera and sequences | Home's sunrise is authored in the Studio |
 | 7 | Module scenes | Academy gets its own world; Workbench and Investment Hub follow the decision in §8 |
 | 8 | Performance, memory and regression tests | Disposal test passes; every existing screen still works |
+
+## 10. What was built (steps 1 and 2)
+
+| File | Role |
+|---|---|
+| `lib/cinema-engine/schema.ts` | The scene format and its validation |
+| `lib/cinema-engine/quality.ts` | Tier choice and frame-rate step-down |
+| `lib/cinema-engine/runtime.ts` | Builds, animates, picks from and fully disposes a scene. No React |
+| `lib/journey/scene-objects.ts` | The journey's procedural generators |
+| `public/cinema/scenes/journey.json` | The scene itself: lights, colours, fog, bloom, timeline |
+| `components/journey/JourneyCanvas.tsx` | The thin React host |
+
+`@react-three/fiber` was removed, so the journey now needs one fewer dependency. Tone mapping is Neutral, not ACES, because ACES drains the saturation this world is built on.
+
+**The scene file is live data.** Editing `journey.json` changes the look after a reload, with no rebuild. Add `?cinema=high`, `medium` or `low` to Home or My Path to force a tier; it also turns off the automatic step-down.
+
+Not built yet: GLB loading and the asset pipeline (step 5), so Draco needs no change to the security policy yet.

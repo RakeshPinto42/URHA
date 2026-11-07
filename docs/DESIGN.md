@@ -128,7 +128,7 @@ Every data block has empty, loading, error and real-zero states.
 | Surface | What happens |
 |---|---|
 | Home | A 7-second title sequence, night to sunrise, as the camera comes down to the walker. Once per visit, with "Replay the sunrise". The words are readable from the first frame. |
-| 3D world | Saturated land, ridges and water; sun rays and lit cloud; the path as a river of phase colour; a column of light on each station; fireflies and a flock of birds. |
+| 3D world | Rendered by the cinema engine (`CINEMATIC_ENGINE_AUDIT.md`): physically based materials, sun shadows, reflections captured from the sky, tone mapping and bloom, by quality tier. Sun rays and lit cloud; the path as a river of phase colour; a column of light on each station; fireflies and a flock of birds. |
 | Paintings | `LivingPicture`: a raw WebGL shader over the real image, grading it in the room's colours with flowing surface, light shafts and embers. No three.js on these routes. |
 | Page openings | `FrontispieceBand`: letterbox opens, title words rise (CSS, so they end visible without script). |
 | Between sections | `GlassWipe` (GSAP): seven panes lift off the new page in about 0.7 s. It never takes input and runs only when the section changes. |

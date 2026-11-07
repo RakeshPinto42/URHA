@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "id": "journey",
+  "title": "The Way to the Summit",
+  "camera": { "fov": 46, "near": 0.5, "far": 900 },
+  "environment": {
+    "fog": { "color": ["#0a1238", "#f58a5c"], "density": 0.0015 },
+    "exposure": [0.6, 1.0],
+    "reflections": [0.1, 0.4],
+    "bloom": { "strength": 0.22, "radius": 0.35, "threshold": 1.25 }
+  },
+  "timelines": [{ "id": "sunrise", "seconds": 7 }],
+  "lights": [
+    { "id": "sky-light", "type": "hemisphere", "sky": "#ffe3cf", "ground": "#23409e", "intensity": [0.25, 1.35] },
+    { "id": "sun", "type": "directional", "color": "#ffb06a", "intensity": [0.1, 3.2], "direction": [0.42, 0.26, -1], "castShadow": true },
+    { "id": "fill", "type": "directional", "color": "#ffdce8", "intensity": [0.15, 0.9], "direction": [-0.5, 0.6, 0.9] }
+  ],
+  "objects": [
+    {
+      "id": "sky", "generator": "sky", "visible": true, "environmentSource": true,
+      "params": { "horizon": "#ffd23f", "low": "#ff7a3c", "mid": "#f0407e", "zenith": "#1e3fae", "sunFrom": -0.1, "sunTo": 0.26, "sunPower": 9 }
+    },
+    {
+      "id": "terrain", "generator": "terrain", "visible": true,
+      "params": { "low": "#0c9c62", "grass": "#58c22e", "rock": "#c2476a", "high": "#ffd2c4", "shore": "#ffd166", "moss": "#067a5e", "roughness": 0.92, "detailRepeat": 90, "detailStrength": 0.22 }
+    },
+    { "id": "trees", "generator": "trees", "visible": true, "params": { "count": 900, "dark": "#04584f", "light": "#12a15a" } },
+    {
+      "id": "ridges", "generator": "ridges", "visible": true,
+      "params": {
+        "night": "#050920",
+        "layers": [
+          { "z": -215, "base": 34, "amp": 44, "seed": 1, "color": "#2b3fa8" },
+          { "z": -265, "base": 40, "amp": 62, "seed": 7, "color": "#b02a86" },
+          { "z": -325, "base": 46, "amp": 86, "seed": 13, "color": "#f2557a" }
+        ]
+      }
+    },
+    { "id": "lake", "generator": "lake", "visible": true, "params": { "color": "#0a3a9c", "metalness": 0.75, "roughness": 0.14, "ripple": 0.35 } },
+    { "id": "path", "generator": "path", "visible": true, "params": { "width": 1.9, "glow": 1.3 } },
+    { "id": "stations", "generator": "stations", "visible": true, "params": {} },
+    { "id": "walker", "generator": "walker", "visible": true, "params": {} },
+    {
+      "id": "haze", "generator": "haze", "visible": true,
+      "params": {
+        "mist": "#ffd9c7", "cloud": "#ffc2a8",
+        "sheets": [
+          { "position": [0, 6, -8], "size": [220, 14], "seed": 1.3, "opacity": 0.05 },
+          { "position": [0, 14, -40], "size": [260, 18], "seed": 4.1, "opacity": 0.12 },
+          { "position": [0, 26, -96], "size": [300, 22], "seed": 7.7, "opacity": 0.28 },
+          { "position": [0, 42, -170], "size": [420, 30], "seed": 2.2, "opacity": 0.36 },
+          { "position": [-70, 92, -260], "size": [150, 46], "seed": 3.3, "opacity": 0.8, "round": true, "speed": 1.4 },
+          { "position": [90, 110, -300], "size": [180, 52], "seed": 9.1, "opacity": 0.7, "round": true, "speed": 1.1 },
+          { "position": [10, 74, -215], "size": [120, 30], "seed": 5.6, "opacity": 0.55, "round": true, "speed": 1.7 }
+        ]
+      }
+    },
+    { "id": "motes", "generator": "motes", "visible": true, "params": { "count": 320 } },
+    { "id": "birds", "generator": "birds", "visible": true, "params": { "count": 9, "color": "#2a1140" } }
+  ]
+}

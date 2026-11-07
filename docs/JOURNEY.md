@@ -37,6 +37,8 @@ The audit read the code and the database, not the earlier documents.
 
 ## 3. 3D dependency decision
 
+> **Superseded on 2026-11-07.** The journey now runs on the cinema engine, on raw three.js, with shadows, post-processing and quality tiers. React Three Fiber was removed. See `CINEMATIC_ENGINE_AUDIT.md` §10. The reasoning below is kept as history.
+
 **Added:**
 - `three@0.186.1` (published 2026-09-24)
 - `@react-three/fiber@9.8.2` (published 2026-10-14; its peer range `react >=19 <19.4` fits React 19.3.1)

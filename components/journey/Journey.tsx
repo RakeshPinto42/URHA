@@ -17,9 +17,9 @@ import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { paneAt } from "@/lib/cinema";
 import { useCinemaStill } from "../cinema/motion-pref";
 import type { JourneyData } from "@/lib/journey/model";
-import type { CameraMode } from "./JourneyScene";
+import type { CameraMode } from "./JourneyCanvas";
 
-const Scene = dynamic(() => import("./JourneyScene"), { ssr: false, loading: () => null });
+const Scene = dynamic(() => import("./JourneyCanvas"), { ssr: false, loading: () => null });
 
 let webgl: boolean | null = null; // probed once: every probe creates a GL context
 function detectWebGL(): boolean {
@@ -37,6 +37,12 @@ function detectWebGL(): boolean {
 const subscribeNothing = () => () => {};
 const useWebGL = () => useSyncExternalStore(subscribeNothing, detectWebGL, () => true);
 
+const NOTICE = {
+  lost: "The 3D view stopped because the graphics context was lost.",
+  slow: "The 3D view was switched off because this device could not run it smoothly.",
+  scene: "The 3D scene could not be loaded.",
+};
+
 export type JourneyProps = {
   data: JourneyData;
   mode: CameraMode;
@@ -52,13 +58,12 @@ export type JourneyProps = {
 
 export function Journey({ data, mode, selectedId = null, hoveredId = null, onHover, onSelect, fallback, className = "", showLabels = true, sequence = 0 }: JourneyProps) {
   const supported = useWebGL();
-  const [lost, setLost] = useState(false);
+  const [unavailable, setUnavailable] = useState<"lost" | "slow" | "scene" | null>(null);
   const reduced = useCinemaStill();
   const box = useRef<HTMLDivElement>(null);
   const labels = useRef<(HTMLElement | null)[]>([]);
   const [onScreen, setOnScreen] = useState(true);
   const [tabVisible, setTabVisible] = useState(true);
-  const [lite, setLite] = useState(false);
   const [localHover, setLocalHover] = useState<string | null>(null);
   const hover = onHover ? hoveredId : localHover;
   const setHover = onHover ?? setLocalHover;
@@ -70,21 +75,17 @@ export function Journey({ data, mode, selectedId = null, hoveredId = null, onHov
     io.observe(el);
     const vis = () => setTabVisible(document.visibilityState === "visible");
     document.addEventListener("visibilitychange", vis);
-    const mq = window.matchMedia("(max-width: 700px)");
-    const lt = () => setLite(mq.matches);
-    lt();
-    mq.addEventListener("change", lt);
-    return () => { io.disconnect(); document.removeEventListener("visibilitychange", vis); mq.removeEventListener("change", lt); };
+    return () => { io.disconnect(); document.removeEventListener("visibilitychange", vis); };
   }, []);
 
   // Never leave a pointer cursor behind when the scene unmounts.
   useEffect(() => () => { document.body.style.cursor = ""; }, []);
 
-  if (!supported || lost) {
+  if (!supported || unavailable) {
     return (
       <div className={className}>
         {fallback}
-        {lost && <p className="mt-2 text-[12px] text-muted">The 3D view stopped (the graphics context was lost). The road above shows the same progress.</p>}
+        {unavailable && <p className="mt-2 text-[12px] text-muted">{NOTICE[unavailable]} The road above shows the same progress.</p>}
       </div>
     );
   }
@@ -92,10 +93,10 @@ export function Journey({ data, mode, selectedId = null, hoveredId = null, onHov
   return (
     <div ref={box} className={`journey relative overflow-hidden bg-[linear-gradient(180deg,#1e3fae_0%,#f0407e_40%,#ff7a3c_56%,#0c9c62_100%)] ${className}`}>
       <Scene
-        data={data} mode={mode} selectedId={selectedId} hoveredId={hover}
+        data={data} mode={mode} selectedId={selectedId}
         onHover={setHover} onSelect={(id) => onSelect?.(id)}
-        reduced={reduced} active={onScreen && tabVisible} lite={lite}
-        labels={labels} onContextLost={() => setLost(true)} sequence={sequence}
+        reduced={reduced} active={onScreen && tabVisible}
+        labels={labels} onUnavailable={setUnavailable} sequence={sequence}
       />
       {showLabels && (
         <div aria-hidden="true" className="pointer-events-none absolute inset-0">
