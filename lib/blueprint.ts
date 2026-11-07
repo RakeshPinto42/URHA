@@ -475,7 +475,8 @@ export type PhaseLoad = {
 
 const WEEKS_PER_MONTH = 52 / 12;
 
-export function phaseLoads(measured: Record<string, Record<string, Measured>>, phases: BlueprintPhase[] = BLUEPRINT): PhaseLoad[] {
+/** `actualWatch` holds real video minutes by "blueprintTopic::subtopic" from Stage 2, replacing the estimates. */
+export function phaseLoads(measured: Record<string, Record<string, Measured>>, phases: BlueprintPhase[] = BLUEPRINT, actualWatch: Record<string, number> = {}): PhaseLoad[] {
   return phases.map((p) => {
     let watch = 0, practise = 0, estimated = 0;
     const topics = p.modules.flatMap((m) => m.topics);
@@ -485,15 +486,19 @@ export function phaseLoads(measured: Record<string, Record<string, Measured>>, p
         for (const title of entries) {
           const m = measured[c.from]?.[title];
           if (!m) throw new Error(`No measured time for "${title}" in ${c.from}`);
-          const w = m.watch ?? LOAD.docsPrimaryWatchMinutes;
-          if (m.watch === null) estimated += w * LOAD.watchFactor;
+          const real = m.watch ?? actualWatch[`${t.id}::${title}`] ?? null;
+          const w = real ?? LOAD.docsPrimaryWatchMinutes;
+          if (real === null) estimated += w * LOAD.watchFactor;
           watch += w * LOAD.watchFactor;
           practise += m.practise * LOAD.practiseFactor;
         }
       }
-      watch += t.adds.length * LOAD.newWatchMinutes * LOAD.watchFactor;
-      practise += t.adds.length * LOAD.newPractiseMinutes * LOAD.practiseFactor;
-      estimated += t.adds.length * (LOAD.newWatchMinutes * LOAD.watchFactor + LOAD.newPractiseMinutes * LOAD.practiseFactor);
+      for (const title of t.adds) {
+        const real = actualWatch[`${t.id}::${title}`] ?? null;
+        watch += (real ?? LOAD.newWatchMinutes) * LOAD.watchFactor;
+        practise += LOAD.newPractiseMinutes * LOAD.practiseFactor;
+        estimated += (real === null ? LOAD.newWatchMinutes * LOAD.watchFactor : 0) + LOAD.newPractiseMinutes * LOAD.practiseFactor;
+      }
     }
     const assessment = topics.length * LOAD.assessmentHours;
     const project = PROJECTS.filter((x) => x.phases.includes(p.id))

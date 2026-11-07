@@ -1,9 +1,10 @@
 {
- "verifiedAt": "2026-11-01T21:56:27.517Z",
+ "verifiedAt": "2026-11-07T14:45:11.925Z",
  "method": "youtube.com watch-page metadata (ytInitialPlayerResponse)",
  "videos": {
   "py-lists": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "W8KRzm-HUcc",
    "title": "Python Tutorial for Beginners 4: Lists, Tuples, and Sets",
    "channel": "Corey Schafer",
@@ -14,6 +15,7 @@
   },
   "py-dicts": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "daefaLgNkw0",
    "title": "Python Tutorial for Beginners 5: Dictionaries - Working with Key-Value Pairs",
    "channel": "Corey Schafer",
@@ -24,6 +26,7 @@
   },
   "py-funcs": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "9Os0o3wzS_I",
    "title": "Python Tutorial for Beginners 8: Functions",
    "channel": "Corey Schafer",
@@ -34,6 +37,7 @@
   },
   "py-modules": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "CqvZ3vGoGs0",
    "title": "Python Tutorial for Beginners 9: Import Modules and Exploring The Standard Library",
    "channel": "Corey Schafer",
@@ -44,6 +48,7 @@
   },
   "py-oop1": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "ZDa-Z5JzLYM",
    "title": "Python OOP Tutorial 1: Classes and Instances",
    "channel": "Corey Schafer",
@@ -54,6 +59,7 @@
   },
   "py-oop2": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "BJ-VvGyQxho",
    "title": "Python OOP Tutorial 2: Class Variables",
    "channel": "Corey Schafer",
@@ -64,6 +70,7 @@
   },
   "py-oop3": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "rq8cL2XMM5M",
    "title": "Python OOP Tutorial 3: classmethods and staticmethods",
    "channel": "Corey Schafer",
@@ -74,6 +81,7 @@
   },
   "py-oop4": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "RSl87lqOXDE",
    "title": "Python OOP Tutorial 4: Inheritance - Creating Subclasses",
    "channel": "Corey Schafer",
@@ -84,6 +92,7 @@
   },
   "py-oop5": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "3ohzBxoFHAY",
    "title": "Python OOP Tutorial 5: Special (Magic/Dunder) Methods",
    "channel": "Corey Schafer",
@@ -94,6 +103,7 @@
   },
   "py-oop6": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "jCzT9XFZ5bw",
    "title": "Python OOP Tutorial 6: Property Decorators - Getters, Setters, and Deleters",
    "channel": "Corey Schafer",
@@ -104,6 +114,7 @@
   },
   "py-except": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "NIWwJbo-9_8",
    "title": "Python Tutorial: Using Try/Except Blocks for Error Handling",
    "channel": "Corey Schafer",
@@ -114,6 +125,7 @@
   },
   "py-types": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "RwH2UzC2rIo",
    "title": "Python Tutorial: Type Hints - From Basic Annotations to Advanced Generics",
    "channel": "Corey Schafer",
@@ -124,6 +136,7 @@
   },
   "py-types-why": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "0oBLMwHdZ2Y",
    "title": "The REAL Reason You Should Use Type Hints in Python",
    "channel": "ArjanCodes",
@@ -180,6 +193,7 @@
   },
   "py-deco": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "FsAPt_9Bf3U",
    "title": "Python Tutorial: Decorators - Dynamically Alter The Functionality Of Your Functions",
    "channel": "Corey Schafer",
@@ -190,6 +204,7 @@
   },
   "py-gen": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "bD05uGo_sVI",
    "title": "Python Tutorial: Generators - How to use them and the benefits you receive",
    "channel": "Corey Schafer",
@@ -200,6 +215,7 @@
   },
   "py-json": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "9N6a-VLBa2I",
    "title": "Python Tutorial: Working with JSON Data using the json Module",
    "channel": "Corey Schafer",
@@ -210,6 +226,7 @@
   },
   "py-files": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "Uh2ebFW8OYM",
    "title": "Python Tutorial: File Objects - Reading and Writing to Files",
    "channel": "Corey Schafer",
@@ -220,6 +237,7 @@
   },
   "py-ctx": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "-aKFBoZpiqA",
    "title": "Python Tutorial: Context Managers - Efficiently Managing Resources",
    "channel": "Corey Schafer",
@@ -230,6 +248,7 @@
   },
   "py-venv": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "Kg1Yvry_Ydk",
    "title": "Python Tutorial: VENV (Mac & Linux) - How to Use Virtual Environments with the Built-In venv Module",
    "channel": "Corey Schafer",
@@ -240,6 +259,7 @@
   },
   "py-uv": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "AMdG7IjgSPM",
    "title": "Python Tutorial: UV - A Faster, All-in-One Package Manager to Replace Pip and Venv",
    "channel": "Corey Schafer",
@@ -250,6 +270,7 @@
   },
   "py-async": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "oAkLSJNr5zY",
    "title": "Python Tutorial: AsyncIO - Complete Guide to Asynchronous Programming with Animations",
    "channel": "Corey Schafer",
@@ -260,6 +281,7 @@
   },
   "py-logbasic": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "g8nQ90Hk328",
    "title": "Logging in Python  ||  Learn Python Programming  (Computer Science)",
    "channel": "Socratica",
@@ -270,6 +292,7 @@
   },
   "py-logadv": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "jxmzY9soFXg",
    "title": "Python Tutorial: Logging Advanced - Loggers, Handlers, and Formatters",
    "channel": "Corey Schafer",
@@ -280,6 +303,7 @@
   },
   "pd-1": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "ZyhVh-qRZPA",
    "title": "Python Pandas Tutorial (Part 1): Getting Started with Data Analysis - Installation and Loading Data",
    "channel": "Corey Schafer",
@@ -290,6 +314,7 @@
   },
   "ms-git": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "2sjqTHE0zok",
    "title": "Lecture 6: Version Control (git) (2020)",
    "channel": "Missing Semester",
@@ -300,6 +325,7 @@
   },
   "ms-shell": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "Z56Jmr9Z34Q",
    "title": "Lecture 1: Course Overview + The Shell (2020)",
    "channel": "Missing Semester",
@@ -310,6 +336,7 @@
   },
   "vsc-debug": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "w8QHoVam1-I",
    "title": "How to Debug Python with VSCode",
    "channel": "Jayanam",
@@ -320,6 +347,7 @@
   },
   "fcc-pytest": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "cHYq1MRoyI0",
    "title": "Pytest Tutorial – How to Test Python Code",
    "channel": "freeCodeCamp.org",
@@ -366,6 +394,7 @@
   },
   "py-unittest": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "6tNS--WetLI",
    "title": "Python Tutorial: Unit Testing Your Code with the unittest Module",
    "channel": "Corey Schafer",
@@ -376,6 +405,7 @@
   },
   "py-mockpatch": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "WFRljVPHrkE",
    "title": "How to use Python's unittest.mock.patch",
    "channel": "redshiftzero",
@@ -386,6 +416,7 @@
   },
   "sql-baraa": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "SSKVgrwhzus",
    "title": "SQL Full Course for Beginners (30 Hours) – From Zero to Hero",
    "channel": "Data with Baraa",
@@ -602,6 +633,7 @@
   },
   "db-design": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "_jf7KZqne-8",
    "title": "Database Design & Data Modeling Full Course For Beginners [2026]",
    "channel": "Ansh Lamba",
@@ -703,6 +735,7 @@
   },
   "pg-acid": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "pomxJOFVcQs",
    "title": "Relational Database ACID Transactions (Explained by Example)",
    "channel": "Hussein Nasser",
@@ -809,6 +842,7 @@
   },
   "pg-index": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "-qNSXK7s7_w",
    "title": "Database Indexing Explained (with PostgreSQL)",
    "channel": "Hussein Nasser",
@@ -819,6 +853,7 @@
   },
   "sqla-crash": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "XWtj4zLl_tg",
    "title": "SQLAlchemy 2.0 ORM Crash Course - Manage Relational Databases with Python (SQLAlchemy 2.0)",
    "channel": "Ssali Jonathan",
@@ -885,6 +920,7 @@
   },
   "sqla-bayer": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "Uym2DHnUEno",
    "title": "TUTORIAL: SQLAlchemy 2.0",
    "channel": "Six Feet Up",
@@ -895,6 +931,7 @@
   },
   "fcc-api": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "0sOvCWFmrtA",
    "title": "Python API Development - Comprehensive Course for Beginners",
    "channel": "freeCodeCamp.org",
@@ -1691,6 +1728,7 @@
   },
   "oauth-oidc": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "996OiexHze0",
    "title": "OAuth 2.0 and OpenID Connect (in plain English)",
    "channel": "OktaDev",
@@ -1701,6 +1739,7 @@
   },
   "idem": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "jfHBrweuKRA",
    "title": "What Is Idempotency? Idempotency Keys, Deduplication & Retries Explained",
    "channel": "The Right Trade-off",
@@ -1757,6 +1796,7 @@
   },
   "backoff": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "NByH-cau97A",
    "title": "Retry Strategies: Exponential Backoff & Jitter Explained",
    "channel": "CodeLucky",
@@ -1813,6 +1853,7 @@
   },
   "llm-intro": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "zjkBMFhNj_g",
    "title": "[1hr Talk] Intro to Large Language Models",
    "channel": "Andrej Karpathy",
@@ -1929,6 +1970,7 @@
   },
   "llm-deep": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "7xTGNNLPyMI",
    "title": "Deep Dive into LLMs like ChatGPT",
    "channel": "Andrej Karpathy",
@@ -2060,6 +2102,7 @@
   },
   "llm-tokenizer": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "zduSFxRajkE",
    "title": "Let's build the GPT Tokenizer",
    "channel": "Andrej Karpathy",
@@ -2196,6 +2239,7 @@
   },
   "transformers": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "wjZofJX0v4M",
    "title": "Transformers, the tech behind LLMs | Deep Learning Chapter 5",
    "channel": "3Blue1Brown",
@@ -2252,6 +2296,7 @@
   },
   "structured": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "4rFVLMBwjGY",
    "title": "Python + AI: Function calling & structured outputs",
    "channel": "Microsoft Reactor",
@@ -2262,6 +2307,7 @@
   },
   "pydantic-llm": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "yj-wSRJwrrc",
    "title": "Pydantic is all you need: Jason Liu",
    "channel": "AI Engineer",
@@ -2272,6 +2318,7 @@
   },
   "prompt101": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "ysPbXH0LpIE",
    "title": "Prompting 101 | Code w/ Claude",
    "channel": "Anthropic",
@@ -2282,6 +2329,7 @@
   },
   "ctx-eng": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "4GiqzUHD5AA",
    "title": "Context Engineering for Agents",
    "channel": "LangChain",
@@ -2292,6 +2340,7 @@
   },
   "injection": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "FgxwCaL6UTA",
    "title": "Prompt Injection, explained",
    "channel": "Simon Willison",
@@ -2302,6 +2351,7 @@
   },
   "docs-ready": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "9lBTS5dM27c",
    "title": "How to Get Your Data Ready for AI Agents (Docs, PDFs, Websites)",
    "channel": "Dave Ebbelaar",
@@ -2348,6 +2398,7 @@
   },
   "embeddings": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "rq5pF1iPcZI",
    "title": "Embeddings & Cosine Similarity Explained | Semantic Search, Vector Database & RAG with Examples",
    "channel": "PM Expert",
@@ -2358,6 +2409,7 @@
   },
   "chunk5": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "8OJC21T2SL4",
    "title": "The 5 Levels Of Text Splitting For Retrieval",
    "channel": "Greg Kamradt",
@@ -2409,6 +2461,7 @@
   },
   "chunk-sem": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "TcRRfcbsApw",
    "title": "Semantic Chunking for RAG",
    "channel": "James Briggs",
@@ -2460,6 +2513,7 @@
   },
   "pgvector": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "j1QcPSLj7u0",
    "title": "PGVector: Turn PostgreSQL Into A Vector Database",
    "channel": "NeuralNine",
@@ -2470,6 +2524,7 @@
   },
   "hybrid": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "D8LmsEOJvPI",
    "title": "Hybrid Search in RAG Explained | BM25 + Semantic Search + RRF (Complete Guide)",
    "channel": "Yash Patil",
@@ -2480,6 +2535,7 @@
   },
   "rerank": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "Uh9bYiVrW_s",
    "title": "RAG But Better: Rerankers with Cohere AI",
    "channel": "James Briggs",
@@ -2531,6 +2587,7 @@
   },
   "rag-scratch": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "sVcwVQRHIc8",
    "title": "Learn RAG From Scratch – Python AI Tutorial from a LangChain Engineer",
    "channel": "freeCodeCamp.org",
@@ -2541,6 +2598,7 @@
   },
   "ragas": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "-_52DIIOsCE",
    "title": "AI Agent Evaluation with RAGAS",
    "channel": "James Briggs",
@@ -2622,6 +2680,7 @@
   },
   "agents-anth": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "uhJJgc-0iTQ",
    "title": "Building more effective AI agents",
    "channel": "Anthropic",
@@ -2703,6 +2762,7 @@
   },
   "agents-ng": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "KrRD7r7y7NY",
    "title": "Andrew Ng Explores The Rise Of AI Agents And Agentic Reasoning | BUILD 2024 Keynote",
    "channel": "Snowflake Inc.",
@@ -2713,6 +2773,7 @@
   },
   "agent-memory": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "aYfZN8t6AQs",
    "title": "Agent Memory EXPLAINED - Complete Architecture",
    "channel": "Hugging Face",
@@ -2764,6 +2825,7 @@
   },
   "lg-reliable": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "kTnfJszFxCg",
    "title": "3 ingredients for building reliable enterprise agents - Harrison Chase, LangChain/LangGraph",
    "channel": "AI Engineer",
@@ -2774,6 +2836,7 @@
   },
   "hitl": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "7GOxUgVTz3s",
    "title": "How to Build Human-in-the-Loop for AI Agents (Practical Guide)",
    "channel": "Dave Ebbelaar",
@@ -2825,6 +2888,7 @@
   },
   "mcp-anth": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "aZLr962R6Ag",
    "title": "Building with MCP and the Claude API",
    "channel": "Anthropic",
@@ -2901,6 +2965,7 @@
   },
   "mcp-server": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "-8k9lGpGQ6g",
    "title": "Build Anything With a CUSTOM MCP Server - Python Tutorial",
    "channel": "Tech With Tim",
@@ -2942,6 +3007,7 @@
   },
   "routing": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "2ld7cR9y0Po",
    "title": "Multi-LLM Routing Strategies for Gen AI - Ethan Ferdosi",
    "channel": "Optimized AI Conference",
@@ -2952,6 +3018,7 @@
   },
   "evals-mistakes": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "GL0XhAj5LPE",
    "title": "LLM Evals: Common Mistakes",
    "channel": "Hamel Husain",
@@ -3008,6 +3075,7 @@
   },
   "evals-auto": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "tqUDjc1HzO4",
    "title": "How to Automate AI Evals (Correctly)",
    "channel": "Hamel Husain",
@@ -3079,6 +3147,7 @@
   },
   "judge": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "kP_aaFnXLmY",
    "title": "3. Tutorial: How to create an LLM judge and align with human labels",
    "channel": "Evidently AI",
@@ -3170,6 +3239,7 @@
   },
   "agent-evals": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "Ubwb6NzegyA",
    "title": "Agentic Evaluations at Scale, For Everybody — Nicholas Kang & Michael Aaron, Google DeepMind",
    "channel": "AI Engineer",
@@ -3180,6 +3250,7 @@
   },
   "otel": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "LQOeaxfiAt8",
    "title": "How Tracing works with OpenTelemetry",
    "channel": "That DevOps Guy",
@@ -3190,6 +3261,7 @@
   },
   "llm-obs": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "Q9zd548hqiQ",
    "title": "LLM Observability: The Breakdown",
    "channel": "The New Stack",
@@ -3200,6 +3272,7 @@
   },
   "langfuse-10": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "2E8iTvGo9Hs",
    "title": "10 min Walkthrough of Langfuse – Open Source LLM Observability, Evaluation, and Prompt Management",
    "channel": "Langfuse",
@@ -3246,6 +3319,7 @@
   },
   "langfuse-trace": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "pTneXS_m1rk",
    "title": "Langfuse Intro - Observability & Tracing Deep Dive",
    "channel": "Langfuse",
@@ -3256,6 +3330,7 @@
   },
   "guardrails": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "rMUycP_cp9g",
    "title": "Advanced Guardrails for AI Agents | Full Tutorial",
    "channel": "James Briggs",
@@ -3307,6 +3382,7 @@
   },
   "owasp": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "gUNXZMcd2jU",
    "title": "OWASP's Top 10 Ways to Attack LLMs: AI Vulnerabilities Exposed",
    "channel": "IBM Technology",
@@ -3317,6 +3393,7 @@
   },
   "data-gov": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "EI8R5UuZt4U",
    "title": "Data Governance Overview",
    "channel": "Informatica Support",
@@ -3327,6 +3404,7 @@
   },
   "resp-ai": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "MluoD8Z1ARQ",
    "title": "Responsible AI: why businesses need reliable AI governance",
    "channel": "IBM Technology",
@@ -3337,6 +3415,7 @@
   },
   "docker-nana": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "3c-iBn73dDE",
    "title": "Docker Tutorial for Beginners [FULL COURSE in 3 Hours]",
    "channel": "TechWorld with Nana",
@@ -3428,6 +3507,7 @@
   },
   "dockerfile": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "tc713anE3UY",
    "title": "This Is How You Write an Efficient Python Dockerfile",
    "channel": "ArjanCodes",
@@ -3504,6 +3584,7 @@
   },
   "gha-nana": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "R8_veQiYBjI",
    "title": "GitHub Actions Tutorial - Basic Concepts and CI/CD Pipeline with Docker",
    "channel": "TechWorld with Nana",
@@ -3565,6 +3646,7 @@
   },
   "ci-pytest": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "DhUpxWjOhME",
    "title": "Automated Testing in Python with pytest, tox, and GitHub Actions",
    "channel": "mCoding",
@@ -3621,6 +3703,7 @@
   },
   "azure": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "usvlTo0TDoA",
    "title": "Learn Azure in 2026",
    "channel": "John Savill's Technical Training",
@@ -3702,6 +3785,7 @@
   },
   "aca": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "LogxM4r2a58",
    "title": "Azure Container Apps (2025 Edition)",
    "channel": "Agentic Intelligence w/ Michael Levan",
@@ -3712,6 +3796,7 @@
   },
   "entra-overview": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "bSIF_GjaCmo",
    "title": "Microsoft Entra Overview - AZ-900 Certification Course - January 2023 New",
    "channel": "John Savill's Technical Training",
@@ -3722,6 +3807,7 @@
   },
   "entra-deep": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "cE3IiHGuHvs",
    "title": "Entra ID (Azure AD) -  Deep Dive",
    "channel": "Militas Aurelius",
@@ -3788,6 +3874,7 @@
   },
   "cost": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "lHxl5SchjPA",
    "title": "The REAL cost of LLM (And How to reduce 78%+ of Cost)",
    "channel": "AI Jason",
@@ -3864,6 +3951,7 @@
   },
   "sysdesign": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "mwN75EiGfCE",
    "title": "Agentic AI System Design Explained in 27 Minutes",
    "channel": "Aishwarya Srinivasan",
@@ -3945,6 +4033,7 @@
   },
   "eda": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "QNfIUIZQ9Vo",
    "title": "Event Driven Architecture (EDA) Introduction",
    "channel": "Concept && Coding - by Shrayansh",
@@ -4001,6 +4090,7 @@
   },
   "multiagent": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "ow1we5PzK-o",
    "title": "The Multi-Agent Architecture That Actually Ships — Luke Alvoeiro, Factory",
    "channel": "AI Engineer",
@@ -4067,6 +4157,7 @@
   },
   "agent-sec": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "jZXvqEqJT7o",
    "title": "How to secure your AI Agents: A Technical Deep-dive",
    "channel": "Google for Developers",
@@ -4148,6 +4239,7 @@
   },
   "ai-gov": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "NrkJLbn3dDE",
    "title": "The Five Must-Haves of an AI Governance Framework",
    "channel": "SANS Institute",
@@ -4158,6 +4250,7 @@
   },
   "c4": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "x2-rSnhpw0g",
    "title": "Visualising software architecture with the C4 model - Simon Brown, Agile on the Beach 2019",
    "channel": "Agile on the Beach",
@@ -4168,6 +4261,7 @@
   },
   "adr": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "LMBqGPLvonU",
    "title": "Lesson 55 - Architecture Decision Records",
    "channel": "Software Architecture Monday",
@@ -4178,6 +4272,7 @@
   },
   "adr-keeling": {
    "status": "verified",
+   "verifiedAt": "2026-11-07",
    "id": "-JqraBhrrjI",
    "title": "#113 - Architecture Decision Record (ADR) - Michael Keeling",
    "channel": "Tech Lead Journal",
@@ -4185,6 +4280,3396 @@
    "published": "2022-11-14",
    "embeddable": true,
    "chapters": []
+  },
+  "bw-dwh": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "9GVqKuTVANE",
+   "title": "SQL Data Warehouse from Scratch | Full Hands-On Data Engineering Project",
+   "channel": "Data with Baraa",
+   "durationSec": 15788,
+   "published": "2025-02-10",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Intro"
+    },
+    {
+     "t": "1:27",
+     "sec": 87,
+     "title": "Types of SQL Projects"
+    },
+    {
+     "t": "2:50",
+     "sec": 170,
+     "title": "What is Data Warehouse"
+    },
+    {
+     "t": "9:41",
+     "sec": 581,
+     "title": "What is ETL"
+    },
+    {
+     "t": "20:29",
+     "sec": 1229,
+     "title": "Project Materials"
+    },
+    {
+     "t": "23:14",
+     "sec": 1394,
+     "title": "Project Plan Using Notion"
+    },
+    {
+     "t": "30:54",
+     "sec": 1854,
+     "title": "Analyzing Requirements"
+    },
+    {
+     "t": "34:10",
+     "sec": 2050,
+     "title": "Design The Data Architecture"
+    },
+    {
+     "t": "35:20",
+     "sec": 2120,
+     "title": "Choose the Right Approach"
+    },
+    {
+     "t": "40:43",
+     "sec": 2443,
+     "title": "Design the Layers of DWH"
+    },
+    {
+     "t": "47:37",
+     "sec": 2857,
+     "title": "Draw the Architecture using Draw.io"
+    },
+    {
+     "t": "56:00",
+     "sec": 3360,
+     "title": "Project Initialization"
+    },
+    {
+     "t": "56:56",
+     "sec": 3416,
+     "title": "Define Naming Conventions"
+    },
+    {
+     "t": "1:03:26",
+     "sec": 3806,
+     "title": "Prepare Your GIT Repository"
+    },
+    {
+     "t": "1:07:54",
+     "sec": 4074,
+     "title": "Create Database & Schemas"
+    },
+    {
+     "t": "1:10:33",
+     "sec": 4233,
+     "title": "Commit Code in Git Repo"
+    },
+    {
+     "t": "1:13:14",
+     "sec": 4394,
+     "title": "Build Bronze Layer"
+    },
+    {
+     "t": "1:14:36",
+     "sec": 4476,
+     "title": "Analyze Source Systems"
+    },
+    {
+     "t": "1:18:40",
+     "sec": 4720,
+     "title": "Create DDL for Bronze Tables"
+    },
+    {
+     "t": "1:24:21",
+     "sec": 5061,
+     "title": "Develop SQL Load Scripts"
+    },
+    {
+     "t": "1:32:18",
+     "sec": 5538,
+     "title": "Create Bronze Stored Procedure"
+    },
+    {
+     "t": "1:45:28",
+     "sec": 6328,
+     "title": "Document: Bronze Data Flow"
+    },
+    {
+     "t": "1:50:31",
+     "sec": 6631,
+     "title": "Build Silver Layer"
+    },
+    {
+     "t": "1:52:08",
+     "sec": 6728,
+     "title": "Explore & Understand The Data"
+    },
+    {
+     "t": "2:03:05",
+     "sec": 7385,
+     "title": "Create DDL for Silver Tables"
+    },
+    {
+     "t": "2:06:52",
+     "sec": 7612,
+     "title": "Clean & Load crm_cust_info"
+    },
+    {
+     "t": "2:22:03",
+     "sec": 8523,
+     "title": "Clean & Load crm_prd_info"
+    },
+    {
+     "t": "2:42:48",
+     "sec": 9768,
+     "title": "Clean & Load crm_sales_details"
+    },
+    {
+     "t": "2:59:38",
+     "sec": 10778,
+     "title": "Clean & Load erp_cust_az12"
+    },
+    {
+     "t": "3:08:38",
+     "sec": 11318,
+     "title": "Clean & Load erp_loc_a101"
+    },
+    {
+     "t": "3:14:16",
+     "sec": 11656,
+     "title": "Clean & Load erp_px_cat_g1v2"
+    },
+    {
+     "t": "3:18:38",
+     "sec": 11918,
+     "title": "Create Silver Stored Procedure"
+    },
+    {
+     "t": "3:24:29",
+     "sec": 12269,
+     "title": "Document: Silver Data Flow"
+    },
+    {
+     "t": "3:28:09",
+     "sec": 12489,
+     "title": "Build Gold Layer"
+    },
+    {
+     "t": "3:29:39",
+     "sec": 12579,
+     "title": "What is Data Modeling?"
+    },
+    {
+     "t": "3:32:17",
+     "sec": 12737,
+     "title": "Star Schema vs. Snowflake Schema"
+    },
+    {
+     "t": "3:34:06",
+     "sec": 12846,
+     "title": "Dimensions vs Facts"
+    },
+    {
+     "t": "3:35:10",
+     "sec": 12910,
+     "title": "Explore the Business Objects"
+    },
+    {
+     "t": "3:39:04",
+     "sec": 13144,
+     "title": "Create Dimension Customers"
+    },
+    {
+     "t": "3:55:30",
+     "sec": 14130,
+     "title": "Create Dimension Products"
+    },
+    {
+     "t": "4:02:43",
+     "sec": 14563,
+     "title": "Create Fact Sales"
+    },
+    {
+     "t": "4:08:48",
+     "sec": 14928,
+     "title": "Build The Star Schema Model"
+    },
+    {
+     "t": "4:13:58",
+     "sec": 15238,
+     "title": "Data Catalog"
+    },
+    {
+     "t": "4:16:40",
+     "sec": 15400,
+     "title": "Data Flow"
+    },
+    {
+     "t": "4:21:45",
+     "sec": 15705,
+     "title": "End of Project"
+    }
+   ]
+  },
+  "at-pandas": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "Mdq1WWSdUtw",
+   "title": "Learn Pandas in Under 3 Hours | Filtering, Joins, Indexing, Data Cleaning, Visualizations",
+   "channel": "Alex The Analyst",
+   "durationSec": 9607,
+   "published": "2024-10-22",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Intro"
+    },
+    {
+     "t": "0:30",
+     "sec": 30,
+     "title": "Reading in Files"
+    },
+    {
+     "t": "19:03",
+     "sec": 1143,
+     "title": "Filtering and Ordering"
+    },
+    {
+     "t": "30:30",
+     "sec": 1830,
+     "title": "Indexing"
+    },
+    {
+     "t": "41:33",
+     "sec": 2493,
+     "title": "Group By and Aggregating"
+    },
+    {
+     "t": "52:12",
+     "sec": 3132,
+     "title": "Merge, Join, and Concatenate"
+    },
+    {
+     "t": "1:13:29",
+     "sec": 4409,
+     "title": "Visualizations"
+    },
+    {
+     "t": "1:29:45",
+     "sec": 5385,
+     "title": "Data Cleaning"
+    },
+    {
+     "t": "2:07:53",
+     "sec": 7673,
+     "title": "Exploratory Data Visualization"
+    },
+    {
+     "t": "2:39:30",
+     "sec": 9570,
+     "title": "Outro"
+    }
+   ]
+  },
+  "cs-pandas-dates": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "UFuo7EHI8zc",
+   "title": "Python Pandas Tutorial (Part 10): Working with Dates and Time Series Data",
+   "channel": "Corey Schafer",
+   "durationSec": 2140,
+   "published": "2020-03-17",
+   "embeddable": true,
+   "chapters": []
+  },
+  "cs-env": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "5iWhQWVXosU",
+   "title": "Python Quick Tip: Hiding Passwords and Secret Keys in Environment Variables (Mac & Linux)",
+   "channel": "Corey Schafer",
+   "durationSec": 271,
+   "published": "2018-02-01",
+   "embeddable": true,
+   "chapters": []
+  },
+  "tc-env-win": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "sX_T0thJTss",
+   "title": "Hiding Passwords and Secret Keys in Environment Variables (Windows)",
+   "channel": "Techie Coder",
+   "durationSec": 222,
+   "published": "2020-07-01",
+   "embeddable": true,
+   "chapters": []
+  },
+  "pd-settings": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "iDgbS3RTkTE",
+   "title": "FastAPI Settings: Why You Should Use Pydantic-Settings",
+   "channel": "Analytics Vidhya",
+   "durationSec": 307,
+   "published": "2026-05-22",
+   "embeddable": true,
+   "chapters": []
+  },
+  "cs-pydantic": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "M81pfi64eeM",
+   "title": "Python Pydantic Tutorial: Complete Data Validation Course (Used by FastAPI)",
+   "channel": "Corey Schafer",
+   "durationSec": 5365,
+   "published": "2025-10-27",
+   "embeddable": true,
+   "chapters": []
+  },
+  "bi-incr": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "a_T8xRaCO60",
+   "title": "How to build ETL pipeline with Incremental Data Load with Python | Python |  ETL",
+   "channel": "BI Insights Inc",
+   "durationSec": 336,
+   "published": "2022-03-26",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Introduction to ETL Incremental load approach"
+    },
+    {
+     "t": "1:27",
+     "sec": 87,
+     "title": "Different ETL Incremental load approaches"
+    },
+    {
+     "t": "2:46",
+     "sec": 166,
+     "title": "Implement Incremental load approach with Python"
+    },
+    {
+     "t": "5:17",
+     "sec": 317,
+     "title": "Test Pipeline with target data check"
+    }
+   ]
+  },
+  "bi-gx": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "7UQ91Ib7PtU",
+   "title": "How to test your Data Pipelines with Great Expectations",
+   "channel": "BI Insights Inc",
+   "durationSec": 522,
+   "published": "2023-04-18",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Introduction Great Expectations"
+    },
+    {
+     "t": "0:38",
+     "sec": 38,
+     "title": "Notebook & Data Import"
+    },
+    {
+     "t": "1:08",
+     "sec": 68,
+     "title": "Convert to Great Expectations DataFrame"
+    },
+    {
+     "t": "1:41",
+     "sec": 101,
+     "title": "Run your First Data Quality Test"
+    },
+    {
+     "t": "2:39",
+     "sec": 159,
+     "title": "Primary Key Tests; Column Exists, Unique, Null & Data Type"
+    },
+    {
+     "t": "3:56",
+     "sec": 236,
+     "title": "Test Values in Set"
+    },
+    {
+     "t": "5:09",
+     "sec": 309,
+     "title": "Test Values in Range"
+    },
+    {
+     "t": "7:07",
+     "sec": 427,
+     "title": "Save Tests for re-use"
+    },
+    {
+     "t": "7:33",
+     "sec": 453,
+     "title": "Re-Use Tests"
+    }
+   ]
+  },
+  "al-dbx": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "7pee6_Sq3VY",
+   "title": "Databricks Tutorial (From Zero to Hero) | Azure Databricks Masterclass",
+   "channel": "Ansh Lamba",
+   "durationSec": 15422,
+   "published": "2024-12-01",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "7:01",
+     "sec": 421,
+     "title": "What is Spark Cluster"
+    },
+    {
+     "t": "11:26",
+     "sec": 686,
+     "title": "Spark Architecture"
+    },
+    {
+     "t": "19:38",
+     "sec": 1178,
+     "title": "What is Dataricks"
+    },
+    {
+     "t": "20:42",
+     "sec": 1242,
+     "title": "Databricks with Azure, AWS, GCP"
+    },
+    {
+     "t": "24:52",
+     "sec": 1492,
+     "title": "Free Azure Account"
+    },
+    {
+     "t": "27:08",
+     "sec": 1628,
+     "title": "Azure Portal"
+    },
+    {
+     "t": "32:22",
+     "sec": 1942,
+     "title": "Azure Data Lake"
+    },
+    {
+     "t": "40:36",
+     "sec": 2436,
+     "title": "Creating Azure Databricks Workspace"
+    },
+    {
+     "t": "44:30",
+     "sec": 2670,
+     "title": "Azure Databricks Overview"
+    },
+    {
+     "t": "50:37",
+     "sec": 3037,
+     "title": "Databricks Spark Cluster"
+    },
+    {
+     "t": "58:23",
+     "sec": 3503,
+     "title": "Magic Commands in Databricks"
+    },
+    {
+     "t": "1:08:49",
+     "sec": 4129,
+     "title": "Databricks File System (DBFS)"
+    },
+    {
+     "t": "1:13:42",
+     "sec": 4422,
+     "title": "Access Azure Data Lake Storage from Databricks"
+    },
+    {
+     "t": "1:19:39",
+     "sec": 4779,
+     "title": "Service Principal Azure"
+    },
+    {
+     "t": "1:30:55",
+     "sec": 5455,
+     "title": "Databricks Utilities"
+    },
+    {
+     "t": "1:35:52",
+     "sec": 5752,
+     "title": "dbutils widgets"
+    },
+    {
+     "t": "1:39:30",
+     "sec": 5970,
+     "title": "dbutils Secrets"
+    },
+    {
+     "t": "1:51:19",
+     "sec": 6679,
+     "title": "Reading Data (Ingestion) using PySpark"
+    },
+    {
+     "t": "1:57:45",
+     "sec": 7065,
+     "title": "Free PySpark Full Course"
+    },
+    {
+     "t": "1:59:14",
+     "sec": 7154,
+     "title": "Data Transformation using PySaprk"
+    },
+    {
+     "t": "2:04:49",
+     "sec": 7489,
+     "title": "Real-Rime Scanrios in PySpark"
+    },
+    {
+     "t": "2:09:25",
+     "sec": 7765,
+     "title": "Delta Lake Architecture"
+    },
+    {
+     "t": "2:20:30",
+     "sec": 8430,
+     "title": "Output Modes in PySpark"
+    },
+    {
+     "t": "2:28:58",
+     "sec": 8938,
+     "title": "External Delta Table vs Managed Delta Table"
+    },
+    {
+     "t": "2:41:12",
+     "sec": 9672,
+     "title": "CRUD operations in Delta Tables"
+    },
+    {
+     "t": "3:02:30",
+     "sec": 10950,
+     "title": "Delta Log Explained in Detail"
+    },
+    {
+     "t": "3:13:01",
+     "sec": 11581,
+     "title": "Data Versioning in Delta Lake"
+    },
+    {
+     "t": "3:17:01",
+     "sec": 11821,
+     "title": "Time Travel in Delta Lake"
+    },
+    {
+     "t": "3:20:08",
+     "sec": 12008,
+     "title": "VACUUM in Databricks"
+    },
+    {
+     "t": "3:29:01",
+     "sec": 12541,
+     "title": "Delta Table Optimization"
+    },
+    {
+     "t": "3:35:57",
+     "sec": 12957,
+     "title": "ZORDER BY in Databricks in Detail"
+    },
+    {
+     "t": "3:46:53",
+     "sec": 13613,
+     "title": "Autoloader Databricks"
+    },
+    {
+     "t": "3:53:16",
+     "sec": 13996,
+     "title": "Streaming in Databricks"
+    },
+    {
+     "t": "3:58:42",
+     "sec": 14322,
+     "title": "Incremental Data Ingestion with Autoloader"
+    },
+    {
+     "t": "4:05:56",
+     "sec": 14756,
+     "title": "Databricks Workflows"
+    },
+    {
+     "t": "4:08:30",
+     "sec": 14910,
+     "title": "Databricks Job"
+    },
+    {
+     "t": "4:14:35",
+     "sec": 15275,
+     "title": "Azure End-To-End Data Engineering Project"
+    }
+   ]
+  },
+  "fp-dbx": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "SelEvwHQQ2Y",
+   "title": "Databricks Tutorial for Beginners 2026 | Free Edition + Full 101 Guide",
+   "channel": "First Principles Data Engineering",
+   "durationSec": 1235,
+   "published": "2026-02-09",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Intro"
+    },
+    {
+     "t": "0:40",
+     "sec": 40,
+     "title": "What is Databricks? (The problem, origins & Lakehouse)"
+    },
+    {
+     "t": "2:55",
+     "sec": 175,
+     "title": "Getting Started (Free Edition, workspace & first notebook)"
+    },
+    {
+     "t": "7:40",
+     "sec": 460,
+     "title": "Delta Lake (Storage, ACID transactions & time travel)"
+    },
+    {
+     "t": "11:00",
+     "sec": 660,
+     "title": "Unity Catalog (Governance, namespaces & security)"
+    },
+    {
+     "t": "13:55",
+     "sec": 835,
+     "title": "Data Processing (Medallion architecture, PySpark & SQL)"
+    },
+    {
+     "t": "17:15",
+     "sec": 1035,
+     "title": "Advanced Features (Auto Loader, optimization & monitoring)"
+    },
+    {
+     "t": "19:00",
+     "sec": 1140,
+     "title": "Wrap Up (Next steps & series roadmap)"
+    }
+   ]
+  },
+  "kk-medallion": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "u3MSka3WLpE",
+   "title": "Databricks tutorial - an intro to the medallion architecture",
+   "channel": "Kokchun Coding Tutorials",
+   "durationSec": 437,
+   "published": "2026-05-10",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Intro to Medallion"
+    },
+    {
+     "t": "00:45",
+     "sec": 45,
+     "title": "What It Is"
+    },
+    {
+     "t": "01:53",
+     "sec": 113,
+     "title": "Why It Matters"
+    },
+    {
+     "t": "02:55",
+     "sec": 175,
+     "title": "Bronze Silver Gold"
+    },
+    {
+     "t": "05:41",
+     "sec": 341,
+     "title": "Beyond Three Layers"
+    },
+    {
+     "t": "06:31",
+     "sec": 391,
+     "title": "Wrap Up Next Steps"
+    }
+   ]
+  },
+  "al-delta": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "O18afGTGoIU",
+   "title": "Delta Lake Databricks (From Zero to Pro in 4 HOURS) | Delta Lake Pyspark",
+   "channel": "Ansh Lamba",
+   "durationSec": 14426,
+   "published": "2025-01-12",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "13:53",
+     "sec": 833,
+     "title": "Data Warehouse vs Data Lake vs Data Lakehouse"
+    },
+    {
+     "t": "31:56",
+     "sec": 1916,
+     "title": "What is Delta Lake"
+    },
+    {
+     "t": "38:50",
+     "sec": 2330,
+     "title": "ACID Transactions in Delta Lake"
+    },
+    {
+     "t": "41:21",
+     "sec": 2481,
+     "title": "Azure Free Account"
+    },
+    {
+     "t": "44:00",
+     "sec": 2640,
+     "title": "Create Azure Resources"
+    },
+    {
+     "t": "53:06",
+     "sec": 3186,
+     "title": "Azure Databricks Tutorial Unity Catalog"
+    },
+    {
+     "t": "1:13:33",
+     "sec": 4413,
+     "title": "External Delta Tables vs Managed Delta Tables"
+    },
+    {
+     "t": "1:30:13",
+     "sec": 5413,
+     "title": "CETAS in Databricks"
+    },
+    {
+     "t": "1:32:58",
+     "sec": 5578,
+     "title": "Deep Clone and Shallow Clone in Databricks"
+    },
+    {
+     "t": "1:42:14",
+     "sec": 6134,
+     "title": "Deletion Vectors in Databricks"
+    },
+    {
+     "t": "2:11:23",
+     "sec": 7883,
+     "title": "Time Travel in Databricks Delta Lake"
+    },
+    {
+     "t": "2:22:38",
+     "sec": 8558,
+     "title": "VACUUM in Databricks"
+    },
+    {
+     "t": "2:28:27",
+     "sec": 8907,
+     "title": "OPTIMIZATION Techniques in Databricks using ZORDER BY and Liquid Clustering"
+    },
+    {
+     "t": "2:45:27",
+     "sec": 9927,
+     "title": "Schema Enforcement and Schema Evolution in Databricks"
+    },
+    {
+     "t": "2:57:38",
+     "sec": 10658,
+     "title": "Schema Update in Delta Lake PySpark"
+    },
+    {
+     "t": "3:08:44",
+     "sec": 11324,
+     "title": "Structured Streaming Databricks using Pyspark"
+    },
+    {
+     "t": "3:27:40",
+     "sec": 12460,
+     "title": "Delta Live Tables Databricks (ETL Pipelines)"
+    }
+   ]
+  },
+  "bw-pbi": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "pQSMbRA3O6g",
+   "title": "Data Modeling in Power BI Full Course for Beginners (5 Hours) – From Zero to Hero",
+   "channel": "Data with Baraa",
+   "durationSec": 18539,
+   "published": "2026-07-15",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Why Data Modeling Matters"
+    },
+    {
+     "t": "11:45",
+     "sec": 705,
+     "title": "What Is Data Modeling"
+    },
+    {
+     "t": "14:50",
+     "sec": 890,
+     "title": "Fact & Dimension Tables"
+    },
+    {
+     "t": "18:45",
+     "sec": 1125,
+     "title": "Star, Snowflake & Galaxy Schemas"
+    },
+    {
+     "t": "27:42",
+     "sec": 1662,
+     "title": "Model Layer vs Visual Layer"
+    },
+    {
+     "t": "29:50",
+     "sec": 1790,
+     "title": "Merge vs Relationship"
+    },
+    {
+     "t": "32:49",
+     "sec": 1969,
+     "title": "Cardinality"
+    },
+    {
+     "t": "35:39",
+     "sec": 2139,
+     "title": "Filter Direction"
+    },
+    {
+     "t": "37:57",
+     "sec": 2277,
+     "title": "Building Relationships in Power BI"
+    },
+    {
+     "t": "56:38",
+     "sec": 3398,
+     "title": "Active vs Inactive Relationships"
+    },
+    {
+     "t": "1:02:47",
+     "sec": 3767,
+     "title": "One-to-One Relationships"
+    },
+    {
+     "t": "1:07:37",
+     "sec": 4057,
+     "title": "Dimensions Hidden in Facts"
+    },
+    {
+     "t": "1:15:46",
+     "sec": 4546,
+     "title": "Junk Dimension"
+    },
+    {
+     "t": "1:20:00",
+     "sec": 4800,
+     "title": "Role-Playing Dimensions"
+    },
+    {
+     "t": "1:34:31",
+     "sec": 5671,
+     "title": "Grain of a Fact Table"
+    },
+    {
+     "t": "1:41:28",
+     "sec": 6088,
+     "title": "Multiple Fact Tables"
+    },
+    {
+     "t": "1:55:13",
+     "sec": 6913,
+     "title": "Bridge & Shared Dimension"
+    },
+    {
+     "t": "2:08:58",
+     "sec": 7738,
+     "title": "Row-Level Security (RLS)"
+    },
+    {
+     "t": "2:40:08",
+     "sec": 9608,
+     "title": "Exploring the Mess"
+    },
+    {
+     "t": "2:59:16",
+     "sec": 10756,
+     "title": "Building the Dimensions"
+    },
+    {
+     "t": "3:31:05",
+     "sec": 12665,
+     "title": "Building the Sales Fact"
+    },
+    {
+     "t": "4:08:45",
+     "sec": 14925,
+     "title": "More Facts & Dimensions"
+    },
+    {
+     "t": "4:20:41",
+     "sec": 15641,
+     "title": "Special Fact Types"
+    },
+    {
+     "t": "4:37:47",
+     "sec": 16667,
+     "title": "Polishing & Measures"
+    },
+    {
+     "t": "5:07:04",
+     "sec": 18424,
+     "title": "Golden Rules Recap"
+    }
+   ]
+  },
+  "dc-pbi": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "wJjKyIt2lBM",
+   "title": "Power BI Full Course | Master DAX, Data Preparation, Modeling & Visualization",
+   "channel": "DataCamp",
+   "durationSec": 9754,
+   "published": "2025-02-26",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Introduction to Power BI Course"
+    },
+    {
+     "t": "00:23",
+     "sec": 23,
+     "title": "Why Learn Power BI?"
+    },
+    {
+     "t": "01:31",
+     "sec": 91,
+     "title": "Power BI Desktop vs. Power BI Service"
+    },
+    {
+     "t": "02:28",
+     "sec": 148,
+     "title": "Key Areas of the Power BI Interface"
+    },
+    {
+     "t": "03:27",
+     "sec": 207,
+     "title": "Understanding Fact and Dimension Tables"
+    },
+    {
+     "t": "04:27",
+     "sec": 267,
+     "title": "Connecting and Importing Data in Power BI"
+    },
+    {
+     "t": "06:12",
+     "sec": 372,
+     "title": "Creating Relationships Between Tables"
+    },
+    {
+     "t": "06:45",
+     "sec": 405,
+     "title": "Building Visualizations in Power BI"
+    },
+    {
+     "t": "07:45",
+     "sec": 465,
+     "title": "Enhancing Visuals with Additional Data"
+    },
+    {
+     "t": "08:46",
+     "sec": 526,
+     "title": "Filtering and Slicing Data"
+    },
+    {
+     "t": "10:15",
+     "sec": 615,
+     "title": "Working with Table Visuals"
+    },
+    {
+     "t": "11:17",
+     "sec": 677,
+     "title": "Transforming and Cleaning Data"
+    },
+    {
+     "t": "12:12",
+     "sec": 732,
+     "title": "Using Power Query Editor"
+    },
+    {
+     "t": "13:25",
+     "sec": 805,
+     "title": "Removing and Reformatting Data"
+    },
+    {
+     "t": "15:19",
+     "sec": 919,
+     "title": "Aggregating Data in Power BI"
+    },
+    {
+     "t": "16:15",
+     "sec": 975,
+     "title": "Setting Data Types and Formatting"
+    },
+    {
+     "t": "18:16",
+     "sec": 1096,
+     "title": "Creating Map Visualizations"
+    },
+    {
+     "t": "19:09",
+     "sec": 1149,
+     "title": "Advanced Data Visualizations in Power BI"
+    },
+    {
+     "t": "20:58",
+     "sec": 1258,
+     "title": "Customizing and Formatting Charts"
+    },
+    {
+     "t": "22:22",
+     "sec": 1342,
+     "title": "Exploring Different Chart Types"
+    },
+    {
+     "t": "23:50",
+     "sec": 1430,
+     "title": "Using Slicers for Dynamic Reports"
+    },
+    {
+     "t": "25:09",
+     "sec": 1509,
+     "title": "Sorting and Formatting Data"
+    },
+    {
+     "t": "26:49",
+     "sec": 1609,
+     "title": "Creating Hierarchies for Drill-Down Analysis"
+    },
+    {
+     "t": "30:13",
+     "sec": 1813,
+     "title": "Filtering and Interactions in Power BI"
+    },
+    {
+     "t": "33:39",
+     "sec": 2019,
+     "title": "Exporting and Working with Data"
+    },
+    {
+     "t": "34:53",
+     "sec": 2093,
+     "title": "Creating and Using Calculated Columns"
+    },
+    {
+     "t": "37:26",
+     "sec": 2246,
+     "title": "Using Measures and DAX Functions"
+    },
+    {
+     "t": "42:25",
+     "sec": 2545,
+     "title": "Row and Filter Context in DAX"
+    },
+    {
+     "t": "50:04",
+     "sec": 3004,
+     "title": "Using Variables and Calculate Functions in DAX"
+    },
+    {
+     "t": "59:56",
+     "sec": 3596,
+     "title": "Understanding Time Intelligence in Power BI"
+    },
+    {
+     "t": "01:04:16",
+     "sec": 3856,
+     "title": "Creating a Date Table for Analysis"
+    },
+    {
+     "t": "01:07:22",
+     "sec": 4042,
+     "title": "Using Rolling Averages in Power BI"
+    },
+    {
+     "t": "01:08:16",
+     "sec": 4096,
+     "title": "Dashboards vs. Reports in Power BI"
+    },
+    {
+     "t": "01:11:51",
+     "sec": 4311,
+     "title": "Creating Effective Data Visualizations"
+    },
+    {
+     "t": "01:17:17",
+     "sec": 4637,
+     "title": "Formatting and Customizing Reports"
+    },
+    {
+     "t": "01:21:29",
+     "sec": 4889,
+     "title": "Reducing Cognitive Load in Dashboards"
+    },
+    {
+     "t": "01:29:00",
+     "sec": 5340,
+     "title": "Analyzing Sales Performance with Power BI"
+    },
+    {
+     "t": "01:32:45",
+     "sec": 5565,
+     "title": "Key Business Insights with Power BI"
+    },
+    {
+     "t": "01:40:00",
+     "sec": 6000,
+     "title": "Data Cleaning and Preparation in Power Query"
+    },
+    {
+     "t": "02:08:25",
+     "sec": 7705,
+     "title": "Transforming Numerical and Text Data"
+    },
+    {
+     "t": "02:17:13",
+     "sec": 8233,
+     "title": "Understanding Data Modeling in Power BI"
+    },
+    {
+     "t": "02:32:00",
+     "sec": 9120,
+     "title": "Star Schema vs. Snowflake Schema"
+    },
+    {
+     "t": "02:35:08",
+     "sec": 9308,
+     "title": "Performance Optimization in Power BI"
+    }
+   ]
+  },
+  "gc-pbi": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "OmW9YvxSl1E",
+   "title": "Power BI Tutorial for Beginners (Step-by-Step in 30 Minutes)",
+   "channel": "Guy in a Cube",
+   "durationSec": 1841,
+   "published": "2026-07-02",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Welcome to the Course"
+    },
+    {
+     "t": "00:30",
+     "sec": 30,
+     "title": "Power BI Workflow Map"
+    },
+    {
+     "t": "02:10",
+     "sec": 130,
+     "title": "Tools and Interfaces Tour"
+    },
+    {
+     "t": "02:41",
+     "sec": 161,
+     "title": "Meet the Sample Data"
+    },
+    {
+     "t": "03:32",
+     "sec": 212,
+     "title": "Think in Pipelines"
+    },
+    {
+     "t": "04:44",
+     "sec": 284,
+     "title": "Module Setup and Downloads"
+    },
+    {
+     "t": "05:04",
+     "sec": 304,
+     "title": "Choosing Data Sources"
+    },
+    {
+     "t": "07:27",
+     "sec": 447,
+     "title": "Install and Connect Excel"
+    },
+    {
+     "t": "09:10",
+     "sec": 550,
+     "title": "First Power Query Transform"
+    },
+    {
+     "t": "10:14",
+     "sec": 614,
+     "title": "Power Query Essentials"
+    },
+    {
+     "t": "12:15",
+     "sec": 735,
+     "title": "Hands On Data Cleanup"
+    },
+    {
+     "t": "14:19",
+     "sec": 859,
+     "title": "Modeling and DAX Basics"
+    },
+    {
+     "t": "16:27",
+     "sec": 987,
+     "title": "Build Star Schema and Measures"
+    },
+    {
+     "t": "21:52",
+     "sec": 1312,
+     "title": "Report Design Principles"
+    },
+    {
+     "t": "23:46",
+     "sec": 1426,
+     "title": "Build the Report Page"
+    },
+    {
+     "t": "28:18",
+     "sec": 1698,
+     "title": "Publish and Share in Service"
+    },
+    {
+     "t": "30:24",
+     "sec": 1824,
+     "title": "Wrap Up and Next Steps"
+    }
+   ]
+  },
+  "aa-tf": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "KWpIzjHyC68",
+   "title": "Learn Terraform on Azure — Beginner Course",
+   "channel": "Adeel Automates",
+   "durationSec": 6011,
+   "published": "2026-06-22",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Terraform Explained"
+    },
+    {
+     "t": "10:02",
+     "sec": 602,
+     "title": "Setting Up Terraform"
+    },
+    {
+     "t": "14:32",
+     "sec": 872,
+     "title": "Terraform & Provider Blocks"
+    },
+    {
+     "t": "20:06",
+     "sec": 1206,
+     "title": "Terraform Init"
+    },
+    {
+     "t": "21:53",
+     "sec": 1313,
+     "title": "Resource Blocks"
+    },
+    {
+     "t": "27:56",
+     "sec": 1676,
+     "title": "Terraform Plan"
+    },
+    {
+     "t": "31:26",
+     "sec": 1886,
+     "title": "Order of Operations"
+    },
+    {
+     "t": "35:23",
+     "sec": 2123,
+     "title": "Terraform Apply"
+    },
+    {
+     "t": "37:47",
+     "sec": 2267,
+     "title": "Terraform State"
+    },
+    {
+     "t": "50:45",
+     "sec": 3045,
+     "title": "Terraform Data Types"
+    },
+    {
+     "t": "57:48",
+     "sec": 3468,
+     "title": "Variable Blocks"
+    },
+    {
+     "t": "1:11:25",
+     "sec": 4285,
+     "title": "Variable Precedence"
+    },
+    {
+     "t": "1:12:23",
+     "sec": 4343,
+     "title": "Comments & Terraform fmt"
+    },
+    {
+     "t": "1:14:24",
+     "sec": 4464,
+     "title": "Local Blocks"
+    },
+    {
+     "t": "1:20:12",
+     "sec": 4812,
+     "title": "Secrets in State"
+    },
+    {
+     "t": "1:26:43",
+     "sec": 5203,
+     "title": "Data Blocks"
+    },
+    {
+     "t": "1:30:57",
+     "sec": 5457,
+     "title": "Bonus: Ephemeral Blocks"
+    },
+    {
+     "t": "1:31:18",
+     "sec": 5478,
+     "title": "Output Blocks"
+    },
+    {
+     "t": "1:37:49",
+     "sec": 5869,
+     "title": "Final Thoughts"
+    }
+   ]
+  },
+  "ms-tf": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "Rpl_OB62Y_c",
+   "title": "Terraform with Azure Tutorial for Beginners | Remote State, Modules & HCP Terraform [HINDI]",
+   "channel": "M Prashant",
+   "durationSec": 14766,
+   "published": "2026-10-14",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00:00",
+     "sec": 0,
+     "title": "Intro"
+    },
+    {
+     "t": "00:02:04",
+     "sec": 124,
+     "title": "What is Terraform?"
+    },
+    {
+     "t": "00:06:11",
+     "sec": 371,
+     "title": "Azure Free Account Setup"
+    },
+    {
+     "t": "00:20:44",
+     "sec": 1244,
+     "title": "Terraform Installation on Windows"
+    },
+    {
+     "t": "00:22:19",
+     "sec": 1339,
+     "title": "Azure CLI on Windows"
+    },
+    {
+     "t": "00:23:09",
+     "sec": 1389,
+     "title": "Terraform Installation on MAC"
+    },
+    {
+     "t": "00:24:21",
+     "sec": 1461,
+     "title": "Azure CLI on MAC"
+    },
+    {
+     "t": "00:25:13",
+     "sec": 1513,
+     "title": "vsCode Setup for Terraform Config"
+    },
+    {
+     "t": "00:27:24",
+     "sec": 1644,
+     "title": "First Terraform Config"
+    },
+    {
+     "t": "00:32:33",
+     "sec": 1953,
+     "title": "Modify & Delete Resources"
+    },
+    {
+     "t": "00:35:13",
+     "sec": 2113,
+     "title": "Terraform State Management"
+    },
+    {
+     "t": "00:41:38",
+     "sec": 2498,
+     "title": "Terraform Variables"
+    },
+    {
+     "t": "00:46:04",
+     "sec": 2764,
+     "title": "Azure Vnet & VM using Terraform Config"
+    },
+    {
+     "t": "00:55:01",
+     "sec": 3301,
+     "title": "Enable Public IP"
+    },
+    {
+     "t": "00:59:01",
+     "sec": 3541,
+     "title": "Enable Network Security Group"
+    },
+    {
+     "t": "01:04:35",
+     "sec": 3875,
+     "title": "Terraform Outputs"
+    },
+    {
+     "t": "01:07:18",
+     "sec": 4038,
+     "title": "Terraform Resource Dependecy"
+    },
+    {
+     "t": "01:11:00",
+     "sec": 4260,
+     "title": "Azure Blob Storage using Terraform Config"
+    },
+    {
+     "t": "01:17:00",
+     "sec": 4620,
+     "title": "Terraform Remote State Management"
+    },
+    {
+     "t": "01:27:16",
+     "sec": 5236,
+     "title": "Terraform Data Source"
+    },
+    {
+     "t": "01:32:45",
+     "sec": 5565,
+     "title": "Terraform Random Provider"
+    },
+    {
+     "t": "01:36:43",
+     "sec": 5803,
+     "title": "More about Variables"
+    },
+    {
+     "t": "01:48:53",
+     "sec": 6533,
+     "title": "Terraform Local Variables"
+    },
+    {
+     "t": "01:50:21",
+     "sec": 6621,
+     "title": "Terraform Env Variables"
+    },
+    {
+     "t": "01:57:38",
+     "sec": 7058,
+     "title": "Terraform Operators & Expressions"
+    },
+    {
+     "t": "02:09:48",
+     "sec": 7788,
+     "title": "Terraform Functions"
+    },
+    {
+     "t": "02:18:53",
+     "sec": 8333,
+     "title": "Terraform COUNT"
+    },
+    {
+     "t": "02:29:23",
+     "sec": 8963,
+     "title": "Terraform FOR EACH"
+    },
+    {
+     "t": "02:33:37",
+     "sec": 9217,
+     "title": "Terraform Resource Lifecycle"
+    },
+    {
+     "t": "02:41:22",
+     "sec": 9682,
+     "title": "Terraform Pre & Post Conditions"
+    },
+    {
+     "t": "02:46:21",
+     "sec": 9981,
+     "title": "Terraform State Manipulation"
+    },
+    {
+     "t": "02:54:24",
+     "sec": 10464,
+     "title": "Terraform IMPORT"
+    },
+    {
+     "t": "02:59:10",
+     "sec": 10750,
+     "title": "Terraform Workspaces"
+    },
+    {
+     "t": "03:13:50",
+     "sec": 11630,
+     "title": "Terraform Modules"
+    },
+    {
+     "t": "03:18:33",
+     "sec": 11913,
+     "title": "Azure Resource using Moduel"
+    },
+    {
+     "t": "03:35:51",
+     "sec": 12951,
+     "title": "Creating Custom Terraform Module"
+    },
+    {
+     "t": "03:46:51",
+     "sec": 13611,
+     "title": "Publish Module into Terraform Registry"
+    },
+    {
+     "t": "03:53:57",
+     "sec": 14037,
+     "title": "Terraform CLOUD"
+    }
+   ]
+  },
+  "ag-otel": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "azyVG0T1aVc",
+   "title": "OpenTelemetry: How distributed tracing really works with Python, FastAPI and requests",
+   "channel": "Adam Gardner",
+   "durationSec": 568,
+   "published": "2025-09-20",
+   "embeddable": true,
+   "chapters": []
+  },
+  "er-otel": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "m28TTogdcbk",
+   "title": "OpenTelemetry FastAPI Tutorial: Get GREAT App Performance NOW!",
+   "channel": "Eric Roby",
+   "durationSec": 876,
+   "published": "2024-10-31",
+   "embeddable": true,
+   "chapters": []
+  },
+  "jf-appins": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "34np53BGv3o",
+   "title": "Building custom metrics dashboards for Python programs with Azure App Insights and OpenTelemetry",
+   "channel": "Joe Freeman: Software Craft, Org Stuff, Tech Stuff",
+   "durationSec": 530,
+   "published": "2024-02-27",
+   "embeddable": true,
+   "chapters": []
+  },
+  "lc-interrupt": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "6t7YJcEFUIY",
+   "title": "LangGraph interrupt: Making it easier to build human-in-the-loop agents",
+   "channel": "LangChain",
+   "durationSec": 469,
+   "published": "2024-12-14",
+   "embeddable": true,
+   "chapters": []
+  },
+  "cc-persist": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "9BPCV5TYPmg",
+   "title": "LangGraph - Persistence & Human-in-the-Loop Workflow",
+   "channel": "Coding Crash Courses",
+   "durationSec": 1088,
+   "published": "2024-07-08",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "0:25",
+     "sec": 25,
+     "title": "Checkpointers"
+    },
+    {
+     "t": "5:54",
+     "sec": 354,
+     "title": "Threads"
+    },
+    {
+     "t": "10:03",
+     "sec": 603,
+     "title": "Overrule LLM"
+    },
+    {
+     "t": "11:08",
+     "sec": 668,
+     "title": "Human as Expert"
+    }
+   ]
+  },
+  "av-lg": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "FVuv5MPBzPI",
+   "title": "LangGraph Tutorial: Understanding Nodes, Edges, and State Management",
+   "channel": "Analytics Vidhya",
+   "durationSec": 917,
+   "published": "2026-02-12",
+   "embeddable": true,
+   "chapters": []
+  },
+  "lg-102": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "pDuNkb6VWaM",
+   "title": "LangGraph Tutorial 102: Add Tools, Nodes, Conditional & Normal Edges, Memory, Langchain & Langsmith",
+   "channel": "HTMLFiveDev",
+   "durationSec": 1252,
+   "published": "2025-01-11",
+   "embeddable": true,
+   "chapters": []
+  },
+  "jb-lsmith": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "Iyc80hY2yYk",
+   "title": "LangSmith 101 for AI Observability | Full Walkthrough",
+   "channel": "James Briggs",
+   "durationSec": 542,
+   "published": "2025-06-03",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "LangChain's LangSmith"
+    },
+    {
+     "t": "00:24",
+     "sec": 24,
+     "title": "LangSmith Setup"
+    },
+    {
+     "t": "02:37",
+     "sec": 157,
+     "title": "LangSmith Tracing"
+    },
+    {
+     "t": "04:54",
+     "sec": 294,
+     "title": "Custom LangSmith Traceables"
+    },
+    {
+     "t": "08:18",
+     "sec": 498,
+     "title": "LangSmith Conclusion"
+    }
+   ]
+  },
+  "rk-stream": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "FJJn3ZVm3VA",
+   "title": "How to Stream OpenAI Responses in Python (Sync & Async)",
+   "channel": "Raj Kapadia",
+   "durationSec": 976,
+   "published": "2025-04-21",
+   "embeddable": true,
+   "chapters": []
+  },
+  "sl7-aoai": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "50ZwmkCvE88",
+   "title": "How to setup Azure OpenAI service and use it in Python",
+   "channel": "SL7 Tech",
+   "durationSec": 939,
+   "published": "2025-03-02",
+   "embeddable": true,
+   "chapters": []
+  },
+  "cl-finops": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "_hxYKakfbtQ",
+   "title": "FinOps and Cost Optimization in Azure",
+   "channel": "Cloud Lunch and Learn",
+   "durationSec": 3145,
+   "published": "2024-02-21",
+   "embeddable": true,
+   "chapters": []
+  },
+  "ap-finops": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "gWDTRf_kGHI",
+   "title": "FinOps Explained in 5 Minutes | What is FinOps?",
+   "channel": "Anglepoint",
+   "durationSec": 291,
+   "published": "2024-02-01",
+   "embeddable": true,
+   "chapters": []
+  },
+  "src-rpo": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "8fVIEKJb-s0",
+   "title": "What is RPO and RTO in Disaster Recovery (DR)?",
+   "channel": "SrcCodes",
+   "durationSec": 128,
+   "published": "2023-06-26",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "00:31",
+     "sec": 31,
+     "title": "What is RPO?"
+    },
+    {
+     "t": "00:57",
+     "sec": 57,
+     "title": "What is RTO?"
+    },
+    {
+     "t": "01:32",
+     "sec": 92,
+     "title": "RPO, RTO vs Cost"
+    }
+   ]
+  },
+  "drp-rto": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "McBnARj4xlU",
+   "title": "RTO and RPO Explained - why are they important concepts in Disaster Recovery",
+   "channel": "DisasterRecoveryPro",
+   "durationSec": 610,
+   "published": "2020-03-11",
+   "embeddable": true,
+   "chapters": []
+  },
+  "sd-cb": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "rvKKj7JU92g",
+   "title": "Circuit Breaker Pattern Explained: Timeouts, Retries and Fallbacks",
+   "channel": "System Design Lab",
+   "durationSec": 2181,
+   "published": "2026-09-07",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Why a slow dependency is worse than a dead one"
+    },
+    {
+     "t": "1:35",
+     "sec": 95,
+     "title": "The chain: timeout, retry, circuit breaker, fallback"
+    },
+    {
+     "t": "3:02",
+     "sec": 182,
+     "title": "Thread pool exhaustion and cascading failure math"
+    },
+    {
+     "t": "4:54",
+     "sec": 294,
+     "title": "Timeouts: connection vs request, and picking p99.9"
+    },
+    {
+     "t": "8:00",
+     "sec": 480,
+     "title": "Retries, exponential backoff, jitter and retry storms"
+    },
+    {
+     "t": "11:05",
+     "sec": 665,
+     "title": "Circuit breaker states: closed, open, half-open"
+    },
+    {
+     "t": "12:59",
+     "sec": 779,
+     "title": "Failure rate vs failure count, sliding windows, minimum calls"
+    },
+    {
+     "t": "15:41",
+     "sec": 941,
+     "title": "Default thresholds: Resilience4j vs Hystrix vs Polly vs gobreaker"
+    },
+    {
+     "t": "19:41",
+     "sec": 1181,
+     "title": "Half-open probes: why systems break twice"
+    },
+    {
+     "t": "21:41",
+     "sec": 1301,
+     "title": "Fallback strategies, and Amazon's case against fallback"
+    },
+    {
+     "t": "24:59",
+     "sec": 1499,
+     "title": "Why AWS warns against circuit breakers: the retry token bucket"
+    },
+    {
+     "t": "28:14",
+     "sec": 1694,
+     "title": "When not to use a circuit breaker: 4xx, writes, shards"
+    },
+    {
+     "t": "30:59",
+     "sec": 1859,
+     "title": "Service mesh outlier detection: how Envoy ejects hosts"
+    },
+    {
+     "t": "33:14",
+     "sec": 1994,
+     "title": "Alerting on breaker state changes and manual override"
+    },
+    {
+     "t": "34:57",
+     "sec": 2097,
+     "title": "Recap: the four questions in your own config"
+    }
+   ]
+  },
+  "jc-locust": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "u6VW-HqxOjg",
+   "title": "Locust in 30 Minutes: Install, 10-Line Test, Web UI, First Load (Beginner Friendly)",
+   "channel": "José Cruz (IT Architect)",
+   "durationSec": 2160,
+   "published": "2025-09-10",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Intro & goals"
+    },
+    {
+     "t": "02:57",
+     "sec": 177,
+     "title": "Locust Architecture"
+    },
+    {
+     "t": "04:10",
+     "sec": 250,
+     "title": "httpbin.org - The Tiny HTTP Playground"
+    },
+    {
+     "t": "06:47",
+     "sec": 407,
+     "title": "The 10-line `HttpUser`"
+    },
+    {
+     "t": "15:22",
+     "sec": 922,
+     "title": "More behavior"
+    },
+    {
+     "t": "16:26",
+     "sec": 986,
+     "title": "Headless run (CLI + CSV)"
+    },
+    {
+     "t": "21:02",
+     "sec": 1262,
+     "title": "Mini project: tiny shop flow"
+    },
+    {
+     "t": "27:46",
+     "sec": 1666,
+     "title": "Pitfalls, results, next steps"
+    }
+   ]
+  },
+  "ld-mcp": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "DAuZuj0BUZA",
+   "title": "Ultimate MCP Tutorial | Learn Model Context Protocol and Deploy your MCP Server",
+   "channel": "Lama Dev",
+   "durationSec": 5734,
+   "published": "2025-10-29",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "02:23",
+     "sec": 143,
+     "title": "What is MCP and Why Do We Need it?"
+    },
+    {
+     "t": "05:30",
+     "sec": 330,
+     "title": "MCP Server Tutorial for Beginners"
+    },
+    {
+     "t": "08:40",
+     "sec": 520,
+     "title": "How to Create an MCP Server?"
+    },
+    {
+     "t": "09:37",
+     "sec": 577,
+     "title": "How to Create an MCP Tool?"
+    },
+    {
+     "t": "12:20",
+     "sec": 740,
+     "title": "Testing MCP Server with Inspector"
+    },
+    {
+     "t": "13:41",
+     "sec": 821,
+     "title": "Adding MCP Server to Cursor"
+    },
+    {
+     "t": "15:00",
+     "sec": 900,
+     "title": "Adding MCP Server to Claude"
+    },
+    {
+     "t": "16:09",
+     "sec": 969,
+     "title": "How to Make an API Request and Fetch Data in an MCP Server"
+    },
+    {
+     "t": "21:21",
+     "sec": 1281,
+     "title": "Understanding MCP Resources | How to Create an MCP Resource?"
+    },
+    {
+     "t": "26:49",
+     "sec": 1609,
+     "title": "MCP Prompts Explained | How to Create an MCP Prompt?"
+    },
+    {
+     "t": "30:20",
+     "sec": 1820,
+     "title": "How to Deploy an MCP Server? | Create a Remote MCP Server"
+    },
+    {
+     "t": "34:17",
+     "sec": 2057,
+     "title": "Creating a Remote MCP Server with CloudFlare"
+    },
+    {
+     "t": "37:00",
+     "sec": 2220,
+     "title": "Creating a Project Planner MCP Server"
+    },
+    {
+     "t": "40:52",
+     "sec": 2452,
+     "title": "How to Save MCP Server Data on CloudFlare KV?"
+    },
+    {
+     "t": "48:27",
+     "sec": 2907,
+     "title": "Adding a Todo Item MCP Tool"
+    },
+    {
+     "t": "54:08",
+     "sec": 3248,
+     "title": "List Projects MCP Tool"
+    },
+    {
+     "t": "55:27",
+     "sec": 3327,
+     "title": "Get Single Project MCP Tool"
+    },
+    {
+     "t": "01:00:04",
+     "sec": 3604,
+     "title": "Delete Project MCP Tool"
+    },
+    {
+     "t": "01:03:20",
+     "sec": 3800,
+     "title": "Update Item MCP Tool"
+    },
+    {
+     "t": "01:06:58",
+     "sec": 4018,
+     "title": "Delete Item MCP Tool"
+    },
+    {
+     "t": "01:09:19",
+     "sec": 4159,
+     "title": "Fetch Single Item MCP Tool"
+    },
+    {
+     "t": "01:10:05",
+     "sec": 4205,
+     "title": "Fetch All Items MCP Tool"
+    },
+    {
+     "t": "01:13:40",
+     "sec": 4420,
+     "title": "MCP Server Deployment"
+    },
+    {
+     "t": "01:15:17",
+     "sec": 4517,
+     "title": "Testing MCP Server on Cursor"
+    },
+    {
+     "t": "01:18:36",
+     "sec": 4716,
+     "title": "Testing MCP Server on Claude"
+    },
+    {
+     "t": "01:21:10",
+     "sec": 4870,
+     "title": "How to Add Auth to an MCP Server? | MCP Authentication and Authorization"
+    },
+    {
+     "t": "01:35:13",
+     "sec": 5713,
+     "title": "Outro"
+    }
+   ]
+  },
+  "fcc-mcpsec": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "gYXLRMycVMk",
+   "title": "MCP Security Fundamentals Course",
+   "channel": "freeCodeCamp.org",
+   "durationSec": 7816,
+   "published": "2026-10-22",
+   "embeddable": true,
+   "chapters": []
+  },
+  "kb-pvm": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "23tkOExq7t0",
+   "title": "Price Volume Mix (PVM) for Revenue Variance Analysis",
+   "channel": "KnowledgeBank by obviEnce",
+   "durationSec": 967,
+   "published": "2020-04-24",
+   "embeddable": true,
+   "chapters": []
+  },
+  "kb-pvm-gm": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "nVl6JGJEKqI",
+   "title": "Price Volume Mix PVM for Gross Margin Variance Analysis",
+   "channel": "KnowledgeBank by obviEnce",
+   "durationSec": 827,
+   "published": "2020-04-26",
+   "embeddable": true,
+   "chapters": []
+  },
+  "zb-pvm": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "cRDPoVkfJvE",
+   "title": "Price Volume Mix Analysis in Power BI: Complete PVM Tutorial",
+   "channel": "Zebra BI",
+   "durationSec": 1322,
+   "published": "2023-07-14",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Intro"
+    },
+    {
+     "t": "00:57",
+     "sec": 57,
+     "title": "About PVM"
+    },
+    {
+     "t": "03:01",
+     "sec": 181,
+     "title": "PVMND"
+    },
+    {
+     "t": "04:20",
+     "sec": 260,
+     "title": "AI Data"
+    },
+    {
+     "t": "05:47",
+     "sec": 347,
+     "title": "PBI"
+    },
+    {
+     "t": "21:16",
+     "sec": 1276,
+     "title": "End"
+    }
+   ]
+  },
+  "dtc-mesh": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "346N_pCtYZU",
+   "title": "Data Mesh 101 - Zhamak Dehghani",
+   "channel": "DataTalksClub ⬛",
+   "durationSec": 3749,
+   "published": "2022-08-18",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "DataTalks.Club intro"
+    },
+    {
+     "t": "02:39",
+     "sec": 159,
+     "title": "Zhamak’s background"
+    },
+    {
+     "t": "09:49",
+     "sec": 589,
+     "title": "What is Data Mesh?"
+    },
+    {
+     "t": "16:34",
+     "sec": 994,
+     "title": "Domain ownership"
+    },
+    {
+     "t": "25:26",
+     "sec": 1526,
+     "title": "Determining what to optimize for with Data Mesh"
+    },
+    {
+     "t": "32:04",
+     "sec": 1924,
+     "title": "Decentralization"
+    },
+    {
+     "t": "34:36",
+     "sec": 2076,
+     "title": "Data as a product"
+    },
+    {
+     "t": "41:58",
+     "sec": 2518,
+     "title": "Self-serve data platforms"
+    },
+    {
+     "t": "49:13",
+     "sec": 2953,
+     "title": "Data governance"
+    },
+    {
+     "t": "54:20",
+     "sec": 3260,
+     "title": "Understanding Data Mesh"
+    },
+    {
+     "t": "57:11",
+     "sec": 3431,
+     "title": "Adopting Data Mesh"
+    },
+    {
+     "t": "59:51",
+     "sec": 3591,
+     "title": "Resources on implementing Data Mesh"
+    }
+   ]
+  },
+  "cf-mesh": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "vM1g2rzLkI4",
+   "title": "Data Mesh 101: Data Ownership by Domain",
+   "channel": "Confluent, an IBM Company",
+   "durationSec": 393,
+   "published": "2022-02-09",
+   "embeddable": true,
+   "chapters": []
+  },
+  "az-net": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "DFdOi0QVso4",
+   "title": "Azure Networking for Beginners | Complete Hands-on Labs Masterclass",
+   "channel": "A Guide to Cloud & AI",
+   "durationSec": 10141,
+   "published": "2022-07-12",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "What this networking masterclass covers"
+    },
+    {
+     "t": "00:40",
+     "sec": 40,
+     "title": "Lab: create a virtual network and subnets"
+    },
+    {
+     "t": "08:32",
+     "sec": 512,
+     "title": "Lab: configure DNS name resolution with a private DNS zone"
+    },
+    {
+     "t": "11:54",
+     "sec": 714,
+     "title": "Create a VM to test the DNS configuration"
+    },
+    {
+     "t": "15:42",
+     "sec": 942,
+     "title": "Lab: connect virtual networks with global VNet peering"
+    },
+    {
+     "t": "23:26",
+     "sec": 1406,
+     "title": "Lab: design and implement hybrid networking"
+    },
+    {
+     "t": "38:16",
+     "sec": 2296,
+     "title": "Lab: create an Azure Virtual WAN"
+    },
+    {
+     "t": "43:03",
+     "sec": 2583,
+     "title": "Lab: design and implement Azure ExpressRoute"
+    },
+    {
+     "t": "47:22",
+     "sec": 2842,
+     "title": "Create an ExpressRoute circuit in the portal"
+    },
+    {
+     "t": "51:30",
+     "sec": 3090,
+     "title": "Lab: build a load balancer solution"
+    },
+    {
+     "t": "55:57",
+     "sec": 3357,
+     "title": "Create the backend servers"
+    },
+    {
+     "t": "1:08:04",
+     "sec": 4084,
+     "title": "Test the load balancer"
+    },
+    {
+     "t": "1:10:41",
+     "sec": 4241,
+     "title": "Lab: Traffic Manager for high availability"
+    },
+    {
+     "t": "1:16:54",
+     "sec": 4614,
+     "title": "Add endpoints to the Traffic Manager profile"
+    },
+    {
+     "t": "1:20:58",
+     "sec": 4858,
+     "title": "Lab: Azure Application Gateway"
+    },
+    {
+     "t": "1:26:41",
+     "sec": 5201,
+     "title": "Add backend servers to the backend pool"
+    },
+    {
+     "t": "1:28:46",
+     "sec": 5326,
+     "title": "Lab: Azure Front Door"
+    },
+    {
+     "t": "1:35:47",
+     "sec": 5747,
+     "title": "Verify Front Door failover in action"
+    },
+    {
+     "t": "1:38:11",
+     "sec": 5891,
+     "title": "Lab: Azure DDoS Protection"
+    },
+    {
+     "t": "1:44:00",
+     "sec": 6240,
+     "title": "Create the DDoS diagnostic logs"
+    },
+    {
+     "t": "1:53:53",
+     "sec": 6833,
+     "title": "Lab: Azure Firewall"
+    },
+    {
+     "t": "1:58:39",
+     "sec": 7119,
+     "title": "Deploy the firewall and firewall policy"
+    },
+    {
+     "t": "2:01:23",
+     "sec": 7283,
+     "title": "Create the route table"
+    },
+    {
+     "t": "2:03:54",
+     "sec": 7434,
+     "title": "Add an application rule"
+    },
+    {
+     "t": "2:05:18",
+     "sec": 7518,
+     "title": "Add network and DNAT rules"
+    },
+    {
+     "t": "2:10:16",
+     "sec": 7816,
+     "title": "Test the firewall"
+    },
+    {
+     "t": "2:13:09",
+     "sec": 7989,
+     "title": "Lab: Azure virtual network service endpoints"
+    },
+    {
+     "t": "2:21:01",
+     "sec": 8461,
+     "title": "Restrict network access to a storage account"
+    },
+    {
+     "t": "2:30:25",
+     "sec": 9025,
+     "title": "Lab: Azure Monitor for networking"
+    },
+    {
+     "t": "2:33:08",
+     "sec": 9188,
+     "title": "Create the load balancer"
+    },
+    {
+     "t": "2:34:54",
+     "sec": 9294,
+     "title": "Create a health probe and load balancing rule"
+    },
+    {
+     "t": "2:40:07",
+     "sec": 9607,
+     "title": "Test the load balancer"
+    },
+    {
+     "t": "2:43:24",
+     "sec": 9804,
+     "title": "Create a Log Analytics workspace to monitor it"
+    }
+   ]
+  },
+  "js-vnet": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "7rzawA--r20",
+   "title": "Azure Virtual Network Overview",
+   "channel": "John Savill's Technical Training",
+   "durationSec": 3153,
+   "published": "2020-02-04",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "01:16",
+     "sec": 76,
+     "title": "Virtual network basics"
+    },
+    {
+     "t": "04:27",
+     "sec": 267,
+     "title": "Virtual network example"
+    },
+    {
+     "t": "09:27",
+     "sec": 567,
+     "title": "External access"
+    },
+    {
+     "t": "13:53",
+     "sec": 833,
+     "title": "Connecting virtual networks"
+    },
+    {
+     "t": "21:00",
+     "sec": 1260,
+     "title": "Connecting to on-premises"
+    },
+    {
+     "t": "28:15",
+     "sec": 1695,
+     "title": "Controlling traffic flows"
+    },
+    {
+     "t": "36:59",
+     "sec": 2219,
+     "title": "Service endpoints and service endpoint policies"
+    },
+    {
+     "t": "43:29",
+     "sec": 2609,
+     "title": "Private link"
+    },
+    {
+     "t": "52:17",
+     "sec": 3137,
+     "title": "Close"
+    }
+   ]
+  },
+  "ca-pe": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "1yey_ANEOeo",
+   "title": "Why Azure Private Endpoints Exist (The Problem Nobody Explains) | Complete Demo + DNS Deep Dive",
+   "channel": "Cloud With Aarya",
+   "durationSec": 853,
+   "published": "2026-06-03",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "00:49",
+     "sec": 49,
+     "title": "Private Endpoint Theory"
+    },
+    {
+     "t": "05:35",
+     "sec": 335,
+     "title": "Private Endpoint  Demo"
+    },
+    {
+     "t": "12:56",
+     "sec": 776,
+     "title": "Recap"
+    },
+    {
+     "t": "13:42",
+     "sec": 822,
+     "title": "Important Tip!"
+    }
+   ]
+  },
+  "js-pe": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "rXbamGNz-xQ",
+   "title": "Private Endpoint DNS Exploration",
+   "channel": "John Savill's Technical Training",
+   "durationSec": 454,
+   "published": "2021-11-24",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Intro"
+    },
+    {
+     "t": "0:53",
+     "sec": 53,
+     "title": "Public DNS record"
+    },
+    {
+     "t": "1:57",
+     "sec": 117,
+     "title": "Integration with Azure Private DNS"
+    },
+    {
+     "t": "4:23",
+     "sec": 263,
+     "title": "Using custom DNS"
+    },
+    {
+     "t": "6:42",
+     "sec": 402,
+     "title": "Summary and close"
+    }
+   ]
+  },
+  "mc-nfr": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "pPHgT-p2Pco",
+   "title": "Software Architecture in Golang: Quality Attributes, Non-Functional Requirements and ilities",
+   "channel": "Mario Carrion",
+   "durationSec": 406,
+   "published": "2021-07-01",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Start"
+    },
+    {
+     "t": "00:10",
+     "sec": 10,
+     "title": "What are Quality Attributes / Non-Functional Requirements in Software Architecture?"
+    },
+    {
+     "t": "00:22",
+     "sec": 22,
+     "title": "What are Functional Requirements in Software Architecture?"
+    },
+    {
+     "t": "00:33",
+     "sec": 33,
+     "title": "Examples of both Functional and Non-Functional Requirements?"
+    },
+    {
+     "t": "01:17",
+     "sec": 77,
+     "title": "Requirements as how the user sees them"
+    },
+    {
+     "t": "01:38",
+     "sec": 98,
+     "title": "Referring as Quality Attributes instead of Non-Functional Requirements"
+    },
+    {
+     "t": "02:09",
+     "sec": 129,
+     "title": "Software Architecture ilities"
+    },
+    {
+     "t": "04:21",
+     "sec": 261,
+     "title": "There are a lot of ilities"
+    },
+    {
+     "t": "04:44",
+     "sec": 284,
+     "title": "How to determine ilities or Quality Attributes?"
+    },
+    {
+     "t": "06:45",
+     "sec": 405,
+     "title": "Conclusions"
+    }
+   ]
+  },
+  "ab-scd": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "kii_Kukh4po",
+   "title": "SCD Type 1 and Type 2 using SQL | Implementation of Slowly Changing Dimensions",
+   "channel": "Ankit Bansal",
+   "durationSec": 1735,
+   "published": "2024-04-11",
+   "embeddable": true,
+   "chapters": []
+  },
+  "tc-scd": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "XqdZF0DJpUs",
+   "title": "SCD: Slowly changing dimensions explained with real examples",
+   "channel": "Tech Coach",
+   "durationSec": 1543,
+   "published": "2017-10-02",
+   "embeddable": true,
+   "chapters": []
+  },
+  "wh-intro": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "nGnybXRCy7E",
+   "title": "What is a Webhook? Webhooks Explained for Beginners",
+   "channel": "AppUnits AI",
+   "durationSec": 515,
+   "published": "2026-09-05",
+   "embeddable": true,
+   "chapters": []
+  },
+  "fcc-webhooks": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "41NOoEz3Tzc",
+   "title": "Webhooks for Beginners - Full Course",
+   "channel": "freeCodeCamp.org",
+   "durationSec": 8934,
+   "published": "2020-12-17",
+   "embeddable": true,
+   "chapters": []
+  },
+  "sp-err": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "CNn3TwL4ZZ0",
+   "title": "Calculating Measurement Error using Python",
+   "channel": "Stephanie Powers",
+   "durationSec": 894,
+   "published": "2024-02-25",
+   "embeddable": true,
+   "chapters": []
+  },
+  "ed-margin": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "llNNuR-x8yE",
+   "title": "Analyze Margin Changes Over Time - Analytics With Power BI & DAX",
+   "channel": "Enterprise DNA",
+   "durationSec": 442,
+   "published": "2018-01-25",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "2:39",
+     "sec": 159,
+     "title": "calculating core measures"
+    },
+    {
+     "t": "3:57",
+     "sec": 237,
+     "title": "calculating margins from last quarter"
+    },
+    {
+     "t": "4:51",
+     "sec": 291,
+     "title": "calculating margin differential"
+    },
+    {
+     "t": "5:19",
+     "sec": 319,
+     "title": "visualizing the data"
+    }
+   ]
+  },
+  "sw-lineage": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "p11p1IzfGFE",
+   "title": "What is Data Lineage? | Data Engineering in Five Minutes",
+   "channel": "Softwire",
+   "durationSec": 306,
+   "published": "2025-01-15",
+   "embeddable": true,
+   "chapters": []
+  },
+  "ds-contract": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "LfM0eVrK7Bo",
+   "title": "Data Contracts Explained: Stop Broken Pipelines Before They Start",
+   "channel": "The Data Signal",
+   "durationSec": 236,
+   "published": "2026-06-12",
+   "embeddable": true,
+   "chapters": []
+  },
+  "up-net": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "qAkbEfe0bPA",
+   "title": "Networking Basics: IP, DNS, HTTP/HTTPS & Ports for Modern Systems | Uplatz",
+   "channel": "Uplatz",
+   "durationSec": 460,
+   "published": "2025-12-25",
+   "embeddable": true,
+   "chapters": []
+  },
+  "bb-tls": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "j9QmMEWmcfo",
+   "title": "SSL, TLS, HTTPS Explained",
+   "channel": "ByteByteGo",
+   "durationSec": 354,
+   "published": "2022-12-08",
+   "embeddable": true,
+   "chapters": []
+  },
+  "sj-rbac": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "_k2M-LpxId8",
+   "title": "Role-Based Access Control Using Dependency Injection (User Roles) - FastAPI Beyond CRUD (Part 13)",
+   "channel": "Ssali Jonathan",
+   "durationSec": 1946,
+   "published": "2024-06-24",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "00:02:08",
+     "sec": 128,
+     "title": "Get current user"
+    },
+    {
+     "t": "00:12:43",
+     "sec": 763,
+     "title": "Add roles to users"
+    },
+    {
+     "t": "00:19:28",
+     "sec": 1168,
+     "title": "Implementing a role checker dependency"
+    },
+    {
+     "t": "00:25:29",
+     "sec": 1529,
+     "title": "Add role checker to API paths"
+    }
+   ]
+  },
+  "pg-rbac": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "nnHO4ORP_6M",
+   "title": "FastAPI Role-Based Authorization (RBAC) | Secure APIs with Roles",
+   "channel": "Programming Guide",
+   "durationSec": 1237,
+   "published": "2026-07-31",
+   "embeddable": true,
+   "chapters": []
+  },
+  "tt-incident": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "NUmOZ3nnS7I",
+   "title": "Incident Management in SRE Explained (Google SRE Book)",
+   "channel": "Tech Tutorials with Piyush",
+   "durationSec": 1138,
+   "published": "2026-09-30",
+   "embeddable": true,
+   "chapters": []
+  },
+  "bl-runbook": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "duCnHhtdvOg",
+   "title": "Workshop: How to Create A Streamlined Incident Management Runbook",
+   "channel": "Blameless",
+   "durationSec": 3366,
+   "published": "2023-02-07",
+   "embeddable": true,
+   "chapters": []
+  },
+  "cn-pg": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "a7ZTOtQyGrE",
+   "title": "How to create an Azure Database for PostgreSQL Flexible server in Azure portal",
+   "channel": "Cloud Nerchuko",
+   "durationSec": 422,
+   "published": "2026-03-08",
+   "embeddable": true,
+   "chapters": []
+  },
+  "kt-pgrec": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "MJ8VTwTvMSo",
+   "title": "Recover Deleted Azure PostgreSQL Database (Flexible Server)",
+   "channel": "Kris Turk",
+   "durationSec": 361,
+   "published": "2025-02-19",
+   "embeddable": true,
+   "chapters": []
+  },
+  "wv-rev": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "jFa4Rd-c4wA",
+   "title": "How to update your Azure Container Apps using Revisions",
+   "channel": "Will Velida",
+   "durationSec": 865,
+   "published": "2024-03-21",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "0:10",
+     "sec": 10,
+     "title": "What are Revisions?"
+    },
+    {
+     "t": "0:54",
+     "sec": 54,
+     "title": "What can we use them for?"
+    },
+    {
+     "t": "1:30",
+     "sec": 90,
+     "title": "Revision Modes"
+    },
+    {
+     "t": "2:48",
+     "sec": 168,
+     "title": "Change Types in Azure Container Apps"
+    },
+    {
+     "t": "4:04",
+     "sec": 244,
+     "title": "Revision labels"
+    },
+    {
+     "t": "5:34",
+     "sec": 334,
+     "title": "Revision name suffixes"
+    },
+    {
+     "t": "6:31",
+     "sec": 391,
+     "title": "Updating our Container App using the AZ CLI"
+    },
+    {
+     "t": "7:00",
+     "sec": 420,
+     "title": "Blue Green Deployments with GitHub Actions and AZ CLI"
+    },
+    {
+     "t": "13:58",
+     "sec": 838,
+     "title": "Wrap Up"
+    }
+   ]
+  },
+  "mc-traffic": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "k29K-GkJApE",
+   "title": "Traffic Splitting in Azure Container Apps | Step-by-Step Lab Demo",
+   "channel": "MadeForCloud",
+   "durationSec": 431,
+   "published": "2024-08-28",
+   "embeddable": true,
+   "chapters": []
+  },
+  "cl-deploy": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "H5z70EBtEow",
+   "title": "Deployment Strategies Explained: Blue-Green vs. Canary vs. Rolling",
+   "channel": "CodeLucky",
+   "durationSec": 260,
+   "published": "2025-06-14",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Deployment Strategies"
+    },
+    {
+     "t": "00:13",
+     "sec": 13,
+     "title": "Blue-Green Deployment Overview"
+    },
+    {
+     "t": "00:58",
+     "sec": 58,
+     "title": "Blue-Green Implementation"
+    },
+    {
+     "t": "01:37",
+     "sec": 97,
+     "title": "Canary Deployment Overview"
+    },
+    {
+     "t": "02:11",
+     "sec": 131,
+     "title": "Canary Implementation"
+    },
+    {
+     "t": "02:40",
+     "sec": 160,
+     "title": "Rolling Deployment Overview"
+    },
+    {
+     "t": "03:06",
+     "sec": 186,
+     "title": "Rolling Implementation"
+    },
+    {
+     "t": "03:33",
+     "sec": 213,
+     "title": "Deployment Strategies Comparison"
+    },
+    {
+     "t": "04:04",
+     "sec": 244,
+     "title": "Outro"
+    }
+   ]
+  },
+  "sc-deploy": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "uzlr9HC0Fuo",
+   "title": "Azure Pipelines Deployment Strategies Explained | Blue-Green, Canary | AZ-400 DevOps Engineer",
+   "channel": "Skilltech Club",
+   "durationSec": 2009,
+   "published": "2026-03-20",
+   "embeddable": true,
+   "chapters": []
+  },
+  "kv-m365": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "3-glyvBK8fM",
+   "title": "Azure Key Vault Tutorial: Stop Leaking Your Secrets!",
+   "channel": "m365 Show | M365, Azure Cloud, Power Platform & AI",
+   "durationSec": 1104,
+   "published": "2026-10-20",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "The danger of hardcoded secrets"
+    },
+    {
+     "t": "1:45",
+     "sec": 105,
+     "title": "What is Azure Key Vault?"
+    },
+    {
+     "t": "3:30",
+     "sec": 210,
+     "title": "Secrets, Keys, and Certificates explained"
+    },
+    {
+     "t": "6:00",
+     "sec": 360,
+     "title": "RBAC vs. Legacy Access Policies"
+    },
+    {
+     "t": "8:30",
+     "sec": 510,
+     "title": "The #1 security mistake: The Contributor trap"
+    },
+    {
+     "t": "11:15",
+     "sec": 675,
+     "title": "Managed Identity: The gold standard for security"
+    },
+    {
+     "t": "13:50",
+     "sec": 830,
+     "title": "Pricing and multi-vault strategies"
+    },
+    {
+     "t": "15:45",
+     "sec": 945,
+     "title": "How Key Vault integrates with the Azure ecosystem"
+    },
+    {
+     "t": "17:30",
+     "sec": 1050,
+     "title": "4 steps to secure your vault today"
+    }
+   ]
+  },
+  "kv-full": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "k3NOiynQD5E",
+   "title": "Azure Key Vault Complete Tutorial | Azure Devops | .Net Core",
+   "channel": "AzureTeach•Net",
+   "durationSec": 4101,
+   "published": "2021-11-23",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "02:16",
+     "sec": 136,
+     "title": "Creating Azure Key Vault"
+    },
+    {
+     "t": "16:03",
+     "sec": 963,
+     "title": "Encryption and Decryption Using Key Vault Keys"
+    },
+    {
+     "t": "28:12",
+     "sec": 1692,
+     "title": "Azure Key Vault Secrets"
+    },
+    {
+     "t": "32:15",
+     "sec": 1935,
+     "title": "Attaching Key vault secrets to .net Core Configuration"
+    },
+    {
+     "t": "43:58",
+     "sec": 2638,
+     "title": "Azure AD Authentication using Certificates"
+    },
+    {
+     "t": "01:03:19",
+     "sec": 3799,
+     "title": "Azure Disk Encryption"
+    },
+    {
+     "t": "01:06:01",
+     "sec": 3961,
+     "title": "Azure Key vault alerts"
+    }
+   ]
+  },
+  "mr-waf": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "dT233xJ3xPs",
+   "title": "Microsoft Azure Well-Architected Framework",
+   "channel": "Microsoft Reactor",
+   "durationSec": 3390,
+   "published": "2022-11-14",
+   "embeddable": true,
+   "chapters": []
+  },
+  "sb-slo": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "ywNR71uGvHI",
+   "title": "10   SRE Fundamentals — SLIs, SLOs & Error Budgets",
+   "channel": "Scott Benson",
+   "durationSec": 475,
+   "published": "2026-02-24",
+   "embeddable": true,
+   "chapters": []
+  },
+  "cf-slo": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "30s_Jsa29M0",
+   "title": "Alerting on SLOs and Error Budget Policies | Ricardo Castro | Conf42 SRE 2022",
+   "channel": "Conf42",
+   "durationSec": 1568,
+   "published": "2022-07-12",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Intro"
+    },
+    {
+     "t": "2:13",
+     "sec": 133,
+     "title": "Talk"
+    }
+   ]
+  },
+  "wc-http": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "kiVGRA0HiqQ",
+   "title": "HTTP Crash Course | How The Web Works | 15 Minutes",
+   "channel": "WolfDenCode",
+   "durationSec": 855,
+   "published": "2024-12-19",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "You already are using HTTP!"
+    },
+    {
+     "t": "0:40",
+     "sec": 40,
+     "title": "What is HTTP?"
+    },
+    {
+     "t": "1:05",
+     "sec": 65,
+     "title": "What is HTTPS?"
+    },
+    {
+     "t": "1:40",
+     "sec": 100,
+     "title": "Request Methods"
+    },
+    {
+     "t": "3:20",
+     "sec": 200,
+     "title": "Request Header & Body"
+    },
+    {
+     "t": "4:30",
+     "sec": 270,
+     "title": "Status Codes"
+    },
+    {
+     "t": "5:30",
+     "sec": 330,
+     "title": "Well Known Status Codes"
+    },
+    {
+     "t": "6:30",
+     "sec": 390,
+     "title": "ThunderClient Setup"
+    },
+    {
+     "t": "7:30",
+     "sec": 450,
+     "title": "Testing Get Requests"
+    },
+    {
+     "t": "9:30",
+     "sec": 570,
+     "title": "Testing Post Requests"
+    },
+    {
+     "t": "11:30",
+     "sec": 690,
+     "title": "Testing Delete Request"
+    },
+    {
+     "t": "12:15",
+     "sec": 735,
+     "title": "Testing Put Request"
+    },
+    {
+     "t": "13:00",
+     "sec": 780,
+     "title": "Network Tab"
+    }
+   ]
+  },
+  "gh-branch": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "7YovOpvO3S0",
+   "title": "Git Branching and Merging Tutorial for Beginners: Create, Switch & Merge",
+   "channel": "freeplacementcourse",
+   "durationSec": 725,
+   "published": "2026-07-10",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "What is a Git Branch? (Core Concept)"
+    },
+    {
+     "t": "0:45",
+     "sec": 45,
+     "title": "When to Use Branches in Software Teams"
+    },
+    {
+     "t": "1:25",
+     "sec": 85,
+     "title": "Checking Your Staging Area Status (`git status`)"
+    },
+    {
+     "t": "2:00",
+     "sec": 120,
+     "title": "Committing Existing Files to Master Branch"
+    },
+    {
+     "t": "3:03",
+     "sec": 183,
+     "title": "How to Create a New Git Branch (`git branch`)"
+    },
+    {
+     "t": "3:45",
+     "sec": 225,
+     "title": "Switched to a Branch Safely Using `git checkout`"
+    },
+    {
+     "t": "4:55",
+     "sec": 295,
+     "title": "Clearing Your Git Bash Terminal Screen"
+    },
+    {
+     "t": "5:15",
+     "sec": 315,
+     "title": "Creating New Project Files (`touch`) inside a Branch"
+    },
+    {
+     "t": "6:00",
+     "sec": 360,
+     "title": "Staging & Committing Files on Your Custom Branch"
+    },
+    {
+     "t": "7:48",
+     "sec": 468,
+     "title": "Introduction to Git Merging (Integrating Code)"
+    },
+    {
+     "t": "8:35",
+     "sec": 515,
+     "title": "Switching Back to the Master Branch"
+    },
+    {
+     "t": "9:20",
+     "sec": 560,
+     "title": "Verifying File Changes Across Different Branches"
+    },
+    {
+     "t": "10:10",
+     "sec": 610,
+     "title": "How to Merge a Branch into Master (`git merge`)"
+    },
+    {
+     "t": "11:15",
+     "sec": 675,
+     "title": "Branching & Merging in Production Environments"
+    }
+   ]
+  },
+  "ssd-branch": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "Q1kHG842HoI",
+   "title": "Git Branching and Merging - Detailed Tutorial",
+   "channel": "SuperSimpleDev",
+   "durationSec": 3267,
+   "published": "2021-06-13",
+   "embeddable": false,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Branching"
+    },
+    {
+     "t": "1:42",
+     "sec": 102,
+     "title": "Branching example"
+    },
+    {
+     "t": "11:31",
+     "sec": 691,
+     "title": "Merging"
+    },
+    {
+     "t": "19:23",
+     "sec": 1163,
+     "title": "Merge conflicts"
+    },
+    {
+     "t": "27:26",
+     "sec": 1646,
+     "title": "Feature branch workflow"
+    },
+    {
+     "t": "37:51",
+     "sec": 2271,
+     "title": "Update local repository after merge"
+    },
+    {
+     "t": "40:27",
+     "sec": 2427,
+     "title": "Merge conflicts in feature branch workflow"
+    },
+    {
+     "t": "48:52",
+     "sec": 2932,
+     "title": "Resolve merge conflicts on our computer"
+    }
+   ]
   }
  }
 }

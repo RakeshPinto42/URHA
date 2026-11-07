@@ -1,480 +1,1220 @@
 {
-  "_note": "Curated YouTube resources. Only id + why are hand-written; title, channel, duration, publish date and chapters come from scripts/verify-videos.mjs (data/videos-verified.json). A video that fails verification is never shown as verified.",
-  "videos": [
-    {
-      "key": "py-lists",
-      "id": "W8KRzm-HUcc",
-      "why": "Lists, tuples and sets with their trade-offs, quickly. Use only where gaps exist."
-    },
-    {
-      "key": "py-dicts",
-      "id": "daefaLgNkw0",
-      "why": "Dictionaries in ten minutes: the structure behind every JSON payload you will handle."
-    },
-    {
-      "key": "py-funcs",
-      "id": "9Os0o3wzS_I",
-      "why": "Functions, arguments and return values, the unit every module is built from."
-    },
-    {
-      "key": "py-modules",
-      "id": "CqvZ3vGoGs0",
-      "why": "Imports, sys.path and the standard library: how Python finds your code."
-    },
-    {
-      "key": "py-oop1",
-      "id": "ZDa-Z5JzLYM",
-      "why": "First of a six-part OOP series that is still the clearest available."
-    },
-    {
-      "key": "py-oop2",
-      "id": "BJ-VvGyQxho",
-      "why": "Class versus instance state: a frequent source of shared-state bugs."
-    },
-    {
-      "key": "py-oop3",
-      "id": "rq8cL2XMM5M",
-      "why": "classmethods as alternative constructors, e.g. building a row from a CSV line."
-    },
-    {
-      "key": "py-oop4",
-      "id": "RSl87lqOXDE",
-      "why": "Inheritance done carefully; pair it with the composition exercise."
-    },
-    {
-      "key": "py-oop5",
-      "id": "3ohzBxoFHAY",
-      "why": "Dunder methods make domain objects (money, ledger lines) behave naturally."
-    },
-    {
-      "key": "py-oop6",
-      "id": "jCzT9XFZ5bw",
-      "why": "Properties for validated, derived attributes."
-    },
-    {
-      "key": "py-except",
-      "id": "NIWwJbo-9_8",
-      "why": "try/except/else/finally, and raising your own exceptions."
-    },
-    {
-      "key": "py-types",
-      "id": "RwH2UzC2rIo",
-      "why": "Current (2025) end-to-end guide: annotations to generics, with mypy."
-    },
-    {
-      "key": "py-types-why",
-      "id": "0oBLMwHdZ2Y",
-      "why": "Why types matter in code review: the engineering argument, briefly."
-    },
-    {
-      "key": "py-deco",
-      "id": "FsAPt_9Bf3U",
-      "why": "Decorators from closures upwards; needed to read FastAPI and pytest code."
-    },
-    {
-      "key": "py-gen",
-      "id": "bD05uGo_sVI",
-      "why": "Generators for streaming large files row by row."
-    },
-    {
-      "key": "py-json",
-      "id": "9N6a-VLBa2I",
-      "why": "Loading and writing JSON, the format of every API and LLM response."
-    },
-    {
-      "key": "py-files",
-      "id": "Uh2ebFW8OYM",
-      "why": "Reading and writing files safely with context managers."
-    },
-    {
-      "key": "py-ctx",
-      "id": "-aKFBoZpiqA",
-      "why": "Context managers: the pattern behind files, transactions and locks."
-    },
-    {
-      "key": "py-venv",
-      "id": "Kg1Yvry_Ydk",
-      "why": "How virtual environments isolate dependencies (Mac/Linux shown; concepts identical on Windows)."
-    },
-    {
-      "key": "py-uv",
-      "id": "AMdG7IjgSPM",
-      "why": "uv (2025): one tool for environments, dependencies and lock files. The current practice."
-    },
-    {
-      "key": "py-async",
-      "id": "oAkLSJNr5zY",
-      "why": "Animated, current (2025) explanation of the event loop, tasks and when not to use asyncio."
-    },
-    {
-      "key": "py-logbasic",
-      "id": "g8nQ90Hk328",
-      "why": "Eight-minute introduction to the logging module."
-    },
-    {
-      "key": "py-logadv",
-      "id": "jxmzY9soFXg",
-      "why": "Loggers, handlers and formatters: production logging structure."
-    },
-    {
-      "key": "pd-1",
-      "id": "ZyhVh-qRZPA",
-      "why": "Selective pandas: loading data and DataFrame basics, applied to reconciliation extracts."
-    },
-    {
-      "key": "ms-git",
-      "id": "2sjqTHE0zok",
-      "why": "Git's data model (snapshots, commits, refs). Understanding the model ends Git confusion."
-    },
-    {
-      "key": "ms-shell",
-      "id": "Z56Jmr9Z34Q",
-      "why": "The shell from first principles: the base for Docker, CI and servers."
-    },
-    {
-      "key": "vsc-debug",
-      "id": "w8QHoVam1-I",
-      "why": "Six minutes: breakpoints, stepping and variables in VS Code."
-    },
-    {
-      "key": "fcc-pytest",
-      "id": "cHYq1MRoyI0",
-      "why": "The freeCodeCamp pytest course from the original plan; chaptered for fixtures, parametrize and mocking."
-    },
-    {
-      "key": "py-unittest",
-      "id": "6tNS--WetLI",
-      "why": "Includes unittest.mock patching of an external request."
-    },
-    {
-      "key": "py-mockpatch",
-      "id": "WFRljVPHrkE",
-      "why": "Short and precise on the 'where to patch' rule that trips most people."
-    },
-    {
-      "key": "sql-baraa",
-      "id": "SSKVgrwhzus",
-      "why": "Data with Baraa's SQL course: use only the chaptered sections mapped to each subtopic."
-    },
-    {
-      "key": "db-design",
-      "id": "_jf7KZqne-8",
-      "why": "Data modelling and normalisation, chaptered; take only the relational sections."
-    },
-    {
-      "key": "pg-acid",
-      "id": "pomxJOFVcQs",
-      "why": "Hussein Nasser on ACID with examples: what a transaction really guarantees."
-    },
-    {
-      "key": "pg-index",
-      "id": "-qNSXK7s7_w",
-      "why": "How PostgreSQL uses (and ignores) indexes, with EXPLAIN."
-    },
-    {
-      "key": "sqla-crash",
-      "id": "XWtj4zLl_tg",
-      "why": "SQLAlchemy 2.0-style ORM, chaptered."
-    },
-    {
-      "key": "sqla-bayer",
-      "id": "Uym2DHnUEno",
-      "why": "SQLAlchemy 2.0 tutorial walk-through by its author, Mike Bayer."
-    },
-    {
-      "key": "fcc-api",
-      "id": "0sOvCWFmrtA",
-      "why": "freeCodeCamp's 19-hour FastAPI course, chaptered. Every Phase 2 backend subtopic maps to a section."
-    },
-    {
-      "key": "oauth-oidc",
-      "id": "996OiexHze0",
-      "why": "OAuth 2.0 and OIDC in plain English (OktaDev); still the reference explanation."
-    },
-    {
-      "key": "idem",
-      "id": "jfHBrweuKRA",
-      "why": "Three-minute idempotency keys explainer."
-    },
-    {
-      "key": "backoff",
-      "id": "NByH-cau97A",
-      "why": "Exponential backoff with jitter, briefly."
-    },
-    {
-      "key": "llm-intro",
-      "id": "zjkBMFhNj_g",
-      "why": "Karpathy's one-hour mental model of LLMs, including tool use and security."
-    },
-    {
-      "key": "llm-deep",
-      "id": "7xTGNNLPyMI",
-      "why": "Karpathy's deep dive: tokens, pre-training, post-training, hallucination. Use the mapped chapters."
-    },
-    {
-      "key": "llm-tokenizer",
-      "id": "zduSFxRajkE",
-      "why": "Optional depth: why tokenisation explains odd model behaviour and cost."
-    },
-    {
-      "key": "transformers",
-      "id": "wjZofJX0v4M",
-      "why": "3Blue1Brown's visual explanation of what happens inside a transformer."
-    },
-    {
-      "key": "structured",
-      "id": "4rFVLMBwjGY",
-      "why": "Microsoft Reactor: function calling and structured outputs in Python."
-    },
-    {
-      "key": "pydantic-llm",
-      "id": "yj-wSRJwrrc",
-      "why": "Jason Liu on Pydantic as the contract for LLM outputs."
-    },
-    {
-      "key": "prompt101",
-      "id": "ysPbXH0LpIE",
-      "why": "Anthropic's own Prompting 101 workshop: building a prompt from scratch."
-    },
-    {
-      "key": "ctx-eng",
-      "id": "4GiqzUHD5AA",
-      "why": "Context engineering: selecting, compressing and isolating context."
-    },
-    {
-      "key": "injection",
-      "id": "FgxwCaL6UTA",
-      "why": "Simon Willison, who named prompt injection, explaining why it is hard."
-    },
-    {
-      "key": "docs-ready",
-      "id": "9lBTS5dM27c",
-      "why": "Parsing PDFs and documents into clean input, chaptered."
-    },
-    {
-      "key": "embeddings",
-      "id": "rq5pF1iPcZI",
-      "why": "Embeddings and cosine similarity in under ten minutes."
-    },
-    {
-      "key": "chunk5",
-      "id": "8OJC21T2SL4",
-      "why": "Greg Kamradt's five levels of text splitting."
-    },
-    {
-      "key": "chunk-sem",
-      "id": "TcRRfcbsApw",
-      "why": "Semantic chunking compared with fixed-size chunks."
-    },
-    {
-      "key": "pgvector",
-      "id": "j1QcPSLj7u0",
-      "why": "pgvector in practice: vectors next to your relational data."
-    },
-    {
-      "key": "hybrid",
-      "id": "D8LmsEOJvPI",
-      "why": "BM25 + vector + Reciprocal Rank Fusion, explained end to end."
-    },
-    {
-      "key": "rerank",
-      "id": "Uh9bYiVrW_s",
-      "why": "Two-stage retrieval with a reranker."
-    },
-    {
-      "key": "rag-scratch",
-      "id": "sVcwVQRHIc8",
-      "why": "RAG from scratch (LangChain engineer): indexing, query transformation, routing."
-    },
-    {
-      "key": "ragas",
-      "id": "-_52DIIOsCE",
-      "why": "Measuring retrieval and answer quality with RAGAS metrics."
-    },
-    {
-      "key": "agents-anth",
-      "id": "uhJJgc-0iTQ",
-      "why": "Anthropic on building effective agents: workflows versus agents, tools, failure."
-    },
-    {
-      "key": "agents-ng",
-      "id": "KrRD7r7y7NY",
-      "why": "Andrew Ng's four agentic patterns: reflection, tool use, planning, multi-agent."
-    },
-    {
-      "key": "agent-memory",
-      "id": "aYfZN8t6AQs",
-      "why": "Short- and long-term agent memory architecture."
-    },
-    {
-      "key": "lg-reliable",
-      "id": "kTnfJszFxCg",
-      "why": "Harrison Chase (LangGraph) on reliable enterprise agents."
-    },
-    {
-      "key": "hitl",
-      "id": "7GOxUgVTz3s",
-      "why": "Human-in-the-loop approval for agents, practically."
-    },
-    {
-      "key": "mcp-anth",
-      "id": "aZLr962R6Ag",
-      "why": "Anthropic: building with MCP and the Claude API, chaptered."
-    },
-    {
-      "key": "mcp-server",
-      "id": "-8k9lGpGQ6g",
-      "why": "Writing a custom MCP server in Python."
-    },
-    {
-      "key": "routing",
-      "id": "2ld7cR9y0Po",
-      "why": "Routing work across models for cost and quality."
-    },
-    {
-      "key": "evals-mistakes",
-      "id": "GL0XhAj5LPE",
-      "why": "Hamel Husain on the common mistakes in LLM evals."
-    },
-    {
-      "key": "evals-auto",
-      "id": "tqUDjc1HzO4",
-      "why": "Turning error analysis into automated evaluators (2026)."
-    },
-    {
-      "key": "judge",
-      "id": "kP_aaFnXLmY",
-      "why": "Building an LLM judge and aligning it with human labels."
-    },
-    {
-      "key": "agent-evals",
-      "id": "Ubwb6NzegyA",
-      "why": "Google DeepMind on evaluating multi-step agents."
-    },
-    {
-      "key": "otel",
-      "id": "LQOeaxfiAt8",
-      "why": "How distributed tracing works (OpenTelemetry), the model Langfuse builds on."
-    },
-    {
-      "key": "llm-obs",
-      "id": "Q9zd548hqiQ",
-      "why": "What to monitor in LLM systems: quality, drift, cost and latency."
-    },
-    {
-      "key": "langfuse-10",
-      "id": "2E8iTvGo9Hs",
-      "why": "Official ten-minute Langfuse tour: tracing, prompts, evals, datasets."
-    },
-    {
-      "key": "langfuse-trace",
-      "id": "pTneXS_m1rk",
-      "why": "Official deep dive on Langfuse tracing."
-    },
-    {
-      "key": "guardrails",
-      "id": "rMUycP_cp9g",
-      "why": "Guardrails against misuse, leakage and prompt attacks, in code."
-    },
-    {
-      "key": "owasp",
-      "id": "gUNXZMcd2jU",
-      "why": "IBM's walk-through of the OWASP Top 10 for LLMs."
-    },
-    {
-      "key": "data-gov",
-      "id": "EI8R5UuZt4U",
-      "why": "Data governance concepts and roles."
-    },
-    {
-      "key": "resp-ai",
-      "id": "MluoD8Z1ARQ",
-      "why": "Responsible AI governance in business terms."
-    },
-    {
-      "key": "docker-nana",
-      "id": "3c-iBn73dDE",
-      "why": "TechWorld with Nana's Docker course, chaptered (Compose, Dockerfile, volumes)."
-    },
-    {
-      "key": "dockerfile",
-      "id": "tc713anE3UY",
-      "why": "Small, cache-friendly Python images (2025)."
-    },
-    {
-      "key": "gha-nana",
-      "id": "R8_veQiYBjI",
-      "why": "GitHub Actions concepts and a CI/CD pipeline with Docker."
-    },
-    {
-      "key": "ci-pytest",
-      "id": "DhUpxWjOhME",
-      "why": "Running pytest in GitHub Actions before anything ships."
-    },
-    {
-      "key": "azure",
-      "id": "usvlTo0TDoA",
-      "why": "John Savill (2026) on how to learn Azure efficiently: access, portal, Cloud Shell, Microsoft Learn and certifications."
-    },
-    {
-      "key": "aca",
-      "id": "LogxM4r2a58",
-      "why": "Azure Container Apps hands-on (CLI, portal, image deployment)."
-    },
-    {
-      "key": "entra-overview",
-      "id": "bSIF_GjaCmo",
-      "why": "John Savill's Entra overview."
-    },
-    {
-      "key": "entra-deep",
-      "id": "cE3IiHGuHvs",
-      "why": "Entra ID components in depth, chaptered."
-    },
-    {
-      "key": "cost",
-      "id": "lHxl5SchjPA",
-      "why": "Where LLM cost comes from and how to cut it."
-    },
-    {
-      "key": "sysdesign",
-      "id": "mwN75EiGfCE",
-      "why": "End-to-end agentic system design in 27 minutes."
-    },
-    {
-      "key": "eda",
-      "id": "QNfIUIZQ9Vo",
-      "why": "Event-driven architecture: events, queues, pub/sub."
-    },
-    {
-      "key": "multiagent",
-      "id": "ow1we5PzK-o",
-      "why": "How a production multi-agent system is structured."
-    },
-    {
-      "key": "agent-sec",
-      "id": "jZXvqEqJT7o",
-      "why": "Securing agents: identity, permissions, sandboxing, injection defence."
-    },
-    {
-      "key": "ai-gov",
-      "id": "NrkJLbn3dDE",
-      "why": "SANS: the must-haves of an AI governance framework."
-    },
-    {
-      "key": "c4",
-      "id": "x2-rSnhpw0g",
-      "why": "Simon Brown, creator of the C4 model, presenting it."
-    },
-    {
-      "key": "adr",
-      "id": "LMBqGPLvonU",
-      "why": "Mark Richards: ADRs in ten minutes."
-    },
-    {
-      "key": "adr-keeling",
-      "id": "-JqraBhrrjI",
-      "why": "Michael Keeling on ADR practice in teams."
-    }
-  ]
+ "_note": "Curated YouTube resources. Only id + why are hand-written; title, channel, duration, publish date and chapters come from scripts/verify-videos.mjs (data/videos-verified.json). A video that fails verification is never shown as verified.",
+ "videos": [
+  {
+   "key": "py-lists",
+   "id": "W8KRzm-HUcc",
+   "why": "Lists, tuples and sets with their trade-offs, quickly. Use only where gaps exist."
+  },
+  {
+   "key": "py-dicts",
+   "id": "daefaLgNkw0",
+   "why": "Dictionaries in ten minutes: the structure behind every JSON payload you will handle."
+  },
+  {
+   "key": "py-funcs",
+   "id": "9Os0o3wzS_I",
+   "why": "Functions, arguments and return values, the unit every module is built from."
+  },
+  {
+   "key": "py-modules",
+   "id": "CqvZ3vGoGs0",
+   "why": "Imports, sys.path and the standard library: how Python finds your code."
+  },
+  {
+   "key": "py-oop1",
+   "id": "ZDa-Z5JzLYM",
+   "why": "First of a six-part OOP series that is still the clearest available."
+  },
+  {
+   "key": "py-oop2",
+   "id": "BJ-VvGyQxho",
+   "why": "Class versus instance state: a frequent source of shared-state bugs."
+  },
+  {
+   "key": "py-oop3",
+   "id": "rq8cL2XMM5M",
+   "why": "classmethods as alternative constructors, e.g. building a row from a CSV line."
+  },
+  {
+   "key": "py-oop4",
+   "id": "RSl87lqOXDE",
+   "why": "Inheritance done carefully; pair it with the composition exercise."
+  },
+  {
+   "key": "py-oop5",
+   "id": "3ohzBxoFHAY",
+   "why": "Dunder methods make domain objects (money, ledger lines) behave naturally."
+  },
+  {
+   "key": "py-oop6",
+   "id": "jCzT9XFZ5bw",
+   "why": "Properties for validated, derived attributes."
+  },
+  {
+   "key": "py-except",
+   "id": "NIWwJbo-9_8",
+   "why": "try/except/else/finally, and raising your own exceptions."
+  },
+  {
+   "key": "py-types",
+   "id": "RwH2UzC2rIo",
+   "why": "Current (2025) end-to-end guide: annotations to generics, with mypy."
+  },
+  {
+   "key": "py-types-why",
+   "id": "0oBLMwHdZ2Y",
+   "why": "Why types matter in code review: the engineering argument, briefly."
+  },
+  {
+   "key": "py-deco",
+   "id": "FsAPt_9Bf3U",
+   "why": "Decorators from closures upwards; needed to read FastAPI and pytest code."
+  },
+  {
+   "key": "py-gen",
+   "id": "bD05uGo_sVI",
+   "why": "Generators for streaming large files row by row."
+  },
+  {
+   "key": "py-json",
+   "id": "9N6a-VLBa2I",
+   "why": "Loading and writing JSON, the format of every API and LLM response."
+  },
+  {
+   "key": "py-files",
+   "id": "Uh2ebFW8OYM",
+   "why": "Reading and writing files safely with context managers."
+  },
+  {
+   "key": "py-ctx",
+   "id": "-aKFBoZpiqA",
+   "why": "Context managers: the pattern behind files, transactions and locks."
+  },
+  {
+   "key": "py-venv",
+   "id": "Kg1Yvry_Ydk",
+   "why": "How virtual environments isolate dependencies (Mac/Linux shown; concepts identical on Windows)."
+  },
+  {
+   "key": "py-uv",
+   "id": "AMdG7IjgSPM",
+   "why": "uv (2025): one tool for environments, dependencies and lock files. The current practice."
+  },
+  {
+   "key": "py-async",
+   "id": "oAkLSJNr5zY",
+   "why": "Animated, current (2025) explanation of the event loop, tasks and when not to use asyncio."
+  },
+  {
+   "key": "py-logbasic",
+   "id": "g8nQ90Hk328",
+   "why": "Eight-minute introduction to the logging module."
+  },
+  {
+   "key": "py-logadv",
+   "id": "jxmzY9soFXg",
+   "why": "Loggers, handlers and formatters: production logging structure."
+  },
+  {
+   "key": "pd-1",
+   "id": "ZyhVh-qRZPA",
+   "why": "Selective pandas: loading data and DataFrame basics, applied to reconciliation extracts."
+  },
+  {
+   "key": "ms-git",
+   "id": "2sjqTHE0zok",
+   "why": "Git's data model (snapshots, commits, refs). Understanding the model ends Git confusion."
+  },
+  {
+   "key": "ms-shell",
+   "id": "Z56Jmr9Z34Q",
+   "why": "The shell from first principles: the base for Docker, CI and servers."
+  },
+  {
+   "key": "vsc-debug",
+   "id": "w8QHoVam1-I",
+   "why": "Six minutes: breakpoints, stepping and variables in VS Code."
+  },
+  {
+   "key": "fcc-pytest",
+   "id": "cHYq1MRoyI0",
+   "why": "The freeCodeCamp pytest course from the original plan; chaptered for fixtures, parametrize and mocking."
+  },
+  {
+   "key": "py-unittest",
+   "id": "6tNS--WetLI",
+   "why": "Includes unittest.mock patching of an external request."
+  },
+  {
+   "key": "py-mockpatch",
+   "id": "WFRljVPHrkE",
+   "why": "Short and precise on the 'where to patch' rule that trips most people."
+  },
+  {
+   "key": "sql-baraa",
+   "id": "SSKVgrwhzus",
+   "why": "Data with Baraa's SQL course: use only the chaptered sections mapped to each subtopic."
+  },
+  {
+   "key": "db-design",
+   "id": "_jf7KZqne-8",
+   "why": "Data modelling and normalisation, chaptered; take only the relational sections."
+  },
+  {
+   "key": "pg-acid",
+   "id": "pomxJOFVcQs",
+   "why": "Hussein Nasser on ACID with examples: what a transaction really guarantees."
+  },
+  {
+   "key": "pg-index",
+   "id": "-qNSXK7s7_w",
+   "why": "How PostgreSQL uses (and ignores) indexes, with EXPLAIN."
+  },
+  {
+   "key": "sqla-crash",
+   "id": "XWtj4zLl_tg",
+   "why": "SQLAlchemy 2.0-style ORM, chaptered."
+  },
+  {
+   "key": "sqla-bayer",
+   "id": "Uym2DHnUEno",
+   "why": "SQLAlchemy 2.0 tutorial walk-through by its author, Mike Bayer."
+  },
+  {
+   "key": "fcc-api",
+   "id": "0sOvCWFmrtA",
+   "why": "freeCodeCamp's 19-hour FastAPI course, chaptered. Every Phase 2 backend subtopic maps to a section."
+  },
+  {
+   "key": "oauth-oidc",
+   "id": "996OiexHze0",
+   "why": "OAuth 2.0 and OIDC in plain English (OktaDev); still the reference explanation."
+  },
+  {
+   "key": "idem",
+   "id": "jfHBrweuKRA",
+   "why": "Three-minute idempotency keys explainer."
+  },
+  {
+   "key": "backoff",
+   "id": "NByH-cau97A",
+   "why": "Exponential backoff with jitter, briefly."
+  },
+  {
+   "key": "llm-intro",
+   "id": "zjkBMFhNj_g",
+   "why": "Karpathy's one-hour mental model of LLMs, including tool use and security."
+  },
+  {
+   "key": "llm-deep",
+   "id": "7xTGNNLPyMI",
+   "why": "Karpathy's deep dive: tokens, pre-training, post-training, hallucination. Use the mapped chapters."
+  },
+  {
+   "key": "llm-tokenizer",
+   "id": "zduSFxRajkE",
+   "why": "Optional depth: why tokenisation explains odd model behaviour and cost."
+  },
+  {
+   "key": "transformers",
+   "id": "wjZofJX0v4M",
+   "why": "3Blue1Brown's visual explanation of what happens inside a transformer."
+  },
+  {
+   "key": "structured",
+   "id": "4rFVLMBwjGY",
+   "why": "Microsoft Reactor: function calling and structured outputs in Python."
+  },
+  {
+   "key": "pydantic-llm",
+   "id": "yj-wSRJwrrc",
+   "why": "Jason Liu on Pydantic as the contract for LLM outputs."
+  },
+  {
+   "key": "prompt101",
+   "id": "ysPbXH0LpIE",
+   "why": "Anthropic's own Prompting 101 workshop: building a prompt from scratch."
+  },
+  {
+   "key": "ctx-eng",
+   "id": "4GiqzUHD5AA",
+   "why": "Context engineering: selecting, compressing and isolating context."
+  },
+  {
+   "key": "injection",
+   "id": "FgxwCaL6UTA",
+   "why": "Simon Willison, who named prompt injection, explaining why it is hard."
+  },
+  {
+   "key": "docs-ready",
+   "id": "9lBTS5dM27c",
+   "why": "Parsing PDFs and documents into clean input, chaptered."
+  },
+  {
+   "key": "embeddings",
+   "id": "rq5pF1iPcZI",
+   "why": "Embeddings and cosine similarity in under ten minutes."
+  },
+  {
+   "key": "chunk5",
+   "id": "8OJC21T2SL4",
+   "why": "Greg Kamradt's five levels of text splitting."
+  },
+  {
+   "key": "chunk-sem",
+   "id": "TcRRfcbsApw",
+   "why": "Semantic chunking compared with fixed-size chunks."
+  },
+  {
+   "key": "pgvector",
+   "id": "j1QcPSLj7u0",
+   "why": "pgvector in practice: vectors next to your relational data."
+  },
+  {
+   "key": "hybrid",
+   "id": "D8LmsEOJvPI",
+   "why": "BM25 + vector + Reciprocal Rank Fusion, explained end to end."
+  },
+  {
+   "key": "rerank",
+   "id": "Uh9bYiVrW_s",
+   "why": "Two-stage retrieval with a reranker."
+  },
+  {
+   "key": "rag-scratch",
+   "id": "sVcwVQRHIc8",
+   "why": "RAG from scratch (LangChain engineer): indexing, query transformation, routing."
+  },
+  {
+   "key": "ragas",
+   "id": "-_52DIIOsCE",
+   "why": "Measuring retrieval and answer quality with RAGAS metrics."
+  },
+  {
+   "key": "agents-anth",
+   "id": "uhJJgc-0iTQ",
+   "why": "Anthropic on building effective agents: workflows versus agents, tools, failure."
+  },
+  {
+   "key": "agents-ng",
+   "id": "KrRD7r7y7NY",
+   "why": "Andrew Ng's four agentic patterns: reflection, tool use, planning, multi-agent."
+  },
+  {
+   "key": "agent-memory",
+   "id": "aYfZN8t6AQs",
+   "why": "Short- and long-term agent memory architecture."
+  },
+  {
+   "key": "lg-reliable",
+   "id": "kTnfJszFxCg",
+   "why": "Harrison Chase (LangGraph) on reliable enterprise agents."
+  },
+  {
+   "key": "hitl",
+   "id": "7GOxUgVTz3s",
+   "why": "Human-in-the-loop approval for agents, practically."
+  },
+  {
+   "key": "mcp-anth",
+   "id": "aZLr962R6Ag",
+   "why": "Anthropic: building with MCP and the Claude API, chaptered."
+  },
+  {
+   "key": "mcp-server",
+   "id": "-8k9lGpGQ6g",
+   "why": "Writing a custom MCP server in Python."
+  },
+  {
+   "key": "routing",
+   "id": "2ld7cR9y0Po",
+   "why": "Routing work across models for cost and quality."
+  },
+  {
+   "key": "evals-mistakes",
+   "id": "GL0XhAj5LPE",
+   "why": "Hamel Husain on the common mistakes in LLM evals."
+  },
+  {
+   "key": "evals-auto",
+   "id": "tqUDjc1HzO4",
+   "why": "Turning error analysis into automated evaluators (2026)."
+  },
+  {
+   "key": "judge",
+   "id": "kP_aaFnXLmY",
+   "why": "Building an LLM judge and aligning it with human labels."
+  },
+  {
+   "key": "agent-evals",
+   "id": "Ubwb6NzegyA",
+   "why": "Google DeepMind on evaluating multi-step agents."
+  },
+  {
+   "key": "otel",
+   "id": "LQOeaxfiAt8",
+   "why": "How distributed tracing works (OpenTelemetry), the model Langfuse builds on."
+  },
+  {
+   "key": "llm-obs",
+   "id": "Q9zd548hqiQ",
+   "why": "What to monitor in LLM systems: quality, drift, cost and latency."
+  },
+  {
+   "key": "langfuse-10",
+   "id": "2E8iTvGo9Hs",
+   "why": "Official ten-minute Langfuse tour: tracing, prompts, evals, datasets."
+  },
+  {
+   "key": "langfuse-trace",
+   "id": "pTneXS_m1rk",
+   "why": "Official deep dive on Langfuse tracing."
+  },
+  {
+   "key": "guardrails",
+   "id": "rMUycP_cp9g",
+   "why": "Guardrails against misuse, leakage and prompt attacks, in code."
+  },
+  {
+   "key": "owasp",
+   "id": "gUNXZMcd2jU",
+   "why": "IBM's walk-through of the OWASP Top 10 for LLMs."
+  },
+  {
+   "key": "data-gov",
+   "id": "EI8R5UuZt4U",
+   "why": "Data governance concepts and roles."
+  },
+  {
+   "key": "resp-ai",
+   "id": "MluoD8Z1ARQ",
+   "why": "Responsible AI governance in business terms."
+  },
+  {
+   "key": "docker-nana",
+   "id": "3c-iBn73dDE",
+   "why": "TechWorld with Nana's Docker course, chaptered (Compose, Dockerfile, volumes)."
+  },
+  {
+   "key": "dockerfile",
+   "id": "tc713anE3UY",
+   "why": "Small, cache-friendly Python images (2025)."
+  },
+  {
+   "key": "gha-nana",
+   "id": "R8_veQiYBjI",
+   "why": "GitHub Actions concepts and a CI/CD pipeline with Docker."
+  },
+  {
+   "key": "ci-pytest",
+   "id": "DhUpxWjOhME",
+   "why": "Running pytest in GitHub Actions before anything ships."
+  },
+  {
+   "key": "azure",
+   "id": "usvlTo0TDoA",
+   "why": "John Savill (2026) on how to learn Azure efficiently: access, portal, Cloud Shell, Microsoft Learn and certifications."
+  },
+  {
+   "key": "aca",
+   "id": "LogxM4r2a58",
+   "why": "Azure Container Apps hands-on (CLI, portal, image deployment)."
+  },
+  {
+   "key": "entra-overview",
+   "id": "bSIF_GjaCmo",
+   "why": "John Savill's Entra overview."
+  },
+  {
+   "key": "entra-deep",
+   "id": "cE3IiHGuHvs",
+   "why": "Entra ID components in depth, chaptered."
+  },
+  {
+   "key": "cost",
+   "id": "lHxl5SchjPA",
+   "why": "Where LLM cost comes from and how to cut it."
+  },
+  {
+   "key": "sysdesign",
+   "id": "mwN75EiGfCE",
+   "why": "End-to-end agentic system design in 27 minutes."
+  },
+  {
+   "key": "eda",
+   "id": "QNfIUIZQ9Vo",
+   "why": "Event-driven architecture: events, queues, pub/sub."
+  },
+  {
+   "key": "multiagent",
+   "id": "ow1we5PzK-o",
+   "why": "How a production multi-agent system is structured."
+  },
+  {
+   "key": "agent-sec",
+   "id": "jZXvqEqJT7o",
+   "why": "Securing agents: identity, permissions, sandboxing, injection defence."
+  },
+  {
+   "key": "ai-gov",
+   "id": "NrkJLbn3dDE",
+   "why": "SANS: the must-haves of an AI governance framework."
+  },
+  {
+   "key": "c4",
+   "id": "x2-rSnhpw0g",
+   "why": "Simon Brown, creator of the C4 model, presenting it."
+  },
+  {
+   "key": "adr",
+   "id": "LMBqGPLvonU",
+   "why": "Mark Richards: ADRs in ten minutes."
+  },
+  {
+   "key": "adr-keeling",
+   "id": "-JqraBhrrjI",
+   "why": "Michael Keeling on ADR practice in teams."
+  },
+  {
+   "key": "bw-dwh",
+   "id": "9GVqKuTVANE",
+   "why": "A complete warehouse built by hand, with ETL, layers and star schema all in timestamped chapters.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Explain ETL and warehouse layers and build them yourself"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "at-pandas",
+   "id": "Mdq1WWSdUtw",
+   "why": "One clear pandas course from a channel you named, chaptered by exactly the skills this module needs.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Load, filter, join, group and clean a dataset in pandas"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "cs-pandas-dates",
+   "id": "UFuo7EHI8zc",
+   "why": "Corey Schafer's focused lesson on dates, which finance periods depend on.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Parse dates and resample data by period in pandas"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "cs-env",
+   "id": "5iWhQWVXosU",
+   "why": "Short and practical. It shows Mac and Linux, so use the Windows alternative on your machine.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Keep secrets out of code using environment variables"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "tc-env-win",
+   "id": "sX_T0thJTss",
+   "why": "The same technique on Windows, which is what you run.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Set and read environment variables on Windows"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "pd-settings",
+   "id": "iDgbS3RTkTE",
+   "why": "Shows why configuration belongs in one validated settings object.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Centralise configuration with Pydantic settings"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "cs-pydantic",
+   "id": "M81pfi64eeM",
+   "why": "A full, recent Pydantic course from a trusted teacher; this is the validation layer FastAPI uses too.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Validate structured data at runtime with Pydantic"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "bi-incr",
+   "id": "a_T8xRaCO60",
+   "why": "A short, direct example of loading only what changed.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Build an incremental load in Python"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "bi-gx",
+   "id": "7UQ91Ib7PtU",
+   "why": "Practical data-quality rules that fail a pipeline loudly.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Write automated data-quality checks for a pipeline"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "al-dbx",
+   "id": "7pee6_Sq3VY",
+   "why": "A long Azure-based Databricks course, so it matches your primary cloud, with precise chapters.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Run PySpark and Delta tables on Azure Databricks"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "fp-dbx",
+   "id": "SelEvwHQQ2Y",
+   "why": "Recent, short and uses the free edition, so you can start without an Azure bill.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Find your way around Databricks and the medallion pattern"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "kk-medallion",
+   "id": "u3MSka3WLpE",
+   "why": "A second short view of the same pattern, from a practical angle.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Describe the bronze, silver and gold layers"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "al-delta",
+   "id": "O18afGTGoIU",
+   "why": "Goes deeper on Delta Lake than the main course when you need it.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Use Delta features such as time travel and schema enforcement"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "bw-pbi",
+   "id": "pQSMbRA3O6g",
+   "why": "A recent modelling course from a channel you named, with a dedicated row-level security chapter.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Design a Power BI model and apply row-level security"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "dc-pbi",
+   "id": "wJjKyIt2lBM",
+   "why": "One compact course that covers Power Query, DAX and report design with chapters.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Transform data, write DAX measures and design a report"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "gc-pbi",
+   "id": "OmW9YvxSl1E",
+   "why": "A recent Guy in a Cube walkthrough, from a channel you named.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Build a first complete Power BI report"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "aa-tf",
+   "id": "KWpIzjHyC68",
+   "why": "A recent Azure-specific beginner course, chaptered around the core Terraform workflow.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Write, plan and apply Terraform on Azure"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "ms-tf",
+   "id": "Rpl_OB62Y_c",
+   "why": "A very recent Azure course that reaches remote state, workspaces and modules.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Manage remote state, modules and environments"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "ag-otel",
+   "id": "azyVG0T1aVc",
+   "why": "Explains how distributed tracing really works, using Python and FastAPI.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Explain how a trace crosses services"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "er-otel",
+   "id": "m28TTogdcbk",
+   "why": "A hands-on walkthrough of instrumenting FastAPI.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Instrument a FastAPI service with OpenTelemetry"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "jf-appins",
+   "id": "34np53BGv3o",
+   "why": "The only lead tying OpenTelemetry to Azure App Insights dashboards, your primary cloud.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Send custom metrics to Azure App Insights"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "lc-interrupt",
+   "id": "6t7YJcEFUIY",
+   "why": "From LangChain itself, so it reflects how interrupts are meant to work.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Pause a graph for human approval and resume it"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "cc-persist",
+   "id": "9BPCV5TYPmg",
+   "why": "Covers persistence and human approval together, as your agent will use them.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Persist graph state with a checkpointer"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "av-lg",
+   "id": "FVuv5MPBzPI",
+   "why": "A focused first lesson on exactly the three core ideas.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Explain nodes, edges and state in LangGraph"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "lg-102",
+   "id": "pDuNkb6VWaM",
+   "why": "Adds conditional edges to a working graph.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Route a graph with conditional edges"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "jb-lsmith",
+   "id": "Iyc80hY2yYk",
+   "why": "A short walkthrough of tracing from a teacher already used in this curriculum.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Trace LLM calls in LangSmith"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "rk-stream",
+   "id": "FJJn3ZVm3VA",
+   "why": "Short, and covers both sync and async streaming.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Stream model responses in Python"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "sl7-aoai",
+   "id": "50ZwmkCvE88",
+   "why": "Sets up the Azure service, keys and deployments, then calls it from Python.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Create an Azure OpenAI deployment and call it"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "cl-finops",
+   "id": "_hxYKakfbtQ",
+   "why": "A full session on FinOps and cost optimisation in Azure specifically.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Apply FinOps practices to Azure costs"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "ap-finops",
+   "id": "gWDTRf_kGHI",
+   "why": "A five-minute orientation before the longer session.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Define FinOps"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "src-rpo",
+   "id": "8fVIEKJb-s0",
+   "why": "A short, clear definition of the two recovery targets.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Explain RPO and RTO"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "drp-rto",
+   "id": "McBnARj4xlU",
+   "why": "Explains why recovery objectives matter, in plain language.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Explain why recovery targets must be agreed in advance"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "sd-cb",
+   "id": "rvKKj7JU92g",
+   "why": "A recent, detailed treatment of timeouts and circuit breakers, including when not to use them.",
+   "difficulty": "advanced",
+   "objectives": [
+    "Choose timeouts and configure a circuit breaker"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "jc-locust",
+   "id": "u6VW-HqxOjg",
+   "why": "Load testing in Python from a blank file.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Run a load test with Locust"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "ld-mcp",
+   "id": "DAuZuj0BUZA",
+   "why": "One well-chaptered course covering every MCP building block, including auth.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Build an MCP server with tools, resources, prompts and auth"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "fcc-mcpsec",
+   "id": "gYXLRMycVMk",
+   "why": "A recent, dedicated security course for when you need depth.",
+   "difficulty": "advanced",
+   "objectives": [
+    "Secure an MCP deployment"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "kb-pvm",
+   "id": "23tkOExq7t0",
+   "why": "A finance-first explanation of price, volume and mix.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Calculate a price, volume and mix bridge"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "kb-pvm-gm",
+   "id": "nVl6JGJEKqI",
+   "why": "Extends the same method to gross margin.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Explain gross margin movement through PVM"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "zb-pvm",
+   "id": "cRDPoVkfJvE",
+   "why": "The same analysis in Power BI, which suits your P2 project.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Build PVM analysis in Power BI"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "dtc-mesh",
+   "id": "346N_pCtYZU",
+   "why": "Zhamak Dehghani, who defined data mesh, on DataTalksClub, a channel you named.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Explain domain ownership of data"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "cf-mesh",
+   "id": "vM1g2rzLkI4",
+   "why": "A ten-minute summary of the same idea.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Describe data ownership by domain"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "az-net",
+   "id": "DFdOi0QVso4",
+   "why": "Hands-on Azure networking labs with chapters for each service.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Deploy virtual networks and Azure Firewall"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "js-vnet",
+   "id": "7rzawA--r20",
+   "why": "John Savill's overview of virtual networks. Already a trusted source in this curriculum.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Explain virtual networks and subnets"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "ca-pe",
+   "id": "1yey_ANEOeo",
+   "why": "Starts from the problem private endpoints solve, which is how an architect should learn them.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Explain why private endpoints exist"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "js-pe",
+   "id": "rXbamGNz-xQ",
+   "why": "Goes into the DNS side once you understand the basics.",
+   "difficulty": "advanced",
+   "objectives": [
+    "Trace private endpoint DNS resolution"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "mc-nfr",
+   "id": "pPHgT-p2Pco",
+   "why": "The clearest short lead on quality attributes. Its examples use Go, but the ideas carry over.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Distinguish functional and non-functional requirements"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "ab-scd",
+   "id": "kii_Kukh4po",
+   "why": "Implements Type 1 and Type 2 in SQL, which is what you will write.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Implement a Type 2 slowly changing dimension in SQL"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "tc-scd",
+   "id": "XqdZF0DJpUs",
+   "why": "Explains the concept first, with real examples.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Explain why dimensions need history"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "wh-intro",
+   "id": "nGnybXRCy7E",
+   "why": "A short, recent explanation of the idea.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Explain webhooks versus polling"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "fcc-webhooks",
+   "id": "41NOoEz3Tzc",
+   "why": "A full course that reaches retries, idempotency and security.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Receive webhooks safely"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "sp-err",
+   "id": "CNn3TwL4ZZ0",
+   "why": "Computes MAD, MSE and MAPE in Python rather than only defining them.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Calculate forecast error in Python"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "ed-margin",
+   "id": "llNNuR-x8yE",
+   "why": "Margin movement over time in Power BI and DAX.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Analyse margin changes over time"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "sw-lineage",
+   "id": "p11p1IzfGFE",
+   "why": "A five-minute definition, enough before you draw lineage for your own model.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Explain data lineage"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "ds-contract",
+   "id": "LfM0eVrK7Bo",
+   "why": "A short, recent explanation tied to broken pipelines.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Explain what a data contract guarantees"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "up-net",
+   "id": "qAkbEfe0bPA",
+   "why": "Covers IP, DNS, HTTPS and ports in one short lesson.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Explain how IP, DNS and HTTPS fit together"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "bb-tls",
+   "id": "j9QmMEWmcfo",
+   "why": "ByteByteGo's short, visual explanation of TLS.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Explain the TLS handshake"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "sj-rbac",
+   "id": "_k2M-LpxId8",
+   "why": "RBAC through FastAPI dependencies, in the stack you are using.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Enforce roles on FastAPI routes"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "pg-rbac",
+   "id": "nnHO4ORP_6M",
+   "why": "A recent alternative focused on roles alone.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Protect endpoints by role"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "tt-incident",
+   "id": "NUmOZ3nnS7I",
+   "why": "Follows the Google SRE book from first alert to postmortem.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Run an incident from alert to review"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "bl-runbook",
+   "id": "duCnHhtdvOg",
+   "why": "A full workshop on writing a runbook.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Write an incident runbook"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "cn-pg",
+   "id": "a7ZTOtQyGrE",
+   "why": "A recent walkthrough of the managed PostgreSQL you will deploy to.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Create an Azure PostgreSQL flexible server"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "kt-pgrec",
+   "id": "MJ8VTwTvMSo",
+   "why": "A concrete recovery case on the same service.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Recover a deleted Azure PostgreSQL database"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "wv-rev",
+   "id": "jFa4Rd-c4wA",
+   "why": "Revisions are the rollback mechanism in Azure Container Apps.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Roll back using Container Apps revisions"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "mc-traffic",
+   "id": "k29K-GkJApE",
+   "why": "A lab on splitting traffic between revisions.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Split traffic between revisions"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "cl-deploy",
+   "id": "H5z70EBtEow",
+   "why": "A compact comparison of the three main strategies.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Choose between blue-green, canary and rolling"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "sc-deploy",
+   "id": "uzlr9HC0Fuo",
+   "why": "The same strategies in a longer Azure-based session.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Apply deployment strategies on Azure"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "kv-m365",
+   "id": "3-glyvBK8fM",
+   "why": "A very recent Key Vault tutorial with chapters.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Store and read secrets in Azure Key Vault"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "kv-full",
+   "id": "k3NOiynQD5E",
+   "why": "A longer tutorial if you want full depth.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Integrate Key Vault into an application"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "mr-waf",
+   "id": "dT233xJ3xPs",
+   "why": "Microsoft's own session on the framework behind Azure architecture decisions.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Use the Well-Architected pillars to weigh trade-offs"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "sb-slo",
+   "id": "ywNR71uGvHI",
+   "why": "SLIs, SLOs and error budgets in one short lesson.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Set a service-level objective"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "cf-slo",
+   "id": "30s_Jsa29M0",
+   "why": "Takes SLOs into alerting.",
+   "difficulty": "advanced",
+   "objectives": [
+    "Alert on error budget burn"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "wc-http",
+   "id": "kiVGRA0HiqQ",
+   "why": "A short, chaptered first look at HTTP.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Explain requests, responses and status codes"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "gh-branch",
+   "id": "7YovOpvO3S0",
+   "why": "Recent and focused on the commands you need.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Create, switch and merge branches"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "ssd-branch",
+   "id": "Q1kHG842HoI",
+   "why": "A fuller alternative. YouTube blocks embedding, so it opens on YouTube.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Resolve merge conflicts"
+   ],
+   "relevance": "chapters"
+  }
+ ]
 }
