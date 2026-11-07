@@ -6,6 +6,7 @@ import { monthStartDate, roadmapMonth, shortMonth, today } from "@/lib/dates";
 import { pctLabel, subtopicMastery, STATUS_LABEL, type TopicStatus } from "@/lib/progress";
 import { TOTAL_MONTHS } from "@/lib/curriculum";
 import { ASSESSMENTS, reviewMode } from "@/lib/assessments";
+import { roadmapPlan } from "@/lib/catalog";
 import { journeyFrom } from "@/lib/journey/model";
 import { MilestoneRoad } from "@/components/MilestoneRoad";
 import { PageEnter } from "@/components/Motion";
@@ -46,7 +47,7 @@ export default async function PathPage() {
           id: x.id, title: x.title, objective: x.objective, status: x.status,
           months: [Math.min(...months), Math.max(...months)] as [number, number],
           practised: x.counts.practised, proficient: x.counts.proficient, total: x.counts.total,
-          subtopics: x.subtopics.map((s) => ({ title: s.title, state: subtopicMastery(s.progress) })),
+          subtopics: x.subtopics.map((s) => ({ title: s.title, state: subtopicMastery(s.progress), ...roadmapPlan(s.id) })),
         };
       }),
       assessments: ASSESSMENTS.filter((a) => topicIds.has(a.topicId)).map((a) => ({

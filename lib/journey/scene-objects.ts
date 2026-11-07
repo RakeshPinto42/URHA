@@ -10,9 +10,9 @@
  */
 import * as THREE from "three";
 import type { Built, Frame, Generator, Generators } from "@/lib/cinema-engine/runtime";
-import { COMMON_GENERATORS } from "@/lib/cinema-engine/generators";
+import { COMMON_GENERATORS, missingMarker } from "@/lib/cinema-engine/generators";
 import {
-  heightAt, pathPoint, stationPosition, stationT, STATION_AT, treeSites, LAKE, fbm,
+  heightAt, pathPoint, pathXZ, stationPosition, stationT, STATION_AT, treeSites, LAKE, fbm,
 } from "./world";
 import type { JourneyData } from "./model";
 import { paneAt } from "@/lib/cinema";
@@ -585,6 +585,88 @@ const birds: Generator = (p) => {
   };
 };
 
-export const JOURNEY_GENERATORS: Generators = { sky, terrain, trees, ridges, lake, path, stations, walker, haze, motes, birds, ...COMMON_GENERATORS };
+const seeded = (i: number, k: number) => { const s = Math.sin(i * 12.9898 + k * 78.233) * 43758.5453; return s - Math.floor(s); };
+
+/**
+ * Where scattered things stand: beside the path, on the ground, clear of the lake and of
+ * each station's landmark. Deterministic, so the world is the same on every visit.
+ */
+export function scatterSites(opts: { count: number; seed: number; near: number; far: number; scaleMin: number; scaleMax: number }) {
+  const stations = STATION_AT.map((_, k) => stationPosition(k));
+  const sites: { x: number; y: number; z: number; turn: number; scale: number }[] = [];
+  for (let i = 0; sites.length < opts.count && i < opts.count * 30; i++) {
+    const [px, pz] = pathXZ(seeded(i, opts.seed));
+    const angle = seeded(i, opts.seed + 1) * Math.PI * 2;
+    const dist = opts.near + seeded(i, opts.seed + 2) * (opts.far - opts.near);
+    const x = px + Math.cos(angle) * dist, z = pz + Math.sin(angle) * dist;
+    if (((x - LAKE.x) / LAKE.rx) ** 2 + ((z - LAKE.z) / LAKE.rz) ** 2 < 1.15) continue;
+    if (stations.some((s) => Math.hypot(s[0] - x, s[2] - z) < 9)) continue;
+    const y = heightAt(x, z);
+    if (!Number.isFinite(y)) continue;
+    sites.push({ x, y, z, turn: seeded(i, opts.seed + 3) * Math.PI * 2, scale: opts.scaleMin + seeded(i, opts.seed + 4) * (opts.scaleMax - opts.scaleMin) });
+  }
+  return sites;
+}
+
+/** Many copies of one model, in one draw call per mesh: forty rocks cost about what one does. */
+const scatter: Generator = (p, ctx) => {
+  const src = str(p.src, "");
+  const group = new THREE.Group();
+  const instances: THREE.InstancedMesh[] = [];
+  let gone = false, held = false;
+  const fail = (why: string) => {
+    if (gone) return;
+    const marker = missingMarker();
+    marker.scale.setScalar(4);
+    marker.position.set(...pathPoint(0.1, 2));
+    group.add(marker);
+    ctx.assetFailed?.(src, why);
+    ctx.invalidate();
+  };
+  if (!ctx.assets) fail("no asset source");
+  else {
+    ctx.assets.models.acquire(src).then((proto) => {
+      held = true;
+      if (gone) { ctx.assets!.models.release(src); held = false; return; }
+      proto.updateMatrixWorld(true);
+      const meshes: THREE.Mesh[] = [];
+      proto.traverse((n) => { if ((n as THREE.Mesh).isMesh) meshes.push(n as THREE.Mesh); });
+      const sites = scatterSites({
+        count: Math.round(num(p.count, 30) * ctx.tier.detail), seed: num(p.seed, 1),
+        near: num(p.near, 4), far: num(p.far, 24), scaleMin: num(p.scaleMin, 1), scaleMax: num(p.scaleMax, 2),
+      });
+      const sink = num(p.sink, 0.1);
+      const place = new THREE.Object3D(), m = new THREE.Matrix4();
+      for (const mesh of meshes) {
+        const many = new THREE.InstancedMesh(mesh.geometry, mesh.material, sites.length);
+        sites.forEach((s, i) => {
+          place.position.set(s.x, s.y - sink * s.scale, s.z);
+          place.rotation.set(0, s.turn, 0);
+          place.scale.setScalar(s.scale);
+          place.updateMatrix();
+          many.setMatrixAt(i, m.multiplyMatrices(place.matrix, mesh.matrixWorld));
+        });
+        many.instanceMatrix.needsUpdate = true;
+        many.castShadow = true;
+        many.receiveShadow = true;
+        many.frustumCulled = false; // The copies span the whole valley.
+        many.userData.sharedAsset = true; // Its geometry and materials belong to the asset cache.
+        instances.push(many);
+        group.add(many);
+      }
+      ctx.invalidate();
+    }, (e) => fail(e instanceof Error ? e.message : String(e)));
+  }
+  return {
+    object: group,
+    dispose: () => {
+      gone = true;
+      instances.forEach((i) => i.dispose()); // Only each copy's own list of positions.
+      if (held) ctx.assets!.models.release(src);
+    },
+  };
+};
+
+export const JOURNEY_GENERATORS: Generators = { sky, terrain, trees, ridges, lake, path, stations, walker, haze, motes, birds, scatter, ...COMMON_GENERATORS };
 
 export type { Built };

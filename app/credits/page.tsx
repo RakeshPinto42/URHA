@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import credits from "@/public/images/credits.json";
 import artCredits from "@/public/art/credits.json";
+import modelCredits from "@/public/cinema/credits.json";
 import { MUSIC, MUSIC_VERIFIED_AT } from "@/lib/music";
 import { NARRATOR } from "@/lib/narration";
 import { VIDEOS_VERIFIED_AT, DOCS_CHECKED_AT } from "@/lib/catalog";
@@ -28,6 +29,18 @@ export default function CreditsPage() {
                   <a href={c.page} target="_blank" rel="noopener noreferrer" className="underline decoration-control underline-offset-4 hover:decoration-current">{c.title}</a>
                   {" "}by {c.creator}, <a href={c.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline decoration-control underline-offset-4">{c.license}</a>, via {c.via}.
                   <span className="text-muted"> Cropped for layout.{c.file.includes("/art/") ? " A painting is an artist’s imagining, not a historical record or portrait." : ""}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+          <section aria-labelledby="models-h">
+            <h2 id="models-h" className="mb-3 text-[16px] font-medium">3D models</h2>
+            <ul className="flex flex-col gap-3 text-[14px]">
+              {(modelCredits as { file: string; title: string; creator: string; license: string; licenseUrl: string; page: string; via: string }[]).map((c) => (
+                <li key={c.file}>
+                  <a href={c.page} target="_blank" rel="noopener noreferrer" className="underline decoration-control underline-offset-4">{c.title}</a>
+                  {" "}by {c.creator}, <a href={c.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline decoration-control underline-offset-4">{c.license}</a>, via {c.via}.
+                  <span className="text-muted"> Optimised for the web.</span>
                 </li>
               ))}
             </ul>

@@ -9,6 +9,7 @@
 import { useEffect, useMemo, useRef } from "react";
 import * as THREE from "three";
 import { CinemaRuntime } from "@/lib/cinema-engine/runtime";
+import { loadTexture, modelSource } from "@/lib/cinema-engine/model-loader";
 import { pickTier } from "@/lib/cinema-engine/quality";
 import { parseScene, type CinemaScene } from "@/lib/cinema-engine/schema";
 import { JOURNEY_GENERATORS } from "@/lib/journey/scene-objects";
@@ -123,6 +124,9 @@ export default function JourneyCanvas(props: SceneProps) {
         onTooSlow: () => onUnavailable("slow"),
         onContextLost: () => onUnavailable("lost"),
         watchFrames: override === null,
+        assets: { models: modelSource, loadTexture },
+        // A decorative model failing is not worth losing the world for: it is reported and skipped.
+        onAssetError: (src, why) => console.warn(`The 3D asset ${src} could not load: ${why}`),
       });
       runtime.current = r;
       r.setState({ selectedId });
@@ -143,7 +147,7 @@ export default function JourneyCanvas(props: SceneProps) {
       canvas.addEventListener("pointerleave", leave);
       canvas.addEventListener("click", click);
       // The ?cinema= test flag also exposes the runtime, so its tier and memory can be inspected.
-      if (override !== null) (window as unknown as { __cinema?: CinemaRuntime }).__cinema = r;
+      if (override !== null || "__cinema" in window) (window as unknown as { __cinema?: CinemaRuntime }).__cinema = r;
     }).catch((e) => {
       console.warn("The 3D scene could not start.", e);
       if (!cancelled) onUnavailable("scene");

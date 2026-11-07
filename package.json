@@ -18,7 +18,10 @@
     "sequence:doc": "node scripts/build-sequence-doc.mjs",
     "videos:coverage": "node scripts/build-video-coverage.mjs",
     "music:verify": "node scripts/verify-music.mjs",
-    "narration:index": "node scripts/build-narration-index.mjs"
+    "narration:index": "node scripts/build-narration-index.mjs",
+    "assets:add": "node scripts/cinema-assets.mjs add",
+    "assets:optimize": "node scripts/cinema-assets.mjs optimize",
+    "assets:decoders": "node scripts/cinema-assets.mjs decoders"
   },
   "engines": {
     "node": ">=20"
@@ -35,6 +38,7 @@
     "three": "^0.186.1"
   },
   "devDependencies": {
+    "@gltf-transform/cli": "^4.5.1",
     "@types/better-sqlite3": "^9.6.0",
     "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",

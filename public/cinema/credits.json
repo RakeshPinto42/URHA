@@ -1,0 +1,79 @@
+[
+ {
+  "file": "public/cinema/assets/boulder-01.glb",
+  "title": "Boulder 01",
+  "creator": "Rico Cilliers",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "page": "https://polyhaven.com/a/boulder_01",
+  "via": "Poly Haven",
+  "triangles": 123976,
+  "modified": "Optimised: Draco geometry, WebP textures at 1024 px"
+ },
+ {
+  "file": "public/cinema/assets/dead-tree-trunk.glb",
+  "title": "Dead Tree Trunk",
+  "creator": "Rob Tuytel",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "page": "https://polyhaven.com/a/dead_tree_trunk",
+  "via": "Poly Haven",
+  "triangles": 101802,
+  "modified": "Optimised: Draco geometry, WebP textures at 1024 px"
+ },
+ {
+  "file": "public/cinema/assets/fern-02.glb",
+  "title": "Fern 02",
+  "creator": "Rob Tuytel, Rico Cilliers",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "page": "https://polyhaven.com/a/fern_02",
+  "via": "Poly Haven",
+  "triangles": 6232,
+  "modified": "Optimised: Draco geometry, WebP textures at 1024 px"
+ },
+ {
+  "file": "public/cinema/assets/rock-moss-set-01.glb",
+  "title": "Rock Moss Set 01",
+  "creator": "Kless Gyzen",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "page": "https://polyhaven.com/a/rock_moss_set_01",
+  "via": "Poly Haven",
+  "triangles": 63127,
+  "modified": "Optimised: Draco geometry, WebP textures at 1024 px"
+ },
+ {
+  "file": "public/cinema/assets/stone-fire-pit.glb",
+  "title": "Stone Fire Pit",
+  "creator": "Sebastian Platen",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "page": "https://polyhaven.com/a/stone_fire_pit",
+  "via": "Poly Haven",
+  "triangles": 3887,
+  "modified": "Optimised: Draco geometry, WebP textures at 1024 px"
+ },
+ {
+  "file": "public/cinema/assets/tree-stump-01.glb",
+  "title": "Tree Stump 01",
+  "creator": "Rob Tuytel",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "page": "https://polyhaven.com/a/tree_stump_01",
+  "via": "Poly Haven",
+  "triangles": 41046,
+  "modified": "Optimised: Draco geometry, WebP textures at 1024 px"
+ },
+ {
+  "file": "public/cinema/assets/wooden-lantern-01.glb",
+  "title": "Wooden Lantern 01",
+  "creator": "James Ray Cock",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "page": "https://polyhaven.com/a/wooden_lantern_01",
+  "via": "Poly Haven",
+  "triangles": 8321,
+  "modified": "Optimised: Draco geometry, WebP textures at 1024 px"
+ }
+]

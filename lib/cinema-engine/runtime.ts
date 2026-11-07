@@ -25,7 +25,18 @@ export type Built = {
   dispose?: () => void;
 };
 
-export type BuildContext = { tier: Tier; data: unknown; state: Record<string, unknown>; invalidate: () => void };
+/** How generators reach files. Supplied by the host, so generators stay free of browser APIs. */
+export type AssetSource = {
+  models: { acquire: (src: string) => Promise<THREE.Object3D>; release: (src: string) => void };
+  loadTexture: (src: string) => Promise<THREE.Texture>;
+};
+
+export type BuildContext = {
+  tier: Tier; data: unknown; state: Record<string, unknown>; invalidate: () => void;
+  assets?: AssetSource;
+  /** A file failed. The object shows a marker, and the rest of the scene carries on. */
+  assetFailed?: (src: string, why: string) => void;
+};
 export type Generator = (params: Record<string, unknown>, ctx: BuildContext) => Built;
 export type Generators = Record<string, Generator>;
 
@@ -47,13 +58,19 @@ export type CinemaOptions = {
   watchFrames?: boolean;
   /** The host moves the camera itself, as the Studio does. */
   freeCamera?: boolean;
+  assets?: AssetSource;
+  onAssetError?: (src: string, why: string) => void;
 };
 
 const textureSlots = ["map", "normalMap", "roughnessMap", "metalnessMap", "emissiveMap", "aoMap", "alphaMap", "envMap", "bumpMap"] as const;
 
-/** Frees everything an object owns on the GPU. Exported so it can be tested without one. */
-export function disposeObject(root: THREE.Object3D) {
-  root.traverse((node) => {
+/**
+ * Frees everything an object owns on the GPU. Exported so it can be tested without one.
+ * Parts marked `sharedAsset` belong to the asset cache, which frees them when the last user lets go.
+ */
+export function disposeObject(root: THREE.Object3D, opts: { includeShared?: boolean } = {}) {
+  const walk = (node: THREE.Object3D) => {
+    if (node.userData.sharedAsset && !opts.includeShared) return;
     const mesh = node as THREE.Mesh;
     mesh.geometry?.dispose?.();
     const materials = Array.isArray(mesh.material) ? mesh.material : mesh.material ? [mesh.material] : [];
@@ -62,7 +79,9 @@ export function disposeObject(root: THREE.Object3D) {
       m.dispose();
     }
     (node as THREE.InstancedMesh).dispose?.();
-  });
+    node.children.forEach(walk);
+  };
+  walk(root);
 }
 
 export class CinemaRuntime {
@@ -115,7 +134,7 @@ export class CinemaRuntime {
 
     this.camera = new THREE.PerspectiveCamera(spec.camera.fov, 1, spec.camera.near, spec.camera.far);
     this.pmrem = new THREE.PMREMGenerator(this.renderer);
-    this.ctx = { tier: this.tier, data: opts.data, state: {}, invalidate: () => this.invalidate() };
+    this.ctx = { tier: this.tier, data: opts.data, state: {}, invalidate: () => this.invalidate(), assets: opts.assets, assetFailed: opts.onAssetError };
 
     const [fogFrom, fogTo] = ends(spec.environment.fog.color);
     this.fogFrom.set(fogFrom);

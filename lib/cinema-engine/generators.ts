@@ -22,8 +22,8 @@ function shape(kind: string, size: number): THREE.BufferGeometry {
   }
 }
 
-/** A shape with a physically based material: base colour, metallic, roughness, emissive. */
-const primitive: Generator = (p) => {
+/** A shape with a physically based material: base colour, metallic, roughness, emissive, and an image. */
+const primitive: Generator = (p, ctx) => {
   const mesh = new THREE.Mesh(
     shape(str(p.shape, "box"), num(p.size, 4)),
     new THREE.MeshStandardMaterial({
@@ -33,7 +33,59 @@ const primitive: Generator = (p) => {
   );
   mesh.castShadow = str(p.shape, "box") !== "plane";
   mesh.receiveShadow = true;
-  return { object: mesh };
+  const src = str(p.map, "");
+  let gone = false;
+  if (src) {
+    (ctx.assets?.loadTexture(src) ?? Promise.reject(new Error("no asset source"))).then((t) => {
+      if (gone) { t.dispose(); return; }
+      t.repeat.set(num(p.mapRepeat, 1), num(p.mapRepeat, 1));
+      (mesh.material as THREE.MeshStandardMaterial).map = t;
+      (mesh.material as THREE.MeshStandardMaterial).needsUpdate = true;
+      ctx.invalidate();
+    }, (e) => ctx.assetFailed?.(src, String(e)));
+  }
+  return { object: mesh, dispose: () => { gone = true; } };
+};
+
+/** Marks where a file failed to load, so a scene is never silently missing something. */
+export function missingMarker(): THREE.Object3D {
+  const box = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(2, 2, 2)), new THREE.LineBasicMaterial({ color: "#ff3b4e" }));
+  box.name = "missing-asset";
+  return box;
+}
+
+/** Shadows on, for everything in a loaded model. */
+export function shadows(root: THREE.Object3D) {
+  root.traverse((n) => {
+    const m = n as THREE.Mesh;
+    if (m.isMesh) { m.castShadow = true; m.receiveShadow = true; }
+  });
+}
+
+/** A GLB model. Copies share geometry and textures through the asset cache. */
+const model: Generator = (p, ctx) => {
+  const src = str(p.src, "");
+  const group = new THREE.Group();
+  let gone = false, held = false;
+  const failed = (why: string) => {
+    if (gone) return;
+    group.add(missingMarker());
+    ctx.assetFailed?.(src, why);
+    ctx.invalidate();
+  };
+  if (!ctx.assets) failed("no asset source");
+  else {
+    ctx.assets.models.acquire(src).then((proto) => {
+      held = true;
+      if (gone) { ctx.assets!.models.release(src); held = false; return; }
+      const copy = proto.clone(true);
+      copy.userData.sharedAsset = true;
+      shadows(copy);
+      group.add(copy);
+      ctx.invalidate();
+    }, (e) => failed(e instanceof Error ? e.message : String(e)));
+  }
+  return { object: group, dispose: () => { gone = true; if (held) ctx.assets!.models.release(src); } };
 };
 
 /** A drifting cloud of glowing points. */
@@ -77,4 +129,4 @@ const particles: Generator = (p, ctx) => {
   return { object: points, update: (f) => { if (!f.still) mat.uniforms.uTime!.value += f.dt; } };
 };
 
-export const COMMON_GENERATORS: Generators = { primitive, particles };
+export const COMMON_GENERATORS: Generators = { primitive, particles, model };

@@ -33,6 +33,8 @@ const LIGHTS: { label: string; light: NewLight }[] = [
 type Selection = { kind: "object" | "light"; id: string } | null;
 type Notice = { kind: "ok" | "error"; text: string; details?: string[] } | null;
 
+type AssetList = { models: string[]; textures: string[] };
+
 export default function Studio({ sceneIds }: { sceneIds: string[] }) {
   const [history, setHistory] = useState<History>(() => startHistory(blankScene()));
   const [saved, setSaved] = useState<string>(() => serializeScene(blankScene()));
@@ -46,6 +48,9 @@ export default function Studio({ sceneIds }: { sceneIds: string[] }) {
   const [notice, setNotice] = useState<Notice>(null);
   const [failure, setFailure] = useState<string | null>(null);
   const [progress, setProgress] = useState(1);
+  const [assets, setAssets] = useState<AssetList>({ models: [], textures: [] });
+  const [uploading, setUploading] = useState(false);
+  const modelImporter = useRef<HTMLInputElement>(null);
   const viewport = useRef<ViewportHandle>(null);
   const importer = useRef<HTMLInputElement>(null);
 
@@ -61,6 +66,36 @@ export default function Studio({ sceneIds }: { sceneIds: string[] }) {
     const override = new URLSearchParams(window.location.search).get("cinema");
     setTier(pickTier({ renderer: gl && info ? String(gl.getParameter(info.UNMASKED_RENDERER_WEBGL)) : null, mobile: false, override }));
   }, []);
+
+  const refreshAssets = useCallback(async () => {
+    const r = await fetch("/api/studio/assets", { cache: "no-store" }).catch(() => null);
+    if (r?.ok) setAssets(await r.json() as AssetList);
+  }, []);
+  useEffect(() => { void refreshAssets(); }, [refreshAssets]);
+
+  const uploadModel = async (file: File) => {
+    setUploading(true);
+    setNotice(null);
+    const r = await fetch(`/api/studio/assets?name=${encodeURIComponent(file.name)}`, { method: "POST", body: file }).catch(() => null);
+    setUploading(false);
+    if (!r) { setNotice({ kind: "error", text: "The upload failed: the server did not respond." }); return; }
+    const body = await r.json().catch(() => ({})) as { error?: string; src?: string; note?: string; needsRestart?: boolean };
+    if (!r.ok || !body.src) { setNotice({ kind: "error", text: body.error ?? "The upload failed." }); return; }
+    await refreshAssets();
+    if (body.needsRestart) {
+      setNotice({ kind: "ok", text: `Saved ${file.name}. Restart the server to use it, because a production server only serves files that existed when it started.` });
+      return;
+    }
+    addModel(body.src);
+    setNotice({ kind: "ok", text: `Added ${file.name}.${body.note ? ` ${body.note}` : ""}` });
+  };
+
+  const addModel = (src: string) => {
+    const name = src.split("/").pop()!.replace(/\.glb$/, "");
+    const next = addObject(history.present, { id: name.replace(/^[^a-z]+/, "") || "model", generator: "model", visible: true, placement: defaultPlacement(), params: { src } });
+    edit(next);
+    setSelection({ kind: "object", id: next.objects.at(-1)!.id });
+  };
 
   const open = useCallback(async (id: string) => {
     if (dirty && !window.confirm("Discard the unsaved changes to this scene?")) return;
@@ -141,6 +176,7 @@ export default function Studio({ sceneIds }: { sceneIds: string[] }) {
   const place = useCallback((id: string, placement: Placement) => setHistory((h) => commit(h, updateObject(h.present, id, { placement }))), []);
   const pick = useCallback((id: string | null) => setSelection(id ? { kind: "object", id } : null), []);
   const fail = useCallback((m: string) => setFailure(m), []);
+  const assetError = useCallback((src: string, why: string) => setNotice({ kind: "error", text: `${src} could not load, so a red box marks its place. ${why}` }), []);
 
   return (
     <div className="fixed inset-0 z-10 flex flex-col bg-[#0b0d14] text-[#efe9df]">
@@ -190,6 +226,16 @@ export default function Studio({ sceneIds }: { sceneIds: string[] }) {
                 setSelection({ kind: "object", id: next.objects.at(-1)!.id });
               }}>particles</button>
             </div>
+            <label className="flex items-center justify-between gap-2 text-[12px] text-[#b8ad9c]">
+              Model
+              <select className={`${BTN} min-w-0 flex-1`} value="" onChange={(e) => { if (e.target.value) addModel(e.target.value); }}>
+                <option value="">Add…</option>
+                {assets.models.map((m) => <option key={m} value={m}>{m.split("/").pop()!.replace(/\.glb$/, "")}</option>)}
+              </select>
+            </label>
+            <button type="button" className={BTN} disabled={uploading} onClick={() => modelImporter.current?.click()}>{uploading ? "Importing…" : "Import GLB"}</button>
+            <input ref={modelImporter} type="file" accept=".glb,model/gltf-binary" className="sr-only" aria-label="Import a GLB model" tabIndex={-1}
+              onChange={(e) => { const f = e.target.files?.[0]; e.target.value = ""; if (f) void uploadModel(f); }} />
             <div className="flex flex-wrap gap-1">
               {LIGHTS.map(({ label, light }) => (
                 <button key={label} type="button" className={BTN} onClick={() => {
@@ -258,7 +304,7 @@ export default function Studio({ sceneIds }: { sceneIds: string[] }) {
           ) : (
             <div className="relative flex-1">
               <StudioViewport ref={viewport} scene={scene} session={session} tier={tier} selectedId={selection?.kind === "object" ? selection.id : null}
-                gizmo={gizmo} view={view} onSelect={pick} onPlace={place} onFailure={fail} />
+                gizmo={gizmo} view={view} onSelect={pick} onPlace={place} onFailure={fail} onAssetError={assetError} />
             </div>
           )}
           {!CAMERA_VIEWS.find((v) => v.id === view)?.orbits && (
@@ -279,7 +325,7 @@ export default function Studio({ sceneIds }: { sceneIds: string[] }) {
         </main>
 
         <aside aria-label="Inspector" className="max-h-[40vh] w-full flex-none overflow-y-auto border-t border-[#262a38] lg:max-h-none lg:w-[300px] lg:border-l lg:border-t-0">
-          {selectedObject ? <ObjectInspector key={selectedObject.id} o={selectedObject} scene={scene} edit={edit} onRenamed={(id) => setSelection({ kind: "object", id })} />
+          {selectedObject ? <ObjectInspector key={selectedObject.id} o={selectedObject} scene={scene} edit={edit} textures={assets.textures} onRenamed={(id) => setSelection({ kind: "object", id })} />
             : selectedLight ? <LightInspector key={selectedLight.id} l={selectedLight} scene={scene} edit={edit} />
             : <SceneInspector scene={scene} edit={edit} currentView={() => viewport.current?.currentView() ?? null} />}
         </aside>
@@ -290,7 +336,7 @@ export default function Studio({ sceneIds }: { sceneIds: string[] }) {
 
 type Edit = (next: CinemaScene, key?: string | null) => void;
 
-function ObjectInspector({ o, scene, edit, onRenamed }: { o: CinemaObject; scene: CinemaScene; edit: Edit; onRenamed: (id: string) => void }) {
+function ObjectInspector({ o, scene, edit, textures, onRenamed }: { o: CinemaObject; scene: CinemaScene; edit: Edit; textures: string[]; onRenamed: (id: string) => void }) {
   const p = o.placement ?? defaultPlacement();
   const m = o.motion ?? {};
   const set = (patch: Partial<CinemaObject>, key: string) => edit(updateObject(scene, o.id, patch), `${o.id}.${key}`);
@@ -320,6 +366,12 @@ function ObjectInspector({ o, scene, edit, onRenamed }: { o: CinemaObject; scene
       {Object.keys(o.params).length > 0 && (
         <Section title="Material and settings">
           {o.generator === "primitive" && <SelectField label="shape" value={String(o.params.shape ?? "box")} options={SHAPES} onChange={(shape) => set({ params: { ...o.params, shape } }, "shape")} />}
+          {o.generator === "primitive" && textures.length > 0 && (
+            <SelectField label="texture" value={String(o.params.map ?? "none")} options={["none", ...textures]} onChange={(map) => {
+              const { map: _old, ...rest } = o.params;
+              set({ params: map === "none" ? rest : { ...rest, map, mapRepeat: o.params.mapRepeat ?? 1 } }, "map");
+            }} />
+          )}
           <ParamFields params={o.generator === "primitive" ? Object.fromEntries(Object.entries(o.params).filter(([k]) => k !== "shape")) : o.params}
             onChange={(next) => set({ params: o.generator === "primitive" ? { ...next, shape: o.params.shape } : next }, "params")} />
         </Section>

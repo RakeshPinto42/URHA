@@ -11,6 +11,7 @@ import { TransformControls } from "three/examples/jsm/controls/TransformControls
 import { viewShot, walkStep, CAMERA_VIEWS, type CameraView } from "@/lib/cinema-engine/camera-views";
 import type { TierId } from "@/lib/cinema-engine/quality";
 import { CinemaRuntime } from "@/lib/cinema-engine/runtime";
+import { loadTexture, modelSource } from "@/lib/cinema-engine/model-loader";
 import type { CinemaScene, Placement, Vec3 } from "@/lib/cinema-engine/schema";
 import { JOURNEY_GENERATORS } from "@/lib/journey/scene-objects";
 import { STATION_AT } from "@/lib/journey/world";
@@ -50,15 +51,16 @@ type Props = {
   onSelect: (id: string | null) => void;
   onPlace: (id: string, placement: Placement) => void;
   onFailure: (message: string) => void;
+  onAssetError: (src: string, why: string) => void;
 };
 
 export const StudioViewport = forwardRef<ViewportHandle, Props>(function StudioViewport(
-  { scene, session, tier, selectedId, gizmo, view, onSelect, onPlace, onFailure }, ref,
+  { scene, session, tier, selectedId, gizmo, view, onSelect, onPlace, onFailure, onAssetError }, ref,
 ) {
   const host = useRef<HTMLDivElement>(null);
   const live = useRef<{ runtime: CinemaRuntime; orbit: OrbitControls; gizmo: TransformControls } | null>(null);
-  const latest = useRef({ scene, selectedId, view, onSelect, onPlace, onFailure });
-  latest.current = { scene, selectedId, view, onSelect, onPlace, onFailure };
+  const latest = useRef({ scene, selectedId, view, onSelect, onPlace, onFailure, onAssetError });
+  latest.current = { scene, selectedId, view, onSelect, onPlace, onFailure, onAssetError };
   const [ready, setReady] = useState(0);
 
   useImperativeHandle(ref, () => ({
@@ -88,7 +90,8 @@ export const StudioViewport = forwardRef<ViewportHandle, Props>(function StudioV
     try {
       runtime = new CinemaRuntime({
         canvas, scene: latest.current.scene, generators: JOURNEY_GENERATORS, tier, still: false, data: SAMPLE,
-        freeCamera: true, watchFrames: false,
+        freeCamera: true, watchFrames: false, assets: { models: modelSource, loadTexture },
+        onAssetError: (src, why) => latest.current.onAssetError(src, why),
         onFrame: (camera) => {
           const now = performance.now();
           const dt = Math.min((now - last) / 1000, 0.1);

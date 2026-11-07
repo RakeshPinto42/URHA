@@ -11,6 +11,8 @@
  * of it and refuses anything it does not recognise.
  */
 
+import { LOCAL_ASSET } from "./assets";
+
 export const SCENE_VERSION = 1;
 
 export type Vec3 = [number, number, number];
@@ -76,6 +78,7 @@ const animated = (v: unknown, ok: (x: unknown) => boolean) => ok(v) || (Array.is
 function checkParams(v: unknown, at: string, errors: string[], depth = 0) {
   if (depth > 6) { errors.push(`${at}: nested too deeply`); return; }
   if (typeof v === "string") {
+    if (/\.(src|map)$/.test(at) && !LOCAL_ASSET.test(v)) errors.push(`${at}: must be a file in /cinema/assets/`);
     if (v.length > 200) errors.push(`${at}: text too long`);
     if (/^(https?:)?\/\/|^data:|^javascript:/i.test(v)) errors.push(`${at}: remote addresses are not allowed`);
     return;
@@ -161,7 +164,10 @@ export function parseScene(input: unknown): ParseResult {
       if (typeof o.generator !== "string" || !ID.test(o.generator)) errors.push(`${at}.generator: invalid`);
       if (typeof o.visible !== "boolean") errors.push(`${at}.visible: must be true or false`);
       if (!isObject(o.params)) errors.push(`${at}.params: must be an object`);
-      else checkParams(o.params, `${at}.params`, errors);
+      else {
+        checkParams(o.params, `${at}.params`, errors);
+        if ((o.generator === "model" || o.generator === "scatter") && !(typeof o.params.src === "string" && o.params.src.endsWith(".glb"))) errors.push(`${at}.params.src: needs a .glb file`);
+      }
       if (o.placement !== undefined) {
         const p = o.placement;
         if (!isObject(p) || !isVec3(p.position) || !isVec3(p.rotation) || !isVec3(p.scale)) errors.push(`${at}.placement: needs position, rotation and scale as [x, y, z]`);

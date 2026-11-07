@@ -4,8 +4,8 @@
  *
  * Level 1, the journey: the 3D overview plus the station rail (the accessible control).
  * Level 2, a phase: the camera flies to its station and the phase sheet opens below
- * with months, competencies, topics, subtopics, the milestone, the exit gate and the
- * assessments it requires. Level 3 is the topic page in the Academy.
+ * with months, competencies, topics, each subtopic's curated lesson, the milestone, the
+ * exit gate and the assessments it requires. Level 3 is the topic page in the Academy.
  *
  * Selection lives in the URL (?phase=p3) so Back and deep links work; Escape returns
  * to the overview.
@@ -20,6 +20,7 @@ import type { JourneyData } from "@/lib/journey/model";
 import type { TopicStatus } from "@/lib/progress";
 import { StatusLabel, StatusMark } from "../ui";
 import { paneAt } from "@/lib/cinema";
+import type { RoadmapLesson, RoadmapPlan } from "@/lib/catalog";
 
 export type PhaseSheet = {
   id: string; ord: number; title: string; landmark: string; months: [number, number]; monthRange: string | null;
@@ -29,7 +30,7 @@ export type PhaseSheet = {
   topics: {
     id: string; title: string; objective: string; status: TopicStatus; months: [number, number];
     practised: number; proficient: number; total: number;
-    subtopics: { title: string; state: "none" | "learning" | "practising" | "proficient" }[];
+    subtopics: ({ title: string; state: "none" | "learning" | "practising" | "proficient" } & RoadmapPlan)[];
   }[];
   assessments: { id: string; title: string; topicTitle: string; state: "not-attempted" | "awaiting-review" | "failed" | "passed"; review: "auto" | "mixed" | "human" }[];
 };
@@ -38,6 +39,16 @@ const SUB_MARK: Record<PhaseSheet["topics"][number]["subtopics"][number]["state"
   none: "not-started", learning: "in-progress", practising: "completed", proficient: "mastered",
 };
 const SUB_LABEL = { none: "Not started", learning: "Learning", practising: "Practising", proficient: "Proficient" } as const;
+const watchTime = (minutes: number) => {
+  const h = Math.floor(minutes / 60), m = minutes % 60;
+  return h ? `${h} h${m ? ` ${m} min` : ""}` : `${m} min`;
+};
+const lessonTotals = (subs: RoadmapPlan[]) => {
+  const videos = subs.filter((s) => s.lesson?.kind === "video");
+  return { videos: videos.length, minutes: videos.reduce((n, s) => n + (s.lesson!.minutes ?? 0), 0) };
+};
+const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? "" : "s"}`;
+
 const ASSESS_LABEL = { "not-attempted": "Not attempted", "awaiting-review": "Awaiting review", failed: "Not passed yet", passed: "Passed" } as const;
 
 export function RoadmapExplorer({ data, sheets, fallback }: { data: JourneyData; sheets: PhaseSheet[]; fallback: React.ReactNode }) {
@@ -130,7 +141,7 @@ export function RoadmapExplorer({ data, sheets, fallback }: { data: JourneyData;
           ) : (
             <motion.p key="none" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
               className="mt-8 text-[14px] text-muted">
-              Choose a station to open its phase: months, competencies, topics, the milestone and the assessments that prove it.
+              Choose a station to open its phase: months, competencies, topics, the curated video for every subtopic, the milestone and the assessments that prove it.
             </motion.p>
           )}
         </AnimatePresence>
@@ -139,7 +150,44 @@ export function RoadmapExplorer({ data, sheets, fallback }: { data: JourneyData;
   );
 }
 
+/** A subtopic on the roadmap, with the lesson curated for it. */
+function LessonRow({ s }: { s: PhaseSheet["topics"][number]["subtopics"][number] }) {
+  return (
+    <li className="py-2.5">
+      <p className="flex items-center gap-2 text-[14px] font-medium">
+        <StatusMark status={SUB_MARK[s.state]} size={12} /><span className="sr-only">{SUB_LABEL[s.state]}: </span>{s.title}
+      </p>
+      <div className="mt-1 pl-5">
+        {s.lesson ? <LessonLink l={s.lesson} /> : <p className="text-[13px] text-muted">No video. {s.pending}</p>}
+        {s.alternative && (
+          <p className="text-[13px] text-muted">
+            Alternative: <a href={s.alternative.url} target="_blank" rel="noopener noreferrer" className="underline decoration-control underline-offset-4">{s.alternative.title}<span className="sr-only"> (opens in a new tab)</span></a>
+          </p>
+        )}
+      </div>
+    </li>
+  );
+}
+
+function LessonLink({ l }: { l: RoadmapLesson }) {
+  return (
+    <>
+      <a href={l.url} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-[32px] items-center text-[14px] underline decoration-control underline-offset-4 hover:decoration-ink">
+        {l.title}<span className="sr-only"> (opens in a new tab)</span>
+      </a>
+      <p className="num text-[12px] text-muted">
+        {l.kind === "video" ? "YouTube" : "Documentation"} · {l.author}
+        {l.minutes ? ` · ${watchTime(l.minutes)}` : ""}{l.segment ? ` · watch ${l.segment}` : ""}
+      </p>
+      {l.caution && <p className="text-[12px] text-muted">{l.caution}</p>}
+    </>
+  );
+}
+
 function PhaseDetail({ sheet }: { sheet: PhaseSheet }) {
+  const phaseLessons = lessonTotals(sheet.topics.flatMap((t) => t.subtopics));
+  // The first unfinished topic opens by itself, so its videos are the first thing seen.
+  const nextTopic = sheet.topics.find((t) => t.practised < t.total)?.id;
   return (
     <>
       <header className="grid grid-cols-1 gap-4 border-b border-border pb-6 lg:grid-cols-12">
@@ -152,6 +200,7 @@ function PhaseDetail({ sheet }: { sheet: PhaseSheet }) {
         <dl className="flex flex-col gap-3 text-[14px] lg:col-span-4">
           <div><dt className="text-[13px] text-muted">Competencies</dt><dd>{sheet.skills.join(", ") || "—"}</dd></div>
           <div><dt className="text-[13px] text-muted">Deliverable</dt><dd>{sheet.deliverable}</dd></div>
+          <div><dt className="text-[13px] text-muted">Curated videos</dt><dd className="num">{plural(phaseLessons.videos, "video")}, {watchTime(phaseLessons.minutes)} of watching</dd></div>
         </dl>
       </header>
 
@@ -169,14 +218,12 @@ function PhaseDetail({ sheet }: { sheet: PhaseSheet }) {
               <p className="num mt-2 text-[13px] text-muted">
                 Month{t.months[0] !== t.months[1] ? `s ${t.months[0]}–${t.months[1]}` : ` ${t.months[0]}`} · {t.practised} of {t.total} practised · {t.proficient} proficient
               </p>
-              <details className="mt-2">
-                <summary className="w-fit cursor-pointer text-[13px] underline decoration-control underline-offset-4">{t.subtopics.length} subtopics</summary>
-                <ul className="mt-3 columns-1 gap-6 text-[14px] sm:columns-2">
-                  {t.subtopics.map((s) => (
-                    <li key={s.title} className="mb-1 flex break-inside-avoid items-center gap-2">
-                      <StatusMark status={SUB_MARK[s.state]} size={12} /><span className="sr-only">{SUB_LABEL[s.state]}: </span>{s.title}
-                    </li>
-                  ))}
+              <details className="mt-2" open={t.id === nextTopic}>
+                <summary className="num w-fit cursor-pointer text-[13px] underline decoration-control underline-offset-4">
+                  {plural(t.subtopics.length, "subtopic")} · {plural(lessonTotals(t.subtopics).videos, "video")} · {watchTime(lessonTotals(t.subtopics).minutes)}
+                </summary>
+                <ul className="mt-2 divide-y divide-border">
+                  {t.subtopics.map((s) => <LessonRow key={s.title} s={s} />)}
                 </ul>
                 <Link href={`/academy/${t.id}`} className="mt-3 inline-block text-[13px] underline decoration-control underline-offset-4">Open the lessons, resources and exercises</Link>
               </details>

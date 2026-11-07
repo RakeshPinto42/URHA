@@ -2,7 +2,7 @@
 
 Phases 1 to 3 of the owner's brief of 2026-11-07.
 
-**Status:** the owner chose to build in URHA and start with the engine. Steps 1 to 4 of §9 are built. Steps 5 to 8 are not.
+**Status:** the owner chose to build in URHA and start with the engine. Steps 1 to 5 of §9 are built. Steps 6 to 8 are not.
 
 ## 1. Bottom line
 
@@ -130,7 +130,7 @@ The brief's phases 4 to 7, in order. Each step ends with something visible.
 | 2 | **Built.** Real rendering: PBR, shadows, tone mapping, reflections captured from the sky, bloom | The Home journey has real light and depth, on all tiers |
 | 3 | **Built.** Studio: hierarchy, transforms, lights, materials, cameras | A scene can be edited without touching code |
 | 4 | **Built.** Export and import | A scene round-trips through JSON exactly (tested) |
-| 5 | GLB pipeline and first real models | Primitive landmarks are replaced by optimised models |
+| 5 | **Built, with one change.** GLB pipeline and first real models | Real models dress the world. The landmarks stay custom, because no free model of them exists |
 | 6 | Animation: object, camera and sequences | Home's sunrise is authored in the Studio |
 | 7 | Module scenes | Academy gets its own world; Workbench and Investment Hub follow the decision in §8 |
 | 8 | Performance, memory and regression tests | Disposal test passes; every existing screen still works |
@@ -150,7 +150,6 @@ The brief's phases 4 to 7, in order. Each step ends with something visible.
 
 **The scene file is live data.** Editing `journey.json` changes the look after a reload, with no rebuild. Add `?cinema=high`, `medium` or `low` to Home or My Path to force a tier; it also turns off the automatic step-down.
 
-Not built yet: GLB loading and the asset pipeline (step 5), so Draco needs no change to the security policy yet.
 
 ## 11. The Studio (steps 3 and 4)
 
@@ -172,7 +171,27 @@ Open `/studio` while running `npm run dev`. To use it on a production build, sta
 
 | Not yet | Handled by |
 |---|---|
-| GLB and GLTF loading, texture mapping, skyboxes from image files | Step 5 |
+| Skyboxes from image files, and editing a loaded model's materials | Later |
 | Camera paths and cinematic sequences beyond the sunrise | Step 6 |
 | Isometric is a long lens, not a true orthographic camera | Close in practice; a true one can follow if it matters |
 | Sky, terrain and other world objects can be recoloured but not moved as freely as shapes: their geometry is tied to the path | By design |
+
+## 12. The asset pipeline (step 5)
+
+| Command | What it does |
+|---|---|
+| `npm run assets:add -- <polyhaven-id> [--ratio 0.2]` | Fetches a CC0 model, optimises it and adds its credit |
+| `npm run assets:optimize -- <file> <name> [--ratio 0.2]` | Optimises a model of your own |
+| `npm run assets:decoders` | Copies the Draco decoder from `three` into `public/cinema/draco/` |
+
+Optimising means Draco geometry, WebP textures at 1024 px, de-duplication, and optional simplification by `--ratio`. Sources stay in `assets-src/`, which is not committed; what ships is in `public/cinema/assets/`, credited in `public/cinema/credits.json` and on `/credits`.
+
+**Budget.** Tests hold each model under 1.5 MB and all of them under 6 MB. Measure before choosing: Poly Haven's `fir_tree_01` is 7.8 million polygons and a 465 MB download, so trees stay procedural.
+
+**Loading.** `lib/cinema-engine/assets.ts` shares each file, so a model used many times is fetched, parsed and held on the GPU once, and freed when the last user lets go. `scatter` draws many copies in one draw call per mesh. A file that fails shows a red box and a report, and the rest of the scene carries on.
+
+**Security.** A scene may only name files in `/cinema/assets/`, checked when a scene is read. The content security policy gained `'wasm-unsafe-eval'` (WebAssembly, not JavaScript `eval`) `worker-src 'self' blob:` for Draco, and `blob:` in `connect-src`, which is how three.js reads textures unpacked from a GLB. The Studio's GLB import checks the file's header and rebuilds its name, can never replace an existing file, and records "Licence not recorded" until a real licence is added.
+
+**A production server serves `public/` as it was when it started,** so a model imported on `next start` is saved but only loads after a restart, and the Studio says so. Under `npm run dev` it should appear at once (not tested here, because `next dev` crashes in this shell).
+
+**Not built:** image skyboxes, and overriding a loaded model's materials, which are shared. The landmarks remain custom shapes.

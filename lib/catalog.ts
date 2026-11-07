@@ -101,6 +101,23 @@ export const SUBTOPIC_PLANS: Map<string, SubtopicPlan> = new Map(
   ),
 );
 
+/** The small part of a resource the roadmap shows: it travels to the browser 328 times. */
+export type RoadmapLesson = Pick<CatalogResource, "kind" | "title" | "author" | "url" | "minutes" | "segment" | "caution">;
+export type RoadmapPlan = { lesson: RoadmapLesson | null; alternative: RoadmapLesson | null; pending: string | null };
+
+const lessonOf = ({ kind, title, author, url, minutes, segment, caution }: CatalogResource): RoadmapLesson =>
+  ({ kind, title, author, url, minutes, segment, caution });
+
+/** What the roadmap shows under a subtopic. Only verified resources reach SUBTOPIC_PLANS. */
+export function roadmapPlan(subtopicId: string): RoadmapPlan {
+  const p = SUBTOPIC_PLANS.get(subtopicId);
+  return {
+    lesson: p?.primary ? lessonOf(p.primary) : null,
+    alternative: p?.supplement ? lessonOf(p.supplement) : null,
+    pending: p ? p.pending : "No study plan is mapped to this subtopic yet.",
+  };
+}
+
 export type Coverage = { subtopics: number; videoPrimary: number; docsPrimary: number; withSupplement: number; watchMinutes: number; practiceMinutes: number };
 
 export function coverageFor(topicIds: string[]): Coverage {
