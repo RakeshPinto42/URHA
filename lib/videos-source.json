@@ -1,0 +1,480 @@
+{
+  "_note": "Curated YouTube resources. Only id + why are hand-written; title, channel, duration, publish date and chapters come from scripts/verify-videos.mjs (data/videos-verified.json). A video that fails verification is never shown as verified.",
+  "videos": [
+    {
+      "key": "py-lists",
+      "id": "W8KRzm-HUcc",
+      "why": "Lists, tuples and sets with their trade-offs, quickly. Use only where gaps exist."
+    },
+    {
+      "key": "py-dicts",
+      "id": "daefaLgNkw0",
+      "why": "Dictionaries in ten minutes: the structure behind every JSON payload you will handle."
+    },
+    {
+      "key": "py-funcs",
+      "id": "9Os0o3wzS_I",
+      "why": "Functions, arguments and return values, the unit every module is built from."
+    },
+    {
+      "key": "py-modules",
+      "id": "CqvZ3vGoGs0",
+      "why": "Imports, sys.path and the standard library: how Python finds your code."
+    },
+    {
+      "key": "py-oop1",
+      "id": "ZDa-Z5JzLYM",
+      "why": "First of a six-part OOP series that is still the clearest available."
+    },
+    {
+      "key": "py-oop2",
+      "id": "BJ-VvGyQxho",
+      "why": "Class versus instance state: a frequent source of shared-state bugs."
+    },
+    {
+      "key": "py-oop3",
+      "id": "rq8cL2XMM5M",
+      "why": "classmethods as alternative constructors, e.g. building a row from a CSV line."
+    },
+    {
+      "key": "py-oop4",
+      "id": "RSl87lqOXDE",
+      "why": "Inheritance done carefully; pair it with the composition exercise."
+    },
+    {
+      "key": "py-oop5",
+      "id": "3ohzBxoFHAY",
+      "why": "Dunder methods make domain objects (money, ledger lines) behave naturally."
+    },
+    {
+      "key": "py-oop6",
+      "id": "jCzT9XFZ5bw",
+      "why": "Properties for validated, derived attributes."
+    },
+    {
+      "key": "py-except",
+      "id": "NIWwJbo-9_8",
+      "why": "try/except/else/finally, and raising your own exceptions."
+    },
+    {
+      "key": "py-types",
+      "id": "RwH2UzC2rIo",
+      "why": "Current (2025) end-to-end guide: annotations to generics, with mypy."
+    },
+    {
+      "key": "py-types-why",
+      "id": "0oBLMwHdZ2Y",
+      "why": "Why types matter in code review: the engineering argument, briefly."
+    },
+    {
+      "key": "py-deco",
+      "id": "FsAPt_9Bf3U",
+      "why": "Decorators from closures upwards; needed to read FastAPI and pytest code."
+    },
+    {
+      "key": "py-gen",
+      "id": "bD05uGo_sVI",
+      "why": "Generators for streaming large files row by row."
+    },
+    {
+      "key": "py-json",
+      "id": "9N6a-VLBa2I",
+      "why": "Loading and writing JSON, the format of every API and LLM response."
+    },
+    {
+      "key": "py-files",
+      "id": "Uh2ebFW8OYM",
+      "why": "Reading and writing files safely with context managers."
+    },
+    {
+      "key": "py-ctx",
+      "id": "-aKFBoZpiqA",
+      "why": "Context managers: the pattern behind files, transactions and locks."
+    },
+    {
+      "key": "py-venv",
+      "id": "Kg1Yvry_Ydk",
+      "why": "How virtual environments isolate dependencies (Mac/Linux shown; concepts identical on Windows)."
+    },
+    {
+      "key": "py-uv",
+      "id": "AMdG7IjgSPM",
+      "why": "uv (2025): one tool for environments, dependencies and lock files. The current practice."
+    },
+    {
+      "key": "py-async",
+      "id": "oAkLSJNr5zY",
+      "why": "Animated, current (2025) explanation of the event loop, tasks and when not to use asyncio."
+    },
+    {
+      "key": "py-logbasic",
+      "id": "g8nQ90Hk328",
+      "why": "Eight-minute introduction to the logging module."
+    },
+    {
+      "key": "py-logadv",
+      "id": "jxmzY9soFXg",
+      "why": "Loggers, handlers and formatters: production logging structure."
+    },
+    {
+      "key": "pd-1",
+      "id": "ZyhVh-qRZPA",
+      "why": "Selective pandas: loading data and DataFrame basics, applied to reconciliation extracts."
+    },
+    {
+      "key": "ms-git",
+      "id": "2sjqTHE0zok",
+      "why": "Git's data model (snapshots, commits, refs). Understanding the model ends Git confusion."
+    },
+    {
+      "key": "ms-shell",
+      "id": "Z56Jmr9Z34Q",
+      "why": "The shell from first principles: the base for Docker, CI and servers."
+    },
+    {
+      "key": "vsc-debug",
+      "id": "w8QHoVam1-I",
+      "why": "Six minutes: breakpoints, stepping and variables in VS Code."
+    },
+    {
+      "key": "fcc-pytest",
+      "id": "cHYq1MRoyI0",
+      "why": "The freeCodeCamp pytest course from the original plan; chaptered for fixtures, parametrize and mocking."
+    },
+    {
+      "key": "py-unittest",
+      "id": "6tNS--WetLI",
+      "why": "Includes unittest.mock patching of an external request."
+    },
+    {
+      "key": "py-mockpatch",
+      "id": "WFRljVPHrkE",
+      "why": "Short and precise on the 'where to patch' rule that trips most people."
+    },
+    {
+      "key": "sql-baraa",
+      "id": "SSKVgrwhzus",
+      "why": "Data with Baraa's SQL course: use only the chaptered sections mapped to each subtopic."
+    },
+    {
+      "key": "db-design",
+      "id": "_jf7KZqne-8",
+      "why": "Data modelling and normalisation, chaptered; take only the relational sections."
+    },
+    {
+      "key": "pg-acid",
+      "id": "pomxJOFVcQs",
+      "why": "Hussein Nasser on ACID with examples: what a transaction really guarantees."
+    },
+    {
+      "key": "pg-index",
+      "id": "-qNSXK7s7_w",
+      "why": "How PostgreSQL uses (and ignores) indexes, with EXPLAIN."
+    },
+    {
+      "key": "sqla-crash",
+      "id": "XWtj4zLl_tg",
+      "why": "SQLAlchemy 2.0-style ORM, chaptered."
+    },
+    {
+      "key": "sqla-bayer",
+      "id": "Uym2DHnUEno",
+      "why": "SQLAlchemy 2.0 tutorial walk-through by its author, Mike Bayer."
+    },
+    {
+      "key": "fcc-api",
+      "id": "0sOvCWFmrtA",
+      "why": "freeCodeCamp's 19-hour FastAPI course, chaptered. Every Phase 2 backend subtopic maps to a section."
+    },
+    {
+      "key": "oauth-oidc",
+      "id": "996OiexHze0",
+      "why": "OAuth 2.0 and OIDC in plain English (OktaDev); still the reference explanation."
+    },
+    {
+      "key": "idem",
+      "id": "jfHBrweuKRA",
+      "why": "Three-minute idempotency keys explainer."
+    },
+    {
+      "key": "backoff",
+      "id": "NByH-cau97A",
+      "why": "Exponential backoff with jitter, briefly."
+    },
+    {
+      "key": "llm-intro",
+      "id": "zjkBMFhNj_g",
+      "why": "Karpathy's one-hour mental model of LLMs, including tool use and security."
+    },
+    {
+      "key": "llm-deep",
+      "id": "7xTGNNLPyMI",
+      "why": "Karpathy's deep dive: tokens, pre-training, post-training, hallucination. Use the mapped chapters."
+    },
+    {
+      "key": "llm-tokenizer",
+      "id": "zduSFxRajkE",
+      "why": "Optional depth: why tokenisation explains odd model behaviour and cost."
+    },
+    {
+      "key": "transformers",
+      "id": "wjZofJX0v4M",
+      "why": "3Blue1Brown's visual explanation of what happens inside a transformer."
+    },
+    {
+      "key": "structured",
+      "id": "4rFVLMBwjGY",
+      "why": "Microsoft Reactor: function calling and structured outputs in Python."
+    },
+    {
+      "key": "pydantic-llm",
+      "id": "yj-wSRJwrrc",
+      "why": "Jason Liu on Pydantic as the contract for LLM outputs."
+    },
+    {
+      "key": "prompt101",
+      "id": "ysPbXH0LpIE",
+      "why": "Anthropic's own Prompting 101 workshop: building a prompt from scratch."
+    },
+    {
+      "key": "ctx-eng",
+      "id": "4GiqzUHD5AA",
+      "why": "Context engineering: selecting, compressing and isolating context."
+    },
+    {
+      "key": "injection",
+      "id": "FgxwCaL6UTA",
+      "why": "Simon Willison, who named prompt injection, explaining why it is hard."
+    },
+    {
+      "key": "docs-ready",
+      "id": "9lBTS5dM27c",
+      "why": "Parsing PDFs and documents into clean input, chaptered."
+    },
+    {
+      "key": "embeddings",
+      "id": "rq5pF1iPcZI",
+      "why": "Embeddings and cosine similarity in under ten minutes."
+    },
+    {
+      "key": "chunk5",
+      "id": "8OJC21T2SL4",
+      "why": "Greg Kamradt's five levels of text splitting."
+    },
+    {
+      "key": "chunk-sem",
+      "id": "TcRRfcbsApw",
+      "why": "Semantic chunking compared with fixed-size chunks."
+    },
+    {
+      "key": "pgvector",
+      "id": "j1QcPSLj7u0",
+      "why": "pgvector in practice: vectors next to your relational data."
+    },
+    {
+      "key": "hybrid",
+      "id": "D8LmsEOJvPI",
+      "why": "BM25 + vector + Reciprocal Rank Fusion, explained end to end."
+    },
+    {
+      "key": "rerank",
+      "id": "Uh9bYiVrW_s",
+      "why": "Two-stage retrieval with a reranker."
+    },
+    {
+      "key": "rag-scratch",
+      "id": "sVcwVQRHIc8",
+      "why": "RAG from scratch (LangChain engineer): indexing, query transformation, routing."
+    },
+    {
+      "key": "ragas",
+      "id": "-_52DIIOsCE",
+      "why": "Measuring retrieval and answer quality with RAGAS metrics."
+    },
+    {
+      "key": "agents-anth",
+      "id": "uhJJgc-0iTQ",
+      "why": "Anthropic on building effective agents: workflows versus agents, tools, failure."
+    },
+    {
+      "key": "agents-ng",
+      "id": "KrRD7r7y7NY",
+      "why": "Andrew Ng's four agentic patterns: reflection, tool use, planning, multi-agent."
+    },
+    {
+      "key": "agent-memory",
+      "id": "aYfZN8t6AQs",
+      "why": "Short- and long-term agent memory architecture."
+    },
+    {
+      "key": "lg-reliable",
+      "id": "kTnfJszFxCg",
+      "why": "Harrison Chase (LangGraph) on reliable enterprise agents."
+    },
+    {
+      "key": "hitl",
+      "id": "7GOxUgVTz3s",
+      "why": "Human-in-the-loop approval for agents, practically."
+    },
+    {
+      "key": "mcp-anth",
+      "id": "aZLr962R6Ag",
+      "why": "Anthropic: building with MCP and the Claude API, chaptered."
+    },
+    {
+      "key": "mcp-server",
+      "id": "-8k9lGpGQ6g",
+      "why": "Writing a custom MCP server in Python."
+    },
+    {
+      "key": "routing",
+      "id": "2ld7cR9y0Po",
+      "why": "Routing work across models for cost and quality."
+    },
+    {
+      "key": "evals-mistakes",
+      "id": "GL0XhAj5LPE",
+      "why": "Hamel Husain on the common mistakes in LLM evals."
+    },
+    {
+      "key": "evals-auto",
+      "id": "tqUDjc1HzO4",
+      "why": "Turning error analysis into automated evaluators (2026)."
+    },
+    {
+      "key": "judge",
+      "id": "kP_aaFnXLmY",
+      "why": "Building an LLM judge and aligning it with human labels."
+    },
+    {
+      "key": "agent-evals",
+      "id": "Ubwb6NzegyA",
+      "why": "Google DeepMind on evaluating multi-step agents."
+    },
+    {
+      "key": "otel",
+      "id": "LQOeaxfiAt8",
+      "why": "How distributed tracing works (OpenTelemetry), the model Langfuse builds on."
+    },
+    {
+      "key": "llm-obs",
+      "id": "Q9zd548hqiQ",
+      "why": "What to monitor in LLM systems: quality, drift, cost and latency."
+    },
+    {
+      "key": "langfuse-10",
+      "id": "2E8iTvGo9Hs",
+      "why": "Official ten-minute Langfuse tour: tracing, prompts, evals, datasets."
+    },
+    {
+      "key": "langfuse-trace",
+      "id": "pTneXS_m1rk",
+      "why": "Official deep dive on Langfuse tracing."
+    },
+    {
+      "key": "guardrails",
+      "id": "rMUycP_cp9g",
+      "why": "Guardrails against misuse, leakage and prompt attacks, in code."
+    },
+    {
+      "key": "owasp",
+      "id": "gUNXZMcd2jU",
+      "why": "IBM's walk-through of the OWASP Top 10 for LLMs."
+    },
+    {
+      "key": "data-gov",
+      "id": "EI8R5UuZt4U",
+      "why": "Data governance concepts and roles."
+    },
+    {
+      "key": "resp-ai",
+      "id": "MluoD8Z1ARQ",
+      "why": "Responsible AI governance in business terms."
+    },
+    {
+      "key": "docker-nana",
+      "id": "3c-iBn73dDE",
+      "why": "TechWorld with Nana's Docker course, chaptered (Compose, Dockerfile, volumes)."
+    },
+    {
+      "key": "dockerfile",
+      "id": "tc713anE3UY",
+      "why": "Small, cache-friendly Python images (2025)."
+    },
+    {
+      "key": "gha-nana",
+      "id": "R8_veQiYBjI",
+      "why": "GitHub Actions concepts and a CI/CD pipeline with Docker."
+    },
+    {
+      "key": "ci-pytest",
+      "id": "DhUpxWjOhME",
+      "why": "Running pytest in GitHub Actions before anything ships."
+    },
+    {
+      "key": "azure",
+      "id": "usvlTo0TDoA",
+      "why": "John Savill (2026) on how to learn Azure efficiently: access, portal, Cloud Shell, Microsoft Learn and certifications."
+    },
+    {
+      "key": "aca",
+      "id": "LogxM4r2a58",
+      "why": "Azure Container Apps hands-on (CLI, portal, image deployment)."
+    },
+    {
+      "key": "entra-overview",
+      "id": "bSIF_GjaCmo",
+      "why": "John Savill's Entra overview."
+    },
+    {
+      "key": "entra-deep",
+      "id": "cE3IiHGuHvs",
+      "why": "Entra ID components in depth, chaptered."
+    },
+    {
+      "key": "cost",
+      "id": "lHxl5SchjPA",
+      "why": "Where LLM cost comes from and how to cut it."
+    },
+    {
+      "key": "sysdesign",
+      "id": "mwN75EiGfCE",
+      "why": "End-to-end agentic system design in 27 minutes."
+    },
+    {
+      "key": "eda",
+      "id": "QNfIUIZQ9Vo",
+      "why": "Event-driven architecture: events, queues, pub/sub."
+    },
+    {
+      "key": "multiagent",
+      "id": "ow1we5PzK-o",
+      "why": "How a production multi-agent system is structured."
+    },
+    {
+      "key": "agent-sec",
+      "id": "jZXvqEqJT7o",
+      "why": "Securing agents: identity, permissions, sandboxing, injection defence."
+    },
+    {
+      "key": "ai-gov",
+      "id": "NrkJLbn3dDE",
+      "why": "SANS: the must-haves of an AI governance framework."
+    },
+    {
+      "key": "c4",
+      "id": "x2-rSnhpw0g",
+      "why": "Simon Brown, creator of the C4 model, presenting it."
+    },
+    {
+      "key": "adr",
+      "id": "LMBqGPLvonU",
+      "why": "Mark Richards: ADRs in ten minutes."
+    },
+    {
+      "key": "adr-keeling",
+      "id": "-JqraBhrrjI",
+      "why": "Michael Keeling on ADR practice in teams."
+    }
+  ]
+}

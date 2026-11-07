@@ -1,0 +1,497 @@
+{
+  "_note": "Official documentation used as primary or supporting resources. URLs are checked by scripts/check-docs.mjs into data/docs-verified.json.",
+  "docs": [
+    {
+      "key": "d-py-tut",
+      "title": "The Python Tutorial",
+      "author": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/"
+    },
+    {
+      "key": "d-py-classes",
+      "title": "Python tutorial: Classes",
+      "author": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/classes.html"
+    },
+    {
+      "key": "d-py-errors",
+      "title": "Python tutorial: Errors and Exceptions",
+      "author": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/errors.html"
+    },
+    {
+      "key": "d-py-modules",
+      "title": "Python tutorial: Modules and packages",
+      "author": "Python Software Foundation",
+      "url": "https://docs.python.org/3/tutorial/modules.html"
+    },
+    {
+      "key": "d-py-typing",
+      "title": "typing — Support for type hints",
+      "author": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/typing.html"
+    },
+    {
+      "key": "d-py-asyncio",
+      "title": "asyncio — Asynchronous I/O",
+      "author": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/asyncio.html"
+    },
+    {
+      "key": "d-py-logging",
+      "title": "Logging HOWTO",
+      "author": "Python Software Foundation",
+      "url": "https://docs.python.org/3/howto/logging.html"
+    },
+    {
+      "key": "d-py-json",
+      "title": "json — JSON encoder and decoder",
+      "author": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/json.html"
+    },
+    {
+      "key": "d-py-pathlib",
+      "title": "pathlib — Object-oriented filesystem paths",
+      "author": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/pathlib.html"
+    },
+    {
+      "key": "d-py-venv",
+      "title": "venv — Creation of virtual environments",
+      "author": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/venv.html"
+    },
+    {
+      "key": "d-py-mock",
+      "title": "unittest.mock — mock object library",
+      "author": "Python Software Foundation",
+      "url": "https://docs.python.org/3/library/unittest.mock.html"
+    },
+    {
+      "key": "d-uv",
+      "title": "uv documentation",
+      "author": "Astral",
+      "url": "https://docs.astral.sh/uv/"
+    },
+    {
+      "key": "d-ruff",
+      "title": "Ruff documentation",
+      "author": "Astral",
+      "url": "https://docs.astral.sh/ruff/"
+    },
+    {
+      "key": "d-pydantic-settings",
+      "title": "Pydantic Settings",
+      "author": "Pydantic",
+      "url": "https://pydantic.dev/docs/validation/latest/concepts/pydantic_settings/"
+    },
+    {
+      "key": "d-twelve-factor",
+      "title": "The Twelve-Factor App: Config",
+      "author": "Adam Wiggins",
+      "url": "https://12factor.net/config"
+    },
+    {
+      "key": "d-src-layout",
+      "title": "src layout vs flat layout",
+      "author": "Python Packaging Authority",
+      "url": "https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/"
+    },
+    {
+      "key": "d-pytest-fixtures",
+      "title": "pytest: How to use fixtures",
+      "author": "pytest-dev",
+      "url": "https://docs.pytest.org/en/stable/how-to/fixtures.html"
+    },
+    {
+      "key": "d-pytest-param",
+      "title": "pytest: How to parametrize",
+      "author": "pytest-dev",
+      "url": "https://docs.pytest.org/en/stable/how-to/parametrize.html"
+    },
+    {
+      "key": "d-pytest-monkeypatch",
+      "title": "pytest: monkeypatch",
+      "author": "pytest-dev",
+      "url": "https://docs.pytest.org/en/stable/how-to/monkeypatch.html"
+    },
+    {
+      "key": "d-git-branching",
+      "title": "Pro Git: Branches in a Nutshell",
+      "author": "Scott Chacon, Ben Straub",
+      "url": "https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell"
+    },
+    {
+      "key": "d-github-flow",
+      "title": "GitHub flow",
+      "author": "GitHub",
+      "url": "https://docs.github.com/en/get-started/using-github/github-flow"
+    },
+    {
+      "key": "d-vscode-debug",
+      "title": "Python debugging in VS Code",
+      "author": "Microsoft",
+      "url": "https://code.visualstudio.com/docs/python/debugging"
+    },
+    {
+      "key": "d-pg-tutorial",
+      "title": "PostgreSQL Tutorial",
+      "author": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/tutorial.html"
+    },
+    {
+      "key": "d-pg-window",
+      "title": "PostgreSQL: Window Functions",
+      "author": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/tutorial-window.html"
+    },
+    {
+      "key": "d-pg-cte",
+      "title": "PostgreSQL: WITH Queries (CTEs)",
+      "author": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/queries-with.html"
+    },
+    {
+      "key": "d-pg-constraints",
+      "title": "PostgreSQL: Constraints",
+      "author": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/ddl-constraints.html"
+    },
+    {
+      "key": "d-pg-transactions",
+      "title": "PostgreSQL: Transactions",
+      "author": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/tutorial-transactions.html"
+    },
+    {
+      "key": "d-pg-indexes",
+      "title": "PostgreSQL: Indexes",
+      "author": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/indexes.html"
+    },
+    {
+      "key": "d-pg-fts",
+      "title": "PostgreSQL: Full Text Search",
+      "author": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/textsearch.html"
+    },
+    {
+      "key": "d-psycopg",
+      "title": "Psycopg 3 documentation",
+      "author": "Psycopg",
+      "url": "https://www.psycopg.org/psycopg3/docs/"
+    },
+    {
+      "key": "d-pandas-10min",
+      "title": "10 minutes to pandas",
+      "author": "pandas",
+      "url": "https://pandas.pydata.org/docs/user_guide/10min.html"
+    },
+    {
+      "key": "d-mdn-http",
+      "title": "An overview of HTTP",
+      "author": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview"
+    },
+    {
+      "key": "d-fastapi-tutorial",
+      "title": "FastAPI Tutorial — User Guide",
+      "author": "FastAPI",
+      "url": "https://fastapi.tiangolo.com/tutorial/"
+    },
+    {
+      "key": "d-fastapi-deps",
+      "title": "FastAPI: Dependencies",
+      "author": "FastAPI",
+      "url": "https://fastapi.tiangolo.com/tutorial/dependencies/"
+    },
+    {
+      "key": "d-fastapi-security",
+      "title": "FastAPI: Security",
+      "author": "FastAPI",
+      "url": "https://fastapi.tiangolo.com/tutorial/security/"
+    },
+    {
+      "key": "d-fastapi-testing",
+      "title": "FastAPI: Testing",
+      "author": "FastAPI",
+      "url": "https://fastapi.tiangolo.com/tutorial/testing/"
+    },
+    {
+      "key": "d-fastapi-errors",
+      "title": "FastAPI: Handling Errors",
+      "author": "FastAPI",
+      "url": "https://fastapi.tiangolo.com/tutorial/handling-errors/"
+    },
+    {
+      "key": "d-pydantic",
+      "title": "Pydantic documentation",
+      "author": "Pydantic",
+      "url": "https://pydantic.dev/docs/validation/latest/get-started/"
+    },
+    {
+      "key": "d-sqlalchemy",
+      "title": "SQLAlchemy 2.0 Unified Tutorial",
+      "author": "SQLAlchemy",
+      "url": "https://docs.sqlalchemy.org/en/20/tutorial/"
+    },
+    {
+      "key": "d-alembic",
+      "title": "Alembic tutorial",
+      "author": "SQLAlchemy",
+      "url": "https://alembic.sqlalchemy.org/en/latest/tutorial.html"
+    },
+    {
+      "key": "d-oidc",
+      "title": "How OpenID Connect works",
+      "author": "OpenID Foundation",
+      "url": "https://openid.net/developers/how-connect-works/"
+    },
+    {
+      "key": "d-jwt",
+      "title": "RFC 7519: JSON Web Token",
+      "author": "IETF",
+      "url": "https://datatracker.ietf.org/doc/html/rfc7519"
+    },
+    {
+      "key": "d-idempotent",
+      "title": "Idempotent requests",
+      "author": "Stripe",
+      "url": "https://docs.stripe.com/api/idempotent_requests"
+    },
+    {
+      "key": "d-webhooks",
+      "title": "About webhooks",
+      "author": "GitHub",
+      "url": "https://docs.github.com/en/webhooks/about-webhooks"
+    },
+    {
+      "key": "d-claude-messages",
+      "title": "Claude API: Messages",
+      "author": "Anthropic",
+      "url": "https://platform.claude.com/docs/en/api/messages"
+    },
+    {
+      "key": "d-claude-models",
+      "title": "Claude: Models overview",
+      "author": "Anthropic",
+      "url": "https://platform.claude.com/docs/en/models/overview"
+    },
+    {
+      "key": "d-claude-context",
+      "title": "Claude: Context windows",
+      "author": "Anthropic",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/context-windows"
+    },
+    {
+      "key": "d-claude-streaming",
+      "title": "Claude: Streaming messages",
+      "author": "Anthropic",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/streaming"
+    },
+    {
+      "key": "d-claude-tools",
+      "title": "Claude: Tool use overview",
+      "author": "Anthropic",
+      "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview"
+    },
+    {
+      "key": "d-claude-structured",
+      "title": "Claude: Structured outputs",
+      "author": "Anthropic",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs"
+    },
+    {
+      "key": "d-claude-ratelimits",
+      "title": "Claude API: Rate limits",
+      "author": "Anthropic",
+      "url": "https://platform.claude.com/docs/en/api/rate-limits"
+    },
+    {
+      "key": "d-claude-errors",
+      "title": "Claude API: Errors",
+      "author": "Anthropic",
+      "url": "https://platform.claude.com/docs/en/api/errors"
+    },
+    {
+      "key": "d-claude-prompting",
+      "title": "Claude: Prompt engineering overview",
+      "author": "Anthropic",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+    },
+    {
+      "key": "d-claude-evals",
+      "title": "Claude: Define success and build evaluations",
+      "author": "Anthropic",
+      "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests"
+    },
+    {
+      "key": "d-openai-structured",
+      "title": "OpenAI: Structured outputs",
+      "author": "OpenAI",
+      "url": "https://developers.openai.com/api/docs/guides/structured-outputs"
+    },
+    {
+      "key": "d-openai-functions",
+      "title": "OpenAI: Function calling",
+      "author": "OpenAI",
+      "url": "https://developers.openai.com/api/docs/guides/function-calling"
+    },
+    {
+      "key": "d-langgraph",
+      "title": "LangGraph overview",
+      "author": "LangChain",
+      "url": "https://docs.langchain.com/oss/python/langgraph/overview"
+    },
+    {
+      "key": "d-langgraph-persistence",
+      "title": "LangGraph: Persistence",
+      "author": "LangChain",
+      "url": "https://docs.langchain.com/oss/python/langgraph/persistence"
+    },
+    {
+      "key": "d-langgraph-interrupts",
+      "title": "LangGraph: Interrupts",
+      "author": "LangChain",
+      "url": "https://docs.langchain.com/oss/python/langgraph/interrupts"
+    },
+    {
+      "key": "d-mcp-arch",
+      "title": "MCP: Architecture overview",
+      "author": "Model Context Protocol",
+      "url": "https://modelcontextprotocol.io/docs/2026-07-28/learn/architecture"
+    },
+    {
+      "key": "d-mcp-server",
+      "title": "MCP: Build a server",
+      "author": "Model Context Protocol",
+      "url": "https://modelcontextprotocol.io/docs/2026-07-28/develop/build-server"
+    },
+    {
+      "key": "d-mcp-auth",
+      "title": "MCP specification (2026-07-28): Authorization",
+      "author": "Model Context Protocol",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization"
+    },
+    {
+      "key": "d-otel-traces",
+      "title": "OpenTelemetry: Traces",
+      "author": "OpenTelemetry",
+      "url": "https://opentelemetry.io/docs/concepts/signals/traces/"
+    },
+    {
+      "key": "d-compose",
+      "title": "Docker Compose",
+      "author": "Docker",
+      "url": "https://docs.docker.com/compose/"
+    },
+    {
+      "key": "d-gha",
+      "title": "GitHub Actions documentation",
+      "author": "GitHub",
+      "url": "https://docs.github.com/en/actions"
+    },
+    {
+      "key": "d-aca-revisions",
+      "title": "Azure Container Apps: Revisions",
+      "author": "Microsoft",
+      "url": "https://learn.microsoft.com/en-us/azure/container-apps/revisions"
+    },
+    {
+      "key": "d-aca-bluegreen",
+      "title": "Azure Container Apps: Blue-green deployment",
+      "author": "Microsoft",
+      "url": "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment"
+    },
+    {
+      "key": "d-pg-flex",
+      "title": "Azure Database for PostgreSQL flexible server",
+      "author": "Microsoft",
+      "url": "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/overview"
+    },
+    {
+      "key": "d-keyvault",
+      "title": "Azure Key Vault overview",
+      "author": "Microsoft",
+      "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+    },
+    {
+      "key": "d-entra-approles",
+      "title": "Entra: Add app roles to your application",
+      "author": "Microsoft",
+      "url": "https://learn.microsoft.com/en-us/entra/identity-platform/howto-add-app-roles-in-apps"
+    },
+    {
+      "key": "d-azure-rbac",
+      "title": "Azure RBAC overview",
+      "author": "Microsoft",
+      "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+    },
+    {
+      "key": "d-multitenant",
+      "title": "Architect multitenant solutions on Azure",
+      "author": "Microsoft",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/overview"
+    },
+    {
+      "key": "d-retry",
+      "title": "Retry pattern",
+      "author": "Microsoft",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/retry"
+    },
+    {
+      "key": "d-circuit",
+      "title": "Circuit Breaker pattern",
+      "author": "Microsoft",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker"
+    },
+    {
+      "key": "d-queue-load",
+      "title": "Queue-Based Load Leveling pattern",
+      "author": "Microsoft",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling"
+    },
+    {
+      "key": "d-rate-limit",
+      "title": "Rate Limiting pattern",
+      "author": "Microsoft",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/rate-limiting-pattern"
+    },
+    {
+      "key": "d-waf",
+      "title": "Azure Well-Architected Framework",
+      "author": "Microsoft",
+      "url": "https://learn.microsoft.com/en-us/azure/well-architected/"
+    },
+    {
+      "key": "d-sre-incidents",
+      "title": "Site Reliability Engineering: Managing Incidents",
+      "author": "Google",
+      "url": "https://sre.google/sre-book/managing-incidents/"
+    },
+    {
+      "key": "d-c4",
+      "title": "The C4 model",
+      "author": "Simon Brown",
+      "url": "https://c4model.com/"
+    },
+    {
+      "key": "d-adr",
+      "title": "Architectural Decision Records",
+      "author": "adr.github.io",
+      "url": "https://adr.github.io/"
+    },
+    {
+      "key": "d-nist-ai-rmf",
+      "title": "NIST AI Risk Management Framework",
+      "author": "NIST",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+    },
+    {
+      "key": "d-ms-rai",
+      "title": "Microsoft Responsible AI",
+      "author": "Microsoft",
+      "url": "https://www.microsoft.com/en-us/ai/responsible-ai"
+    }
+  ]
+}

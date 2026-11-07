@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tokens — docs/DESIGN.md §3. Daylight is the default room; Night is the Quiet Room. */
+:root {
+  --ground: #ffffff;
+  --surface: #f2f2ee; /* travertine: the face taken from the Roman road */
+  --raised: #ffffff;
+  --active: #e7e7e2;
+  --border: #e6e6e1;
+  --rule: #efefeb;
+  --control: #c9c9c2;
+  --text: #1f201d;
+  --muted: #5d5d59;
+  --faint: #6b6b66;
+  --accent: #1b6e66;
+  --accent-ink: #ffffff;
+  --positive: #2e7d32;
+  --negative: #b42318;
+  --warning: #92400e;
+  --warning-bg: #fffbeb;
+  --primary: #1f201d;
+  --primary-ink: #ffffff;
+  color-scheme: light;
+}
+
+.night {
+  --ground: #0e0e0d;
+  --surface: #171715;
+  --raised: #1f1f1c;
+  --active: #2a2a26;
+  --border: #2a2a27;
+  --rule: #222220;
+  --control: #4a4a45;
+  --text: #ecebe6;
+  --muted: #b0afa8;
+  --faint: #93928b;
+  --accent: #5fb3a8;
+  --accent-ink: #0e0e0d;
+  --primary: #ecebe6;
+  --primary-ink: #0e0e0d;
+  --warning: #f0b35a;
+  --warning-bg: #2a2214;
+  color-scheme: dark;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--ground);
+  color: var(--text);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.num { font-variant-numeric: tabular-nums; }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+::selection { background: color-mix(in srgb, var(--accent) 25%, transparent); }
+
+/* Reading measure for lesson and scripture text */
+.prose-read { max-width: 68ch; font-size: 17px; line-height: 1.6; }
+
+/* Controls share one height and one pill radius (DESIGN §3). */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 40px; padding: 0 18px;
+  border-radius: 999px; font-weight: 500; font-size: 14px; white-space: nowrap; transition: transform 150ms, background-color 150ms, color 150ms, opacity 150ms; }
+.btn:active { transform: scale(0.98); }
+.btn:disabled { opacity: 0.55; cursor: not-allowed; }
+.btn-primary { background: var(--primary); color: var(--primary-ink); }
+.btn-primary:hover { opacity: 0.88; }
+.btn-accent { background: var(--accent); color: var(--accent-ink); }
+.btn-accent:hover { opacity: 0.9; }
+.btn-secondary { background: var(--raised); color: var(--text); border: 1px solid var(--control); }
+.btn-secondary:hover { background: var(--surface); }
+.btn-text { padding: 0 8px; min-height: 36px; color: var(--text); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--control); }
+.btn-text:hover { text-decoration-color: currentColor; }
+
+.field { display: flex; flex-direction: column; gap: 8px; }
+.field > span { font-size: 14px; font-weight: 500; }
+.input { min-height: 40px; border-radius: 10px; background: var(--raised); color: var(--text); padding: 8px 12px; border: 1px solid var(--control);
+  font-size: 15px; width: 100%; }
+.input::placeholder { color: var(--faint); }
+.input[aria-invalid="true"] { border-color: var(--negative); outline: 1px solid var(--negative); }
+textarea.input { min-height: 88px; resize: vertical; line-height: 1.5; }
+.field-error { color: var(--negative); font-size: 13px; }
+.hint { color: var(--muted); font-size: 13px; }
+
+.panel { background: var(--surface); border-radius: 22px; padding: 20px; }
+.card-row { background: var(--raised); border-radius: 14px; border: 1px solid var(--border); }
+
+.chip { display: inline-flex; align-items: center; gap: 6px; flex: none; white-space: nowrap; height: 24px; padding: 0 10px; border-radius: 999px;
+  font-size: 12px; font-weight: 500; background: var(--active); color: var(--text); }
+.chip-warn { background: var(--warning-bg); color: var(--warning); }
+.chip-accent { background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+/* Entering the Quiet Room (DESIGN §10). CSS so it needs no script and always ends visible. */
+@keyframes urha-veil { from { opacity: 1; } to { opacity: 0; visibility: hidden; } }
+@keyframes urha-rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+.night-veil { animation: urha-veil 700ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+.night-rise { animation: urha-rise 600ms cubic-bezier(0.2, 0.8, 0.2, 1) 250ms both; }
+
+@keyframes urha-enter { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.page-enter { animation: urha-enter 220ms cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+@supports (animation-timeline: view()) {
+  .reveal { animation: urha-rise linear both; animation-timeline: view(); animation-range: entry 0% entry 35%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-enter, .reveal, .night-rise { animation: none !important; }
+  .night-veil { display: none; }
+}
+
+/* ---- Concept I: Light in the Dark Room (docs/DESIGN.md §12) ---------------- */
+:root {
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.76, 0, 0.24, 1);
+  --ease-soft: cubic-bezier(0.33, 1, 0.68, 1);
+}
+/* The Meditation room: umber night, candle-gold light, manuscript rubrics. */
+.night {
+  --ground: #0f0d0b;
+  --surface: #191612;
+  --raised: #221e19;
+  --active: #2e2822;
+  --border: #2c2620;
+  --rule: #231f1a;
+  --control: #4d453b;
+  --text: #efe9df;
+  --muted: #b8ad9c;
+  --faint: #9a8f7f;
+  --accent: #d9b56f;     /* candle gold: 9.6:1 on the ground */
+  --accent-ink: #0f0d0b;
+  --rubric: #df8a6b;     /* manuscript rubric, for Scripture references only (6.1:1) */
+  --primary: #efe9df;
+  --primary-ink: #0f0d0b;
+}
+
+/* Receding band: as the opening leaves the screen, the picture sinks and dims a little. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .band { view-timeline-name: --band; }
+    .band__picture { animation: band-sink linear both; animation-timeline: --band; animation-range: exit 0% exit 100%; }
+    .band__scrim { animation: band-dim linear both; animation-timeline: --band; animation-range: exit 0% exit 100%; }
+  }
+}
+@keyframes band-sink { to { transform: translateY(8%) scale(1.06); } }
+@keyframes band-dim { to { opacity: 0.85; } }
+
+/* One slow drift on a held picture (the page's one moving picture). */
+@media (prefers-reduced-motion: no-preference) {
+  .drift { animation: drift 28s var(--ease-soft) infinite alternate; }
+}
+@keyframes drift { from { transform: scale(1.02) translate(0, 0); } to { transform: scale(1.08) translate(-1.5%, -1%); } }
+
+/* Opening window (Meditation): the painting opens from a lit window to full bleed over one screen of scroll. */
+.opening__stage { height: 100svh; overflow: clip; position: relative; }
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .opening { height: 190svh; view-timeline-name: --opening; --inset-y: 22%; --inset-x: 30%; }
+    .opening__stage { position: sticky; top: 0; }
+    .opening__window { animation: opening-window linear both; animation-timeline: --opening; animation-range: contain 0% contain 70%; }
+    .opening__picture { animation: opening-settle linear both; animation-timeline: --opening; animation-range: contain 0% contain 70%; }
+  }
+}
+@media (max-width: 700px) { .opening { --inset-y: 16%; --inset-x: 8%; } }
+@keyframes opening-window { from { clip-path: inset(var(--inset-y) var(--inset-x) round 6px); } to { clip-path: inset(0 round 0); } }
+@keyframes opening-settle { from { transform: scale(1.15); } to { transform: none; } }
+
+/* Milestone tilt (the one 3D move): a stone leans back slightly under the pointer. */
+@media (prefers-reduced-motion: no-preference) and (hover: hover) {
+  .stone { transition: transform 300ms var(--ease-out); transform-origin: 50% 100%; }
+  .road:hover .stone { transform: perspective(400px) rotateX(10deg); }
+  .road .stone:hover { transform: perspective(400px) rotateX(0deg) translateY(-3px); }
+}
+
+/* ---- Light through glass (docs/DESIGN.md §13) ------------------------------ */
+
+/* Each section is a room: the shell sets --section and --section-deep (lib/cinema.ts),
+   and every panel, control and focus ring in the room takes them up. */
+.room {
+  --accent: var(--section-deep);
+  --primary: var(--section-deep);
+  --surface: color-mix(in srgb, var(--section) 9%, #f7f7f3);
+  --active: color-mix(in srgb, var(--section) 17%, #ececE6);
+  --rule: color-mix(in srgb, var(--section) 12%, #efefeb);
+  --border: color-mix(in srgb, var(--section) 18%, #e6e6e1);
+}
+.meter-fill { background: linear-gradient(90deg, var(--section-deep), var(--section)); animation: meter-grow 900ms var(--ease-expo) both; transform-origin: left; }
+@keyframes meter-grow { from { transform: scaleX(0); } }
+
+/* A living picture: the painting beneath, the graded light fading in over it. */
+.living__still { filter: saturate(1.35) contrast(1.06); }
+.living__canvas { opacity: 0; transition: opacity 900ms var(--ease-soft); }
+.living__canvas[data-ready] { opacity: 1; }
+
+/* Bands: the scrim sits only under the words. */
+.band__scrim { background: linear-gradient(0deg, rgb(11 10 9 / 0.86) 0%, rgb(11 10 9 / 0.62) 42%, rgb(11 10 9 / 0.06) 82%); }
+.band__bar { position: absolute; left: 0; right: 0; height: 13%; background: #07070a; z-index: 2; pointer-events: none; animation: letterbox 1.5s var(--ease-in-out) 200ms both; }
+.band__bar--top { top: 0; transform-origin: top; }
+.band__bar--bottom { bottom: 0; transform-origin: bottom; }
+@keyframes letterbox { to { transform: scaleY(0); } }
+
+/* Titles: each word rises out of a mask, one after another. */
+.rising__mask { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: 0.14em; margin-bottom: -0.14em; }
+.rising__word { display: inline-block; animation: word-rise 900ms var(--ease-expo) calc(160ms + var(--i) * 80ms) both; }
+@keyframes word-rise { from { transform: translateY(112%) rotate(3deg); } to { transform: none; } }
+
+/* Home: the sky behind the words is dark enough only with this under it. */
+.hero-scrim { background: linear-gradient(100deg, rgb(8 12 40 / 0.72) 0%, rgb(8 12 40 / 0.46) 38%, rgb(8 12 40 / 0) 66%); }
+
+/* The hall the window stands in: night, so the glass has something to glow against. */
+.glass-hall { background: #0a1033; }
+.lancet { --glow: color-mix(in srgb, var(--pane) 70%, transparent); border-radius: 12px; }
+.lancet__frame { position: relative; display: block; height: 190px; overflow: hidden; border-radius: 999px 999px 6px 6px; background: radial-gradient(90% 60% at 50% 12%, color-mix(in srgb, var(--pane) 78%, #0a1033), color-mix(in srgb, var(--pane) 34%, #0a1033) 78%); outline: 2px solid color-mix(in srgb, var(--pane) 80%, #0a1033); outline-offset: -2px; transition: translate 300ms var(--ease-out); }
+@media (min-width: 640px) { .lancet__frame { height: 280px; } }
+.lancet[data-state="current"] .lancet__frame { outline-color: #fff; outline-width: 3px; outline-offset: -3px; }
+.lancet__fill { position: absolute; inset: 0; transform-origin: bottom; background: linear-gradient(0deg, var(--pane), color-mix(in srgb, var(--pane) 60%, #fff)); }
+/* The lead between the panes of glass. */
+.lancet__leading { position: absolute; inset: 0; background:
+  repeating-linear-gradient(60deg, transparent 0 34px, rgb(5 8 28 / 0.6) 34px 36px),
+  repeating-linear-gradient(-60deg, transparent 0 34px, rgb(5 8 28 / 0.6) 34px 36px); }
+/* Daylight passing across the window, pane after pane. */
+.lancet__sheen { position: absolute; inset: -20% -60%; background: linear-gradient(105deg, transparent 42%, rgb(255 255 255 / 0.42) 50%, transparent 58%); animation: sheen 7s var(--ease-in-out) infinite; }
+.glass-window li:nth-child(2) .lancet__sheen { animation-delay: 120ms; }
+.glass-window li:nth-child(3) .lancet__sheen { animation-delay: 240ms; }
+.glass-window li:nth-child(4) .lancet__sheen { animation-delay: 360ms; }
+.glass-window li:nth-child(5) .lancet__sheen { animation-delay: 480ms; }
+.glass-window li:nth-child(6) .lancet__sheen { animation-delay: 600ms; }
+.glass-window li:nth-child(7) .lancet__sheen { animation-delay: 720ms; }
+@keyframes sheen { 0% { transform: translateX(-70%); } 45%, 100% { transform: translateX(70%); } }
+@media (hover: hover) { .lancet:hover .lancet__frame { translate: 0 -6px; } }
+.lancet:focus-visible { outline-color: #fff; }
+
+/* The chosen station on My Path stands in its own glass. */
+.station--on { background: var(--pane-deep); color: #fff; }
+
+/* Meditation's plates: a slow coloured light crossing the painting. */
+.lit-plate img { filter: saturate(1.4) contrast(1.05); }
+.lit-plate::after { content: ""; position: absolute; inset: -30%; pointer-events: none; mix-blend-mode: soft-light;
+  background: radial-gradient(45% 45% at 50% 50%, var(--pane), transparent 72%); animation: plate-light 16s var(--ease-soft) infinite alternate; }
+@keyframes plate-light { from { transform: translate(-22%, -14%); } to { transform: translate(22%, 14%); } }
+
+/* Still: the system asks for less motion, or the person pressed Pause animation. */
+@media (prefers-reduced-motion: reduce) {
+  .band__bar { display: none; }
+  .rising__word, .meter-fill { animation: none; }
+  .lancet__sheen, .lit-plate::after, .drift { animation: none; }
+}
+html[data-motion="paused"] .band__bar { display: none; }
+html[data-motion="paused"] .rising__word,
+html[data-motion="paused"] .meter-fill,
+html[data-motion="paused"] .lancet__sheen,
+html[data-motion="paused"] .lit-plate::after,
+html[data-motion="paused"] .drift { animation: none; }

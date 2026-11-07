@@ -1,0 +1,4190 @@
+{
+ "verifiedAt": "2026-11-01T21:56:27.517Z",
+ "method": "youtube.com watch-page metadata (ytInitialPlayerResponse)",
+ "videos": {
+  "py-lists": {
+   "status": "verified",
+   "id": "W8KRzm-HUcc",
+   "title": "Python Tutorial for Beginners 4: Lists, Tuples, and Sets",
+   "channel": "Corey Schafer",
+   "durationSec": 1744,
+   "published": "2017-05-17",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-dicts": {
+   "status": "verified",
+   "id": "daefaLgNkw0",
+   "title": "Python Tutorial for Beginners 5: Dictionaries - Working with Key-Value Pairs",
+   "channel": "Corey Schafer",
+   "durationSec": 599,
+   "published": "2017-05-17",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-funcs": {
+   "status": "verified",
+   "id": "9Os0o3wzS_I",
+   "title": "Python Tutorial for Beginners 8: Functions",
+   "channel": "Corey Schafer",
+   "durationSec": 1307,
+   "published": "2017-05-17",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-modules": {
+   "status": "verified",
+   "id": "CqvZ3vGoGs0",
+   "title": "Python Tutorial for Beginners 9: Import Modules and Exploring The Standard Library",
+   "channel": "Corey Schafer",
+   "durationSec": 1317,
+   "published": "2017-05-17",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-oop1": {
+   "status": "verified",
+   "id": "ZDa-Z5JzLYM",
+   "title": "Python OOP Tutorial 1: Classes and Instances",
+   "channel": "Corey Schafer",
+   "durationSec": 924,
+   "published": "2016-06-20",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-oop2": {
+   "status": "verified",
+   "id": "BJ-VvGyQxho",
+   "title": "Python OOP Tutorial 2: Class Variables",
+   "channel": "Corey Schafer",
+   "durationSec": 701,
+   "published": "2016-06-23",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-oop3": {
+   "status": "verified",
+   "id": "rq8cL2XMM5M",
+   "title": "Python OOP Tutorial 3: classmethods and staticmethods",
+   "channel": "Corey Schafer",
+   "durationSec": 920,
+   "published": "2016-07-11",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-oop4": {
+   "status": "verified",
+   "id": "RSl87lqOXDE",
+   "title": "Python OOP Tutorial 4: Inheritance - Creating Subclasses",
+   "channel": "Corey Schafer",
+   "durationSec": 1180,
+   "published": "2016-07-25",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-oop5": {
+   "status": "verified",
+   "id": "3ohzBxoFHAY",
+   "title": "Python OOP Tutorial 5: Special (Magic/Dunder) Methods",
+   "channel": "Corey Schafer",
+   "durationSec": 830,
+   "published": "2016-08-08",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-oop6": {
+   "status": "verified",
+   "id": "jCzT9XFZ5bw",
+   "title": "Python OOP Tutorial 6: Property Decorators - Getters, Setters, and Deleters",
+   "channel": "Corey Schafer",
+   "durationSec": 572,
+   "published": "2016-08-19",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-except": {
+   "status": "verified",
+   "id": "NIWwJbo-9_8",
+   "title": "Python Tutorial: Using Try/Except Blocks for Error Handling",
+   "channel": "Corey Schafer",
+   "durationSec": 634,
+   "published": "2015-11-13",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-types": {
+   "status": "verified",
+   "id": "RwH2UzC2rIo",
+   "title": "Python Tutorial: Type Hints - From Basic Annotations to Advanced Generics",
+   "channel": "Corey Schafer",
+   "durationSec": 2458,
+   "published": "2025-07-17",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-types-why": {
+   "status": "verified",
+   "id": "0oBLMwHdZ2Y",
+   "title": "The REAL Reason You Should Use Type Hints in Python",
+   "channel": "ArjanCodes",
+   "durationSec": 781,
+   "published": "2025-05-02",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Intro"
+    },
+    {
+     "t": "0:23",
+     "sec": 23,
+     "title": "Background"
+    },
+    {
+     "t": "1:17",
+     "sec": 77,
+     "title": "Adding Type Hints to a Function"
+    },
+    {
+     "t": "3:11",
+     "sec": 191,
+     "title": "A Better Data Structure?"
+    },
+    {
+     "t": "5:26",
+     "sec": 326,
+     "title": "Best Practice: Be Generic for Input"
+    },
+    {
+     "t": "5:49",
+     "sec": 349,
+     "title": "Another example of generic inputs"
+    },
+    {
+     "t": "8:13",
+     "sec": 493,
+     "title": "Best practice: use Specific Outputs"
+    },
+    {
+     "t": "10:07",
+     "sec": 607,
+     "title": "Another example"
+    },
+    {
+     "t": "11:51",
+     "sec": 711,
+     "title": "Final thoughts"
+    }
+   ]
+  },
+  "py-deco": {
+   "status": "verified",
+   "id": "FsAPt_9Bf3U",
+   "title": "Python Tutorial: Decorators - Dynamically Alter The Functionality Of Your Functions",
+   "channel": "Corey Schafer",
+   "durationSec": 1827,
+   "published": "2016-04-04",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-gen": {
+   "status": "verified",
+   "id": "bD05uGo_sVI",
+   "title": "Python Tutorial: Generators - How to use them and the benefits you receive",
+   "channel": "Corey Schafer",
+   "durationSec": 674,
+   "published": "2015-08-17",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-json": {
+   "status": "verified",
+   "id": "9N6a-VLBa2I",
+   "title": "Python Tutorial: Working with JSON Data using the json Module",
+   "channel": "Corey Schafer",
+   "durationSec": 1233,
+   "published": "2017-11-20",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-files": {
+   "status": "verified",
+   "id": "Uh2ebFW8OYM",
+   "title": "Python Tutorial: File Objects - Reading and Writing to Files",
+   "channel": "Corey Schafer",
+   "durationSec": 1473,
+   "published": "2016-04-29",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-ctx": {
+   "status": "verified",
+   "id": "-aKFBoZpiqA",
+   "title": "Python Tutorial: Context Managers - Efficiently Managing Resources",
+   "channel": "Corey Schafer",
+   "durationSec": 1237,
+   "published": "2017-12-20",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-venv": {
+   "status": "verified",
+   "id": "Kg1Yvry_Ydk",
+   "title": "Python Tutorial: VENV (Mac & Linux) - How to Use Virtual Environments with the Built-In venv Module",
+   "channel": "Corey Schafer",
+   "durationSec": 857,
+   "published": "2019-04-02",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-uv": {
+   "status": "verified",
+   "id": "AMdG7IjgSPM",
+   "title": "Python Tutorial: UV - A Faster, All-in-One Package Manager to Replace Pip and Venv",
+   "channel": "Corey Schafer",
+   "durationSec": 1621,
+   "published": "2025-04-30",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-async": {
+   "status": "verified",
+   "id": "oAkLSJNr5zY",
+   "title": "Python Tutorial: AsyncIO - Complete Guide to Asynchronous Programming with Animations",
+   "channel": "Corey Schafer",
+   "durationSec": 6161,
+   "published": "2025-08-20",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-logbasic": {
+   "status": "verified",
+   "id": "g8nQ90Hk328",
+   "title": "Logging in Python  ||  Learn Python Programming  (Computer Science)",
+   "channel": "Socratica",
+   "durationSec": 471,
+   "published": "2017-07-15",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-logadv": {
+   "status": "verified",
+   "id": "jxmzY9soFXg",
+   "title": "Python Tutorial: Logging Advanced - Loggers, Handlers, and Formatters",
+   "channel": "Corey Schafer",
+   "durationSec": 1186,
+   "published": "2017-03-15",
+   "embeddable": true,
+   "chapters": []
+  },
+  "pd-1": {
+   "status": "verified",
+   "id": "ZyhVh-qRZPA",
+   "title": "Python Pandas Tutorial (Part 1): Getting Started with Data Analysis - Installation and Loading Data",
+   "channel": "Corey Schafer",
+   "durationSec": 1381,
+   "published": "2020-01-09",
+   "embeddable": true,
+   "chapters": []
+  },
+  "ms-git": {
+   "status": "verified",
+   "id": "2sjqTHE0zok",
+   "title": "Lecture 6: Version Control (git) (2020)",
+   "channel": "Missing Semester",
+   "durationSec": 5099,
+   "published": "2020-02-01",
+   "embeddable": true,
+   "chapters": []
+  },
+  "ms-shell": {
+   "status": "verified",
+   "id": "Z56Jmr9Z34Q",
+   "title": "Lecture 1: Course Overview + The Shell (2020)",
+   "channel": "Missing Semester",
+   "durationSec": 2896,
+   "published": "2020-02-01",
+   "embeddable": true,
+   "chapters": []
+  },
+  "vsc-debug": {
+   "status": "verified",
+   "id": "w8QHoVam1-I",
+   "title": "How to Debug Python with VSCode",
+   "channel": "Jayanam",
+   "durationSec": 368,
+   "published": "2018-09-15",
+   "embeddable": true,
+   "chapters": []
+  },
+  "fcc-pytest": {
+   "status": "verified",
+   "id": "cHYq1MRoyI0",
+   "title": "Pytest Tutorial – How to Test Python Code",
+   "channel": "freeCodeCamp.org",
+   "durationSec": 5318,
+   "published": "2023-10-23",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "0:06:06",
+     "sec": 366,
+     "title": "Our First Tests"
+    },
+    {
+     "t": "0:19:28",
+     "sec": 1168,
+     "title": "Class-based Tests"
+    },
+    {
+     "t": "0:29:49",
+     "sec": 1789,
+     "title": "Fixtures"
+    },
+    {
+     "t": "0:41:10",
+     "sec": 2470,
+     "title": "Mark & Parametrize"
+    },
+    {
+     "t": "0:55:24",
+     "sec": 3324,
+     "title": "Mocking"
+    },
+    {
+     "t": "1:13:16",
+     "sec": 4396,
+     "title": "Testing with ChatGPT"
+    }
+   ]
+  },
+  "py-unittest": {
+   "status": "verified",
+   "id": "6tNS--WetLI",
+   "title": "Python Tutorial: Unit Testing Your Code with the unittest Module",
+   "channel": "Corey Schafer",
+   "durationSec": 2352,
+   "published": "2017-08-16",
+   "embeddable": true,
+   "chapters": []
+  },
+  "py-mockpatch": {
+   "status": "verified",
+   "id": "WFRljVPHrkE",
+   "title": "How to use Python's unittest.mock.patch",
+   "channel": "redshiftzero",
+   "durationSec": 492,
+   "published": "2019-12-01",
+   "embeddable": true,
+   "chapters": []
+  },
+  "sql-baraa": {
+   "status": "verified",
+   "id": "SSKVgrwhzus",
+   "title": "SQL Full Course for Beginners (30 Hours) – From Zero to Hero",
+   "channel": "Data with Baraa",
+   "durationSec": 107307,
+   "published": "2025-03-27",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Intro"
+    },
+    {
+     "t": "07:38",
+     "sec": 458,
+     "title": "Introduction to SQL"
+    },
+    {
+     "t": "22:33",
+     "sec": 1353,
+     "title": "Setup Your Environment"
+    },
+    {
+     "t": "34:01",
+     "sec": 2041,
+     "title": "Query Data (SELECT)"
+    },
+    {
+     "t": "01:32:31",
+     "sec": 5551,
+     "title": "DDL Commands"
+    },
+    {
+     "t": "01:43:44",
+     "sec": 6224,
+     "title": "DML Commands"
+    },
+    {
+     "t": "02:08:03",
+     "sec": 7683,
+     "title": "Filtering Data"
+    },
+    {
+     "t": "02:47:57",
+     "sec": 10077,
+     "title": "SQL Joins (Basics)"
+    },
+    {
+     "t": "03:27:29",
+     "sec": 12449,
+     "title": "SQL Joins (Advanced)"
+    },
+    {
+     "t": "04:02:09",
+     "sec": 14529,
+     "title": "Set Operators"
+    },
+    {
+     "t": "04:47:41",
+     "sec": 17261,
+     "title": "SQL Functions"
+    },
+    {
+     "t": "04:52:58",
+     "sec": 17578,
+     "title": "String Functions"
+    },
+    {
+     "t": "05:18:44",
+     "sec": 19124,
+     "title": "Numeric Functions"
+    },
+    {
+     "t": "05:22:48",
+     "sec": 19368,
+     "title": "Date and Time Functions"
+    },
+    {
+     "t": "06:59:06",
+     "sec": 25146,
+     "title": "NULL Functions"
+    },
+    {
+     "t": "08:07:50",
+     "sec": 29270,
+     "title": "Case Statement"
+    },
+    {
+     "t": "08:43:36",
+     "sec": 31416,
+     "title": "Aggregate Functions"
+    },
+    {
+     "t": "08:50:11",
+     "sec": 31811,
+     "title": "Window Functions Basics"
+    },
+    {
+     "t": "09:47:00",
+     "sec": 35220,
+     "title": "Window Aggregate"
+    },
+    {
+     "t": "10:53:09",
+     "sec": 39189,
+     "title": "Window Ranking"
+    },
+    {
+     "t": "11:56:05",
+     "sec": 42965,
+     "title": "Window Value"
+    },
+    {
+     "t": "12:40:34",
+     "sec": 45634,
+     "title": "Advanced SQL Techniques"
+    },
+    {
+     "t": "12:58:04",
+     "sec": 46684,
+     "title": "Subqueries"
+    },
+    {
+     "t": "14:18:08",
+     "sec": 51488,
+     "title": "Common Table Expressions (CTE)"
+    },
+    {
+     "t": "15:35:02",
+     "sec": 56102,
+     "title": "Views"
+    },
+    {
+     "t": "16:36:40",
+     "sec": 59800,
+     "title": "CTAS and Temp Tables"
+    },
+    {
+     "t": "17:17:31",
+     "sec": 62251,
+     "title": "Compare Advanced Techniques"
+    },
+    {
+     "t": "17:27:04",
+     "sec": 62824,
+     "title": "Stored Procedures"
+    },
+    {
+     "t": "18:12:58",
+     "sec": 65578,
+     "title": "Triggers"
+    },
+    {
+     "t": "18:23:42",
+     "sec": 66222,
+     "title": "Indexes"
+    },
+    {
+     "t": "20:20:31",
+     "sec": 73231,
+     "title": "Execution Plan"
+    },
+    {
+     "t": "21:11:03",
+     "sec": 76263,
+     "title": "Partitions"
+    },
+    {
+     "t": "21:43:39",
+     "sec": 78219,
+     "title": "30x Performance Tips"
+    },
+    {
+     "t": "22:24:25",
+     "sec": 80665,
+     "title": "AI and SQL"
+    },
+    {
+     "t": "23:21:04",
+     "sec": 84064,
+     "title": "Project: SQL Data Warehouse"
+    },
+    {
+     "t": "24:32:54",
+     "sec": 88374,
+     "title": "Project DWH | Bronze"
+    },
+    {
+     "t": "25:10:09",
+     "sec": 90609,
+     "title": "Project DWH | Silver"
+    },
+    {
+     "t": "26:47:46",
+     "sec": 96466,
+     "title": "Project DWH | Gold"
+    },
+    {
+     "t": "27:41:51",
+     "sec": 99711,
+     "title": "Project: Exploratory Data Analysis (EDA)"
+    },
+    {
+     "t": "28:30:38",
+     "sec": 102638,
+     "title": "Project: Advanced Data Analytics"
+    },
+    {
+     "t": "29:47:24",
+     "sec": 107244,
+     "title": "Thank You"
+    }
+   ]
+  },
+  "db-design": {
+   "status": "verified",
+   "id": "_jf7KZqne-8",
+   "title": "Database Design & Data Modeling Full Course For Beginners [2026]",
+   "channel": "Ansh Lamba",
+   "durationSec": 13257,
+   "published": "2026-06-14",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "05:00",
+     "sec": 300,
+     "title": "Why Data Modeling?"
+    },
+    {
+     "t": "14:23",
+     "sec": 863,
+     "title": "What is Data Modeling?"
+    },
+    {
+     "t": "19:00",
+     "sec": 1140,
+     "title": "Layers Of Data Modeling"
+    },
+    {
+     "t": "28:54",
+     "sec": 1734,
+     "title": "OLTP vs OLAP Data Modeling"
+    },
+    {
+     "t": "40:47",
+     "sec": 2447,
+     "title": "Conceptual Layer OLTP"
+    },
+    {
+     "t": "58:34",
+     "sec": 3514,
+     "title": "Logical Layer OLAP"
+    },
+    {
+     "t": "1:06:02",
+     "sec": 3962,
+     "title": "E-R Diagram"
+    },
+    {
+     "t": "1:12:29",
+     "sec": 4349,
+     "title": "Data Types"
+    },
+    {
+     "t": "1:27:07",
+     "sec": 5227,
+     "title": "Primary Key, Candidate Key, Alternate Key, Super Key, Foreign Key"
+    },
+    {
+     "t": "1:50:51",
+     "sec": 6651,
+     "title": "Relationships & Cardinality"
+    },
+    {
+     "t": "2:21:29",
+     "sec": 8489,
+     "title": "Normalization"
+    },
+    {
+     "t": "2:23:52",
+     "sec": 8632,
+     "title": "1NF vs 2NF vs 3NF vs BCNF"
+    },
+    {
+     "t": "2:47:08",
+     "sec": 10028,
+     "title": "Physical Layer OLTP with AI"
+    },
+    {
+     "t": "2:52:37",
+     "sec": 10357,
+     "title": "OLAP Modeling"
+    },
+    {
+     "t": "3:03:58",
+     "sec": 11038,
+     "title": "Facts & Dimension Tables"
+    },
+    {
+     "t": "3:14:43",
+     "sec": 11683,
+     "title": "One Big Table"
+    },
+    {
+     "t": "3:28:43",
+     "sec": 12523,
+     "title": "Slowly Changing Dimensions"
+    }
+   ]
+  },
+  "pg-acid": {
+   "status": "verified",
+   "id": "pomxJOFVcQs",
+   "title": "Relational Database ACID Transactions (Explained by Example)",
+   "channel": "Hussein Nasser",
+   "durationSec": 2563,
+   "published": "2019-08-30",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Intro"
+    },
+    {
+     "t": "2:00",
+     "sec": 120,
+     "title": "What is a Transaction?"
+    },
+    {
+     "t": "4:30",
+     "sec": 270,
+     "title": "Atomicity"
+    },
+    {
+     "t": "7:00",
+     "sec": 420,
+     "title": "Isolation *"
+    },
+    {
+     "t": "9:30",
+     "sec": 570,
+     "title": "Isolation - Read phenomena *"
+    },
+    {
+     "t": "11:40",
+     "sec": 700,
+     "title": "Dirty Reads"
+    },
+    {
+     "t": "14:40",
+     "sec": 880,
+     "title": "Non-repeatable Read"
+    },
+    {
+     "t": "17:00",
+     "sec": 1020,
+     "title": "Phantom read"
+    },
+    {
+     "t": "18:53",
+     "sec": 1133,
+     "title": "Isolation Levels*2"
+    },
+    {
+     "t": "19:20",
+     "sec": 1160,
+     "title": "Read uncommitted"
+    },
+    {
+     "t": "19:55",
+     "sec": 1195,
+     "title": "Read committed"
+    },
+    {
+     "t": "21:05",
+     "sec": 1265,
+     "title": "Non-repeatable Read"
+    },
+    {
+     "t": "23:40",
+     "sec": 1420,
+     "title": "Serializability"
+    },
+    {
+     "t": "25:00",
+     "sec": 1500,
+     "title": "Isolation Levels vs Read phenomena Table"
+    },
+    {
+     "t": "27:45",
+     "sec": 1665,
+     "title": "Consistency"
+    },
+    {
+     "t": "28:30",
+     "sec": 1710,
+     "title": "Consistency in Data"
+    },
+    {
+     "t": "33:50",
+     "sec": 2030,
+     "title": "Consistency in Reads"
+    },
+    {
+     "t": "35:00",
+     "sec": 2100,
+     "title": "Eventual Consistency"
+    },
+    {
+     "t": "40:30",
+     "sec": 2430,
+     "title": "Durability"
+    }
+   ]
+  },
+  "pg-index": {
+   "status": "verified",
+   "id": "-qNSXK7s7_w",
+   "title": "Database Indexing Explained (with PostgreSQL)",
+   "channel": "Hussein Nasser",
+   "durationSec": 1098,
+   "published": "2020-09-30",
+   "embeddable": true,
+   "chapters": []
+  },
+  "sqla-crash": {
+   "status": "verified",
+   "id": "XWtj4zLl_tg",
+   "title": "SQLAlchemy 2.0 ORM Crash Course - Manage Relational Databases with Python (SQLAlchemy 2.0)",
+   "channel": "Ssali Jonathan",
+   "durationSec": 3780,
+   "published": "2023-05-09",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "1:15",
+     "sec": 75,
+     "title": "Connecting to the database"
+    },
+    {
+     "t": "6:35",
+     "sec": 395,
+     "title": "Create Database models"
+    },
+    {
+     "t": "24:37",
+     "sec": 1477,
+     "title": "Create database tables"
+    },
+    {
+     "t": "28:38",
+     "sec": 1718,
+     "title": "Create and persist objects"
+    },
+    {
+     "t": "37:45",
+     "sec": 2265,
+     "title": "Select statements"
+    },
+    {
+     "t": "42:34",
+     "sec": 2554,
+     "title": "Using sessions to select"
+    },
+    {
+     "t": "50:07",
+     "sec": 3007,
+     "title": "selects with join"
+    },
+    {
+     "t": "56:31",
+     "sec": 3391,
+     "title": "Update records"
+    },
+    {
+     "t": "59:18",
+     "sec": 3558,
+     "title": "Delete records"
+    },
+    {
+     "t": "1:01:18",
+     "sec": 3678,
+     "title": "Conclusion"
+    }
+   ]
+  },
+  "sqla-bayer": {
+   "status": "verified",
+   "id": "Uym2DHnUEno",
+   "title": "TUTORIAL: SQLAlchemy 2.0",
+   "channel": "Six Feet Up",
+   "durationSec": 6264,
+   "published": "2023-07-14",
+   "embeddable": true,
+   "chapters": []
+  },
+  "fcc-api": {
+   "status": "verified",
+   "id": "0sOvCWFmrtA",
+   "title": "Python API Development - Comprehensive Course for Beginners",
+   "channel": "freeCodeCamp.org",
+   "durationSec": 68427,
+   "published": "2021-11-01",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Intro"
+    },
+    {
+     "t": "06:33",
+     "sec": 393,
+     "title": "Project Overview"
+    },
+    {
+     "t": "11:22",
+     "sec": 682,
+     "title": "Mac Python Installation"
+    },
+    {
+     "t": "13:15",
+     "sec": 795,
+     "title": "Mac VS Code install and setup"
+    },
+    {
+     "t": "16:37",
+     "sec": 997,
+     "title": "Windows Python Installation"
+    },
+    {
+     "t": "18:30",
+     "sec": 1110,
+     "title": "Windows VS Code install and setup"
+    },
+    {
+     "t": "22:11",
+     "sec": 1331,
+     "title": "Python virtual Env Basics"
+    },
+    {
+     "t": "24:35",
+     "sec": 1475,
+     "title": "Virtual Env on windows"
+    },
+    {
+     "t": "28:56",
+     "sec": 1736,
+     "title": "Virtual Env on Mac"
+    },
+    {
+     "t": "34:17",
+     "sec": 2057,
+     "title": "Install dependencies w/ pip"
+    },
+    {
+     "t": "36:21",
+     "sec": 2181,
+     "title": "Starting FastAPI"
+    },
+    {
+     "t": "39:23",
+     "sec": 2363,
+     "title": "Path Operations"
+    },
+    {
+     "t": "53:22",
+     "sec": 3202,
+     "title": "Intro toman"
+    },
+    {
+     "t": "57:34",
+     "sec": 3454,
+     "title": "HTTP Requests"
+    },
+    {
+     "t": "1:07:29",
+     "sec": 4049,
+     "title": "Schema Validation with Pydantic"
+    },
+    {
+     "t": "1:22:45",
+     "sec": 4965,
+     "title": "CRUD Operations"
+    },
+    {
+     "t": "1:29:44",
+     "sec": 5384,
+     "title": "Storing in Array"
+    },
+    {
+     "t": "1:34:06",
+     "sec": 5646,
+     "title": "Creating"
+    },
+    {
+     "t": "1:38:15",
+     "sec": 5895,
+     "title": "Postman Collections & saving requests"
+    },
+    {
+     "t": "1:39:47",
+     "sec": 5987,
+     "title": "Retrieve One"
+    },
+    {
+     "t": "1:48:10",
+     "sec": 6490,
+     "title": "Path order Matters"
+    },
+    {
+     "t": "1:52:46",
+     "sec": 6766,
+     "title": "Changing response Status Codes"
+    },
+    {
+     "t": "2:01:49",
+     "sec": 7309,
+     "title": "Deleting"
+    },
+    {
+     "t": "2:10:31",
+     "sec": 7831,
+     "title": "Updating"
+    },
+    {
+     "t": "2:18:02",
+     "sec": 8282,
+     "title": "Automatic Documentation"
+    },
+    {
+     "t": "2:21:34",
+     "sec": 8494,
+     "title": "Python packages"
+    },
+    {
+     "t": "2:24:11",
+     "sec": 8651,
+     "title": "Database Intro"
+    },
+    {
+     "t": "2:28:54",
+     "sec": 8934,
+     "title": "Postgres Windows Install"
+    },
+    {
+     "t": "2:31:28",
+     "sec": 9088,
+     "title": "Postgres Mac Install"
+    },
+    {
+     "t": "2:34:26",
+     "sec": 9266,
+     "title": "Database Schema & Tables"
+    },
+    {
+     "t": "2:44:35",
+     "sec": 9875,
+     "title": "Managing Postgres with PgAdmin GUI"
+    },
+    {
+     "t": "3:12:10",
+     "sec": 11530,
+     "title": "Your first SQL Query"
+    },
+    {
+     "t": "3:19:43",
+     "sec": 11983,
+     "title": "Filter results with \"where\""
+    },
+    {
+     "t": "3:22:55",
+     "sec": 12175,
+     "title": "SQL Operators"
+    },
+    {
+     "t": "3:26:38",
+     "sec": 12398,
+     "title": "IN"
+    },
+    {
+     "t": "3:28:07",
+     "sec": 12487,
+     "title": "Pattern matching with LIKE"
+    },
+    {
+     "t": "3:31:59",
+     "sec": 12719,
+     "title": "Ordering Results"
+    },
+    {
+     "t": "3:36:27",
+     "sec": 12987,
+     "title": "LIMIT & OFFSET"
+    },
+    {
+     "t": "3:39:21",
+     "sec": 13161,
+     "title": "Modifying Data"
+    },
+    {
+     "t": "3:53:48",
+     "sec": 14028,
+     "title": "Setup App Database"
+    },
+    {
+     "t": "3:58:21",
+     "sec": 14301,
+     "title": "Connecting to database w/ Python"
+    },
+    {
+     "t": "4:08:00",
+     "sec": 14880,
+     "title": "Database CRUD"
+    },
+    {
+     "t": "4:31:18",
+     "sec": 16278,
+     "title": "ORM intro"
+    },
+    {
+     "t": "4:35:33",
+     "sec": 16533,
+     "title": "SQLALCHEMY setup"
+    },
+    {
+     "t": "4:55:25",
+     "sec": 17725,
+     "title": "Adding CreatedAt Column"
+    },
+    {
+     "t": "5:00:59",
+     "sec": 18059,
+     "title": "Get All"
+    },
+    {
+     "t": "5:07:55",
+     "sec": 18475,
+     "title": "Create"
+    },
+    {
+     "t": "5:15:50",
+     "sec": 18950,
+     "title": "Get by ID"
+    },
+    {
+     "t": "5:19:50",
+     "sec": 19190,
+     "title": "Delete"
+    },
+    {
+     "t": "5:22:31",
+     "sec": 19351,
+     "title": "Update"
+    },
+    {
+     "t": "5:28:21",
+     "sec": 19701,
+     "title": "Pydantic vs ORM Models"
+    },
+    {
+     "t": "5:32:21",
+     "sec": 19941,
+     "title": "Pydantic Models Deep Dive"
+    },
+    {
+     "t": "5:38:57",
+     "sec": 20337,
+     "title": "Response Model"
+    },
+    {
+     "t": "5:50:08",
+     "sec": 21008,
+     "title": "Creating Users Table"
+    },
+    {
+     "t": "5:54:50",
+     "sec": 21290,
+     "title": "User Registration Path Operation"
+    },
+    {
+     "t": "6:03:27",
+     "sec": 21807,
+     "title": "Hashing Passwords"
+    },
+    {
+     "t": "6:08:49",
+     "sec": 22129,
+     "title": "Refractor Hashing Logic"
+    },
+    {
+     "t": "6:10:32",
+     "sec": 22232,
+     "title": "Get User by ID"
+    },
+    {
+     "t": "6:17:13",
+     "sec": 22633,
+     "title": "FastAPI Routers"
+    },
+    {
+     "t": "6:27:34",
+     "sec": 23254,
+     "title": "Router Prefix"
+    },
+    {
+     "t": "6:30:31",
+     "sec": 23431,
+     "title": "Router Tags"
+    },
+    {
+     "t": "6:32:49",
+     "sec": 23569,
+     "title": "JWT Token Basics"
+    },
+    {
+     "t": "6:47:03",
+     "sec": 24423,
+     "title": "Login Process"
+    },
+    {
+     "t": "7:00:44",
+     "sec": 25244,
+     "title": "Creating Token"
+    },
+    {
+     "t": "7:09:58",
+     "sec": 25798,
+     "title": "OAuth2 PasswordRequestForm"
+    },
+    {
+     "t": "7:13:23",
+     "sec": 26003,
+     "title": "Verify user is Logged In"
+    },
+    {
+     "t": "7:25:21",
+     "sec": 26721,
+     "title": "Fixing Bugs"
+    },
+    {
+     "t": "7:27:59",
+     "sec": 26879,
+     "title": "Protecting Routes"
+    },
+    {
+     "t": "7:36:17",
+     "sec": 27377,
+     "title": "Test Expired Token"
+    },
+    {
+     "t": "7:38:13",
+     "sec": 27493,
+     "title": "Fetching User in Protected Routes"
+    },
+    {
+     "t": "7:42:44",
+     "sec": 27764,
+     "title": "Postman advanced Features"
+    },
+    {
+     "t": "7:50:33",
+     "sec": 28233,
+     "title": "SQL Relationship Basics"
+    },
+    {
+     "t": "7:54:59",
+     "sec": 28499,
+     "title": "Postgres Foreign Keys"
+    },
+    {
+     "t": "8:07:20",
+     "sec": 29240,
+     "title": "SQLAlchemy Foreign Keys"
+    },
+    {
+     "t": "8:13:40",
+     "sec": 29620,
+     "title": "Update Schema to include User"
+    },
+    {
+     "t": "8:17:59",
+     "sec": 29879,
+     "title": "Assigning Owner id when creating new"
+    },
+    {
+     "t": "8:21:01",
+     "sec": 30061,
+     "title": "Delete and Update only your own"
+    },
+    {
+     "t": "8:27:48",
+     "sec": 30468,
+     "title": "Only Retrieving Logged in User's"
+    },
+    {
+     "t": "8:33:37",
+     "sec": 30817,
+     "title": "Sqlalchemy Relationships"
+    },
+    {
+     "t": "8:38:32",
+     "sec": 31112,
+     "title": "Query Parameters"
+    },
+    {
+     "t": "8:50:46",
+     "sec": 31846,
+     "title": "Cleanup our main.py file"
+    },
+    {
+     "t": "8:53:53",
+     "sec": 32033,
+     "title": "Env Variables"
+    },
+    {
+     "t": "9:21:20",
+     "sec": 33680,
+     "title": "Vote/Like Theory"
+    },
+    {
+     "t": "9:26:36",
+     "sec": 33996,
+     "title": "Votes Table"
+    },
+    {
+     "t": "9:31:33",
+     "sec": 34293,
+     "title": "Votes Sqlalchemy"
+    },
+    {
+     "t": "9:34:11",
+     "sec": 34451,
+     "title": "Votes Route"
+    },
+    {
+     "t": "9:52:31",
+     "sec": 35551,
+     "title": "SQL Joins"
+    },
+    {
+     "t": "10:15:26",
+     "sec": 36926,
+     "title": "Joins in SqlAlchemy"
+    },
+    {
+     "t": "10:28:21",
+     "sec": 37701,
+     "title": "Get One with Joins"
+    },
+    {
+     "t": "10:30:18",
+     "sec": 37818,
+     "title": "What is a database migration tool"
+    },
+    {
+     "t": "10:33:45",
+     "sec": 38025,
+     "title": "Alembic Setup"
+    },
+    {
+     "t": "11:13:50",
+     "sec": 40430,
+     "title": "Disable SqlAlchemy create Engine"
+    },
+    {
+     "t": "11:14:28",
+     "sec": 40468,
+     "title": "What is CORS?"
+    },
+    {
+     "t": "11:23:38",
+     "sec": 41018,
+     "title": "Git PreReqs"
+    },
+    {
+     "t": "11:27:40",
+     "sec": 41260,
+     "title": "Git Install"
+    },
+    {
+     "t": "11:29:23",
+     "sec": 41363,
+     "title": "Github"
+    },
+    {
+     "t": "11:34:39",
+     "sec": 41679,
+     "title": "Heroku intro"
+    },
+    {
+     "t": "11:35:40",
+     "sec": 41740,
+     "title": "Create Heroku App"
+    },
+    {
+     "t": "11:40:21",
+     "sec": 42021,
+     "title": "Heroku procfile"
+    },
+    {
+     "t": "11:44:59",
+     "sec": 42299,
+     "title": "Adding a Postgres database"
+    },
+    {
+     "t": "11:48:42",
+     "sec": 42522,
+     "title": "Env Variables in Heroku"
+    },
+    {
+     "t": "11:58:59",
+     "sec": 43139,
+     "title": "Alembic migrations on Heroku Postgres instance"
+    },
+    {
+     "t": "12:02:52",
+     "sec": 43372,
+     "title": "Pushing changed to production"
+    },
+    {
+     "t": "12:05:04",
+     "sec": 43504,
+     "title": "Create an Ubuntu VM"
+    },
+    {
+     "t": "12:08:04",
+     "sec": 43684,
+     "title": "Update packages"
+    },
+    {
+     "t": "12:10:47",
+     "sec": 43847,
+     "title": "Install Python"
+    },
+    {
+     "t": "12:12:21",
+     "sec": 43941,
+     "title": "Install Postgres & setup password"
+    },
+    {
+     "t": "12:17:28",
+     "sec": 44248,
+     "title": "Postgres Config"
+    },
+    {
+     "t": "12:24:50",
+     "sec": 44690,
+     "title": "Create new user and setup python evironment"
+    },
+    {
+     "t": "12:34:06",
+     "sec": 45246,
+     "title": "Env Variables"
+    },
+    {
+     "t": "12:42:24",
+     "sec": 45744,
+     "title": "Alembic migrations on production database"
+    },
+    {
+     "t": "12:45:57",
+     "sec": 45957,
+     "title": "Gunicorn"
+    },
+    {
+     "t": "12:54:12",
+     "sec": 46452,
+     "title": "Creating a Systemd service"
+    },
+    {
+     "t": "13:04:45",
+     "sec": 47085,
+     "title": "NGINX"
+    },
+    {
+     "t": "13:10:45",
+     "sec": 47445,
+     "title": "Setting up Domain name"
+    },
+    {
+     "t": "13:15:19",
+     "sec": 47719,
+     "title": "SSL/HTTPS"
+    },
+    {
+     "t": "13:19:31",
+     "sec": 47971,
+     "title": "NGINX enable"
+    },
+    {
+     "t": "13:20:06",
+     "sec": 48006,
+     "title": "Firewall"
+    },
+    {
+     "t": "13:23:47",
+     "sec": 48227,
+     "title": "Pushing code changes to Production"
+    },
+    {
+     "t": "13:26:09",
+     "sec": 48369,
+     "title": "Dockerfile"
+    },
+    {
+     "t": "13:38:39",
+     "sec": 49119,
+     "title": "Docker Compose"
+    },
+    {
+     "t": "13:48:34",
+     "sec": 49714,
+     "title": "Postgres Container"
+    },
+    {
+     "t": "13:56:22",
+     "sec": 50182,
+     "title": "Bind Mounts"
+    },
+    {
+     "t": "14:03:39",
+     "sec": 50619,
+     "title": "Dockerhub"
+    },
+    {
+     "t": "14:08:08",
+     "sec": 50888,
+     "title": "Production vs Development"
+    },
+    {
+     "t": "14:14:51",
+     "sec": 51291,
+     "title": "Testing Intro"
+    },
+    {
+     "t": "14:17:19",
+     "sec": 51439,
+     "title": "Writing your first test"
+    },
+    {
+     "t": "14:30:22",
+     "sec": 52222,
+     "title": "The -s & -v flags"
+    },
+    {
+     "t": "14:31:44",
+     "sec": 52304,
+     "title": "Testing more functions"
+    },
+    {
+     "t": "14:35:29",
+     "sec": 52529,
+     "title": "Parametrize"
+    },
+    {
+     "t": "14:40:21",
+     "sec": 52821,
+     "title": "Testing Classes"
+    },
+    {
+     "t": "14:48:37",
+     "sec": 53317,
+     "title": "Fixtures"
+    },
+    {
+     "t": "14:55:40",
+     "sec": 53740,
+     "title": "Combining Fixtures + Parametrize"
+    },
+    {
+     "t": "14:59:13",
+     "sec": 53953,
+     "title": "Testing Exceptions"
+    },
+    {
+     "t": "15:06:07",
+     "sec": 54367,
+     "title": "FastAPI TestClient"
+    },
+    {
+     "t": "15:14:26",
+     "sec": 54866,
+     "title": "Pytest flags"
+    },
+    {
+     "t": "15:17:31",
+     "sec": 55051,
+     "title": "Test create user"
+    },
+    {
+     "t": "15:25:23",
+     "sec": 55523,
+     "title": "Setup testing database"
+    },
+    {
+     "t": "15:36:47",
+     "sec": 56207,
+     "title": "Create & destroy database after each test"
+    },
+    {
+     "t": "15:44:18",
+     "sec": 56658,
+     "title": "More Fixtures to handle database interaction"
+    },
+    {
+     "t": "15:50:35",
+     "sec": 57035,
+     "title": "Trailing slashes in path"
+    },
+    {
+     "t": "15:53:12",
+     "sec": 57192,
+     "title": "Fixture scope"
+    },
+    {
+     "t": "16:07:50",
+     "sec": 58070,
+     "title": "Test user fixture"
+    },
+    {
+     "t": "16:14:40",
+     "sec": 58480,
+     "title": "Test/validate token"
+    },
+    {
+     "t": "16:18:59",
+     "sec": 58739,
+     "title": "Conftest.py"
+    },
+    {
+     "t": "16:22:09",
+     "sec": 58929,
+     "title": "Testing"
+    },
+    {
+     "t": "17:34:15",
+     "sec": 63255,
+     "title": "CI/CD intro"
+    },
+    {
+     "t": "17:43:29",
+     "sec": 63809,
+     "title": "Github Actions"
+    },
+    {
+     "t": "17:49:32",
+     "sec": 64172,
+     "title": "Creating Jobs"
+    },
+    {
+     "t": "17:57:38",
+     "sec": 64658,
+     "title": "setup python/dependencies/pytest"
+    },
+    {
+     "t": "18:06:14",
+     "sec": 65174,
+     "title": "Env variables"
+    },
+    {
+     "t": "18:11:19",
+     "sec": 65479,
+     "title": "Github Secrets"
+    },
+    {
+     "t": "18:18:14",
+     "sec": 65894,
+     "title": "Testing database"
+    },
+    {
+     "t": "18:23:42",
+     "sec": 66222,
+     "title": "Building Docker images"
+    },
+    {
+     "t": "18:34:33",
+     "sec": 66873,
+     "title": "Deploy to heroku"
+    },
+    {
+     "t": "18:49:10",
+     "sec": 67750,
+     "title": "Failing tests in pipeline"
+    },
+    {
+     "t": "18:52:18",
+     "sec": 67938,
+     "title": "Deploy to Ubuntu"
+    }
+   ]
+  },
+  "oauth-oidc": {
+   "status": "verified",
+   "id": "996OiexHze0",
+   "title": "OAuth 2.0 and OpenID Connect (in plain English)",
+   "channel": "OktaDev",
+   "durationSec": 3737,
+   "published": "2018-02-05",
+   "embeddable": true,
+   "chapters": []
+  },
+  "idem": {
+   "status": "verified",
+   "id": "jfHBrweuKRA",
+   "title": "What Is Idempotency? Idempotency Keys, Deduplication & Retries Explained",
+   "channel": "The Right Trade-off",
+   "durationSec": 196,
+   "published": "2026-08-01",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "What Is Idempotency?"
+    },
+    {
+     "t": "0:16",
+     "sec": 16,
+     "title": "The Double-Charge Problem"
+    },
+    {
+     "t": "0:34",
+     "sec": 34,
+     "title": "Why Retries Are Unavoidable"
+    },
+    {
+     "t": "0:53",
+     "sec": 53,
+     "title": "The Fix: Idempotency Keys"
+    },
+    {
+     "t": "1:10",
+     "sec": 70,
+     "title": "How the Server Deduplicates Requests"
+    },
+    {
+     "t": "1:38",
+     "sec": 98,
+     "title": "Handling Race Conditions"
+    },
+    {
+     "t": "1:56",
+     "sec": 116,
+     "title": "Which HTTP Methods Are Idempotent? (GET/PUT/DELETE vs POST)"
+    },
+    {
+     "t": "2:24",
+     "sec": 144,
+     "title": "Idempotency in Message Queues (Kafka/SQS)"
+    },
+    {
+     "t": "2:53",
+     "sec": 173,
+     "title": "Recap"
+    }
+   ]
+  },
+  "backoff": {
+   "status": "verified",
+   "id": "NByH-cau97A",
+   "title": "Retry Strategies: Exponential Backoff & Jitter Explained",
+   "channel": "CodeLucky",
+   "durationSec": 268,
+   "published": "2025-12-13",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Retry Strategies Explained"
+    },
+    {
+     "t": "00:21",
+     "sec": 21,
+     "title": "What Are Transient Failures?"
+    },
+    {
+     "t": "00:50",
+     "sec": 50,
+     "title": "The Problem: Thundering Herd"
+    },
+    {
+     "t": "01:20",
+     "sec": 80,
+     "title": "Exponential Backoff Explained"
+    },
+    {
+     "t": "01:55",
+     "sec": 115,
+     "title": "Exponential Backoff Implementation"
+    },
+    {
+     "t": "02:24",
+     "sec": 144,
+     "title": "The Problem with Pure Exponential Backoff"
+    },
+    {
+     "t": "02:58",
+     "sec": 178,
+     "title": "Jitter Strategies"
+    },
+    {
+     "t": "03:34",
+     "sec": 214,
+     "title": "Best Practices & Summary"
+    },
+    {
+     "t": "04:12",
+     "sec": 252,
+     "title": "Outro"
+    }
+   ]
+  },
+  "llm-intro": {
+   "status": "verified",
+   "id": "zjkBMFhNj_g",
+   "title": "[1hr Talk] Intro to Large Language Models",
+   "channel": "Andrej Karpathy",
+   "durationSec": 3588,
+   "published": "2023-11-22",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00:00",
+     "sec": 0,
+     "title": "Intro: Large Language Model (LLM) talk"
+    },
+    {
+     "t": "00:00:20",
+     "sec": 20,
+     "title": "LLM Inference"
+    },
+    {
+     "t": "00:04:17",
+     "sec": 257,
+     "title": "LLM Training"
+    },
+    {
+     "t": "00:08:58",
+     "sec": 538,
+     "title": "LLM dreams"
+    },
+    {
+     "t": "00:11:22",
+     "sec": 682,
+     "title": "How do they work?"
+    },
+    {
+     "t": "00:14:14",
+     "sec": 854,
+     "title": "Finetuning into an Assistant"
+    },
+    {
+     "t": "00:17:52",
+     "sec": 1072,
+     "title": "Summary so far"
+    },
+    {
+     "t": "00:21:05",
+     "sec": 1265,
+     "title": "Appendix: Comparisons, Labeling docs, RLHF, Synthetic data, Leaderboard"
+    },
+    {
+     "t": "00:25:43",
+     "sec": 1543,
+     "title": "LLM Scaling Laws"
+    },
+    {
+     "t": "00:27:43",
+     "sec": 1663,
+     "title": "Tool Use (Browser, Calculator, Interpreter, DALL-E)"
+    },
+    {
+     "t": "00:33:32",
+     "sec": 2012,
+     "title": "Multimodality (Vision, Audio)"
+    },
+    {
+     "t": "00:35:00",
+     "sec": 2100,
+     "title": "Thinking, System 1/2"
+    },
+    {
+     "t": "00:38:02",
+     "sec": 2282,
+     "title": "Self-improvement, LLM AlphaGo"
+    },
+    {
+     "t": "00:40:45",
+     "sec": 2445,
+     "title": "LLM Customization, GPTs store"
+    },
+    {
+     "t": "00:42:15",
+     "sec": 2535,
+     "title": "LLM OS"
+    },
+    {
+     "t": "00:45:43",
+     "sec": 2743,
+     "title": "LLM Security Intro"
+    },
+    {
+     "t": "00:46:14",
+     "sec": 2774,
+     "title": "Jailbreaks"
+    },
+    {
+     "t": "00:51:30",
+     "sec": 3090,
+     "title": "Prompt Injection"
+    },
+    {
+     "t": "00:56:23",
+     "sec": 3383,
+     "title": "Data poisoning"
+    },
+    {
+     "t": "00:58:37",
+     "sec": 3517,
+     "title": "LLM Security conclusions"
+    },
+    {
+     "t": "00:59:23",
+     "sec": 3563,
+     "title": "Outro"
+    }
+   ]
+  },
+  "llm-deep": {
+   "status": "verified",
+   "id": "7xTGNNLPyMI",
+   "title": "Deep Dive into LLMs like ChatGPT",
+   "channel": "Andrej Karpathy",
+   "durationSec": 12683,
+   "published": "2025-02-05",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00:00",
+     "sec": 0,
+     "title": "introduction"
+    },
+    {
+     "t": "00:01:00",
+     "sec": 60,
+     "title": "pretraining data (internet)"
+    },
+    {
+     "t": "00:07:47",
+     "sec": 467,
+     "title": "tokenization"
+    },
+    {
+     "t": "00:14:27",
+     "sec": 867,
+     "title": "neural network I/O"
+    },
+    {
+     "t": "00:20:11",
+     "sec": 1211,
+     "title": "neural network internals"
+    },
+    {
+     "t": "00:26:01",
+     "sec": 1561,
+     "title": "inference"
+    },
+    {
+     "t": "00:31:09",
+     "sec": 1869,
+     "title": "GPT-2: training and inference"
+    },
+    {
+     "t": "00:42:52",
+     "sec": 2572,
+     "title": "Llama 3.1 base model inference"
+    },
+    {
+     "t": "00:59:23",
+     "sec": 3563,
+     "title": "pretraining to post-training"
+    },
+    {
+     "t": "01:01:06",
+     "sec": 3666,
+     "title": "post-training data (conversations)"
+    },
+    {
+     "t": "01:20:32",
+     "sec": 4832,
+     "title": "hallucinations, tool use, knowledge/working memory"
+    },
+    {
+     "t": "01:41:46",
+     "sec": 6106,
+     "title": "knowledge of self"
+    },
+    {
+     "t": "01:46:56",
+     "sec": 6416,
+     "title": "models need tokens to think"
+    },
+    {
+     "t": "02:01:11",
+     "sec": 7271,
+     "title": "tokenization revisited: models struggle with spelling"
+    },
+    {
+     "t": "02:04:53",
+     "sec": 7493,
+     "title": "jagged intelligence"
+    },
+    {
+     "t": "02:07:28",
+     "sec": 7648,
+     "title": "supervised finetuning to reinforcement learning"
+    },
+    {
+     "t": "02:14:42",
+     "sec": 8082,
+     "title": "reinforcement learning"
+    },
+    {
+     "t": "02:27:47",
+     "sec": 8867,
+     "title": "DeepSeek-R1"
+    },
+    {
+     "t": "02:42:07",
+     "sec": 9727,
+     "title": "AlphaGo"
+    },
+    {
+     "t": "02:48:26",
+     "sec": 10106,
+     "title": "reinforcement learning from human feedback (RLHF)"
+    },
+    {
+     "t": "03:09:39",
+     "sec": 11379,
+     "title": "preview of things to come"
+    },
+    {
+     "t": "03:15:15",
+     "sec": 11715,
+     "title": "keeping track of LLMs"
+    },
+    {
+     "t": "03:18:34",
+     "sec": 11914,
+     "title": "where to find LLMs"
+    },
+    {
+     "t": "03:21:46",
+     "sec": 12106,
+     "title": "grand summary"
+    }
+   ]
+  },
+  "llm-tokenizer": {
+   "status": "verified",
+   "id": "zduSFxRajkE",
+   "title": "Let's build the GPT Tokenizer",
+   "channel": "Andrej Karpathy",
+   "durationSec": 8014,
+   "published": "2024-02-20",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00:00",
+     "sec": 0,
+     "title": "intro: Tokenization, GPT-2 paper, tokenization-related issues"
+    },
+    {
+     "t": "00:05:50",
+     "sec": 350,
+     "title": "tokenization by example in a Web UI (tiktokenizer)"
+    },
+    {
+     "t": "00:14:56",
+     "sec": 896,
+     "title": "strings in Python, Unicode code points"
+    },
+    {
+     "t": "00:18:15",
+     "sec": 1095,
+     "title": "Unicode byte encodings, ASCII, UTF-8, UTF-16, UTF-32"
+    },
+    {
+     "t": "00:22:47",
+     "sec": 1367,
+     "title": "daydreaming: deleting tokenization"
+    },
+    {
+     "t": "00:23:50",
+     "sec": 1430,
+     "title": "Byte Pair Encoding (BPE) algorithm walkthrough"
+    },
+    {
+     "t": "00:27:02",
+     "sec": 1622,
+     "title": "starting the implementation"
+    },
+    {
+     "t": "00:28:35",
+     "sec": 1715,
+     "title": "counting consecutive pairs, finding most common pair"
+    },
+    {
+     "t": "00:30:36",
+     "sec": 1836,
+     "title": "merging the most common pair"
+    },
+    {
+     "t": "00:34:58",
+     "sec": 2098,
+     "title": "training the tokenizer: adding the while loop, compression ratio"
+    },
+    {
+     "t": "00:39:20",
+     "sec": 2360,
+     "title": "tokenizer/LLM diagram: it is a completely separate stage"
+    },
+    {
+     "t": "00:42:47",
+     "sec": 2567,
+     "title": "decoding tokens to strings"
+    },
+    {
+     "t": "00:48:21",
+     "sec": 2901,
+     "title": "encoding strings to tokens"
+    },
+    {
+     "t": "00:57:36",
+     "sec": 3456,
+     "title": "regex patterns to force splits across categories"
+    },
+    {
+     "t": "01:11:38",
+     "sec": 4298,
+     "title": "tiktoken library intro, differences between GPT-2/GPT-4 regex"
+    },
+    {
+     "t": "01:14:59",
+     "sec": 4499,
+     "title": "GPT-2 encoder.py released by OpenAI walkthrough"
+    },
+    {
+     "t": "01:18:26",
+     "sec": 4706,
+     "title": "special tokens, tiktoken handling of, GPT-2/GPT-4 differences"
+    },
+    {
+     "t": "01:25:28",
+     "sec": 5128,
+     "title": "minbpe exercise time! write your own GPT-4 tokenizer"
+    },
+    {
+     "t": "01:28:42",
+     "sec": 5322,
+     "title": "sentencepiece library intro, used to train Llama 2 vocabulary"
+    },
+    {
+     "t": "01:43:27",
+     "sec": 6207,
+     "title": "how to set vocabulary set? revisiting gpt.py transformer"
+    },
+    {
+     "t": "01:48:11",
+     "sec": 6491,
+     "title": "training new tokens, example of prompt compression"
+    },
+    {
+     "t": "01:49:58",
+     "sec": 6598,
+     "title": "multimodal [image, video, audio] tokenization with vector quantization"
+    },
+    {
+     "t": "01:51:41",
+     "sec": 6701,
+     "title": "revisiting and explaining the quirks of LLM tokenization"
+    },
+    {
+     "t": "02:10:20",
+     "sec": 7820,
+     "title": "final recommendations"
+    },
+    {
+     "t": "02:12:50",
+     "sec": 7970,
+     "title": "??? :)"
+    }
+   ]
+  },
+  "transformers": {
+   "status": "verified",
+   "id": "wjZofJX0v4M",
+   "title": "Transformers, the tech behind LLMs | Deep Learning Chapter 5",
+   "channel": "3Blue1Brown",
+   "durationSec": 1634,
+   "published": "2024-04-01",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Predict, sample, repeat"
+    },
+    {
+     "t": "3:03",
+     "sec": 183,
+     "title": "Inside a transformer"
+    },
+    {
+     "t": "6:36",
+     "sec": 396,
+     "title": "Chapter layout"
+    },
+    {
+     "t": "7:20",
+     "sec": 440,
+     "title": "The premise of Deep Learning"
+    },
+    {
+     "t": "12:27",
+     "sec": 747,
+     "title": "Word embeddings"
+    },
+    {
+     "t": "18:25",
+     "sec": 1105,
+     "title": "Embeddings beyond words"
+    },
+    {
+     "t": "20:22",
+     "sec": 1222,
+     "title": "Unembedding"
+    },
+    {
+     "t": "22:22",
+     "sec": 1342,
+     "title": "Softmax with temperature"
+    },
+    {
+     "t": "26:03",
+     "sec": 1563,
+     "title": "Up next"
+    }
+   ]
+  },
+  "structured": {
+   "status": "verified",
+   "id": "4rFVLMBwjGY",
+   "title": "Python + AI: Function calling & structured outputs",
+   "channel": "Microsoft Reactor",
+   "durationSec": 3792,
+   "published": "2025-03-25",
+   "embeddable": true,
+   "chapters": []
+  },
+  "pydantic-llm": {
+   "status": "verified",
+   "id": "yj-wSRJwrrc",
+   "title": "Pydantic is all you need: Jason Liu",
+   "channel": "AI Engineer",
+   "durationSec": 1075,
+   "published": "2023-11-01",
+   "embeddable": true,
+   "chapters": []
+  },
+  "prompt101": {
+   "status": "verified",
+   "id": "ysPbXH0LpIE",
+   "title": "Prompting 101 | Code w/ Claude",
+   "channel": "Anthropic",
+   "durationSec": 1492,
+   "published": "2025-07-31",
+   "embeddable": true,
+   "chapters": []
+  },
+  "ctx-eng": {
+   "status": "verified",
+   "id": "4GiqzUHD5AA",
+   "title": "Context Engineering for Agents",
+   "channel": "LangChain",
+   "durationSec": 1326,
+   "published": "2025-07-02",
+   "embeddable": true,
+   "chapters": []
+  },
+  "injection": {
+   "status": "verified",
+   "id": "FgxwCaL6UTA",
+   "title": "Prompt Injection, explained",
+   "channel": "Simon Willison",
+   "durationSec": 736,
+   "published": "2023-05-03",
+   "embeddable": true,
+   "chapters": []
+  },
+  "docs-ready": {
+   "status": "verified",
+   "id": "9lBTS5dM27c",
+   "title": "How to Get Your Data Ready for AI Agents (Docs, PDFs, Websites)",
+   "channel": "Dave Ebbelaar",
+   "durationSec": 1500,
+   "published": "2025-02-13",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:45",
+     "sec": 45,
+     "title": "Building an Extraction Pipeline"
+    },
+    {
+     "t": "2:15",
+     "sec": 135,
+     "title": "Document Conversion Basics"
+    },
+    {
+     "t": "6:12",
+     "sec": 372,
+     "title": "HTML Extraction Techniques"
+    },
+    {
+     "t": "9:10",
+     "sec": 550,
+     "title": "Chunking Data for AI"
+    },
+    {
+     "t": "14:22",
+     "sec": 862,
+     "title": "Storing in Vector Databases"
+    },
+    {
+     "t": "19:51",
+     "sec": 1191,
+     "title": "Searching the Vector Database"
+    },
+    {
+     "t": "22:16",
+     "sec": 1336,
+     "title": "Creating an Interactive Application"
+    }
+   ]
+  },
+  "embeddings": {
+   "status": "verified",
+   "id": "rq5pF1iPcZI",
+   "title": "Embeddings & Cosine Similarity Explained | Semantic Search, Vector Database & RAG with Examples",
+   "channel": "PM Expert",
+   "durationSec": 517,
+   "published": "2026-10-04",
+   "embeddable": true,
+   "chapters": []
+  },
+  "chunk5": {
+   "status": "verified",
+   "id": "8OJC21T2SL4",
+   "title": "The 5 Levels Of Text Splitting For Retrieval",
+   "channel": "Greg Kamradt",
+   "durationSec": 4139,
+   "published": "2024-01-08",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Intro"
+    },
+    {
+     "t": "3:42",
+     "sec": 222,
+     "title": "Theory"
+    },
+    {
+     "t": "6:57",
+     "sec": 417,
+     "title": "Level 1: Character Split"
+    },
+    {
+     "t": "16:04",
+     "sec": 964,
+     "title": "Level 2: Recursive Character Split"
+    },
+    {
+     "t": "20:59",
+     "sec": 1259,
+     "title": "Level 3: Document Specific Splitting"
+    },
+    {
+     "t": "32:10",
+     "sec": 1930,
+     "title": "Level 4: Semantic Splitting (With Embeddings)"
+    },
+    {
+     "t": "48:02",
+     "sec": 2882,
+     "title": "Level 5: Agentic Splitting"
+    },
+    {
+     "t": "1:02:47",
+     "sec": 3767,
+     "title": "Bonus Level: Alternative Representation"
+    }
+   ]
+  },
+  "chunk-sem": {
+   "status": "verified",
+   "id": "TcRRfcbsApw",
+   "title": "Semantic Chunking for RAG",
+   "channel": "James Briggs",
+   "durationSec": 1796,
+   "published": "2024-05-04",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Semantic Chunking for RAG"
+    },
+    {
+     "t": "00:45",
+     "sec": 45,
+     "title": "What is Semantic Chunking"
+    },
+    {
+     "t": "03:31",
+     "sec": 211,
+     "title": "Semantic Chunking in Python"
+    },
+    {
+     "t": "12:17",
+     "sec": 737,
+     "title": "Adding Context to Chunks"
+    },
+    {
+     "t": "13:41",
+     "sec": 821,
+     "title": "Providing LLMs with More Context"
+    },
+    {
+     "t": "18:11",
+     "sec": 1091,
+     "title": "Indexing our Chunks"
+    },
+    {
+     "t": "20:27",
+     "sec": 1227,
+     "title": "Creating Chunks for the LLM"
+    },
+    {
+     "t": "27:18",
+     "sec": 1638,
+     "title": "Querying for Chunks"
+    }
+   ]
+  },
+  "pgvector": {
+   "status": "verified",
+   "id": "j1QcPSLj7u0",
+   "title": "PGVector: Turn PostgreSQL Into A Vector Database",
+   "channel": "NeuralNine",
+   "durationSec": 1203,
+   "published": "2024-10-17",
+   "embeddable": true,
+   "chapters": []
+  },
+  "hybrid": {
+   "status": "verified",
+   "id": "D8LmsEOJvPI",
+   "title": "Hybrid Search in RAG Explained | BM25 + Semantic Search + RRF (Complete Guide)",
+   "channel": "Yash Patil",
+   "durationSec": 1735,
+   "published": "2026-05-20",
+   "embeddable": true,
+   "chapters": []
+  },
+  "rerank": {
+   "status": "verified",
+   "id": "Uh9bYiVrW_s",
+   "title": "RAG But Better: Rerankers with Cohere AI",
+   "channel": "James Briggs",
+   "durationSec": 1422,
+   "published": "2023-10-18",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "RAG and Rerankers"
+    },
+    {
+     "t": "01:25",
+     "sec": 85,
+     "title": "Problems of Retrieval Only"
+    },
+    {
+     "t": "04:32",
+     "sec": 272,
+     "title": "How Embedding Models Work"
+    },
+    {
+     "t": "06:34",
+     "sec": 394,
+     "title": "How Rerankers Work"
+    },
+    {
+     "t": "08:20",
+     "sec": 500,
+     "title": "Implementing Reranking in Python"
+    },
+    {
+     "t": "13:11",
+     "sec": 791,
+     "title": "Testing Retrieval without Reranking"
+    },
+    {
+     "t": "15:21",
+     "sec": 921,
+     "title": "Retrieval with Cohere Reranking"
+    },
+    {
+     "t": "21:54",
+     "sec": 1314,
+     "title": "Tips for Reranking"
+    }
+   ]
+  },
+  "rag-scratch": {
+   "status": "verified",
+   "id": "sVcwVQRHIc8",
+   "title": "Learn RAG From Scratch – Python AI Tutorial from a LangChain Engineer",
+   "channel": "freeCodeCamp.org",
+   "durationSec": 9191,
+   "published": "2024-04-17",
+   "embeddable": true,
+   "chapters": []
+  },
+  "ragas": {
+   "status": "verified",
+   "id": "-_52DIIOsCE",
+   "title": "AI Agent Evaluation with RAGAS",
+   "channel": "James Briggs",
+   "durationSec": 1181,
+   "published": "2024-04-04",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "RAG Evaluation"
+    },
+    {
+     "t": "00:39",
+     "sec": 39,
+     "title": "Overview of LangChain RAG Agent"
+    },
+    {
+     "t": "03:04",
+     "sec": 184,
+     "title": "RAGAS Code Prerequisites"
+    },
+    {
+     "t": "03:40",
+     "sec": 220,
+     "title": "Agent Output for RAGAS"
+    },
+    {
+     "t": "05:14",
+     "sec": 314,
+     "title": "RAGAS Evaluation Format"
+    },
+    {
+     "t": "08:04",
+     "sec": 484,
+     "title": "RAGAS Metrics"
+    },
+    {
+     "t": "08:56",
+     "sec": 536,
+     "title": "Understanding RAGAS Metrics"
+    },
+    {
+     "t": "09:16",
+     "sec": 556,
+     "title": "Retrieval Metrics"
+    },
+    {
+     "t": "11:55",
+     "sec": 715,
+     "title": "RAGAS Context Recall"
+    },
+    {
+     "t": "14:43",
+     "sec": 883,
+     "title": "RAGAS Context Precision"
+    },
+    {
+     "t": "15:52",
+     "sec": 952,
+     "title": "Generation Metrics"
+    },
+    {
+     "t": "16:05",
+     "sec": 965,
+     "title": "RAGAS Faithfulness"
+    },
+    {
+     "t": "17:16",
+     "sec": 1036,
+     "title": "RAGAS Answer Relevancy"
+    },
+    {
+     "t": "18:40",
+     "sec": 1120,
+     "title": "Metrics Driven Development"
+    }
+   ]
+  },
+  "agents-anth": {
+   "status": "verified",
+   "id": "uhJJgc-0iTQ",
+   "title": "Building more effective AI agents",
+   "channel": "Anthropic",
+   "durationSec": 1138,
+   "published": "2025-10-17",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Introductions"
+    },
+    {
+     "t": "00:35",
+     "sec": 35,
+     "title": "Training Claude to tackle agentic tasks"
+    },
+    {
+     "t": "1:30",
+     "sec": 90,
+     "title": "Making Claude more autonomous with code"
+    },
+    {
+     "t": "3:20",
+     "sec": 200,
+     "title": "Using the Claude Agent SDK to build agents"
+    },
+    {
+     "t": "5:00",
+     "sec": 300,
+     "title": "Tips for using Agent Skills"
+    },
+    {
+     "t": "6:40",
+     "sec": 400,
+     "title": "The evolution of workflows and agents (workflows of agents)"
+    },
+    {
+     "t": "8:30",
+     "sec": 510,
+     "title": "The value of simple agent architectures"
+    },
+    {
+     "t": "9:30",
+     "sec": 570,
+     "title": "Building multi-agent systems: orchestrators, subagents, and tool calling"
+    },
+    {
+     "t": "11:40",
+     "sec": 700,
+     "title": "Training Claude to use subagents"
+    },
+    {
+     "t": "12:25",
+     "sec": 745,
+     "title": "Multi-agent use design patterns: parallelization, MapReduce, and test-time compute"
+    },
+    {
+     "t": "13:20",
+     "sec": 800,
+     "title": "Coordinating problem solving with tools and subagents"
+    },
+    {
+     "t": "14:15",
+     "sec": 855,
+     "title": "Common agent failure modes"
+    },
+    {
+     "t": "15:00",
+     "sec": 900,
+     "title": "Best practices for getting started with building agents (context engineering, MCPs, and to"
+    },
+    {
+     "t": "17:15",
+     "sec": 1035,
+     "title": "The future of agents: coding, computer use, and beyond"
+    }
+   ]
+  },
+  "agents-ng": {
+   "status": "verified",
+   "id": "KrRD7r7y7NY",
+   "title": "Andrew Ng Explores The Rise Of AI Agents And Agentic Reasoning | BUILD 2024 Keynote",
+   "channel": "Snowflake Inc.",
+   "durationSec": 1612,
+   "published": "2024-11-19",
+   "embeddable": true,
+   "chapters": []
+  },
+  "agent-memory": {
+   "status": "verified",
+   "id": "aYfZN8t6AQs",
+   "title": "Agent Memory EXPLAINED - Complete Architecture",
+   "channel": "Hugging Face",
+   "durationSec": 1713,
+   "published": "2026-08-16",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "0:55",
+     "sec": 55,
+     "title": "What agent memory is"
+    },
+    {
+     "t": "3:28",
+     "sec": 208,
+     "title": "Persistent memory across agents"
+    },
+    {
+     "t": "4:26",
+     "sec": 266,
+     "title": "Databases used by Mem0"
+    },
+    {
+     "t": "8:06",
+     "sec": 486,
+     "title": "Memory ingestion"
+    },
+    {
+     "t": "15:30",
+     "sec": 930,
+     "title": "Retrieval: queries and semantic search"
+    },
+    {
+     "t": "19:19",
+     "sec": 1159,
+     "title": "Retrieval: BM25 and entity boosting"
+    },
+    {
+     "t": "25:38",
+     "sec": 1538,
+     "title": "Open models and conclusion"
+    }
+   ]
+  },
+  "lg-reliable": {
+   "status": "verified",
+   "id": "kTnfJszFxCg",
+   "title": "3 ingredients for building reliable enterprise agents - Harrison Chase, LangChain/LangGraph",
+   "channel": "AI Engineer",
+   "durationSec": 1254,
+   "published": "2025-07-23",
+   "embeddable": true,
+   "chapters": []
+  },
+  "hitl": {
+   "status": "verified",
+   "id": "7GOxUgVTz3s",
+   "title": "How to Build Human-in-the-Loop for AI Agents (Practical Guide)",
+   "channel": "Dave Ebbelaar",
+   "durationSec": 1488,
+   "published": "2026-01-19",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Human-in-the-Loop in AI"
+    },
+    {
+     "t": "02:17",
+     "sec": 137,
+     "title": "Python-Based Approaches"
+    },
+    {
+     "t": "04:13",
+     "sec": 253,
+     "title": "Tool Calling vs. Routing"
+    },
+    {
+     "t": "07:50",
+     "sec": 470,
+     "title": "Implementing Approval Steps"
+    },
+    {
+     "t": "10:15",
+     "sec": 615,
+     "title": "Production Patterns Overview"
+    },
+    {
+     "t": "12:33",
+     "sec": 753,
+     "title": "SSE Streaming for Real-Time Apps"
+    },
+    {
+     "t": "19:14",
+     "sec": 1154,
+     "title": "Async Process for Backend Workflows"
+    },
+    {
+     "t": "22:59",
+     "sec": 1379,
+     "title": "Key Concepts Recap"
+    }
+   ]
+  },
+  "mcp-anth": {
+   "status": "verified",
+   "id": "aZLr962R6Ag",
+   "title": "Building with MCP and the Claude API",
+   "channel": "Anthropic",
+   "durationSec": 1559,
+   "published": "2025-10-09",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Introductions"
+    },
+    {
+     "t": "00:30",
+     "sec": 30,
+     "title": "What is MCP?"
+    },
+    {
+     "t": "1:30",
+     "sec": 90,
+     "title": "The origins of MCP"
+    },
+    {
+     "t": "2:50",
+     "sec": 170,
+     "title": "Open sourcing MCP"
+    },
+    {
+     "t": "5:00",
+     "sec": 300,
+     "title": "Remote MCP support"
+    },
+    {
+     "t": "6:15",
+     "sec": 375,
+     "title": "MCP registries"
+    },
+    {
+     "t": "7:40",
+     "sec": 460,
+     "title": "Favorite MCPs: Context7 & Playwright"
+    },
+    {
+     "t": "10:40",
+     "sec": 640,
+     "title": "Using the Claude API MCP connector"
+    },
+    {
+     "t": "11:50",
+     "sec": 710,
+     "title": "Prompt engineering with MCP"
+    },
+    {
+     "t": "14:20",
+     "sec": 860,
+     "title": "Best practices for managing context and tools with MCP"
+    },
+    {
+     "t": "18:20",
+     "sec": 1100,
+     "title": "How John and Michael use MCP servers for project management, home automation, and more"
+    },
+    {
+     "t": "20:00",
+     "sec": 1200,
+     "title": "Understanding the “emergent” behaviors when Claude and MCP servers work together"
+    },
+    {
+     "t": "22:50",
+     "sec": 1370,
+     "title": "The future of MCP: growth of the protocol and ecosystem"
+    }
+   ]
+  },
+  "mcp-server": {
+   "status": "verified",
+   "id": "-8k9lGpGQ6g",
+   "title": "Build Anything With a CUSTOM MCP Server - Python Tutorial",
+   "channel": "Tech With Tim",
+   "durationSec": 1560,
+   "published": "2025-04-12",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Introduction to MCPs"
+    },
+    {
+     "t": "01:41",
+     "sec": 101,
+     "title": "Setup/Install"
+    },
+    {
+     "t": "04:09",
+     "sec": 249,
+     "title": "Basic MCP Example"
+    },
+    {
+     "t": "04:59",
+     "sec": 299,
+     "title": "Installing in Claude Desktop"
+    },
+    {
+     "t": "07:25",
+     "sec": 445,
+     "title": "Common Claude MCP Issues & Fixes"
+    },
+    {
+     "t": "10:28",
+     "sec": 628,
+     "title": "Advanced MCP Server Demo"
+    }
+   ]
+  },
+  "routing": {
+   "status": "verified",
+   "id": "2ld7cR9y0Po",
+   "title": "Multi-LLM Routing Strategies for Gen AI - Ethan Ferdosi",
+   "channel": "Optimized AI Conference",
+   "durationSec": 1178,
+   "published": "2025-09-08",
+   "embeddable": true,
+   "chapters": []
+  },
+  "evals-mistakes": {
+   "status": "verified",
+   "id": "GL0XhAj5LPE",
+   "title": "LLM Evals: Common Mistakes",
+   "channel": "Hamel Husain",
+   "durationSec": 1695,
+   "published": "2025-05-06",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:51",
+     "sec": 51,
+     "title": "Foundation model benchmarks are not the same as your application evals"
+    },
+    {
+     "t": "03:00",
+     "sec": 180,
+     "title": "Generic Evals Are Useless"
+    },
+    {
+     "t": "04:00",
+     "sec": 240,
+     "title": "Do not outsource labeling & prompting to non domain experts"
+    },
+    {
+     "t": "09:28",
+     "sec": 568,
+     "title": "You should make your own data annotation app"
+    },
+    {
+     "t": "12:40",
+     "sec": 760,
+     "title": "Your LLM prompts should be specific and grounded in error analysis"
+    },
+    {
+     "t": "15:25",
+     "sec": 925,
+     "title": "Use binary labels"
+    },
+    {
+     "t": "18:57",
+     "sec": 1137,
+     "title": "Look at your data"
+    },
+    {
+     "t": "23:41",
+     "sec": 1421,
+     "title": "Be careful of overfitting to test data"
+    },
+    {
+     "t": "25:40",
+     "sec": 1540,
+     "title": "Do online tests"
+    }
+   ]
+  },
+  "evals-auto": {
+   "status": "verified",
+   "id": "tqUDjc1HzO4",
+   "title": "How to Automate AI Evals (Correctly)",
+   "channel": "Hamel Husain",
+   "durationSec": 1639,
+   "published": "2026-07-03",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "00:00:55",
+     "sec": 55,
+     "title": "Why vendors want to automate evals for you"
+    },
+    {
+     "t": "00:01:45",
+     "sec": 105,
+     "title": "Why no tool can fully automate evals"
+    },
+    {
+     "t": "00:02:44",
+     "sec": 164,
+     "title": "The analyze, measure, improve lifecycle"
+    },
+    {
+     "t": "00:06:00",
+     "sec": 360,
+     "title": "Mistake #1: Asking AI to just \"find the issues\" in your data"
+    },
+    {
+     "t": "00:08:11",
+     "sec": 491,
+     "title": "What good AI-assisted error analysis actually looks like"
+    },
+    {
+     "t": "00:11:12",
+     "sec": 672,
+     "title": "Live demo: building a review interface from scratch"
+    },
+    {
+     "t": "00:15:10",
+     "sec": 910,
+     "title": "Annotating traces and building a failure mode taxonomy"
+    },
+    {
+     "t": "00:19:31",
+     "sec": 1171,
+     "title": "Mistake #2: Only reviewing your data once"
+    },
+    {
+     "t": "00:22:53",
+     "sec": 1373,
+     "title": "Mistake #3: Treating all apps with the same accuracy bar"
+    },
+    {
+     "t": "00:25:10",
+     "sec": 1510,
+     "title": "Surprising finding: general-purpose agents vs. dedicated eval tools"
+    },
+    {
+     "t": "00:25:48",
+     "sec": 1548,
+     "title": "Summary: three rules for automating evals correctly"
+    }
+   ]
+  },
+  "judge": {
+   "status": "verified",
+   "id": "kP_aaFnXLmY",
+   "title": "3. Tutorial: How to create an LLM judge and align with human labels",
+   "channel": "Evidently AI",
+   "durationSec": 1463,
+   "published": "2025-05-11",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:02",
+     "sec": 2,
+     "title": "Intro"
+    },
+    {
+     "t": "00:30",
+     "sec": 30,
+     "title": "Step 1. Define criteria"
+    },
+    {
+     "t": "02:04",
+     "sec": 124,
+     "title": "Step 2. Creating the dataset. Be the judge."
+    },
+    {
+     "t": "02:57",
+     "sec": 177,
+     "title": "Step 3. Create the judge. Prompt engineering a classifier."
+    },
+    {
+     "t": "03:51",
+     "sec": 231,
+     "title": "Step 4. Evaluate the LLM judge."
+    },
+    {
+     "t": "04:38",
+     "sec": 278,
+     "title": "Step 5. Using the LLM judge."
+    },
+    {
+     "t": "05:06",
+     "sec": 306,
+     "title": "Setup and introduction."
+    },
+    {
+     "t": "06:15",
+     "sec": 375,
+     "title": "Dataset and evaluation criteria"
+    },
+    {
+     "t": "09:20",
+     "sec": 560,
+     "title": "Creating the LLM judge. Overall process, first prompt version and evaluation."
+    },
+    {
+     "t": "12:50",
+     "sec": 770,
+     "title": "Creating a classification Report to evaluate the LLM judge. Interpretation."
+    },
+    {
+     "t": "16:01",
+     "sec": 961,
+     "title": "Creating a Dashboard panel for monitoring"
+    },
+    {
+     "t": "16:40",
+     "sec": 1000,
+     "title": "Experiment 2. Detailed prompt."
+    },
+    {
+     "t": "19:38",
+     "sec": 1178,
+     "title": "Experiment 3. Ask to think more"
+    },
+    {
+     "t": "21:00",
+     "sec": 1260,
+     "title": "Experiment 4. Try simpler model (Turbo)"
+    },
+    {
+     "t": "22:22",
+     "sec": 1342,
+     "title": "Experiment 5. Try another provider (Anthropic)"
+    },
+    {
+     "t": "24:10",
+     "sec": 1450,
+     "title": "Recap"
+    }
+   ]
+  },
+  "agent-evals": {
+   "status": "verified",
+   "id": "Ubwb6NzegyA",
+   "title": "Agentic Evaluations at Scale, For Everybody — Nicholas Kang & Michael Aaron, Google DeepMind",
+   "channel": "AI Engineer",
+   "durationSec": 1202,
+   "published": "2026-05-25",
+   "embeddable": true,
+   "chapters": []
+  },
+  "otel": {
+   "status": "verified",
+   "id": "LQOeaxfiAt8",
+   "title": "How Tracing works with OpenTelemetry",
+   "channel": "That DevOps Guy",
+   "durationSec": 1197,
+   "published": "2025-09-04",
+   "embeddable": true,
+   "chapters": []
+  },
+  "llm-obs": {
+   "status": "verified",
+   "id": "Q9zd548hqiQ",
+   "title": "LLM Observability: The Breakdown",
+   "channel": "The New Stack",
+   "durationSec": 1552,
+   "published": "2024-03-28",
+   "embeddable": true,
+   "chapters": []
+  },
+  "langfuse-10": {
+   "status": "verified",
+   "id": "2E8iTvGo9Hs",
+   "title": "10 min Walkthrough of Langfuse – Open Source LLM Observability, Evaluation, and Prompt Management",
+   "channel": "Langfuse",
+   "durationSec": 609,
+   "published": "2024-12-16",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Overview"
+    },
+    {
+     "t": "0:28",
+     "sec": 28,
+     "title": "Langfuse Dashboard"
+    },
+    {
+     "t": "0:49",
+     "sec": 49,
+     "title": "Tracing"
+    },
+    {
+     "t": "2:33",
+     "sec": 153,
+     "title": "Evaluation"
+    },
+    {
+     "t": "5:25",
+     "sec": 325,
+     "title": "Prompt Management"
+    },
+    {
+     "t": "7:00",
+     "sec": 420,
+     "title": "Datasets and Experiments"
+    },
+    {
+     "t": "9:45",
+     "sec": 585,
+     "title": "Summary"
+    }
+   ]
+  },
+  "langfuse-trace": {
+   "status": "verified",
+   "id": "pTneXS_m1rk",
+   "title": "Langfuse Intro - Observability & Tracing Deep Dive",
+   "channel": "Langfuse",
+   "durationSec": 672,
+   "published": "2025-08-26",
+   "embeddable": true,
+   "chapters": []
+  },
+  "guardrails": {
+   "status": "verified",
+   "id": "rMUycP_cp9g",
+   "title": "Advanced Guardrails for AI Agents | Full Tutorial",
+   "channel": "James Briggs",
+   "durationSec": 1331,
+   "published": "2025-04-01",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Why Guardrails"
+    },
+    {
+     "t": "00:20",
+     "sec": 20,
+     "title": "Guardrails for Agents"
+    },
+    {
+     "t": "03:40",
+     "sec": 220,
+     "title": "Sparse and Dense Vectors"
+    },
+    {
+     "t": "08:00",
+     "sec": 480,
+     "title": "Hybrid Guardrails with Python"
+    },
+    {
+     "t": "12:29",
+     "sec": 749,
+     "title": "Initializing the HybridRouter"
+    },
+    {
+     "t": "15:01",
+     "sec": 901,
+     "title": "Optimizing our Hybrid Guardrails"
+    },
+    {
+     "t": "19:16",
+     "sec": 1156,
+     "title": "Testing our Hybrid Router"
+    },
+    {
+     "t": "20:46",
+     "sec": 1246,
+     "title": "AI Guardrails in Context"
+    }
+   ]
+  },
+  "owasp": {
+   "status": "verified",
+   "id": "gUNXZMcd2jU",
+   "title": "OWASP's Top 10 Ways to Attack LLMs: AI Vulnerabilities Exposed",
+   "channel": "IBM Technology",
+   "durationSec": 1511,
+   "published": "2026-03-07",
+   "embeddable": true,
+   "chapters": []
+  },
+  "data-gov": {
+   "status": "verified",
+   "id": "EI8R5UuZt4U",
+   "title": "Data Governance Overview",
+   "channel": "Informatica Support",
+   "durationSec": 1402,
+   "published": "2022-07-25",
+   "embeddable": true,
+   "chapters": []
+  },
+  "resp-ai": {
+   "status": "verified",
+   "id": "MluoD8Z1ARQ",
+   "title": "Responsible AI: why businesses need reliable AI governance",
+   "channel": "IBM Technology",
+   "durationSec": 1618,
+   "published": "2024-05-14",
+   "embeddable": true,
+   "chapters": []
+  },
+  "docker-nana": {
+   "status": "verified",
+   "id": "3c-iBn73dDE",
+   "title": "Docker Tutorial for Beginners [FULL COURSE in 3 Hours]",
+   "channel": "TechWorld with Nana",
+   "durationSec": 9975,
+   "published": "2020-10-21",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Intro and Course Overview"
+    },
+    {
+     "t": "01:58",
+     "sec": 118,
+     "title": "What is Docker?"
+    },
+    {
+     "t": "10:56",
+     "sec": 656,
+     "title": "What is a Container?"
+    },
+    {
+     "t": "19:40",
+     "sec": 1180,
+     "title": "Docker vs Virtual Machine"
+    },
+    {
+     "t": "23:53",
+     "sec": 1433,
+     "title": "Docker Installation"
+    },
+    {
+     "t": "42:02",
+     "sec": 2522,
+     "title": "Main Docker Commands"
+    },
+    {
+     "t": "57:15",
+     "sec": 3435,
+     "title": "Debugging a Container"
+    },
+    {
+     "t": "1:06:39",
+     "sec": 3999,
+     "title": "Demo Project Overview - Docker in Practice"
+    },
+    {
+     "t": "1:10:08",
+     "sec": 4208,
+     "title": "Developing with Containers"
+    },
+    {
+     "t": "1:29:49",
+     "sec": 5389,
+     "title": "Docker Compose - Running multiple services"
+    },
+    {
+     "t": "1:42:02",
+     "sec": 6122,
+     "title": "Dockerfile - Building our own Docker Image"
+    },
+    {
+     "t": "2:04:36",
+     "sec": 7476,
+     "title": "Private Docker Repository - Pushing our built Docker Image into a private Registry on AWS"
+    },
+    {
+     "t": "2:19:06",
+     "sec": 8346,
+     "title": "Deploy our containerized app"
+    },
+    {
+     "t": "2:27:26",
+     "sec": 8846,
+     "title": "Docker Volumes - Persist data in Docker"
+    },
+    {
+     "t": "2:33:03",
+     "sec": 9183,
+     "title": "Volumes Demo - Configure persistence for our demo project"
+    },
+    {
+     "t": "2:45:13",
+     "sec": 9913,
+     "title": "Wrap Up"
+    }
+   ]
+  },
+  "dockerfile": {
+   "status": "verified",
+   "id": "tc713anE3UY",
+   "title": "This Is How You Write an Efficient Python Dockerfile",
+   "channel": "ArjanCodes",
+   "durationSec": 1126,
+   "published": "2025-03-14",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Intro"
+    },
+    {
+     "t": "0:23",
+     "sec": 23,
+     "title": "1. Starting Point"
+    },
+    {
+     "t": "3:04",
+     "sec": 184,
+     "title": "2. Choose The Right Base Image"
+    },
+    {
+     "t": "5:18",
+     "sec": 318,
+     "title": "3. Do Not Use the Latest Tag"
+    },
+    {
+     "t": "6:21",
+     "sec": 381,
+     "title": "4. Remove Unnecessary Dependencies"
+    },
+    {
+     "t": "7:25",
+     "sec": 445,
+     "title": "5. Clean Up Dependencies"
+    },
+    {
+     "t": "8:06",
+     "sec": 486,
+     "title": "6. Use UV"
+    },
+    {
+     "t": "9:10",
+     "sec": 550,
+     "title": "7. Use a Multi Stage Build"
+    },
+    {
+     "t": "11:42",
+     "sec": 702,
+     "title": "8. COPY Only The Things You Need"
+    },
+    {
+     "t": "13:26",
+     "sec": 806,
+     "title": "9. Load Secrets Using The Secret Mount Type"
+    },
+    {
+     "t": "15:11",
+     "sec": 911,
+     "title": "10. Run as a local user"
+    },
+    {
+     "t": "16:34",
+     "sec": 994,
+     "title": "Frustrations"
+    },
+    {
+     "t": "18:15",
+     "sec": 1095,
+     "title": "Final Thoughts"
+    }
+   ]
+  },
+  "gha-nana": {
+   "status": "verified",
+   "id": "R8_veQiYBjI",
+   "title": "GitHub Actions Tutorial - Basic Concepts and CI/CD Pipeline with Docker",
+   "channel": "TechWorld with Nana",
+   "durationSec": 1950,
+   "published": "2020-10-08",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Intro"
+    },
+    {
+     "t": "01:03",
+     "sec": 63,
+     "title": "What is Github Actions?"
+    },
+    {
+     "t": "01:29",
+     "sec": 89,
+     "title": "What are developer workflows? Use Cases for GitHub Actions"
+    },
+    {
+     "t": "04:50",
+     "sec": 290,
+     "title": "Basic Concepts of GitHub Actions: How GitHub Actions automates those workflows? GitHub Eve"
+    },
+    {
+     "t": "06:41",
+     "sec": 401,
+     "title": "GitHub Actions CI/CD"
+    },
+    {
+     "t": "07:18",
+     "sec": 438,
+     "title": "Why another CI/CD Tool - Benefits of Github Actions"
+    },
+    {
+     "t": "09:50",
+     "sec": 590,
+     "title": "DEMO - Create CI Workflow or Pipeline"
+    },
+    {
+     "t": "13:04",
+     "sec": 784,
+     "title": "Syntax of Workflow File"
+    },
+    {
+     "t": "20:40",
+     "sec": 1240,
+     "title": "Where does this Workflow Code run? GitHub Action Runner"
+    },
+    {
+     "t": "24:35",
+     "sec": 1475,
+     "title": "Build Docker Image and push to private Docker Repo"
+    }
+   ]
+  },
+  "ci-pytest": {
+   "status": "verified",
+   "id": "DhUpxWjOhME",
+   "title": "Automated Testing in Python with pytest, tox, and GitHub Actions",
+   "channel": "mCoding",
+   "durationSec": 1626,
+   "published": "2021-09-11",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Intro"
+    },
+    {
+     "t": "1:21",
+     "sec": 81,
+     "title": "Overview of the video"
+    },
+    {
+     "t": "2:56",
+     "sec": 176,
+     "title": "Structuring your project"
+    },
+    {
+     "t": "8:35",
+     "sec": 515,
+     "title": "Pytest, mypy, flake8"
+    },
+    {
+     "t": "10:58",
+     "sec": 658,
+     "title": "Pytest features"
+    },
+    {
+     "t": "18:34",
+     "sec": 1114,
+     "title": "Test multiple envs with tox"
+    },
+    {
+     "t": "21:18",
+     "sec": 1278,
+     "title": "Test on commit with GH Actions"
+    },
+    {
+     "t": "25:22",
+     "sec": 1522,
+     "title": "Readme badge"
+    },
+    {
+     "t": "26:34",
+     "sec": 1594,
+     "title": "Thanks"
+    }
+   ]
+  },
+  "azure": {
+   "status": "verified",
+   "id": "usvlTo0TDoA",
+   "title": "Learn Azure in 2026",
+   "channel": "John Savill's Technical Training",
+   "durationSec": 1710,
+   "published": "2026-01-26",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "00:26",
+     "sec": 26,
+     "title": "Foundational knowledge"
+    },
+    {
+     "t": "04:46",
+     "sec": 286,
+     "title": "Curated content"
+    },
+    {
+     "t": "06:26",
+     "sec": 386,
+     "title": "Getting access to Azure"
+    },
+    {
+     "t": "10:03",
+     "sec": 603,
+     "title": "Optimize resource use"
+    },
+    {
+     "t": "13:39",
+     "sec": 819,
+     "title": "Information in the portal"
+    },
+    {
+     "t": "15:59",
+     "sec": 959,
+     "title": "Microsoft Learn"
+    },
+    {
+     "t": "17:37",
+     "sec": 1057,
+     "title": "Using the cloud shell"
+    },
+    {
+     "t": "18:25",
+     "sec": 1105,
+     "title": "AI help with Copilot"
+    },
+    {
+     "t": "23:25",
+     "sec": 1405,
+     "title": "Deeper video help"
+    },
+    {
+     "t": "23:43",
+     "sec": 1423,
+     "title": "Key certifications"
+    },
+    {
+     "t": "26:30",
+     "sec": 1590,
+     "title": "Staying current"
+    },
+    {
+     "t": "27:32",
+     "sec": 1652,
+     "title": "Summary"
+    },
+    {
+     "t": "28:09",
+     "sec": 1689,
+     "title": "Close"
+    }
+   ]
+  },
+  "aca": {
+   "status": "verified",
+   "id": "LogxM4r2a58",
+   "title": "Azure Container Apps (2025 Edition)",
+   "channel": "Agentic Intelligence w/ Michael Levan",
+   "durationSec": 762,
+   "published": "2025-04-12",
+   "embeddable": true,
+   "chapters": []
+  },
+  "entra-overview": {
+   "status": "verified",
+   "id": "bSIF_GjaCmo",
+   "title": "Microsoft Entra Overview - AZ-900 Certification Course - January 2023 New",
+   "channel": "John Savill's Technical Training",
+   "durationSec": 694,
+   "published": "2023-01-26",
+   "embeddable": true,
+   "chapters": []
+  },
+  "entra-deep": {
+   "status": "verified",
+   "id": "cE3IiHGuHvs",
+   "title": "Entra ID (Azure AD) -  Deep Dive",
+   "channel": "Militas Aurelius",
+   "durationSec": 1837,
+   "published": "2023-08-29",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "02:59",
+     "sec": 179,
+     "title": "Entra Architecture"
+    },
+    {
+     "t": "04:37",
+     "sec": 277,
+     "title": "Entra Directory Objects"
+    },
+    {
+     "t": "05:54",
+     "sec": 354,
+     "title": "Custom Security Attributes"
+    },
+    {
+     "t": "08:25",
+     "sec": 505,
+     "title": "Conditional Access Policies - Intro"
+    },
+    {
+     "t": "10:32",
+     "sec": 632,
+     "title": "Conditional Access Policies - Block Policies"
+    },
+    {
+     "t": "13:10",
+     "sec": 790,
+     "title": "Conditional Access Policies - Global Policies"
+    },
+    {
+     "t": "18:07",
+     "sec": 1087,
+     "title": "Conditional Access Policies - Security Attribute Policies"
+    },
+    {
+     "t": "22:53",
+     "sec": 1373,
+     "title": "Conditional Access Policies - Conclusion"
+    },
+    {
+     "t": "24:26",
+     "sec": 1466,
+     "title": "Troubleshooting Sign Ins"
+    },
+    {
+     "t": "29:45",
+     "sec": 1785,
+     "title": "Conclusion"
+    }
+   ]
+  },
+  "cost": {
+   "status": "verified",
+   "id": "lHxl5SchjPA",
+   "title": "The REAL cost of LLM (And How to reduce 78%+ of Cost)",
+   "channel": "AI Jason",
+   "durationSec": 1640,
+   "published": "2024-01-30",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "How I burned $5000 on OpenAI"
+    },
+    {
+     "t": "2:41",
+     "sec": 161,
+     "title": "My experience with AI Girlfriend Project"
+    },
+    {
+     "t": "6:01",
+     "sec": 361,
+     "title": "HubSpot AI For Markter"
+    },
+    {
+     "t": "7:23",
+     "sec": 443,
+     "title": "How to Reduce LLM Cost"
+    },
+    {
+     "t": "8:33",
+     "sec": 513,
+     "title": "Method 1 - Finetune"
+    },
+    {
+     "t": "9:51",
+     "sec": 591,
+     "title": "Method 2 - Cascade"
+    },
+    {
+     "t": "10:35",
+     "sec": 635,
+     "title": "Method 3 - LLM Router"
+    },
+    {
+     "t": "12:47",
+     "sec": 767,
+     "title": "Method 4 - Multi-Agent"
+    },
+    {
+     "t": "14:07",
+     "sec": 847,
+     "title": "Method 5 - LLMLingua"
+    },
+    {
+     "t": "16:31",
+     "sec": 991,
+     "title": "Method 6 - Optimise tool input/output"
+    },
+    {
+     "t": "17:16",
+     "sec": 1036,
+     "title": "Method 7 - Memory Optimisation"
+    },
+    {
+     "t": "19:26",
+     "sec": 1166,
+     "title": "LLM Monitor & Analytics"
+    },
+    {
+     "t": "20:09",
+     "sec": 1209,
+     "title": "Tutorial: Monitor & reduce 75% cost"
+    }
+   ]
+  },
+  "sysdesign": {
+   "status": "verified",
+   "id": "mwN75EiGfCE",
+   "title": "Agentic AI System Design Explained in 27 Minutes",
+   "channel": "Aishwarya Srinivasan",
+   "durationSec": 1616,
+   "published": "2026-07-15",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "The Demo vs. Production Reality"
+    },
+    {
+     "t": "1:49",
+     "sec": 109,
+     "title": "What is an Agent AI System?"
+    },
+    {
+     "t": "2:12",
+     "sec": 132,
+     "title": "Single Agent vs. Multi-Agent Systems"
+    },
+    {
+     "t": "3:57",
+     "sec": 237,
+     "title": "Building Block 1: The Model Layer and Routing"
+    },
+    {
+     "t": "5:39",
+     "sec": 339,
+     "title": "Building Block 2: Tool Contracts and Boundaries"
+    },
+    {
+     "t": "7:37",
+     "sec": 457,
+     "title": "Building Block 3: Memory vs. Workflow State"
+    },
+    {
+     "t": "9:57",
+     "sec": 597,
+     "title": "Building Block 4: Orchestration and Control Flow"
+    },
+    {
+     "t": "12:23",
+     "sec": 743,
+     "title": "Building Block 5: Trace-Level Evaluations"
+    },
+    {
+     "t": "15:16",
+     "sec": 916,
+     "title": "Building Block 6: Approval Gates and Policy Controls"
+    },
+    {
+     "t": "17:03",
+     "sec": 1023,
+     "title": "Production Principle 1: Reliability and Fallbacks"
+    },
+    {
+     "t": "18:42",
+     "sec": 1122,
+     "title": "Production Principle 2: Cost and Latency"
+    },
+    {
+     "t": "20:42",
+     "sec": 1242,
+     "title": "Production Principle 3: Context and Retrieval Design"
+    },
+    {
+     "t": "22:20",
+     "sec": 1340,
+     "title": "Production Principle 4: Observability, Security, and Privacy"
+    },
+    {
+     "t": "25:33",
+     "sec": 1533,
+     "title": "Go Deeper with Gen Academy"
+    }
+   ]
+  },
+  "eda": {
+   "status": "verified",
+   "id": "QNfIUIZQ9Vo",
+   "title": "Event Driven Architecture (EDA) Introduction",
+   "channel": "Concept && Coding - by Shrayansh",
+   "durationSec": 1774,
+   "published": "2026-02-13",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Agenda"
+    },
+    {
+     "t": "01:07",
+     "sec": 67,
+     "title": "What is Event Driven Architecture"
+    },
+    {
+     "t": "04:16",
+     "sec": 256,
+     "title": "REST Example in Distributed Microservices and its Disadvantages"
+    },
+    {
+     "t": "08:46",
+     "sec": 526,
+     "title": "EDA Example in Distributed Microservices and its Advantages"
+    },
+    {
+     "t": "15:28",
+     "sec": 928,
+     "title": "Core components of EDA (Producer, Consumer, Broker)"
+    },
+    {
+     "t": "16:26",
+     "sec": 986,
+     "title": "Push and Pull Model"
+    },
+    {
+     "t": "18:22",
+     "sec": 1102,
+     "title": "Pub/Sub and Streaming Model"
+    },
+    {
+     "t": "20:20",
+     "sec": 1220,
+     "title": "Challenges of EDA"
+    },
+    {
+     "t": "25:47",
+     "sec": 1547,
+     "title": "Use Cases of EDA"
+    }
+   ]
+  },
+  "multiagent": {
+   "status": "verified",
+   "id": "ow1we5PzK-o",
+   "title": "The Multi-Agent Architecture That Actually Ships — Luke Alvoeiro, Factory",
+   "channel": "AI Engineer",
+   "durationSec": 1110,
+   "published": "2026-05-06",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Introduction to multi-agent systems and the bottleneck of human attention"
+    },
+    {
+     "t": "1:50",
+     "sec": 110,
+     "title": "Taxonomy of five frontier multi-agent frameworks"
+    },
+    {
+     "t": "4:04",
+     "sec": 244,
+     "title": "Introducing 'Missions': The three-role architecture (Orchestrator, Workers, Validators)"
+    },
+    {
+     "t": "6:34",
+     "sec": 394,
+     "title": "The importance of validation contracts for consistent quality"
+    },
+    {
+     "t": "8:09",
+     "sec": 489,
+     "title": "Maintaining long-term context through structured handoffs"
+    },
+    {
+     "t": "9:17",
+     "sec": 557,
+     "title": "The case for serial execution over parallel execution"
+    },
+    {
+     "t": "10:30",
+     "sec": 630,
+     "title": "Mission control: Monitoring agent progress"
+    },
+    {
+     "t": "11:22",
+     "sec": 682,
+     "title": "Strategic model selection per role ('Droid whispering')"
+    },
+    {
+     "t": "13:06",
+     "sec": 786,
+     "title": "Production data analysis: Building a Slack clone"
+    },
+    {
+     "t": "14:34",
+     "sec": 874,
+     "title": "Designing systems that improve with each model generation"
+    },
+    {
+     "t": "15:51",
+     "sec": 951,
+     "title": "Conclusion: The shifting economics of software engineering"
+    }
+   ]
+  },
+  "agent-sec": {
+   "status": "verified",
+   "id": "jZXvqEqJT7o",
+   "title": "How to secure your AI Agents: A Technical Deep-dive",
+   "channel": "Google for Developers",
+   "durationSec": 1440,
+   "published": "2025-12-03",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Introduction to agent security"
+    },
+    {
+     "t": "1:32",
+     "sec": 92,
+     "title": "OWASP LLM top 10 vulnerabilities"
+    },
+    {
+     "t": "2:56",
+     "sec": 176,
+     "title": "Sensitive information disclosure"
+    },
+    {
+     "t": "4:10",
+     "sec": 250,
+     "title": "Excessive agency risks"
+    },
+    {
+     "t": "5:11",
+     "sec": 311,
+     "title": "Input filtering with Model Armor"
+    },
+    {
+     "t": "6:26",
+     "sec": 386,
+     "title": "Demo: blocking prompt injection"
+    },
+    {
+     "t": "10:18",
+     "sec": 618,
+     "title": "Output filtering and PII redaction"
+    },
+    {
+     "t": "11:09",
+     "sec": 669,
+     "title": "Demo: redacting sensitive data"
+    },
+    {
+     "t": "12:43",
+     "sec": 763,
+     "title": "Authentication and authorization patterns"
+    },
+    {
+     "t": "13:44",
+     "sec": 824,
+     "title": "Agent-to-tool authentication flow"
+    },
+    {
+     "t": "16:13",
+     "sec": 973,
+     "title": "Managing API keys with Secret Manager"
+    },
+    {
+     "t": "18:05",
+     "sec": 1085,
+     "title": "Security for A2A and MCP protocols"
+    },
+    {
+     "t": "19:22",
+     "sec": 1162,
+     "title": "Supply chain security measures"
+    },
+    {
+     "t": "22:25",
+     "sec": 1345,
+     "title": "Protecting agent access and integrity"
+    }
+   ]
+  },
+  "ai-gov": {
+   "status": "verified",
+   "id": "NrkJLbn3dDE",
+   "title": "The Five Must-Haves of an AI Governance Framework",
+   "channel": "SANS Institute",
+   "durationSec": 1724,
+   "published": "2025-05-13",
+   "embeddable": true,
+   "chapters": []
+  },
+  "c4": {
+   "status": "verified",
+   "id": "x2-rSnhpw0g",
+   "title": "Visualising software architecture with the C4 model - Simon Brown, Agile on the Beach 2019",
+   "channel": "Agile on the Beach",
+   "durationSec": 2133,
+   "published": "2019-08-16",
+   "embeddable": true,
+   "chapters": []
+  },
+  "adr": {
+   "status": "verified",
+   "id": "LMBqGPLvonU",
+   "title": "Lesson 55 - Architecture Decision Records",
+   "channel": "Software Architecture Monday",
+   "durationSec": 628,
+   "published": "2019-03-28",
+   "embeddable": true,
+   "chapters": []
+  },
+  "adr-keeling": {
+   "status": "verified",
+   "id": "-JqraBhrrjI",
+   "title": "#113 - Architecture Decision Record (ADR) - Michael Keeling",
+   "channel": "Tech Lead Journal",
+   "durationSec": 2438,
+   "published": "2022-11-14",
+   "embeddable": true,
+   "chapters": []
+  }
+ }
+}

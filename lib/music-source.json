@@ -1,0 +1,65 @@
+{
+  "_note": "Curated contemplative audio. Only public-domain or CC-licensed recordings of public-domain compositions. Licence, author, duration and stream URL are verified from Wikimedia Commons by scripts/verify-music.mjs into data/music-verified.json. Streams are served by upload.wikimedia.org; nothing is bundled.",
+  "collections": [
+    {
+      "id": "hymns", "title": "Sacred Hymns", "art": "leaf",
+      "intro": "Hymns sung and played for more than a century. Every recording here is public domain.",
+      "tracks": [
+        { "file": "Army and Navy Hymnal-0009.ogg", "title": "Abide with Me", "composition": "Tune 'Eventide', William Henry Monk (1861); words Henry Francis Lyte" },
+        { "file": "Army and Navy Hymnal-0004.ogg", "title": "Holy, Holy, Holy", "composition": "Tune 'Nicaea', John Bacchus Dykes (1861); words Reginald Heber" },
+        { "file": "Army and Navy Hymnal-0087.ogg", "title": "Nearer, My God, to Thee", "composition": "Tune 'Bethany', Lowell Mason (1856); words Sarah Flower Adams" },
+        { "file": "Amazing grace 1922.ogg", "title": "Amazing Grace (1922)", "composition": "Tune 'New Britain' (traditional); words John Newton" },
+        { "file": "EdisonMixedQuartet RockOfAges1913.ogg", "title": "Rock of Ages (1913)", "composition": "Tune 'Toplady', Thomas Hastings (1830); words Augustus Toplady" },
+        { "file": "\"Eternal Father, Strong to Save\" (1992), performed by the United States Marine Band.oga", "title": "Eternal Father, Strong to Save", "composition": "Tune 'Melita', John Bacchus Dykes (1861); words William Whiting" }
+      ]
+    },
+    {
+      "id": "worship", "title": "Worship and Reflection", "art": "galilee",
+      "intro": "Reflective arrangements of hymns for prayer and quiet. Contemporary worship songs are copyrighted and not included.",
+      "tracks": [
+        { "file": "Nearer My God to Thee - Ceremonial Brass - United States Air Force Band.mp3", "title": "Nearer, My God, to Thee (brass)", "composition": "Lowell Mason (1856)" },
+        { "file": "Amazing Grace (2004) - Strolling Strings - United States Air Force Band.mp3", "title": "Amazing Grace (strings)", "composition": "Traditional; arranged by Cleveland Chandler" },
+        { "file": "Homocord-b367-m17234.ogg", "title": "Nearer, My God, to Thee (historic recording)", "composition": "Lowell Mason (1856)" },
+        { "file": "Victor-16269a-5199-b4555.ogg", "title": "Rock of Ages (historic recording)", "composition": "Thomas Hastings (1830)" }
+      ]
+    },
+    {
+      "id": "instrumental", "title": "Instrumental Wisdom", "art": "study",
+      "intro": "Baroque music written for church and court, unhurried enough to think beside.",
+      "tracks": [
+        { "file": "Air - Air Force Strings - United States Air Force Band.mp3", "title": "Air (Orchestral Suite No. 3, BWV 1068)", "composition": "Johann Sebastian Bach" },
+        { "file": "Bach, BWV 147, 10. Jesus bleibet meine Freude.ogg", "title": "Jesu, Joy of Man's Desiring (BWV 147)", "composition": "Johann Sebastian Bach" },
+        { "file": "Bach - Cello Suite no. 1 in G major, BWV 1007 - I. Prélude.ogg", "title": "Cello Suite No. 1 — Prélude (BWV 1007)", "composition": "Johann Sebastian Bach" },
+        { "file": "Victor-16525a-b249.ogg", "title": "Largo ('Ombra mai fu', Serse) — historic recording", "composition": "George Frideric Handel" }
+      ]
+    },
+    {
+      "id": "piano", "title": "Piano and Strings", "art": "path",
+      "intro": "Quiet piano and string pieces for long reading.",
+      "tracks": [
+        { "file": "Erik Satie - gymnopedies - la 1 ere. lent et douloureux.ogg", "title": "Gymnopédie No. 1", "composition": "Erik Satie" },
+        { "file": "Clair de lune (Claude Debussy) Suite bergamasque.ogg", "title": "Clair de lune (Suite bergamasque)", "composition": "Claude Debussy" },
+        { "file": "Canon in D Major (ISRC USUAN1100301).mp3", "title": "Canon in D", "composition": "Johann Pachelbel; arranged and performed by Kevin MacLeod" },
+        { "file": "Air (Bach).ogg", "title": "Air (BWV 1068)", "composition": "Johann Sebastian Bach" }
+      ]
+    },
+    {
+      "id": "nature", "title": "Stillness and Nature", "art": "galilee",
+      "intro": "Field recordings and slow ambient pieces. No words, no melody to follow.",
+      "tracks": [
+        { "file": "Royal Natal National Park dawn chorus (W1CDR0001146 BD3).ogg", "title": "Dawn chorus, Royal Natal National Park", "composition": "Field recording" },
+        { "file": "Dawn chorus at Glencairnie big bungalow Craigmore DM.ogg", "title": "Dawn chorus, Glencairnie", "composition": "Field recording" },
+        { "file": "Kevin MacLeod - Calmant.ogg", "title": "Calmant", "composition": "Kevin MacLeod" }
+      ]
+    },
+    {
+      "id": "peaceful", "title": "Peaceful Christian Music", "art": "water",
+      "intro": "Gentle instrumental hymn arrangements. Contemporary worship is copyrighted and is not part of this catalogue.",
+      "tracks": [
+        { "file": "Kevin MacLeod - Gustav Holst Thaxted.oga", "title": "Thaxted ('I Vow to Thee, My Country')", "composition": "Gustav Holst; arranged by Kevin MacLeod" },
+        { "file": "Amazing Grace 2011 (ISRC USUAN1100820).mp3", "title": "Amazing Grace", "composition": "Traditional; arranged and performed by Kevin MacLeod" },
+        { "file": "Jesu, Joy of Man's Desiring (ISRC USUAN1100189).mp3", "title": "Jesu, Joy of Man's Desiring", "composition": "J. S. Bach; arranged and performed by Kevin MacLeod" }
+      ]
+    }
+  ]
+}

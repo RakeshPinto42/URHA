@@ -1,0 +1,415 @@
+{
+ "checkedAt": "2026-11-01T21:59:35.645Z",
+ "docs": {
+  "d-py-tut": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.python.org/3/tutorial/"
+  },
+  "d-py-classes": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.python.org/3/tutorial/classes.html"
+  },
+  "d-py-errors": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.python.org/3/tutorial/errors.html"
+  },
+  "d-py-modules": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.python.org/3/tutorial/modules.html"
+  },
+  "d-py-typing": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.python.org/3/library/typing.html"
+  },
+  "d-py-asyncio": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.python.org/3/library/asyncio.html"
+  },
+  "d-py-logging": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.python.org/3/howto/logging.html"
+  },
+  "d-py-json": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.python.org/3/library/json.html"
+  },
+  "d-py-pathlib": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.python.org/3/library/pathlib.html"
+  },
+  "d-py-venv": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.python.org/3/library/venv.html"
+  },
+  "d-py-mock": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.python.org/3/library/unittest.mock.html"
+  },
+  "d-uv": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.astral.sh/uv/"
+  },
+  "d-ruff": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.astral.sh/ruff/"
+  },
+  "d-pydantic-settings": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://pydantic.dev/docs/validation/latest/concepts/pydantic_settings/"
+  },
+  "d-twelve-factor": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://12factor.net/config"
+  },
+  "d-src-layout": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/"
+  },
+  "d-pytest-fixtures": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.pytest.org/en/stable/how-to/fixtures.html"
+  },
+  "d-pytest-param": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.pytest.org/en/stable/how-to/parametrize.html"
+  },
+  "d-pytest-monkeypatch": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.pytest.org/en/stable/how-to/monkeypatch.html"
+  },
+  "d-git-branching": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell"
+  },
+  "d-github-flow": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.github.com/en/get-started/using-github/github-flow"
+  },
+  "d-vscode-debug": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://code.visualstudio.com/docs/python/debugging"
+  },
+  "d-pg-tutorial": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://www.postgresql.org/docs/current/tutorial.html"
+  },
+  "d-pg-window": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://www.postgresql.org/docs/current/tutorial-window.html"
+  },
+  "d-pg-cte": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://www.postgresql.org/docs/current/queries-with.html"
+  },
+  "d-pg-constraints": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://www.postgresql.org/docs/current/ddl-constraints.html"
+  },
+  "d-pg-transactions": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://www.postgresql.org/docs/current/tutorial-transactions.html"
+  },
+  "d-pg-indexes": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://www.postgresql.org/docs/current/indexes.html"
+  },
+  "d-pg-fts": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://www.postgresql.org/docs/current/textsearch.html"
+  },
+  "d-psycopg": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://www.psycopg.org/psycopg3/docs/"
+  },
+  "d-pandas-10min": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://pandas.pydata.org/docs/user_guide/10min.html"
+  },
+  "d-mdn-http": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview"
+  },
+  "d-fastapi-tutorial": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://fastapi.tiangolo.com/tutorial/"
+  },
+  "d-fastapi-deps": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://fastapi.tiangolo.com/tutorial/dependencies/"
+  },
+  "d-fastapi-security": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://fastapi.tiangolo.com/tutorial/security/"
+  },
+  "d-fastapi-testing": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://fastapi.tiangolo.com/tutorial/testing/"
+  },
+  "d-fastapi-errors": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://fastapi.tiangolo.com/tutorial/handling-errors/"
+  },
+  "d-pydantic": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://pydantic.dev/docs/validation/latest/get-started/"
+  },
+  "d-sqlalchemy": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.sqlalchemy.org/en/20/tutorial/"
+  },
+  "d-alembic": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://alembic.sqlalchemy.org/en/latest/tutorial.html"
+  },
+  "d-oidc": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://openid.net/developers/how-connect-works/"
+  },
+  "d-jwt": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://datatracker.ietf.org/doc/html/rfc7519"
+  },
+  "d-idempotent": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.stripe.com/api/idempotent_requests"
+  },
+  "d-webhooks": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.github.com/en/webhooks/about-webhooks"
+  },
+  "d-claude-messages": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://platform.claude.com/docs/en/api/messages"
+  },
+  "d-claude-models": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://platform.claude.com/docs/en/models/overview"
+  },
+  "d-claude-context": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://platform.claude.com/docs/en/build-with-claude/context-windows"
+  },
+  "d-claude-streaming": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://platform.claude.com/docs/en/build-with-claude/streaming"
+  },
+  "d-claude-tools": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview"
+  },
+  "d-claude-structured": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs"
+  },
+  "d-claude-ratelimits": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://platform.claude.com/docs/en/api/rate-limits"
+  },
+  "d-claude-errors": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://platform.claude.com/docs/en/api/errors"
+  },
+  "d-claude-prompting": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+  },
+  "d-claude-evals": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests"
+  },
+  "d-openai-structured": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://developers.openai.com/api/docs/guides/structured-outputs"
+  },
+  "d-openai-functions": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://developers.openai.com/api/docs/guides/function-calling"
+  },
+  "d-langgraph": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.langchain.com/oss/python/langgraph/overview"
+  },
+  "d-langgraph-persistence": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.langchain.com/oss/python/langgraph/persistence"
+  },
+  "d-langgraph-interrupts": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.langchain.com/oss/python/langgraph/interrupts"
+  },
+  "d-mcp-arch": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://modelcontextprotocol.io/docs/2026-07-28/learn/architecture"
+  },
+  "d-mcp-server": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://modelcontextprotocol.io/docs/2026-07-28/develop/build-server"
+  },
+  "d-mcp-auth": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization"
+  },
+  "d-otel-traces": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://opentelemetry.io/docs/concepts/signals/traces/"
+  },
+  "d-compose": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.docker.com/compose/"
+  },
+  "d-gha": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://docs.github.com/en/actions"
+  },
+  "d-aca-revisions": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://learn.microsoft.com/en-us/azure/container-apps/revisions"
+  },
+  "d-aca-bluegreen": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment"
+  },
+  "d-pg-flex": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/overview"
+  },
+  "d-keyvault": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+  },
+  "d-entra-approles": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://learn.microsoft.com/en-us/entra/identity-platform/howto-add-app-roles-in-apps"
+  },
+  "d-azure-rbac": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview"
+  },
+  "d-multitenant": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/overview"
+  },
+  "d-retry": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://learn.microsoft.com/en-us/azure/architecture/patterns/retry"
+  },
+  "d-circuit": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker"
+  },
+  "d-queue-load": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://learn.microsoft.com/en-us/azure/architecture/patterns/queue-based-load-leveling"
+  },
+  "d-rate-limit": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://learn.microsoft.com/en-us/azure/architecture/patterns/rate-limiting-pattern"
+  },
+  "d-waf": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://learn.microsoft.com/en-us/azure/well-architected/"
+  },
+  "d-sre-incidents": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://sre.google/sre-book/managing-incidents/"
+  },
+  "d-c4": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://c4model.com/"
+  },
+  "d-adr": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://adr.github.io/"
+  },
+  "d-nist-ai-rmf": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://www.nist.gov/itl/ai-risk-management-framework"
+  },
+  "d-ms-rai": {
+   "status": "resolves",
+   "http": 200,
+   "finalUrl": "https://www.microsoft.com/en-us/ai/responsible-ai"
+  }
+ }
+}

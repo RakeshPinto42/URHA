@@ -1,0 +1,3632 @@
+{
+ "translation": "kjv",
+ "source": "https://bible-api.com",
+ "fetchedAt": "2026-11-01T22:11:34.414Z",
+ "passages": {
+  "prov-1": {
+   "reference": "Proverbs 1",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 1,
+     "text": "The proverbs of Solomon the son of David, king of Israel;"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 2,
+     "text": "To know wisdom and instruction; to perceive the words of understanding;"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 3,
+     "text": "To receive the instruction of wisdom, justice, and judgment, and equity;"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 4,
+     "text": "To give subtilty to the simple, to the young man knowledge and discretion."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 5,
+     "text": "A wise man will hear, and will increase learning; and a man of understanding shall attain unto wise counsels:"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 6,
+     "text": "To understand a proverb, and the interpretation; the words of the wise, and their dark sayings."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 7,
+     "text": "The fear of the LORD is the beginning of knowledge: but fools despise wisdom and instruction."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 8,
+     "text": "My son, hear the instruction of thy father, and forsake not the law of thy mother:"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 9,
+     "text": "For they shall be an ornament of grace unto thy head, and chains about thy neck."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 10,
+     "text": "My son, if sinners entice thee, consent thou not."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 11,
+     "text": "If they say, Come with us, let us lay wait for blood, let us lurk privily for the innocent without cause:"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 12,
+     "text": "Let us swallow them up alive as the grave; and whole, as those that go down into the pit:"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 13,
+     "text": "We shall find all precious substance, we shall fill our houses with spoil:"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 14,
+     "text": "Cast in thy lot among us; let us all have one purse:"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 15,
+     "text": "My son, walk not thou in the way with them; refrain thy foot from their path:"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 16,
+     "text": "For their feet run to evil, and make haste to shed blood."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 17,
+     "text": "Surely in vain the net is spread in the sight of any bird."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 18,
+     "text": "And they lay wait for their own blood; they lurk privily for their own lives."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 19,
+     "text": "So are the ways of every one that is greedy of gain; which taketh away the life of the owners thereof."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 20,
+     "text": "Wisdom crieth without; she uttereth her voice in the streets:"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 21,
+     "text": "She crieth in the chief place of concourse, in the openings of the gates: in the city she uttereth her words, saying,"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 22,
+     "text": "How long, ye simple ones, will ye love simplicity? and the scorners delight in their scorning, and fools hate knowledge?"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 23,
+     "text": "Turn you at my reproof: behold, I will pour out my spirit unto you, I will make known my words unto you."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 24,
+     "text": "Because I have called, and ye refused; I have stretched out my hand, and no man regarded;"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 25,
+     "text": "But ye have set at nought all my counsel, and would none of my reproof:"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 26,
+     "text": "I also will laugh at your calamity; I will mock when your fear cometh;"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 27,
+     "text": "When your fear cometh as desolation, and your destruction cometh as a whirlwind; when distress and anguish cometh upon you."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 28,
+     "text": "Then shall they call upon me, but I will not answer; they shall seek me early, but they shall not find me:"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 29,
+     "text": "For that they hated knowledge, and did not choose the fear of the LORD:"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 30,
+     "text": "They would none of my counsel: they despised all my reproof."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 31,
+     "text": "Therefore shall they eat of the fruit of their own way, and be filled with their own devices."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 32,
+     "text": "For the turning away of the simple shall slay them, and the prosperity of fools shall destroy them."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 33,
+     "text": "But whoso hearkeneth unto me shall dwell safely, and shall be quiet from fear of evil."
+    }
+   ]
+  },
+  "prov-2": {
+   "reference": "Proverbs 2",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 1,
+     "text": "My son, if thou wilt receive my words, and hide my commandments with thee;"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 2,
+     "text": "So that thou incline thine ear unto wisdom, and apply thine heart to understanding;"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 3,
+     "text": "Yea, if thou criest after knowledge, and liftest up thy voice for understanding;"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 4,
+     "text": "If thou seekest her as silver, and searchest for her as for hid treasures;"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 5,
+     "text": "Then shalt thou understand the fear of the LORD, and find the knowledge of God."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 6,
+     "text": "For the LORD giveth wisdom: out of his mouth cometh knowledge and understanding."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 7,
+     "text": "He layeth up sound wisdom for the righteous: he is a buckler to them that walk uprightly."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 8,
+     "text": "He keepeth the paths of judgment, and preserveth the way of his saints."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 9,
+     "text": "Then shalt thou understand righteousness, and judgment, and equity; yea, every good path."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 10,
+     "text": "When wisdom entereth into thine heart, and knowledge is pleasant unto thy soul;"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 11,
+     "text": "Discretion shall preserve thee, understanding shall keep thee:"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 12,
+     "text": "To deliver thee from the way of the evil man, from the man that speaketh froward things;"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 13,
+     "text": "Who leave the paths of uprightness, to walk in the ways of darkness;"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 14,
+     "text": "Who rejoice to do evil, and delight in the frowardness of the wicked;"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 15,
+     "text": "Whose ways are crooked, and they froward in their paths:"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 16,
+     "text": "To deliver thee from the strange woman, even from the stranger which flattereth with her words;"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 17,
+     "text": "Which forsaketh the guide of her youth, and forgetteth the covenant of her God."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 18,
+     "text": "For her house inclineth unto death, and her paths unto the dead."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 19,
+     "text": "None that go unto her return again, neither take they hold of the paths of life."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 20,
+     "text": "That thou mayest walk in the way of good men, and keep the paths of the righteous."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 21,
+     "text": "For the upright shall dwell in the land, and the perfect shall remain in it."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 2,
+     "verse": 22,
+     "text": "But the wicked shall be cut off from the earth, and the transgressors shall be rooted out of it."
+    }
+   ]
+  },
+  "prov-4": {
+   "reference": "Proverbs 4",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 1,
+     "text": "Hear, ye children, the instruction of a father, and attend to know understanding."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 2,
+     "text": "For I give you good doctrine, forsake ye not my law."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 3,
+     "text": "For I was my father’s son, tender and only beloved in the sight of my mother."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 4,
+     "text": "He taught me also, and said unto me, Let thine heart retain my words: keep my commandments, and live."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 5,
+     "text": "Get wisdom, get understanding: forget it not; neither decline from the words of my mouth."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 6,
+     "text": "Forsake her not, and she shall preserve thee: love her, and she shall keep thee."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 7,
+     "text": "Wisdom is the principal thing; therefore get wisdom: and with all thy getting get understanding."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 8,
+     "text": "Exalt her, and she shall promote thee: she shall bring thee to honour, when thou dost embrace her."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 9,
+     "text": "She shall give to thine head an ornament of grace: a crown of glory shall she deliver to thee."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 10,
+     "text": "Hear, O my son, and receive my sayings; and the years of thy life shall be many."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 11,
+     "text": "I have taught thee in the way of wisdom; I have led thee in right paths."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 12,
+     "text": "When thou goest, thy steps shall not be straitened; and when thou runnest, thou shalt not stumble."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 13,
+     "text": "Take fast hold of instruction; let her not go: keep her; for she is thy life."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 14,
+     "text": "Enter not into the path of the wicked, and go not in the way of evil men."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 15,
+     "text": "Avoid it, pass not by it, turn from it, and pass away."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 16,
+     "text": "For they sleep not, except they have done mischief; and their sleep is taken away, unless they cause some to fall."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 17,
+     "text": "For they eat the bread of wickedness, and drink the wine of violence."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 18,
+     "text": "But the path of the just is as the shining light, that shineth more and more unto the perfect day."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 19,
+     "text": "The way of the wicked is as darkness: they know not at what they stumble."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 20,
+     "text": "My son, attend to my words; incline thine ear unto my sayings."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 21,
+     "text": "Let them not depart from thine eyes; keep them in the midst of thine heart."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 22,
+     "text": "For they are life unto those that find them, and health to all their flesh."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 23,
+     "text": "Keep thy heart with all diligence; for out of it are the issues of life."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 24,
+     "text": "Put away from thee a froward mouth, and perverse lips put far from thee."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 25,
+     "text": "Let thine eyes look right on, and let thine eyelids look straight before thee."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 26,
+     "text": "Ponder the path of thy feet, and let all thy ways be established."
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 27,
+     "text": "Turn not to the right hand nor to the left: remove thy foot from evil."
+    }
+   ]
+  },
+  "jas-1-5": {
+   "reference": "James 1:5",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "James",
+     "chapter": 1,
+     "verse": 5,
+     "text": "If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him."
+    }
+   ]
+  },
+  "eccl-7": {
+   "reference": "Ecclesiastes 7",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 1,
+     "text": "A good name is better than precious ointment; and the day of death than the day of one’s birth."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 2,
+     "text": "It is better to go to the house of mourning, than to go to the house of feasting: for that is the end of all men; and the living will lay it to his heart."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 3,
+     "text": "Sorrow is better than laughter: for by the sadness of the countenance the heart is made better."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 4,
+     "text": "The heart of the wise is in the house of mourning; but the heart of fools is in the house of mirth."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 5,
+     "text": "It is better to hear the rebuke of the wise, than for a man to hear the song of fools."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 6,
+     "text": "For as the crackling of thorns under a pot, so is the laughter of the fool: this also is vanity."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 7,
+     "text": "Surely oppression maketh a wise man mad; and a gift destroyeth the heart."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 8,
+     "text": "Better is the end of a thing than the beginning thereof: and the patient in spirit is better than the proud in spirit."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 9,
+     "text": "Be not hasty in thy spirit to be angry: for anger resteth in the bosom of fools."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 10,
+     "text": "Say not thou, What is the cause that the former days were better than these? for thou dost not enquire wisely concerning this."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 11,
+     "text": "Wisdom is good with an inheritance: and by it there is profit to them that see the sun."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 12,
+     "text": "For wisdom is a defence, and money is a defence: but the excellency of knowledge is, that wisdom giveth life to them that have it."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 13,
+     "text": "Consider the work of God: for who can make that straight, which he hath made crooked?"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 14,
+     "text": "In the day of prosperity be joyful, but in the day of adversity consider: God also hath set the one over against the other, to the end that man should find nothing after him."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 15,
+     "text": "All things have I seen in the days of my vanity: there is a just man that perisheth in his righteousness, and there is a wicked man that prolongeth his life in his wickedness."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 16,
+     "text": "Be not righteous over much; neither make thyself over wise: why shouldest thou destroy thyself?"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 17,
+     "text": "Be not over much wicked, neither be thou foolish: why shouldest thou die before thy time?"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 18,
+     "text": "It is good that thou shouldest take hold of this; yea, also from this withdraw not thine hand: for he that feareth God shall come forth of them all."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 19,
+     "text": "Wisdom strengtheneth the wise more than ten mighty men which are in the city."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 20,
+     "text": "For there is not a just man upon earth, that doeth good, and sinneth not."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 21,
+     "text": "Also take no heed unto all words that are spoken; lest thou hear thy servant curse thee:"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 22,
+     "text": "For oftentimes also thine own heart knoweth that thou thyself likewise hast cursed others."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 23,
+     "text": "All this have I proved by wisdom: I said, I will be wise; but it was far from me."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 24,
+     "text": "That which is far off, and exceeding deep, who can find it out?"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 25,
+     "text": "I applied mine heart to know, and to search, and to seek out wisdom, and the reason of things, and to know the wickedness of folly, even of foolishness and madness:"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 26,
+     "text": "And I find more bitter than death the woman, whose heart is snares and nets, and her hands as bands: whoso pleaseth God shall escape from her; but the sinner shall be taken by her."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 27,
+     "text": "Behold, this have I found, saith the preacher, counting one by one, to find out the account:"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 28,
+     "text": "Which yet my soul seeketh, but I find not: one man among a thousand have I found; but a woman among all those have I not found."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 7,
+     "verse": 29,
+     "text": "Lo, this only have I found, that God hath made man upright; but they have sought out many inventions."
+    }
+   ]
+  },
+  "jn-8-31": {
+   "reference": "John 8:31-32",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "John",
+     "chapter": 8,
+     "verse": 31,
+     "text": "Then said Jesus to those Jews which believed on him, If ye continue in my word, then are ye my disciples indeed;"
+    },
+    {
+     "book": "John",
+     "chapter": 8,
+     "verse": 32,
+     "text": "And ye shall know the truth, and the truth shall make you free."
+    }
+   ]
+  },
+  "jn-14-6": {
+   "reference": "John 14:6",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "John",
+     "chapter": 14,
+     "verse": 6,
+     "text": "Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me."
+    }
+   ]
+  },
+  "mt-7-7": {
+   "reference": "Matthew 7:7-8",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 7,
+     "text": "Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 8,
+     "text": "For every one that asketh receiveth; and he that seeketh findeth; and to him that knocketh it shall be opened."
+    }
+   ]
+  },
+  "col-2-2": {
+   "reference": "Colossians 2:2-3",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Colossians",
+     "chapter": 2,
+     "verse": 2,
+     "text": "That their hearts might be comforted, being knit together in love, and unto all riches of the full assurance of understanding, to the acknowledgement of the mystery of God, and of the Father, and of Christ;"
+    },
+    {
+     "book": "Colossians",
+     "chapter": 2,
+     "verse": 3,
+     "text": "In whom are hid all the treasures of wisdom and knowledge."
+    }
+   ]
+  },
+  "eccl-1": {
+   "reference": "Ecclesiastes 1",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Ecclesiastes",
+     "chapter": 1,
+     "verse": 1,
+     "text": "The words of the Preacher, the son of David, king in Jerusalem."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 1,
+     "verse": 2,
+     "text": "Vanity of vanities, saith the Preacher, vanity of vanities; all is vanity."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 1,
+     "verse": 3,
+     "text": "What profit hath a man of all his labour which he taketh under the sun?"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 1,
+     "verse": 4,
+     "text": "One generation passeth away, and another generation cometh: but the earth abideth for ever."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 1,
+     "verse": 5,
+     "text": "The sun also ariseth, and the sun goeth down, and hasteth to his place where he arose."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 1,
+     "verse": 6,
+     "text": "The wind goeth toward the south, and turneth about unto the north; it whirleth about continually, and the wind returneth again according to his circuits."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 1,
+     "verse": 7,
+     "text": "All the rivers run into the sea; yet the sea is not full; unto the place from whence the rivers come, thither they return again."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 1,
+     "verse": 8,
+     "text": "All things are full of labour; man cannot utter it: the eye is not satisfied with seeing, nor the ear filled with hearing."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 1,
+     "verse": 9,
+     "text": "The thing that hath been, it is that which shall be; and that which is done is that which shall be done: and there is no new thing under the sun."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 1,
+     "verse": 10,
+     "text": "Is there any thing whereof it may be said, See, this is new? it hath been already of old time, which was before us."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 1,
+     "verse": 11,
+     "text": "There is no remembrance of former things; neither shall there be any remembrance of things that are to come with those that shall come after."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 1,
+     "verse": 12,
+     "text": "I the Preacher was king over Israel in Jerusalem."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 1,
+     "verse": 13,
+     "text": "And I gave my heart to seek and search out by wisdom concerning all things that are done under heaven: this sore travail hath God given to the sons of man to be exercised therewith."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 1,
+     "verse": 14,
+     "text": "I have seen all the works that are done under the sun; and, behold, all is vanity and vexation of spirit."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 1,
+     "verse": 15,
+     "text": "That which is crooked cannot be made straight: and that which is wanting cannot be numbered."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 1,
+     "verse": 16,
+     "text": "I communed with mine own heart, saying, Lo, I am come to great estate, and have gotten more wisdom than all they that have been before me in Jerusalem: yea, my heart had great experience of wisdom and knowledge."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 1,
+     "verse": 17,
+     "text": "And I gave my heart to know wisdom, and to know madness and folly: I perceived that this also is vexation of spirit."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 1,
+     "verse": 18,
+     "text": "For in much wisdom is much grief: and he that increaseth knowledge increaseth sorrow."
+    }
+   ]
+  },
+  "eccl-3": {
+   "reference": "Ecclesiastes 3",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 1,
+     "text": "To every thing there is a season, and a time to every purpose under the heaven:"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 2,
+     "text": "A time to be born, and a time to die; a time to plant, and a time to pluck up that which is planted;"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 3,
+     "text": "A time to kill, and a time to heal; a time to break down, and a time to build up;"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 4,
+     "text": "A time to weep, and a time to laugh; a time to mourn, and a time to dance;"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 5,
+     "text": "A time to cast away stones, and a time to gather stones together; a time to embrace, and a time to refrain from embracing;"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 6,
+     "text": "A time to get, and a time to lose; a time to keep, and a time to cast away;"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 7,
+     "text": "A time to rend, and a time to sew; a time to keep silence, and a time to speak;"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 8,
+     "text": "A time to love, and a time to hate; a time of war, and a time of peace."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 9,
+     "text": "What profit hath he that worketh in that wherein he laboureth?"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 10,
+     "text": "I have seen the travail, which God hath given to the sons of men to be exercised in it."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 11,
+     "text": "He hath made every thing beautiful in his time: also he hath set the world in their heart, so that no man can find out the work that God maketh from the beginning to the end."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 12,
+     "text": "I know that there is no good in them, but for a man to rejoice, and to do good in his life."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 13,
+     "text": "And also that every man should eat and drink, and enjoy the good of all his labour, it is the gift of God."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 14,
+     "text": "I know that, whatsoever God doeth, it shall be for ever: nothing can be put to it, nor any thing taken from it: and God doeth it, that men should fear before him."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 15,
+     "text": "That which hath been is now; and that which is to be hath already been; and God requireth that which is past."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 16,
+     "text": "And moreover I saw under the sun the place of judgment, that wickedness was there; and the place of righteousness, that iniquity was there."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 17,
+     "text": "I said in mine heart, God shall judge the righteous and the wicked: for there is a time there for every purpose and for every work."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 18,
+     "text": "I said in mine heart concerning the estate of the sons of men, that God might manifest them, and that they might see that they themselves are beasts."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 19,
+     "text": "For that which befalleth the sons of men befalleth beasts; even one thing befalleth them: as the one dieth, so dieth the other; yea, they have all one breath; so that a man hath no preeminence above a beast: for all is vanity."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 20,
+     "text": "All go unto one place; all are of the dust, and all turn to dust again."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 21,
+     "text": "Who knoweth the spirit of man that goeth upward, and the spirit of the beast that goeth downward to the earth?"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 3,
+     "verse": 22,
+     "text": "Wherefore I perceive that there is nothing better, than that a man should rejoice in his own works; for that is his portion: for who shall bring him to see what shall be after him?"
+    }
+   ]
+  },
+  "eccl-12": {
+   "reference": "Ecclesiastes 12",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Ecclesiastes",
+     "chapter": 12,
+     "verse": 1,
+     "text": "Remember now thy Creator in the days of thy youth, while the evil days come not, nor the years draw nigh, when thou shalt say, I have no pleasure in them;"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 12,
+     "verse": 2,
+     "text": "While the sun, or the light, or the moon, or the stars, be not darkened, nor the clouds return after the rain:"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 12,
+     "verse": 3,
+     "text": "In the day when the keepers of the house shall tremble, and the strong men shall bow themselves, and the grinders cease because they are few, and those that look out of the windows be darkened,"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 12,
+     "verse": 4,
+     "text": "And the doors shall be shut in the streets, when the sound of the grinding is low, and he shall rise up at the voice of the bird, and all the daughters of musick shall be brought low;"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 12,
+     "verse": 5,
+     "text": "Also when they shall be afraid of that which is high, and fears shall be in the way, and the almond tree shall flourish, and the grasshopper shall be a burden, and desire shall fail: because man goeth to his long home, and the mourners go about the streets:"
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 12,
+     "verse": 6,
+     "text": "Or ever the silver cord be loosed, or the golden bowl be broken, or the pitcher be broken at the fountain, or the wheel broken at the cistern."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 12,
+     "verse": 7,
+     "text": "Then shall the dust return to the earth as it was: and the spirit shall return unto God who gave it."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 12,
+     "verse": 8,
+     "text": "Vanity of vanities, saith the preacher; all is vanity."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 12,
+     "verse": 9,
+     "text": "And moreover, because the preacher was wise, he still taught the people knowledge; yea, he gave good heed, and sought out, and set in order many proverbs."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 12,
+     "verse": 10,
+     "text": "The preacher sought to find out acceptable words: and that which was written was upright, even words of truth."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 12,
+     "verse": 11,
+     "text": "The words of the wise are as goads, and as nails fastened by the masters of assemblies, which are given from one shepherd."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 12,
+     "verse": 12,
+     "text": "And further, by these, my son, be admonished: of making many books there is no end; and much study is a weariness of the flesh."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 12,
+     "verse": 13,
+     "text": "Let us hear the conclusion of the whole matter: Fear God, and keep his commandments: for this is the whole duty of man."
+    },
+    {
+     "book": "Ecclesiastes",
+     "chapter": 12,
+     "verse": 14,
+     "text": "For God shall bring every work into judgment, with every secret thing, whether it be good, or whether it be evil."
+    }
+   ]
+  },
+  "mt-6-25": {
+   "reference": "Matthew 6:25-34",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 25,
+     "text": "Therefore I say unto you, Take no thought for your life, what ye shall eat, or what ye shall drink; nor yet for your body, what ye shall put on. Is not the life more than meat, and the body than raiment?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 26,
+     "text": "Behold the fowls of the air: for they sow not, neither do they reap, nor gather into barns; yet your heavenly Father feedeth them. Are ye not much better than they?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 27,
+     "text": "Which of you by taking thought can add one cubit unto his stature?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 28,
+     "text": "And why take ye thought for raiment? Consider the lilies of the field, how they grow; they toil not, neither do they spin:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 29,
+     "text": "And yet I say unto you, That even Solomon in all his glory was not arrayed like one of these."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 30,
+     "text": "Wherefore, if God so clothe the grass of the field, which to day is, and to morrow is cast into the oven, shall he not much more clothe you, O ye of little faith?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 31,
+     "text": "Therefore take no thought, saying, What shall we eat? or, What shall we drink? or, Wherewithal shall we be clothed?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 32,
+     "text": "(For after all these things do the Gentiles seek:) for your heavenly Father knoweth that ye have need of all these things."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 33,
+     "text": "But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 34,
+     "text": "Take therefore no thought for the morrow: for the morrow shall take thought for the things of itself. Sufficient unto the day is the evil thereof."
+    }
+   ]
+  },
+  "mt-22-37": {
+   "reference": "Matthew 22:37-40",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Matthew",
+     "chapter": 22,
+     "verse": 37,
+     "text": "Jesus said unto him, Thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy mind."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 22,
+     "verse": 38,
+     "text": "This is the first and great commandment."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 22,
+     "verse": 39,
+     "text": "And the second is like unto it, Thou shalt love thy neighbour as thyself."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 22,
+     "verse": 40,
+     "text": "On these two commandments hang all the law and the prophets."
+    }
+   ]
+  },
+  "mic-6-8": {
+   "reference": "Micah 6:8",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Micah",
+     "chapter": 6,
+     "verse": 8,
+     "text": "He hath shewed thee, O man, what is good; and what doth the LORD require of thee, but to do justly, and to love mercy, and to walk humbly with thy God?"
+    }
+   ]
+  },
+  "mt-5": {
+   "reference": "Matthew 5",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 1,
+     "text": "And seeing the multitudes, he went up into a mountain: and when he was set, his disciples came unto him:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 2,
+     "text": "And he opened his mouth, and taught them, saying,"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 3,
+     "text": "Blessed are the poor in spirit: for theirs is the kingdom of heaven."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 4,
+     "text": "Blessed are they that mourn: for they shall be comforted."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 5,
+     "text": "Blessed are the meek: for they shall inherit the earth."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 6,
+     "text": "Blessed are they which do hunger and thirst after righteousness: for they shall be filled."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 7,
+     "text": "Blessed are the merciful: for they shall obtain mercy."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 8,
+     "text": "Blessed are the pure in heart: for they shall see God."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 9,
+     "text": "Blessed are the peacemakers: for they shall be called the children of God."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 10,
+     "text": "Blessed are they which are persecuted for righteousness sake: for theirs is the kingdom of heaven."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 11,
+     "text": "Blessed are ye, when men shall revile you, and persecute you, and shall say all manner of evil against you falsely, for my sake."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 12,
+     "text": "Rejoice, and be exceeding glad: for great is your reward in heaven: for so persecuted they the prophets which were before you."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 13,
+     "text": "Ye are the salt of the earth: but if the salt have lost his savour, wherewith shall it be salted? it is thenceforth good for nothing, but to be cast out, and to be trodden under foot of men."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 14,
+     "text": "Ye are the light of the world. A city that is set on an hill cannot be hid."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 15,
+     "text": "Neither do men light a candle, and put it under a bushel, but on a candlestick; and it giveth light unto all that are in the house."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 16,
+     "text": "Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 17,
+     "text": "Think not that I am come to destroy the law, or the prophets: I am not come to destroy, but to fulfil."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 18,
+     "text": "For verily I say unto you, Till heaven and earth pass, one jot or one tittle shall in no wise pass from the law, till all be fulfilled."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 19,
+     "text": "Whosoever therefore shall break one of these least commandments, and shall teach men so, he shall be called the least in the kingdom of heaven: but whosoever shall do and teach them, the same shall be called great in the kingdom of heaven."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 20,
+     "text": "For I say unto you, That except your righteousness shall exceed the righteousness of the scribes and Pharisees, ye shall in no case enter into the kingdom of heaven."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 21,
+     "text": "Ye have heard that it was said by them of old time, Thou shalt not kill; and whosoever shall kill shall be in danger of the judgment:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 22,
+     "text": "But I say unto you, That whosoever is angry with his brother without a cause shall be in danger of the judgment: and whosoever shall say to his brother, Raca, shall be in danger of the council: but whosoever shall say, Thou fool, shall be in danger of hell fire."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 23,
+     "text": "Therefore if thou bring thy gift to the altar, and there rememberest that thy brother hath ought against thee;"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 24,
+     "text": "Leave there thy gift before the altar, and go thy way; first be reconciled to thy brother, and then come and offer thy gift."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 25,
+     "text": "Agree with thine adversary quickly, whiles thou art in the way with him; lest at any time the adversary deliver thee to the judge, and the judge deliver thee to the officer, and thou be cast into prison."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 26,
+     "text": "Verily I say unto thee, Thou shalt by no means come out thence, till thou hast paid the uttermost farthing."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 27,
+     "text": "Ye have heard that it was said by them of old time, Thou shalt not commit adultery:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 28,
+     "text": "But I say unto you, That whosoever looketh on a woman to lust after her hath committed adultery with her already in his heart."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 29,
+     "text": "And if thy right eye offend thee, pluck it out, and cast it from thee: for it is profitable for thee that one of thy members should perish, and not that thy whole body should be cast into hell."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 30,
+     "text": "And if thy right hand offend thee, cut if off, and cast it from thee: for it is profitable for thee that one of thy members should perish, and not that thy whole body should be cast into hell."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 31,
+     "text": "It hath been said, Whosoever shall put away his wife, let him give her a writing of divorcement:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 32,
+     "text": "But I say unto you, That whosoever shall put away his wife, saving for the cause of fornication, causeth her to commit adultery: and whosoever shall marry her that is divorced committeth adultery."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 33,
+     "text": "Again, ye have heard that it hath been said by them of old time, Thou shalt not forswear thyself, but shalt perform unto the Lord thine oaths:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 34,
+     "text": "But I say unto you, Swear not at all; neither by heaven; for it is God’s throne:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 35,
+     "text": "Nor by the earth; for it is his footstool: neither by Jerusalem; for it is the city of the great King."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 36,
+     "text": "Neither shalt thou swear by thy head, because thou canst not make one hair white or black."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 37,
+     "text": "But let your communication be, Yea, yea; Nay, nay: for whatsoever is more than these cometh of evil."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 38,
+     "text": "Ye have heard that it hath been said, An eye for an eye, and a tooth for a tooth:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 39,
+     "text": "But I say unto you, That ye resist not evil: but whosoever shall smite thee on thy right cheek, turn to him the other also."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 40,
+     "text": "And if any man will sue thee at the law, and take away thy coat, let him have thy cloke also."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 41,
+     "text": "And whosoever shall compel thee to go a mile, go with him twain."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 42,
+     "text": "Give to him that asketh thee, and from him that would borrow of thee turn not thou away."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 43,
+     "text": "Ye have heard that it hath been said, Thou shalt love thy neighbour, and hate thine enemy."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 44,
+     "text": "But I say unto you, Love your enemies, bless them that curse you, do good to them that hate you, and pray for them which despitefully use you, and persecute you;"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 45,
+     "text": "That ye may be the children of your Father which is in heaven: for he maketh his sun to rise on the evil and on the good, and sendeth rain on the just and on the unjust."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 46,
+     "text": "For if ye love them which love you, what reward have ye? do not even the publicans the same?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 47,
+     "text": "And if ye salute your brethren only, what do ye more than others? do not even the publicans so?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 5,
+     "verse": 48,
+     "text": "Be ye therefore perfect, even as your Father which is in heaven is perfect."
+    }
+   ]
+  },
+  "mt-6": {
+   "reference": "Matthew 6",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 1,
+     "text": "Take heed that ye do not your alms before men, to be seen of them: otherwise ye have no reward of your Father which is in heaven."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 2,
+     "text": "Therefore when thou doest thine alms, do not sound a trumpet before thee, as the hypocrites do in the synagogues and in the streets, that they may have glory of men. Verily I say unto you, They have their reward."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 3,
+     "text": "But when thou doest alms, let not thy left hand know what thy right hand doeth:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 4,
+     "text": "That thine alms may be in secret: and thy Father which seeth in secret himself shall reward thee openly."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 5,
+     "text": "And when thou prayest, thou shalt not be as the hypocrites are: for they love to pray standing in the synagogues and in the corners of the streets, that they may be seen of men. Verily I say unto you, They have their reward."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 6,
+     "text": "But thou, when thou prayest, enter into thy closet, and when thou hast shut thy door, pray to thy Father which is in secret; and thy Father which seeth in secret shall reward thee openly."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 7,
+     "text": "But when ye pray, use not vain repetitions, as the heathen do: for they think that they shall be heard for their much speaking."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 8,
+     "text": "Be not ye therefore like unto them: for your Father knoweth what things ye have need of, before ye ask him."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 9,
+     "text": "After this manner therefore pray ye: Our Father which art in heaven, Hallowed be thy name."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 10,
+     "text": "Thy kingdom come. Thy will be done in earth, as it is in heaven."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 11,
+     "text": "Give us this day our daily bread."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 12,
+     "text": "And forgive us our debts, as we forgive our debtors."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 13,
+     "text": "And lead us not into temptation, but deliver us from evil: For thine is the kingdom, and the power, and the glory, for ever. Amen."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 14,
+     "text": "For if ye forgive men their trespasses, your heavenly Father will also forgive you:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 15,
+     "text": "But if ye forgive not men their trespasses, neither will your Father forgive your trespasses."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 16,
+     "text": "Moreover when ye fast, be not, as the hypocrites, of a sad countenance: for they disfigure their faces, that they may appear unto men to fast. Verily I say unto you, They have their reward."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 17,
+     "text": "But thou, when thou fastest, anoint thine head, and wash thy face;"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 18,
+     "text": "That thou appear not unto men to fast, but unto thy Father which is in secret: and thy Father, which seeth in secret, shall reward thee openly."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 19,
+     "text": "Lay not up for yourselves treasures upon earth, where moth and rust doth corrupt, and where thieves break through and steal:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 20,
+     "text": "But lay up for yourselves treasures in heaven, where neither moth nor rust doth corrupt, and where thieves do not break through nor steal:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 21,
+     "text": "For where your treasure is, there will your heart be also."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 22,
+     "text": "The light of the body is the eye: if therefore thine eye be single, thy whole body shall be full of light."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 23,
+     "text": "But if thine eye be evil, thy whole body shall be full of darkness. If therefore the light that is in thee be darkness, how great is that darkness!"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 24,
+     "text": "No man can serve two masters: for either he will hate the one, and love the other; or else he will hold to the one, and despise the other. Ye cannot serve God and mammon."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 25,
+     "text": "Therefore I say unto you, Take no thought for your life, what ye shall eat, or what ye shall drink; nor yet for your body, what ye shall put on. Is not the life more than meat, and the body than raiment?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 26,
+     "text": "Behold the fowls of the air: for they sow not, neither do they reap, nor gather into barns; yet your heavenly Father feedeth them. Are ye not much better than they?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 27,
+     "text": "Which of you by taking thought can add one cubit unto his stature?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 28,
+     "text": "And why take ye thought for raiment? Consider the lilies of the field, how they grow; they toil not, neither do they spin:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 29,
+     "text": "And yet I say unto you, That even Solomon in all his glory was not arrayed like one of these."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 30,
+     "text": "Wherefore, if God so clothe the grass of the field, which to day is, and to morrow is cast into the oven, shall he not much more clothe you, O ye of little faith?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 31,
+     "text": "Therefore take no thought, saying, What shall we eat? or, What shall we drink? or, Wherewithal shall we be clothed?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 32,
+     "text": "(For after all these things do the Gentiles seek:) for your heavenly Father knoweth that ye have need of all these things."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 33,
+     "text": "But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 6,
+     "verse": 34,
+     "text": "Take therefore no thought for the morrow: for the morrow shall take thought for the things of itself. Sufficient unto the day is the evil thereof."
+    }
+   ]
+  },
+  "mt-7": {
+   "reference": "Matthew 7",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 1,
+     "text": "Judge not, that ye be not judged."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 2,
+     "text": "For with what judgment ye judge, ye shall be judged: and with what measure ye mete, it shall be measured to you again."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 3,
+     "text": "And why beholdest thou the mote that is in thy brother’s eye, but considerest not the beam that is in thine own eye?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 4,
+     "text": "Or how wilt thou say to thy brother, Let me pull out the mote out of thine eye; and, behold, a beam is in thine own eye?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 5,
+     "text": "Thou hypocrite, first cast out the beam out of thine own eye; and then shalt thou see clearly to cast out the mote out of thy brother’s eye."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 6,
+     "text": "Give not that which is holy unto the dogs, neither cast ye your pearls before swine, lest they trample them under their feet, and turn again and rend you."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 7,
+     "text": "Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 8,
+     "text": "For every one that asketh receiveth; and he that seeketh findeth; and to him that knocketh it shall be opened."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 9,
+     "text": "Or what man is there of you, whom if his son ask bread, will he give him a stone?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 10,
+     "text": "Or if he ask a fish, will he give him a serpent?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 11,
+     "text": "If ye then, being evil, know how to give good gifts unto your children, how much more shall your Father which is in heaven give good things to them that ask him?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 12,
+     "text": "Therefore all things whatsoever ye would that men should do to you, do ye even so to them: for this is the law and the prophets."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 13,
+     "text": "Enter ye in at the strait gate: for wide is the gate, and broad is the way, that leadeth to destruction, and many there be which go in thereat:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 14,
+     "text": "Because strait is the gate, and narrow is the way, which leadeth unto life, and few there be that find it."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 15,
+     "text": "Beware of false prophets, which come to you in sheep’s clothing, but inwardly they are ravening wolves."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 16,
+     "text": "Ye shall know them by their fruits. Do men gather grapes of thorns, or figs of thistles?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 17,
+     "text": "Even so every good tree bringeth forth good fruit; but a corrupt tree bringeth forth evil fruit."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 18,
+     "text": "A good tree cannot bring forth evil fruit, neither can a corrupt tree bring forth good fruit."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 19,
+     "text": "Every tree that bringeth not forth good fruit is hewn down, and cast into the fire."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 20,
+     "text": "Wherefore by their fruits ye shall know them."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 21,
+     "text": "Not every one that saith unto me, Lord, Lord, shall enter into the kingdom of heaven; but he that doeth the will of my Father which is in heaven."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 22,
+     "text": "Many will say to me in that day, Lord, Lord, have we not prophesied in thy name? and in thy name have cast out devils? and in thy name done many wonderful works?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 23,
+     "text": "And then will I profess unto them, I never knew you: depart from me, ye that work iniquity."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 24,
+     "text": "Therefore whosoever heareth these sayings of mine, and doeth them, I will liken him unto a wise man, which built his house upon a rock:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 25,
+     "text": "And the rain descended, and the floods came, and the winds blew, and beat upon that house; and it fell not: for it was founded upon a rock."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 26,
+     "text": "And every one that heareth these sayings of mine, and doeth them not, shall be likened unto a foolish man, which built his house upon the sand:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 27,
+     "text": "And the rain descended, and the floods came, and the winds blew, and beat upon that house; and it fell: and great was the fall of it."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 28,
+     "text": "And it came to pass, when Jesus had ended these sayings, the people were astonished at his doctrine:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 29,
+     "text": "For he taught them as one having authority, and not as the scribes."
+    }
+   ]
+  },
+  "lk-10-25": {
+   "reference": "Luke 10:25-37",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Luke",
+     "chapter": 10,
+     "verse": 25,
+     "text": "And, behold, a certain lawyer stood up, and tempted him, saying, Master, what shall I do to inherit eternal life?"
+    },
+    {
+     "book": "Luke",
+     "chapter": 10,
+     "verse": 26,
+     "text": "He said unto him, What is written in the law? how readest thou?"
+    },
+    {
+     "book": "Luke",
+     "chapter": 10,
+     "verse": 27,
+     "text": "And he answering said, Thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy strength, and with all thy mind; and thy neighbour as thyself."
+    },
+    {
+     "book": "Luke",
+     "chapter": 10,
+     "verse": 28,
+     "text": "And he said unto him, Thou hast answered right: this do, and thou shalt live."
+    },
+    {
+     "book": "Luke",
+     "chapter": 10,
+     "verse": 29,
+     "text": "But he, willing to justify himself, said unto Jesus, And who is my neighbour?"
+    },
+    {
+     "book": "Luke",
+     "chapter": 10,
+     "verse": 30,
+     "text": "And Jesus answering said, A certain man went down from Jerusalem to Jericho, and fell among thieves, which stripped him of his raiment, and wounded him, and departed, leaving him half dead."
+    },
+    {
+     "book": "Luke",
+     "chapter": 10,
+     "verse": 31,
+     "text": "And by chance there came down a certain priest that way: and when he saw him, he passed by on the other side."
+    },
+    {
+     "book": "Luke",
+     "chapter": 10,
+     "verse": 32,
+     "text": "And likewise a Levite, when he was at the place, came and looked on him, and passed by on the other side."
+    },
+    {
+     "book": "Luke",
+     "chapter": 10,
+     "verse": 33,
+     "text": "But a certain Samaritan, as he journeyed, came where he was: and when he saw him, he had compassion on him,"
+    },
+    {
+     "book": "Luke",
+     "chapter": 10,
+     "verse": 34,
+     "text": "And went to him, and bound up his wounds, pouring in oil and wine, and set him on his own beast, and brought him to an inn, and took care of him."
+    },
+    {
+     "book": "Luke",
+     "chapter": 10,
+     "verse": 35,
+     "text": "And on the morrow when he departed, he took out two pence, and gave them to the host, and said unto him, Take care of him; and whatsoever thou spendest more, when I come again, I will repay thee."
+    },
+    {
+     "book": "Luke",
+     "chapter": 10,
+     "verse": 36,
+     "text": "Which now of these three, thinkest thou, was neighbour unto him that fell among the thieves?"
+    },
+    {
+     "book": "Luke",
+     "chapter": 10,
+     "verse": 37,
+     "text": "And he said, He that shewed mercy on him. Then said Jesus unto him, Go, and do thou likewise."
+    }
+   ]
+  },
+  "jn-13": {
+   "reference": "John 13",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 1,
+     "text": "Now before the feast of the passover, when Jesus knew that his hour was come that he should depart out of this world unto the Father, having loved his own which were in the world, he loved them unto the end."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 2,
+     "text": "And supper being ended, the devil having now put into the heart of Judas Iscariot, Simon’s son, to betray him;"
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 3,
+     "text": "Jesus knowing that the Father had given all things into his hands, and that he was come from God, and went to God;"
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 4,
+     "text": "He riseth from supper, and laid aside his garments; and took a towel, and girded himself."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 5,
+     "text": "After that he poureth water into a bason, and began to wash the disciples’ feet, and to wipe them with the towel wherewith he was girded."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 6,
+     "text": "Then cometh he to Simon Peter: and Peter saith unto him, Lord, dost thou wash my feet?"
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 7,
+     "text": "Jesus answered and said unto him, What I do thou knowest not now; but thou shalt know hereafter."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 8,
+     "text": "Peter saith unto him, Thou shalt never wash my feet. Jesus answered him, If I wash thee not, thou hast no part with me."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 9,
+     "text": "Simon Peter saith unto him, Lord, not my feet only, but also my hands and my head."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 10,
+     "text": "Jesus saith to him, He that is washed needeth not save to wash his feet, but is clean every whit: and ye are clean, but not all."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 11,
+     "text": "For he knew who should betray him; therefore said he, Ye are not all clean."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 12,
+     "text": "So after he had washed their feet, and had taken his garments, and was set down again, he said unto them, Know ye what I have done to you?"
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 13,
+     "text": "Ye call me Master and Lord: and ye say well; for so I am."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 14,
+     "text": "If I then, your Lord and Master, have washed your feet; ye also ought to wash one another’s feet."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 15,
+     "text": "For I have given you an example, that ye should do as I have done to you."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 16,
+     "text": "Verily, verily, I say unto you, The servant is not greater than his lord; neither he that is sent greater than he that sent him."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 17,
+     "text": "If ye know these things, happy are ye if ye do them."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 18,
+     "text": "I speak not of you all: I know whom I have chosen: but that the scripture may be fulfilled, He that eateth bread with me hath lifted up his heel against me."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 19,
+     "text": "Now I tell you before it come, that, when it is come to pass, ye may believe that I am he."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 20,
+     "text": "Verily, verily, I say unto you, He that receiveth whomsoever I send receiveth me; and he that receiveth me receiveth him that sent me."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 21,
+     "text": "When Jesus had thus said, he was troubled in spirit, and testified, and said, Verily, verily, I say unto you, that one of you shall betray me."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 22,
+     "text": "Then the disciples looked one on another, doubting of whom he spake."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 23,
+     "text": "Now there was leaning on Jesus’ bosom one of his disciples, whom Jesus loved."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 24,
+     "text": "Simon Peter therefore beckoned to him, that he should ask who it should be of whom he spake."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 25,
+     "text": "He then lying on Jesus’ breast saith unto him, Lord, who is it?"
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 26,
+     "text": "Jesus answered, He it is, to whom I shall give a sop, when I have dipped it. And when he had dipped the sop, he gave it to Judas Iscariot, the son of Simon."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 27,
+     "text": "And after the sop Satan entered into him. Then said Jesus unto him, That thou doest, do quickly."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 28,
+     "text": "Now no man at the table knew for what intent he spake this unto him."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 29,
+     "text": "For some of them thought, because Judas had the bag, that Jesus had said unto him, Buy those things that we have need of against the feast; or, that he should give something to the poor."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 30,
+     "text": "He then having received the sop went immediately out: and it was night."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 31,
+     "text": "Therefore, when he was gone out, Jesus said, Now is the Son of man glorified, and God is glorified in him."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 32,
+     "text": "If God be glorified in him, God shall also glorify him in himself, and shall straightway glorify him."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 33,
+     "text": "Little children, yet a little while I am with you. Ye shall seek me: and as I said unto the Jews, Whither I go, ye cannot come; so now I say to you."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 34,
+     "text": "A new commandment I give unto you, That ye love one another; as I have loved you, that ye also love one another."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 35,
+     "text": "By this shall all men know that ye are my disciples, if ye have love one to another."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 36,
+     "text": "Simon Peter said unto him, Lord, whither goest thou? Jesus answered him, Whither I go, thou canst not follow me now; but thou shalt follow me afterwards."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 37,
+     "text": "Peter said unto him, Lord, why cannot I follow thee now? I will lay down my life for thy sake."
+    },
+    {
+     "book": "John",
+     "chapter": 13,
+     "verse": 38,
+     "text": "Jesus answered him, Wilt thou lay down thy life for my sake? Verily, verily, I say unto thee, The cock shall not crow, till thou hast denied me thrice."
+    }
+   ]
+  },
+  "jn-15": {
+   "reference": "John 15",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 1,
+     "text": "I am the true vine, and my Father is the husbandman."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 2,
+     "text": "Every branch in me that beareth not fruit he taketh away: and every branch that beareth fruit, he purgeth it, that it may bring forth more fruit."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 3,
+     "text": "Now ye are clean through the word which I have spoken unto you."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 4,
+     "text": "Abide in me, and I in you. As the branch cannot bear fruit of itself, except it abide in the vine; no more can ye, except ye abide in me."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 5,
+     "text": "I am the vine, ye are the branches: He that abideth in me, and I in him, the same bringeth forth much fruit: for without me ye can do nothing."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 6,
+     "text": "If a man abide not in me, he is cast forth as a branch, and is withered; and men gather them, and cast them into the fire, and they are burned."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 7,
+     "text": "If ye abide in me, and my words abide in you, ye shall ask what ye will, and it shall be done unto you."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 8,
+     "text": "Herein is my Father glorified, that ye bear much fruit; so shall ye be my disciples."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 9,
+     "text": "As the Father hath loved me, so have I loved you: continue ye in my love."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 10,
+     "text": "If ye keep my commandments, ye shall abide in my love; even as I have kept my Father’s commandments, and abide in his love."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 11,
+     "text": "These things have I spoken unto you, that my joy might remain in you, and that your joy might be full."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 12,
+     "text": "This is my commandment, That ye love one another, as I have loved you."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 13,
+     "text": "Greater love hath no man than this, that a man lay down his life for his friends."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 14,
+     "text": "Ye are my friends, if ye do whatsoever I command you."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 15,
+     "text": "Henceforth I call you not servants; for the servant knoweth not what his lord doeth: but I have called you friends; for all things that I have heard of my Father I have made known unto you."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 16,
+     "text": "Ye have not chosen me, but I have chosen you, and ordained you, that ye should go and bring forth fruit, and that your fruit should remain: that whatsoever ye shall ask of the Father in my name, he may give it you."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 17,
+     "text": "These things I command you, that ye love one another."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 18,
+     "text": "If the world hate you, ye know that it hated me before it hated you."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 19,
+     "text": "If ye were of the world, the world would love his own: but because ye are not of the world, but I have chosen you out of the world, therefore the world hateth you."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 20,
+     "text": "Remember the word that I said unto you, The servant is not greater than his lord. If they have persecuted me, they will also persecute you; if they have kept my saying, they will keep yours also."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 21,
+     "text": "But all these things will they do unto you for my name’s sake, because they know not him that sent me."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 22,
+     "text": "If I had not come and spoken unto them, they had not had sin: but now they have no cloke for their sin."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 23,
+     "text": "He that hateth me hateth my Father also."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 24,
+     "text": "If I had not done among them the works which none other man did, they had not had sin: but now have they both seen and hated both me and my Father."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 25,
+     "text": "But this cometh to pass, that the word might be fulfilled that is written in their law, They hated me without a cause."
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 26,
+     "text": "But when the Comforter is come, whom I will send unto you from the Father, even the Spirit of truth, which proceedeth from the Father, he shall testify of me:"
+    },
+    {
+     "book": "John",
+     "chapter": 15,
+     "verse": 27,
+     "text": "And ye also shall bear witness, because ye have been with me from the beginning."
+    }
+   ]
+  },
+  "lk-9-23": {
+   "reference": "Luke 9:23",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Luke",
+     "chapter": 9,
+     "verse": 23,
+     "text": "And he said to them all, If any man will come after me, let him deny himself, and take up his cross daily, and follow me."
+    }
+   ]
+  },
+  "mt-7-24": {
+   "reference": "Matthew 7:24-27",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 24,
+     "text": "Therefore whosoever heareth these sayings of mine, and doeth them, I will liken him unto a wise man, which built his house upon a rock:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 25,
+     "text": "And the rain descended, and the floods came, and the winds blew, and beat upon that house; and it fell not: for it was founded upon a rock."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 26,
+     "text": "And every one that heareth these sayings of mine, and doeth them not, shall be likened unto a foolish man, which built his house upon the sand:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 27,
+     "text": "And the rain descended, and the floods came, and the winds blew, and beat upon that house; and it fell: and great was the fall of it."
+    }
+   ]
+  },
+  "heb-12-1": {
+   "reference": "Hebrews 12:1-2",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Hebrews",
+     "chapter": 12,
+     "verse": 1,
+     "text": "Wherefore seeing we also are compassed about with so great a cloud of witnesses, let us lay aside every weight, and the sin which doth so easily beset us, and let us run with patience the race that is set before us,"
+    },
+    {
+     "book": "Hebrews",
+     "chapter": 12,
+     "verse": 2,
+     "text": "Looking unto Jesus the author and finisher of our faith; who for the joy that was set before him endured the cross, despising the shame, and is set down at the right hand of the throne of God."
+    }
+   ]
+  },
+  "php-4-8": {
+   "reference": "Philippians 4:8",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Philippians",
+     "chapter": 4,
+     "verse": 8,
+     "text": "Finally, brethren, whatsoever things are true, whatsoever things are honest, whatsoever things are just, whatsoever things are pure, whatsoever things are lovely, whatsoever things are of good report; if there be any virtue, and if there be any praise, think on these things."
+    }
+   ]
+  },
+  "1co-13": {
+   "reference": "1 Corinthians 13",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "1 Corinthians",
+     "chapter": 13,
+     "verse": 1,
+     "text": "Though I speak with the tongues of men and of angels, and have not charity, I am become as sounding brass, or a tinkling cymbal."
+    },
+    {
+     "book": "1 Corinthians",
+     "chapter": 13,
+     "verse": 2,
+     "text": "And though I have the gift of prophecy, and understand all mysteries, and all knowledge; and though I have all faith, so that I could remove mountains, and have not charity, I am nothing."
+    },
+    {
+     "book": "1 Corinthians",
+     "chapter": 13,
+     "verse": 3,
+     "text": "And though I bestow all my goods to feed the poor, and though I give my body to be burned, and have not charity, it profiteth me nothing."
+    },
+    {
+     "book": "1 Corinthians",
+     "chapter": 13,
+     "verse": 4,
+     "text": "Charity suffereth long, and is kind; charity envieth not; charity vaunteth not itself, is not puffed up,"
+    },
+    {
+     "book": "1 Corinthians",
+     "chapter": 13,
+     "verse": 5,
+     "text": "Doth not behave itself unseemly, seeketh not her own, is not easily provoked, thinketh no evil;"
+    },
+    {
+     "book": "1 Corinthians",
+     "chapter": 13,
+     "verse": 6,
+     "text": "Rejoiceth not in iniquity, but rejoiceth in the truth;"
+    },
+    {
+     "book": "1 Corinthians",
+     "chapter": 13,
+     "verse": 7,
+     "text": "Beareth all things, believeth all things, hopeth all things, endureth all things."
+    },
+    {
+     "book": "1 Corinthians",
+     "chapter": 13,
+     "verse": 8,
+     "text": "Charity never faileth: but whether there be prophecies, they shall fail; whether there be tongues, they shall cease; whether there be knowledge, it shall vanish away."
+    },
+    {
+     "book": "1 Corinthians",
+     "chapter": 13,
+     "verse": 9,
+     "text": "For we know in part, and we prophesy in part."
+    },
+    {
+     "book": "1 Corinthians",
+     "chapter": 13,
+     "verse": 10,
+     "text": "But when that which is perfect is come, then that which is in part shall be done away."
+    },
+    {
+     "book": "1 Corinthians",
+     "chapter": 13,
+     "verse": 11,
+     "text": "When I was a child, I spake as a child, I understood as a child, I thought as a child: but when I became a man, I put away childish things."
+    },
+    {
+     "book": "1 Corinthians",
+     "chapter": 13,
+     "verse": 12,
+     "text": "For now we see through a glass, darkly; but then face to face: now I know in part; but then shall I know even as also I am known."
+    },
+    {
+     "book": "1 Corinthians",
+     "chapter": 13,
+     "verse": 13,
+     "text": "And now abideth faith, hope, charity, these three; but the greatest of these is charity."
+    }
+   ]
+  },
+  "mt-25-31": {
+   "reference": "Matthew 25:31-46",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Matthew",
+     "chapter": 25,
+     "verse": 31,
+     "text": "When the Son of man shall come in his glory, and all the holy angels with him, then shall he sit upon the throne of his glory:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 25,
+     "verse": 32,
+     "text": "And before him shall be gathered all nations: and he shall separate them one from another, as a shepherd divideth his sheep from the goats:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 25,
+     "verse": 33,
+     "text": "And he shall set the sheep on his right hand, but the goats on the left."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 25,
+     "verse": 34,
+     "text": "Then shall the King say unto them on his right hand, Come, ye blessed of my Father, inherit the kingdom prepared for you from the foundation of the world:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 25,
+     "verse": 35,
+     "text": "For I was an hungred, and ye gave me meat: I was thirsty, and ye gave me drink: I was a stranger, and ye took me in:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 25,
+     "verse": 36,
+     "text": "Naked, and ye clothed me: I was sick, and ye visited me: I was in prison, and ye came unto me."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 25,
+     "verse": 37,
+     "text": "Then shall the righteous answer him, saying, Lord, when saw we thee an hungred, and fed thee? or thirsty, and gave thee drink?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 25,
+     "verse": 38,
+     "text": "When saw we thee a stranger, and took thee in? or naked, and clothed thee?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 25,
+     "verse": 39,
+     "text": "Or when saw we thee sick, or in prison, and came unto thee?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 25,
+     "verse": 40,
+     "text": "And the King shall answer and say unto them, Verily I say unto you, Inasmuch as ye have done it unto one of the least of these my brethren, ye have done it unto me."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 25,
+     "verse": 41,
+     "text": "Then shall he say also unto them on the left hand, Depart from me, ye cursed, into everlasting fire, prepared for the devil and his angels:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 25,
+     "verse": 42,
+     "text": "For I was an hungred, and ye gave me no meat: I was thirsty, and ye gave me no drink:"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 25,
+     "verse": 43,
+     "text": "I was a stranger, and ye took me not in: naked, and ye clothed me not: sick, and in prison, and ye visited me not."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 25,
+     "verse": 44,
+     "text": "Then shall they also answer him, saying, Lord, when saw we thee an hungred, or athirst, or a stranger, or naked, or sick, or in prison, and did not minister unto thee?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 25,
+     "verse": 45,
+     "text": "Then shall he answer them, saying, Verily I say unto you, Inasmuch as ye did it not to one of the least of these, ye did it not to me."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 25,
+     "verse": 46,
+     "text": "And these shall go away into everlasting punishment: but the righteous into life eternal."
+    }
+   ]
+  },
+  "rom-12-9": {
+   "reference": "Romans 12:9-21",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Romans",
+     "chapter": 12,
+     "verse": 9,
+     "text": "Let love be without dissimulation. Abhor that which is evil; cleave to that which is good."
+    },
+    {
+     "book": "Romans",
+     "chapter": 12,
+     "verse": 10,
+     "text": "Be kindly affectioned one to another with brotherly love; in honour preferring one another;"
+    },
+    {
+     "book": "Romans",
+     "chapter": 12,
+     "verse": 11,
+     "text": "Not slothful in business; fervent in spirit; serving the Lord;"
+    },
+    {
+     "book": "Romans",
+     "chapter": 12,
+     "verse": 12,
+     "text": "Rejoicing in hope; patient in tribulation; continuing instant in prayer;"
+    },
+    {
+     "book": "Romans",
+     "chapter": 12,
+     "verse": 13,
+     "text": "Distributing to the necessity of saints; given to hospitality."
+    },
+    {
+     "book": "Romans",
+     "chapter": 12,
+     "verse": 14,
+     "text": "Bless them which persecute you: bless, and curse not."
+    },
+    {
+     "book": "Romans",
+     "chapter": 12,
+     "verse": 15,
+     "text": "Rejoice with them that do rejoice, and weep with them that weep."
+    },
+    {
+     "book": "Romans",
+     "chapter": 12,
+     "verse": 16,
+     "text": "Be of the same mind one toward another. Mind not high things, but condescend to men of low estate. Be not wise in your own conceits."
+    },
+    {
+     "book": "Romans",
+     "chapter": 12,
+     "verse": 17,
+     "text": "Recompense to no man evil for evil. Provide things honest in the sight of all men."
+    },
+    {
+     "book": "Romans",
+     "chapter": 12,
+     "verse": 18,
+     "text": "If it be possible, as much as lieth in you, live peaceably with all men."
+    },
+    {
+     "book": "Romans",
+     "chapter": 12,
+     "verse": 19,
+     "text": "Dearly beloved, avenge not yourselves, but rather give place unto wrath: for it is written, Vengeance is mine; I will repay, saith the Lord."
+    },
+    {
+     "book": "Romans",
+     "chapter": 12,
+     "verse": 20,
+     "text": "Therefore if thine enemy hunger, feed him; if he thirst, give him drink: for in so doing thou shalt heap coals of fire on his head."
+    },
+    {
+     "book": "Romans",
+     "chapter": 12,
+     "verse": 21,
+     "text": "Be not overcome of evil, but overcome evil with good."
+    }
+   ]
+  },
+  "gal-6-1": {
+   "reference": "Galatians 6:1-10",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Galatians",
+     "chapter": 6,
+     "verse": 1,
+     "text": "Brethren, if a man be overtaken in a fault, ye which are spiritual, restore such an one in the spirit of meekness; considering thyself, lest thou also be tempted."
+    },
+    {
+     "book": "Galatians",
+     "chapter": 6,
+     "verse": 2,
+     "text": "Bear ye one another’s burdens, and so fulfil the law of Christ."
+    },
+    {
+     "book": "Galatians",
+     "chapter": 6,
+     "verse": 3,
+     "text": "For if a man think himself to be something, when he is nothing, he deceiveth himself."
+    },
+    {
+     "book": "Galatians",
+     "chapter": 6,
+     "verse": 4,
+     "text": "But let every man prove his own work, and then shall he have rejoicing in himself alone, and not in another."
+    },
+    {
+     "book": "Galatians",
+     "chapter": 6,
+     "verse": 5,
+     "text": "For every man shall bear his own burden."
+    },
+    {
+     "book": "Galatians",
+     "chapter": 6,
+     "verse": 6,
+     "text": "Let him that is taught in the word communicate unto him that teacheth in all good things."
+    },
+    {
+     "book": "Galatians",
+     "chapter": 6,
+     "verse": 7,
+     "text": "Be not deceived; God is not mocked: for whatsoever a man soweth, that shall he also reap."
+    },
+    {
+     "book": "Galatians",
+     "chapter": 6,
+     "verse": 8,
+     "text": "For he that soweth to his flesh shall of the flesh reap corruption; but he that soweth to the Spirit shall of the Spirit reap life everlasting."
+    },
+    {
+     "book": "Galatians",
+     "chapter": 6,
+     "verse": 9,
+     "text": "And let us not be weary in well doing: for in due season we shall reap, if we faint not."
+    },
+    {
+     "book": "Galatians",
+     "chapter": 6,
+     "verse": 10,
+     "text": "As we have therefore opportunity, let us do good unto all men, especially unto them who are of the household of faith."
+    }
+   ]
+  },
+  "1jn-4-7": {
+   "reference": "1 John 4:7-21",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "1 John",
+     "chapter": 4,
+     "verse": 7,
+     "text": "Beloved, let us love one another: for love is of God; and every one that loveth is born of God, and knoweth God."
+    },
+    {
+     "book": "1 John",
+     "chapter": 4,
+     "verse": 8,
+     "text": "He that loveth not knoweth not God; for God is love."
+    },
+    {
+     "book": "1 John",
+     "chapter": 4,
+     "verse": 9,
+     "text": "In this was manifested the love of God toward us, because that God sent his only begotten Son into the world, that we might live through him."
+    },
+    {
+     "book": "1 John",
+     "chapter": 4,
+     "verse": 10,
+     "text": "Herein is love, not that we loved God, but that he loved us, and sent his Son to be the propitiation for our sins."
+    },
+    {
+     "book": "1 John",
+     "chapter": 4,
+     "verse": 11,
+     "text": "Beloved, if God so loved us, we ought also to love one another."
+    },
+    {
+     "book": "1 John",
+     "chapter": 4,
+     "verse": 12,
+     "text": "No man hath seen God at any time. If we love one another, God dwelleth in us, and his love is perfected in us."
+    },
+    {
+     "book": "1 John",
+     "chapter": 4,
+     "verse": 13,
+     "text": "Hereby know we that we dwell in him, and he in us, because he hath given us of his Spirit."
+    },
+    {
+     "book": "1 John",
+     "chapter": 4,
+     "verse": 14,
+     "text": "And we have seen and do testify that the Father sent the Son to be the Saviour of the world."
+    },
+    {
+     "book": "1 John",
+     "chapter": 4,
+     "verse": 15,
+     "text": "Whosoever shall confess that Jesus is the Son of God, God dwelleth in him, and he in God."
+    },
+    {
+     "book": "1 John",
+     "chapter": 4,
+     "verse": 16,
+     "text": "And we have known and believed the love that God hath to us. God is love; and he that dwelleth in love dwelleth in God, and God in him."
+    },
+    {
+     "book": "1 John",
+     "chapter": 4,
+     "verse": 17,
+     "text": "Herein is our love made perfect, that we may have boldness in the day of judgment: because as he is, so are we in this world."
+    },
+    {
+     "book": "1 John",
+     "chapter": 4,
+     "verse": 18,
+     "text": "There is no fear in love; but perfect love casteth out fear: because fear hath torment. He that feareth is not made perfect in love."
+    },
+    {
+     "book": "1 John",
+     "chapter": 4,
+     "verse": 19,
+     "text": "We love him, because he first loved us."
+    },
+    {
+     "book": "1 John",
+     "chapter": 4,
+     "verse": 20,
+     "text": "If a man say, I love God, and hateth his brother, he is a liar: for he that loveth not his brother whom he hath seen, how can he love God whom he hath not seen?"
+    },
+    {
+     "book": "1 John",
+     "chapter": 4,
+     "verse": 21,
+     "text": "And this commandment have we from him, That he who loveth God love his brother also."
+    }
+   ]
+  },
+  "mt-14-22": {
+   "reference": "Matthew 14:22-33",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Matthew",
+     "chapter": 14,
+     "verse": 22,
+     "text": "And straightway Jesus constrained his disciples to get into a ship, and to go before him unto the other side, while he sent the multitudes away."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 14,
+     "verse": 23,
+     "text": "And when he had sent the multitudes away, he went up into a mountain apart to pray: and when the evening was come, he was there alone."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 14,
+     "verse": 24,
+     "text": "But the ship was now in the midst of the sea, tossed with waves: for the wind was contrary."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 14,
+     "verse": 25,
+     "text": "And in the fourth watch of the night Jesus went unto them, walking on the sea."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 14,
+     "verse": 26,
+     "text": "And when the disciples saw him walking on the sea, they were troubled, saying, It is a spirit; and they cried out for fear."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 14,
+     "verse": 27,
+     "text": "But straightway Jesus spake unto them, saying, Be of good cheer; it is I; be not afraid."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 14,
+     "verse": 28,
+     "text": "And Peter answered him and said, Lord, if it be thou, bid me come unto thee on the water."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 14,
+     "verse": 29,
+     "text": "And he said, Come. And when Peter was come down out of the ship, he walked on the water, to go to Jesus."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 14,
+     "verse": 30,
+     "text": "But when he saw the wind boisterous, he was afraid; and beginning to sink, he cried, saying, Lord, save me."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 14,
+     "verse": 31,
+     "text": "And immediately Jesus stretched forth his hand, and caught him, and said unto him, O thou of little faith, wherefore didst thou doubt?"
+    },
+    {
+     "book": "Matthew",
+     "chapter": 14,
+     "verse": 32,
+     "text": "And when they were come into the ship, the wind ceased."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 14,
+     "verse": 33,
+     "text": "Then they that were in the ship came and worshipped him, saying, Of a truth thou art the Son of God."
+    }
+   ]
+  },
+  "josh-1-1": {
+   "reference": "Joshua 1:1-9",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Joshua",
+     "chapter": 1,
+     "verse": 1,
+     "text": "Now after the death of Moses the servant of the LORD it came to pass, that the LORD spake unto Joshua the son of Nun, Moses’ minister, saying,"
+    },
+    {
+     "book": "Joshua",
+     "chapter": 1,
+     "verse": 2,
+     "text": "Moses my servant is dead; now therefore arise, go over this Jordan, thou, and all this people, unto the land which I do give to them, even to the children of Israel."
+    },
+    {
+     "book": "Joshua",
+     "chapter": 1,
+     "verse": 3,
+     "text": "Every place that the sole of your foot shall tread upon, that have I given unto you, as I said unto Moses."
+    },
+    {
+     "book": "Joshua",
+     "chapter": 1,
+     "verse": 4,
+     "text": "From the wilderness and this Lebanon even unto the great river, the river Euphrates, all the land of the Hittites, and unto the great sea toward the going down of the sun, shall be your coast."
+    },
+    {
+     "book": "Joshua",
+     "chapter": 1,
+     "verse": 5,
+     "text": "There shall not any man be able to stand before thee all the days of thy life: as I was with Moses, so I will be with thee: I will not fail thee, nor forsake thee."
+    },
+    {
+     "book": "Joshua",
+     "chapter": 1,
+     "verse": 6,
+     "text": "Be strong and of a good courage: for unto this people shalt thou divide for an inheritance the land, which I sware unto their fathers to give them."
+    },
+    {
+     "book": "Joshua",
+     "chapter": 1,
+     "verse": 7,
+     "text": "Only be thou strong and very courageous, that thou mayest observe to do according to all the law, which Moses my servant commanded thee: turn not from it to the right hand or to the left, that thou mayest prosper whithersoever thou goest."
+    },
+    {
+     "book": "Joshua",
+     "chapter": 1,
+     "verse": 8,
+     "text": "This book of the law shall not depart out of thy mouth; but thou shalt meditate therein day and night, that thou mayest observe to do according to all that is written therein: for then thou shalt make thy way prosperous, and then thou shalt have good success."
+    },
+    {
+     "book": "Joshua",
+     "chapter": 1,
+     "verse": 9,
+     "text": "Have not I commanded thee? Be strong and of a good courage; be not afraid, neither be thou dismayed: for the LORD thy God is with thee whithersoever thou goest."
+    }
+   ]
+  },
+  "ps-27": {
+   "reference": "Psalms 27",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Psalms",
+     "chapter": 27,
+     "verse": 1,
+     "text": "The LORD is my light and my salvation; whom shall I fear? the LORD is the strength of my life; of whom shall I be afraid?"
+    },
+    {
+     "book": "Psalms",
+     "chapter": 27,
+     "verse": 2,
+     "text": "When the wicked, even mine enemies and my foes, came upon me to eat up my flesh, they stumbled and fell."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 27,
+     "verse": 3,
+     "text": "Though an host should encamp against me, my heart shall not fear: though war should rise against me, in this will I be confident."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 27,
+     "verse": 4,
+     "text": "One thing have I desired of the LORD, that will I seek after; that I may dwell in the house of the LORD all the days of my life, to behold the beauty of the LORD, and to enquire in his temple."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 27,
+     "verse": 5,
+     "text": "For in the time of trouble he shall hide me in his pavilion: in the secret of his tabernacle shall he hide me; he shall set me up upon a rock."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 27,
+     "verse": 6,
+     "text": "And now shall mine head be lifted up above mine enemies round about me: therefore will I offer in his tabernacle sacrifices of joy; I will sing, yea, I will sing praises unto the LORD."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 27,
+     "verse": 7,
+     "text": "Hear, O LORD, when I cry with my voice: have mercy also upon me, and answer me."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 27,
+     "verse": 8,
+     "text": "When thou saidst, Seek ye my face; my heart said unto thee, Thy face, LORD, will I seek."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 27,
+     "verse": 9,
+     "text": "Hide not thy face far from me; put not thy servant away in anger: thou hast been my help; leave me not, neither forsake me, O God of my salvation."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 27,
+     "verse": 10,
+     "text": "When my father and my mother forsake me, then the LORD will take me up."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 27,
+     "verse": 11,
+     "text": "Teach me thy way, O LORD, and lead me in a plain path, because of mine enemies."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 27,
+     "verse": 12,
+     "text": "Deliver me not over unto the will of mine enemies: for false witnesses are risen up against me, and such as breathe out cruelty."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 27,
+     "verse": 13,
+     "text": "I had fainted, unless I had believed to see the goodness of the LORD in the land of the living."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 27,
+     "verse": 14,
+     "text": "Wait on the LORD: be of good courage, and he shall strengthen thine heart: wait, I say, on the LORD."
+    }
+   ]
+  },
+  "isa-41-10": {
+   "reference": "Isaiah 41:10",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Isaiah",
+     "chapter": 41,
+     "verse": 10,
+     "text": "Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee; yea, I will help thee; yea, I will uphold thee with the right hand of my righteousness."
+    }
+   ]
+  },
+  "mk-4-35": {
+   "reference": "Mark 4:35-41",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Mark",
+     "chapter": 4,
+     "verse": 35,
+     "text": "And the same day, when the even was come, he saith unto them, Let us pass over unto the other side."
+    },
+    {
+     "book": "Mark",
+     "chapter": 4,
+     "verse": 36,
+     "text": "And when they had sent away the multitude, they took him even as he was in the ship. And there were also with him other little ships."
+    },
+    {
+     "book": "Mark",
+     "chapter": 4,
+     "verse": 37,
+     "text": "And there arose a great storm of wind, and the waves beat into the ship, so that it was now full."
+    },
+    {
+     "book": "Mark",
+     "chapter": 4,
+     "verse": 38,
+     "text": "And he was in the hinder part of the ship, asleep on a pillow: and they awake him, and say unto him, Master, carest thou not that we perish?"
+    },
+    {
+     "book": "Mark",
+     "chapter": 4,
+     "verse": 39,
+     "text": "And he arose, and rebuked the wind, and said unto the sea, Peace, be still. And the wind ceased, and there was a great calm."
+    },
+    {
+     "book": "Mark",
+     "chapter": 4,
+     "verse": 40,
+     "text": "And he said unto them, Why are ye so fearful? how is it that ye have no faith?"
+    },
+    {
+     "book": "Mark",
+     "chapter": 4,
+     "verse": 41,
+     "text": "And they feared exceedingly, and said one to another, What manner of man is this, that even the wind and the sea obey him?"
+    }
+   ]
+  },
+  "2ti-1-7": {
+   "reference": "2 Timothy 1:7",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "2 Timothy",
+     "chapter": 1,
+     "verse": 7,
+     "text": "For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind."
+    }
+   ]
+  },
+  "ps-23": {
+   "reference": "Psalms 23",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Psalms",
+     "chapter": 23,
+     "verse": 1,
+     "text": "The LORD is my shepherd; I shall not want."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 23,
+     "verse": 2,
+     "text": "He maketh me to lie down in green pastures: he leadeth me beside the still waters."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 23,
+     "verse": 3,
+     "text": "He restoreth my soul: he leadeth me in the paths of righteousness for his name’s sake."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 23,
+     "verse": 4,
+     "text": "Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me; thy rod and thy staff they comfort me."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 23,
+     "verse": 5,
+     "text": "Thou preparest a table before me in the presence of mine enemies: thou anointest my head with oil; my cup runneth over."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 23,
+     "verse": 6,
+     "text": "Surely goodness and mercy shall follow me all the days of my life: and I will dwell in the house of the LORD for ever."
+    }
+   ]
+  },
+  "ps-46": {
+   "reference": "Psalms 46",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Psalms",
+     "chapter": 46,
+     "verse": 1,
+     "text": "God is our refuge and strength, a very present help in trouble."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 46,
+     "verse": 2,
+     "text": "Therefore will not we fear, though the earth be removed, and though the mountains be carried into the midst of the sea;"
+    },
+    {
+     "book": "Psalms",
+     "chapter": 46,
+     "verse": 3,
+     "text": "Though the waters thereof roar and be troubled, though the mountains shake with the swelling thereof. Selah."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 46,
+     "verse": 4,
+     "text": "There is a river, the streams whereof shall make glad the city of God, the holy place of the tabernacles of the most High."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 46,
+     "verse": 5,
+     "text": "God is in the midst of her; she shall not be moved: God shall help her, and that right early."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 46,
+     "verse": 6,
+     "text": "The heathen raged, the kingdoms were moved: he uttered his voice, the earth melted."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 46,
+     "verse": 7,
+     "text": "The LORD of hosts is with us; the God of Jacob is our refuge. Selah."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 46,
+     "verse": 8,
+     "text": "Come, behold the works of the LORD, what desolations he hath made in the earth."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 46,
+     "verse": 9,
+     "text": "He maketh wars to cease unto the end of the earth; he breaketh the bow, and cutteth the spear in sunder; he burneth the chariot in the fire."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 46,
+     "verse": 10,
+     "text": "Be still, and know that I am God: I will be exalted among the heathen, I will be exalted in the earth."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 46,
+     "verse": 11,
+     "text": "The LORD of hosts is with us; the God of Jacob is our refuge. Selah."
+    }
+   ]
+  },
+  "ps-131": {
+   "reference": "Psalms 131",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Psalms",
+     "chapter": 131,
+     "verse": 1,
+     "text": "LORD, my heart is not haughty, nor mine eyes lofty: neither do I exercise myself in great matters, or in things too high for me."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 131,
+     "verse": 2,
+     "text": "Surely I have behaved and quieted myself, as a child that is weaned of his mother: my soul is even as a weaned child."
+    },
+    {
+     "book": "Psalms",
+     "chapter": 131,
+     "verse": 3,
+     "text": "Let Israel hope in the LORD from henceforth and for ever."
+    }
+   ]
+  },
+  "1ki-19-9": {
+   "reference": "1 Kings 19:9-13",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "1 Kings",
+     "chapter": 19,
+     "verse": 9,
+     "text": "And he came thither unto a cave, and lodged there; and, behold, the word of the LORD came to him, and he said unto him, What doest thou here, Elijah?"
+    },
+    {
+     "book": "1 Kings",
+     "chapter": 19,
+     "verse": 10,
+     "text": "And he said, I have been very jealous for the LORD God of hosts: for the children of Israel have forsaken thy covenant, thrown down thine altars, and slain thy prophets with the sword; and I, even I only, am left; and they seek my life, to take it away."
+    },
+    {
+     "book": "1 Kings",
+     "chapter": 19,
+     "verse": 11,
+     "text": "And he said, Go forth, and stand upon the mount before the LORD. And, behold, the LORD passed by, and a great and strong wind rent the mountains, and brake in pieces the rocks before the LORD; but the LORD was not in the wind: and after the wind an earthquake; but the LORD was not in the earthquake:"
+    },
+    {
+     "book": "1 Kings",
+     "chapter": 19,
+     "verse": 12,
+     "text": "And after the earthquake a fire; but the LORD was not in the fire: and after the fire a still small voice."
+    },
+    {
+     "book": "1 Kings",
+     "chapter": 19,
+     "verse": 13,
+     "text": "And it was so, when Elijah heard it, that he wrapped his face in his mantle, and went out, and stood in the entering in of the cave. And, behold, there came a voice unto him, and said, What doest thou here, Elijah?"
+    }
+   ]
+  },
+  "mt-11-28": {
+   "reference": "Matthew 11:28-30",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Matthew",
+     "chapter": 11,
+     "verse": 28,
+     "text": "Come unto me, all ye that labour and are heavy laden, and I will give you rest."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 11,
+     "verse": 29,
+     "text": "Take my yoke upon you, and learn of me; for I am meek and lowly in heart: and ye shall find rest unto your souls."
+    },
+    {
+     "book": "Matthew",
+     "chapter": 11,
+     "verse": 30,
+     "text": "For my yoke is easy, and my burden is light."
+    }
+   ]
+  },
+  "jn-14-27": {
+   "reference": "John 14:27",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "John",
+     "chapter": 14,
+     "verse": 27,
+     "text": "Peace I leave with you, my peace I give unto you: not as the world giveth, give I unto you. Let not your heart be troubled, neither let it be afraid."
+    }
+   ]
+  },
+  "php-4-6": {
+   "reference": "Philippians 4:6-7",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Philippians",
+     "chapter": 4,
+     "verse": 6,
+     "text": "Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God."
+    },
+    {
+     "book": "Philippians",
+     "chapter": 4,
+     "verse": 7,
+     "text": "And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus."
+    }
+   ]
+  },
+  "q-prov-1-7": {
+   "reference": "Proverbs 1:7",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Proverbs",
+     "chapter": 1,
+     "verse": 7,
+     "text": "The fear of the LORD is the beginning of knowledge: but fools despise wisdom and instruction."
+    }
+   ]
+  },
+  "q-prov-4-7": {
+   "reference": "Proverbs 4:7",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Proverbs",
+     "chapter": 4,
+     "verse": 7,
+     "text": "Wisdom is the principal thing; therefore get wisdom: and with all thy getting get understanding."
+    }
+   ]
+  },
+  "q-prov-18-15": {
+   "reference": "Proverbs 18:15",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Proverbs",
+     "chapter": 18,
+     "verse": 15,
+     "text": "The heart of the prudent getteth knowledge; and the ear of the wise seeketh knowledge."
+    }
+   ]
+  },
+  "q-prov-24-3": {
+   "reference": "Proverbs 24:3-4",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Proverbs",
+     "chapter": 24,
+     "verse": 3,
+     "text": "Through wisdom is an house builded; and by understanding it is established:"
+    },
+    {
+     "book": "Proverbs",
+     "chapter": 24,
+     "verse": 4,
+     "text": "And by knowledge shall the chambers be filled with all precious and pleasant riches."
+    }
+   ]
+  },
+  "q-prov-27-17": {
+   "reference": "Proverbs 27:17",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Proverbs",
+     "chapter": 27,
+     "verse": 17,
+     "text": "Iron sharpeneth iron; so a man sharpeneth the countenance of his friend."
+    }
+   ]
+  },
+  "q-eccl-9-10": {
+   "reference": "Ecclesiastes 9:10",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Ecclesiastes",
+     "chapter": 9,
+     "verse": 10,
+     "text": "Whatsoever thy hand findeth to do, do it with thy might; for there is no work, nor device, nor knowledge, nor wisdom, in the grave, whither thou goest."
+    }
+   ]
+  },
+  "q-col-3-23": {
+   "reference": "Colossians 3:23",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Colossians",
+     "chapter": 3,
+     "verse": 23,
+     "text": "And whatsoever ye do, do it heartily, as to the Lord, and not unto men;"
+    }
+   ]
+  },
+  "q-jas-1-5": {
+   "reference": "James 1:5",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "James",
+     "chapter": 1,
+     "verse": 5,
+     "text": "If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him."
+    }
+   ]
+  },
+  "q-mt-7-7": {
+   "reference": "Matthew 7:7",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 7,
+     "text": "Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you:"
+    }
+   ]
+  },
+  "q-php-4-8": {
+   "reference": "Philippians 4:8",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Philippians",
+     "chapter": 4,
+     "verse": 8,
+     "text": "Finally, brethren, whatsoever things are true, whatsoever things are honest, whatsoever things are just, whatsoever things are pure, whatsoever things are lovely, whatsoever things are of good report; if there be any virtue, and if there be any praise, think on these things."
+    }
+   ]
+  },
+  "q-mic-6-8": {
+   "reference": "Micah 6:8",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Micah",
+     "chapter": 6,
+     "verse": 8,
+     "text": "He hath shewed thee, O man, what is good; and what doth the LORD require of thee, but to do justly, and to love mercy, and to walk humbly with thy God?"
+    }
+   ]
+  },
+  "q-mt-7-24": {
+   "reference": "Matthew 7:24",
+   "translationName": "King James Version",
+   "translationNote": "Public Domain",
+   "verses": [
+    {
+     "book": "Matthew",
+     "chapter": 7,
+     "verse": 24,
+     "text": "Therefore whosoever heareth these sayings of mine, and doeth them, I will liken him unto a wise man, which built his house upon a rock:"
+    }
+   ]
+  }
+ }
+}

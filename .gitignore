@@ -1,0 +1,10 @@
+*.tsbuildinfo
+.env*
+.next/
+.playwright-mcp/
+.taste-skill/inspect/
+data/*.db
+data/*.db-*
+data/backups/
+node_modules/
+!.env.example
