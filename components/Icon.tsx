@@ -3,6 +3,8 @@ import type { IconName } from "@/lib/nav";
 /** One outline icon set, 16px, 1.5px stroke (DESIGN §9). Decorative: always aria-hidden. */
 const PATHS: Record<IconName | "menu" | "close" | "play" | "pause" | "prev" | "next" | "bookmark" | "bookmarked" | "external" | "check" | "plus", string> = {
   home: "M3 10.5 12 3l9 7.5V21H3z M9 21v-6h6v6",
+  career: "M12 3l9 5-9 5-9-5z M7 10.5V16c3 2.5 7 2.5 10 0v-5.5 M21 8v6",
+  discovery: "M3 20h18 M6 16V11 M11 16V7 M16 16v-4 M19 4l-2.5 2.5 M15.5 3a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z",
   path: "M4 20c4-1 4-6 8-8s4-7 8-8 M4 20h.01 M20 4h.01",
   academy: "M4 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H4z M20 5h-6 M20 5v13h-6",
   tasks: "M9 6h11 M9 12h11 M9 18h11 M4 6l1 1 2-2 M4 12l1 1 2-2 M4 18l1 1 2-2",

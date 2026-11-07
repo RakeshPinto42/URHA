@@ -10,7 +10,10 @@ const csp = [
   // The Draco decoder runs in workers that three.js starts from a blob.
   "worker-src 'self' blob:",
   "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' data: blob:",
+  // Lesson thumbnails on Career Intelligence.
+  "img-src 'self' data: blob: https://i.ytimg.com",
+  // The lesson player, on YouTube's privacy-enhanced address only.
+  "frame-src https://www.youtube-nocookie.com",
   "font-src 'self'",
   // User-attached passage audio must be https (validated in lib/validate.ts).
   "media-src 'self' https:",

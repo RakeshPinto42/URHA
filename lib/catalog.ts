@@ -14,6 +14,7 @@ type VerifiedVideo = { status: string; id: string; title?: string; channel?: str
 const VIDEOS = videosVerified.videos as Record<string, VerifiedVideo>;
 const DOCS = docsVerified.docs as Record<string, { status: string; http: number | null; finalUrl: string | null }>;
 const WHY = new Map(videosSource.videos.map((v) => [v.key, v.why]));
+const CURATED = new Map((videosSource.videos as { key: string; difficulty?: string; objectives?: string[] }[]).map((v) => [v.key, v]));
 const DOC_META = new Map(docsSource.docs.map((d) => [d.key, d]));
 
 export const VIDEOS_VERIFIED_AT = videosVerified.verifiedAt;
@@ -32,6 +33,11 @@ export type CatalogResource = {
   published: string | null; // verified publish date, videos only
   /** Why to take care with this resource; null when there is nothing to flag. */
   caution: string | null;
+  /** Curated by hand; null means not rated yet, and it is shown that way. */
+  difficulty: string | null;
+  objectives: string[];
+  /** Video only: what the in-app player needs. */
+  videoId: string | null; embeddable: boolean; startSec: number | null; endSec: number | null;
 };
 
 /**
@@ -62,6 +68,7 @@ export function resolveResource(spec: string, phaseOrder = 1): CatalogResource |
       verified: v?.status === "resolves",
       verification: v?.status === "resolves" ? `Link resolves (checked ${DOCS_CHECKED_AT.slice(0, 10)})` : "Link not verified",
       published: null, caution: v?.status === "resolves" ? null : "This link could not be verified.",
+      difficulty: null, objectives: [], videoId: null, embeddable: false, startSec: null, endSec: null,
     };
   }
   const v = VIDEOS[r.key];
@@ -78,6 +85,8 @@ export function resolveResource(spec: string, phaseOrder = 1): CatalogResource |
     verified: true,
     verification: `Title, channel and duration verified on YouTube (${VIDEOS_VERIFIED_AT.slice(0, 10)})`,
     published: v.published ?? null, caution: cautionFor(v.published ?? null, phaseOrder),
+    difficulty: CURATED.get(r.key)?.difficulty ?? null, objectives: CURATED.get(r.key)?.objectives ?? [],
+    videoId: v.id, embeddable: v.embeddable === true, startSec: r.start, endSec: r.end,
   };
 }
 

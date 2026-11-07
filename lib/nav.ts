@@ -1,9 +1,11 @@
 /** Primary navigation (PRD §4). `release: 2` tags a section that is not built yet; it still routes to an honest page. */
-export type NavItem = { href: string; label: string; release: 1 | 2; icon: IconName };
-export type IconName = "home" | "path" | "academy" | "tasks" | "skills" | "projects" | "assess" | "journal" | "meditation" | "insights" | "settings" | "backup" | "credits";
+export type NavItem = { href: string; label: string; release: 1 | 2; icon: IconName; featured?: boolean };
+export type IconName = "career" | "discovery" | "home" | "path" | "academy" | "tasks" | "skills" | "projects" | "assess" | "journal" | "meditation" | "insights" | "settings" | "backup" | "credits";
 
 export const NAV: NavItem[] = [
   { href: "/", label: "Home", release: 1, icon: "home" },
+  { href: "/career", label: "Career Intelligence", release: 1, icon: "career", featured: true },
+  { href: "/discovery", label: "Rare Stock Discovery", release: 1, icon: "discovery", featured: true },
   { href: "/path", label: "My Path", release: 1, icon: "path" },
   { href: "/academy", label: "Academy", release: 1, icon: "academy" },
   { href: "/tasks", label: "My Tasks", release: 1, icon: "tasks" },

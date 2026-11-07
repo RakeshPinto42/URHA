@@ -134,6 +134,19 @@ const MIGRATIONS: Migration[] = [
     PRIMARY KEY (user_id, subtopic_id));
   `,
   (db) => migrateToSixPhases(db),
+  // v5 — Rare Stock Discovery. Additive: nothing existing changes.
+  `
+  CREATE TABLE stock_companies (symbol TEXT PRIMARY KEY, isin TEXT, name TEXT, sector TEXT, turnover REAL, close REAL,
+    technicals TEXT, closes TEXT, status TEXT, reason TEXT, scanned_at TEXT);
+  CREATE INDEX stock_companies_isin ON stock_companies(isin);
+  CREATE TABLE stock_scans (id INTEGER PRIMARY KEY, trading_date TEXT NOT NULL, status TEXT NOT NULL, total INTEGER NOT NULL, done INTEGER NOT NULL DEFAULT 0,
+    failed INTEGER NOT NULL DEFAULT 0, error TEXT, started_at TEXT NOT NULL DEFAULT (datetime('now')), finished_at TEXT);
+  CREATE TABLE stock_fundamentals (symbol TEXT NOT NULL, metric TEXT NOT NULL, source TEXT NOT NULL, value REAL NOT NULL, period_end TEXT,
+    period_type TEXT NOT NULL DEFAULT 'unknown', basis TEXT NOT NULL DEFAULT 'unknown', retrieved_at TEXT NOT NULL DEFAULT (datetime('now')),
+    PRIMARY KEY (symbol, metric, source));
+  CREATE TABLE stock_segments (isin TEXT PRIMARY KEY, segment TEXT NOT NULL, avg_mcap_cr REAL, period_end TEXT NOT NULL);
+  CREATE TABLE stock_watchlist (symbol TEXT PRIMARY KEY, thesis TEXT NOT NULL DEFAULT '', added_at TEXT NOT NULL DEFAULT (datetime('now')));
+  `,
 ];
 
 /** The v-numbered user_version counts every entry above. */

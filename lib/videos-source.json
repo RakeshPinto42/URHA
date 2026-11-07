@@ -4,477 +4,952 @@
   {
    "key": "py-lists",
    "id": "W8KRzm-HUcc",
-   "why": "Lists, tuples and sets with their trade-offs, quickly. Use only where gaps exist."
+   "why": "Lists, tuples and sets with their trade-offs, quickly. Use only where gaps exist.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Choose between lists, tuples and sets"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-dicts",
    "id": "daefaLgNkw0",
-   "why": "Dictionaries in ten minutes: the structure behind every JSON payload you will handle."
+   "why": "Dictionaries in ten minutes: the structure behind every JSON payload you will handle.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Read and update key-value data"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-funcs",
    "id": "9Os0o3wzS_I",
-   "why": "Functions, arguments and return values, the unit every module is built from."
+   "why": "Functions, arguments and return values, the unit every module is built from.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Write functions with arguments and return values"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-modules",
    "id": "CqvZ3vGoGs0",
-   "why": "Imports, sys.path and the standard library: how Python finds your code."
+   "why": "Imports, sys.path and the standard library: how Python finds your code.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Import modules and use the standard library"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-oop1",
    "id": "ZDa-Z5JzLYM",
-   "why": "First of a six-part OOP series that is still the clearest available."
+   "why": "First of a six-part OOP series that is still the clearest available.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Define classes and create instances"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-oop2",
    "id": "BJ-VvGyQxho",
-   "why": "Class versus instance state: a frequent source of shared-state bugs."
+   "why": "Class versus instance state: a frequent source of shared-state bugs.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Separate class state from instance state"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-oop3",
    "id": "rq8cL2XMM5M",
-   "why": "classmethods as alternative constructors, e.g. building a row from a CSV line."
+   "why": "classmethods as alternative constructors, e.g. building a row from a CSV line.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Use classmethods as alternative constructors"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-oop4",
    "id": "RSl87lqOXDE",
-   "why": "Inheritance done carefully; pair it with the composition exercise."
+   "why": "Inheritance done carefully; pair it with the composition exercise.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Extend a class through inheritance"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-oop5",
    "id": "3ohzBxoFHAY",
-   "why": "Dunder methods make domain objects (money, ledger lines) behave naturally."
+   "why": "Dunder methods make domain objects (money, ledger lines) behave naturally.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Give objects natural behaviour with special methods"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-oop6",
    "id": "jCzT9XFZ5bw",
-   "why": "Properties for validated, derived attributes."
+   "why": "Properties for validated, derived attributes.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Validate and derive attributes with properties"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-except",
    "id": "NIWwJbo-9_8",
-   "why": "try/except/else/finally, and raising your own exceptions."
+   "why": "try/except/else/finally, and raising your own exceptions.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Handle and raise exceptions"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-types",
    "id": "RwH2UzC2rIo",
-   "why": "Current (2025) end-to-end guide: annotations to generics, with mypy."
+   "why": "Current (2025) end-to-end guide: annotations to generics, with mypy.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Annotate code from basic hints to generics"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-types-why",
    "id": "0oBLMwHdZ2Y",
-   "why": "Why types matter in code review: the engineering argument, briefly."
+   "why": "Why types matter in code review: the engineering argument, briefly.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Explain what type hints buy you in a team"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "py-deco",
    "id": "FsAPt_9Bf3U",
-   "why": "Decorators from closures upwards; needed to read FastAPI and pytest code."
+   "why": "Decorators from closures upwards; needed to read FastAPI and pytest code.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Write decorators from closures upwards"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-gen",
    "id": "bD05uGo_sVI",
-   "why": "Generators for streaming large files row by row."
+   "why": "Generators for streaming large files row by row.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Stream large files with generators"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-json",
    "id": "9N6a-VLBa2I",
-   "why": "Loading and writing JSON, the format of every API and LLM response."
+   "why": "Loading and writing JSON, the format of every API and LLM response.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Load and write JSON"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-files",
    "id": "Uh2ebFW8OYM",
-   "why": "Reading and writing files safely with context managers."
+   "why": "Reading and writing files safely with context managers.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Read and write files safely"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-ctx",
    "id": "-aKFBoZpiqA",
-   "why": "Context managers: the pattern behind files, transactions and locks."
+   "why": "Context managers: the pattern behind files, transactions and locks.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Manage resources with context managers"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-venv",
    "id": "Kg1Yvry_Ydk",
-   "why": "How virtual environments isolate dependencies (Mac/Linux shown; concepts identical on Windows)."
+   "why": "How virtual environments isolate dependencies (Mac/Linux shown; concepts identical on Windows).",
+   "difficulty": "beginner",
+   "objectives": [
+    "Isolate dependencies in a virtual environment"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-uv",
    "id": "AMdG7IjgSPM",
-   "why": "uv (2025): one tool for environments, dependencies and lock files. The current practice."
+   "why": "uv (2025): one tool for environments, dependencies and lock files. The current practice.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Manage environments and lock files with uv"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-async",
    "id": "oAkLSJNr5zY",
-   "why": "Animated, current (2025) explanation of the event loop, tasks and when not to use asyncio."
+   "why": "Animated, current (2025) explanation of the event loop, tasks and when not to use asyncio.",
+   "difficulty": "advanced",
+   "objectives": [
+    "Explain the event loop and when to use asyncio"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-logbasic",
    "id": "g8nQ90Hk328",
-   "why": "Eight-minute introduction to the logging module."
+   "why": "Eight-minute introduction to the logging module.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Add logging to a script"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-logadv",
    "id": "jxmzY9soFXg",
-   "why": "Loggers, handlers and formatters: production logging structure."
+   "why": "Loggers, handlers and formatters: production logging structure.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Structure loggers, handlers and formatters"
+   ],
+   "relevance": "title"
   },
   {
    "key": "pd-1",
    "id": "ZyhVh-qRZPA",
-   "why": "Selective pandas: loading data and DataFrame basics, applied to reconciliation extracts."
+   "why": "Selective pandas: loading data and DataFrame basics, applied to reconciliation extracts.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Load data into a DataFrame"
+   ],
+   "relevance": "title"
   },
   {
    "key": "ms-git",
    "id": "2sjqTHE0zok",
-   "why": "Git's data model (snapshots, commits, refs). Understanding the model ends Git confusion."
+   "why": "Git's data model (snapshots, commits, refs). Understanding the model ends Git confusion.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Explain Git's model of snapshots, commits and refs"
+   ],
+   "relevance": "title"
   },
   {
    "key": "ms-shell",
    "id": "Z56Jmr9Z34Q",
-   "why": "The shell from first principles: the base for Docker, CI and servers."
+   "why": "The shell from first principles: the base for Docker, CI and servers.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Work confidently in the shell"
+   ],
+   "relevance": "title"
   },
   {
    "key": "vsc-debug",
    "id": "w8QHoVam1-I",
-   "why": "Six minutes: breakpoints, stepping and variables in VS Code."
+   "why": "Six minutes: breakpoints, stepping and variables in VS Code.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Debug with breakpoints and stepping"
+   ],
+   "relevance": "title"
   },
   {
    "key": "fcc-pytest",
    "id": "cHYq1MRoyI0",
-   "why": "The freeCodeCamp pytest course from the original plan; chaptered for fixtures, parametrize and mocking."
+   "why": "The freeCodeCamp pytest course from the original plan; chaptered for fixtures, parametrize and mocking.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Write tests with fixtures, parametrize and mocks"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "py-unittest",
    "id": "6tNS--WetLI",
-   "why": "Includes unittest.mock patching of an external request."
+   "why": "Includes unittest.mock patching of an external request.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Unit test code and patch external calls"
+   ],
+   "relevance": "title"
   },
   {
    "key": "py-mockpatch",
    "id": "WFRljVPHrkE",
-   "why": "Short and precise on the 'where to patch' rule that trips most people."
+   "why": "Short and precise on the 'where to patch' rule that trips most people.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Patch the right location with mock.patch"
+   ],
+   "relevance": "title"
   },
   {
    "key": "sql-baraa",
    "id": "SSKVgrwhzus",
-   "why": "Data with Baraa's SQL course: use only the chaptered sections mapped to each subtopic."
+   "why": "Data with Baraa's SQL course: use only the chaptered sections mapped to each subtopic.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Write SQL from basics through advanced queries"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "db-design",
    "id": "_jf7KZqne-8",
-   "why": "Data modelling and normalisation, chaptered; take only the relational sections."
+   "why": "Data modelling and normalisation, chaptered; take only the relational sections.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Model and normalise relational data"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "pg-acid",
    "id": "pomxJOFVcQs",
-   "why": "Hussein Nasser on ACID with examples: what a transaction really guarantees."
+   "why": "Hussein Nasser on ACID with examples: what a transaction really guarantees.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Explain what ACID transactions guarantee"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "pg-index",
    "id": "-qNSXK7s7_w",
-   "why": "How PostgreSQL uses (and ignores) indexes, with EXPLAIN."
+   "why": "How PostgreSQL uses (and ignores) indexes, with EXPLAIN.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Read EXPLAIN and decide when an index helps"
+   ],
+   "relevance": "title"
   },
   {
    "key": "sqla-crash",
    "id": "XWtj4zLl_tg",
-   "why": "SQLAlchemy 2.0-style ORM, chaptered."
+   "why": "SQLAlchemy 2.0-style ORM, chaptered.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Map tables and query with the SQLAlchemy 2.0 ORM"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "sqla-bayer",
    "id": "Uym2DHnUEno",
-   "why": "SQLAlchemy 2.0 tutorial walk-through by its author, Mike Bayer."
+   "why": "SQLAlchemy 2.0 tutorial walk-through by its author, Mike Bayer.",
+   "difficulty": "advanced",
+   "objectives": [
+    "Use SQLAlchemy 2.0's core and ORM patterns"
+   ],
+   "relevance": "title"
   },
   {
    "key": "fcc-api",
    "id": "0sOvCWFmrtA",
-   "why": "freeCodeCamp's 19-hour FastAPI course, chaptered. Every Phase 2 backend subtopic maps to a section."
+   "why": "freeCodeCamp's 19-hour FastAPI course, chaptered. Every Phase 2 backend subtopic maps to a section.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Build a FastAPI backend with a database and auth"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "oauth-oidc",
    "id": "996OiexHze0",
-   "why": "OAuth 2.0 and OIDC in plain English (OktaDev); still the reference explanation."
+   "why": "OAuth 2.0 and OIDC in plain English (OktaDev); still the reference explanation.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Explain OAuth 2.0 and OpenID Connect flows"
+   ],
+   "relevance": "title"
   },
   {
    "key": "idem",
    "id": "jfHBrweuKRA",
-   "why": "Three-minute idempotency keys explainer."
+   "why": "Three-minute idempotency keys explainer.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Make retries safe with idempotency keys"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "backoff",
    "id": "NByH-cau97A",
-   "why": "Exponential backoff with jitter, briefly."
+   "why": "Exponential backoff with jitter, briefly.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Retry with exponential backoff and jitter"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "llm-intro",
    "id": "zjkBMFhNj_g",
-   "why": "Karpathy's one-hour mental model of LLMs, including tool use and security."
+   "why": "Karpathy's one-hour mental model of LLMs, including tool use and security.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Build a mental model of large language models"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "llm-deep",
    "id": "7xTGNNLPyMI",
-   "why": "Karpathy's deep dive: tokens, pre-training, post-training, hallucination. Use the mapped chapters."
+   "why": "Karpathy's deep dive: tokens, pre-training, post-training, hallucination. Use the mapped chapters.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Explain how LLMs are trained and why they fail"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "llm-tokenizer",
    "id": "zduSFxRajkE",
-   "why": "Optional depth: why tokenisation explains odd model behaviour and cost."
+   "why": "Optional depth: why tokenisation explains odd model behaviour and cost.",
+   "difficulty": "advanced",
+   "objectives": [
+    "Explain how tokenisation shapes cost and behaviour"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "transformers",
    "id": "wjZofJX0v4M",
-   "why": "3Blue1Brown's visual explanation of what happens inside a transformer."
+   "why": "3Blue1Brown's visual explanation of what happens inside a transformer.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Describe what happens inside a transformer"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "structured",
    "id": "4rFVLMBwjGY",
-   "why": "Microsoft Reactor: function calling and structured outputs in Python."
+   "why": "Microsoft Reactor: function calling and structured outputs in Python.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Use function calling and structured outputs"
+   ],
+   "relevance": "title"
   },
   {
    "key": "pydantic-llm",
    "id": "yj-wSRJwrrc",
-   "why": "Jason Liu on Pydantic as the contract for LLM outputs."
+   "why": "Jason Liu on Pydantic as the contract for LLM outputs.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Validate LLM output with Pydantic"
+   ],
+   "relevance": "title"
   },
   {
    "key": "prompt101",
    "id": "ysPbXH0LpIE",
-   "why": "Anthropic's own Prompting 101 workshop: building a prompt from scratch."
+   "why": "Anthropic's own Prompting 101 workshop: building a prompt from scratch.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Build a prompt from scratch"
+   ],
+   "relevance": "title"
   },
   {
    "key": "ctx-eng",
    "id": "4GiqzUHD5AA",
-   "why": "Context engineering: selecting, compressing and isolating context."
+   "why": "Context engineering: selecting, compressing and isolating context.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Select, compress and isolate agent context"
+   ],
+   "relevance": "title"
   },
   {
    "key": "injection",
    "id": "FgxwCaL6UTA",
-   "why": "Simon Willison, who named prompt injection, explaining why it is hard."
+   "why": "Simon Willison, who named prompt injection, explaining why it is hard.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Explain why prompt injection is hard to stop"
+   ],
+   "relevance": "title"
   },
   {
    "key": "docs-ready",
    "id": "9lBTS5dM27c",
-   "why": "Parsing PDFs and documents into clean input, chaptered."
+   "why": "Parsing PDFs and documents into clean input, chaptered.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Parse documents into clean input for AI"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "embeddings",
    "id": "rq5pF1iPcZI",
-   "why": "Embeddings and cosine similarity in under ten minutes."
+   "why": "Embeddings and cosine similarity in under ten minutes.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Explain embeddings and cosine similarity"
+   ],
+   "relevance": "title"
   },
   {
    "key": "chunk5",
    "id": "8OJC21T2SL4",
-   "why": "Greg Kamradt's five levels of text splitting."
+   "why": "Greg Kamradt's five levels of text splitting.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Compare five levels of text splitting"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "chunk-sem",
    "id": "TcRRfcbsApw",
-   "why": "Semantic chunking compared with fixed-size chunks."
+   "why": "Semantic chunking compared with fixed-size chunks.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Compare semantic and fixed-size chunking"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "pgvector",
    "id": "j1QcPSLj7u0",
-   "why": "pgvector in practice: vectors next to your relational data."
+   "why": "pgvector in practice: vectors next to your relational data.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Store and search vectors in PostgreSQL"
+   ],
+   "relevance": "title"
   },
   {
    "key": "hybrid",
    "id": "D8LmsEOJvPI",
-   "why": "BM25 + vector + Reciprocal Rank Fusion, explained end to end."
+   "why": "BM25 + vector + Reciprocal Rank Fusion, explained end to end.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Combine BM25 and vectors with rank fusion"
+   ],
+   "relevance": "title"
   },
   {
    "key": "rerank",
    "id": "Uh9bYiVrW_s",
-   "why": "Two-stage retrieval with a reranker."
+   "why": "Two-stage retrieval with a reranker.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Add a reranker for two-stage retrieval"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "rag-scratch",
    "id": "sVcwVQRHIc8",
-   "why": "RAG from scratch (LangChain engineer): indexing, query transformation, routing."
+   "why": "RAG from scratch (LangChain engineer): indexing, query transformation, routing.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Build RAG from indexing through routing"
+   ],
+   "relevance": "title"
   },
   {
    "key": "ragas",
    "id": "-_52DIIOsCE",
-   "why": "Measuring retrieval and answer quality with RAGAS metrics."
+   "why": "Measuring retrieval and answer quality with RAGAS metrics.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Measure retrieval and answers with RAGAS"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "agents-anth",
    "id": "uhJJgc-0iTQ",
-   "why": "Anthropic on building effective agents: workflows versus agents, tools, failure."
+   "why": "Anthropic on building effective agents: workflows versus agents, tools, failure.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Decide between workflows and agents"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "agents-ng",
    "id": "KrRD7r7y7NY",
-   "why": "Andrew Ng's four agentic patterns: reflection, tool use, planning, multi-agent."
+   "why": "Andrew Ng's four agentic patterns: reflection, tool use, planning, multi-agent.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Describe four agentic design patterns"
+   ],
+   "relevance": "title"
   },
   {
    "key": "agent-memory",
    "id": "aYfZN8t6AQs",
-   "why": "Short- and long-term agent memory architecture."
+   "why": "Short- and long-term agent memory architecture.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Design short- and long-term agent memory"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "lg-reliable",
    "id": "kTnfJszFxCg",
-   "why": "Harrison Chase (LangGraph) on reliable enterprise agents."
+   "why": "Harrison Chase (LangGraph) on reliable enterprise agents.",
+   "difficulty": "advanced",
+   "objectives": [
+    "Name what makes enterprise agents reliable"
+   ],
+   "relevance": "title"
   },
   {
    "key": "hitl",
    "id": "7GOxUgVTz3s",
-   "why": "Human-in-the-loop approval for agents, practically."
+   "why": "Human-in-the-loop approval for agents, practically.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Add human approval to an agent"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "mcp-anth",
    "id": "aZLr962R6Ag",
-   "why": "Anthropic: building with MCP and the Claude API, chaptered."
+   "why": "Anthropic: building with MCP and the Claude API, chaptered.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Connect tools through MCP and the Claude API"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "mcp-server",
    "id": "-8k9lGpGQ6g",
-   "why": "Writing a custom MCP server in Python."
+   "why": "Writing a custom MCP server in Python.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Write a custom MCP server in Python"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "routing",
    "id": "2ld7cR9y0Po",
-   "why": "Routing work across models for cost and quality."
+   "why": "Routing work across models for cost and quality.",
+   "difficulty": "advanced",
+   "objectives": [
+    "Route work across models for cost and quality"
+   ],
+   "relevance": "title"
   },
   {
    "key": "evals-mistakes",
    "id": "GL0XhAj5LPE",
-   "why": "Hamel Husain on the common mistakes in LLM evals."
+   "why": "Hamel Husain on the common mistakes in LLM evals.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Avoid common mistakes in LLM evals"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "evals-auto",
    "id": "tqUDjc1HzO4",
-   "why": "Turning error analysis into automated evaluators (2026)."
+   "why": "Turning error analysis into automated evaluators (2026).",
+   "difficulty": "advanced",
+   "objectives": [
+    "Turn error analysis into automated evaluators"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "judge",
    "id": "kP_aaFnXLmY",
-   "why": "Building an LLM judge and aligning it with human labels."
+   "why": "Building an LLM judge and aligning it with human labels.",
+   "difficulty": "advanced",
+   "objectives": [
+    "Align an LLM judge with human labels"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "agent-evals",
    "id": "Ubwb6NzegyA",
-   "why": "Google DeepMind on evaluating multi-step agents."
+   "why": "Google DeepMind on evaluating multi-step agents.",
+   "difficulty": "advanced",
+   "objectives": [
+    "Evaluate multi-step agents at scale"
+   ],
+   "relevance": "title"
   },
   {
    "key": "otel",
    "id": "LQOeaxfiAt8",
-   "why": "How distributed tracing works (OpenTelemetry), the model Langfuse builds on."
+   "why": "How distributed tracing works (OpenTelemetry), the model Langfuse builds on.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Explain distributed tracing with OpenTelemetry"
+   ],
+   "relevance": "title"
   },
   {
    "key": "llm-obs",
    "id": "Q9zd548hqiQ",
-   "why": "What to monitor in LLM systems: quality, drift, cost and latency."
+   "why": "What to monitor in LLM systems: quality, drift, cost and latency.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Choose what to monitor in LLM systems"
+   ],
+   "relevance": "title"
   },
   {
    "key": "langfuse-10",
    "id": "2E8iTvGo9Hs",
-   "why": "Official ten-minute Langfuse tour: tracing, prompts, evals, datasets."
+   "why": "Official ten-minute Langfuse tour: tracing, prompts, evals, datasets.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Find your way around Langfuse"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "langfuse-trace",
    "id": "pTneXS_m1rk",
-   "why": "Official deep dive on Langfuse tracing."
+   "why": "Official deep dive on Langfuse tracing.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Trace an LLM application in Langfuse"
+   ],
+   "relevance": "title"
   },
   {
    "key": "guardrails",
    "id": "rMUycP_cp9g",
-   "why": "Guardrails against misuse, leakage and prompt attacks, in code."
+   "why": "Guardrails against misuse, leakage and prompt attacks, in code.",
+   "difficulty": "advanced",
+   "objectives": [
+    "Build guardrails against misuse and leakage"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "owasp",
    "id": "gUNXZMcd2jU",
-   "why": "IBM's walk-through of the OWASP Top 10 for LLMs."
+   "why": "IBM's walk-through of the OWASP Top 10 for LLMs.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Name the OWASP Top 10 risks for LLMs"
+   ],
+   "relevance": "title"
   },
   {
    "key": "data-gov",
    "id": "EI8R5UuZt4U",
-   "why": "Data governance concepts and roles."
+   "why": "Data governance concepts and roles.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Explain data governance concepts and roles"
+   ],
+   "relevance": "title"
   },
   {
    "key": "resp-ai",
    "id": "MluoD8Z1ARQ",
-   "why": "Responsible AI governance in business terms."
+   "why": "Responsible AI governance in business terms.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Make the business case for AI governance"
+   ],
+   "relevance": "title"
   },
   {
    "key": "docker-nana",
    "id": "3c-iBn73dDE",
-   "why": "TechWorld with Nana's Docker course, chaptered (Compose, Dockerfile, volumes)."
+   "why": "TechWorld with Nana's Docker course, chaptered (Compose, Dockerfile, volumes).",
+   "difficulty": "beginner",
+   "objectives": [
+    "Build images and run containers with Compose"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "dockerfile",
    "id": "tc713anE3UY",
-   "why": "Small, cache-friendly Python images (2025)."
+   "why": "Small, cache-friendly Python images (2025).",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Write small, cache-friendly Python images"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "gha-nana",
    "id": "R8_veQiYBjI",
-   "why": "GitHub Actions concepts and a CI/CD pipeline with Docker."
+   "why": "GitHub Actions concepts and a CI/CD pipeline with Docker.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Build a CI/CD pipeline in GitHub Actions"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "ci-pytest",
    "id": "DhUpxWjOhME",
-   "why": "Running pytest in GitHub Actions before anything ships."
+   "why": "Running pytest in GitHub Actions before anything ships.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Run pytest automatically in GitHub Actions"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "azure",
    "id": "usvlTo0TDoA",
-   "why": "John Savill (2026) on how to learn Azure efficiently: access, portal, Cloud Shell, Microsoft Learn and certifications."
+   "why": "John Savill (2026) on how to learn Azure efficiently: access, portal, Cloud Shell, Microsoft Learn and certifications.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Plan how to learn Azure"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "aca",
    "id": "LogxM4r2a58",
-   "why": "Azure Container Apps hands-on (CLI, portal, image deployment)."
+   "why": "Azure Container Apps hands-on (CLI, portal, image deployment).",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Deploy an image to Azure Container Apps"
+   ],
+   "relevance": "title"
   },
   {
    "key": "entra-overview",
    "id": "bSIF_GjaCmo",
-   "why": "John Savill's Entra overview."
+   "why": "John Savill's Entra overview.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Describe what Microsoft Entra provides"
+   ],
+   "relevance": "title"
   },
   {
    "key": "entra-deep",
    "id": "cE3IiHGuHvs",
-   "why": "Entra ID components in depth, chaptered."
+   "why": "Entra ID components in depth, chaptered.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Explain Entra ID's components in depth"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "cost",
    "id": "lHxl5SchjPA",
-   "why": "Where LLM cost comes from and how to cut it."
+   "why": "Where LLM cost comes from and how to cut it.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Find and reduce LLM costs"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "sysdesign",
    "id": "mwN75EiGfCE",
-   "why": "End-to-end agentic system design in 27 minutes."
+   "why": "End-to-end agentic system design in 27 minutes.",
+   "difficulty": "advanced",
+   "objectives": [
+    "Design an agentic system end to end"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "eda",
    "id": "QNfIUIZQ9Vo",
-   "why": "Event-driven architecture: events, queues, pub/sub."
+   "why": "Event-driven architecture: events, queues, pub/sub.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Explain events, queues and pub/sub"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "multiagent",
    "id": "ow1we5PzK-o",
-   "why": "How a production multi-agent system is structured."
+   "why": "How a production multi-agent system is structured.",
+   "difficulty": "advanced",
+   "objectives": [
+    "Structure a production multi-agent system"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "agent-sec",
    "id": "jZXvqEqJT7o",
-   "why": "Securing agents: identity, permissions, sandboxing, injection defence."
+   "why": "Securing agents: identity, permissions, sandboxing, injection defence.",
+   "difficulty": "advanced",
+   "objectives": [
+    "Secure agents with identity, permissions and sandboxing"
+   ],
+   "relevance": "chapters"
   },
   {
    "key": "ai-gov",
    "id": "NrkJLbn3dDE",
-   "why": "SANS: the must-haves of an AI governance framework."
+   "why": "SANS: the must-haves of an AI governance framework.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Name the must-haves of an AI governance framework"
+   ],
+   "relevance": "title"
   },
   {
    "key": "c4",
    "id": "x2-rSnhpw0g",
-   "why": "Simon Brown, creator of the C4 model, presenting it."
+   "why": "Simon Brown, creator of the C4 model, presenting it.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Draw software architecture with the C4 model"
+   ],
+   "relevance": "title"
   },
   {
    "key": "adr",
    "id": "LMBqGPLvonU",
-   "why": "Mark Richards: ADRs in ten minutes."
+   "why": "Mark Richards: ADRs in ten minutes.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Record decisions as ADRs"
+   ],
+   "relevance": "title"
   },
   {
    "key": "adr-keeling",
    "id": "-JqraBhrrjI",
-   "why": "Michael Keeling on ADR practice in teams."
+   "why": "Michael Keeling on ADR practice in teams.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Run ADR practice in a team"
+   ],
+   "relevance": "title"
   },
   {
    "key": "bw-dwh",

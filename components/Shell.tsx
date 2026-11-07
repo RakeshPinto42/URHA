@@ -28,7 +28,7 @@ function NavLinks({ items, pathname, onNavigate, pill }: { items: NavItem[]; pat
               onClick={onNavigate}
               aria-current={active ? "page" : undefined}
               className={`relative flex h-[34px] items-center gap-2.5 rounded-lg px-3 text-[14px] transition-colors ${
-                active ? "font-medium text-ink" : "text-muted hover:bg-surface hover:text-ink"
+                active ? "font-medium text-ink" : item.featured ? "font-medium text-ink hover:bg-surface" : "text-muted hover:bg-surface hover:text-ink"
               }`}
             >
               {active && (
