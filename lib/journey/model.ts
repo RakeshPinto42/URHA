@@ -23,7 +23,7 @@ export type JourneyData = {
 /** The landmark that stands for each phase (docs/JOURNEY.md §4). */
 export const LANDMARK: Record<string, string> = {
   p1: "The Well", p2: "The Bridge", p3: "The Library", p4: "The Crossroads",
-  p5: "The Watchtower", p6: "The Aqueduct", p7: "The Summit",
+  p5: "The Watchtower", p6: "The Summit",
 };
 
 export function journeyFrom(path: PathModel): JourneyData {

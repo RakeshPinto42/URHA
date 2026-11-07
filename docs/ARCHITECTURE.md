@@ -34,7 +34,7 @@ Every user-owned table carries `user_id`. Release 1 has one local user (id 1). A
 
 **Curriculum**
 - `phases` → `topics` (with `topic_prereqs` and `topic_skills`) → `subtopics` (each scheduled into a roadmap month)
-- `skills`, `milestones` (LedgerSync v2), `resources` (each resource records its link-check state)
+- `skills`, `modules`, `milestones` (delivery steps inside the portfolio projects), `retired_progress` (progress on subtopics dropped from the curriculum), `resources` (each resource records its link-check state)
 
 **Progress**
 - `subtopic_progress` records `exposed_at`, `practised_at`, `demonstrated_at` and `evidence`.

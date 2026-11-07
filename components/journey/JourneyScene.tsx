@@ -18,7 +18,7 @@ import { useEffect, useMemo, useRef } from "react";
 import { Canvas, useFrame, useThree, type ThreeEvent } from "@react-three/fiber";
 import * as THREE from "three";
 import {
-  heightAt, pathPoint, stationPosition, stationT, treeSites, LAKE, fbm,
+  heightAt, pathPoint, stationPosition, stationT, STATION_AT, treeSites, LAKE, fbm,
   overviewShot, walkerShot, stationShot, type Shot, type Vec3,
 } from "@/lib/journey/world";
 import type { JourneyData } from "@/lib/journey/model";
@@ -208,6 +208,9 @@ function LabelProjector({ count, labels }: { count: number; labels: React.RefObj
   useFrame(() => {
     const els = labels.current;
     if (!els) return;
+    // This runs before the frame renders. When still, that frame may be the only one, so the
+    // camera's matrices must be brought up to date here or labels land where it used to be.
+    camera.updateMatrixWorld();
     anchors.forEach((a, i) => {
       const el = els[i];
       if (!el) return;
@@ -452,7 +455,7 @@ function ribbon(width: number, lift: number): THREE.BufferGeometry {
     ts.push(t, t);
     // Each stretch of path carries the hue of the station it leads to, blending at the station.
     let k = 0;
-    while (k < 6 && t > stationT(k)) k++;
+    while (k < STATION_AT.length - 1 && t > stationT(k)) k++;
     const from = k === 0 ? 0 : stationT(k - 1);
     const u = Math.min(Math.max((t - from) / Math.max(stationT(k) - from, 1e-4), 0), 1);
     c.set(paneAt(k).bright).lerp(next.set(paneAt(k + 1).bright), u > 0.8 ? (u - 0.8) * 2.5 : 0);
@@ -543,18 +546,6 @@ function Landmark({ index }: { index: number }) {
           <mesh position={[0, 9.3, 0]}><boxGeometry args={[2.8, 0.6, 2.8]} />{dark}</mesh>
         </group>
       );
-    case 5: // The Aqueduct
-      return (
-        <group rotation={[0, -0.4, 0]}>
-          {[-4.5, -1.5, 1.5, 4.5].map((x) => (
-            <mesh key={x} position={[x, 2.4, 0]}><boxGeometry args={[0.8, 4.8, 1.2]} />{stone}</mesh>
-          ))}
-          {[-3, 0, 3].map((x) => (
-            <mesh key={x} position={[x, 3.6, 0]}><torusGeometry args={[1.1, 0.35, 5, 10, Math.PI]} />{stone}</mesh>
-          ))}
-          <mesh position={[0, 5.3, 0]}><boxGeometry args={[10.4, 0.7, 1.4]} />{dark}</mesh>
-        </group>
-      );
     default: // The Summit cairn
       return (
         <group>
@@ -570,7 +561,7 @@ function Landmark({ index }: { index: number }) {
 /** Landmarks are drawn at a human-ish unit and scaled up so they read at a distance. */
 const LANDMARK_SCALE = 1.8;
 /** Beacon height above each landmark's base. */
-const BEACON_Y = [4.2, 4.4, 8.6, 5.8, 10.4, 6.4, 8.6].map((y) => y * LANDMARK_SCALE);
+const BEACON_Y = [4.2, 4.4, 8.6, 5.8, 10.4, 8.6].map((y) => y * LANDMARK_SCALE);
 
 let glowTex: THREE.Texture | null = null;
 function glowTexture(): THREE.Texture {
@@ -777,7 +768,7 @@ function Birds() {
   return <primitive object={mesh} />;
 }
 
-/** Fireflies in all seven colours. */
+/** Fireflies in every colour of the glass. */
 function Motes({ reduced, count }: { reduced: boolean; count: number }) {
   const { geom, mat } = useMemo(() => {
     const N = count;

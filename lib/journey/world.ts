@@ -38,8 +38,8 @@ export const PATH_POINTS: [number, number][] = [
   [9, -60], [-4, -70], [-14, -82], [-8, -96], [6, -106], [14, -118], [6, -132], [0, -146],
 ];
 
-/** Index into PATH_POINTS for each of the seven stations (phase 1 … 7). */
-export const STATION_AT = [2, 5, 8, 10, 12, 14, 16] as const;
+/** Index into PATH_POINTS for each of the six stations (phase 1 … 6). */
+export const STATION_AT = [2, 5, 8, 10, 13, 16] as const;
 
 /** Rise of the land along the path: the valley floor near, the summit far. */
 function climb(z: number): number {
@@ -183,7 +183,7 @@ export function overviewShot(aspect = 16 / 9): Shot {
 export function walkerShot(t: number, nextStation: number | null, aspect = 16 / 9): Shot {
   const back = Math.max(0, t - 0.06);
   const p = pathPoint(back, 0);
-  const at = nextStation === null ? stationPosition(6) : stationPosition(nextStation);
+  const at = stationPosition(nextStation ?? STATION_AT.length - 1);
   // Low behind the flame and aimed above the next station: the land fills the lower half,
   // the ridges and sky the upper half, and the sky is where Home sets its text.
   const lift = aspect < 1 ? 15 : 12;

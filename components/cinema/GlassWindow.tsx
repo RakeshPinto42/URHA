@@ -1,6 +1,6 @@
 "use client";
 /**
- * The window: seven lancets of stained glass, one per phase, each filled to the share
+ * The window: a lancet of stained glass for each phase, one per phase, each filled to the share
  * of its subtopics you have practised. The colour is the data. An unfilled pane stays
  * dark glass, so nothing here claims progress that has not been made. When the window
  * scrolls into view the panes rise and fill, once.
@@ -30,7 +30,7 @@ export function GlassWindow({ stations }: { stations: Station[] }) {
   }, { scope: root, dependencies: [still], revertOnUpdate: true });
 
   return (
-    <ol ref={root} aria-label="Progress through the seven phases" className="glass-window grid grid-cols-7 gap-1.5 sm:gap-3">
+    <ol ref={root} aria-label="Progress through the phases" className="glass-window grid gap-1.5 sm:gap-3" style={{ gridTemplateColumns: `repeat(${stations.length}, minmax(0, 1fr))` }}>
       {stations.map((s, i) => {
         const pane = paneAt(i);
         const ratio = s.total > 0 ? s.practised / s.total : 0;

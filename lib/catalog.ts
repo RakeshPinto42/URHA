@@ -81,19 +81,19 @@ export function resolveResource(spec: string, phaseOrder = 1): CatalogResource |
   };
 }
 
-export type SubtopicPlan = { primary: CatalogResource | null; supplement: CatalogResource | null; exercise: string; exerciseMinutes: number; outcome: string };
+export type SubtopicPlan = { pending: string | null; primary: CatalogResource | null; supplement: CatalogResource | null; exercise: string; exerciseMinutes: number; outcome: string };
 
 const PHASE_OF = new Map(PHASES.flatMap((p) => p.topics.map((t) => [t.id, p.order] as const)));
 
 /** Keyed by subtopic id "<topic>:<slug>". */
 export const SUBTOPIC_PLANS: Map<string, SubtopicPlan> = new Map(
   Object.entries(LEARNING_MAP).flatMap(([topic, entries]) =>
-    entries.map(([title, primary, supplement, exercise, minutes], i) => {
+    entries.map(([title, primary, supplement, exercise, minutes, pending], i) => {
       const phase = PHASE_OF.get(topic) ?? 1;
       return [
         `${topic}:${slug(title)}`,
         {
-          primary: resolveResource(primary, phase), supplement: supplement ? resolveResource(supplement, phase) : null,
+          pending: pending ?? null, primary: primary ? resolveResource(primary, phase) : null, supplement: supplement ? resolveResource(supplement, phase) : null,
           exercise, exerciseMinutes: minutes, outcome: LEARNING_OUTCOMES[topic]?.[i] ?? "",
         },
       ] as const;

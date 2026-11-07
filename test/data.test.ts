@@ -24,14 +24,15 @@ const fd = (o: Record<string, string>) => {
 describe("seed", () => {
   it("seeds the full curriculum once", () => {
     const path = data.getPath();
-    expect(path.phases).toHaveLength(7);
+    expect(path.phases).toHaveLength(6);
     const subCount = PHASES.flatMap((p) => p.topics.flatMap((t) => t.subtopics)).length;
     expect(path.overall.total).toBe(subCount);
     expect(data.getResources()).toHaveLength(RESOURCES.length);
     expect(path.currentPhaseId).toBe("p1");
-    // Phase 1 topics have no prerequisites → ready; later ones are not started.
-    expect(path.phases[0]!.topics.every((t) => t.status === "ready")).toBe(true);
-    expect(path.phases[1]!.topics.find((t) => t.id === "backend-engineering")!.status).toBe("not-started");
+    // Only the first topic has no prerequisites; the rest wait their turn.
+    expect(path.phases[0]!.topics.find((t) => t.id === "python-foundations")!.status).toBe("ready");
+    expect(path.phases[0]!.topics.find((t) => t.id === "python-engineering")!.status).toBe("not-started");
+    expect(path.phases[1]!.topics.find((t) => t.id === "pandas-analysis")!.status).toBe("not-started");
     // Road covers 24 months and every subtopic is scheduled.
     expect(path.road).toHaveLength(24);
     expect(path.road.reduce((s, m) => s + m.total, 0)).toBe(subCount);
@@ -58,12 +59,12 @@ describe("progress", () => {
   });
   it("completing every subtopic of a topic makes dependants ready", () => {
     const path = data.getPath();
-    for (const id of ["python-engineering", "sql-foundations"]) {
+    for (const id of ["python-foundations", "python-engineering", "sql-foundations"]) {
       path.phases[0]!.topics.find((t) => t.id === id)!.subtopics.forEach((s) => data.setStep(s.id, "practised", true, null));
     }
     const after = data.getPath();
     expect(after.phases[0]!.topics.find((t) => t.id === "python-engineering")!.status).toBe("completed");
-    expect(after.phases[1]!.topics.find((t) => t.id === "backend-engineering")!.status).toBe("ready");
+    expect(after.phases[1]!.topics.find((t) => t.id === "pandas-analysis")!.status).toBe("ready");
   });
   it("exposure alone never completes a topic", () => {
     data.getPath().phases[0]!.topics[0]!.subtopics.forEach((s) => data.setStep(s.id, "exposed", true, null));
@@ -204,10 +205,10 @@ describe("meditation persistence", () => {
   it("content sync adds a new curriculum subtopic to an older database without touching progress", () => {
     const db = g.__urhaDb!;
     data.setStep("python-engineering:type-hints", "practised", true, null);
-    db.prepare("DELETE FROM subtopics WHERE id = 'sql-foundations:selective-pandas-for-loading-and-checking-data'").run();
+    db.prepare("DELETE FROM subtopics WHERE id = 'pandas-analysis:selective-pandas-for-loading-and-checking-data'").run();
     syncContent(db);
-    expect(db.prepare("SELECT 1 FROM subtopics WHERE id = 'sql-foundations:selective-pandas-for-loading-and-checking-data'").get()).toBeTruthy();
-    expect(data.getPath().phases[0]!.topics[0]!.subtopics.find((x) => x.id === "python-engineering:type-hints")!.progress.practised).toBe(true);
+    expect(db.prepare("SELECT 1 FROM subtopics WHERE id = 'pandas-analysis:selective-pandas-for-loading-and-checking-data'").get()).toBeTruthy();
+    expect(data.getPath().phases[0]!.topics.find((t) => t.id === "python-engineering")!.subtopics.find((x) => x.id === "python-engineering:type-hints")!.progress.practised).toBe(true);
   });
 });
 

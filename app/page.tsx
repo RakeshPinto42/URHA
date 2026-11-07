@@ -76,7 +76,7 @@ export default async function Home() {
       </section>
 
       <section aria-labelledby="window-h" className="glass-hall mt-4 overflow-hidden px-4 py-8 sm:mx-6 sm:rounded-[28px] sm:px-8 sm:py-10 lg:mx-auto lg:max-w-[1160px]">
-        <h2 id="window-h" className="mb-5 font-serif text-[30px] leading-tight text-[#f7f7f5]">Seven panes of the way</h2>
+        <h2 id="window-h" className="mb-5 font-serif text-[30px] leading-tight text-[#f7f7f5]">Six panes of the way</h2>
         <GlassWindow stations={journey.stations} />
       </section>
 

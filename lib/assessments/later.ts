@@ -21,7 +21,7 @@ export const BACKEND_ENGINEERING: Assessment = {
   minutes: 180,
   items: [
     {
-      id: "api-1", type: "debug", language: "python", points: 3, revise: ["request-and-response-validation", "error-handling"],
+      id: "api-1", type: "debug", language: "python", points: 3, revise: ["api-essentials:request-and-response-validation", "api-essentials:error-handling"],
       prompt: "Which TWO defects does this FastAPI endpoint have?",
       code: `@router.get("/users/{user_id}")
 def get_user(user_id: int, db: Session = Depends(get_db)):
@@ -73,7 +73,7 @@ def get_user(user_id: int, db: Session = Depends(get_db)):
     },
     {
       id: "api-5", type: "code", points: 12, required: true, evidence: "url-and-text",
-      revise: ["fastapi", "pydantic", "request-and-response-validation", "idempotency", "api-testing", "error-handling"],
+      revise: ["api-essentials:fastapi", "api-essentials:pydantic", "api-essentials:request-and-response-validation", "idempotency", "api-essentials:api-testing", "api-essentials:error-handling"],
       prompt: "Build POST /imports for LedgerSync: accepts a JSON batch of transactions, validates each (amount precision, ISO currency, real dates), rejects invalid batches with a 422 that names the bad fields, honours an Idempotency-Key, and returns 201 with an import id. Write API tests against a test database. Submit the commit link and paste the test output.",
       rubric: [
         { id: "validation", label: "Validation and errors", points: 4, descriptor: "Pydantic models enforce the rules; errors are specific; no stack traces leak; status codes are right." },

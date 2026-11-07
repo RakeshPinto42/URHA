@@ -23,7 +23,7 @@ export function StudyPlan({ plan }: { plan: SubtopicPlan }) {
     <div className="mt-3 grid gap-4 rounded-[12px] bg-surface p-4 md:grid-cols-2">
       {plan.outcome && <p className="text-[15px] md:col-span-2"><span className="text-muted">You will be able to</span> {plan.outcome}.</p>}
       <div className="flex flex-col gap-3">
-        {plan.primary ? <ResourceLine r={plan.primary} role="Primary" /> : <p className="text-[13px] text-muted">No verified resource yet. Use the topic's official documentation.</p>}
+        {plan.primary ? <ResourceLine r={plan.primary} role="Primary" /> : plan.pending ? <p className="text-[13px] text-muted">No video yet. {plan.pending}</p> : <p className="text-[13px] text-muted">No verified resource yet. Use the topic's official documentation.</p>}
         {plan.supplement && <ResourceLine r={plan.supplement} role="If it helps" />}
       </div>
       <div>

@@ -65,8 +65,8 @@ describe("topic status", () => {
 
 describe("curriculum integrity (PRD §5)", () => {
   const topics = PHASES.flatMap((p) => p.topics);
-  it("has seven phases covering months 1–24 without gaps", () => {
-    expect(PHASES).toHaveLength(7);
+  it("has six phases covering months 1–24 without gaps", () => {
+    expect(PHASES).toHaveLength(6);
     let next = 1;
     for (const p of PHASES) {
       expect(p.months[0]).toBe(next);
@@ -89,9 +89,10 @@ describe("curriculum integrity (PRD §5)", () => {
   it("prerequisites form a DAG", () => {
     expect(() => resolveTopicStatuses(topics.map((t) => ({ id: t.id, prerequisites: t.prerequisites, subs: [], needsRevision: false })))).not.toThrow();
   });
-  it("does not re-teach existing strengths (PRD §2)", () => {
+  it("teaches from the learner's real level: Power BI is basic, Excel is a strength (PRD §2)", () => {
     const text = JSON.stringify(PHASES).toLowerCase();
-    for (const banned of ["power query", "power bi", "dax", "excel formulas", "fp&a"]) expect(text).not.toContain(banned);
+    expect(text).not.toContain("excel formulas");
+    expect(PHASES.flatMap((p) => p.topics).map((t) => t.id)).toEqual(expect.arrayContaining(["power-bi", "fpa-analytics"]));
   });
   it("resources point at real topics and never at non-http links", () => {
     const ids = new Set(topics.map((t) => t.id));

@@ -54,7 +54,7 @@ describe("curated resource map (CINEMATIC_DIRECTION §6)", () => {
             }
           }
         }
-        expect(primary).not.toBe(supplement);
+        if (primary) expect(primary).not.toBe(supplement);
       }
     }
   });

@@ -26,7 +26,7 @@ On first run the database (`data/urha.db`) is created and the 24-month curriculu
 ## What is built
 
 - **Home**: the 3D journey, with your position, next destination and today's work
-- **My Path**: all 7 phases as stations in the 3D scene, with a phase sheet for each (the 2D Milestone Road is the fallback without WebGL)
+- **My Path**: all 6 phases as stations in the 3D scene, with a phase sheet for each (the 2D Milestone Road is the fallback without WebGL)
 - **Academy**: topic workspaces with a learning outcome, resources, an exercise and minutes for every subtopic, and the topic's assessment
 - **My Tasks**: today, week, all and completed views; filters; recurrence; blocked and deferred states; completion history; planned against actual time
 - **Assessments**: one for every topic. Choice and SQL questions are checked deterministically, and written and practical work is reviewed against a rubric by a named reviewer. No AI scores anything.

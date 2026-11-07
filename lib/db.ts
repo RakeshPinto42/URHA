@@ -11,13 +11,16 @@
 import Database from "better-sqlite3";
 import fs from "node:fs";
 import path from "node:path";
-import { PHASES, SKILLS, MILESTONES, slug, scheduleMonths } from "./curriculum";
+import { PHASES, slug } from "./curriculum";
+import { applyCurriculum, migrateToSixPhases } from "./curriculum-migration";
 import { RESOURCES } from "./resources";
 
 export type DB = Database.Database;
 export const LOCAL_USER_ID = 1;
 
-const MIGRATIONS: string[] = [
+type Migration = string | ((db: DB) => void);
+
+const MIGRATIONS: Migration[] = [
   // v1 — Release 1 schema
   `
   CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT NOT NULL DEFAULT '', created_at TEXT NOT NULL DEFAULT (datetime('now')));
@@ -117,16 +120,43 @@ const MIGRATIONS: string[] = [
     CHECK (url IS NOT NULL OR length(trim(body)) > 0));
   CREATE INDEX evidence_user ON evidence(user_id, created_at);
   `,
+  // v4 — The six-phase path (docs/PRD.md §4): modules, the reason and finance use of each topic,
+  // projects, and an archive so a dropped subtopic never takes anyone's progress with it.
+  `
+  CREATE TABLE modules (id TEXT PRIMARY KEY, phase_id TEXT NOT NULL REFERENCES phases(id), ord INTEGER NOT NULL, title TEXT NOT NULL);
+  ALTER TABLE topics ADD COLUMN module_id TEXT REFERENCES modules(id);
+  ALTER TABLE topics ADD COLUMN why TEXT NOT NULL DEFAULT '';
+  ALTER TABLE topics ADD COLUMN finance TEXT NOT NULL DEFAULT '';
+  ALTER TABLE topics ADD COLUMN project TEXT;
+  ALTER TABLE milestones ADD COLUMN project TEXT;
+  CREATE TABLE retired_progress (user_id INTEGER NOT NULL REFERENCES users(id), subtopic_id TEXT NOT NULL, topic_id TEXT NOT NULL, title TEXT NOT NULL,
+    exposed_at TEXT, practised_at TEXT, proficient_at TEXT, evidence TEXT, reason TEXT NOT NULL, retired_at TEXT NOT NULL DEFAULT (datetime('now')),
+    PRIMARY KEY (user_id, subtopic_id));
+  `,
+  (db) => migrateToSixPhases(db),
 ];
 
-function migrate(db: DB) {
+/** The v-numbered user_version counts every entry above. */
+export function migrate(db: DB, upTo = MIGRATIONS.length) {
   const current = db.pragma("user_version", { simple: true }) as number;
-  for (let v = current; v < MIGRATIONS.length; v++) {
+  for (let v = current; v < upTo; v++) {
     db.transaction(() => {
-      db.exec(MIGRATIONS[v]!);
+      const step = MIGRATIONS[v]!;
+      if (typeof step === "string") db.exec(step);
+      else step(db);
       db.pragma(`user_version = ${v + 1}`);
     })();
   }
+}
+
+/** A copy of a database that already holds data, taken before a migration changes it. */
+function backupBeforeUpgrade(db: DB, file: string) {
+  const current = db.pragma("user_version", { simple: true }) as number;
+  if (file === ":memory:" || current === 0 || current >= MIGRATIONS.length) return;
+  const dir = path.join(path.dirname(file), "backups");
+  fs.mkdirSync(dir, { recursive: true });
+  const out = path.join(dir, `before-v${MIGRATIONS.length}-${new Date().toISOString().replace(/[:.]/g, "-")}.db`);
+  db.prepare("VACUUM INTO ?").run(out);
 }
 
 export function seed(db: DB) {
@@ -134,27 +164,7 @@ export function seed(db: DB) {
   if (has.n > 0) return;
   db.transaction(() => {
     db.prepare("INSERT OR IGNORE INTO users (id, name) VALUES (?, '')").run(LOCAL_USER_ID);
-    const sk = db.prepare("INSERT INTO skills (id, name, target) VALUES (?, ?, ?)");
-    SKILLS.forEach((s) => sk.run(s.id, s.name, s.target));
-    const ph = db.prepare("INSERT INTO phases (id, ord, title, month_start, month_end, summary, deliverable, exit_gate) VALUES (?,?,?,?,?,?,?,?)");
-    PHASES.forEach((p) => ph.run(p.id, p.order, p.title, p.months[0], p.months[1], p.summary, p.deliverable, p.exitGate));
-    const ms = db.prepare("INSERT INTO milestones (id, ord, title, phase_id, business_problem, technical_objective, completion_criteria) VALUES (?,?,?,?,?,?,?)");
-    MILESTONES.forEach((m) => ms.run(m.id, m.order, m.title, m.phase, m.businessProblem, m.technicalObjective, m.completionCriteria));
-    const tp = db.prepare("INSERT INTO topics (id, phase_id, ord, title, objective, summary, assignment, milestone_id) VALUES (?,?,?,?,?,?,?,?)");
-    const pr = db.prepare("INSERT INTO topic_prereqs (topic_id, prereq_id) VALUES (?, ?)");
-    const ts = db.prepare("INSERT INTO topic_skills (topic_id, skill_id) VALUES (?, ?)");
-    const st = db.prepare("INSERT INTO subtopics (id, topic_id, ord, title, month) VALUES (?,?,?,?,?)");
-    for (const p of PHASES) {
-      const flat = p.topics.flatMap((t) => t.subtopics.map((s) => ({ t, s })));
-      const months = scheduleMonths(flat.length, p.months);
-      p.topics.forEach((t, i) => tp.run(t.id, p.id, i + 1, t.title, t.objective, t.summary, t.assignment, t.milestone));
-      flat.forEach(({ t, s }, i) => st.run(`${t.id}:${slug(s)}`, t.id, t.subtopics.indexOf(s) + 1, s, months[i]!));
-    }
-    // Prerequisites and skills after all topics exist (FKs).
-    for (const p of PHASES) for (const t of p.topics) {
-      t.prerequisites.forEach((q) => pr.run(t.id, q));
-      t.skills.forEach((s) => ts.run(t.id, s));
-    }
+    applyCurriculum(db);
     const rs = db.prepare("INSERT INTO resources (id, topic_id, kind, title, author, url, sections, hours, is_primary) VALUES (?,?,?,?,?,?,?,?,?)");
     RESOURCES.forEach((r) => rs.run(r.id, r.topic, r.kind, r.title, r.author, r.url, r.sections, r.hours, r.primary ? 1 : 0));
   })();
@@ -194,6 +204,7 @@ export function openDb(file: string): DB {
   db.pragma("journal_mode = WAL");
   db.pragma("foreign_keys = ON");
   db.pragma("busy_timeout = 3000");
+  backupBeforeUpgrade(db, file);
   migrate(db);
   seed(db);
   syncContent(db);

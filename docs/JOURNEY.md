@@ -4,6 +4,8 @@ Stage 1 of the brief "Cinematic 3D Experience, Interactive Roadmap and Evidence-
 
 ## 1. Audit: what was actually there
 
+> Written for the seven-phase path. The curriculum is now the six phases of `PRD.md`; `lib/curriculum.ts` is the source, and `CURRICULUM_SEQUENCE.md` describes it.
+
 The audit read the code and the database, not the earlier documents.
 
 | Area | Found | Consequence |
@@ -58,13 +60,12 @@ A low-poly landscape at dawn, built in real 3D: a valley with a still lake (Gali
 
 | Phase | Station | Form |
 |---|---|---|
-| 1. Python, Engineering Foundations and Data Access | The Well | A low ring of stones: the source |
-| 2. APIs, Integrations and LLM Applications | The Bridge | An arch across a stream: connection |
-| 3. RAG and Enterprise Knowledge Systems | The Library | A tower with a lit window: knowledge |
-| 4. Agentic AI, LangGraph and MCP | The Crossroads | Two path forks and a waymarker: decisions |
-| 5. AI Evaluation, Security and Deployment | The Watchtower | Tall and narrow, with a beacon: vigilance |
-| 6. Advanced Architecture, Integrations and Reliability | The Aqueduct | A run of arches: structure that carries load |
-| 7. Enterprise AI Architecture and Production Ownership | The Summit | A cairn on the peak in the sunrise: ownership |
+| 1. Programming, SQL and databases | The Well | A low ring of stones: the source |
+| 2. Data engineering and finance analytics | The Bridge | An arch across a stream: connection |
+| 3. Applied AI and RAG | The Library | A tower with a lit window: knowledge |
+| 4. AI agents and evaluation | The Crossroads | Two path forks and a waymarker: decisions |
+| 5. Software engineering, integration and cloud | The Watchtower | Tall and narrow, with a beacon: vigilance |
+| 6. Enterprise AI solutions architecture | The Summit | A cairn on the peak in the sunrise: ownership |
 
 **Atmosphere and progress**
 - Drifting mist sheets sit between the depth layers.
@@ -97,7 +98,7 @@ A 3D book. Each phase is a page that unfolds into a pop-up diorama, and you turn
 ### Recommendation
 
 **Concept A.**
-- It is the only one where the whole 24-month journey is visible at once: the overview shot shows all seven stations.
+- It is the only one where the whole 24-month journey is visible at once: the overview shot shows all six stations.
 - Progress has a physical meaning: a walked path and lit beacons.
 - It stays in daylight, so the working screens keep their contrast, and Meditation keeps the only night room.
 

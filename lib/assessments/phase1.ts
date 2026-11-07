@@ -34,7 +34,7 @@ export const PYTHON_ENGINEERING: Assessment = {
       explain: "Composition: the varying behaviour lives in a small object you pass in, so new rules add a class instead of editing or subclassing the Reconciler.",
     },
     {
-      id: "py-2", type: "debug", language: "python", points: 2, revise: ["functions-and-modular-programming", "exception-handling"],
+      id: "py-2", type: "debug", language: "python", points: 2, revise: ["python-foundations:functions-and-modular-programming", "python-foundations:exception-handling"],
       prompt: "collect_errors() is called once per row. After three bad rows in one file, a second file starts with three errors already in its list. Why?",
       code: `def collect_errors(row: dict, errors: list[str] = []) -> list[str]:
     if row.get("amount") is None:
@@ -50,7 +50,7 @@ export const PYTHON_ENGINEERING: Assessment = {
       explain: "Use `errors: list[str] | None = None` and create the list inside the function.",
     },
     {
-      id: "py-3", type: "mcq", points: 2, revise: ["decorators-and-generators-concepts", "file-handling"],
+      id: "py-3", type: "mcq", points: 2, revise: ["decorators-and-generators-concepts", "python-foundations:file-handling"],
       prompt: "A bank file has 1,000,000 rows. Which approach totals the amounts with constant memory?",
       options: [
         "rows = f.readlines(); total = sum(parse(r) for r in rows)",
@@ -62,7 +62,7 @@ export const PYTHON_ENGINEERING: Assessment = {
       explain: "Iterating the file object with a generator expression reads one line at a time; the others build the whole file in memory first.",
     },
     {
-      id: "py-4", type: "debug", language: "python", points: 2, revise: ["exception-handling", "software-engineering:logging"],
+      id: "py-4", type: "debug", language: "python", points: 2, revise: ["python-foundations:exception-handling", "software-engineering:logging"],
       prompt: "What is wrong with this parsing step?",
       code: `for n, raw in enumerate(lines, start=1):
     try:
@@ -90,7 +90,7 @@ export const PYTHON_ENGINEERING: Assessment = {
     },
     {
       id: "py-6", type: "code", points: 12, required: true, evidence: "url-and-text",
-      revise: ["exception-handling", "type-hints", "json-processing", "software-engineering:pytest"],
+      revise: ["python-foundations:exception-handling", "type-hints", "python-foundations:json-processing", "software-engineering:pytest"],
       prompt: "Build `load_bank_lines(path) -> tuple[list[BankLine], list[ValidationError]]`. It reads a CSV of date, amount, reference and currency. It rejects bad rows with their row number and reason, never stops at the first bad row, and is fully typed. Add pytest tests covering a clean file, three kinds of bad row and an empty file. Submit the repository or commit link, and paste the pytest and `mypy --strict` output.",
       rubric: [
         { id: "correct", label: "Correct results", points: 4, descriptor: "Valid rows are parsed with the right types (Decimal amounts, real dates); bad rows are rejected, never silently fixed." },

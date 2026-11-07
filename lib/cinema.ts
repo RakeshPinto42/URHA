@@ -1,8 +1,8 @@
 /**
  * The light through the glass (docs/DESIGN.md §13): one palette for the whole app.
  *
- * Seven panes of stained glass, one for each phase of the path, in dawn order. Each
- * section of the app takes a pane as its room colour. Pure data, so the 3D scene, the
+ * Seven panes of stained glass in dawn order: each phase of the path takes one, and each
+ * section of the app takes one as its room colour. Pure data, so the 3D scene, the
  * shaders, the shell and the tests all read the same values.
  *
  * - `bright` is light: fills, beams and the 3D world. Never text on white.

@@ -66,7 +66,7 @@ export default async function PathPage() {
             <p className="text-[14px] text-muted">My Path</p>
             <h1 className="mt-1 font-serif text-[40px] leading-[1.04] sm:text-[56px]">The Roadmap</h1>
             <p className="mt-3 max-w-[60ch] text-[16px]">
-              24 months, 7 stations, {path.overall.total} subtopics.{" "}
+              24 months, 6 stations, {path.overall.total} subtopics.{" "}
               {journey.currentIndex !== null ? <>You are walking towards <strong className="font-medium">{journey.stations[journey.currentIndex]!.landmark}</strong> (Phase {journey.stations[journey.currentIndex]!.ord}).</> : "Every station is passed."}{" "}
               {pctLabel(path.overall.practised, path.overall.total)} practised, {path.overall.proficient} proficient, {demonstrated} of {topicsAll.length} topics demonstrated by assessment.
             </p>
