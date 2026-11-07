@@ -2,7 +2,7 @@
 
 Phases 1 to 3 of the owner's brief of 2026-11-07.
 
-**Status:** the owner chose to build in URHA and start with the engine. Steps 1 and 2 of §9 are built. Steps 3 to 8 are not.
+**Status:** the owner chose to build in URHA and start with the engine. Steps 1 to 4 of §9 are built. Steps 5 to 8 are not.
 
 ## 1. Bottom line
 
@@ -128,8 +128,8 @@ The brief's phases 4 to 7, in order. Each step ends with something visible.
 |---|---|---|
 | 1 | **Built.** Engine core: schema, runtime, disposal, quality tiers | The whole journey loads from `public/cinema/scenes/journey.json` |
 | 2 | **Built.** Real rendering: PBR, shadows, tone mapping, reflections captured from the sky, bloom | The Home journey has real light and depth, on all tiers |
-| 3 | Studio: hierarchy, transforms, lights, materials, cameras | A scene can be edited without touching code |
-| 4 | Export and import | A scene round-trips through JSON exactly (tested) |
+| 3 | **Built.** Studio: hierarchy, transforms, lights, materials, cameras | A scene can be edited without touching code |
+| 4 | **Built.** Export and import | A scene round-trips through JSON exactly (tested) |
 | 5 | GLB pipeline and first real models | Primitive landmarks are replaced by optimised models |
 | 6 | Animation: object, camera and sequences | Home's sunrise is authored in the Studio |
 | 7 | Module scenes | Academy gets its own world; Workbench and Investment Hub follow the decision in §8 |
@@ -151,3 +151,28 @@ The brief's phases 4 to 7, in order. Each step ends with something visible.
 **The scene file is live data.** Editing `journey.json` changes the look after a reload, with no rebuild. Add `?cinema=high`, `medium` or `low` to Home or My Path to force a tier; it also turns off the automatic step-down.
 
 Not built yet: GLB loading and the asset pipeline (step 5), so Draco needs no change to the security policy yet.
+
+## 11. The Studio (steps 3 and 4)
+
+Open `/studio` while running `npm run dev`. To use it on a production build, start with `URHA_STUDIO=1`. On any other production build the page and its save endpoint return 404, because URHA has no login and a hosted editor that writes files would be a hole.
+
+| Brief | Built |
+|---|---|
+| Scene management | Add shapes and particles, duplicate, remove, rename, show and hide, hierarchy, move, rotate and scale by handle or by number |
+| Cameras | Orbit, top-down, isometric, first-person and third-person, with field of view and movement speed, and "Use this view as the scene's camera" |
+| Lighting | Ambient, hemisphere, directional, point and spot, with colour, intensity and shadows |
+| Materials | Base colour, metallic, roughness and emissive on shapes |
+| Environment | Fog, exposure, reflections and bloom |
+| Animation | Object spin and float, any light or exposure value from a start to an end along a timeline, timeline length, scrubbing and playback |
+| Export and import | The exact scene as JSON, in and out. Imports are validated and can be undone |
+
+**How it works.** Every edit is a pure function on the scene JSON (`lib/cinema-engine/editor.ts`). History keeps the previous values, so undo costs nothing extra, and `runtime.sync` diffs the old and new scene and does only what changed. A new object type needs no new form, because the Inspector builds its controls from the object's settings.
+
+**Limits, and where each is handled**
+
+| Not yet | Handled by |
+|---|---|
+| GLB and GLTF loading, texture mapping, skyboxes from image files | Step 5 |
+| Camera paths and cinematic sequences beyond the sunrise | Step 6 |
+| Isometric is a long lens, not a true orthographic camera | Close in practice; a true one can follow if it matters |
+| Sky, terrain and other world objects can be recoloured but not moved as freely as shapes: their geometry is tied to the path | By design |

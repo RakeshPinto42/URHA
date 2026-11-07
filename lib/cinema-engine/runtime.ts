@@ -12,6 +12,7 @@ import { OutputPass } from "three/examples/jsm/postprocessing/OutputPass.js";
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
 import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPass.js";
 import { FrameWatch, TIERS, nextTierDown, type Tier, type TierId } from "./quality";
+import { diffScene } from "./editor";
 import { ends, resolveNumber, type CinemaLight, type CinemaObject, type CinemaScene, type Vec3 } from "./schema";
 
 /** What a generator receives each frame. */
@@ -44,6 +45,8 @@ export type CinemaOptions = {
   onContextLost?: () => void;
   /** False keeps the chosen tier whatever the frame rate. */
   watchFrames?: boolean;
+  /** The host moves the camera itself, as the Studio does. */
+  freeCamera?: boolean;
 };
 
 const textureSlots = ["map", "normalMap", "roughnessMap", "metalnessMap", "emissiveMap", "aoMap", "alphaMap", "envMap", "bumpMap"] as const;
@@ -69,7 +72,8 @@ export class CinemaRuntime {
   private clock = new THREE.Timer();
   private composer: EffectComposer | null = null;
   private bloom: UnrealBloomPass | null = null;
-  private built: { spec: CinemaObject; built: Built }[] = [];
+  /** Each object sits in a holder, so a placement never fights a generator's own positioning. */
+  private built: { spec: CinemaObject; built: Built; holder: THREE.Group }[] = [];
   private lights: { spec: CinemaLight; light: THREE.Light }[] = [];
   private sun: THREE.DirectionalLight | null = null;
   private pmrem: THREE.PMREMGenerator;
@@ -92,6 +96,7 @@ export class CinemaRuntime {
   private target = new THREE.Vector3();
   private sway = new THREE.Vector3();
   private flySpeed = 1.9;
+  private fogScale = 1;
   private raycaster = new THREE.Raycaster();
   private pointer = new THREE.Vector2();
   private lost = (e: Event) => { e.preventDefault(); this.opts.onContextLost?.(); };
@@ -119,26 +124,57 @@ export class CinemaRuntime {
     this.scene.background = new THREE.Color(fogTo);
 
     for (const l of spec.lights) this.addLight(l);
-    for (const o of spec.objects) {
-      const make = opts.generators[o.generator];
-      if (!make) throw new Error(`Scene "${spec.id}" uses unknown generator "${o.generator}"`);
-      const built = make(o.params, this.ctx);
-      built.object.visible = o.visible;
-      built.object.name = o.id;
-      this.scene.add(built.object);
-      this.built.push({ spec: o, built });
-    }
+    for (const o of spec.objects) this.buildObject(o);
     this.buildPipeline();
     this.step(0);
     this.captureEnvironment();
     if (!opts.still) this.start();
   }
 
+  private buildObject(o: CinemaObject) {
+    const make = this.opts.generators[o.generator];
+    if (!make) throw new Error(`Scene "${this.opts.scene.id}" uses unknown generator "${o.generator}"`);
+    const built = make(o.params, this.ctx);
+    const holder = new THREE.Group();
+    holder.name = o.id;
+    holder.add(built.object);
+    this.scene.add(holder);
+    const entry = { spec: o, built, holder };
+    this.built.push(entry);
+    this.place(entry);
+  }
+
+  private place(entry: { spec: CinemaObject; holder: THREE.Group }) {
+    const { spec, holder } = entry;
+    holder.visible = spec.visible;
+    const p = spec.placement;
+    holder.position.set(...(p?.position ?? [0, 0, 0]));
+    holder.rotation.set(...(p?.rotation ?? [0, 0, 0]));
+    holder.scale.set(...(p?.scale ?? [1, 1, 1]));
+  }
+
+  private removeObject(id: string) {
+    const i = this.built.findIndex((b) => b.spec.id === id);
+    if (i < 0) return;
+    const { built, holder } = this.built[i]!;
+    built.dispose?.();
+    disposeObject(built.object);
+    this.scene.remove(holder);
+    this.built.splice(i, 1);
+  }
+
   private addLight(l: CinemaLight) {
     let light: THREE.Light;
-    if (l.type === "hemisphere") light = new THREE.HemisphereLight(l.sky, l.ground, 1);
-    else if (l.type === "point") {
-      if (!this.tier.pointLights) return;
+    if (l.type === "ambient") light = new THREE.AmbientLight(l.color, 1);
+    else if (l.type === "hemisphere") light = new THREE.HemisphereLight(l.sky, l.ground, 1);
+    else if (l.type === "spot") {
+      const spot = new THREE.SpotLight(l.color, 1, l.distance, l.angle, l.penumbra);
+      spot.position.set(...l.position);
+      spot.target.position.set(...l.target);
+      this.scene.add(spot.target);
+      if (l.castShadow && this.tier.shadowMap) { spot.castShadow = true; spot.shadow.mapSize.set(this.tier.shadowMap / 2, this.tier.shadowMap / 2); }
+      light = spot;
+    } else if (l.type === "point") {
       light = new THREE.PointLight(l.color, 1, l.distance);
       light.position.set(...l.position);
     } else {
@@ -181,7 +217,7 @@ export class CinemaRuntime {
   private captureEnvironment() {
     const source = this.built.find((b) => b.spec.environmentSource);
     if (!source) return;
-    const hidden = this.scene.children.filter((c) => c !== source.built.object && c.visible);
+    const hidden = this.scene.children.filter((c) => c !== source.holder && c.visible);
     hidden.forEach((c) => { c.visible = false; });
     const fog = this.scene.fog;
     this.scene.fog = null;
@@ -215,7 +251,9 @@ export class CinemaRuntime {
     }
     this.applyProgress();
 
-    if (!this.opts.still) {
+    if (this.opts.freeCamera) {
+      // The host owns the camera.
+    } else if (!this.opts.still) {
       const k = 1 - Math.exp(-Math.min(dt, 0.05) * this.flySpeed);
       this.camera.position.lerp(this.goalPos, k);
       this.target.lerp(this.goalTarget, k);
@@ -236,7 +274,14 @@ export class CinemaRuntime {
     }
 
     const frame: Frame = { dt, time: this.time, progress: this.ease(this.progress), still: this.opts.still, camera: this.camera };
-    for (const { built } of this.built) built.update?.(frame);
+    for (const { built, spec, holder } of this.built) {
+      built.update?.(frame);
+      if (this.opts.still || !spec.motion) continue;
+      const s = spec.motion.spin;
+      if (s) { holder.rotation.x += s[0] * dt; holder.rotation.y += s[1] * dt; holder.rotation.z += s[2] * dt; }
+      const f = spec.motion.float;
+      if (f) holder.position.y = (spec.placement?.position[1] ?? 0) + Math.sin(this.time * f.speed) * f.height;
+    }
     this.opts.onFrame?.(this.camera);
   }
 
@@ -340,12 +385,97 @@ export class CinemaRuntime {
     this.invalidate();
   }
 
+  /** Moves to an edited scene, doing only what changed, so editing stays fast. */
+  sync(next: CinemaScene) {
+    const d = diffScene(this.opts.scene, next);
+    this.opts.scene = next;
+    let recapture = false;
+    for (const id of d.removeObjects) this.removeObject(id);
+    for (const o of d.rebuildObjects) {
+      this.removeObject(o.id);
+      this.buildObject(o);
+      recapture ||= !!o.environmentSource;
+    }
+    for (const o of d.addObjects) { this.buildObject(o); recapture ||= !!o.environmentSource; }
+    for (const o of d.placeObjects) {
+      const entry = this.built.find((b) => b.spec.id === o.id);
+      if (entry) { entry.spec = o; this.place(entry); }
+    }
+    for (const id of d.removeLights) {
+      const i = this.lights.findIndex((l) => l.spec.id === id);
+      if (i < 0) continue;
+      const { light } = this.lights[i]!;
+      if (light === this.sun) { this.scene.remove(this.sun.target); this.sun = null; }
+      if (light instanceof THREE.SpotLight) { this.scene.remove(light.target); light.dispose(); }
+      (light as THREE.DirectionalLight).shadow?.map?.dispose();
+      this.scene.remove(light);
+      this.lights.splice(i, 1);
+    }
+    for (const l of d.addLights) this.addLight(l);
+    if (d.environment) {
+      const env = next.environment;
+      const [from, to] = ends(env.fog.color);
+      this.fogFrom.set(from);
+      this.fogTo.set(to);
+      (this.scene.fog as THREE.FogExp2).density = env.fog.density * this.fogScale;
+      if (this.bloom) { this.bloom.strength = env.bloom.strength; this.bloom.radius = env.bloom.radius; this.bloom.threshold = env.bloom.threshold; }
+    }
+    if (d.camera) {
+      this.camera.fov = next.camera.fov;
+      this.camera.near = next.camera.near;
+      this.camera.far = next.camera.far;
+      this.camera.updateProjectionMatrix();
+    }
+    if (recapture) this.captureEnvironment();
+    this.invalidate();
+  }
+
+  /** The holder of an object, for tools that move it. */
+  holder(id: string): THREE.Object3D | null {
+    return this.built.find((b) => b.spec.id === id)?.holder ?? null;
+  }
+
+  /** Adds an editing aid to the scene. It stays out of reflections, and the host disposes it. */
+  addHelper(o: THREE.Object3D) { this.scene.add(o); }
+  removeHelper(o: THREE.Object3D) { this.scene.remove(o); }
+
+  /** Thins the fog for a distant viewpoint, without touching the scene. A way of looking, not an edit. */
+  setFogScale(scale: number) {
+    (this.scene.fog as THREE.FogExp2).density = this.opts.scene.environment.fog.density * scale;
+    this.fogScale = scale;
+    this.invalidate();
+  }
+
+  /** Where the shadow detail goes, when the host owns the camera. */
+  focus(point: THREE.Vector3) { this.target.copy(point); }
+
+  /** Sets the timeline position directly, for scrubbing in the Studio. */
+  setProgress(p: number) {
+    this.timelineRate = 0;
+    this.progress = Math.min(Math.max(p, 0), 1);
+    this.captureEnvironment();
+    this.invalidate();
+  }
+
+  /** The object under a canvas point, ignoring the sky. */
+  pickObject(clientX: number, clientY: number): string | null {
+    const r = this.renderer.domElement.getBoundingClientRect();
+    this.pointer.set(((clientX - r.left) / r.width) * 2 - 1, -((clientY - r.top) / r.height) * 2 + 1);
+    this.raycaster.setFromCamera(this.pointer, this.camera);
+    const holders = this.built.filter((b) => !b.spec.environmentSource && b.spec.visible).map((b) => b.holder);
+    const hit = this.raycaster.intersectObjects(holders, true)[0];
+    for (let n: THREE.Object3D | null = hit?.object ?? null; n; n = n.parent) {
+      if (holders.includes(n as THREE.Group)) return n.name;
+    }
+    return null;
+  }
+
   /** The `pickId` of what is under a canvas point, walking up from the mesh hit. */
   pick(clientX: number, clientY: number): string | null {
     const r = this.renderer.domElement.getBoundingClientRect();
     this.pointer.set(((clientX - r.left) / r.width) * 2 - 1, -((clientY - r.top) / r.height) * 2 + 1);
     this.raycaster.setFromCamera(this.pointer, this.camera);
-    const targets = this.built.filter((b) => b.built.object.userData.pickable).map((b) => b.built.object);
+    const targets = this.built.filter((b) => b.built.object.userData.pickable).map((b) => b.holder);
     for (const hit of this.raycaster.intersectObjects(targets, true)) {
       for (let n: THREE.Object3D | null = hit.object; n; n = n.parent) {
         if (typeof n.userData.pickId === "string") return n.userData.pickId;

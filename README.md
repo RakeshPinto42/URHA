@@ -31,6 +31,7 @@ On first run the database (`data/urha.db`) is created and the 24-month curriculu
 - **My Tasks**: today, week, all and completed views; filters; recurrence; blocked and deferred states; completion history; planned against actual time
 - **Assessments**: one for every topic. Choice and SQL questions are checked deterministically, and written and practical work is reviewed against a rubric by a named reviewer. No AI scores anything.
 - **Skills**: four mastery states (Learning, Practising, Proficient, Demonstrated) with evidence and assessment history. Demonstrated comes only from a passed assessment.
+- **Cinematic Studio** (`/studio`, local only): edit the 3D scenes without code; see `docs/CINEMATIC_ENGINE_AUDIT.md` §11
 - **Projects**: the LedgerSync milestones, with evidence recorded against each
 - **Quiet Room**: five curated collections, WEB/KJV text, a device-voice and attached-recording player, resume position, bookmarks, labelled reflections and a private journal
 - **Settings** and backup; credits

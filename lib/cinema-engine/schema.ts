@@ -17,14 +17,24 @@ export type Vec3 = [number, number, number];
 export type Animated<T> = T | [from: T, to: T];
 
 export type CinemaLight =
+  | { id: string; type: "ambient"; color: string; intensity: Animated<number> }
   | { id: string; type: "hemisphere"; sky: string; ground: string; intensity: Animated<number> }
+  | { id: string; type: "spot"; color: string; intensity: Animated<number>; position: Vec3; target: Vec3; angle: number; penumbra: number; distance: number; castShadow?: boolean }
   | { id: string; type: "directional"; color: string; intensity: Animated<number>; direction: Vec3; castShadow?: boolean }
   | { id: string; type: "point"; color: string; intensity: Animated<number>; position: Vec3; distance: number };
+
+/** Where an object sits, in world units and radians. */
+export type Placement = { position: Vec3; rotation: Vec3; scale: Vec3 };
+
+/** Simple repeating motion, for any object. */
+export type Motion = { spin?: Vec3; float?: { height: number; speed: number } };
 
 export type CinemaObject = {
   id: string;
   generator: string; // what builds it: a procedural generator registered with the runtime
   visible: boolean;
+  placement?: Placement;
+  motion?: Motion;
   /** The sky the reflections are captured from. */
   environmentSource?: boolean;
   params: Record<string, unknown>;
@@ -34,7 +44,7 @@ export type CinemaScene = {
   version: number;
   id: string;
   title: string;
-  camera: { fov: number; near: number; far: number };
+  camera: { fov: number; near: number; far: number; position?: Vec3; target?: Vec3; speed?: number };
   environment: {
     fog: { color: Animated<string>; density: number };
     exposure: Animated<number>;
@@ -80,7 +90,15 @@ function checkLight(l: unknown, at: string, errors: string[]) {
   if (!isObject(l)) { errors.push(`${at}: not an object`); return; }
   if (typeof l.id !== "string" || !ID.test(l.id)) errors.push(`${at}.id: use lowercase letters, numbers and hyphens`);
   if (!animated(l.intensity, (x) => isNumber(x) && x >= 0)) errors.push(`${at}.intensity: must be a positive number or [from, to]`);
-  if (l.type === "hemisphere") {
+  if (l.type === "ambient") {
+    if (!isColor(l.color)) errors.push(`${at}.color: must be #rrggbb`);
+  } else if (l.type === "spot") {
+    if (!isColor(l.color)) errors.push(`${at}.color: must be #rrggbb`);
+    if (!isVec3(l.position) || !isVec3(l.target)) errors.push(`${at}: position and target must be [x, y, z]`);
+    if (!isNumber(l.angle) || l.angle <= 0 || l.angle > Math.PI / 2) errors.push(`${at}.angle: must be above 0 and at most 90 degrees`);
+    if (!isNumber(l.penumbra) || l.penumbra < 0 || l.penumbra > 1) errors.push(`${at}.penumbra: must be 0 to 1`);
+    if (!isNumber(l.distance) || l.distance <= 0) errors.push(`${at}.distance: must be above 0`);
+  } else if (l.type === "hemisphere") {
     if (!isColor(l.sky) || !isColor(l.ground)) errors.push(`${at}: sky and ground must be #rrggbb`);
   } else if (l.type === "directional") {
     if (!isColor(l.color)) errors.push(`${at}.color: must be #rrggbb`);
@@ -104,6 +122,12 @@ export function parseScene(input: unknown): ParseResult {
   const c = s.camera;
   if (!isObject(c) || !isNumber(c.fov) || c.fov < 10 || c.fov > 120 || !isNumber(c.near) || c.near <= 0 || !isNumber(c.far) || c.far <= (c.near as number)) {
     errors.push("camera: needs fov 10–120, near above 0 and far beyond near");
+  }
+
+  if (isObject(c)) {
+    if (c.position !== undefined && !isVec3(c.position)) errors.push("camera.position: must be [x, y, z]");
+    if (c.target !== undefined && !isVec3(c.target)) errors.push("camera.target: must be [x, y, z]");
+    if (c.speed !== undefined && (!isNumber(c.speed) || c.speed <= 0)) errors.push("camera.speed: must be above 0");
   }
 
   const e = s.environment;
@@ -138,6 +162,15 @@ export function parseScene(input: unknown): ParseResult {
       if (typeof o.visible !== "boolean") errors.push(`${at}.visible: must be true or false`);
       if (!isObject(o.params)) errors.push(`${at}.params: must be an object`);
       else checkParams(o.params, `${at}.params`, errors);
+      if (o.placement !== undefined) {
+        const p = o.placement;
+        if (!isObject(p) || !isVec3(p.position) || !isVec3(p.rotation) || !isVec3(p.scale)) errors.push(`${at}.placement: needs position, rotation and scale as [x, y, z]`);
+      }
+      if (o.motion !== undefined) {
+        const m = o.motion;
+        const floatOk = !isObject(m) || m.float === undefined || (isObject(m.float) && isNumber(m.float.height) && isNumber(m.float.speed));
+        if (!isObject(m) || (m.spin !== undefined && !isVec3(m.spin)) || !floatOk) errors.push(`${at}.motion: spin must be [x, y, z], and float needs height and speed`);
+      }
     });
   }
 

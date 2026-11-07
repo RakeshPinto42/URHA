@@ -10,6 +10,7 @@
  */
 import * as THREE from "three";
 import type { Built, Frame, Generator, Generators } from "@/lib/cinema-engine/runtime";
+import { COMMON_GENERATORS } from "@/lib/cinema-engine/generators";
 import {
   heightAt, pathPoint, stationPosition, stationT, STATION_AT, treeSites, LAKE, fbm,
 } from "./world";
@@ -584,6 +585,6 @@ const birds: Generator = (p) => {
   };
 };
 
-export const JOURNEY_GENERATORS: Generators = { sky, terrain, trees, ridges, lake, path, stations, walker, haze, motes, birds };
+export const JOURNEY_GENERATORS: Generators = { sky, terrain, trees, ridges, lake, path, stations, walker, haze, motes, birds, ...COMMON_GENERATORS };
 
 export type { Built };

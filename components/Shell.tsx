@@ -52,7 +52,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const menuButton = useRef<HTMLButtonElement>(null);
-  const immersive = pathname === "/meditation" || pathname.startsWith("/meditation/");
+  const immersive = pathname === "/meditation" || pathname.startsWith("/meditation/") || pathname === "/studio";
 
   useEffect(() => setOpen(false), [pathname]);
   useEffect(() => {
