@@ -1,5 +1,5 @@
 {
- "verifiedAt": "2026-11-07T14:45:11.925Z",
+ "verifiedAt": "2026-11-07T14:58:10.793Z",
  "method": "youtube.com watch-page metadata (ytInitialPlayerResponse)",
  "videos": {
   "py-lists": {
@@ -7670,6 +7670,1939 @@
      "title": "Resolve merge conflicts on our computer"
     }
    ]
+  },
+  "fcc-python": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "rfscVS0vtbw",
+   "title": "Learn Python - Full Course for Beginners [Tutorial]",
+   "channel": "freeCodeCamp.org",
+   "durationSec": 16012,
+   "published": "2018-07-11",
+   "embeddable": true,
+   "chapters": []
+  },
+  "pm-trace": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "Qmj5UQRkL4s",
+   "title": "Traceback (most recent call last): Python's tracebacks explained",
+   "channel": "Python Morsels",
+   "durationSec": 219,
+   "published": "2022-11-03",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Traceback (most recent call last)?"
+    },
+    {
+     "t": "00:25",
+     "sec": 25,
+     "title": "Read the last line in a traceback first"
+    },
+    {
+     "t": "01:17",
+     "sec": 77,
+     "title": "The lines in a traceback represent frames in the \"call stack\""
+    },
+    {
+     "t": "02:11",
+     "sec": 131,
+     "title": "Reading up the call stack to fix the bug"
+    },
+    {
+     "t": "02:58",
+     "sec": 178,
+     "title": "Read your tracebacks from the bottom upward"
+    }
+   ]
+  },
+  "ds-trace": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "qgUS3QyPgdM",
+   "title": "Read Python Error Tracebacks Like a Pro: The 5 Most Common Errors",
+   "channel": "Data Science for Everyone",
+   "durationSec": 932,
+   "published": "2026-06-19",
+   "embeddable": true,
+   "chapters": []
+  },
+  "cc-pdsql": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "4GhcNuOXJLU",
+   "title": "Pandas vs SQL - What's The Difference?",
+   "channel": "The Comparison Channel",
+   "durationSec": 286,
+   "published": "2022-12-07",
+   "embeddable": true,
+   "chapters": []
+  },
+  "fm-pdsql": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "9n7nJF38mfY",
+   "title": "Pandas vs SQL for Data Analytics",
+   "channel": "Fahd Mirza",
+   "durationSec": 277,
+   "published": "2023-04-25",
+   "embeddable": true,
+   "chapters": []
+  },
+  "sr-recon": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "ZfboXQua0io",
+   "title": "ETL Testing:Mastering Source vs Target Validation in SQL: Complete Guide",
+   "channel": "SRTechnologies Ravindra Reddy",
+   "durationSec": 914,
+   "published": "2024-01-01",
+   "embeddable": true,
+   "chapters": []
+  },
+  "etl-recon": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "8llaSKq6Mxo",
+   "title": "Part 0: [INTRO]Automation Data Reconciliation & Testing (That Actually Works)",
+   "channel": "ETL and Data Pipeline Testing",
+   "durationSec": 402,
+   "published": "2026-01-08",
+   "embeddable": true,
+   "chapters": []
+  },
+  "up-idem": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "GcU2vxYrA3g",
+   "title": "Idempotent Data Pipelines | Building Reliable & Fault-Tolerant Data Workflows | Uplatz",
+   "channel": "Uplatz",
+   "durationSec": 529,
+   "published": "2026-07-14",
+   "embeddable": true,
+   "chapters": []
+  },
+  "cl-pipe": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "Ne9GAuuKLdc",
+   "title": "Data ingestion pipeline with built-in error handling",
+   "channel": "CloverDX",
+   "durationSec": 397,
+   "published": "2022-03-23",
+   "embeddable": true,
+   "chapters": []
+  },
+  "cor-coa-dax": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "xBlu6QmInY4",
+   "title": "Power BI Parent Child Chart of Accounts with DAX",
+   "channel": "Control Over Reports B.V.",
+   "durationSec": 774,
+   "published": "2022-01-27",
+   "embeddable": true,
+   "chapters": []
+  },
+  "cor-coa-m": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "YiTyWUeuwKI",
+   "title": "Power BI Parent Child Chart of Accounts with M (Power Query)",
+   "channel": "Control Over Reports B.V.",
+   "durationSec": 933,
+   "published": "2022-01-27",
+   "embeddable": true,
+   "chapters": []
+  },
+  "ed-fx": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "i8WKBiTHqVI",
+   "title": "Simple Currency Conversion in Power BI w/DAX",
+   "channel": "Enterprise DNA",
+   "durationSec": 755,
+   "published": "2020-05-13",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "2:25",
+     "sec": 145,
+     "title": "data model"
+    },
+    {
+     "t": "4:15",
+     "sec": 255,
+     "title": "create basic measures"
+    },
+    {
+     "t": "4:47",
+     "sec": 287,
+     "title": "add slicer from dimension currency rates"
+    },
+    {
+     "t": "6:56",
+     "sec": 416,
+     "title": "converted sales measure"
+    },
+    {
+     "t": "8:43",
+     "sec": 523,
+     "title": "take a column from the dimension currency table and put  on Column"
+    }
+   ]
+  },
+  "ds-fiscal": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "Y1jqDcYsTEc",
+   "title": "How to Create Fiscal Dates Table in Power BI | Power BI CalendarAuto Function",
+   "channel": "Data Science Tutorials",
+   "durationSec": 432,
+   "published": "2023-03-21",
+   "embeddable": true,
+   "chapters": []
+  },
+  "as-bva": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "6NJ3pcGpkBQ",
+   "title": "Budget vs Actual in Python: Build a Real Finance Tool in 20 Minutes",
+   "channel": "AutoSolve",
+   "durationSec": 2103,
+   "published": "2025-08-21",
+   "embeddable": true,
+   "chapters": []
+  },
+  "fcc-forecast": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "fxx_E0ojKrc",
+   "title": "Time Series Forecasting in Python – Tutorial for Beginners",
+   "channel": "freeCodeCamp.org",
+   "durationSec": 5581,
+   "published": "2025-08-07",
+   "embeddable": true,
+   "chapters": []
+  },
+  "dh-forecast": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "eKiXtGzEjos",
+   "title": "Time Series Analysis Crash Course: Predict the Future with Python",
+   "channel": "Data Heroes",
+   "durationSec": 22655,
+   "published": "2024-12-09",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Intro: Time Series Analysis"
+    },
+    {
+     "t": "1:50",
+     "sec": 110,
+     "title": "Understanding Time Series Data"
+    },
+    {
+     "t": "4:16",
+     "sec": 256,
+     "title": "Python Setup: Libraries & Data"
+    },
+    {
+     "t": "11:03",
+     "sec": 663,
+     "title": "Mastering Time Series Indexing"
+    },
+    {
+     "t": "19:10",
+     "sec": 1150,
+     "title": "Data Exploration: Key Metrics"
+    },
+    {
+     "t": "28:53",
+     "sec": 1733,
+     "title": "Time Series Data Visualization"
+    },
+    {
+     "t": "36:59",
+     "sec": 2219,
+     "title": "Data Manipulation for Forecasting"
+    },
+    {
+     "t": "41:56",
+     "sec": 2516,
+     "title": "Time Series: Seasonal Decomposition"
+    },
+    {
+     "t": "51:12",
+     "sec": 3072,
+     "title": "Visualizing Seasonal Patterns"
+    },
+    {
+     "t": "1:00:03",
+     "sec": 3603,
+     "title": "Analyzing Seasonal Components"
+    },
+    {
+     "t": "1:13:14",
+     "sec": 4394,
+     "title": "Autocorrelation in Time Series"
+    },
+    {
+     "t": "1:20:11",
+     "sec": 4811,
+     "title": "Partial Autocorrelation (PACF)"
+    },
+    {
+     "t": "1:27:52",
+     "sec": 5272,
+     "title": "Building a Useful Code Script"
+    },
+    {
+     "t": "1:31:53",
+     "sec": 5513,
+     "title": "Stock Price Prediction"
+    },
+    {
+     "t": "1:36:51",
+     "sec": 5811,
+     "title": "Learning from Forecast Flops"
+    },
+    {
+     "t": "1:41:56",
+     "sec": 6116,
+     "title": "Introduction to Exponential Smoothing"
+    },
+    {
+     "t": "1:44:30",
+     "sec": 6270,
+     "title": "Case Study: Customer Complaints"
+    },
+    {
+     "t": "1:47:58",
+     "sec": 6478,
+     "title": "Simple Exponential Smoothing"
+    },
+    {
+     "t": "2:26:56",
+     "sec": 8816,
+     "title": "Double Exponential Smoothing"
+    },
+    {
+     "t": "2:41:29",
+     "sec": 9689,
+     "title": "Triple Exponential Smoothing (Holt-Winters)"
+    },
+    {
+     "t": "2:45:44",
+     "sec": 9944,
+     "title": "Model Evaluation: Error Metrics"
+    },
+    {
+     "t": "3:03:12",
+     "sec": 10992,
+     "title": "Forecasting the Future"
+    },
+    {
+     "t": "3:09:41",
+     "sec": 11381,
+     "title": "Holt-Winters with Daily Data"
+    },
+    {
+     "t": "3:21:11",
+     "sec": 12071,
+     "title": "Holt-Winters: Pros and Cons"
+    },
+    {
+     "t": "3:26:08",
+     "sec": 12368,
+     "title": "Capstone Project Introduction"
+    },
+    {
+     "t": "3:30:00",
+     "sec": 12600,
+     "title": "Capstone Project Implementation"
+    },
+    {
+     "t": "3:53:03",
+     "sec": 13983,
+     "title": "Introduction to ARIMA Models"
+    },
+    {
+     "t": "4:16:03",
+     "sec": 15363,
+     "title": "Understanding Auto-Regressive (AR)"
+    },
+    {
+     "t": "4:20:43",
+     "sec": 15643,
+     "title": "Stationarity and Integration (I)"
+    },
+    {
+     "t": "4:25:56",
+     "sec": 15956,
+     "title": "Augmented Dickey-Fuller Test"
+    },
+    {
+     "t": "4:33:54",
+     "sec": 16434,
+     "title": "Moving Average (MA) Component"
+    },
+    {
+     "t": "4:36:41",
+     "sec": 16601,
+     "title": "Implementing the ARIMA Model"
+    },
+    {
+     "t": "4:53:03",
+     "sec": 17583,
+     "title": "Introduction to SARIMA"
+    },
+    {
+     "t": "5:06:32",
+     "sec": 18392,
+     "title": "Introduction to SARIMAX Models"
+    },
+    {
+     "t": "5:16:36",
+     "sec": 18996,
+     "title": "Cross-Validation for Time Series"
+    },
+    {
+     "t": "5:33:04",
+     "sec": 19984,
+     "title": "Parameter Tuning for Time Series"
+    },
+    {
+     "t": "6:13:41",
+     "sec": 22421,
+     "title": "SARIMAX Model"
+    },
+    {
+     "t": "6:13:47",
+     "sec": 22427,
+     "title": "Free eBooks, prompt engineering"
+    }
+   ]
+  },
+  "ed-custprofit": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "dO45fx-Ll2Q",
+   "title": "Customer Profitability Analysis (Activity Based Costing)",
+   "channel": "Edspira",
+   "durationSec": 606,
+   "published": "2018-09-18",
+   "embeddable": true,
+   "chapters": []
+  },
+  "sj-errors": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "jYbNq6QAQNI",
+   "title": "Error Handling (How to create Custom Error Handlers and Exceptions) - FastAPI Beyond CRUD (Part 16)",
+   "channel": "Ssali Jonathan",
+   "durationSec": 2054,
+   "published": "2024-07-03",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00:00",
+     "sec": 0,
+     "title": "Intro"
+    },
+    {
+     "t": "00:00:33",
+     "sec": 33,
+     "title": "Showing some added changes"
+    },
+    {
+     "t": "00:02:20",
+     "sec": 140,
+     "title": "Creating custom exceptions"
+    },
+    {
+     "t": "00:08:37",
+     "sec": 517,
+     "title": "Replacing existing exceptions with custom exceptions"
+    },
+    {
+     "t": "00:16:48",
+     "sec": 1008,
+     "title": "Create exception handlers for custom exceptions"
+    },
+    {
+     "t": "00:27:59",
+     "sec": 1679,
+     "title": "Testing the error handling"
+    },
+    {
+     "t": "00:30:09",
+     "sec": 1809,
+     "title": "CustomIzing existing errors"
+    },
+    {
+     "t": "00:33:27",
+     "sec": 2007,
+     "title": "Conclusion"
+    }
+   ]
+  },
+  "jk-assert": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "jpY8ECnAosU",
+   "title": "Promptfoo Assertions Overview",
+   "channel": "Jason Koo",
+   "durationSec": 483,
+   "published": "2025-04-21",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "00:20",
+     "sec": 20,
+     "title": "Deterministic"
+    },
+    {
+     "t": "00:38",
+     "sec": 38,
+     "title": "Model assisted"
+    },
+    {
+     "t": "01:28",
+     "sec": 88,
+     "title": "Anatomy of promptfoo asserts"
+    },
+    {
+     "t": "04:05",
+     "sec": 245,
+     "title": "Running an example"
+    },
+    {
+     "t": "04:33",
+     "sec": 273,
+     "title": "Weighted metrics"
+    },
+    {
+     "t": "05:10",
+     "sec": 310,
+     "title": "Model assisted examples"
+    },
+    {
+     "t": "06:12",
+     "sec": 372,
+     "title": "Note on templates"
+    },
+    {
+     "t": "06:28",
+     "sec": 388,
+     "title": "Named metrics"
+    },
+    {
+     "t": "06:38",
+     "sec": 398,
+     "title": "Derived Metrics"
+    },
+    {
+     "t": "07:13",
+     "sec": 433,
+     "title": "Moderation"
+    },
+    {
+     "t": "07:29",
+     "sec": 449,
+     "title": "Guardrails"
+    },
+    {
+     "t": "07:45",
+     "sec": 465,
+     "title": "Wrap up"
+    }
+   ]
+  },
+  "pl-httpx": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "qAh5dDODJ5k",
+   "title": "HTTPX Tutorial - A next-generation HTTP client for Python",
+   "channel": "Patrick Loeber",
+   "durationSec": 661,
+   "published": "2022-07-28",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "00:47",
+     "sec": 47,
+     "title": "Installation & Features"
+    },
+    {
+     "t": "02:25",
+     "sec": 145,
+     "title": "Basic Usage"
+    },
+    {
+     "t": "03:55",
+     "sec": 235,
+     "title": "Advanced Usage with Client"
+    },
+    {
+     "t": "05:27",
+     "sec": 327,
+     "title": "Async API"
+    },
+    {
+     "t": "06:20",
+     "sec": 380,
+     "title": "Web App Testing"
+    },
+    {
+     "t": "07:33",
+     "sec": 453,
+     "title": "Speed Tests"
+    }
+   ]
+  },
+  "ae-apiauth": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "2zYJMI_OPIY",
+   "title": "Rest API Authentication with Python.",
+   "channel": "Automation Experts",
+   "durationSec": 1155,
+   "published": "2018-03-13",
+   "embeddable": true,
+   "chapters": []
+  },
+  "wc-pgdump": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "WB6WzuFHcP8",
+   "title": "Backing Up a Postgres Database with pg_dump and pg_restore",
+   "channel": "WittCode",
+   "durationSec": 396,
+   "published": "2024-04-23",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "0:08",
+     "sec": 8,
+     "title": "What is a Database Backup?"
+    },
+    {
+     "t": "0:34",
+     "sec": 34,
+     "title": "pg_dump"
+    },
+    {
+     "t": "2:09",
+     "sec": 129,
+     "title": "Backing Up Specific Tables with pg_dump"
+    },
+    {
+     "t": "2:54",
+     "sec": 174,
+     "title": "pg_dump File Formats"
+    },
+    {
+     "t": "3:50",
+     "sec": 230,
+     "title": "pg_restore"
+    },
+    {
+     "t": "4:20",
+     "sec": 260,
+     "title": "Messing Up a Database"
+    },
+    {
+     "t": "4:45",
+     "sec": 285,
+     "title": "Restoring a Database with pg_restore"
+    },
+    {
+     "t": "6:06",
+     "sec": 366,
+     "title": "Outro"
+    }
+   ]
+  },
+  "tp-pgvol": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "oUbal7sUduo",
+   "title": "How to backup a Docker Volume for an existing Postgres SQL database running as a Docker Container",
+   "channel": "TPPZ builds things",
+   "durationSec": 1246,
+   "published": "2021-11-03",
+   "embeddable": true,
+   "chapters": []
+  },
+  "mg-env": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "5XfgT9A9PHw",
+   "title": "GitHub Actions -  Getting Started With Environments",
+   "channel": "Mickey Gousset",
+   "durationSec": 744,
+   "published": "2021-02-19",
+   "embeddable": true,
+   "chapters": []
+  },
+  "am-env": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "EOlm3ft0VPo",
+   "title": "Deploying to Environments with GitHub Actions (#212)",
+   "channel": "Asp.Net Monsters",
+   "durationSec": 867,
+   "published": "2021-05-31",
+   "embeddable": true,
+   "chapters": []
+  },
+  "av-pillars": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "6YCrvZRFfmA",
+   "title": "12. Metrics, Logs & Traces (Observability Explained)",
+   "channel": "Arpit Vaish",
+   "durationSec": 372,
+   "published": "2026-09-12",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Real-life analogy: the doctor"
+    },
+    {
+     "t": "0:39",
+     "sec": 39,
+     "title": "Your system is exactly the same"
+    },
+    {
+     "t": "0:58",
+     "sec": 58,
+     "title": "What observability means"
+    },
+    {
+     "t": "1:07",
+     "sec": 67,
+     "title": "One click, ten services"
+    },
+    {
+     "t": "1:36",
+     "sec": 96,
+     "title": "The three pillars"
+    },
+    {
+     "t": "1:44",
+     "sec": 104,
+     "title": "Metrics — the vitals"
+    },
+    {
+     "t": "2:19",
+     "sec": 139,
+     "title": "Alerts: the smoke alarm"
+    },
+    {
+     "t": "2:25",
+     "sec": 145,
+     "title": "What a metric cannot tell you"
+    },
+    {
+     "t": "2:38",
+     "sec": 158,
+     "title": "Logs — the diary"
+    },
+    {
+     "t": "3:13",
+     "sec": 193,
+     "title": "The catch: log volume"
+    },
+    {
+     "t": "3:33",
+     "sec": 213,
+     "title": "Traces — following the path"
+    },
+    {
+     "t": "4:14",
+     "sec": 254,
+     "title": "Traces answer WHERE"
+    },
+    {
+     "t": "4:34",
+     "sec": 274,
+     "title": "A 3 AM example"
+    },
+    {
+     "t": "5:16",
+     "sec": 316,
+     "title": "The one thing to remember"
+    },
+    {
+     "t": "5:36",
+     "sec": 336,
+     "title": "Recap"
+    },
+    {
+     "t": "5:55",
+     "sec": 355,
+     "title": "Next: communication"
+    }
+   ]
+  },
+  "oo-pillars": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "rJfZyA831fI",
+   "title": "Observability and Its Pillars Explained | Logs, Metrics & Traces Simplified",
+   "channel": "OpenObserve",
+   "durationSec": 364,
+   "published": "2025-10-31",
+   "embeddable": true,
+   "chapters": []
+  },
+  "mj-rate": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "COQNpbNGFJU",
+   "title": "Rate Limiting Explained: Token Bucket vs Sliding Window | System Design By Microsoft SWE",
+   "channel": "Mayank Joshi",
+   "durationSec": 886,
+   "published": "2025-12-21",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Rate Limiter"
+    },
+    {
+     "t": "02:52",
+     "sec": 172,
+     "title": "Leaky Bucket Algorithm"
+    },
+    {
+     "t": "06:06",
+     "sec": 366,
+     "title": "Token Bucket Algorithm"
+    },
+    {
+     "t": "08:34",
+     "sec": 514,
+     "title": "Sliding Window Algorithm"
+    }
+   ]
+  },
+  "cl-rate": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "8GaI0HCOkUE",
+   "title": "Rate Limiting in Distributed Systems: Token Bucket & Leaky Bucket Algorithms Explained",
+   "channel": "CodeLucky",
+   "durationSec": 380,
+   "published": "2025-12-13",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Rate Limiting in Distributed Systems"
+    },
+    {
+     "t": "00:25",
+     "sec": 25,
+     "title": "Why Rate Limiting?"
+    },
+    {
+     "t": "01:03",
+     "sec": 63,
+     "title": "Challenges in Distributed Systems"
+    },
+    {
+     "t": "01:45",
+     "sec": 105,
+     "title": "Token Bucket Algorithm"
+    },
+    {
+     "t": "02:28",
+     "sec": 148,
+     "title": "Token Bucket Implementation"
+    },
+    {
+     "t": "03:07",
+     "sec": 187,
+     "title": "Leaky Bucket Algorithm"
+    },
+    {
+     "t": "03:47",
+     "sec": 227,
+     "title": "Token Bucket vs Leaky Bucket"
+    },
+    {
+     "t": "04:31",
+     "sec": 271,
+     "title": "Distributed Rate Limiting Strategies"
+    },
+    {
+     "t": "05:21",
+     "sec": 321,
+     "title": "Key Takeaways"
+    },
+    {
+     "t": "06:05",
+     "sec": 365,
+     "title": "Outro"
+    }
+   ]
+  },
+  "uva-req": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "pSQRetBoaRE",
+   "title": "Requirements Elicitation",
+   "channel": "UVA CS 3240",
+   "durationSec": 1416,
+   "published": "2020-09-09",
+   "embeddable": true,
+   "chapters": []
+  },
+  "ws-req": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "t1EW7F_TU_U",
+   "title": "Requirements Gathering & Analysis in Software Development Life Cycle (SDLC) | Free Tutorial 2021",
+   "channel": "Woodsy Spark Insights",
+   "durationSec": 533,
+   "published": "2020-12-29",
+   "embeddable": true,
+   "chapters": []
+  },
+  "wf-stake": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "rgE2qkvUJGs",
+   "title": "Stakeholders & Requirement Gathering Basics | Business Analyst Beginner Guide",
+   "channel": "Wise Flame",
+   "durationSec": 328,
+   "published": "2025-11-26",
+   "embeddable": true,
+   "chapters": []
+  },
+  "ba-req": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "uAHeTzmc_2g",
+   "title": "How to Gather Requirements as a Business Analyst | Requirement Gathering Techniques",
+   "channel": "The Business Analysis Doctor - IIBA Certification",
+   "durationSec": 523,
+   "published": "2020-02-10",
+   "embeddable": true,
+   "chapters": []
+  },
+  "ac-coupling": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "eiDyK_ofPPM",
+   "title": "Cohesion and Coupling: Write BETTER PYTHON CODE Part 1",
+   "channel": "ArjanCodes",
+   "durationSec": 1574,
+   "published": "2021-01-22",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "0:47",
+     "sec": 47,
+     "title": "What is cohesion?"
+    },
+    {
+     "t": "1:37",
+     "sec": 97,
+     "title": "What is coupling?"
+    },
+    {
+     "t": "3:59",
+     "sec": 239,
+     "title": "Code example intro"
+    },
+    {
+     "t": "6:39",
+     "sec": 399,
+     "title": "Analyzing the code"
+    },
+    {
+     "t": "7:56",
+     "sec": 476,
+     "title": "Information expert"
+    },
+    {
+     "t": "11:19",
+     "sec": 679,
+     "title": "Reducing coupling"
+    },
+    {
+     "t": "16:32",
+     "sec": 992,
+     "title": "Improving cohesion"
+    },
+    {
+     "t": "22:40",
+     "sec": 1360,
+     "title": "Recap"
+    },
+    {
+     "t": "25:37",
+     "sec": 1537,
+     "title": "Outro"
+    }
+   ]
+  },
+  "ac-coupling2": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "MM9VQp-k0JQ",
+   "title": "Coupling 101: Design Choices That Make or Break Your Code",
+   "channel": "ArjanCodes",
+   "durationSec": 1239,
+   "published": "2025-04-04",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "Intro"
+    },
+    {
+     "t": "0:29",
+     "sec": 29,
+     "title": "Global Coupling"
+    },
+    {
+     "t": "7:49",
+     "sec": 469,
+     "title": "Content Coupling"
+    },
+    {
+     "t": "13:35",
+     "sec": 815,
+     "title": "Stamp Coupling"
+    },
+    {
+     "t": "19:50",
+     "sec": 1190,
+     "title": "Final Thoughts"
+    },
+    {
+     "t": "20:12",
+     "sec": 1212,
+     "title": "Outro"
+    }
+   ]
+  },
+  "bm-api": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "pJ83mmqcvoQ",
+   "title": "9 Must-Know REST API Design Principles for Developers",
+   "channel": "ByteMonk",
+   "durationSec": 600,
+   "published": "2025-01-18",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Introduction – REST APIs: Lightweight, Scalable, and Easy to Use"
+    },
+    {
+     "t": "00:22",
+     "sec": 22,
+     "title": "HTTP Methods – Correct Usage for Actions Like GET, POST, PUT, PATCH, DELETE"
+    },
+    {
+     "t": "01:10",
+     "sec": 70,
+     "title": "Resource Design – Using Nouns and Hierarchical URIs Effectively"
+    },
+    {
+     "t": "02:30",
+     "sec": 150,
+     "title": "HTTP Status Codes – Communicating Outcomes with Standards"
+    },
+    {
+     "t": "03:35",
+     "sec": 215,
+     "title": "Error Handling – Descriptive and Consistent Responses in Spring"
+    },
+    {
+     "t": "04:17",
+     "sec": 257,
+     "title": "Validation – Using Hibernate Validator for Clean Input"
+    },
+    {
+     "t": "05:02",
+     "sec": 302,
+     "title": "API Versioning – URI vs Header Versioning for Backward Compatibility"
+    },
+    {
+     "t": "06:20",
+     "sec": 380,
+     "title": "Pagination, Filtering, Sorting – Managing Large Data Sets Efficiently"
+    },
+    {
+     "t": "7:45",
+     "sec": 465,
+     "title": "HATEOAS – Enhancing Discoverability with Hypermedia Links"
+    },
+    {
+     "t": "9:08",
+     "sec": 548,
+     "title": "Security –HTTPS, Authentication, and Authorization"
+    }
+   ]
+  },
+  "sdl-api": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "BvtIqaiabJA",
+   "title": "REST API Design Like a Senior Engineer (REST, GraphQL, Networking, Pagination, Auth, Security)",
+   "channel": "System Design Lab",
+   "durationSec": 8672,
+   "published": "2026-11-02",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Why REST API design matters"
+    },
+    {
+     "t": "00:46",
+     "sec": 46,
+     "title": "Bad API design vs a senior engineer's API"
+    },
+    {
+     "t": "02:27",
+     "sec": 147,
+     "title": "What is an API?"
+    },
+    {
+     "t": "03:53",
+     "sec": 233,
+     "title": "Anatomy of a URL"
+    },
+    {
+     "t": "05:24",
+     "sec": 324,
+     "title": "DNS, IP address and port"
+    },
+    {
+     "t": "07:11",
+     "sec": 431,
+     "title": "TCP handshake, ACKs and resends"
+    },
+    {
+     "t": "09:38",
+     "sec": 578,
+     "title": "UDP vs TCP, and why HTTP/3 uses QUIC"
+    },
+    {
+     "t": "10:56",
+     "sec": 656,
+     "title": "HTTP vs HTTPS and TLS"
+    },
+    {
+     "t": "12:37",
+     "sec": 757,
+     "title": "Anatomy of an HTTP request"
+    },
+    {
+     "t": "13:50",
+     "sec": 830,
+     "title": "HTTP response and JSON, hands-on"
+    },
+    {
+     "t": "15:54",
+     "sec": 954,
+     "title": "Why REST APIs are stateless"
+    },
+    {
+     "t": "16:40",
+     "sec": 1000,
+     "title": "What makes an API RESTful"
+    },
+    {
+     "t": "19:32",
+     "sec": 1172,
+     "title": "From app screens to entities and relationships"
+    },
+    {
+     "t": "23:20",
+     "sec": 1400,
+     "title": "CRUD: verbs become actions"
+    },
+    {
+     "t": "24:15",
+     "sec": 1455,
+     "title": "Resource naming and nested URLs"
+    },
+    {
+     "t": "26:58",
+     "sec": 1618,
+     "title": "Actions as resources, and the resource map"
+    },
+    {
+     "t": "28:52",
+     "sec": 1732,
+     "title": "HTTP methods: GET, POST, PUT, PATCH, DELETE"
+    },
+    {
+     "t": "29:39",
+     "sec": 1779,
+     "title": "HTTP status codes explained"
+    },
+    {
+     "t": "32:29",
+     "sec": 1949,
+     "title": "2xx codes: 200, 201, 202, 204"
+    },
+    {
+     "t": "33:17",
+     "sec": 1997,
+     "title": "Query parameters: filtering and sorting"
+    },
+    {
+     "t": "35:06",
+     "sec": 2106,
+     "title": "POST, 201 Created, path vs query vs body"
+    },
+    {
+     "t": "37:48",
+     "sec": 2268,
+     "title": "Validation errors: 400, 413, 415, 422"
+    },
+    {
+     "t": "39:07",
+     "sec": 2347,
+     "title": "File uploads: signed URLs, resumable uploads"
+    },
+    {
+     "t": "40:53",
+     "sec": 2453,
+     "title": "Long-running jobs: 202 Accepted"
+    },
+    {
+     "t": "42:17",
+     "sec": 2537,
+     "title": "PUT vs PATCH"
+    },
+    {
+     "t": "43:51",
+     "sec": 2631,
+     "title": "DELETE, 204, and 404 vs 410"
+    },
+    {
+     "t": "44:38",
+     "sec": 2678,
+     "title": "Redirects: 301, 302, 307, 308"
+    },
+    {
+     "t": "45:38",
+     "sec": 2738,
+     "title": "HTTP caching: ETag and 304 Not Modified"
+    },
+    {
+     "t": "47:30",
+     "sec": 2850,
+     "title": "Safe and idempotent HTTP methods"
+    },
+    {
+     "t": "49:44",
+     "sec": 2984,
+     "title": "POST /search and the QUERY method"
+    },
+    {
+     "t": "51:14",
+     "sec": 3074,
+     "title": "Nested resources, HEAD and the full method list"
+    },
+    {
+     "t": "53:12",
+     "sec": 3192,
+     "title": "4xx errors: 401 vs 403, 405, 409, 429"
+    },
+    {
+     "t": "54:32",
+     "sec": 3272,
+     "title": "5xx errors: 500, 502, 503, 504 and retries"
+    },
+    {
+     "t": "56:35",
+     "sec": 3395,
+     "title": "What each HTTP method should return"
+    },
+    {
+     "t": "57:58",
+     "sec": 3478,
+     "title": "Consumer-first API design"
+    },
+    {
+     "t": "59:22",
+     "sec": 3562,
+     "title": "Related data: embedding and field selection"
+    },
+    {
+     "t": "1:01:23",
+     "sec": 3683,
+     "title": "API naming conventions"
+    },
+    {
+     "t": "1:02:45",
+     "sec": 3765,
+     "title": "API error handling"
+    },
+    {
+     "t": "1:04:10",
+     "sec": 3850,
+     "title": "Offset and page-number pagination"
+    },
+    {
+     "t": "1:07:16",
+     "sec": 4036,
+     "title": "Cursor and keyset pagination, since="
+    },
+    {
+     "t": "1:11:21",
+     "sec": 4281,
+     "title": "Choosing a pagination strategy"
+    },
+    {
+     "t": "1:12:59",
+     "sec": 4379,
+     "title": "Idempotency: the duplicate request problem"
+    },
+    {
+     "t": "1:13:52",
+     "sec": 4432,
+     "title": "Idempotency keys and idempotent design"
+    },
+    {
+     "t": "1:17:14",
+     "sec": 4634,
+     "title": "Lost updates: ETag and If-Match"
+    },
+    {
+     "t": "1:18:43",
+     "sec": 4723,
+     "title": "Webhooks done right"
+    },
+    {
+     "t": "1:20:37",
+     "sec": 4837,
+     "title": "Controller, service, repository layers"
+    },
+    {
+     "t": "1:23:05",
+     "sec": 4985,
+     "title": "Business logic vs the database model"
+    },
+    {
+     "t": "1:26:22",
+     "sec": 5182,
+     "title": "Errors across layers, where a change lands"
+    },
+    {
+     "t": "1:30:12",
+     "sec": 5412,
+     "title": "API versioning: why we need it"
+    },
+    {
+     "t": "1:31:30",
+     "sec": 5490,
+     "title": "Breaking changes and expand-contract"
+    },
+    {
+     "t": "1:33:57",
+     "sec": 5637,
+     "title": "API versioning strategies: path, header, query"
+    },
+    {
+     "t": "1:37:12",
+     "sec": 5832,
+     "title": "Migrating v1 to v2: deprecate and sunset"
+    },
+    {
+     "t": "1:40:22",
+     "sec": 6022,
+     "title": "Authentication vs authorization"
+    },
+    {
+     "t": "1:42:36",
+     "sec": 6156,
+     "title": "Basic auth and API keys"
+    },
+    {
+     "t": "1:44:03",
+     "sec": 6243,
+     "title": "Login and password hashing"
+    },
+    {
+     "t": "1:45:25",
+     "sec": 6325,
+     "title": "Sessions and cookies"
+    },
+    {
+     "t": "1:46:24",
+     "sec": 6384,
+     "title": "JWT explained: claims and signing keys"
+    },
+    {
+     "t": "1:49:54",
+     "sec": 6594,
+     "title": "Access tokens vs refresh tokens"
+    },
+    {
+     "t": "1:50:49",
+     "sec": 6649,
+     "title": "OAuth 2.0 explained"
+    },
+    {
+     "t": "1:52:40",
+     "sec": 6760,
+     "title": "OpenID Connect, SSO and which login to use"
+    },
+    {
+     "t": "1:54:30",
+     "sec": 6870,
+     "title": "RBAC vs ABAC vs ACL"
+    },
+    {
+     "t": "1:56:34",
+     "sec": 6994,
+     "title": "BOLA and mass assignment"
+    },
+    {
+     "t": "1:59:22",
+     "sec": 7162,
+     "title": "Rate limiting"
+    },
+    {
+     "t": "2:00:29",
+     "sec": 7229,
+     "title": "CORS, preflight requests and CSRF"
+    },
+    {
+     "t": "2:02:54",
+     "sec": 7374,
+     "title": "SQL injection and XSS: input validation"
+    },
+    {
+     "t": "2:04:08",
+     "sec": 7448,
+     "title": "REST API security checklist"
+    },
+    {
+     "t": "2:05:15",
+     "sec": 7515,
+     "title": "API documentation and OpenAPI (Swagger)"
+    },
+    {
+     "t": "2:06:24",
+     "sec": 7584,
+     "title": "OpenAPI file, schemas, design-first vs code-first"
+    },
+    {
+     "t": "2:11:58",
+     "sec": 7918,
+     "title": "REST vs GraphQL: over-fetching and schema"
+    },
+    {
+     "t": "2:14:19",
+     "sec": 8059,
+     "title": "GraphQL queries and mutations"
+    },
+    {
+     "t": "2:16:53",
+     "sec": 8213,
+     "title": "GraphQL resolvers and the N+1 problem"
+    },
+    {
+     "t": "2:18:41",
+     "sec": 8321,
+     "title": "GraphQL trade-offs"
+    },
+    {
+     "t": "2:20:21",
+     "sec": 8421,
+     "title": "gRPC explained"
+    },
+    {
+     "t": "2:21:47",
+     "sec": 8507,
+     "title": "REST vs GraphQL vs gRPC: which to use"
+    },
+    {
+     "t": "2:22:27",
+     "sec": 8547,
+     "title": "Recap: REST API design rules"
+    }
+   ]
+  },
+  "sj-bg": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "eAHAKowv6hk",
+   "title": "Background Tasks with FastAPI Background Tasks and Celery + Redis - FastAPI Beyond CRUD (Part 20)",
+   "channel": "Ssali Jonathan",
+   "durationSec": 2701,
+   "published": "2024-07-24",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "00:01:53",
+     "sec": 113,
+     "title": "FastAPI Background Tasks"
+    },
+    {
+     "t": "00:05:06",
+     "sec": 306,
+     "title": "Installing Celery"
+    },
+    {
+     "t": "00:06:04",
+     "sec": 364,
+     "title": "Explaining Celery Concepts"
+    },
+    {
+     "t": "00:07:28",
+     "sec": 448,
+     "title": "Configuring Celery"
+    },
+    {
+     "t": "00:11:18",
+     "sec": 678,
+     "title": "Creating the first Celery task"
+    },
+    {
+     "t": "00:18:58",
+     "sec": 1138,
+     "title": "Using Celery Tasks"
+    },
+    {
+     "t": "00:22:35",
+     "sec": 1355,
+     "title": "Running a Celery worker"
+    },
+    {
+     "t": "00:22:35",
+     "sec": 1355,
+     "title": "Running Celery workers"
+    },
+    {
+     "t": "00:34:43",
+     "sec": 2083,
+     "title": "Monitor Tasks with Flower"
+    },
+    {
+     "t": "00:43:14",
+     "sec": 2594,
+     "title": "Conclusion"
+    }
+   ]
+  },
+  "av-bg": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "31pLwWmsu3w",
+   "title": "FastAPI BackgroundTasks vs. Celery: Which One to Choose?",
+   "channel": "Analytics Vidhya",
+   "durationSec": 259,
+   "published": "2026-05-22",
+   "embeddable": true,
+   "chapters": []
+  },
+  "dg-mdm": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "_6qLg1XuvYI",
+   "title": "What is Master Data Management? MDM Explained for Beginners",
+   "channel": "The Data and AI Guy",
+   "durationSec": 841,
+   "published": "2026-10-05",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "0:00",
+     "sec": 0,
+     "title": "One customer, three records: which is true?"
+    },
+    {
+     "t": "0:55",
+     "sec": 55,
+     "title": "What master data management means"
+    },
+    {
+     "t": "1:29",
+     "sec": 89,
+     "title": "Master data vs transactional data"
+    },
+    {
+     "t": "2:34",
+     "sec": 154,
+     "title": "How nine records end up as four people"
+    },
+    {
+     "t": "3:44",
+     "sec": 224,
+     "title": "Move 1: deterministic and probabilistic matching"
+    },
+    {
+     "t": "5:18",
+     "sec": 318,
+     "title": "Learned match weights and blocking"
+    },
+    {
+     "t": "5:59",
+     "sec": 359,
+     "title": "Move 2: survivorship and the golden record"
+    },
+    {
+     "t": "7:35",
+     "sec": 455,
+     "title": "Move 3: the cross-reference table"
+    },
+    {
+     "t": "8:07",
+     "sec": 487,
+     "title": "The four MDM implementation styles"
+    },
+    {
+     "t": "9:31",
+     "sec": 571,
+     "title": "Worked example: nine records to four"
+    },
+    {
+     "t": "10:54",
+     "sec": 654,
+     "title": "MDM in the wild: suites vs MDM lite"
+    },
+    {
+     "t": "11:50",
+     "sec": 710,
+     "title": "Four common MDM misconceptions"
+    },
+    {
+     "t": "12:52",
+     "sec": 772,
+     "title": "Recap and limits"
+    }
+   ]
+  },
+  "js-rbac": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "qFoHDTxkQII",
+   "title": "Azure Role-Based Access Control Deep Dive",
+   "channel": "John Savill's Technical Training",
+   "durationSec": 2081,
+   "published": "2020-05-14",
+   "embeddable": true,
+   "chapters": []
+  },
+  "bb-rbac": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "1kSur3me2jU",
+   "title": "Azure RBAC Tutorial: Roles, Scope & Access Control Explained (2026)",
+   "channel": "Bits&Breach",
+   "durationSec": 911,
+   "published": "2026-09-10",
+   "embeddable": true,
+   "chapters": []
+  },
+  "pc-tenant": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "9Nayh0FPv0A",
+   "title": "Designing Scalable Multi-Tenant Architectures with PostgreSQL for SaaS Solutions",
+   "channel": "Postgres Conference",
+   "durationSec": 2460,
+   "published": "2026-06-14",
+   "embeddable": true,
+   "chapters": []
+  },
+  "ipc-rls": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "DabJ0hxiXAo",
+   "title": "PostgreSQL RLS for Safer Multi-Tenant SaaS",
+   "channel": "International PHP Conference",
+   "durationSec": 489,
+   "published": "2026-09-14",
+   "embeddable": true,
+   "chapters": []
+  },
+  "js-encrypt": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "EOXgzTqceok",
+   "title": "Azure Storage and Disk Encryption Deep Dive",
+   "channel": "John Savill's Technical Training",
+   "durationSec": 2094,
+   "published": "2021-02-04",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "Introduction"
+    },
+    {
+     "t": "00:10",
+     "sec": 10,
+     "title": "John talking gibberish"
+    },
+    {
+     "t": "00:30",
+     "sec": 30,
+     "title": "Azure Storage account encryption"
+    },
+    {
+     "t": "02:25",
+     "sec": 145,
+     "title": "How data is encrypted"
+    },
+    {
+     "t": "04:20",
+     "sec": 260,
+     "title": "Customer managed key"
+    },
+    {
+     "t": "07:40",
+     "sec": 460,
+     "title": "Double encryption"
+    },
+    {
+     "t": "10:50",
+     "sec": 650,
+     "title": "Encryption scopes"
+    },
+    {
+     "t": "15:25",
+     "sec": 925,
+     "title": "Disk introduction"
+    },
+    {
+     "t": "16:38",
+     "sec": 998,
+     "title": "Default disk encryption"
+    },
+    {
+     "t": "17:25",
+     "sec": 1045,
+     "title": "CMK with disk encryption sets"
+    },
+    {
+     "t": "21:28",
+     "sec": 1288,
+     "title": "Azure Disk Encryption inside the OS"
+    },
+    {
+     "t": "25:30",
+     "sec": 1530,
+     "title": "ADE and DES don't mix"
+    },
+    {
+     "t": "26:55",
+     "sec": 1615,
+     "title": "Host-based encryption"
+    },
+    {
+     "t": "33:00",
+     "sec": 1980,
+     "title": "Key rotation"
+    },
+    {
+     "t": "33:43",
+     "sec": 2023,
+     "title": "Close"
+    }
+   ]
+  },
+  "mr-llmops": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "K2gknZ2ubW4",
+   "title": "DevOps in the era of generative AI: foundations of LLMOps",
+   "channel": "Microsoft Reactor",
+   "durationSec": 2264,
+   "published": "2024-06-20",
+   "embeddable": true,
+   "chapters": []
+  },
+  "ef-owner": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "aW3r_eGXLnI",
+   "title": "You Build It, You Run It: The Preferred Ownership Model for Engineering Teams | Dan Bennett |",
+   "channel": "Eficode",
+   "durationSec": 2479,
+   "published": "2023-03-31",
+   "embeddable": true,
+   "chapters": []
+  },
+  "yb-owner": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "-5rPZmMp7qE",
+   "title": "What is You Build It You Run It?",
+   "channel": "You Build It You Run It - Bethan Timmins",
+   "durationSec": 287,
+   "published": "2023-10-15",
+   "embeddable": true,
+   "chapters": []
+  },
+  "sv-support": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "CirUgMfkwKk",
+   "title": "Production Support L1 L2 L3 Explained | Real-Time Roles & Daily Tasks 🔥| L2 Support Daily Routine",
+   "channel": "Sai Vinod Irala",
+   "durationSec": 1368,
+   "published": "2026-04-11",
+   "embeddable": true,
+   "chapters": []
+  },
+  "fx-tco": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "5HscS50lt_s",
+   "title": "Cloud Total Cost of Ownership | How to Understand Your Cloud Total Cost of Ownership TCO | Flexera",
+   "channel": "Flexera | ITAM, FinOps & SaaS Management",
+   "durationSec": 446,
+   "published": "2025-07-02",
+   "embeddable": true,
+   "chapters": [
+    {
+     "t": "00:00",
+     "sec": 0,
+     "title": "introduction"
+    },
+    {
+     "t": "00:19",
+     "sec": 19,
+     "title": "what cloud total cost of ownership means"
+    },
+    {
+     "t": "00:44",
+     "sec": 44,
+     "title": "direct and indirect costs included in cloud TCO"
+    },
+    {
+     "t": "01:20",
+     "sec": 80,
+     "title": "navigating Cloud Cost Optimisation views"
+    },
+    {
+     "t": "01:33",
+     "sec": 93,
+     "title": "analysing TCO using tabular views"
+    },
+    {
+     "t": "04:04",
+     "sec": 244,
+     "title": "visualising cloud TCO with dashboards"
+    },
+    {
+     "t": "06:32",
+     "sec": 392,
+     "title": "key considerations for accurate TCO reporting"
+    }
+   ]
+  },
+  "ct-tco": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "4Gnixbx_qMs",
+   "title": "Azure TCO Calculator Explained | Estimate Cloud Costs & Save Smart",
+   "channel": "Cloud360 Training",
+   "durationSec": 581,
+   "published": "2025-04-08",
+   "embeddable": true,
+   "chapters": []
+  },
+  "dg-roi": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "DYJqOe4RXxY",
+   "title": "How to Calculate AI ROI Before You Invest",
+   "channel": "DigitSense",
+   "durationSec": 362,
+   "published": "2026-02-18",
+   "embeddable": true,
+   "chapters": []
+  },
+  "tn-roi": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "jeBJpbDL5q0",
+   "title": "How to Calculate ROI on AI Projects: A Framework for Enterprise Leaders",
+   "channel": "Technijian",
+   "durationSec": 101,
+   "published": "2026-03-05",
+   "embeddable": true,
+   "chapters": []
+  },
+  "ff-alloc": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "UbMjxagpZl4",
+   "title": "Cost Allocation Models and Chargeback",
+   "channel": "FinOps Foundation",
+   "durationSec": 2609,
+   "published": "2024-08-13",
+   "embeddable": true,
+   "chapters": []
+  },
+  "ms-alloc": {
+   "status": "verified",
+   "verifiedAt": "2026-11-07",
+   "id": "nYzIIs2mx9Q",
+   "title": "How to create a cost allocation rule with Azure Cost Management",
+   "channel": "Microsoft Cost Management",
+   "durationSec": 224,
+   "published": "2021-03-22",
+   "embeddable": true,
+   "chapters": []
   }
  }
 }

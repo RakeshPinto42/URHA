@@ -19,9 +19,9 @@ const pending = (reason: string): UnitVideo => ({ primary: null, pending: reason
 
 export const UNIT_VIDEOS: Record<string, Record<string, UnitVideo>> = {
   "python-foundations": {
-    "Python fundamentals where gaps exist": pending("No single overview chosen yet. The next subtopics already teach each part with Corey Schafer's series."),
-    "Reading error messages and tracebacks": pending("Search found no beginner lesson on this."),
-    "Writing code without an AI assistant": pending("A practice habit rather than a video subject."),
+    "Python fundamentals where gaps exist": v("fcc-python"),
+    "Reading error messages and tracebacks": v("pm-trace", "ds-trace"),
+    "Writing code without an AI assistant": pending("A practice habit, so the exercise teaches it rather than a video."),
   },
   "python-engineering": {
     "Environment variables": v("cs-env", "tc-env-win"),
@@ -39,23 +39,23 @@ export const UNIT_VIDEOS: Record<string, Record<string, UnitVideo>> = {
     "Merging and reshaping": v("at-pandas@52:12-1:13:29"),
     "Grouping and aggregation": v("at-pandas@41:33-52:12"),
     "Dates and period handling": v("cs-pandas-dates"),
-    "Pandas or SQL: choosing the right tool": pending("Search found no lesson that compares them for this decision."),
+    "Pandas or SQL: choosing the right tool": v("cc-pdsql", "fm-pdsql"),
   },
   "data-pipelines": {
     "Extract, load and transform": v("bw-dwh@9:41-20:29"),
     "Incremental loads": v("bi-incr", "al-dbx@3:58:42-4:05:56"),
     "Schema validation": v("cs-pydantic"),
     "Data quality rules": v("bi-gx"),
-    "Reconciliation checks": pending("No lesson found. Finance-specific, and likely to be taught through your own exercise."),
-    "Pipeline logging and reruns": pending("Not confirmed from any video's chapters."),
+    "Reconciliation checks": v("sr-recon", "etl-recon"),
+    "Pipeline logging and reruns": v("up-idem", "cl-pipe"),
   },
   "finance-data-modelling": {
     "Facts and dimensions": v("bw-pbi@14:50-18:45"),
     "Star schemas": v("bw-pbi@18:45-27:42", "bw-dwh@3:32:17-3:34:06"),
-    "Chart of accounts hierarchies": pending("Not yet searched for. Finance-specific."),
+    "Chart of accounts hierarchies": v("cor-coa-dax", "cor-coa-m"),
     "Slowly changing dimensions": v("ab-scd", "tc-scd"),
-    "Actuals, budget and forecast versions": pending("Not yet searched for. Finance-specific."),
-    "Currency and period conventions": pending("Not yet searched for. Finance-specific."),
+    "Actuals, budget and forecast versions": pending("Videos found show variance reporting, not how to model versions. Taught through your own exercise."),
+    "Currency and period conventions": v("ed-fx", "ds-fiscal"),
   },
   "databricks-pyspark": {
     "Distributed processing concepts": v("al-dbx@7:01-19:38"),
@@ -74,11 +74,11 @@ export const UNIT_VIDEOS: Record<string, Record<string, UnitVideo>> = {
     "Row-level security": v("bw-pbi@2:08:58-2:40:08"),
   },
   "fpa-analytics": {
-    "Variance analysis in code": pending("Search found finance explanations but no Python lesson."),
+    "Variance analysis in code": v("as-bva"),
     "Price, volume and mix": v("kb-pvm", "zb-pvm"),
-    "Forecasting methods": pending("Not confirmed. Search returned accuracy metrics, not methods."),
+    "Forecasting methods": v("fcc-forecast", "dh-forecast@1:41:56-2:45:44"),
     "Forecast accuracy": v("sp-err"),
-    "Customer profitability": pending("Search found margin dashboards, none on customer-level profitability."),
+    "Customer profitability": v("ed-custprofit"),
     "Margin analytics": v("kb-pvm-gm", "ed-margin"),
   },
   "llm-engineering": {
@@ -94,11 +94,11 @@ export const UNIT_VIDEOS: Record<string, Record<string, UnitVideo>> = {
   "prompt-engineering": {
     "Few-shot prompting": v("prompt101"),
     "Output constraints": v("pydantic-llm"),
-    Grounding: pending("No lesson confirmed. Taught in practice under Grounded generation."),
+    Grounding: pending("Two dedicated searches found no lesson on this. Taught in practice under Grounded generation."),
   },
   "api-essentials": {
     "HTTP fundamentals": v("fcc-api@57:34-1:07:29", "wc-http"),
-    "Error handling": pending("No section confirmed from chapters."),
+    "Error handling": v("sj-errors"),
   },
   "rag-architecture": { "Grounded generation": v("rag-scratch") },
   "agent-engineering": {
@@ -120,7 +120,7 @@ export const UNIT_VIDEOS: Record<string, Record<string, UnitVideo>> = {
     "Authentication and permission boundaries": v("ld-mcp@1:21:10-1:35:13", "fcc-mcpsec"),
   },
   observability: { LangSmith: v("jb-lsmith") },
-  "ai-evaluation": { "Deterministic evaluation": pending("The evals videos reviewed cover error analysis, not deterministic checks.") },
+  "ai-evaluation": { "Deterministic evaluation": v("jk-assert") },
   "backend-engineering": {
     "Dependency injection": v("fcc-api@7:13:23-7:25:21"),
     Webhooks: v("wh-intro"),
@@ -130,13 +130,13 @@ export const UNIT_VIDEOS: Record<string, Record<string, UnitVideo>> = {
     "Secrets management": v("agent-sec@16:13-18:05", "kv-m365"),
   },
   "enterprise-integrations": {
-    "External APIs": pending("The linked retry video does not teach integration, so it was not promoted."),
+    "External APIs": v("pl-httpx", "ae-apiauth"),
     Webhooks: v("fcc-webhooks"),
   },
-  "deployment-foundations": { "Basic recovery procedures": pending("Not yet searched for separately.") },
+  "deployment-foundations": { "Basic recovery procedures": v("wc-pgdump", "tp-pgvol") },
   "cloud-production": {
     "Managed PostgreSQL": v("cn-pg"),
-    "Environment separation": pending("Not yet searched for."),
+    "Environment separation": v("mg-env", "am-env"),
     "Secrets management": v("kv-m365", "kv-full"),
     "Deployment strategies": v("cl-deploy", "sc-deploy"),
     Rollbacks: v("wv-rev", "mc-traffic"),
@@ -151,40 +151,40 @@ export const UNIT_VIDEOS: Record<string, Record<string, UnitVideo>> = {
   },
   telemetry: {
     "OpenTelemetry fundamentals": v("ag-otel"),
-    "Traces, metrics and logs": pending("No lesson found covering all three; logs were absent from every result."),
+    "Traces, metrics and logs": v("av-pillars", "oo-pillars"),
     "Instrumenting a FastAPI service": v("er-otel"),
     "Dashboards and alerts": v("jf-appins"),
     "Service-level objectives": v("sb-slo", "cf-slo"),
   },
   "reliability-engineering": {
     Timeouts: v("sd-cb@4:54-8:00"),
-    "Rate limiting": pending("Not yet searched for separately."),
+    "Rate limiting": v("mj-rate", "cl-rate"),
     "Circuit breakers": v("sd-cb@11:05-21:41"),
     "Backups and restores": v("kt-pgrec"),
     "Incident handling": v("tt-incident"),
     "Operational runbooks": v("bl-runbook"),
   },
   "architecture-foundations": {
-    "Requirements engineering": pending("Search returned no suitable lesson."),
+    "Requirements engineering": v("uva-req", "ws-req"),
     "Functional and non-functional requirements": v("mc-nfr"),
-    "Stakeholders and constraints": pending("Search returned no suitable lesson."),
+    "Stakeholders and constraints": v("wf-stake", "ba-req"),
     "Quality attribute trade-offs": v("mc-nfr"),
   },
   "enterprise-architecture": {
     Scalability: v("mr-waf"),
     Reliability: v("mr-waf"),
-    Maintainability: pending("Not yet searched for separately."),
+    Maintainability: v("ac-coupling", "ac-coupling2"),
   },
   "advanced-architecture": {
-    "API architecture": pending("The linked event-driven segment is a different subject, so it was not promoted."),
-    "Background processing": pending("The linked human-approval segment is a different subject, so it was not promoted."),
+    "API architecture": v("bm-api", "sdl-api"),
+    "Background processing": v("sj-bg", "av-bg"),
   },
   "data-architecture": {
     "Data domains and ownership": v("dtc-mesh@16:34-25:26", "cf-mesh"),
     "Operational and analytical stores": v("bw-dwh@2:50-9:41"),
     "Data lineage": v("sw-lineage"),
     "Data contracts": v("ds-contract"),
-    "Master data for finance": pending("Not yet searched for. Finance-specific."),
+    "Master data for finance": v("dg-mdm"),
   },
   "network-fundamentals": {
     "IP, DNS and TLS": v("up-net", "bb-tls"),
@@ -193,9 +193,9 @@ export const UNIT_VIDEOS: Record<string, Record<string, UnitVideo>> = {
     "Firewalls and gateways": v("az-net@1:53:53-2:13:09"),
   },
   "enterprise-identity": {
-    RBAC: pending("The Entra video reviewed covers Conditional Access, not role mapping."),
-    "Tenant isolation": pending("Search returned no video."),
-    "Data security": pending("Not yet searched for separately."),
+    RBAC: v("js-rbac", "bb-rbac"),
+    "Tenant isolation": v("pc-tenant", "ipc-rls"),
+    "Data security": v("js-encrypt"),
   },
   "resilience-scale": {
     "Disaster recovery": v("drp-rto"),
@@ -204,14 +204,14 @@ export const UNIT_VIDEOS: Record<string, Record<string, UnitVideo>> = {
     "Performance and load testing": v("jc-locust"),
   },
   "ai-governance": {
-    "Model lifecycle management": pending("Search returned papers, not videos."),
-    "Operational ownership": pending("Not yet searched for separately."),
-    "Production support": pending("Not yet searched for separately."),
+    "Model lifecycle management": v("mr-llmops"),
+    "Operational ownership": v("ef-owner", "yb-owner"),
+    "Production support": v("sv-support"),
   },
   "finops-value": {
     FinOps: v("cl-finops", "ap-finops"),
-    "Total cost of ownership": pending("Search returned no video on this."),
-    "ROI and business value": pending("Search returned no video on this."),
-    "Cost allocation and showback": pending("Not yet searched for separately."),
+    "Total cost of ownership": v("fx-tco", "ct-tco"),
+    "ROI and business value": v("dg-roi", "tn-roi"),
+    "Cost allocation and showback": v("ff-alloc", "ms-alloc"),
   },
 };

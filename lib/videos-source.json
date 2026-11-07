@@ -1215,6 +1215,556 @@
     "Resolve merge conflicts"
    ],
    "relevance": "chapters"
+  },
+  {
+   "key": "fcc-python",
+   "id": "rfscVS0vtbw",
+   "why": "A full beginner course. Use only the parts where you have gaps, as you already know basic Python.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Fill gaps in core Python syntax"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "pm-trace",
+   "id": "Qmj5UQRkL4s",
+   "why": "A short, focused lesson on exactly this skill.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Read a traceback from the bottom up"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "ds-trace",
+   "id": "qgUS3QyPgdM",
+   "why": "Recent, and walks through the five most common errors.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Recognise the most common Python errors"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "cc-pdsql",
+   "id": "4GhcNuOXJLU",
+   "why": "A short direct comparison of the two tools.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Choose between pandas and SQL for a task"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "fm-pdsql",
+   "id": "9n7nJF38mfY",
+   "why": "A second short view, from data analytics.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Explain when each tool suits analysis"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "sr-recon",
+   "id": "ZfboXQua0io",
+   "why": "Source-to-target checks in SQL, the same logic as a finance reconciliation.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Reconcile source and target data with SQL"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "etl-recon",
+   "id": "8llaSKq6Mxo",
+   "why": "An introduction to automating those checks.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Explain automated reconciliation testing"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "up-idem",
+   "id": "GcU2vxYrA3g",
+   "why": "Covers recovering from failure without duplicating data, which is what a safe rerun means.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Make a pipeline safe to rerun"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "cl-pipe",
+   "id": "Ne9GAuuKLdc",
+   "why": "Shows an ingestion pipeline with logging and error handling built in.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Add error handling to an ingestion pipeline"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "cor-coa-dax",
+   "id": "xBlu6QmInY4",
+   "why": "A chart of accounts specifically, in the tool your P2 project uses.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Flatten a parent-child chart of accounts with DAX"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "cor-coa-m",
+   "id": "YiTyWUeuwKI",
+   "why": "The same task in Power Query.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Flatten a chart of accounts in Power Query"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "ed-fx",
+   "id": "i8WKBiTHqVI",
+   "why": "Practical currency conversion with chapters.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Convert transactions to a reporting currency"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "ds-fiscal",
+   "id": "Y1jqDcYsTEc",
+   "why": "Covers the period side of the unit: a fiscal date table.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Build a fiscal date table"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "as-bva",
+   "id": "6NJ3pcGpkBQ",
+   "why": "Budget versus actual built in Python, the skill this unit names.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Automate a budget versus actual report in Python"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "fcc-forecast",
+   "id": "fxx_E0ojKrc",
+   "why": "A recent beginner tutorial from freeCodeCamp.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Build a first time series forecast in Python"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "dh-forecast",
+   "id": "eKiXtGzEjos",
+   "why": "Timestamped chapters on exponential smoothing when you want depth.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Apply exponential smoothing and Holt-Winters"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "ed-custprofit",
+   "id": "dO45fx-Ll2Q",
+   "why": "Customer profitability through activity-based costing, from a respected accounting teacher.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Calculate customer profitability with activity-based costing"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "sj-errors",
+   "id": "jYbNq6QAQNI",
+   "why": "Custom exceptions and handlers in FastAPI, in a series already used here.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Create custom FastAPI error handlers"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "jk-assert",
+   "id": "jpY8ECnAosU",
+   "why": "Shows concrete assertion checks. Promptfoo is only the example; the idea is what matters.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Write deterministic checks on model output"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "pl-httpx",
+   "id": "qAh5dDODJ5k",
+   "why": "A clear look at the modern Python HTTP client.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Call external APIs from Python with HTTPX"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "ae-apiauth",
+   "id": "2zYJMI_OPIY",
+   "why": "Adds the authentication methods external APIs use.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Authenticate to an API from Python"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "wc-pgdump",
+   "id": "WB6WzuFHcP8",
+   "why": "A short, complete backup and restore, including deliberately breaking a database.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Back up and restore PostgreSQL"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "tp-pgvol",
+   "id": "oUbal7sUduo",
+   "why": "The same recovery for a containerised database.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Back up a Postgres Docker volume"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "mg-env",
+   "id": "5XfgT9A9PHw",
+   "why": "A focused introduction to separate deployment environments in GitHub Actions.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Separate dev and prod with GitHub environments"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "am-env",
+   "id": "EOlm3ft0VPo",
+   "why": "A second worked deployment example.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Deploy through environments with GitHub Actions"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "av-pillars",
+   "id": "6YCrvZRFfmA",
+   "why": "Short, recent and chaptered around all three signals.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Explain what metrics, logs and traces each answer"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "oo-pillars",
+   "id": "rJfZyA831fI",
+   "why": "A second short view of the three pillars.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Describe the pillars of observability"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "mj-rate",
+   "id": "COQNpbNGFJU",
+   "why": "Compares the two main algorithms.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Choose a rate limiting algorithm"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "cl-rate",
+   "id": "8GaI0HCOkUE",
+   "why": "A distributed-systems view of the same topic.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Explain token and leaky bucket limits"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "uva-req",
+   "id": "pSQRetBoaRE",
+   "why": "A university software engineering lecture on eliciting requirements.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Elicit requirements from stakeholders"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "ws-req",
+   "id": "t1EW7F_TU_U",
+   "why": "A shorter summary of the same stage.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Describe requirements gathering in delivery"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "wf-stake",
+   "id": "rgE2qkvUJGs",
+   "why": "A short, recent lesson joining stakeholders to requirements.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Identify stakeholders and their needs"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "ba-req",
+   "id": "uAHeTzmc_2g",
+   "why": "A business analyst's view of the same work.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Run a requirements conversation"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "ac-coupling",
+   "id": "eiDyK_ofPPM",
+   "why": "ArjanCodes, a channel you named, on the two ideas behind maintainable code, in Python.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Improve cohesion and reduce coupling"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "ac-coupling2",
+   "id": "MM9VQp-k0JQ",
+   "why": "A newer treatment from the same teacher.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Make design choices that limit coupling"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "bm-api",
+   "id": "pJ83mmqcvoQ",
+   "why": "Nine design principles, including versioning and pagination, in ten minutes.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Apply REST API design principles"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "sdl-api",
+   "id": "BvtIqaiabJA",
+   "why": "A long, chaptered course for depth. Very recent.",
+   "difficulty": "advanced",
+   "objectives": [
+    "Design APIs including security and pagination"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "sj-bg",
+   "id": "eAHAKowv6hk",
+   "why": "Moves from FastAPI background tasks to Celery, which is the decision you will face.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Run background work with Celery and Redis"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "av-bg",
+   "id": "31pLwWmsu3w",
+   "why": "A short guide to choosing between them.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Choose between BackgroundTasks and Celery"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "dg-mdm",
+   "id": "_6qLg1XuvYI",
+   "why": "Recent and well chaptered. It is not finance-specific, so apply it to accounts and cost centres yourself.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Explain golden records and MDM styles"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "js-rbac",
+   "id": "qFoHDTxkQII",
+   "why": "John Savill on Azure roles, already a trusted source in this curriculum.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Assign Azure roles at the right scope"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "bb-rbac",
+   "id": "1kSur3me2jU",
+   "why": "A recent, shorter walkthrough.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Explain Azure roles and scope"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "pc-tenant",
+   "id": "9Nayh0FPv0A",
+   "why": "A PostgreSQL talk on multi-tenant design, on your database.",
+   "difficulty": "advanced",
+   "objectives": [
+    "Compare tenant isolation models in PostgreSQL"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "ipc-rls",
+   "id": "DabJ0hxiXAo",
+   "why": "How row-level security enforces the boundary inside the database.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Enforce tenant isolation with PostgreSQL RLS"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "js-encrypt",
+   "id": "EOXgzTqceok",
+   "why": "John Savill on encryption and customer-managed keys in Azure.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Choose how Azure data is encrypted"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "mr-llmops",
+   "id": "K2gknZ2ubW4",
+   "why": "A Microsoft session on the foundations of LLMOps.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Describe the lifecycle of an LLM application"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "ef-owner",
+   "id": "aW3r_eGXLnI",
+   "why": "A full session on teams owning what they run.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Explain the you-build-it, you-run-it model"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "yb-owner",
+   "id": "-5rPZmMp7qE",
+   "why": "A short definition first.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Define operational ownership"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "sv-support",
+   "id": "CirUgMfkwKk",
+   "why": "Real roles and daily tasks at each support level.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Explain L1, L2 and L3 support"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "fx-tco",
+   "id": "5HscS50lt_s",
+   "why": "A short structured explanation with chapters.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Explain the parts of cloud total cost of ownership"
+   ],
+   "relevance": "chapters"
+  },
+  {
+   "key": "ct-tco",
+   "id": "4Gnixbx_qMs",
+   "why": "Shows the Azure calculator for your primary cloud.",
+   "difficulty": "beginner",
+   "objectives": [
+    "Estimate costs with the Azure TCO calculator"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "dg-roi",
+   "id": "DYJqOe4RXxY",
+   "why": "Frames ROI before investment, which is when a CFO asks.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Build an ROI estimate before investing"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "tn-roi",
+   "id": "jeBJpbDL5q0",
+   "why": "A very short framework for enterprise leaders.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Describe an AI ROI framework"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "ff-alloc",
+   "id": "UbMjxagpZl4",
+   "why": "From the FinOps Foundation itself.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Explain cost allocation models and chargeback"
+   ],
+   "relevance": "title"
+  },
+  {
+   "key": "ms-alloc",
+   "id": "nYzIIs2mx9Q",
+   "why": "Microsoft's own walkthrough of an allocation rule.",
+   "difficulty": "intermediate",
+   "objectives": [
+    "Create a cost allocation rule in Azure"
+   ],
+   "relevance": "title"
   }
  ]
 }
