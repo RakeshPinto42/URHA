@@ -15,6 +15,7 @@
     "videos:verify": "node scripts/verify-videos.mjs",
     "docs:check": "node scripts/check-docs.mjs",
     "curriculum:doc": "node scripts/build-curriculum-doc.mjs",
+    "sequence:doc": "node scripts/build-sequence-doc.mjs",
     "music:verify": "node scripts/verify-music.mjs",
     "narration:index": "node scripts/build-narration-index.mjs"
   },

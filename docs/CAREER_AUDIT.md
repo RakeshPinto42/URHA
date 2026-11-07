@@ -113,6 +113,8 @@ The migration stays forward-only with a backup first (`npm run backup`), and exi
 
 ## 9. Decisions needed before Stage 1
 
+**Answered by the owner on 2026-11-07:** URHA is the target, git is initialised, and LedgerSync folds into P1–P5. Stage 1 is in `docs/CURRICULUM_SEQUENCE.md`, whose months replace the proposal in §4.
+
 1. **Target:** URHA (recommended) or `Nex_Ra_2.0`?
 2. **Git:** initialise a repository in `AI_Learning` before migrating? Recommended, as there is no rollback today.
 3. **LedgerSync:** retire it into P1–P5 (recommended), or keep the name for P4 only?
