@@ -1,5 +1,16 @@
 [
  {
+  "file": "public/cinema/assets/book-encyclopedia-set-01.glb",
+  "title": "Book Encyclopedia Set 01",
+  "creator": "John Malcolm",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "page": "https://polyhaven.com/a/book_encyclopedia_set_01",
+  "via": "Poly Haven",
+  "triangles": 67306,
+  "modified": "Optimised: Draco geometry, WebP textures at 1024 px"
+ },
+ {
   "file": "public/cinema/assets/boulder-01.glb",
   "title": "Boulder 01",
   "creator": "Rico Cilliers",
@@ -8,6 +19,17 @@
   "page": "https://polyhaven.com/a/boulder_01",
   "via": "Poly Haven",
   "triangles": 123976,
+  "modified": "Optimised: Draco geometry, WebP textures at 1024 px"
+ },
+ {
+  "file": "public/cinema/assets/brass-vase-01.glb",
+  "title": "Brass Vase 01",
+  "creator": "Rico Cilliers",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "page": "https://polyhaven.com/a/brass_vase_01",
+  "via": "Poly Haven",
+  "triangles": 21440,
   "modified": "Optimised: Draco geometry, WebP textures at 1024 px"
  },
  {
@@ -33,6 +55,105 @@
   "modified": "Optimised: Draco geometry, WebP textures at 1024 px"
  },
  {
+  "file": "public/cinema/assets/lantern-chandelier-01.glb",
+  "title": "Lantern Chandelier 01",
+  "creator": "Kirill Sannikov",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "page": "https://polyhaven.com/a/lantern_chandelier_01",
+  "via": "Poly Haven",
+  "triangles": 5971,
+  "modified": "Optimised: Draco geometry, WebP textures at 1024 px"
+ },
+ {
+  "file": "public/cinema/assets/marble-bust-01.glb",
+  "title": "Marble Bust 01",
+  "creator": "Rico Cilliers",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "page": "https://polyhaven.com/a/marble_bust_01",
+  "via": "Poly Haven",
+  "triangles": 17456,
+  "modified": "Optimised: Draco geometry, WebP textures at 1024 px"
+ },
+ {
+  "file": "public/cinema/assets/marble-cliff-01-diff.webp",
+  "title": "Marble Cliff 01 (diff)",
+  "creator": "Amal Kumar",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "page": "https://polyhaven.com/a/marble_cliff_01",
+  "via": "Poly Haven",
+  "triangles": null,
+  "modified": "Converted to WebP at 1024 px"
+ },
+ {
+  "file": "public/cinema/assets/marble-cliff-01-nor.webp",
+  "title": "Marble Cliff 01 (nor)",
+  "creator": "Amal Kumar",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "page": "https://polyhaven.com/a/marble_cliff_01",
+  "via": "Poly Haven",
+  "triangles": null,
+  "modified": "Converted to WebP at 1024 px"
+ },
+ {
+  "file": "public/cinema/assets/marble-cliff-01-rough.webp",
+  "title": "Marble Cliff 01 (rough)",
+  "creator": "Amal Kumar",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "page": "https://polyhaven.com/a/marble_cliff_01",
+  "via": "Poly Haven",
+  "triangles": null,
+  "modified": "Converted to WebP at 1024 px"
+ },
+ {
+  "file": "public/cinema/assets/marble-floor-diff.webp",
+  "title": "marble-floor (diff)",
+  "creator": "URHA",
+  "license": "Own work",
+  "licenseUrl": null,
+  "page": "scripts/bake-marble.mjs",
+  "via": "Generated",
+  "triangles": null,
+  "modified": "Baked at 1024 px"
+ },
+ {
+  "file": "public/cinema/assets/marble-floor-nor.webp",
+  "title": "marble-floor (nor)",
+  "creator": "URHA",
+  "license": "Own work",
+  "licenseUrl": null,
+  "page": "scripts/bake-marble.mjs",
+  "via": "Generated",
+  "triangles": null,
+  "modified": "Baked at 1024 px"
+ },
+ {
+  "file": "public/cinema/assets/marble-floor-rough.webp",
+  "title": "marble-floor (rough)",
+  "creator": "URHA",
+  "license": "Own work",
+  "licenseUrl": null,
+  "page": "scripts/bake-marble.mjs",
+  "via": "Generated",
+  "triangles": null,
+  "modified": "Baked at 1024 px"
+ },
+ {
+  "file": "public/cinema/assets/potted-plant-02.glb",
+  "title": "Potted Plant 02",
+  "creator": "Rico Cilliers",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "page": "https://polyhaven.com/a/potted_plant_02",
+  "via": "Poly Haven",
+  "triangles": 69806,
+  "modified": "Optimised: Draco geometry, WebP textures at 1024 px"
+ },
+ {
   "file": "public/cinema/assets/rock-moss-set-01.glb",
   "title": "Rock Moss Set 01",
   "creator": "Kless Gyzen",
@@ -41,6 +162,17 @@
   "page": "https://polyhaven.com/a/rock_moss_set_01",
   "via": "Poly Haven",
   "triangles": 63127,
+  "modified": "Optimised: Draco geometry, WebP textures at 1024 px"
+ },
+ {
+  "file": "public/cinema/assets/standing-chalkboard-01.glb",
+  "title": "Standing Chalkboard 01",
+  "creator": "ParzivalCG",
+  "license": "CC0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "page": "https://polyhaven.com/a/standing_chalkboard_01",
+  "via": "Poly Haven",
+  "triangles": 2372,
   "modified": "Optimised: Draco geometry, WebP textures at 1024 px"
  },
  {
@@ -64,6 +196,39 @@
   "via": "Poly Haven",
   "triangles": 41046,
   "modified": "Optimised: Draco geometry, WebP textures at 1024 px"
+ },
+ {
+  "file": "public/cinema/assets/white-marble-diff.webp",
+  "title": "white-marble (diff)",
+  "creator": "URHA",
+  "license": "Own work",
+  "licenseUrl": null,
+  "page": "scripts/bake-marble.mjs",
+  "via": "Generated",
+  "triangles": null,
+  "modified": "Baked at 1024 px"
+ },
+ {
+  "file": "public/cinema/assets/white-marble-nor.webp",
+  "title": "white-marble (nor)",
+  "creator": "URHA",
+  "license": "Own work",
+  "licenseUrl": null,
+  "page": "scripts/bake-marble.mjs",
+  "via": "Generated",
+  "triangles": null,
+  "modified": "Baked at 1024 px"
+ },
+ {
+  "file": "public/cinema/assets/white-marble-rough.webp",
+  "title": "white-marble (rough)",
+  "creator": "URHA",
+  "license": "Own work",
+  "licenseUrl": null,
+  "page": "scripts/bake-marble.mjs",
+  "via": "Generated",
+  "triangles": null,
+  "modified": "Baked at 1024 px"
  },
  {
   "file": "public/cinema/assets/wooden-lantern-01.glb",

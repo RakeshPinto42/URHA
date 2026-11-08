@@ -1,0 +1,1038 @@
+{
+  "version": 1,
+  "id": "hall-of-wisdom",
+  "title": "The Hall of Wisdom",
+  "camera": {
+    "fov": 50,
+    "near": 0.5,
+    "far": 1600,
+    "position": [
+      0,
+      15,
+      26
+    ],
+    "target": [
+      0,
+      26,
+      -300
+    ]
+  },
+  "environment": {
+    "fog": {
+      "color": "#e9cfa6",
+      "density": 0.00055
+    },
+    "exposure": 0.95,
+    "reflections": 0.7,
+    "bloom": {
+      "strength": 0.24,
+      "radius": 0.5,
+      "threshold": 1.2
+    },
+    "rays": {
+      "strength": 0.45,
+      "direction": [
+        0,
+        0.07,
+        -1
+      ],
+      "color": "#ffe6b6"
+    }
+  },
+  "timelines": [],
+  "lights": [
+    {
+      "id": "sky-light",
+      "type": "hemisphere",
+      "sky": "#fff1da",
+      "ground": "#b88a55",
+      "intensity": 1.5
+    },
+    {
+      "id": "skylight",
+      "type": "directional",
+      "color": "#fff0d4",
+      "intensity": 1.2,
+      "direction": [
+        0.35,
+        1,
+        0.2
+      ]
+    },
+    {
+      "id": "window",
+      "type": "point",
+      "color": "#ffe2ac",
+      "intensity": 26000,
+      "position": [
+        0,
+        34,
+        -292
+      ],
+      "distance": 420
+    }
+  ],
+  "objects": [
+    {
+      "id": "sky",
+      "generator": "celestial-sky",
+      "visible": true,
+      "environmentSource": true,
+      "params": {
+        "horizon": "#fff0d0",
+        "low": "#ffd9a0",
+        "mid": "#ffc58a",
+        "high": "#f0a878",
+        "zenith": "#a87868",
+        "stars": 0,
+        "planet": 0,
+        "sunPower": 2,
+        "sun": [
+          0,
+          0.4,
+          -1
+        ],
+        "radius": 1200
+      }
+    },
+    {
+      "id": "nave",
+      "generator": "hall-nave",
+      "visible": true,
+      "params": {
+        "bays": 12,
+        "bay": 24
+      }
+    },
+    {
+      "id": "mirror",
+      "generator": "mirror-floor",
+      "visible": true,
+      "placement": {
+        "position": [
+          0,
+          0,
+          -130
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "params": {
+        "shape": "rect",
+        "width": 56,
+        "length": 340,
+        "strength": 0.6
+      }
+    },
+    {
+      "id": "banners",
+      "generator": "phase-banners",
+      "visible": true,
+      "params": {
+        "start": -84,
+        "spacing": 34,
+        "x": 19
+      }
+    },
+    {
+      "id": "shafts-left",
+      "generator": "light-shafts",
+      "visible": true,
+      "placement": {
+        "position": [
+          -2,
+          96,
+          -140
+        ],
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "params": {
+        "count": 9,
+        "length": 88,
+        "width": 15,
+        "spread": 250,
+        "depth": 4,
+        "tilt": 0.3,
+        "strength": 0.12,
+        "color": "#ffe2ae",
+        "seed": 3
+      }
+    },
+    {
+      "id": "shafts-right",
+      "generator": "light-shafts",
+      "visible": true,
+      "placement": {
+        "position": [
+          2,
+          96,
+          -140
+        ],
+        "rotation": [
+          0,
+          1.5707963267948966,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "params": {
+        "count": 9,
+        "length": 88,
+        "width": 15,
+        "spread": 250,
+        "depth": 4,
+        "tilt": -0.3,
+        "strength": 0.12,
+        "color": "#ffe2ae",
+        "seed": 6
+      }
+    },
+    {
+      "id": "chandelier-1",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          0,
+          53,
+          -54
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          12,
+          12,
+          12
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/lantern-chandelier-01.glb"
+      }
+    },
+    {
+      "id": "chandelier-2",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          0,
+          53,
+          -102
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          12,
+          12,
+          12
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/lantern-chandelier-01.glb"
+      }
+    },
+    {
+      "id": "chandelier-3",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          0,
+          53,
+          -150
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          12,
+          12,
+          12
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/lantern-chandelier-01.glb"
+      }
+    },
+    {
+      "id": "chandelier-4",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          0,
+          53,
+          -198
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          12,
+          12,
+          12
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/lantern-chandelier-01.glb"
+      }
+    },
+    {
+      "id": "chandelier-5",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          0,
+          53,
+          -246
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          12,
+          12,
+          12
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/lantern-chandelier-01.glb"
+      }
+    },
+    {
+      "id": "bust-plinth-1-w",
+      "generator": "primitive",
+      "visible": true,
+      "placement": {
+        "position": [
+          -33,
+          7,
+          -12
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.5,
+          2,
+          0.5
+        ]
+      },
+      "params": {
+        "shape": "cylinder",
+        "size": 7,
+        "color": "#efe7da",
+        "metalness": 0,
+        "roughness": 0.5,
+        "emissive": "#000000",
+        "emissiveIntensity": 0
+      }
+    },
+    {
+      "id": "bust-1-w",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          -33,
+          14,
+          -12
+        ],
+        "rotation": [
+          0,
+          1.3,
+          0
+        ],
+        "scale": [
+          9,
+          9,
+          9
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/marble-bust-01.glb"
+      }
+    },
+    {
+      "id": "bust-plinth-1-e",
+      "generator": "primitive",
+      "visible": true,
+      "placement": {
+        "position": [
+          33,
+          7,
+          -12
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.5,
+          2,
+          0.5
+        ]
+      },
+      "params": {
+        "shape": "cylinder",
+        "size": 7,
+        "color": "#efe7da",
+        "metalness": 0,
+        "roughness": 0.5,
+        "emissive": "#000000",
+        "emissiveIntensity": 0
+      }
+    },
+    {
+      "id": "bust-1-e",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          33,
+          14,
+          -12
+        ],
+        "rotation": [
+          0,
+          -1.3,
+          0
+        ],
+        "scale": [
+          9,
+          9,
+          9
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/marble-bust-01.glb"
+      }
+    },
+    {
+      "id": "bust-plinth-2-w",
+      "generator": "primitive",
+      "visible": true,
+      "placement": {
+        "position": [
+          -33,
+          7,
+          -60
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.5,
+          2,
+          0.5
+        ]
+      },
+      "params": {
+        "shape": "cylinder",
+        "size": 7,
+        "color": "#efe7da",
+        "metalness": 0,
+        "roughness": 0.5,
+        "emissive": "#000000",
+        "emissiveIntensity": 0
+      }
+    },
+    {
+      "id": "bust-2-w",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          -33,
+          14,
+          -60
+        ],
+        "rotation": [
+          0,
+          1.3,
+          0
+        ],
+        "scale": [
+          9,
+          9,
+          9
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/marble-bust-01.glb"
+      }
+    },
+    {
+      "id": "bust-plinth-2-e",
+      "generator": "primitive",
+      "visible": true,
+      "placement": {
+        "position": [
+          33,
+          7,
+          -60
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.5,
+          2,
+          0.5
+        ]
+      },
+      "params": {
+        "shape": "cylinder",
+        "size": 7,
+        "color": "#efe7da",
+        "metalness": 0,
+        "roughness": 0.5,
+        "emissive": "#000000",
+        "emissiveIntensity": 0
+      }
+    },
+    {
+      "id": "bust-2-e",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          33,
+          14,
+          -60
+        ],
+        "rotation": [
+          0,
+          -1.3,
+          0
+        ],
+        "scale": [
+          9,
+          9,
+          9
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/marble-bust-01.glb"
+      }
+    },
+    {
+      "id": "bust-plinth-3-w",
+      "generator": "primitive",
+      "visible": true,
+      "placement": {
+        "position": [
+          -33,
+          7,
+          -108
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.5,
+          2,
+          0.5
+        ]
+      },
+      "params": {
+        "shape": "cylinder",
+        "size": 7,
+        "color": "#efe7da",
+        "metalness": 0,
+        "roughness": 0.5,
+        "emissive": "#000000",
+        "emissiveIntensity": 0
+      }
+    },
+    {
+      "id": "bust-3-w",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          -33,
+          14,
+          -108
+        ],
+        "rotation": [
+          0,
+          1.3,
+          0
+        ],
+        "scale": [
+          9,
+          9,
+          9
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/marble-bust-01.glb"
+      }
+    },
+    {
+      "id": "bust-plinth-3-e",
+      "generator": "primitive",
+      "visible": true,
+      "placement": {
+        "position": [
+          33,
+          7,
+          -108
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.5,
+          2,
+          0.5
+        ]
+      },
+      "params": {
+        "shape": "cylinder",
+        "size": 7,
+        "color": "#efe7da",
+        "metalness": 0,
+        "roughness": 0.5,
+        "emissive": "#000000",
+        "emissiveIntensity": 0
+      }
+    },
+    {
+      "id": "bust-3-e",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          33,
+          14,
+          -108
+        ],
+        "rotation": [
+          0,
+          -1.3,
+          0
+        ],
+        "scale": [
+          9,
+          9,
+          9
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/marble-bust-01.glb"
+      }
+    },
+    {
+      "id": "bust-plinth-4-w",
+      "generator": "primitive",
+      "visible": true,
+      "placement": {
+        "position": [
+          -33,
+          7,
+          -156
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.5,
+          2,
+          0.5
+        ]
+      },
+      "params": {
+        "shape": "cylinder",
+        "size": 7,
+        "color": "#efe7da",
+        "metalness": 0,
+        "roughness": 0.5,
+        "emissive": "#000000",
+        "emissiveIntensity": 0
+      }
+    },
+    {
+      "id": "bust-4-w",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          -33,
+          14,
+          -156
+        ],
+        "rotation": [
+          0,
+          1.3,
+          0
+        ],
+        "scale": [
+          9,
+          9,
+          9
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/marble-bust-01.glb"
+      }
+    },
+    {
+      "id": "bust-plinth-4-e",
+      "generator": "primitive",
+      "visible": true,
+      "placement": {
+        "position": [
+          33,
+          7,
+          -156
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.5,
+          2,
+          0.5
+        ]
+      },
+      "params": {
+        "shape": "cylinder",
+        "size": 7,
+        "color": "#efe7da",
+        "metalness": 0,
+        "roughness": 0.5,
+        "emissive": "#000000",
+        "emissiveIntensity": 0
+      }
+    },
+    {
+      "id": "bust-4-e",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          33,
+          14,
+          -156
+        ],
+        "rotation": [
+          0,
+          -1.3,
+          0
+        ],
+        "scale": [
+          9,
+          9,
+          9
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/marble-bust-01.glb"
+      }
+    },
+    {
+      "id": "bust-plinth-5-w",
+      "generator": "primitive",
+      "visible": true,
+      "placement": {
+        "position": [
+          -33,
+          7,
+          -204
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.5,
+          2,
+          0.5
+        ]
+      },
+      "params": {
+        "shape": "cylinder",
+        "size": 7,
+        "color": "#efe7da",
+        "metalness": 0,
+        "roughness": 0.5,
+        "emissive": "#000000",
+        "emissiveIntensity": 0
+      }
+    },
+    {
+      "id": "bust-5-w",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          -33,
+          14,
+          -204
+        ],
+        "rotation": [
+          0,
+          1.3,
+          0
+        ],
+        "scale": [
+          9,
+          9,
+          9
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/marble-bust-01.glb"
+      }
+    },
+    {
+      "id": "bust-plinth-5-e",
+      "generator": "primitive",
+      "visible": true,
+      "placement": {
+        "position": [
+          33,
+          7,
+          -204
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.5,
+          2,
+          0.5
+        ]
+      },
+      "params": {
+        "shape": "cylinder",
+        "size": 7,
+        "color": "#efe7da",
+        "metalness": 0,
+        "roughness": 0.5,
+        "emissive": "#000000",
+        "emissiveIntensity": 0
+      }
+    },
+    {
+      "id": "bust-5-e",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          33,
+          14,
+          -204
+        ],
+        "rotation": [
+          0,
+          -1.3,
+          0
+        ],
+        "scale": [
+          9,
+          9,
+          9
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/marble-bust-01.glb"
+      }
+    },
+    {
+      "id": "bust-plinth-6-w",
+      "generator": "primitive",
+      "visible": true,
+      "placement": {
+        "position": [
+          -33,
+          7,
+          -252
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.5,
+          2,
+          0.5
+        ]
+      },
+      "params": {
+        "shape": "cylinder",
+        "size": 7,
+        "color": "#efe7da",
+        "metalness": 0,
+        "roughness": 0.5,
+        "emissive": "#000000",
+        "emissiveIntensity": 0
+      }
+    },
+    {
+      "id": "bust-6-w",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          -33,
+          14,
+          -252
+        ],
+        "rotation": [
+          0,
+          1.3,
+          0
+        ],
+        "scale": [
+          9,
+          9,
+          9
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/marble-bust-01.glb"
+      }
+    },
+    {
+      "id": "bust-plinth-6-e",
+      "generator": "primitive",
+      "visible": true,
+      "placement": {
+        "position": [
+          33,
+          7,
+          -252
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.5,
+          2,
+          0.5
+        ]
+      },
+      "params": {
+        "shape": "cylinder",
+        "size": 7,
+        "color": "#efe7da",
+        "metalness": 0,
+        "roughness": 0.5,
+        "emissive": "#000000",
+        "emissiveIntensity": 0
+      }
+    },
+    {
+      "id": "bust-6-e",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          33,
+          14,
+          -252
+        ],
+        "rotation": [
+          0,
+          -1.3,
+          0
+        ],
+        "scale": [
+          9,
+          9,
+          9
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/marble-bust-01.glb"
+      }
+    },
+    {
+      "id": "dust",
+      "generator": "particles",
+      "visible": true,
+      "placement": {
+        "position": [
+          0,
+          2,
+          -110
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.6,
+          1,
+          3
+        ]
+      },
+      "params": {
+        "count": 500,
+        "color": "#ffe3ad",
+        "area": 110,
+        "height": 70,
+        "size": 110
+      }
+    }
+  ]
+}

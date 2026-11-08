@@ -5,7 +5,8 @@
  */
 import fs from "node:fs/promises";
 import path from "node:path";
-import { sameOrigin, studioEnabled } from "@/lib/studio-access";
+import { guardWrite, refused } from "@/lib/api-guard";
+import { studioAllowed } from "@/lib/studio-access";
 
 export const dynamic = "force-dynamic";
 
@@ -17,8 +18,8 @@ const GLB_MAGIC = 0x46546c67; // "glTF"
 
 const json = (body: unknown, status = 200) => Response.json(body, { status, headers: { "Cache-Control": "no-store" } });
 
-export async function GET() {
-  if (!studioEnabled()) return json({ error: "Not found." }, 404);
+export async function GET(request: Request) {
+  if (!studioAllowed(request.headers.get("host"))) return json({ error: "Not found." }, 404);
   const files = await fs.readdir(ASSETS).catch(() => [] as string[]);
   const url = (f: string) => `/cinema/assets/${f}`;
   return json({
@@ -28,8 +29,9 @@ export async function GET() {
 }
 
 export async function POST(request: Request) {
-  if (!studioEnabled()) return json({ error: "Not found." }, 404);
-  if (!sameOrigin(request)) return json({ error: "Uploads must come from the Studio itself." }, 403);
+  if (!studioAllowed(request.headers.get("host"))) return json({ error: "Not found." }, 404);
+  const g = guardWrite(request);
+  if (!g.ok) return refused(g);
   const declared = Number(request.headers.get("content-length") ?? 0);
   if (declared > MAX_BYTES) return json({ error: "This model is over 50 MB. Run it through npm run assets:optimize first." }, 413);
 

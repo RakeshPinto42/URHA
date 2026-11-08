@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { EXERCISES, LEVEL_LABEL } from "@/lib/practice/exercises";
+import { practiceStatus } from "@/lib/practice/progress";
 import { notFound } from "next/navigation";
 import { connection } from "next/server";
 import type { Metadata } from "next";
@@ -17,11 +19,9 @@ import { TopicNotes } from "@/components/forms/TopicNotes";
 import { Icon } from "@/components/Icon";
 import { SUBTOPIC_PLANS, coverageFor } from "@/lib/catalog";
 import { FrontispieceBand, RisingTitle } from "@/components/Frontispiece";
-import { paneAt } from "@/lib/cinema";
 import type { ArtId } from "@/lib/art";
 
 /** One painting for each phase's topics, so moving through the path changes the picture. */
-const PHASE_ART: ArtId[] = ["study", "road", "codex", "water", "end", "mount", "path"];
 
 type Props = { params: Promise<{ topicId: string }> };
 
@@ -57,8 +57,7 @@ export default async function TopicPage({ params }: Props) {
 
   return (
     <PageEnter>
-      <FrontispieceBand art={PHASE_ART[(phase.ord - 1) % PHASE_ART.length]!} section="academy" height="compact" showCaption={false}
-        panes={{ pane: paneAt(phase.ord - 1), light: paneAt(phase.ord + 1) }}>
+      <FrontispieceBand section="academy" height="compact">
         <nav aria-label="Breadcrumb" className="mb-3 text-[13px] text-[#f7f7f5]/85">
           <Link href="/academy" className="hover:underline">Academy</Link> <span aria-hidden="true">/</span>{" "}
           <Link href={`/path#${phase.id}`} className="hover:underline">Phase {phase.ord}</Link>
@@ -102,6 +101,24 @@ export default async function TopicPage({ params }: Props) {
               </p>
               <StepLadder subtopics={topic.subtopics} plans={Object.fromEntries(topic.subtopics.filter((s) => SUBTOPIC_PLANS.has(s.id)).map((s) => [s.id, SUBTOPIC_PLANS.get(s.id)!]))} />
             </Panel>
+
+            {(() => {
+              const own = EXERCISES.filter((e) => e.topicId === topic.id);
+              if (!own.length) return null;
+              const st = practiceStatus();
+              return (
+                <Panel title="Practise it in the yard" id="practice" action={<span className="num text-[13px] text-muted">{own.filter((e) => st[e.id]?.passed).length} of {own.length} passed</span>}>
+                  <ul className="flex flex-col gap-2">
+                    {own.map((e) => (
+                      <li key={e.id} className="flex flex-wrap items-baseline justify-between gap-2">
+                        <Link href={`/academy/practice?c=${e.id}`} className="text-[15px] font-medium hover:underline">{e.title}</Link>
+                        <span className="text-[13px] text-muted">{LEVEL_LABEL[e.level]} · {st[e.id]?.passed ? "Passed" : st[e.id] ? `${st[e.id]!.attempts} runs, best ${st[e.id]!.bestChecks} of ${st[e.id]!.checksTotal}` : "Not started"}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </Panel>
+              );
+            })()}
 
             <Panel title="Practical assignment" id="assignment">
               <p className="prose-read">{topic.assignment}</p>

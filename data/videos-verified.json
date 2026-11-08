@@ -1,10 +1,10 @@
 {
- "verifiedAt": "2026-11-07T14:58:10.793Z",
+ "verifiedAt": "2026-11-08T11:25:15.667Z",
  "method": "youtube.com watch-page metadata (ytInitialPlayerResponse)",
  "videos": {
   "py-lists": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "W8KRzm-HUcc",
    "title": "Python Tutorial for Beginners 4: Lists, Tuples, and Sets",
    "channel": "Corey Schafer",
@@ -15,7 +15,7 @@
   },
   "py-dicts": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "daefaLgNkw0",
    "title": "Python Tutorial for Beginners 5: Dictionaries - Working with Key-Value Pairs",
    "channel": "Corey Schafer",
@@ -26,7 +26,7 @@
   },
   "py-funcs": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "9Os0o3wzS_I",
    "title": "Python Tutorial for Beginners 8: Functions",
    "channel": "Corey Schafer",
@@ -37,7 +37,7 @@
   },
   "py-modules": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "CqvZ3vGoGs0",
    "title": "Python Tutorial for Beginners 9: Import Modules and Exploring The Standard Library",
    "channel": "Corey Schafer",
@@ -48,7 +48,7 @@
   },
   "py-oop1": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "ZDa-Z5JzLYM",
    "title": "Python OOP Tutorial 1: Classes and Instances",
    "channel": "Corey Schafer",
@@ -59,7 +59,7 @@
   },
   "py-oop2": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "BJ-VvGyQxho",
    "title": "Python OOP Tutorial 2: Class Variables",
    "channel": "Corey Schafer",
@@ -70,7 +70,7 @@
   },
   "py-oop3": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "rq8cL2XMM5M",
    "title": "Python OOP Tutorial 3: classmethods and staticmethods",
    "channel": "Corey Schafer",
@@ -81,7 +81,7 @@
   },
   "py-oop4": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "RSl87lqOXDE",
    "title": "Python OOP Tutorial 4: Inheritance - Creating Subclasses",
    "channel": "Corey Schafer",
@@ -92,7 +92,7 @@
   },
   "py-oop5": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "3ohzBxoFHAY",
    "title": "Python OOP Tutorial 5: Special (Magic/Dunder) Methods",
    "channel": "Corey Schafer",
@@ -103,7 +103,7 @@
   },
   "py-oop6": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "jCzT9XFZ5bw",
    "title": "Python OOP Tutorial 6: Property Decorators - Getters, Setters, and Deleters",
    "channel": "Corey Schafer",
@@ -114,7 +114,7 @@
   },
   "py-except": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "NIWwJbo-9_8",
    "title": "Python Tutorial: Using Try/Except Blocks for Error Handling",
    "channel": "Corey Schafer",
@@ -125,7 +125,7 @@
   },
   "py-types": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "RwH2UzC2rIo",
    "title": "Python Tutorial: Type Hints - From Basic Annotations to Advanced Generics",
    "channel": "Corey Schafer",
@@ -136,7 +136,7 @@
   },
   "py-types-why": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "0oBLMwHdZ2Y",
    "title": "The REAL Reason You Should Use Type Hints in Python",
    "channel": "ArjanCodes",
@@ -193,7 +193,7 @@
   },
   "py-deco": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "FsAPt_9Bf3U",
    "title": "Python Tutorial: Decorators - Dynamically Alter The Functionality Of Your Functions",
    "channel": "Corey Schafer",
@@ -204,7 +204,7 @@
   },
   "py-gen": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "bD05uGo_sVI",
    "title": "Python Tutorial: Generators - How to use them and the benefits you receive",
    "channel": "Corey Schafer",
@@ -215,7 +215,7 @@
   },
   "py-json": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "9N6a-VLBa2I",
    "title": "Python Tutorial: Working with JSON Data using the json Module",
    "channel": "Corey Schafer",
@@ -226,7 +226,7 @@
   },
   "py-files": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "Uh2ebFW8OYM",
    "title": "Python Tutorial: File Objects - Reading and Writing to Files",
    "channel": "Corey Schafer",
@@ -237,7 +237,7 @@
   },
   "py-ctx": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "-aKFBoZpiqA",
    "title": "Python Tutorial: Context Managers - Efficiently Managing Resources",
    "channel": "Corey Schafer",
@@ -248,7 +248,7 @@
   },
   "py-venv": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "Kg1Yvry_Ydk",
    "title": "Python Tutorial: VENV (Mac & Linux) - How to Use Virtual Environments with the Built-In venv Module",
    "channel": "Corey Schafer",
@@ -259,7 +259,7 @@
   },
   "py-uv": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "AMdG7IjgSPM",
    "title": "Python Tutorial: UV - A Faster, All-in-One Package Manager to Replace Pip and Venv",
    "channel": "Corey Schafer",
@@ -270,7 +270,7 @@
   },
   "py-async": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "oAkLSJNr5zY",
    "title": "Python Tutorial: AsyncIO - Complete Guide to Asynchronous Programming with Animations",
    "channel": "Corey Schafer",
@@ -281,7 +281,7 @@
   },
   "py-logbasic": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "g8nQ90Hk328",
    "title": "Logging in Python  ||  Learn Python Programming  (Computer Science)",
    "channel": "Socratica",
@@ -292,7 +292,7 @@
   },
   "py-logadv": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "jxmzY9soFXg",
    "title": "Python Tutorial: Logging Advanced - Loggers, Handlers, and Formatters",
    "channel": "Corey Schafer",
@@ -303,7 +303,7 @@
   },
   "pd-1": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "ZyhVh-qRZPA",
    "title": "Python Pandas Tutorial (Part 1): Getting Started with Data Analysis - Installation and Loading Data",
    "channel": "Corey Schafer",
@@ -314,7 +314,7 @@
   },
   "ms-git": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "2sjqTHE0zok",
    "title": "Lecture 6: Version Control (git) (2020)",
    "channel": "Missing Semester",
@@ -325,7 +325,7 @@
   },
   "ms-shell": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "Z56Jmr9Z34Q",
    "title": "Lecture 1: Course Overview + The Shell (2020)",
    "channel": "Missing Semester",
@@ -336,7 +336,7 @@
   },
   "vsc-debug": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "w8QHoVam1-I",
    "title": "How to Debug Python with VSCode",
    "channel": "Jayanam",
@@ -347,7 +347,7 @@
   },
   "fcc-pytest": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "cHYq1MRoyI0",
    "title": "Pytest Tutorial – How to Test Python Code",
    "channel": "freeCodeCamp.org",
@@ -394,7 +394,7 @@
   },
   "py-unittest": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "6tNS--WetLI",
    "title": "Python Tutorial: Unit Testing Your Code with the unittest Module",
    "channel": "Corey Schafer",
@@ -405,7 +405,7 @@
   },
   "py-mockpatch": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "WFRljVPHrkE",
    "title": "How to use Python's unittest.mock.patch",
    "channel": "redshiftzero",
@@ -416,7 +416,7 @@
   },
   "sql-baraa": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "SSKVgrwhzus",
    "title": "SQL Full Course for Beginners (30 Hours) – From Zero to Hero",
    "channel": "Data with Baraa",
@@ -633,7 +633,7 @@
   },
   "db-design": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "_jf7KZqne-8",
    "title": "Database Design & Data Modeling Full Course For Beginners [2026]",
    "channel": "Ansh Lamba",
@@ -735,7 +735,7 @@
   },
   "pg-acid": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "pomxJOFVcQs",
    "title": "Relational Database ACID Transactions (Explained by Example)",
    "channel": "Hussein Nasser",
@@ -842,7 +842,7 @@
   },
   "pg-index": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "-qNSXK7s7_w",
    "title": "Database Indexing Explained (with PostgreSQL)",
    "channel": "Hussein Nasser",
@@ -853,7 +853,7 @@
   },
   "sqla-crash": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "XWtj4zLl_tg",
    "title": "SQLAlchemy 2.0 ORM Crash Course - Manage Relational Databases with Python (SQLAlchemy 2.0)",
    "channel": "Ssali Jonathan",
@@ -920,7 +920,7 @@
   },
   "sqla-bayer": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "Uym2DHnUEno",
    "title": "TUTORIAL: SQLAlchemy 2.0",
    "channel": "Six Feet Up",
@@ -931,7 +931,7 @@
   },
   "fcc-api": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "0sOvCWFmrtA",
    "title": "Python API Development - Comprehensive Course for Beginners",
    "channel": "freeCodeCamp.org",
@@ -1728,7 +1728,7 @@
   },
   "oauth-oidc": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "996OiexHze0",
    "title": "OAuth 2.0 and OpenID Connect (in plain English)",
    "channel": "OktaDev",
@@ -1739,7 +1739,7 @@
   },
   "idem": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "jfHBrweuKRA",
    "title": "What Is Idempotency? Idempotency Keys, Deduplication & Retries Explained",
    "channel": "The Right Trade-off",
@@ -1796,7 +1796,7 @@
   },
   "backoff": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "NByH-cau97A",
    "title": "Retry Strategies: Exponential Backoff & Jitter Explained",
    "channel": "CodeLucky",
@@ -1853,7 +1853,7 @@
   },
   "llm-intro": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "zjkBMFhNj_g",
    "title": "[1hr Talk] Intro to Large Language Models",
    "channel": "Andrej Karpathy",
@@ -1970,7 +1970,7 @@
   },
   "llm-deep": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "7xTGNNLPyMI",
    "title": "Deep Dive into LLMs like ChatGPT",
    "channel": "Andrej Karpathy",
@@ -2102,7 +2102,7 @@
   },
   "llm-tokenizer": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "zduSFxRajkE",
    "title": "Let's build the GPT Tokenizer",
    "channel": "Andrej Karpathy",
@@ -2239,7 +2239,7 @@
   },
   "transformers": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "wjZofJX0v4M",
    "title": "Transformers, the tech behind LLMs | Deep Learning Chapter 5",
    "channel": "3Blue1Brown",
@@ -2296,7 +2296,7 @@
   },
   "structured": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "4rFVLMBwjGY",
    "title": "Python + AI: Function calling & structured outputs",
    "channel": "Microsoft Reactor",
@@ -2307,7 +2307,7 @@
   },
   "pydantic-llm": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "yj-wSRJwrrc",
    "title": "Pydantic is all you need: Jason Liu",
    "channel": "AI Engineer",
@@ -2318,7 +2318,7 @@
   },
   "prompt101": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "ysPbXH0LpIE",
    "title": "Prompting 101 | Code w/ Claude",
    "channel": "Anthropic",
@@ -2329,7 +2329,7 @@
   },
   "ctx-eng": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "4GiqzUHD5AA",
    "title": "Context Engineering for Agents",
    "channel": "LangChain",
@@ -2340,7 +2340,7 @@
   },
   "injection": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "FgxwCaL6UTA",
    "title": "Prompt Injection, explained",
    "channel": "Simon Willison",
@@ -2351,7 +2351,7 @@
   },
   "docs-ready": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "9lBTS5dM27c",
    "title": "How to Get Your Data Ready for AI Agents (Docs, PDFs, Websites)",
    "channel": "Dave Ebbelaar",
@@ -2398,7 +2398,7 @@
   },
   "embeddings": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "rq5pF1iPcZI",
    "title": "Embeddings & Cosine Similarity Explained | Semantic Search, Vector Database & RAG with Examples",
    "channel": "PM Expert",
@@ -2409,7 +2409,7 @@
   },
   "chunk5": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "8OJC21T2SL4",
    "title": "The 5 Levels Of Text Splitting For Retrieval",
    "channel": "Greg Kamradt",
@@ -2461,7 +2461,7 @@
   },
   "chunk-sem": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "TcRRfcbsApw",
    "title": "Semantic Chunking for RAG",
    "channel": "James Briggs",
@@ -2513,7 +2513,7 @@
   },
   "pgvector": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "j1QcPSLj7u0",
    "title": "PGVector: Turn PostgreSQL Into A Vector Database",
    "channel": "NeuralNine",
@@ -2524,7 +2524,7 @@
   },
   "hybrid": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "D8LmsEOJvPI",
    "title": "Hybrid Search in RAG Explained | BM25 + Semantic Search + RRF (Complete Guide)",
    "channel": "Yash Patil",
@@ -2535,7 +2535,7 @@
   },
   "rerank": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "Uh9bYiVrW_s",
    "title": "RAG But Better: Rerankers with Cohere AI",
    "channel": "James Briggs",
@@ -2587,7 +2587,7 @@
   },
   "rag-scratch": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "sVcwVQRHIc8",
    "title": "Learn RAG From Scratch – Python AI Tutorial from a LangChain Engineer",
    "channel": "freeCodeCamp.org",
@@ -2598,7 +2598,7 @@
   },
   "ragas": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "-_52DIIOsCE",
    "title": "AI Agent Evaluation with RAGAS",
    "channel": "James Briggs",
@@ -2680,7 +2680,7 @@
   },
   "agents-anth": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "uhJJgc-0iTQ",
    "title": "Building more effective AI agents",
    "channel": "Anthropic",
@@ -2762,7 +2762,7 @@
   },
   "agents-ng": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "KrRD7r7y7NY",
    "title": "Andrew Ng Explores The Rise Of AI Agents And Agentic Reasoning | BUILD 2024 Keynote",
    "channel": "Snowflake Inc.",
@@ -2773,7 +2773,7 @@
   },
   "agent-memory": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "aYfZN8t6AQs",
    "title": "Agent Memory EXPLAINED - Complete Architecture",
    "channel": "Hugging Face",
@@ -2825,7 +2825,7 @@
   },
   "lg-reliable": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "kTnfJszFxCg",
    "title": "3 ingredients for building reliable enterprise agents - Harrison Chase, LangChain/LangGraph",
    "channel": "AI Engineer",
@@ -2836,7 +2836,7 @@
   },
   "hitl": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "7GOxUgVTz3s",
    "title": "How to Build Human-in-the-Loop for AI Agents (Practical Guide)",
    "channel": "Dave Ebbelaar",
@@ -2888,7 +2888,7 @@
   },
   "mcp-anth": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "aZLr962R6Ag",
    "title": "Building with MCP and the Claude API",
    "channel": "Anthropic",
@@ -2965,7 +2965,7 @@
   },
   "mcp-server": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "-8k9lGpGQ6g",
    "title": "Build Anything With a CUSTOM MCP Server - Python Tutorial",
    "channel": "Tech With Tim",
@@ -3007,7 +3007,7 @@
   },
   "routing": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "2ld7cR9y0Po",
    "title": "Multi-LLM Routing Strategies for Gen AI - Ethan Ferdosi",
    "channel": "Optimized AI Conference",
@@ -3018,7 +3018,7 @@
   },
   "evals-mistakes": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "GL0XhAj5LPE",
    "title": "LLM Evals: Common Mistakes",
    "channel": "Hamel Husain",
@@ -3075,7 +3075,7 @@
   },
   "evals-auto": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "tqUDjc1HzO4",
    "title": "How to Automate AI Evals (Correctly)",
    "channel": "Hamel Husain",
@@ -3147,7 +3147,7 @@
   },
   "judge": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "kP_aaFnXLmY",
    "title": "3. Tutorial: How to create an LLM judge and align with human labels",
    "channel": "Evidently AI",
@@ -3239,7 +3239,7 @@
   },
   "agent-evals": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "Ubwb6NzegyA",
    "title": "Agentic Evaluations at Scale, For Everybody — Nicholas Kang & Michael Aaron, Google DeepMind",
    "channel": "AI Engineer",
@@ -3250,7 +3250,7 @@
   },
   "otel": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "LQOeaxfiAt8",
    "title": "How Tracing works with OpenTelemetry",
    "channel": "That DevOps Guy",
@@ -3261,7 +3261,7 @@
   },
   "llm-obs": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "Q9zd548hqiQ",
    "title": "LLM Observability: The Breakdown",
    "channel": "The New Stack",
@@ -3272,7 +3272,7 @@
   },
   "langfuse-10": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "2E8iTvGo9Hs",
    "title": "10 min Walkthrough of Langfuse – Open Source LLM Observability, Evaluation, and Prompt Management",
    "channel": "Langfuse",
@@ -3319,7 +3319,7 @@
   },
   "langfuse-trace": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "pTneXS_m1rk",
    "title": "Langfuse Intro - Observability & Tracing Deep Dive",
    "channel": "Langfuse",
@@ -3330,7 +3330,7 @@
   },
   "guardrails": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "rMUycP_cp9g",
    "title": "Advanced Guardrails for AI Agents | Full Tutorial",
    "channel": "James Briggs",
@@ -3382,7 +3382,7 @@
   },
   "owasp": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "gUNXZMcd2jU",
    "title": "OWASP's Top 10 Ways to Attack LLMs: AI Vulnerabilities Exposed",
    "channel": "IBM Technology",
@@ -3393,7 +3393,7 @@
   },
   "data-gov": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "EI8R5UuZt4U",
    "title": "Data Governance Overview",
    "channel": "Informatica Support",
@@ -3404,7 +3404,7 @@
   },
   "resp-ai": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "MluoD8Z1ARQ",
    "title": "Responsible AI: why businesses need reliable AI governance",
    "channel": "IBM Technology",
@@ -3415,7 +3415,7 @@
   },
   "docker-nana": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "3c-iBn73dDE",
    "title": "Docker Tutorial for Beginners [FULL COURSE in 3 Hours]",
    "channel": "TechWorld with Nana",
@@ -3507,7 +3507,7 @@
   },
   "dockerfile": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "tc713anE3UY",
    "title": "This Is How You Write an Efficient Python Dockerfile",
    "channel": "ArjanCodes",
@@ -3584,7 +3584,7 @@
   },
   "gha-nana": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "R8_veQiYBjI",
    "title": "GitHub Actions Tutorial - Basic Concepts and CI/CD Pipeline with Docker",
    "channel": "TechWorld with Nana",
@@ -3646,7 +3646,7 @@
   },
   "ci-pytest": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "DhUpxWjOhME",
    "title": "Automated Testing in Python with pytest, tox, and GitHub Actions",
    "channel": "mCoding",
@@ -3703,7 +3703,7 @@
   },
   "azure": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "usvlTo0TDoA",
    "title": "Learn Azure in 2026",
    "channel": "John Savill's Technical Training",
@@ -3785,7 +3785,7 @@
   },
   "aca": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "LogxM4r2a58",
    "title": "Azure Container Apps (2025 Edition)",
    "channel": "Agentic Intelligence w/ Michael Levan",
@@ -3796,7 +3796,7 @@
   },
   "entra-overview": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "bSIF_GjaCmo",
    "title": "Microsoft Entra Overview - AZ-900 Certification Course - January 2023 New",
    "channel": "John Savill's Technical Training",
@@ -3807,7 +3807,7 @@
   },
   "entra-deep": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "cE3IiHGuHvs",
    "title": "Entra ID (Azure AD) -  Deep Dive",
    "channel": "Militas Aurelius",
@@ -3874,7 +3874,7 @@
   },
   "cost": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "lHxl5SchjPA",
    "title": "The REAL cost of LLM (And How to reduce 78%+ of Cost)",
    "channel": "AI Jason",
@@ -3951,7 +3951,7 @@
   },
   "sysdesign": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "mwN75EiGfCE",
    "title": "Agentic AI System Design Explained in 27 Minutes",
    "channel": "Aishwarya Srinivasan",
@@ -4033,7 +4033,7 @@
   },
   "eda": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "QNfIUIZQ9Vo",
    "title": "Event Driven Architecture (EDA) Introduction",
    "channel": "Concept && Coding - by Shrayansh",
@@ -4090,7 +4090,7 @@
   },
   "multiagent": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "ow1we5PzK-o",
    "title": "The Multi-Agent Architecture That Actually Ships — Luke Alvoeiro, Factory",
    "channel": "AI Engineer",
@@ -4157,7 +4157,7 @@
   },
   "agent-sec": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "jZXvqEqJT7o",
    "title": "How to secure your AI Agents: A Technical Deep-dive",
    "channel": "Google for Developers",
@@ -4239,7 +4239,7 @@
   },
   "ai-gov": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "NrkJLbn3dDE",
    "title": "The Five Must-Haves of an AI Governance Framework",
    "channel": "SANS Institute",
@@ -4250,7 +4250,7 @@
   },
   "c4": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "x2-rSnhpw0g",
    "title": "Visualising software architecture with the C4 model - Simon Brown, Agile on the Beach 2019",
    "channel": "Agile on the Beach",
@@ -4261,7 +4261,7 @@
   },
   "adr": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "LMBqGPLvonU",
    "title": "Lesson 55 - Architecture Decision Records",
    "channel": "Software Architecture Monday",
@@ -4272,7 +4272,7 @@
   },
   "adr-keeling": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "-JqraBhrrjI",
    "title": "#113 - Architecture Decision Record (ADR) - Michael Keeling",
    "channel": "Tech Lead Journal",
@@ -4283,7 +4283,7 @@
   },
   "bw-dwh": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "9GVqKuTVANE",
    "title": "SQL Data Warehouse from Scratch | Full Hands-On Data Engineering Project",
    "channel": "Data with Baraa",
@@ -4520,7 +4520,7 @@
   },
   "at-pandas": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "Mdq1WWSdUtw",
    "title": "Learn Pandas in Under 3 Hours | Filtering, Joins, Indexing, Data Cleaning, Visualizations",
    "channel": "Alex The Analyst",
@@ -4582,7 +4582,7 @@
   },
   "cs-pandas-dates": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "UFuo7EHI8zc",
    "title": "Python Pandas Tutorial (Part 10): Working with Dates and Time Series Data",
    "channel": "Corey Schafer",
@@ -4593,7 +4593,7 @@
   },
   "cs-env": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "5iWhQWVXosU",
    "title": "Python Quick Tip: Hiding Passwords and Secret Keys in Environment Variables (Mac & Linux)",
    "channel": "Corey Schafer",
@@ -4604,7 +4604,7 @@
   },
   "tc-env-win": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "sX_T0thJTss",
    "title": "Hiding Passwords and Secret Keys in Environment Variables (Windows)",
    "channel": "Techie Coder",
@@ -4615,7 +4615,7 @@
   },
   "pd-settings": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "iDgbS3RTkTE",
    "title": "FastAPI Settings: Why You Should Use Pydantic-Settings",
    "channel": "Analytics Vidhya",
@@ -4626,7 +4626,7 @@
   },
   "cs-pydantic": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "M81pfi64eeM",
    "title": "Python Pydantic Tutorial: Complete Data Validation Course (Used by FastAPI)",
    "channel": "Corey Schafer",
@@ -4637,7 +4637,7 @@
   },
   "bi-incr": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "a_T8xRaCO60",
    "title": "How to build ETL pipeline with Incremental Data Load with Python | Python |  ETL",
    "channel": "BI Insights Inc",
@@ -4669,7 +4669,7 @@
   },
   "bi-gx": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "7UQ91Ib7PtU",
    "title": "How to test your Data Pipelines with Great Expectations",
    "channel": "BI Insights Inc",
@@ -4726,7 +4726,7 @@
   },
   "al-dbx": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "7pee6_Sq3VY",
    "title": "Databricks Tutorial (From Zero to Hero) | Azure Databricks Masterclass",
    "channel": "Ansh Lamba",
@@ -4928,7 +4928,7 @@
   },
   "fp-dbx": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "SelEvwHQQ2Y",
    "title": "Databricks Tutorial for Beginners 2026 | Free Edition + Full 101 Guide",
    "channel": "First Principles Data Engineering",
@@ -4980,7 +4980,7 @@
   },
   "kk-medallion": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "u3MSka3WLpE",
    "title": "Databricks tutorial - an intro to the medallion architecture",
    "channel": "Kokchun Coding Tutorials",
@@ -5022,7 +5022,7 @@
   },
   "al-delta": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "O18afGTGoIU",
    "title": "Delta Lake Databricks (From Zero to Pro in 4 HOURS) | Delta Lake Pyspark",
    "channel": "Ansh Lamba",
@@ -5124,7 +5124,7 @@
   },
   "bw-pbi": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "pQSMbRA3O6g",
    "title": "Data Modeling in Power BI Full Course for Beginners (5 Hours) – From Zero to Hero",
    "channel": "Data with Baraa",
@@ -5261,7 +5261,7 @@
   },
   "dc-pbi": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "wJjKyIt2lBM",
    "title": "Power BI Full Course | Master DAX, Data Preparation, Modeling & Visualization",
    "channel": "DataCamp",
@@ -5488,7 +5488,7 @@
   },
   "gc-pbi": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "OmW9YvxSl1E",
    "title": "Power BI Tutorial for Beginners (Step-by-Step in 30 Minutes)",
    "channel": "Guy in a Cube",
@@ -5585,7 +5585,7 @@
   },
   "aa-tf": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "KWpIzjHyC68",
    "title": "Learn Terraform on Azure — Beginner Course",
    "channel": "Adeel Automates",
@@ -5692,7 +5692,7 @@
   },
   "ms-tf": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "Rpl_OB62Y_c",
    "title": "Terraform with Azure Tutorial for Beginners | Remote State, Modules & HCP Terraform [HINDI]",
    "channel": "M Prashant",
@@ -5894,7 +5894,7 @@
   },
   "ag-otel": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "azyVG0T1aVc",
    "title": "OpenTelemetry: How distributed tracing really works with Python, FastAPI and requests",
    "channel": "Adam Gardner",
@@ -5905,7 +5905,7 @@
   },
   "er-otel": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "m28TTogdcbk",
    "title": "OpenTelemetry FastAPI Tutorial: Get GREAT App Performance NOW!",
    "channel": "Eric Roby",
@@ -5916,7 +5916,7 @@
   },
   "jf-appins": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "34np53BGv3o",
    "title": "Building custom metrics dashboards for Python programs with Azure App Insights and OpenTelemetry",
    "channel": "Joe Freeman: Software Craft, Org Stuff, Tech Stuff",
@@ -5927,7 +5927,7 @@
   },
   "lc-interrupt": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "6t7YJcEFUIY",
    "title": "LangGraph interrupt: Making it easier to build human-in-the-loop agents",
    "channel": "LangChain",
@@ -5938,7 +5938,7 @@
   },
   "cc-persist": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "9BPCV5TYPmg",
    "title": "LangGraph - Persistence & Human-in-the-Loop Workflow",
    "channel": "Coding Crash Courses",
@@ -5975,7 +5975,7 @@
   },
   "av-lg": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "FVuv5MPBzPI",
    "title": "LangGraph Tutorial: Understanding Nodes, Edges, and State Management",
    "channel": "Analytics Vidhya",
@@ -5986,7 +5986,7 @@
   },
   "lg-102": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "pDuNkb6VWaM",
    "title": "LangGraph Tutorial 102: Add Tools, Nodes, Conditional & Normal Edges, Memory, Langchain & Langsmith",
    "channel": "HTMLFiveDev",
@@ -5997,7 +5997,7 @@
   },
   "jb-lsmith": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "Iyc80hY2yYk",
    "title": "LangSmith 101 for AI Observability | Full Walkthrough",
    "channel": "James Briggs",
@@ -6034,7 +6034,7 @@
   },
   "rk-stream": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "FJJn3ZVm3VA",
    "title": "How to Stream OpenAI Responses in Python (Sync & Async)",
    "channel": "Raj Kapadia",
@@ -6045,7 +6045,7 @@
   },
   "sl7-aoai": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "50ZwmkCvE88",
    "title": "How to setup Azure OpenAI service and use it in Python",
    "channel": "SL7 Tech",
@@ -6056,7 +6056,7 @@
   },
   "cl-finops": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "_hxYKakfbtQ",
    "title": "FinOps and Cost Optimization in Azure",
    "channel": "Cloud Lunch and Learn",
@@ -6067,7 +6067,7 @@
   },
   "ap-finops": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "gWDTRf_kGHI",
    "title": "FinOps Explained in 5 Minutes | What is FinOps?",
    "channel": "Anglepoint",
@@ -6078,7 +6078,7 @@
   },
   "src-rpo": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "8fVIEKJb-s0",
    "title": "What is RPO and RTO in Disaster Recovery (DR)?",
    "channel": "SrcCodes",
@@ -6110,7 +6110,7 @@
   },
   "drp-rto": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "McBnARj4xlU",
    "title": "RTO and RPO Explained - why are they important concepts in Disaster Recovery",
    "channel": "DisasterRecoveryPro",
@@ -6121,7 +6121,7 @@
   },
   "sd-cb": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "rvKKj7JU92g",
    "title": "Circuit Breaker Pattern Explained: Timeouts, Retries and Fallbacks",
    "channel": "System Design Lab",
@@ -6208,7 +6208,7 @@
   },
   "jc-locust": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "u6VW-HqxOjg",
    "title": "Locust in 30 Minutes: Install, 10-Line Test, Web UI, First Load (Beginner Friendly)",
    "channel": "José Cruz (IT Architect)",
@@ -6260,7 +6260,7 @@
   },
   "ld-mcp": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "DAuZuj0BUZA",
    "title": "Ultimate MCP Tutorial | Learn Model Context Protocol and Deploy your MCP Server",
    "channel": "Lama Dev",
@@ -6412,7 +6412,7 @@
   },
   "fcc-mcpsec": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "gYXLRMycVMk",
    "title": "MCP Security Fundamentals Course",
    "channel": "freeCodeCamp.org",
@@ -6423,7 +6423,7 @@
   },
   "kb-pvm": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "23tkOExq7t0",
    "title": "Price Volume Mix (PVM) for Revenue Variance Analysis",
    "channel": "KnowledgeBank by obviEnce",
@@ -6434,7 +6434,7 @@
   },
   "kb-pvm-gm": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "nVl6JGJEKqI",
    "title": "Price Volume Mix PVM for Gross Margin Variance Analysis",
    "channel": "KnowledgeBank by obviEnce",
@@ -6445,7 +6445,7 @@
   },
   "zb-pvm": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "cRDPoVkfJvE",
    "title": "Price Volume Mix Analysis in Power BI: Complete PVM Tutorial",
    "channel": "Zebra BI",
@@ -6487,7 +6487,7 @@
   },
   "dtc-mesh": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "346N_pCtYZU",
    "title": "Data Mesh 101 - Zhamak Dehghani",
    "channel": "DataTalksClub ⬛",
@@ -6559,7 +6559,7 @@
   },
   "cf-mesh": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "vM1g2rzLkI4",
    "title": "Data Mesh 101: Data Ownership by Domain",
    "channel": "Confluent, an IBM Company",
@@ -6570,7 +6570,7 @@
   },
   "az-net": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "DFdOi0QVso4",
    "title": "Azure Networking for Beginners | Complete Hands-on Labs Masterclass",
    "channel": "A Guide to Cloud & AI",
@@ -6747,7 +6747,7 @@
   },
   "js-vnet": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "7rzawA--r20",
    "title": "Azure Virtual Network Overview",
    "channel": "John Savill's Technical Training",
@@ -6809,7 +6809,7 @@
   },
   "ca-pe": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "1yey_ANEOeo",
    "title": "Why Azure Private Endpoints Exist (The Problem Nobody Explains) | Complete Demo + DNS Deep Dive",
    "channel": "Cloud With Aarya",
@@ -6846,7 +6846,7 @@
   },
   "js-pe": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "rXbamGNz-xQ",
    "title": "Private Endpoint DNS Exploration",
    "channel": "John Savill's Technical Training",
@@ -6883,7 +6883,7 @@
   },
   "mc-nfr": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "pPHgT-p2Pco",
    "title": "Software Architecture in Golang: Quality Attributes, Non-Functional Requirements and ilities",
    "channel": "Mario Carrion",
@@ -6945,7 +6945,7 @@
   },
   "ab-scd": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "kii_Kukh4po",
    "title": "SCD Type 1 and Type 2 using SQL | Implementation of Slowly Changing Dimensions",
    "channel": "Ankit Bansal",
@@ -6956,7 +6956,7 @@
   },
   "tc-scd": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "XqdZF0DJpUs",
    "title": "SCD: Slowly changing dimensions explained with real examples",
    "channel": "Tech Coach",
@@ -6967,7 +6967,7 @@
   },
   "wh-intro": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "nGnybXRCy7E",
    "title": "What is a Webhook? Webhooks Explained for Beginners",
    "channel": "AppUnits AI",
@@ -6978,7 +6978,7 @@
   },
   "fcc-webhooks": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "41NOoEz3Tzc",
    "title": "Webhooks for Beginners - Full Course",
    "channel": "freeCodeCamp.org",
@@ -6989,7 +6989,7 @@
   },
   "sp-err": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "CNn3TwL4ZZ0",
    "title": "Calculating Measurement Error using Python",
    "channel": "Stephanie Powers",
@@ -7000,7 +7000,7 @@
   },
   "ed-margin": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "llNNuR-x8yE",
    "title": "Analyze Margin Changes Over Time - Analytics With Power BI & DAX",
    "channel": "Enterprise DNA",
@@ -7032,7 +7032,7 @@
   },
   "sw-lineage": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "p11p1IzfGFE",
    "title": "What is Data Lineage? | Data Engineering in Five Minutes",
    "channel": "Softwire",
@@ -7043,7 +7043,7 @@
   },
   "ds-contract": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "LfM0eVrK7Bo",
    "title": "Data Contracts Explained: Stop Broken Pipelines Before They Start",
    "channel": "The Data Signal",
@@ -7054,7 +7054,7 @@
   },
   "up-net": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "qAkbEfe0bPA",
    "title": "Networking Basics: IP, DNS, HTTP/HTTPS & Ports for Modern Systems | Uplatz",
    "channel": "Uplatz",
@@ -7065,7 +7065,7 @@
   },
   "bb-tls": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "j9QmMEWmcfo",
    "title": "SSL, TLS, HTTPS Explained",
    "channel": "ByteByteGo",
@@ -7076,7 +7076,7 @@
   },
   "sj-rbac": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "_k2M-LpxId8",
    "title": "Role-Based Access Control Using Dependency Injection (User Roles) - FastAPI Beyond CRUD (Part 13)",
    "channel": "Ssali Jonathan",
@@ -7113,7 +7113,7 @@
   },
   "pg-rbac": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "nnHO4ORP_6M",
    "title": "FastAPI Role-Based Authorization (RBAC) | Secure APIs with Roles",
    "channel": "Programming Guide",
@@ -7124,7 +7124,7 @@
   },
   "tt-incident": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "NUmOZ3nnS7I",
    "title": "Incident Management in SRE Explained (Google SRE Book)",
    "channel": "Tech Tutorials with Piyush",
@@ -7135,7 +7135,7 @@
   },
   "bl-runbook": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "duCnHhtdvOg",
    "title": "Workshop: How to Create A Streamlined Incident Management Runbook",
    "channel": "Blameless",
@@ -7146,7 +7146,7 @@
   },
   "cn-pg": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "a7ZTOtQyGrE",
    "title": "How to create an Azure Database for PostgreSQL Flexible server in Azure portal",
    "channel": "Cloud Nerchuko",
@@ -7157,7 +7157,7 @@
   },
   "kt-pgrec": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "MJ8VTwTvMSo",
    "title": "Recover Deleted Azure PostgreSQL Database (Flexible Server)",
    "channel": "Kris Turk",
@@ -7168,7 +7168,7 @@
   },
   "wv-rev": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "jFa4Rd-c4wA",
    "title": "How to update your Azure Container Apps using Revisions",
    "channel": "Will Velida",
@@ -7230,7 +7230,7 @@
   },
   "mc-traffic": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "k29K-GkJApE",
    "title": "Traffic Splitting in Azure Container Apps | Step-by-Step Lab Demo",
    "channel": "MadeForCloud",
@@ -7241,7 +7241,7 @@
   },
   "cl-deploy": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "H5z70EBtEow",
    "title": "Deployment Strategies Explained: Blue-Green vs. Canary vs. Rolling",
    "channel": "CodeLucky",
@@ -7298,7 +7298,7 @@
   },
   "sc-deploy": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "uzlr9HC0Fuo",
    "title": "Azure Pipelines Deployment Strategies Explained | Blue-Green, Canary | AZ-400 DevOps Engineer",
    "channel": "Skilltech Club",
@@ -7309,7 +7309,7 @@
   },
   "kv-m365": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "3-glyvBK8fM",
    "title": "Azure Key Vault Tutorial: Stop Leaking Your Secrets!",
    "channel": "m365 Show | M365, Azure Cloud, Power Platform & AI",
@@ -7366,7 +7366,7 @@
   },
   "kv-full": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "k3NOiynQD5E",
    "title": "Azure Key Vault Complete Tutorial | Azure Devops | .Net Core",
    "channel": "AzureTeach•Net",
@@ -7418,7 +7418,7 @@
   },
   "mr-waf": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "dT233xJ3xPs",
    "title": "Microsoft Azure Well-Architected Framework",
    "channel": "Microsoft Reactor",
@@ -7429,7 +7429,7 @@
   },
   "sb-slo": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "ywNR71uGvHI",
    "title": "10   SRE Fundamentals — SLIs, SLOs & Error Budgets",
    "channel": "Scott Benson",
@@ -7440,7 +7440,7 @@
   },
   "cf-slo": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "30s_Jsa29M0",
    "title": "Alerting on SLOs and Error Budget Policies | Ricardo Castro | Conf42 SRE 2022",
    "channel": "Conf42",
@@ -7462,7 +7462,7 @@
   },
   "wc-http": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "kiVGRA0HiqQ",
    "title": "HTTP Crash Course | How The Web Works | 15 Minutes",
    "channel": "WolfDenCode",
@@ -7539,7 +7539,7 @@
   },
   "gh-branch": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "7YovOpvO3S0",
    "title": "Git Branching and Merging Tutorial for Beginners: Create, Switch & Merge",
    "channel": "freeplacementcourse",
@@ -7621,7 +7621,7 @@
   },
   "ssd-branch": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "Q1kHG842HoI",
    "title": "Git Branching and Merging - Detailed Tutorial",
    "channel": "SuperSimpleDev",
@@ -7673,7 +7673,7 @@
   },
   "fcc-python": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "rfscVS0vtbw",
    "title": "Learn Python - Full Course for Beginners [Tutorial]",
    "channel": "freeCodeCamp.org",
@@ -7684,7 +7684,7 @@
   },
   "pm-trace": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "Qmj5UQRkL4s",
    "title": "Traceback (most recent call last): Python's tracebacks explained",
    "channel": "Python Morsels",
@@ -7721,7 +7721,7 @@
   },
   "ds-trace": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "qgUS3QyPgdM",
    "title": "Read Python Error Tracebacks Like a Pro: The 5 Most Common Errors",
    "channel": "Data Science for Everyone",
@@ -7732,7 +7732,7 @@
   },
   "cc-pdsql": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "4GhcNuOXJLU",
    "title": "Pandas vs SQL - What's The Difference?",
    "channel": "The Comparison Channel",
@@ -7743,7 +7743,7 @@
   },
   "fm-pdsql": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "9n7nJF38mfY",
    "title": "Pandas vs SQL for Data Analytics",
    "channel": "Fahd Mirza",
@@ -7754,7 +7754,7 @@
   },
   "sr-recon": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "ZfboXQua0io",
    "title": "ETL Testing:Mastering Source vs Target Validation in SQL: Complete Guide",
    "channel": "SRTechnologies Ravindra Reddy",
@@ -7765,7 +7765,7 @@
   },
   "etl-recon": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "8llaSKq6Mxo",
    "title": "Part 0: [INTRO]Automation Data Reconciliation & Testing (That Actually Works)",
    "channel": "ETL and Data Pipeline Testing",
@@ -7776,7 +7776,7 @@
   },
   "up-idem": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "GcU2vxYrA3g",
    "title": "Idempotent Data Pipelines | Building Reliable & Fault-Tolerant Data Workflows | Uplatz",
    "channel": "Uplatz",
@@ -7787,7 +7787,7 @@
   },
   "cl-pipe": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "Ne9GAuuKLdc",
    "title": "Data ingestion pipeline with built-in error handling",
    "channel": "CloverDX",
@@ -7798,7 +7798,7 @@
   },
   "cor-coa-dax": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "xBlu6QmInY4",
    "title": "Power BI Parent Child Chart of Accounts with DAX",
    "channel": "Control Over Reports B.V.",
@@ -7809,7 +7809,7 @@
   },
   "cor-coa-m": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "YiTyWUeuwKI",
    "title": "Power BI Parent Child Chart of Accounts with M (Power Query)",
    "channel": "Control Over Reports B.V.",
@@ -7820,7 +7820,7 @@
   },
   "ed-fx": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "i8WKBiTHqVI",
    "title": "Simple Currency Conversion in Power BI w/DAX",
    "channel": "Enterprise DNA",
@@ -7857,7 +7857,7 @@
   },
   "ds-fiscal": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "Y1jqDcYsTEc",
    "title": "How to Create Fiscal Dates Table in Power BI | Power BI CalendarAuto Function",
    "channel": "Data Science Tutorials",
@@ -7868,7 +7868,7 @@
   },
   "as-bva": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "6NJ3pcGpkBQ",
    "title": "Budget vs Actual in Python: Build a Real Finance Tool in 20 Minutes",
    "channel": "AutoSolve",
@@ -7879,7 +7879,7 @@
   },
   "fcc-forecast": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "fxx_E0ojKrc",
    "title": "Time Series Forecasting in Python – Tutorial for Beginners",
    "channel": "freeCodeCamp.org",
@@ -7890,7 +7890,7 @@
   },
   "dh-forecast": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "eKiXtGzEjos",
    "title": "Time Series Analysis Crash Course: Predict the Future with Python",
    "channel": "Data Heroes",
@@ -8092,7 +8092,7 @@
   },
   "ed-custprofit": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "dO45fx-Ll2Q",
    "title": "Customer Profitability Analysis (Activity Based Costing)",
    "channel": "Edspira",
@@ -8103,7 +8103,7 @@
   },
   "sj-errors": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "jYbNq6QAQNI",
    "title": "Error Handling (How to create Custom Error Handlers and Exceptions) - FastAPI Beyond CRUD (Part 16)",
    "channel": "Ssali Jonathan",
@@ -8155,7 +8155,7 @@
   },
   "jk-assert": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "jpY8ECnAosU",
    "title": "Promptfoo Assertions Overview",
    "channel": "Jason Koo",
@@ -8232,7 +8232,7 @@
   },
   "pl-httpx": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "qAh5dDODJ5k",
    "title": "HTTPX Tutorial - A next-generation HTTP client for Python",
    "channel": "Patrick Loeber",
@@ -8279,7 +8279,7 @@
   },
   "ae-apiauth": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "2zYJMI_OPIY",
    "title": "Rest API Authentication with Python.",
    "channel": "Automation Experts",
@@ -8290,7 +8290,7 @@
   },
   "wc-pgdump": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "WB6WzuFHcP8",
    "title": "Backing Up a Postgres Database with pg_dump and pg_restore",
    "channel": "WittCode",
@@ -8347,7 +8347,7 @@
   },
   "tp-pgvol": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "oUbal7sUduo",
    "title": "How to backup a Docker Volume for an existing Postgres SQL database running as a Docker Container",
    "channel": "TPPZ builds things",
@@ -8358,7 +8358,7 @@
   },
   "mg-env": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "5XfgT9A9PHw",
    "title": "GitHub Actions -  Getting Started With Environments",
    "channel": "Mickey Gousset",
@@ -8369,7 +8369,7 @@
   },
   "am-env": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "EOlm3ft0VPo",
    "title": "Deploying to Environments with GitHub Actions (#212)",
    "channel": "Asp.Net Monsters",
@@ -8380,7 +8380,7 @@
   },
   "av-pillars": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "6YCrvZRFfmA",
    "title": "12. Metrics, Logs & Traces (Observability Explained)",
    "channel": "Arpit Vaish",
@@ -8472,7 +8472,7 @@
   },
   "oo-pillars": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "rJfZyA831fI",
    "title": "Observability and Its Pillars Explained | Logs, Metrics & Traces Simplified",
    "channel": "OpenObserve",
@@ -8483,7 +8483,7 @@
   },
   "mj-rate": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "COQNpbNGFJU",
    "title": "Rate Limiting Explained: Token Bucket vs Sliding Window | System Design By Microsoft SWE",
    "channel": "Mayank Joshi",
@@ -8515,7 +8515,7 @@
   },
   "cl-rate": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "8GaI0HCOkUE",
    "title": "Rate Limiting in Distributed Systems: Token Bucket & Leaky Bucket Algorithms Explained",
    "channel": "CodeLucky",
@@ -8577,7 +8577,7 @@
   },
   "uva-req": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "pSQRetBoaRE",
    "title": "Requirements Elicitation",
    "channel": "UVA CS 3240",
@@ -8588,7 +8588,7 @@
   },
   "ws-req": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "t1EW7F_TU_U",
    "title": "Requirements Gathering & Analysis in Software Development Life Cycle (SDLC) | Free Tutorial 2021",
    "channel": "Woodsy Spark Insights",
@@ -8599,7 +8599,7 @@
   },
   "wf-stake": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "rgE2qkvUJGs",
    "title": "Stakeholders & Requirement Gathering Basics | Business Analyst Beginner Guide",
    "channel": "Wise Flame",
@@ -8610,7 +8610,7 @@
   },
   "ba-req": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "uAHeTzmc_2g",
    "title": "How to Gather Requirements as a Business Analyst | Requirement Gathering Techniques",
    "channel": "The Business Analysis Doctor - IIBA Certification",
@@ -8621,7 +8621,7 @@
   },
   "ac-coupling": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "eiDyK_ofPPM",
    "title": "Cohesion and Coupling: Write BETTER PYTHON CODE Part 1",
    "channel": "ArjanCodes",
@@ -8683,7 +8683,7 @@
   },
   "ac-coupling2": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "MM9VQp-k0JQ",
    "title": "Coupling 101: Design Choices That Make or Break Your Code",
    "channel": "ArjanCodes",
@@ -8725,7 +8725,7 @@
   },
   "bm-api": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "pJ83mmqcvoQ",
    "title": "9 Must-Know REST API Design Principles for Developers",
    "channel": "ByteMonk",
@@ -8787,7 +8787,7 @@
   },
   "sdl-api": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "BvtIqaiabJA",
    "title": "REST API Design Like a Senior Engineer (REST, GraphQL, Networking, Pagination, Auth, Security)",
    "channel": "System Design Lab",
@@ -9174,7 +9174,7 @@
   },
   "sj-bg": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "eAHAKowv6hk",
    "title": "Background Tasks with FastAPI Background Tasks and Celery + Redis - FastAPI Beyond CRUD (Part 20)",
    "channel": "Ssali Jonathan",
@@ -9241,7 +9241,7 @@
   },
   "av-bg": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "31pLwWmsu3w",
    "title": "FastAPI BackgroundTasks vs. Celery: Which One to Choose?",
    "channel": "Analytics Vidhya",
@@ -9252,7 +9252,7 @@
   },
   "dg-mdm": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "_6qLg1XuvYI",
    "title": "What is Master Data Management? MDM Explained for Beginners",
    "channel": "The Data and AI Guy",
@@ -9329,7 +9329,7 @@
   },
   "js-rbac": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "qFoHDTxkQII",
    "title": "Azure Role-Based Access Control Deep Dive",
    "channel": "John Savill's Technical Training",
@@ -9340,7 +9340,7 @@
   },
   "bb-rbac": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "1kSur3me2jU",
    "title": "Azure RBAC Tutorial: Roles, Scope & Access Control Explained (2026)",
    "channel": "Bits&Breach",
@@ -9351,7 +9351,7 @@
   },
   "pc-tenant": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "9Nayh0FPv0A",
    "title": "Designing Scalable Multi-Tenant Architectures with PostgreSQL for SaaS Solutions",
    "channel": "Postgres Conference",
@@ -9362,7 +9362,7 @@
   },
   "ipc-rls": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "DabJ0hxiXAo",
    "title": "PostgreSQL RLS for Safer Multi-Tenant SaaS",
    "channel": "International PHP Conference",
@@ -9373,7 +9373,7 @@
   },
   "js-encrypt": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "EOXgzTqceok",
    "title": "Azure Storage and Disk Encryption Deep Dive",
    "channel": "John Savill's Technical Training",
@@ -9460,7 +9460,7 @@
   },
   "mr-llmops": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "K2gknZ2ubW4",
    "title": "DevOps in the era of generative AI: foundations of LLMOps",
    "channel": "Microsoft Reactor",
@@ -9471,7 +9471,7 @@
   },
   "ef-owner": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "aW3r_eGXLnI",
    "title": "You Build It, You Run It: The Preferred Ownership Model for Engineering Teams | Dan Bennett |",
    "channel": "Eficode",
@@ -9482,7 +9482,7 @@
   },
   "yb-owner": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "-5rPZmMp7qE",
    "title": "What is You Build It You Run It?",
    "channel": "You Build It You Run It - Bethan Timmins",
@@ -9493,7 +9493,7 @@
   },
   "sv-support": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "CirUgMfkwKk",
    "title": "Production Support L1 L2 L3 Explained | Real-Time Roles & Daily Tasks 🔥| L2 Support Daily Routine",
    "channel": "Sai Vinod Irala",
@@ -9504,7 +9504,7 @@
   },
   "fx-tco": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "5HscS50lt_s",
    "title": "Cloud Total Cost of Ownership | How to Understand Your Cloud Total Cost of Ownership TCO | Flexera",
    "channel": "Flexera | ITAM, FinOps & SaaS Management",
@@ -9551,7 +9551,7 @@
   },
   "ct-tco": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "4Gnixbx_qMs",
    "title": "Azure TCO Calculator Explained | Estimate Cloud Costs & Save Smart",
    "channel": "Cloud360 Training",
@@ -9562,7 +9562,7 @@
   },
   "dg-roi": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "DYJqOe4RXxY",
    "title": "How to Calculate AI ROI Before You Invest",
    "channel": "DigitSense",
@@ -9573,7 +9573,7 @@
   },
   "tn-roi": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "jeBJpbDL5q0",
    "title": "How to Calculate ROI on AI Projects: A Framework for Enterprise Leaders",
    "channel": "Technijian",
@@ -9584,7 +9584,7 @@
   },
   "ff-alloc": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "UbMjxagpZl4",
    "title": "Cost Allocation Models and Chargeback",
    "channel": "FinOps Foundation",
@@ -9595,7 +9595,7 @@
   },
   "ms-alloc": {
    "status": "verified",
-   "verifiedAt": "2026-11-07",
+   "verifiedAt": "2026-11-08",
    "id": "nYzIIs2mx9Q",
    "title": "How to create a cost allocation rule with Azure Cost Management",
    "channel": "Microsoft Cost Management",

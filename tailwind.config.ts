@@ -28,6 +28,7 @@ export default {
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
         serif: ["var(--font-serif)", "Georgia", "serif"],
+        display: ["var(--font-display)", "Georgia", "serif"],
         syriac: ["var(--font-syriac)", "serif"],
       },
       borderRadius: { card: "22px", img: "4px" },

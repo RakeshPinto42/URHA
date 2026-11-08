@@ -5,13 +5,17 @@ import { useMemo, useState } from "react";
 import type { Confidence } from "@/lib/stocks/scoring";
 import type { Verdict } from "@/lib/stocks/technicals";
 import { VerdictTag } from "./VerdictTag";
+import type { VerdictStats } from "@/lib/stocks/backtest";
+import { evidenceLabel, SCORE_STATUS } from "@/lib/stocks/evidence-label";
+
+const TONE = { positive: "text-positive", negative: "text-negative", muted: "text-muted" };
 
 export type BoardPillar = { key: string; label: string; points: number; max: number; measured: number; total: number };
 export type BoardRow = {
   symbol: string; name: string | null; segment: string | null; sector: string | null; close: number; date: string; turnoverCr: number | null;
-  verdict: Verdict; total: number; measured: number; confidence: Confidence; pillars: BoardPillar[]; strategies: string[]; stale: boolean; watched: boolean;
+  verdict: Verdict; adjusted: number | null; normalised: number | null; earned: number; measured: number; confidence: Confidence; model: string; pillars: BoardPillar[]; strategies: string[]; stale: boolean; watched: boolean;
 };
-type StrategyStat = { id: string; title: string; summary: string; matched: number; noMatch: number; notTestable: number; blockedBy: string | null };
+type StrategyStat = { id: string; title: string; summary: string; matched: number; noMatch: number; notTestable: number; notApplicable: number; blockedBy: string | null };
 
 const VERDICTS: Verdict[] = ["BULLISH", "EARLY ACCUMULATION", "NEUTRAL", "OVEREXTENDED", "BEARISH", "NOT ENOUGH DATA"];
 const SEGMENTS = [["small-cap", "Small cap"], ["mid-cap", "Mid cap"], ["large-cap", "Large cap"]] as const;
@@ -30,7 +34,7 @@ function PillarBars({ pillars }: { pillars: BoardPillar[] }) {
   );
 }
 
-export function DiscoveryBoard({ rows, strategies }: { rows: BoardRow[]; strategies: StrategyStat[] }) {
+export function DiscoveryBoard({ rows, strategies, evidence }: { rows: BoardRow[]; strategies: StrategyStat[]; evidence: VerdictStats[] | null }) {
   const [strategy, setStrategy] = useState<string | null>(null);
   const [verdict, setVerdict] = useState("all");
   const [segment, setSegment] = useState("all");
@@ -46,7 +50,7 @@ export function DiscoveryBoard({ rows, strategies }: { rows: BoardRow[]; strateg
     return rows
       .filter((r) => (!strategy || r.strategies.includes(strategy)) && (verdict === "all" || r.verdict === verdict) && (segment === "all" || r.segment === segment)
         && (sector === "all" || r.sector === sector) && (!watchOnly || r.watched) && (!t || r.symbol.includes(t) || (r.name ?? "").toUpperCase().includes(t)))
-      .sort((a, b) => b.total - a.total || (b.turnoverCr ?? 0) - (a.turnoverCr ?? 0));
+;
   }, [rows, strategy, verdict, segment, sector, watchOnly, q]);
   const active = strategies.find((s) => s.id === strategy);
 
@@ -108,7 +112,7 @@ export function DiscoveryBoard({ rows, strategies }: { rows: BoardRow[]; strateg
               <tr>
                 <th className="px-3 py-2 font-medium">Company</th><th className="px-3 py-2 font-medium">Market cap</th>
                 <th className="px-3 py-2 text-right font-medium">Close, ₹</th><th className="px-3 py-2 font-medium">Technical verdict</th>
-                <th className="px-3 py-2 text-right font-medium">Score</th><th className="px-3 py-2 font-medium">Pillars</th><th className="px-3 py-2 font-medium">Confidence</th>
+                <th className="px-3 py-2 text-right font-medium" title={SCORE_STATUS}>Score <span className="font-normal">(provisional)</span></th><th className="px-3 py-2 font-medium">Pillars</th><th className="px-3 py-2 font-medium">Confidence</th>
               </tr>
             </thead>
             <tbody>
@@ -116,12 +120,12 @@ export function DiscoveryBoard({ rows, strategies }: { rows: BoardRow[]; strateg
                 <tr key={r.symbol} className="border-t border-border">
                   <td className="px-3 py-2">
                     <Link href={`/discovery/${encodeURIComponent(r.symbol)}`} className="font-medium hover:underline">{r.symbol}</Link>{r.watched && <span className="ml-1 text-[12px] text-muted">Watching</span>}
-                    <span className="block max-w-[260px] truncate text-[12px] text-muted">{r.name ?? "Name unavailable"}</span>
+                    <span className="block max-w-[260px] truncate text-[12px] text-muted">{r.name ?? "Name unavailable"} · {r.model}</span>
                   </td>
                   <td className="px-3 py-2 text-[13px]">{r.segment ? r.segment.replace("-cap", " cap") : <span className="text-muted">Unknown</span>}</td>
                   <td className="num px-3 py-2 text-right">{r.close.toLocaleString("en-IN", { maximumFractionDigits: 2 })}{r.stale && <span className="block text-[12px] text-warning">Stale</span>}</td>
-                  <td className="px-3 py-2"><VerdictTag verdict={r.verdict} /></td>
-                  <td className="num px-3 py-2 text-right"><span className="font-medium">{r.total}</span><span className="block text-[12px] text-muted">{r.measured} of 100 measured</span></td>
+                  <td className="px-3 py-2"><VerdictTag verdict={r.verdict} />{(() => { const e = evidenceLabel(evidence, r.verdict); return <span className={`mt-0.5 block text-[12px] ${TONE[e.tone]}`} title={e.detail}>{e.text}</span>; })()}</td>
+                  <td className="num px-3 py-2 text-right"><span className="font-medium">{r.adjusted ?? "Not scored"}</span><span className="block text-[12px] text-muted">{r.earned} of {r.measured} measured</span></td>
                   <td className="px-3 py-2"><PillarBars pillars={r.pillars} /></td>
                   <td className="px-3 py-2 text-[13px]">{r.confidence}</td>
                 </tr>

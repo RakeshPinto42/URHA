@@ -1,16 +1,19 @@
 /**
  * GET /api/backup — a consistent snapshot of the database (better-sqlite3 online
  * backup API), streamed as a download, then deleted from the temp folder.
- * Local-only: the server binds to 127.0.0.1. Add auth before exposing it anywhere.
+ * This is the whole database, so it needs the same access as any other private read.
  */
 import fs from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
+import { guardRead, refused } from "@/lib/api-guard";
 import { getDb } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
 
-export async function GET() {
+export async function GET(request: Request) {
+  const g = guardRead(request);
+  if (!g.ok) return refused(g);
   const stamp = new Date().toISOString().replace(/[:.]/g, "-");
   const tmp = path.join(os.tmpdir(), `urha-backup-${stamp}-${process.pid}.db`);
   try {

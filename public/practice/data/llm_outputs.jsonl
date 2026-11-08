@@ -1,0 +1,10 @@
+{"account": "6200", "explanation": "Software spend rose with two new seats.", "drivers": ["new seats"], "confidence": 0.8}
+{"account": "4000", "explanation": "Revenue fell short in DE after a delayed order.", "drivers": ["delayed order", "pricing"], "confidence": 0.65}
+{"account": "6300", "explanation": "Travel ran over budget.", "drivers": [], "confidence": 0.4}
+Sure! Here is the JSON: {"account": "6100", "explanation": "Payroll", "drivers": ["bonus"], "confidence": 0.9}
+{"account": "7777", "explanation": "Marketing spend increased.", "drivers": ["campaign"], "confidence": 0.7}
+{"account": "6500", "explanation": "Legal fees for a contract review.", "drivers": ["contract review"], "confidence": 1.4}
+{"account": "5000", "explanation": "Cost of sales tracked revenue.", "drivers": ["volume"]}
+{"account": "6400", "explanation": "Rent was in line.", "drivers": ["none"], "confidence": 0.95}
+{"account": 6200, "explanation": "Software licences renewed early.", "drivers": ["renewal"], "confidence": 0.7}
+{"account": "4100", "explanation": "Services revenue rose on two new contracts.", "drivers": ["new contracts"], "confidence": 0.85}

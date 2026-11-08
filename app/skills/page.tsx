@@ -31,7 +31,7 @@ export default async function SkillsPage() {
 
   return (
     <PageEnter>
-      <FrontispieceBand art="path" section="skills" height="compact">
+      <FrontispieceBand section="skills" height="compact">
         <p className="text-[14px] text-[#f7f7f5]/85">Skills</p>
         <RisingTitle text="The Mastery" className="mt-1 font-serif text-[40px] leading-[1.05] sm:text-[52px]" />
         <p className="mt-2 max-w-[66ch] text-[15px] text-[#f7f7f5]/90">Twelve skills. Each one holds the lowest state across the topics that build it, counting the phases you have reached and any topic you have started early, so a skill is Demonstrated only when each of those topics has a passed assessment. Watching a course never raises a state.</p>

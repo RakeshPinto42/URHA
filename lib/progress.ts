@@ -58,10 +58,14 @@ export function topicStatus(
   needsRevision: boolean,
   prereqStatuses: TopicStatus[],
   demonstrated = false,
+  /** Every Academy exercise linked to the topic is passed (true when it has none). */
+  practiceDone = true,
 ): TopicStatus {
   if (needsRevision) return "needs-revision";
   if (demonstrated) return "mastered";
-  if (subs.length > 0 && subs.every((s) => s.practised)) return "completed";
+  // Completed means the work is done in practice, not only watched and ticked: every subtopic
+  // practised, and every linked exercise in the Practice yard passed.
+  if (subs.length > 0 && subs.every((s) => s.practised) && practiceDone) return "completed";
   if (subs.some((s) => s.exposed || s.practised || s.proficient)) return "in-progress";
   if (prereqStatuses.every(isDone)) return "ready";
   return "not-started";
@@ -72,7 +76,7 @@ export function topicStatus(
  * a cycle (bad curriculum edit) is reported, not looped on.
  */
 export function resolveTopicStatuses(
-  topics: { id: string; prerequisites: string[]; subs: SubtopicProgress[]; needsRevision: boolean; demonstrated?: boolean }[],
+  topics: { id: string; prerequisites: string[]; subs: SubtopicProgress[]; needsRevision: boolean; demonstrated?: boolean; practiceDone?: boolean }[],
 ): Map<string, TopicStatus> {
   const byId = new Map(topics.map((t) => [t.id, t]));
   const out = new Map<string, TopicStatus>();
@@ -84,7 +88,7 @@ export function resolveTopicStatuses(
     if (!t) return "not-started"; // unknown prerequisite: never satisfied
     if (visiting.has(id)) throw new Error(`Curriculum prerequisite cycle at topic "${id}"`);
     visiting.add(id);
-    const s = topicStatus(t.subs, t.needsRevision, t.prerequisites.map(visit), !!t.demonstrated);
+    const s = topicStatus(t.subs, t.needsRevision, t.prerequisites.map(visit), !!t.demonstrated, t.practiceDone ?? true);
     visiting.delete(id);
     out.set(id, s);
     return s;

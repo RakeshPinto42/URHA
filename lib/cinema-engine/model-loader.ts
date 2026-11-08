@@ -33,10 +33,12 @@ export const modelSource = {
   release: (src: string) => models.release(src),
 };
 
-export async function loadTexture(src: string): Promise<THREE.Texture> {
+const textures = new THREE.TextureLoader();
+
+export async function loadTexture(src: string, opts: { data?: boolean } = {}): Promise<THREE.Texture> {
   if (!LOCAL_ASSET.test(src)) throw new Error(`Not a local asset: ${src}`);
-  const t = await new THREE.TextureLoader().loadAsync(src);
-  t.colorSpace = THREE.SRGBColorSpace;
+  const t = await textures.loadAsync(src);
+  t.colorSpace = opts.data ? THREE.NoColorSpace : THREE.SRGBColorSpace;
   t.wrapS = t.wrapT = THREE.RepeatWrapping;
   t.anisotropy = 4;
   return t;

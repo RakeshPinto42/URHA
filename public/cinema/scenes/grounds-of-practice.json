@@ -1,0 +1,584 @@
+{
+  "version": 1,
+  "id": "grounds-of-practice",
+  "title": "The Grounds of Practice",
+  "camera": {
+    "fov": 46,
+    "near": 0.5,
+    "far": 2600,
+    "position": [
+      0,
+      13,
+      132
+    ],
+    "target": [
+      0,
+      20,
+      -60
+    ]
+  },
+  "environment": {
+    "fog": {
+      "color": "#ffe2b8",
+      "density": 0.0011
+    },
+    "exposure": 1,
+    "reflections": 0.6,
+    "bloom": {
+      "strength": 0.24,
+      "radius": 0.5,
+      "threshold": 1.1
+    },
+    "rays": {
+      "strength": 0.4,
+      "direction": [
+        0.62,
+        0.42,
+        -0.5
+      ],
+      "color": "#ffe6bc"
+    },
+    "shadowRange": 190
+  },
+  "timelines": [],
+  "lights": [
+    {
+      "id": "sky-light",
+      "type": "hemisphere",
+      "sky": "#fff1dc",
+      "ground": "#8fa56f",
+      "intensity": 1.5
+    },
+    {
+      "id": "sun",
+      "type": "directional",
+      "color": "#ffd9a6",
+      "intensity": 3.4,
+      "direction": [
+        0.62,
+        0.42,
+        -0.5
+      ],
+      "castShadow": true
+    },
+    {
+      "id": "fill",
+      "type": "directional",
+      "color": "#e8f2dc",
+      "intensity": 0.9,
+      "direction": [
+        -0.5,
+        0.5,
+        0.8
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "sky",
+      "generator": "celestial-sky",
+      "visible": true,
+      "environmentSource": true,
+      "params": {
+        "horizon": "#ffeec6",
+        "low": "#ffd2a0",
+        "mid": "#f6b7ae",
+        "high": "#82a6e6",
+        "zenith": "#2b4aa0",
+        "stars": 0.25,
+        "planet": 1,
+        "sun": [
+          0.62,
+          0.42,
+          -0.5
+        ],
+        "sunPower": 9,
+        "radius": 1400
+      }
+    },
+    {
+      "id": "quad",
+      "generator": "quadrangle",
+      "visible": true,
+      "params": {
+        "width": 150,
+        "length": 214,
+        "height": 24
+      }
+    },
+    {
+      "id": "water-mirror",
+      "generator": "mirror-floor",
+      "visible": true,
+      "params": {
+        "shape": "rect",
+        "width": 30,
+        "length": 180,
+        "strength": 0.9,
+        "y": 1
+      }
+    },
+    {
+      "id": "plinths",
+      "generator": "discipline-plinths",
+      "visible": true,
+      "params": {
+        "x": 42,
+        "start": 58,
+        "step": 54
+      }
+    },
+    {
+      "id": "tree-1",
+      "generator": "tree-of-knowledge",
+      "visible": true,
+      "placement": {
+        "position": [
+          -46,
+          0.5,
+          -72
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "params": {
+        "height": 12,
+        "radius": 1.6,
+        "seed": 17,
+        "rootSpread": 7,
+        "roots": 7,
+        "leafSpread": 5.5,
+        "leafSize": 0.95,
+        "leavesPerTip": 70,
+        "fruit": 0,
+        "leafMetal": 0,
+        "leafGlowStrength": 0,
+        "leaf": "#6faf56",
+        "leafDeep": "#3f7d43",
+        "leafPale": "#b7d973",
+        "bark": "#8f7a62",
+        "vein": "#6e5c48"
+      }
+    },
+    {
+      "id": "tree-2",
+      "generator": "tree-of-knowledge",
+      "visible": true,
+      "placement": {
+        "position": [
+          46,
+          0.5,
+          -72
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "params": {
+        "height": 12,
+        "radius": 1.6,
+        "seed": 34,
+        "rootSpread": 7,
+        "roots": 7,
+        "leafSpread": 5.5,
+        "leafSize": 0.95,
+        "leavesPerTip": 70,
+        "fruit": 0,
+        "leafMetal": 0,
+        "leafGlowStrength": 0,
+        "leaf": "#6faf56",
+        "leafDeep": "#3f7d43",
+        "leafPale": "#b7d973",
+        "bark": "#8f7a62",
+        "vein": "#6e5c48"
+      }
+    },
+    {
+      "id": "tree-3",
+      "generator": "tree-of-knowledge",
+      "visible": true,
+      "placement": {
+        "position": [
+          -50,
+          0.5,
+          30
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "params": {
+        "height": 12,
+        "radius": 1.6,
+        "seed": 51,
+        "rootSpread": 7,
+        "roots": 7,
+        "leafSpread": 5.5,
+        "leafSize": 0.95,
+        "leavesPerTip": 70,
+        "fruit": 0,
+        "leafMetal": 0,
+        "leafGlowStrength": 0,
+        "leaf": "#6faf56",
+        "leafDeep": "#3f7d43",
+        "leafPale": "#b7d973",
+        "bark": "#8f7a62",
+        "vein": "#6e5c48"
+      }
+    },
+    {
+      "id": "tree-4",
+      "generator": "tree-of-knowledge",
+      "visible": true,
+      "placement": {
+        "position": [
+          50,
+          0.5,
+          30
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "params": {
+        "height": 12,
+        "radius": 1.6,
+        "seed": 68,
+        "rootSpread": 7,
+        "roots": 7,
+        "leafSpread": 5.5,
+        "leafSize": 0.95,
+        "leavesPerTip": 70,
+        "fruit": 0,
+        "leafMetal": 0,
+        "leafGlowStrength": 0,
+        "leaf": "#6faf56",
+        "leafDeep": "#3f7d43",
+        "leafPale": "#b7d973",
+        "bark": "#8f7a62",
+        "vein": "#6e5c48"
+      }
+    },
+    {
+      "id": "board-1",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          -66,
+          0,
+          18
+        ],
+        "rotation": [
+          0,
+          1.57,
+          0
+        ],
+        "scale": [
+          6.2,
+          6.2,
+          6.2
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/standing-chalkboard-01.glb"
+      }
+    },
+    {
+      "id": "board-2",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          66,
+          0,
+          -40
+        ],
+        "rotation": [
+          0,
+          -1.57,
+          0
+        ],
+        "scale": [
+          6.2,
+          6.2,
+          6.2
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/standing-chalkboard-01.glb"
+      }
+    },
+    {
+      "id": "pot-1",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          -22,
+          0,
+          118
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          8,
+          8,
+          8
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/potted-plant-02.glb"
+      }
+    },
+    {
+      "id": "pot-2",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          22,
+          0,
+          118
+        ],
+        "rotation": [
+          0,
+          1,
+          0
+        ],
+        "scale": [
+          8,
+          8,
+          8
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/potted-plant-02.glb"
+      }
+    },
+    {
+      "id": "pot-3",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          -22,
+          0,
+          20
+        ],
+        "rotation": [
+          0,
+          2,
+          0
+        ],
+        "scale": [
+          8,
+          8,
+          8
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/potted-plant-02.glb"
+      }
+    },
+    {
+      "id": "pot-4",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          22,
+          0,
+          20
+        ],
+        "rotation": [
+          0,
+          3,
+          0
+        ],
+        "scale": [
+          8,
+          8,
+          8
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/potted-plant-02.glb"
+      }
+    },
+    {
+      "id": "pot-5",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          -22,
+          0,
+          -46
+        ],
+        "rotation": [
+          0,
+          4,
+          0
+        ],
+        "scale": [
+          8,
+          8,
+          8
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/potted-plant-02.glb"
+      }
+    },
+    {
+      "id": "pot-6",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          22,
+          0,
+          -46
+        ],
+        "rotation": [
+          0,
+          5,
+          0
+        ],
+        "scale": [
+          8,
+          8,
+          8
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/potted-plant-02.glb"
+      }
+    },
+    {
+      "id": "lantern-1",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          -20.3,
+          1,
+          2
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          7,
+          7,
+          7
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/wooden-lantern-01.glb"
+      }
+    },
+    {
+      "id": "lantern-2",
+      "generator": "model",
+      "visible": true,
+      "placement": {
+        "position": [
+          20.3,
+          1,
+          2
+        ],
+        "rotation": [
+          0,
+          1,
+          0
+        ],
+        "scale": [
+          7,
+          7,
+          7
+        ]
+      },
+      "params": {
+        "src": "/cinema/assets/wooden-lantern-01.glb"
+      }
+    },
+    {
+      "id": "swallows",
+      "generator": "flock",
+      "visible": true,
+      "params": {
+        "count": 8,
+        "radius": 120,
+        "height": 70,
+        "speed": 0.12,
+        "size": 1.2,
+        "color": "#3a3550"
+      }
+    },
+    {
+      "id": "pollen",
+      "generator": "particles",
+      "visible": true,
+      "placement": {
+        "position": [
+          0,
+          1,
+          40
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "params": {
+        "count": 360,
+        "color": "#fff0b4",
+        "area": 170,
+        "height": 46,
+        "size": 90
+      }
+    }
+  ]
+}

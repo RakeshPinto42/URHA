@@ -10,7 +10,10 @@ import { paneAt } from "@/lib/cinema";
 import { MASTERY_LABEL, MASTERY_ORDER, STATUS_LABEL } from "@/lib/progress";
 import { PageEnter } from "@/components/Motion";
 import { Canvas, Notice, Panel, StatusLabel, TextLink } from "@/components/ui";
-import { FrontispieceBand, RisingTitle } from "@/components/Frontispiece";
+import { RoomHero } from "@/components/realm/RoomHero";
+import { EXERCISES } from "@/lib/practice/exercises";
+import { practiceStatus } from "@/lib/practice/progress";
+import { journeyFrom } from "@/lib/journey/model";
 import { StepLadder } from "@/components/forms/StepLadder";
 import { Icon } from "@/components/Icon";
 
@@ -32,6 +35,21 @@ function Facts({ r }: { r: CatalogResource }) {
   );
 }
 
+/** The Practice yard exercises that train a topic, so a lesson always leads to doing. */
+function PracticeLinks({ topicId }: { topicId: string }) {
+  const own = EXERCISES.filter((e) => e.topicId === topicId);
+  if (!own.length) return null;
+  const st = practiceStatus();
+  return (
+    <p className="mb-3 text-[14px]">
+      <span className="text-muted">Practise it:</span>{" "}
+      {own.map((e, i) => (
+        <span key={e.id}>{i > 0 ? ", " : ""}<Link href={`/academy/practice?c=${e.id}`} className="underline decoration-control underline-offset-4">{e.title}</Link>{st[e.id]?.passed ? " ✓" : ""}{e.market ? <span className="text-muted"> (real prices, optional)</span> : null}</span>
+      ))}
+    </p>
+  );
+}
+
 /** The lesson to do now, with everything needed to do it here. */
 function NextLesson({ unit, topicDef }: { unit: CareerUnit; topicDef: { why: string; finance: string } | undefined }) {
   const { plan, subtopic, topic, phase } = unit;
@@ -47,6 +65,7 @@ function NextLesson({ unit, topicDef }: { unit: CareerUnit; topicDef: { why: str
 
       <div className="mt-4 grid grid-cols-1 gap-5 lg:grid-cols-12">
         <div className="lg:col-span-7">
+          <PracticeLinks topicId={topic.id} />
           {video?.embeddable && video.videoId ? (
             <iframe src={embedUrl(video.videoId, video.startSec, video.endSec)} title={video.title} loading="lazy"
               allow="encrypted-media; picture-in-picture; fullscreen" referrerPolicy="strict-origin-when-cross-origin"
@@ -138,13 +157,15 @@ export default async function CareerPage() {
   const assignments: TopicView[] = phase.topics.filter((t) => t.status !== "completed" && t.status !== "mastered").slice(0, 4);
   const allTopics = path.phases.flatMap((p) => p.topics.map((t) => ({ ...t, phaseId: p.id })));
   const defs = PHASES.flatMap((p) => p.topics);
+  const journey = journeyFrom(path);
   const phaseAssessments = ASSESSMENTS.filter((a) => phase.topics.some((t) => t.id === a.topicId));
 
   return (
     <PageEnter>
-      <FrontispieceBand art="road" section="path" height="compact">
-        <p className="text-[14px] text-[#f7f7f5]/85">Career Intelligence</p>
-        <RisingTitle text="Enterprise AI Solutions Architect" className="mt-1 font-serif text-[36px] leading-[1.05] sm:text-[48px]" />
+      <RoomHero destination="career" title="Hall of Wisdom" data={{ phases: journey.stations.map((s, i) => ({ id: s.id, title: s.title, state: s.state, color: paneAt(i).bright })) }}
+        label="A vast marble hall lined with two storeys of books, under a gold vault, with six banners of light and a great round window at the far end."
+        pickPrefix="/path?phase=">
+        <p className="mt-2 text-[19px] text-white">Enterprise AI Solutions Architect</p>
         <ol className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-[14px] text-[#f7f7f5]/90" aria-label="Career destination">
           {CAREER_MILESTONES.map((m, i) => (
             <li key={m.title} className="flex items-center gap-2">
@@ -152,7 +173,7 @@ export default async function CareerPage() {
             </li>
           ))}
         </ol>
-      </FrontispieceBand>
+      </RoomHero>
 
       <Canvas>
         <div className="flex flex-col gap-8">

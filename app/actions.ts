@@ -40,7 +40,7 @@ function guard(fn: () => ActionState): ActionState {
   } catch (e) {
     // Log server-side with context; return a safe message (no stack, no SQL).
     console.error("[urha action]", e);
-    const msg = e instanceof Error && /required|not found/i.test(e.message) ? e.message : "Could not save. Nothing was changed — try again.";
+    const msg = e instanceof Error && /required|not found|prerequisite/i.test(e.message) ? e.message : "Could not save. Nothing was changed — try again.";
     return fail(msg);
   }
 }
@@ -55,6 +55,19 @@ export async function saveSettings(_: ActionState, fd: FormData): Promise<Action
     data.setSetting("name", r.value.name);
     refreshAll();
     return { ok: true, message: "Saved." };
+  });
+}
+
+/* editor mode */
+export async function setEditorModeAction(_: ActionState, fd: FormData): Promise<ActionState> {
+  const { headers } = await import("next/headers");
+  const { isLoopback, setEditorMode } = await import("@/lib/studio-access");
+  if (!isLoopback((await headers()).get("host"))) return fail("Editor mode can only be changed on the machine running URHA.");
+  const on = fd.get("on") === "1";
+  return guard(() => {
+    setEditorMode(on);
+    refreshAll();
+    return { ok: true, message: on ? "Editor mode is on. The environment editor is in the menu." : "Editor mode is off." };
   });
 }
 

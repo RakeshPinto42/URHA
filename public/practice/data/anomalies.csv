@@ -1,0 +1,9 @@
+id,kind,note
+GL-101330,duplicate,Repeats GL-100041
+GL-101331,duplicate,Repeats GL-100401
+GL-101332,duplicate,Repeats GL-101101
+GL-101333,weekend round manual,2025-03-15 is a weekend; 25000 is round
+GL-101334,weekend round manual,2025-06-21 is a weekend; 40000 is round
+GL-101335,weekend round manual,2025-09-14 is a weekend; 15000 is round
+GL-101336,weekend round manual,2025-11-30 is a weekend; 60000 is round
+AP-UK-9193,duplicate invoice,Same supplier and amount as AP-UK-9006

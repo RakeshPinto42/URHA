@@ -6,12 +6,16 @@ import { today } from "@/lib/dates";
 import { PageEnter } from "@/components/Motion";
 import { Canvas, ScreenTitle } from "@/components/ui";
 import { SettingsForm } from "@/components/forms/SettingsForm";
+import { EditorModeForm } from "@/components/forms/EditorModeForm";
+import { editorModeOn, isLoopback, studioByEnvironment } from "@/lib/studio-access";
+import { headers } from "next/headers";
 
 export const metadata: Metadata = { title: "Settings" };
 
 export default async function SettingsPage() {
   await connection();
   const s = getSettings();
+  const local = isLoopback((await headers()).get("host"));
   return (
     <PageEnter>
       <Canvas>
@@ -37,6 +41,15 @@ export default async function SettingsPage() {
                 <a href="/api/backup" className="btn btn-primary" download>Download a backup</a>
                 <p className="mt-2 text-[13px] text-muted">A consistent copy of the database, safe to take while URHA is running. To restore, stop URHA and replace the database file with the backup. <code>npm run backup</code> writes the same copy into <code>data/backups/</code>.</p>
               </div>
+            </div>
+          </section>
+          <section className="grid grid-cols-1 gap-4 border-t border-border pt-10 md:grid-cols-12" aria-labelledby="editor-h">
+            <div className="md:col-span-4">
+              <h2 id="editor-h" className="text-[16px] font-medium">Environment editor</h2>
+              <p className="mt-1 text-[14px] text-muted">Edit the Realm and the three destinations: objects, lights, materials, cameras, fog and rendering. It saves scene files on this machine, so it works only here, never from another device.</p>
+            </div>
+            <div className="panel md:col-span-8">
+              {local ? <EditorModeForm on={editorModeOn()} byEnvironment={studioByEnvironment()} /> : <p className="text-[14px] text-muted">Open URHA on the machine running it to change this.</p>}
             </div>
           </section>
         </div>

@@ -9,7 +9,7 @@ import { PageEnter } from "./Motion";
 export function LaterRelease({ title, purpose, plans, now, art, section }: { art: ArtId; section: SectionId; title: string; purpose: string; plans: string[]; now: { href: string; label: string }[] }) {
   return (
     <PageEnter>
-      <FrontispieceBand art={art} section={section} height="compact" showCaption={false}>
+      <FrontispieceBand section={section} height="compact">
         <RisingTitle text={title} className="font-serif text-[40px] leading-[1.05] sm:text-[52px]" />
         <p className="mt-2 max-w-[62ch] text-[15px] text-[#f7f7f5]/90">{purpose}</p>
       </FrontispieceBand>

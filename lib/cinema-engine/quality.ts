@@ -17,12 +17,15 @@ export type Tier = {
   particles: number;    // share of particles kept
   detail: number;       // share of geometry kept
   pointLights: boolean; // moving coloured lights
+  rays: number;         // light shaft samples a pixel; 0 is none
+  mirror: number;       // planar reflection size against the screen; 0 is none
+  shadowEvery: number;  // redraw the shadow map every Nth frame: the world is still, only its leaves sway
 };
 
 export const TIERS: Record<TierId, Tier> = {
-  high: { id: "high", pixelRatio: 1.75, shadowMap: 2048, bloomScale: 1, msaa: 4, particles: 1, detail: 1, pointLights: true },
-  medium: { id: "medium", pixelRatio: 1.25, shadowMap: 1024, bloomScale: 0.5, msaa: 0, particles: 0.6, detail: 0.8, pointLights: false },
-  low: { id: "low", pixelRatio: 1, shadowMap: 0, bloomScale: 0, msaa: 0, particles: 0.35, detail: 0.55, pointLights: false },
+  high: { id: "high", pixelRatio: 1.75, shadowMap: 2048, bloomScale: 1, msaa: 4, particles: 1, detail: 1, pointLights: true, rays: 28, mirror: 0.5, shadowEvery: 4 },
+  medium: { id: "medium", pixelRatio: 1, shadowMap: 1024, bloomScale: 0.5, msaa: 2, particles: 0.6, detail: 0.8, pointLights: false, rays: 16, mirror: 0, shadowEvery: 45 },
+  low: { id: "low", pixelRatio: 1, shadowMap: 0, bloomScale: 0, msaa: 0, particles: 0.35, detail: 0.55, pointLights: false, rays: 0, mirror: 0, shadowEvery: 45 },
 };
 
 const ORDER: TierId[] = ["high", "medium", "low"];
@@ -47,6 +50,36 @@ const TOO_SLOW_MS = 40;     // About 25 frames a second.
 const UNUSABLE_MS = 100;    // About 10 frames a second, at the lowest tier.
 
 export type FrameVerdict = "ok" | "step-down" | "too-slow";
+
+/**
+ * Resolution follows the frame rate before the tier does: a short window of frames, and the
+ * render scale eases down when frames run long, and back up when there is room. Hysteresis
+ * between the two limits keeps it from hunting.
+ */
+export class ResolutionGovernor {
+  scale = 1;
+  private sum = 0;
+  private count = 0;
+  private seen = 0;
+  // Aim at a steady 60: below that, trade a little sharpness for smoothness.
+  constructor(private min = 0.6, private slowMs = 17.5, private fastMs = 11.5) {}
+
+  /** Returns a new scale when it should change, otherwise null. */
+  record(ms: number): number | null {
+    this.seen += 1;
+    if (this.seen <= 20) return null;
+    this.sum += Math.min(ms, 250);
+    this.count += 1;
+    if (this.count < 24) return null;
+    const avg = this.sum / this.count;
+    this.sum = 0;
+    this.count = 0;
+    const before = this.scale;
+    if (avg > this.slowMs) this.scale = Math.max(this.min, +(this.scale * 0.86).toFixed(3));
+    else if (avg < this.fastMs) this.scale = Math.min(1, +(this.scale * 1.08).toFixed(3));
+    return this.scale !== before ? this.scale : null;
+  }
+}
 
 /** Feed it frame times; it says when the running average has stayed too slow. */
 export class FrameWatch {

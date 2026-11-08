@@ -16,11 +16,11 @@ export type ProviderError = {
   httpStatus: number | null;
 };
 
-// 100 req / 10 s per IP → keep sequential calls ≥ 110 ms apart (lib/sources/http.ts).
-const MIN_INTERVAL_MS = 110;
+// 120 a minute at origin is the tighter published limit, so calls stay at least 550 ms apart.
+const MIN_INTERVAL_MS = 550;
 
-async function tejFetch(path: string): Promise<{ ok: true; json: unknown } | { ok: false; error: ProviderError }> {
-  const r = await getJson(`${TEJHQ_API}${path}`, { label: `TejHQ ${path}`, timeoutMs: 10_000, retries: 2, minIntervalMs: MIN_INTERVAL_MS });
+async function tejFetch(path: string, timeoutMs = 10_000): Promise<{ ok: true; json: unknown } | { ok: false; error: ProviderError }> {
+  const r = await getJson(`${TEJHQ_API}${path}`, { label: `TejHQ ${path}`, timeoutMs, retries: 2, minIntervalMs: MIN_INTERVAL_MS });
   if (r.ok) return { ok: true, json: r.json };
   return { ok: false, error: { kind: r.kind === "auth" ? "unavailable" : r.kind, message: r.message, httpStatus: r.status } };
 }
@@ -74,7 +74,8 @@ export async function fetchStatus(): Promise<{ ok: true; tradingDate: string; st
 export async function fetchUniverse(
   exchange: string, date: string,
 ): Promise<{ ok: true; members: UniverseMember[]; stamp: SourceStamp } | { ok: false; error: ProviderError }> {
-  const r = await tejFetch(`/v1/snapshot/${encodeURIComponent(exchange)}?date=${encodeURIComponent(date)}`);
+  // The whole market in one reply, which can take far longer than one company.
+  const r = await tejFetch(`/v1/snapshot/${encodeURIComponent(exchange)}?date=${encodeURIComponent(date)}`, 45_000);
   if (!r.ok) return r;
   const d = (r.json ?? {}) as Record<string, unknown>;
   const rows = Array.isArray(d.data) ? d.data : null;

@@ -9,17 +9,18 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { CAMERA_VIEWS, type CameraView } from "@/lib/cinema-engine/camera-views";
 import {
-  addLight, addObject, blankScene, commit, duplicateLight, duplicateObject, importScene, redo, removeLight, removeObject, renameObject,
+  addLight, addObject, blankScene, commit, duplicateLight, duplicateObject, hierarchy, importScene, redo, removeLight, removeObject, renameObject,
   serializeScene, startHistory, undo, updateLight, updateObject, defaultPlacement, type History, type NewLight,
 } from "@/lib/cinema-engine/editor";
 import { SHAPES } from "@/lib/cinema-engine/generators";
 import { TIERS, isTierId, pickTier, type TierId } from "@/lib/cinema-engine/quality";
 import { parseScene, type CinemaLight, type CinemaObject, type CinemaScene, type Placement, type Vec3 } from "@/lib/cinema-engine/schema";
-import { JOURNEY_GENERATORS } from "@/lib/journey/scene-objects";
 import { AnimatedColor, AnimatedNumber, CheckField, ColorField, NumberField, ParamFields, Section, SelectField, TextField, Vec3Field } from "./fields";
 import { StudioViewport, type GizmoMode, type ViewportHandle } from "./StudioViewport";
+import { ALL_GENERATORS, REALM_PARTS } from "./worlds";
 
-const KNOWN = Object.keys(JOURNEY_GENERATORS);
+const KNOWN = Object.keys(ALL_GENERATORS);
+const SHARED_MATERIALS = ["marble", "polished", "rock", "gold", "bronze", "crystal"] as const;
 const BTN = "inline-flex h-8 items-center rounded border border-[#3a3f52] bg-[#1a1d29] px-2.5 text-[12px] text-[#efe9df] hover:bg-[#262a38] disabled:opacity-40 aria-pressed:border-[#d9b56f] aria-pressed:text-[#d9b56f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#d9b56f]";
 const ROW = "group flex h-8 items-center gap-1 px-2 text-[12px]";
 
@@ -199,7 +200,7 @@ export default function Studio({ sceneIds }: { sceneIds: string[] }) {
         <button type="button" className={BTN} disabled={!history.past.length} onClick={() => setHistory(undo)}>Undo</button>
         <button type="button" className={BTN} disabled={!history.future.length} onClick={() => setHistory(redo)}>Redo</button>
         <span className="ml-auto text-[12px] text-[#b8ad9c]" role="status">{scene.title}{dirty ? ", unsaved changes" : ""}</span>
-        <a href="/" className={BTN}>Back to URHA</a>
+        <a href="/" className={BTN}>Back to the Realm</a>
       </header>
 
       {(notice || problems.length > 0) && (
@@ -236,6 +237,19 @@ export default function Studio({ sceneIds }: { sceneIds: string[] }) {
             <button type="button" className={BTN} disabled={uploading} onClick={() => modelImporter.current?.click()}>{uploading ? "Importing…" : "Import GLB"}</button>
             <input ref={modelImporter} type="file" accept=".glb,model/gltf-binary" className="sr-only" aria-label="Import a GLB model" tabIndex={-1}
               onChange={(e) => { const f = e.target.files?.[0]; e.target.value = ""; if (f) void uploadModel(f); }} />
+            <label className="flex items-center justify-between gap-2 text-[12px] text-[#b8ad9c]">
+              Realm part
+              <select className={`${BTN} min-w-0 flex-1`} value="" onChange={(e) => {
+                const generator = e.target.value;
+                if (!generator) return;
+                const next = addObject(scene, { id: generator, generator, visible: true, placement: defaultPlacement(), params: {} });
+                edit(next);
+                setSelection({ kind: "object", id: next.objects.at(-1)!.id });
+              }}>
+                <option value="">Add…</option>
+                {REALM_PARTS.map((g) => <option key={g}>{g}</option>)}
+              </select>
+            </label>
             <div className="flex flex-wrap gap-1">
               {LIGHTS.map(({ label, light }) => (
                 <button key={label} type="button" className={BTN} onClick={() => {
@@ -249,8 +263,8 @@ export default function Studio({ sceneIds }: { sceneIds: string[] }) {
 
           <Section title={`Objects (${scene.objects.length})`}>
             <ul className="-mx-3">
-              {scene.objects.map((o) => (
-                <li key={o.id} className={`${ROW} ${selection?.id === o.id ? "bg-[#262a38]" : ""}`}>
+              {hierarchy(scene).map(({ object: o, depth }) => (
+                <li key={o.id} className={`${ROW} ${selection?.id === o.id ? "bg-[#262a38]" : ""}`} style={{ paddingLeft: 8 + depth * 14 }}>
                   <button type="button" className="min-w-0 flex-1 truncate text-left hover:underline" aria-pressed={selection?.id === o.id}
                     onClick={() => setSelection({ kind: "object", id: o.id })}>{o.id}</button>
                   <button type="button" className="text-[11px] text-[#b8ad9c] hover:text-white" aria-label={`${o.visible ? "Hide" : "Show"} ${o.id}`}
@@ -352,6 +366,10 @@ function ObjectInspector({ o, scene, edit, textures, onRenamed }: { o: CinemaObj
         }} />
         <p className="text-[12px] text-[#9a8f7f]">Type: {o.generator}</p>
         <CheckField label="Visible" value={o.visible} onChange={(visible) => set({ visible }, "visible")} />
+        <SelectField label="Parent" value={o.parent ?? "none"} options={["none", ...parentChoices(scene, o.id)]} onChange={(parent) => {
+          const { parent: _old, ...rest } = o;
+          edit({ ...scene, objects: scene.objects.map((x) => (x.id === o.id ? (parent === "none" ? rest : { ...rest, parent }) : x)) });
+        }} />
       </Section>
       <Section title="Transform">
         <Vec3Field label="Position" value={p.position} onChange={(position) => set({ placement: { ...p, position } }, "position")} />
@@ -378,6 +396,16 @@ function ObjectInspector({ o, scene, edit, textures, onRenamed }: { o: CinemaObj
       )}
     </>
   );
+}
+
+/** An object can hang from anything except itself and what already hangs from it. */
+function parentChoices(scene: CinemaScene, id: string): string[] {
+  const below = new Set([id]);
+  for (let grew = true; grew;) {
+    grew = false;
+    for (const o of scene.objects) if (o.parent && below.has(o.parent) && !below.has(o.id)) { below.add(o.id); grew = true; }
+  }
+  return scene.objects.map((o) => o.id).filter((x) => !below.has(x));
 }
 
 function LightInspector({ l, scene, edit }: { l: CinemaLight; scene: CinemaScene; edit: Edit }) {
@@ -435,6 +463,32 @@ function SceneInspector({ scene, edit, currentView }: { scene: CinemaScene; edit
         <NumberField label="Strength" value={env.bloom.strength} onChange={(strength) => setEnv({ bloom: { ...env.bloom, strength } }, "bloomStrength")} step={0.02} min={0} />
         <NumberField label="Radius" value={env.bloom.radius} onChange={(radius) => setEnv({ bloom: { ...env.bloom, radius } }, "bloomRadius")} step={0.05} min={0} />
         <NumberField label="Threshold" value={env.bloom.threshold} onChange={(threshold) => setEnv({ bloom: { ...env.bloom, threshold } }, "bloomThreshold")} step={0.05} min={0} />
+      </Section>
+      <Section title="Rendering">
+        <CheckField label="Light shafts" value={!!env.rays} onChange={(on) => {
+          const { rays: _old, ...rest } = env;
+          edit({ ...scene, environment: on ? { ...rest, rays: { strength: 0.2, direction: [0.3, 0.3, -1], color: "#ffe2b4" } } : rest });
+        }} />
+        {env.rays && <>
+          <NumberField label="Shaft strength" value={env.rays.strength} step={0.02} min={0} onChange={(strength) => setEnv({ rays: { ...env.rays!, strength } }, "rayStrength")} />
+          <Vec3Field label="Sun direction" value={env.rays.direction} step={0.05} onChange={(direction) => setEnv({ rays: { ...env.rays!, direction } }, "rayDirection")} />
+          <ColorField label="Shaft colour" value={env.rays.color} onChange={(color) => setEnv({ rays: { ...env.rays!, color } }, "rayColor")} />
+        </>}
+        <NumberField label="Shadow range" value={env.shadowRange ?? 150} step={10} min={10} onChange={(shadowRange) => setEnv({ shadowRange }, "shadowRange")} />
+      </Section>
+      <Section title="Shared materials">
+        {SHARED_MATERIALS.map((name) => {
+          const m = scene.materials?.[name] ?? {};
+          const put = (patch: Record<string, unknown>, key: string) => edit({ ...scene, materials: { ...scene.materials, [name]: { ...m, ...patch } } }, `material.${name}.${key}`);
+          return (
+            <div key={name} className="flex flex-col gap-1 border-t border-[#262a38] pt-2 first:border-0 first:pt-0">
+              <p className="text-[12px] font-semibold">{name}</p>
+              <ColorField label="Colour" value={m.color ?? "#ffffff"} onChange={(color) => put({ color }, "color")} />
+              <NumberField label="Roughness" value={m.roughness ?? 0.5} step={0.05} min={0} max={1} onChange={(roughness) => put({ roughness }, "roughness")} />
+              <NumberField label="Metalness" value={m.metalness ?? 0} step={0.05} min={0} max={1} onChange={(metalness) => put({ metalness }, "metalness")} />
+            </div>
+          );
+        })}
       </Section>
       <Section title="Timelines">
         {scene.timelines.map((t, i) => (

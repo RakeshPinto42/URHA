@@ -9,3 +9,5 @@ data/backups/
 node_modules/
 !.env.example
 assets-src/
+public/python/runtime/
+public/practice/data/market_prices.csv

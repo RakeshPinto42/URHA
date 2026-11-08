@@ -1,6 +1,7 @@
 // The 3D asset pipeline (docs/CINEMATIC_ENGINE_AUDIT.md §7).
 //
 //   npm run assets:add -- <polyhaven-id> [--ratio 0.25]   fetch a CC0 model, optimise it, credit it
+//   npm run assets:texture -- <polyhaven-id>              fetch a CC0 PBR texture set as WebP, credit it
 //   npm run assets:optimize -- <file.glb> <name>          optimise a model of your own
 //   npm run assets:decoders                               copy the Draco decoder into public/
 //
@@ -82,6 +83,32 @@ async function add(id, ratio) {
   });
 }
 
+/** A PBR set for procedural architecture: colour, normal and roughness, at 1024 px, as WebP. */
+async function texture(id) {
+  if (!/^[A-Za-z0-9_-]{1,80}$/.test(id)) throw new Error(`Invalid id "${id}"`);
+  const { default: sharp } = await import("sharp");
+  const meta = (await (await fetch("https://api.polyhaven.com/assets?t=textures", { headers: AGENT })).json())[id];
+  if (!meta) throw new Error(`Poly Haven has no texture "${id}"`);
+  const files = await (await fetch(`https://api.polyhaven.com/files/${id}`, { headers: AGENT })).json();
+  const name = slug(id);
+  const dir = path.join(SRC, id);
+  await fs.mkdir(OUT, { recursive: true });
+  for (const [slot, key, quality] of [["diff", "Diffuse", 82], ["nor", "nor_gl", 88], ["rough", "Rough", 72]]) {
+    const jpg = files[key]?.["1k"]?.jpg?.url;
+    if (!jpg) throw new Error(`"${id}" has no 1k ${key}`);
+    const source = path.join(dir, `${slot}.jpg`);
+    await download(jpg, source);
+    const out = path.join(OUT, `${name}-${slot}.webp`);
+    await sharp(source).resize(1024).webp({ quality }).toFile(out);
+    console.log(`${name}-${slot}.webp  ${mb((await fs.stat(out)).size)}`);
+    await credit({
+      file: `public/cinema/assets/${name}-${slot}.webp`, title: `${meta.name} (${slot})`, creator: Object.keys(meta.authors ?? {}).join(", ") || "Poly Haven",
+      license: "CC0", licenseUrl: "https://polyhaven.com/license", page: `https://polyhaven.com/a/${id}`, via: "Poly Haven",
+      triangles: null, modified: "Converted to WebP at 1024 px",
+    });
+  }
+}
+
 async function decoders() {
   const from = path.join(ROOT, "node_modules/three/examples/jsm/libs/draco/gltf");
   const to = path.join(ROOT, "public/cinema/draco");
@@ -93,6 +120,7 @@ async function decoders() {
 const [command, ...rest] = process.argv.slice(2);
 const flag = (n) => { const i = rest.indexOf(n); return i < 0 ? null : rest[i + 1]; };
 if (command === "add") await add(rest[0], flag("--ratio"));
+else if (command === "texture") await texture(rest[0]);
 else if (command === "optimize") await optimize(path.resolve(rest[0]), rest[1], flag("--ratio"));
 else if (command === "decoders") await decoders();
-else { console.error("Use: add <polyhaven-id> [--ratio 0.25], optimize <file> <name> [--ratio 0.25], or decoders"); process.exit(1); }
+else { console.error("Use: add <polyhaven-id> [--ratio 0.25], texture <polyhaven-id>, optimize <file> <name> [--ratio 0.25], or decoders"); process.exit(1); }

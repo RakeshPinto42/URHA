@@ -13,24 +13,13 @@ import type { TierId } from "@/lib/cinema-engine/quality";
 import { CinemaRuntime } from "@/lib/cinema-engine/runtime";
 import { loadTexture, modelSource } from "@/lib/cinema-engine/model-loader";
 import type { CinemaScene, Placement, Vec3 } from "@/lib/cinema-engine/schema";
-import { JOURNEY_GENERATORS } from "@/lib/journey/scene-objects";
-import { STATION_AT } from "@/lib/journey/world";
-import { LANDMARK, type JourneyData } from "@/lib/journey/model";
+import { ALL_GENERATORS, SAMPLE_DATA } from "./worlds";
 
 export type GizmoMode = "translate" | "rotate" | "scale";
 export type ViewportHandle = {
   scrub: (p: number) => void;
   play: (timeline: string) => void;
   currentView: () => { position: Vec3; target: Vec3 };
-};
-
-/** Stations for the journey's generators, so that world can be edited without real progress. */
-const SAMPLE: JourneyData = {
-  currentIndex: 1, fraction: 0.4, walkerT: 0.2,
-  stations: STATION_AT.map((_, i) => ({
-    id: `p${i + 1}`, ord: i + 1, title: `Phase ${i + 1}`, short: `Phase ${i + 1}`, landmark: LANDMARK[`p${i + 1}`] ?? "", months: [1, 2],
-    state: i === 0 ? "passed" : i === 1 ? "current" : "ahead", practised: 0, total: 1,
-  })),
 };
 
 const round = (v: THREE.Vector3 | THREE.Euler): Vec3 => [v.x, v.y, v.z].map((n) => Number(n.toFixed(3))) as Vec3;
@@ -89,7 +78,7 @@ export const StudioViewport = forwardRef<ViewportHandle, Props>(function StudioV
     const orbitRef: { current: OrbitControls | null } = { current: null };
     try {
       runtime = new CinemaRuntime({
-        canvas, scene: latest.current.scene, generators: JOURNEY_GENERATORS, tier, still: false, data: SAMPLE,
+        canvas, scene: latest.current.scene, generators: ALL_GENERATORS, tier, still: false, data: SAMPLE_DATA,
         freeCamera: true, watchFrames: false, assets: { models: modelSource, loadTexture },
         onAssetError: (src, why) => latest.current.onAssetError(src, why),
         onFrame: (camera) => {

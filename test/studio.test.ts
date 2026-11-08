@@ -170,7 +170,7 @@ describe("the diff does only what is needed", () => {
 
   it("sees nothing when nothing changed", () => {
     const d = diffScene(base, JSON.parse(JSON.stringify(base)));
-    expect(d).toEqual({ removeObjects: [], addObjects: [], rebuildObjects: [], placeObjects: [], removeLights: [], addLights: [], environment: false, camera: false });
+    expect(d).toEqual({ removeObjects: [], addObjects: [], rebuildObjects: [], placeObjects: [], removeLights: [], addLights: [], environment: false, camera: false, materials: false });
   });
 
   it("moves an object without rebuilding it", () => {

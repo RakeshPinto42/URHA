@@ -1,4 +1,7 @@
 import { beforeEach, describe, expect, it } from "vitest";
+import { completePrerequisites } from "./helpers";
+import { EXERCISES } from "@/lib/practice/exercises";
+import { recordAttempt } from "@/lib/practice/progress";
 import { openDb } from "@/lib/db";
 import * as data from "@/lib/data";
 import { PHASES, slug } from "@/lib/curriculum";
@@ -151,8 +154,11 @@ describe("the path to Demonstrated", () => {
   const id = "python-engineering";
 
   it("a lesson, an exercise and proficiency never make a topic Demonstrated", () => {
+    completePrerequisites(id);
     const t = () => data.getPath().phases[0]!.topics.find((x) => x.id === id)!;
     for (const s of t().subtopics) data.setStep(s.id, "proficient", true, "https://github.com/me/work");
+    // Completed also needs the topic's practice exercises passed.
+    for (const e of EXERCISES.filter((x) => x.topicId === id)) recordAttempt({ exerciseId: e.id, passed: true, checksPassed: 3, checksTotal: 3, seconds: 0.1, code: "# ok" });
     expect(t().mastery).toBe("proficient");
     expect(t().demonstrated).toBe(false);
     expect(t().status).toBe("completed");
@@ -245,5 +251,22 @@ describe("aggregation", () => {
     expect(lowestMastery(["demonstrated", "learning"])).toBe("learning");
     expect(topicMastery([{ exposed: true, practised: true, proficient: true }], false)).toBe("proficient");
     expect(topicMastery([{ exposed: false, practised: false, proficient: false }], true)).toBe("demonstrated");
+  });
+});
+
+describe("practice that completes a topic", () => {
+  const id = "pandas-analysis"; // has required exercises and a real-price one
+  const t = () => data.getPath().phases.flatMap((p) => p.topics).find((x) => x.id === id)!;
+
+  it("requires every built-in exercise, and never the optional real-price one", () => {
+    const own = EXERCISES.filter((e) => e.topicId === id);
+    expect(own.some((e) => e.market)).toBe(true);
+    completePrerequisites(id);
+    for (const s of t().subtopics) data.setStep(s.id, "practised", true, null);
+    const required = own.filter((e) => !e.market);
+    for (const e of required.slice(1)) recordAttempt({ exerciseId: e.id, passed: true, checksPassed: 3, checksTotal: 3, seconds: 0.1, code: "# ok" });
+    expect(t().status).not.toBe("completed");
+    recordAttempt({ exerciseId: required[0]!.id, passed: true, checksPassed: 3, checksTotal: 3, seconds: 0.1, code: "# ok" });
+    expect(t().status).toBe("completed");
   });
 });

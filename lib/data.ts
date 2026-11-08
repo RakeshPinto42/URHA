@@ -5,6 +5,7 @@
  */
 import "server-only";
 import { getDb, LOCAL_USER_ID, type DB } from "./db";
+import { EXERCISES } from "./practice/exercises";
 import {
   applyStep, count, currentPhaseIndex, resolveTopicStatuses, roadMonths, topicMastery,
   type Counts, type Mastery, type Step, type SubtopicProgress, type TopicStatus,
@@ -77,6 +78,10 @@ export function getPath(): PathModel {
   const flags = d.prepare("SELECT topic_id, needs_revision, notes FROM topic_flags WHERE user_id = ?").all(uid()) as { topic_id: string; needs_revision: number; notes: string }[];
 
   const passed = passedTopicIds();
+  // Linked practice exercises, and which are passed, from the Practice yard's own records.
+  const passedPractice = new Set((d.prepare("SELECT DISTINCT exercise_id FROM practice_attempts WHERE user_id = ? AND passed = 1").all(uid()) as { exercise_id: string }[]).map((r) => r.exercise_id));
+  // Real-price exercises are applied extras: they need a locally built file, so they never block completion.
+  const practiceDone = (topicId: string) => EXERCISES.filter((e) => e.topicId === topicId && !e.market).every((e) => passedPractice.has(e.id));
   const progBy = new Map(prog.map((p) => [p.subtopic_id, p]));
   const flagBy = new Map(flags.map((f) => [f.topic_id, f]));
   const subView = (s: (typeof subs)[number]): SubtopicView => {
@@ -96,6 +101,7 @@ export function getPath(): PathModel {
     subs: (subsByTopic.get(t.id) ?? []).map((s) => s.progress),
     needsRevision: !!flagBy.get(t.id)?.needs_revision,
     demonstrated: passed.has(t.id),
+    practiceDone: practiceDone(t.id),
   })));
 
   const topicViews: TopicView[] = topics.map((t) => {
@@ -184,6 +190,12 @@ export function setStep(subtopicId: string, step: Step, on: boolean, evidence: s
   const row = d.prepare("SELECT * FROM subtopic_progress WHERE user_id = ? AND subtopic_id = ?").get(uid(), subtopicId) as ProgRow | undefined;
   const cur: SubtopicProgress = { exposed: !!row?.exposed_at, practised: !!row?.practised_at, proficient: !!row?.proficient_at };
   const next = applyStep(cur, step, on);
+  // Practising or proving a topic needs its prerequisites completed first. Studying stays open.
+  if (on && (step === "practised" || step === "proficient")) {
+    const topicId = (d.prepare("SELECT topic_id FROM subtopics WHERE id = ?").get(subtopicId) as { topic_id: string }).topic_id;
+    const missing = unmetPrerequisites(topicId);
+    if (missing.length) throw new Error(`Prerequisite not completed: finish ${missing.join(", ")} first.`);
+  }
   if (next.proficient && !cur.proficient && !(evidence && evidence.trim())) {
     throw new Error("Evidence is required to mark a subtopic as proficient.");
   }
@@ -197,6 +209,14 @@ export function setStep(subtopicId: string, step: Step, on: boolean, evidence: s
       e: keep(row?.exposed_at, next.exposed), p: keep(row?.practised_at, next.practised), d: keep(row?.proficient_at, next.proficient),
       ev: next.proficient ? (step === "proficient" && on ? evidence!.trim() : row?.evidence ?? null) : null,
     });
+}
+
+/** The titles of a topic's prerequisites that are not yet completed or demonstrated. */
+export function unmetPrerequisites(topicId: string): string[] {
+  const topics = getPath().phases.flatMap((p) => p.topics);
+  const t = topics.find((x) => x.id === topicId);
+  if (!t) return [];
+  return t.prerequisites.map((id) => topics.find((x) => x.id === id)).filter((p): p is TopicView => !!p && p.status !== "completed" && p.status !== "mastered").map((p) => p.title);
 }
 
 export function setRevision(topicId: string, needsRevision: boolean, notes: string) {

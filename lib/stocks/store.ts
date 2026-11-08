@@ -3,13 +3,15 @@ import { getDb as db } from "../db";
 import { compareReadings, isStale, type Reading } from "./evidence";
 import type { FundamentalRow } from "./imports";
 import type { Fundamentals, Metric } from "./scoring";
-import type { Technicals } from "./technicals";
+import { ENGINE_VERSION, type Technicals } from "./technicals";
+import type { Eligibility } from "./universe";
 import type { McapRow } from "./amfi";
 
-export type UniverseRow = { symbol: string; isin: string | null; name: string | null; close: number | null; turnover: number | null };
+export type UniverseRow = { symbol: string; isin: string | null; name: string | null; close: number | null; turnover: number | null; eligibility: Eligibility; avgTurnover: number | null; sessionsTraded: number };
 export type ScanRow = { id: number; trading_date: string; status: "running" | "complete" | "stopped"; total: number; done: number; failed: number; started_at: string; finished_at: string | null; error: string | null };
 export type CompanyRow = {
   symbol: string; isin: string | null; name: string | null; turnover: number | null; close: number | null;
+  eligibility: Eligibility | null; avg_turnover: number | null; sessions_traded: number | null;
   technicals: Technicals | null; closes: number[]; status: "ok" | "unavailable"; reason: string | null;
   scanned_at: string | null; sector: string | null; segment: "large-cap" | "mid-cap" | "small-cap" | null; avg_mcap_cr: number | null; list_period: string | null;
 };
@@ -17,9 +19,10 @@ export type CompanyRow = {
 const FUNDAMENTAL_MAX_AGE_DAYS = 120;
 
 export function saveUniverse(rows: UniverseRow[]) {
-  const put = db().prepare(`INSERT INTO stock_companies (symbol, isin, name, turnover, close) VALUES (?,?,?,?,?)
-    ON CONFLICT(symbol) DO UPDATE SET isin = excluded.isin, name = excluded.name, turnover = excluded.turnover, close = excluded.close`);
-  db().transaction(() => rows.forEach((r) => put.run(r.symbol, r.isin, r.name, r.turnover, r.close)))();
+  const put = db().prepare(`INSERT INTO stock_companies (symbol, isin, name, turnover, close, eligibility, avg_turnover, sessions_traded) VALUES (?,?,?,?,?,?,?,?)
+    ON CONFLICT(symbol) DO UPDATE SET isin = excluded.isin, name = excluded.name, turnover = excluded.turnover, close = excluded.close,
+      eligibility = excluded.eligibility, avg_turnover = excluded.avg_turnover, sessions_traded = excluded.sessions_traded`);
+  db().transaction(() => rows.forEach((r) => put.run(r.symbol, r.isin, r.name, r.turnover, r.close, r.eligibility, r.avgTurnover, r.sessionsTraded)))();
 }
 
 export const latestScan = () => (db().prepare("SELECT * FROM stock_scans ORDER BY id DESC LIMIT 1").get() as ScanRow | undefined) ?? null;
@@ -40,12 +43,19 @@ export function saveReading(symbol: string, r: { technicals: Technicals; closes:
 
 /** Companies already read for this trading day, so a stopped scan can carry on. */
 export const scannedOn = (tradingDate: string): Set<string> =>
-  new Set((db().prepare("SELECT symbol FROM stock_companies WHERE status = 'ok' AND json_extract(technicals, '$.date') = ?").all(tradingDate) as { symbol: string }[]).map((r) => r.symbol));
+  new Set((db().prepare("SELECT symbol FROM stock_companies WHERE status = 'ok' AND json_extract(technicals, '$.date') = ? AND json_extract(technicals, '$.v') = ?").all(tradingDate, ENGINE_VERSION) as { symbol: string }[]).map((r) => r.symbol));
 
 type Raw = Omit<CompanyRow, "technicals" | "closes"> & { technicals: string | null; closes: string | null };
-const hydrate = (r: Raw): CompanyRow => ({ ...r, technicals: r.technicals ? JSON.parse(r.technicals) as Technicals : null, closes: r.closes ? JSON.parse(r.closes) as number[] : [] });
+/** Readings from an older engine mean something different, so they count as not read. */
+export function currentTechnicals(json: string | null): Technicals | null {
+  if (!json) return null;
+  const t = JSON.parse(json) as Technicals;
+  return t.v === ENGINE_VERSION ? t : null;
+}
 
-const COMPANY_SQL = `SELECT c.symbol, c.isin, c.name, c.turnover, c.close, c.technicals, c.closes, COALESCE(c.status, 'unavailable') AS status,
+const hydrate = (r: Raw): CompanyRow => ({ ...r, technicals: currentTechnicals(r.technicals), closes: r.closes ? JSON.parse(r.closes) as number[] : [] });
+
+const COMPANY_SQL = `SELECT c.symbol, c.isin, c.name, c.turnover, c.close, c.eligibility, c.avg_turnover, c.sessions_traded, c.technicals, c.closes, COALESCE(c.status, 'unavailable') AS status,
     COALESCE(c.reason, 'Not read yet.') AS reason, c.scanned_at, c.sector, s.segment, s.avg_mcap_cr, s.period_end AS list_period
   FROM stock_companies c LEFT JOIN stock_segments s ON s.isin = c.isin`;
 

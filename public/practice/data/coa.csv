@@ -1,0 +1,13 @@
+account,name,type,group_name
+4000,Product revenue,Revenue,Revenue
+4100,Services revenue,Revenue,Revenue
+5000,Cost of sales,COGS,Cost of sales
+6100,Salaries,Opex,People
+6200,Software,Opex,Technology
+6300,Travel,Opex,Operations
+6400,Rent,Opex,Premises
+6500,Professional fees,Opex,Operations
+1100,Trade receivables,Asset,Working capital
+1200,Bank,Asset,Cash
+2100,Trade payables,Liability,Working capital
+2200,Accruals,Liability,Working capital

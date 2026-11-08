@@ -1,0 +1,61 @@
+{
+ "note": "Synthetic data for practice. Halden & Rowe Group is fictional; no row describes a real company or person.",
+ "files": {
+  "gl_2025.csv": {
+   "bytes": 129089,
+   "rows": 1336
+  },
+  "coa.csv": {
+   "bytes": 441,
+   "rows": 12
+  },
+  "budget_2025.csv": {
+   "bytes": 7399,
+   "rows": 288
+  },
+  "bank_uk_2025.csv": {
+   "bytes": 11764,
+   "rows": 225
+  },
+  "ar_invoices.csv": {
+   "bytes": 44497,
+   "rows": 598
+  },
+  "ap_invoices.csv": {
+   "bytes": 15447,
+   "rows": 193
+  },
+  "fx_rates.csv": {
+   "bytes": 14681,
+   "rows": 396
+  },
+  "anomalies.csv": {
+   "bytes": 479,
+   "rows": 8
+  },
+  "policies.md": {
+   "bytes": 1929,
+   "rows": 24
+  },
+  "policy_eval.csv": {
+   "bytes": 595,
+   "rows": 10
+  },
+  "user_questions.csv": {
+   "bytes": 544,
+   "rows": 12
+  },
+  "llm_outputs.jsonl": {
+   "bytes": 1142,
+   "rows": 9
+  },
+  "cc_owners.csv": {
+   "bytes": 133,
+   "rows": 4
+  },
+  "cc_owner_changes.csv": {
+   "bytes": 107,
+   "rows": 3
+  }
+ }
+}

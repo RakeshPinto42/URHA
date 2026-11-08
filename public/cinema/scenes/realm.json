@@ -1,0 +1,718 @@
+{
+  "version": 1,
+  "id": "realm",
+  "title": "The Realm of Wisdom",
+  "camera": {
+    "fov": 40,
+    "near": 1,
+    "far": 4200,
+    "position": [
+      0,
+      50,
+      335
+    ],
+    "target": [
+      0,
+      88,
+      -10
+    ]
+  },
+  "environment": {
+    "fog": {
+      "color": [
+        "#c9a7c8",
+        "#ffdcb4"
+      ],
+      "density": 0.00062
+    },
+    "exposure": [
+      0.72,
+      1.02
+    ],
+    "reflections": [
+      0.3,
+      0.62
+    ],
+    "bloom": {
+      "strength": 0.22,
+      "radius": 0.5,
+      "threshold": 1.15
+    },
+    "rays": {
+      "strength": 0.2,
+      "direction": [
+        0.34,
+        0.27,
+        -1
+      ],
+      "color": "#ffe2b4"
+    },
+    "shadowRange": 430
+  },
+  "timelines": [
+    {
+      "id": "dawn",
+      "seconds": 6
+    }
+  ],
+  "lights": [
+    {
+      "id": "sky-light",
+      "type": "hemisphere",
+      "sky": "#fff0dc",
+      "ground": "#cfc2bb",
+      "intensity": [
+        0.6,
+        1.4
+      ]
+    },
+    {
+      "id": "sun",
+      "type": "directional",
+      "color": "#ffd8a4",
+      "intensity": [
+        1.2,
+        3.4
+      ],
+      "direction": [
+        0.34,
+        0.27,
+        -1
+      ],
+      "castShadow": true
+    },
+    {
+      "id": "fill",
+      "type": "directional",
+      "color": "#fff2e2",
+      "intensity": [
+        0.5,
+        1.7
+      ],
+      "direction": [
+        -0.7,
+        0.4,
+        0.75
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "sky",
+      "generator": "celestial-sky",
+      "visible": true,
+      "environmentSource": true,
+      "params": {
+        "sun": [
+          0.34,
+          0.27,
+          -1
+        ],
+        "sunPower": 7
+      }
+    },
+    {
+      "id": "far-peaks",
+      "generator": "far-peaks",
+      "visible": true,
+      "params": {}
+    },
+    {
+      "id": "cloud-sea",
+      "generator": "cloud-sea",
+      "visible": true,
+      "placement": {
+        "position": [
+          0,
+          -92,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "params": {
+        "sun": [
+          0.34,
+          0.27,
+          -1
+        ]
+      }
+    },
+    {
+      "id": "far-clouds",
+      "generator": "clouds",
+      "visible": true,
+      "params": {
+        "count": 300,
+        "inner": 620,
+        "outer": 1350,
+        "low": -80,
+        "high": 30,
+        "seed": 5,
+        "clear": 420
+      }
+    },
+    {
+      "id": "court",
+      "generator": "court",
+      "visible": true,
+      "params": {
+        "radius": 204
+      }
+    },
+    {
+      "id": "mirror",
+      "generator": "mirror-floor",
+      "visible": true,
+      "params": {
+        "radius": 196,
+        "strength": 0.42
+      }
+    },
+    {
+      "id": "dais",
+      "generator": "dais",
+      "visible": true,
+      "params": {
+        "radius": 74,
+        "steps": 10,
+        "rise": 4.2,
+        "inset": 4.6,
+        "stair": 26
+      }
+    },
+    {
+      "id": "tree",
+      "generator": "tree-of-knowledge",
+      "visible": true,
+      "placement": {
+        "position": [
+          0,
+          42.2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1.42,
+          1.42,
+          1.42
+        ]
+      },
+      "params": {
+        "height": 30,
+        "radius": 11,
+        "leafSpread": 16,
+        "leavesPerTip": 70,
+        "braid": 3,
+        "turns": 0.9,
+        "pulse": 1,
+        "halo": true,
+        "shimmer": 1.8,
+        "falling": 150,
+        "crownLight": 1400
+      }
+    },
+    {
+      "id": "paths",
+      "generator": "light-paths",
+      "visible": true,
+      "params": {
+        "from": 78,
+        "routes": [
+          {
+            "id": "career",
+            "to": [
+              -100,
+              40
+            ],
+            "color": "#ffcf7a"
+          },
+          {
+            "id": "stocks",
+            "to": [
+              0,
+              66
+            ],
+            "color": "#9aa8ff"
+          },
+          {
+            "id": "academy",
+            "to": [
+              100,
+              40
+            ],
+            "color": "#a6e6a0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "palace",
+      "generator": "palace",
+      "visible": true,
+      "placement": {
+        "position": [
+          0,
+          0,
+          -190
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "params": {}
+    },
+    {
+      "id": "arcades",
+      "generator": "arcades",
+      "visible": true,
+      "params": {}
+    },
+    {
+      "id": "gate-career",
+      "generator": "gateway",
+      "visible": true,
+      "placement": {
+        "position": [
+          -112,
+          0,
+          44
+        ],
+        "rotation": [
+          0,
+          0.44,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "params": {
+        "destination": "career",
+        "light": "#ffcb7d"
+      }
+    },
+    {
+      "id": "gate-stocks",
+      "generator": "gateway",
+      "visible": true,
+      "placement": {
+        "position": [
+          0,
+          0,
+          96
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "params": {
+        "destination": "stocks",
+        "light": "#a2b0ff"
+      }
+    },
+    {
+      "id": "gate-academy",
+      "generator": "gateway",
+      "visible": true,
+      "placement": {
+        "position": [
+          112,
+          0,
+          44
+        ],
+        "rotation": [
+          0,
+          -0.44,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "params": {
+        "destination": "academy",
+        "light": "#b4eeb0"
+      }
+    },
+    {
+      "id": "doves",
+      "generator": "flock",
+      "visible": true,
+      "params": {
+        "count": 14,
+        "radius": 300,
+        "height": 160,
+        "speed": 0.045
+      }
+    },
+    {
+      "id": "isle-1",
+      "generator": "sky-isle",
+      "visible": true,
+      "placement": {
+        "position": [
+          -345,
+          34,
+          -110
+        ],
+        "rotation": [
+          0,
+          3,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "motion": {
+        "float": {
+          "height": 2.4,
+          "speed": 0.16
+        }
+      },
+      "params": {
+        "radius": 42,
+        "seed": 3
+      }
+    },
+    {
+      "id": "isle-2",
+      "generator": "sky-isle",
+      "visible": true,
+      "placement": {
+        "position": [
+          -505,
+          88,
+          -330
+        ],
+        "rotation": [
+          0,
+          6,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "motion": {
+        "float": {
+          "height": 2.4,
+          "speed": 0.19
+        }
+      },
+      "params": {
+        "radius": 56,
+        "seed": 6
+      }
+    },
+    {
+      "id": "isle-3",
+      "generator": "sky-isle",
+      "visible": true,
+      "placement": {
+        "position": [
+          -275,
+          -24,
+          118
+        ],
+        "rotation": [
+          0,
+          9,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "motion": {
+        "float": {
+          "height": 2.4,
+          "speed": 0.22
+        }
+      },
+      "params": {
+        "radius": 30,
+        "seed": 9
+      }
+    },
+    {
+      "id": "isle-4",
+      "generator": "sky-isle",
+      "visible": true,
+      "placement": {
+        "position": [
+          352,
+          52,
+          -70
+        ],
+        "rotation": [
+          0,
+          12,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "motion": {
+        "float": {
+          "height": 2.4,
+          "speed": 0.25
+        }
+      },
+      "params": {
+        "radius": 46,
+        "seed": 12
+      }
+    },
+    {
+      "id": "isle-5",
+      "generator": "sky-isle",
+      "visible": true,
+      "placement": {
+        "position": [
+          530,
+          104,
+          -360
+        ],
+        "rotation": [
+          0,
+          15,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "motion": {
+        "float": {
+          "height": 2.4,
+          "speed": 0.28
+        }
+      },
+      "params": {
+        "radius": 62,
+        "seed": 15
+      }
+    },
+    {
+      "id": "isle-6",
+      "generator": "sky-isle",
+      "visible": true,
+      "placement": {
+        "position": [
+          298,
+          -30,
+          132
+        ],
+        "rotation": [
+          0,
+          18,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "motion": {
+        "float": {
+          "height": 2.4,
+          "speed": 0.31
+        }
+      },
+      "params": {
+        "radius": 28,
+        "seed": 18
+      }
+    },
+    {
+      "id": "isle-7",
+      "generator": "sky-isle",
+      "visible": true,
+      "placement": {
+        "position": [
+          -660,
+          40,
+          40
+        ],
+        "rotation": [
+          0,
+          21,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "motion": {
+        "float": {
+          "height": 2.4,
+          "speed": 0.33999999999999997
+        }
+      },
+      "params": {
+        "radius": 44,
+        "seed": 21
+      }
+    },
+    {
+      "id": "isle-8",
+      "generator": "sky-isle",
+      "visible": true,
+      "placement": {
+        "position": [
+          680,
+          26,
+          10
+        ],
+        "rotation": [
+          0,
+          24,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "motion": {
+        "float": {
+          "height": 2.4,
+          "speed": 0.37
+        }
+      },
+      "params": {
+        "radius": 40,
+        "seed": 24
+      }
+    },
+    {
+      "id": "bridge-west",
+      "generator": "sky-bridge",
+      "visible": true,
+      "params": {
+        "from": [
+          -204,
+          2,
+          -40
+        ],
+        "to": [
+          -345,
+          36,
+          -110
+        ],
+        "sag": 16,
+        "width": 0.7
+      }
+    },
+    {
+      "id": "bridge-east",
+      "generator": "sky-bridge",
+      "visible": true,
+      "params": {
+        "from": [
+          204,
+          2,
+          -30
+        ],
+        "to": [
+          352,
+          54,
+          -70
+        ],
+        "sag": 16,
+        "width": 0.7
+      }
+    },
+    {
+      "id": "motes",
+      "generator": "particles",
+      "visible": true,
+      "placement": {
+        "position": [
+          0,
+          2,
+          10
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "params": {
+        "count": 520,
+        "color": "#ffc66e",
+        "area": 300,
+        "height": 110,
+        "size": 150
+      }
+    },
+    {
+      "id": "near-clouds",
+      "generator": "clouds",
+      "visible": true,
+      "params": {
+        "count": 170,
+        "inner": 236,
+        "outer": 560,
+        "low": -96,
+        "high": -44,
+        "seed": 8,
+        "opacity": 0.96,
+        "clear": 330
+      }
+    }
+  ]
+}

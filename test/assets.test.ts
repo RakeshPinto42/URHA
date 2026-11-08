@@ -191,6 +191,8 @@ describe("what ships", () => {
     for (const f of files) {
       const c = credits.find((x) => x.file === `public/cinema/assets/${f}`);
       expect(c, f).toBeDefined();
+      // Textures baked here are this project's own work; everything else comes from Poly Haven.
+      if (c!.license === "Own work") { expect(c!.page, f).toBe("scripts/bake-marble.mjs"); continue; }
       expect(c!.license, f).toBe("CC0");
       expect(c!.page, f).toMatch(/^https:\/\/polyhaven\.com\/a\//);
     }
@@ -199,7 +201,15 @@ describe("what ships", () => {
 
   it("keeps each model small enough for a web page", () => {
     for (const f of files) expect(fs.statSync(path.join(dir, f)).size, f).toBeLessThan(1_500_000);
-    expect(files.reduce((n, f) => n + fs.statSync(path.join(dir, f)).size, 0)).toBeLessThan(6_000_000);
+    // What one page can download: every model its scene names, and all the shared textures.
+    const textures = files.filter((f) => f.endsWith(".webp"));
+    const scenesDir = path.join(root, "public/cinema/scenes");
+    for (const file of fs.readdirSync(scenesDir)) {
+      const s = JSON.parse(fs.readFileSync(path.join(scenesDir, file), "utf8")) as CinemaScene;
+      const models = [...new Set(s.objects.map((o) => o.params.src).filter((x): x is string => typeof x === "string").map((x) => path.basename(x)))];
+      const bytes = [...models, ...textures].reduce((n, f) => n + fs.statSync(path.join(dir, f)).size, 0);
+      expect(bytes, file).toBeLessThan(6_000_000);
+    }
   });
 
   it("serves the Draco decoder from this site", () => {

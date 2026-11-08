@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "id": "chamber-of-insight",
+  "title": "The Chamber of Insight",
+  "camera": {
+    "fov": 52,
+    "near": 0.5,
+    "far": 3000,
+    "position": [
+      0,
+      11,
+      68
+    ],
+    "target": [
+      0,
+      33,
+      -6
+    ]
+  },
+  "environment": {
+    "fog": {
+      "color": "#0a1042",
+      "density": 0.0011
+    },
+    "exposure": 1.12,
+    "reflections": 0.95,
+    "bloom": {
+      "strength": 0.6,
+      "radius": 0.7,
+      "threshold": 0.9
+    },
+    "shadowRange": 140
+  },
+  "timelines": [],
+  "lights": [
+    {
+      "id": "sky-light",
+      "type": "hemisphere",
+      "sky": "#6a7ce0",
+      "ground": "#1b1a4a",
+      "intensity": 1.15
+    },
+    {
+      "id": "moon",
+      "type": "spot",
+      "color": "#b9c8ff",
+      "intensity": 34000,
+      "position": [
+        0,
+        150,
+        -40
+      ],
+      "target": [
+        0,
+        10,
+        0
+      ],
+      "angle": 0.5,
+      "penumbra": 0.6,
+      "distance": 420,
+      "castShadow": true
+    },
+    {
+      "id": "lamp-west",
+      "type": "point",
+      "color": "#ffc98a",
+      "intensity": 7000,
+      "position": [
+        -58,
+        12,
+        0
+      ],
+      "distance": 120
+    },
+    {
+      "id": "lamp-east",
+      "type": "point",
+      "color": "#ffc98a",
+      "intensity": 7000,
+      "position": [
+        58,
+        12,
+        0
+      ],
+      "distance": 120
+    }
+  ],
+  "objects": [
+    {
+      "id": "sky",
+      "generator": "celestial-sky",
+      "visible": true,
+      "environmentSource": true,
+      "params": {
+        "horizon": "#2a3080",
+        "low": "#212876",
+        "mid": "#181f66",
+        "high": "#0e144e",
+        "zenith": "#060932",
+        "stars": 2,
+        "planet": 1,
+        "meteors": 1,
+        "sunPower": 0,
+        "sun": [
+          0,
+          -1,
+          0
+        ],
+        "radius": 1400
+      }
+    },
+    {
+      "id": "room",
+      "generator": "observatory",
+      "visible": true,
+      "params": {
+        "radius": 80,
+        "wall": 34,
+        "dome": 66
+      }
+    },
+    {
+      "id": "armillary",
+      "generator": "great-armillary",
+      "visible": true,
+      "params": {
+        "radius": 21
+      }
+    },
+    {
+      "id": "telescope",
+      "generator": "telescope",
+      "visible": true,
+      "placement": {
+        "position": [
+          -40,
+          0,
+          -34
+        ],
+        "rotation": [
+          0,
+          0.55,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "params": {
+        "length": 46,
+        "tilt": 0.78
+      }
+    },
+    {
+      "id": "moon-shafts",
+      "generator": "light-shafts",
+      "visible": true,
+      "placement": {
+        "position": [
+          0,
+          132,
+          -12
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "params": {
+        "count": 5,
+        "length": 118,
+        "width": 22,
+        "spread": 34,
+        "depth": 16,
+        "tilt": 0.05,
+        "strength": 0.13,
+        "color": "#a9bbff",
+        "seed": 4
+      }
+    },
+    {
+      "id": "dust",
+      "generator": "particles",
+      "visible": true,
+      "placement": {
+        "position": [
+          0,
+          3,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "params": {
+        "count": 420,
+        "color": "#a9c0ff",
+        "area": 130,
+        "height": 70,
+        "size": 100
+      }
+    }
+  ]
+}

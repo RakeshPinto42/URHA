@@ -23,11 +23,12 @@ export const GLASS: readonly Pane[] = [
 /** The pane of a phase by index; wraps so a longer curriculum cannot run out of glass. */
 export const paneAt = (index: number): Pane => GLASS[((index % GLASS.length) + GLASS.length) % GLASS.length]!;
 
-export type SectionId = "home" | "career" | "discovery" | "path" | "academy" | "tasks" | "skills" | "projects" | "assessments" | "journal" | "meditation" | "insights" | "settings" | "credits";
+export type SectionId = "home" | "today" | "career" | "discovery" | "path" | "academy" | "tasks" | "skills" | "projects" | "assessments" | "journal" | "meditation" | "insights" | "settings" | "credits";
 
 /** Room colour by section. `light` is the second colour a living picture is lit with. */
 export const SECTIONS: Record<SectionId, { pane: Pane; light: Pane }> = {
   home: { pane: GLASS[1]!, light: GLASS[6]! },
+  today: { pane: GLASS[2]!, light: GLASS[1]! },
   career: { pane: GLASS[5]!, light: GLASS[3]! },
   discovery: { pane: GLASS[3]!, light: GLASS[4]! },
   path: { pane: GLASS[2]!, light: GLASS[1]! },
@@ -44,7 +45,7 @@ export const SECTIONS: Record<SectionId, { pane: Pane; light: Pane }> = {
 };
 
 const BY_PREFIX: [string, SectionId][] = [
-  ["/career", "career"], ["/discovery", "discovery"], ["/path", "path"], ["/academy", "academy"], ["/tasks", "tasks"], ["/skills", "skills"], ["/projects", "projects"],
+  ["/career", "career"], ["/today", "today"], ["/discovery", "discovery"], ["/path", "path"], ["/academy", "academy"], ["/tasks", "tasks"], ["/skills", "skills"], ["/projects", "projects"],
   ["/assessments", "assessments"], ["/journal", "journal"], ["/meditation", "meditation"], ["/insights", "insights"],
   ["/settings", "settings"], ["/credits", "credits"],
 ];

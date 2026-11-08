@@ -147,6 +147,32 @@ const MIGRATIONS: Migration[] = [
   CREATE TABLE stock_segments (isin TEXT PRIMARY KEY, segment TEXT NOT NULL, avg_mcap_cr REAL, period_end TEXT NOT NULL);
   CREATE TABLE stock_watchlist (symbol TEXT PRIMARY KEY, thesis TEXT NOT NULL DEFAULT '', added_at TEXT NOT NULL DEFAULT (datetime('now')));
   `,
+  // v6 — Who belongs in discovery: instrument type and average liquidity. Additive.
+  `
+  ALTER TABLE stock_companies ADD COLUMN eligibility TEXT;
+  ALTER TABLE stock_companies ADD COLUMN avg_turnover REAL;
+  ALTER TABLE stock_companies ADD COLUMN sessions_traded INTEGER;
+  `,
+  // v7 — Academy practice attempts. Additive: nothing existing changes.
+  `
+  CREATE TABLE practice_attempts (id INTEGER PRIMARY KEY, user_id INTEGER NOT NULL REFERENCES users(id),
+    exercise_id TEXT NOT NULL, passed INTEGER NOT NULL CHECK (passed IN (0, 1)),
+    checks_passed INTEGER NOT NULL, checks_total INTEGER NOT NULL, seconds REAL NOT NULL,
+    code TEXT NOT NULL, created_at TEXT NOT NULL DEFAULT (datetime('now')));
+  CREATE INDEX practice_attempts_exercise ON practice_attempts(user_id, exercise_id, created_at);
+  `,
+  // v8 — Official exchange prices, source agreement and historical validation. Additive.
+  `
+  CREATE TABLE stock_official_prices (exchange TEXT NOT NULL, trade_date TEXT NOT NULL, symbol TEXT NOT NULL, isin TEXT, series TEXT, name TEXT,
+    open REAL, high REAL, low REAL, close REAL NOT NULL, prev_close REAL, volume REAL, turnover REAL, trades INTEGER,
+    fetched_at TEXT NOT NULL DEFAULT (datetime('now')), PRIMARY KEY (exchange, trade_date, symbol));
+  CREATE INDEX stock_official_isin ON stock_official_prices(isin, trade_date);
+  CREATE TABLE stock_source_checks (id INTEGER PRIMARY KEY, trade_date TEXT NOT NULL, source TEXT NOT NULL, summary TEXT NOT NULL,
+    checked_at TEXT NOT NULL DEFAULT (datetime('now')));
+  CREATE TABLE stock_backtests (id INTEGER PRIMARY KEY, status TEXT NOT NULL, params TEXT NOT NULL, total INTEGER NOT NULL DEFAULT 0,
+    done INTEGER NOT NULL DEFAULT 0, failed INTEGER NOT NULL DEFAULT 0, observations INTEGER NOT NULL DEFAULT 0, results TEXT, error TEXT,
+    started_at TEXT NOT NULL DEFAULT (datetime('now')), finished_at TEXT);
+  `,
 ];
 
 /** The v-numbered user_version counts every entry above. */

@@ -28,7 +28,7 @@ export function ScanControl({ initial }: { initial: State }) {
 
   const send = async (body: object) => {
     setBusy(true); setError(null);
-    const r = await fetch("/api/stocks/scan", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) }).catch(() => null);
+    const r = await fetch("/api/stocks/scan", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ action: "start", ...body }) }).catch(() => null);
     setBusy(false);
     if (!r) { setError("The app's server did not respond."); return; }
     if (!r.ok) { setError(((await r.json().catch(() => ({}))) as { error?: string }).error ?? "The scan could not start."); return; }
@@ -51,7 +51,7 @@ export function ScanControl({ initial }: { initial: State }) {
       ) : (
         <>
           <p className="text-[13px] text-muted">
-            {s ? `Last scan: trading day ${s.trading_date}, ${s.done.toLocaleString("en-IN")} of ${s.total.toLocaleString("en-IN")} read${s.failed ? `, ${s.failed} unavailable` : ""}.${s.status === "stopped" ? ` Stopped: ${s.error ?? "unknown reason"}. Starting again continues where it left off.` : ""}` : "Not run yet. A full scan reads about 1,650 companies and takes around 30 minutes."}
+            {s ? `Last scan: trading day ${s.trading_date}, ${s.done.toLocaleString("en-IN")} of ${s.total.toLocaleString("en-IN")} read${s.failed ? `, ${s.failed} unavailable` : ""}.${s.status === "stopped" ? ` Stopped: ${s.error ?? "unknown reason"}. Starting again continues where it left off.` : ""}` : "Not run yet. It first works out which companies are eligible, then reads each one, which takes about 30 minutes."}
           </p>
           <button type="button" className="btn btn-primary self-start" disabled={busy} onClick={() => void send({})}>{busy ? "Starting…" : s ? "Scan again" : "Run market scan"}</button>
         </>

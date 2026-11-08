@@ -46,7 +46,34 @@ function prevCloseBefore(bars: RawBar[], exDate: string): number | null {
   return prev;
 }
 
-export function adjustBars(bars: RawBar[], actions: CorporateAction[]): AdjustedBar[] {
+/**
+ * Volume after splits and bonuses, so a split does not look like a surge. Prices multiply by the
+ * factor and share counts divide by it. Dividends change the price only.
+ */
+export function adjustedVolume(bar: Pick<AdjustedBar, "volume" | "adjustments">): number {
+  const shares = bar.adjustments.filter((a) => /split|bonus/i.test(a.type)).reduce((n, a) => n * a.factor, 1);
+  return shares > 0 ? bar.volume / shares : bar.volume;
+}
+
+/**
+ * The source lists an action once per exchange, so a dual-listed company's split would apply twice.
+ * Rows that agree are one event and only one exchange's copy counts. Two different payouts on the
+ * same day stay separate, as does an event only one exchange reports.
+ */
+export function uniqueActions(actions: CorporateAction[]): CorporateAction[] {
+  const groups = new Map<string, CorporateAction[]>();
+  for (const a of actions) {
+    const key = [a.exDate, a.type.toLowerCase(), a.ratioNum, a.ratioDen, a.cashAmount, a.faceValueFrom, a.faceValueTo].join("|");
+    groups.set(key, [...(groups.get(key) ?? []), a]);
+  }
+  return [...groups.values()].flatMap((rows) => {
+    const exchange = rows.find((r) => r.exchange.toUpperCase() === "NSE")?.exchange ?? rows[0]!.exchange;
+    return rows.filter((r) => r.exchange === exchange);
+  });
+}
+
+export function adjustBars(bars: RawBar[], given: CorporateAction[]): AdjustedBar[] {
+  const actions = uniqueActions(given);
   const sorted = [...bars].sort((a, b) => (a.date < b.date ? -1 : 1));
   // Per (exDate, type-class) keep one factor; same-day same-class payouts combine
   // multiplicatively (dividends) — matches pipeline's per-row factor product.

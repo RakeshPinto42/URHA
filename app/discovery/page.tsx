@@ -1,12 +1,18 @@
 import { connection } from "next/server";
 import type { Metadata } from "next";
-import { loadDiscovery } from "@/lib/stocks/discovery";
+import { compareResearch, loadDiscovery } from "@/lib/stocks/discovery";
+import { MODEL_LABEL } from "@/lib/stocks/universe";
 import { fetchStatus } from "@/lib/stocks/tejhq";
 import { segmentCount, sourceCounts } from "@/lib/stocks/store";
 import { scanState } from "@/lib/stocks/scan";
 import { sourceStatuses, SOURCE_TIER_LABEL, type SourceTier } from "@/lib/stocks/sources";
 import { PageEnter } from "@/components/Motion";
 import { Canvas } from "@/components/ui";
+import { RoomHero } from "@/components/realm/RoomHero";
+import { EvidencePanel } from "@/components/discovery/EvidencePanel";
+import { closeOrphanedBacktests, verdictEvidence } from "@/lib/stocks/validation";
+import { latestOfficialDate } from "@/lib/stocks/official";
+import { BseOnlyPanel } from "@/components/discovery/BseOnlyPanel";
 import { DiscoveryBoard, type BoardRow } from "@/components/discovery/DiscoveryBoard";
 import { ScanControl } from "@/components/discovery/ScanControl";
 import { ImportForm } from "@/components/discovery/ImportForm";
@@ -26,16 +32,17 @@ function Stat({ label, value, note }: { label: string; value: string; note?: str
 export default async function DiscoveryPage() {
   await connection();
   const { rows, funnel } = loadDiscovery();
+  closeOrphanedBacktests();
   const status = await fetchStatus();
   const sources = sourceStatuses({
     tejhq: status.ok ? { ok: true, date: status.tradingDate } : { ok: false, reason: status.error.message },
-    fundamentals: sourceCounts(), segments: segmentCount(),
+    fundamentals: sourceCounts(), segments: segmentCount(), official: { nse: latestOfficialDate("nse"), bse: latestOfficialDate("bse") },
   });
   const working = sources.filter((s) => s.working).length;
-  const board: BoardRow[] = rows.filter((r) => r.company.technicals).map((r) => ({
+  const board: BoardRow[] = rows.filter((r) => r.company.technicals).sort(compareResearch).map((r) => ({
     symbol: r.company.symbol, name: r.company.name, segment: r.company.segment, sector: r.company.sector,
-    close: r.company.technicals!.close, date: r.company.technicals!.date, turnoverCr: r.company.turnover === null ? null : r.company.turnover / 1e7,
-    verdict: r.verdict.verdict, total: r.score.total, measured: r.score.measuredPoints, confidence: r.score.confidence,
+    close: r.company.technicals!.close, date: r.company.technicals!.date, turnoverCr: r.company.avg_turnover === null ? null : r.company.avg_turnover / 1e7,
+    verdict: r.verdict.verdict, adjusted: r.score.adjusted, normalised: r.score.normalised, earned: r.score.earned, measured: r.score.measuredPoints, confidence: r.score.confidence, model: MODEL_LABEL[r.model],
     pillars: r.score.pillars.map((p) => ({ key: p.key, label: p.label, points: p.points, max: p.max, measured: p.measured, total: p.total })),
     strategies: Object.entries(r.strategies).filter(([, v]) => v === "match").map(([k]) => k),
     stale: r.pricesStale, watched: r.watched,
@@ -43,30 +50,37 @@ export default async function DiscoveryPage() {
 
   return (
     <PageEnter>
+      <RoomHero destination="stocks" title="Chamber of Insight" data={{ stars: board.slice(0, 240).map((r) => ({ score: r.adjusted, watched: r.watched })) }}
+        label="A dark observatory under a ribbed dome open to the stars, with a great armillary sphere at its centre and a brass telescope.">
+        <p className="mt-2 max-w-[56ch] text-[17px] text-white/95">Rare Stock Discovery. Each star around the instrument is one company you have researched.</p>
+      </RoomHero>
       <Canvas>
         <header className="grid grid-cols-1 gap-3 lg:grid-cols-12">
           <div className="lg:col-span-8">
-            <p className="text-[14px] text-muted">Rare Stock Discovery</p>
-            <h1 className="mt-1 font-serif text-[38px] leading-[1.05] sm:text-[48px]">Indian equity research</h1>
+            <h2 className="font-display text-[26px]">Indian equity research</h2>
             <p className="mt-2 max-w-[66ch] text-[15px] text-muted">
               Finds overlooked companies worth researching, and shows the evidence behind each one. A score directs your attention. It is not a recommendation or a forecast of returns.
             </p>
           </div>
-          <div className="lg:col-span-4"><ScanControl initial={scanState()} /></div>
+          <div className="flex flex-col gap-2 lg:col-span-4"><ScanControl initial={scanState()} /></div>
         </header>
 
         <section aria-label="Discovery coverage" className="mt-6 grid grid-cols-2 gap-2 md:grid-cols-5">
-          <Stat label="In the market list" value={funnel.listed.toLocaleString("en-IN")} note="NSE equities" />
-          <Stat label="Prices read" value={funnel.read.toLocaleString("en-IN")} note={`${funnel.unavailable} unavailable`} />
+          <Stat label="Eligible companies" value={funnel.eligible.toLocaleString("en-IN")} note={`of ${funnel.listed.toLocaleString("en-IN")} listed; ${funnel.excludedInstruments} funds and other instruments, ${funnel.belowLiquidity} below the liquidity limit`} />
+          <Stat label="Prices read" value={funnel.read.toLocaleString("en-IN")} note={`of ${funnel.eligible.toLocaleString("en-IN")} eligible, ${funnel.unavailable} unavailable`} />
           <Stat label="With fundamentals" value={funnel.withFundamentals.toLocaleString("en-IN")} note={funnel.withFundamentals ? undefined : "Import a Screener CSV"} />
           <Stat label="Market cap known" value={funnel.classified.toLocaleString("en-IN")} note={funnel.classified ? undefined : "Import the AMFI list"} />
           <Stat label="Sources working" value={`${working} of ${sources.length}`} note={funnel.stale ? `${funnel.stale} with stale prices` : undefined} />
         </section>
 
+        <EvidencePanel />
+
+        <BseOnlyPanel />
+
         <section aria-labelledby="strategies-h" className="mt-8">
           <h2 id="strategies-h" className="text-[14px] font-semibold">Discovery strategies</h2>
           <p className="mt-1 text-[13px] text-muted">Each runs independently. “Not testable” means the data is missing, not that companies failed.</p>
-          <DiscoveryBoard rows={board} strategies={funnel.strategies} />
+          <DiscoveryBoard rows={board} strategies={funnel.strategies} evidence={verdictEvidence()?.results ?? null} />
         </section>
 
         <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-12">
@@ -100,10 +114,10 @@ export default async function DiscoveryPage() {
         <section aria-labelledby="method-h" className="mt-10 border-t border-border pt-6">
           <h2 id="method-h" className="text-[14px] font-semibold">How to read this</h2>
           <ul className="mt-2 flex max-w-[78ch] list-disc flex-col gap-1 pl-4 text-[13px] text-muted">
-            <li>Scores add business quality 25, growth 20, valuation 20, technical structure 20, governance and risk 15. Thresholds are provisional and have not been tested against market outcomes.</li>
-            <li>A check nobody could measure earns no points, so a low total can mean missing data. Always read it with “points measured” and the confidence.</li>
+            <li>Scores weigh business quality 25, growth 20, valuation 20, technical structure 20, governance and risk 15. Banks and NBFCs, other financials and operating companies each have their own tests. Thresholds are provisional and have not been tested against market outcomes.</li>
+            <li>The adjusted score is points earned against points that could be measured, pulled towards 50 when little was measured. Thin evidence therefore cannot outrank strong evidence, and confidence is High only when every pillar has evidence.</li>
             <li>Relative strength compares with the Motilal Oswal Nifty 500 ETF, because the index itself is not available from the current price source.</li>
-            <li>Prices are adjusted for splits, bonuses and dividends. Scanning covers NSE companies trading ₹1 crore or more a day, so the thinnest names are listed but not read.</li>
+            <li>Prices are adjusted for splits, bonuses and dividends. Eligible means an ordinary NSE company share averaging ₹1 crore or more of daily turnover over 20 sessions. ETFs, funds and thinner names are counted above, but not researched.</li>
           </ul>
         </section>
       </Canvas>

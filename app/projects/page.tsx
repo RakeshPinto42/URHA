@@ -20,7 +20,7 @@ export default async function ProjectsPage() {
 
   return (
     <PageEnter>
-      <FrontispieceBand art="mount" section="projects" height="medium">
+      <FrontispieceBand section="projects" height="medium">
         <p className="text-[14px] text-[#f7f7f5]/85">Projects · The Practice</p>
         <RisingTitle text="LedgerSync v2" className="mt-1 font-serif text-[40px] leading-[1.05] sm:text-[52px]" />
         <p className="mt-2 max-w-[62ch] text-[16px] text-[#f7f7f5]/90">One evolving enterprise AI solution for finance reconciliation, grown milestone by milestone with the curriculum. Your finance expertise is the domain; the engineering is what you build. Hearing is not enough: the house is built by doing.</p>

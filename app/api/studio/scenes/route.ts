@@ -7,21 +7,23 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { serializeScene } from "@/lib/cinema-engine/editor";
 import { parseScene } from "@/lib/cinema-engine/schema";
-import { SCENES_DIR, listSceneIds, sameOrigin, studioEnabled } from "@/lib/studio-access";
+import { guardWrite, refused } from "@/lib/api-guard";
+import { SCENES_DIR, listSceneIds, studioAllowed } from "@/lib/studio-access";
 
 export const dynamic = "force-dynamic";
 
 const MAX_BYTES = 1_000_000;
 const json = (body: unknown, status = 200) => Response.json(body, { status, headers: { "Cache-Control": "no-store" } });
 
-export async function GET() {
-  if (!studioEnabled()) return json({ error: "Not found." }, 404);
+export async function GET(request: Request) {
+  if (!studioAllowed(request.headers.get("host"))) return json({ error: "Not found." }, 404);
   return json({ scenes: await listSceneIds() });
 }
 
 export async function POST(request: Request) {
-  if (!studioEnabled()) return json({ error: "Not found." }, 404);
-  if (!sameOrigin(request)) return json({ error: "Saves must come from the Studio itself." }, 403);
+  if (!studioAllowed(request.headers.get("host"))) return json({ error: "Not found." }, 404);
+  const g = guardWrite(request);
+  if (!g.ok) return refused(g);
   const text = await request.text();
   if (text.length > MAX_BYTES) return json({ error: "This scene is too large to save." }, 413);
 

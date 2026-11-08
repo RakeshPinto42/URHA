@@ -7,12 +7,14 @@
  * quality tier. Under a still request it draws only when something changes.
  */
 import * as THREE from "three";
+import type { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass.js";
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js";
 import { OutputPass } from "three/examples/jsm/postprocessing/OutputPass.js";
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
 import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPass.js";
-import { FrameWatch, TIERS, nextTierDown, type Tier, type TierId } from "./quality";
+import { FrameWatch, ResolutionGovernor, TIERS, nextTierDown, type Tier, type TierId } from "./quality";
 import { diffScene } from "./editor";
+import { raysPass } from "./rays";
 import { ends, resolveNumber, type CinemaLight, type CinemaObject, type CinemaScene, type Vec3 } from "./schema";
 
 /** What a generator receives each frame. */
@@ -28,7 +30,8 @@ export type Built = {
 /** How generators reach files. Supplied by the host, so generators stay free of browser APIs. */
 export type AssetSource = {
   models: { acquire: (src: string) => Promise<THREE.Object3D>; release: (src: string) => void };
-  loadTexture: (src: string) => Promise<THREE.Texture>;
+  /** `data` textures hold numbers, not colours: normal and roughness maps. */
+  loadTexture: (src: string, opts?: { data?: boolean }) => Promise<THREE.Texture>;
 };
 
 export type BuildContext = {
@@ -54,6 +57,8 @@ export type CinemaOptions = {
   /** The device cannot run even the lowest tier. The host should show its poster. */
   onTooSlow?: () => void;
   onContextLost?: () => void;
+  /** The first picture has been drawn, so the host can reveal it. */
+  onFirstFrame?: () => void;
   /** False keeps the chosen tier whatever the frame rate. */
   watchFrames?: boolean;
   /** The host moves the camera itself, as the Studio does. */
@@ -91,6 +96,14 @@ export class CinemaRuntime {
   private clock = new THREE.Timer();
   private composer: EffectComposer | null = null;
   private bloom: UnrealBloomPass | null = null;
+  private rays: ShaderPass | null = null;
+  private lean = new THREE.Vector2();
+  private leanGoal = new THREE.Vector2();
+  private sunPoint = new THREE.Vector3();
+  private rendered = false;
+  private governor = new ResolutionGovernor();
+  private frameNo = 0;
+  private shadowAt = new THREE.Vector3(Infinity, 0, 0);
   /** Each object sits in a holder, so a placement never fights a generator's own positioning. */
   private built: { spec: CinemaObject; built: Built; holder: THREE.Group }[] = [];
   private lights: { spec: CinemaLight; light: THREE.Light }[] = [];
@@ -129,6 +142,8 @@ export class CinemaRuntime {
     this.renderer.outputColorSpace = THREE.SRGBColorSpace;
     this.renderer.shadowMap.type = THREE.PCFShadowMap;
     this.renderer.shadowMap.enabled = this.tier.shadowMap > 0;
+    // Shadows are redrawn on a cadence, not every frame: see draw().
+    this.renderer.shadowMap.autoUpdate = false;
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, this.tier.pixelRatio));
     canvas.addEventListener("webglcontextlost", this.lost);
 
@@ -144,6 +159,8 @@ export class CinemaRuntime {
 
     for (const l of spec.lights) this.addLight(l);
     for (const o of spec.objects) this.buildObject(o);
+    this.linkParents();
+    this.applyMaterials();
     this.buildPipeline();
     this.step(0);
     this.captureEnvironment();
@@ -163,6 +180,28 @@ export class CinemaRuntime {
     this.place(entry);
   }
 
+  /** A scene's settings over the shared materials a world's generators made. */
+  private applyMaterials() {
+    const shared = this.ctx.state.__mats as Record<string, THREE.MeshStandardMaterial> | undefined;
+    if (!shared) return;
+    for (const [name, m] of Object.entries(this.opts.scene.materials ?? {})) {
+      const target = shared[name];
+      if (!target) continue;
+      if (m.color) target.color.set(m.color);
+      if (m.roughness !== undefined) target.roughness = m.roughness;
+      if (m.metalness !== undefined) target.metalness = m.metalness;
+    }
+  }
+
+  /** Holders hang from their parents' holders, so a parent carries its children. */
+  private linkParents() {
+    for (const { spec, holder } of this.built) {
+      const parent = spec.parent ? this.built.find((b) => b.spec.id === spec.parent)?.holder : null;
+      const wanted = parent ?? this.scene;
+      if (holder.parent !== wanted) wanted.add(holder);
+    }
+  }
+
   private place(entry: { spec: CinemaObject; holder: THREE.Group }) {
     const { spec, holder } = entry;
     holder.visible = spec.visible;
@@ -176,9 +215,10 @@ export class CinemaRuntime {
     const i = this.built.findIndex((b) => b.spec.id === id);
     if (i < 0) return;
     const { built, holder } = this.built[i]!;
+    for (const child of [...holder.children]) if (child !== built.object) this.scene.add(child); // Linked again after the edit.
     built.dispose?.();
     disposeObject(built.object);
-    this.scene.remove(holder);
+    holder.removeFromParent();
     this.built.splice(i, 1);
   }
 
@@ -200,11 +240,13 @@ export class CinemaRuntime {
       const sun = new THREE.DirectionalLight(l.color, 1);
       sun.position.set(...l.direction).normalize().multiplyScalar(220);
       if (l.castShadow && this.tier.shadowMap) {
+        const range = this.opts.scene.environment.shadowRange ?? 150;
+        sun.position.multiplyScalar(range / 150);
         this.sun = sun;
         sun.castShadow = true;
         sun.shadow.mapSize.set(this.tier.shadowMap, this.tier.shadowMap);
         const cam = sun.shadow.camera;
-        cam.left = cam.bottom = -150; cam.right = cam.top = 150; cam.near = 10; cam.far = 620;
+        cam.left = cam.bottom = -range; cam.right = cam.top = range; cam.near = 10; cam.far = range * 4.2;
         sun.shadow.bias = -0.0004;
         sun.shadow.normalBias = 0.5;
         this.scene.add(sun.target);
@@ -221,11 +263,19 @@ export class CinemaRuntime {
     this.composer = null;
     this.bloom?.dispose();
     this.bloom = null;
+    this.rays?.dispose();
+    this.rays = null;
     if (this.tier.bloomScale === 0) return;
     const size = this.renderer.getDrawingBufferSize(new THREE.Vector2());
     const rt = new THREE.WebGLRenderTarget(Math.max(size.x, 1), Math.max(size.y, 1), { type: THREE.HalfFloatType, samples: this.tier.msaa });
     this.composer = new EffectComposer(this.renderer, rt);
     this.composer.addPass(new RenderPass(this.scene, this.camera));
+    const rays = this.opts.scene.environment.rays;
+    if (rays && this.tier.rays > 0) {
+      this.rays = raysPass(this.tier.rays);
+      this.rays.uniforms.uColor!.value.set(rays.color);
+      this.composer.addPass(this.rays);
+    }
     const res = new THREE.Vector2(size.x * this.tier.bloomScale, size.y * this.tier.bloomScale);
     this.bloom = new UnrealBloomPass(res, bloom.strength, bloom.radius, bloom.threshold);
     this.composer.addPass(this.bloom);
@@ -278,6 +328,9 @@ export class CinemaRuntime {
       this.target.lerp(this.goalTarget, k);
       // A slow breath, so the world is alive at rest.
       this.sway.set(Math.sin(this.time * 0.21) * 0.6, Math.sin(this.time * 0.17 + 1) * 0.35, 0);
+      this.lean.lerp(this.leanGoal, 1 - Math.exp(-Math.min(dt, 0.05) * 3));
+      this.sway.x += this.lean.x;
+      this.sway.y += this.lean.y;
       this.camera.position.add(this.sway);
       this.camera.lookAt(this.target);
       this.camera.position.sub(this.sway);
@@ -304,9 +357,31 @@ export class CinemaRuntime {
     this.opts.onFrame?.(this.camera);
   }
 
+  /** Aims the shaft pass at the sun, and fades it as the sun leaves the frame. */
+  private aimRays() {
+    const spec = this.opts.scene.environment.rays;
+    if (!spec || !this.rays) return;
+    this.camera.updateMatrixWorld();
+    this.sunPoint.set(...spec.direction).normalize().multiplyScalar(800).add(this.camera.position).project(this.camera);
+    const behind = this.sunPoint.z > 1;
+    const off = Math.max(Math.abs(this.sunPoint.x), Math.abs(this.sunPoint.y));
+    this.rays.uniforms.uSun!.value.set(this.sunPoint.x * 0.5 + 0.5, this.sunPoint.y * 0.5 + 0.5);
+    this.rays.uniforms.uStrength!.value = behind ? 0 : spec.strength * Math.min(Math.max((1.6 - off) / 0.6, 0), 1);
+  }
+
   private draw() {
+    this.aimRays();
+    this.frameNo += 1;
+    // Shadows are redrawn when the view they cover moves, and otherwise only on the tier's slow cadence:
+    // nothing that casts one moves at rest, and an every-other-frame pass makes uneven frames.
+    const moved = this.sun ? this.sun.target.position.distanceToSquared(this.shadowAt) > 1 : false;
+    if (!this.running || moved || this.frameNo % this.tier.shadowEvery === 1 || this.tier.shadowEvery <= 1) {
+      this.renderer.shadowMap.needsUpdate = true;
+      if (this.sun) this.shadowAt.copy(this.sun.target.position);
+    }
     if (this.composer) this.composer.render();
     else this.renderer.render(this.scene, this.camera);
+    if (!this.rendered) { this.rendered = true; this.opts.onFirstFrame?.(); }
   }
 
   private loop = (now: number) => {
@@ -319,6 +394,8 @@ export class CinemaRuntime {
     this.draw();
     this.dirty = false;
     if (this.opts.watchFrames === false) return;
+    const scale = this.governor.record(dt * 1000);
+    if (scale !== null) this.applyResolution();
     const verdict = this.watch.record(dt * 1000, nextTierDown(this.tier.id) === null);
     if (verdict === "step-down") this.setTier(nextTierDown(this.tier.id)!);
     if (verdict === "too-slow") this.opts.onTooSlow?.();
@@ -348,10 +425,16 @@ export class CinemaRuntime {
     });
   }
 
+  /** The pixel ratio: the tier's cap, scaled by what the frame rate allows. */
+  private applyResolution() {
+    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, this.tier.pixelRatio) * this.governor.scale);
+    this.fit();
+  }
+
   setTier(id: TierId) {
     this.tier = TIERS[id];
     this.ctx.tier = this.tier;
-    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, this.tier.pixelRatio));
+    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, this.tier.pixelRatio) * this.governor.scale);
     if (this.tier.shadowMap === 0 && this.renderer.shadowMap.enabled) {
       this.renderer.shadowMap.enabled = false;
       this.scene.traverse((n) => {
@@ -376,6 +459,9 @@ export class CinemaRuntime {
     }
     this.invalidate();
   }
+
+  /** A small camera offset that follows the pointer, in world units. */
+  setLean(x: number, y: number) { this.leanGoal.set(x, y); }
 
   /** Plays a named timeline from its start. A still scene jumps to its end. */
   play(id: string) {
@@ -431,6 +517,7 @@ export class CinemaRuntime {
       this.lights.splice(i, 1);
     }
     for (const l of d.addLights) this.addLight(l);
+    this.linkParents();
     if (d.environment) {
       const env = next.environment;
       const [from, to] = ends(env.fog.color);
@@ -438,6 +525,8 @@ export class CinemaRuntime {
       this.fogTo.set(to);
       (this.scene.fog as THREE.FogExp2).density = env.fog.density * this.fogScale;
       if (this.bloom) { this.bloom.strength = env.bloom.strength; this.bloom.radius = env.bloom.radius; this.bloom.threshold = env.bloom.threshold; }
+      if (env.rays && this.rays) this.rays.uniforms.uColor!.value.set(env.rays.color);
+      else if (!!env.rays !== !!this.rays) this.buildPipeline();
     }
     if (d.camera) {
       this.camera.fov = next.camera.fov;
@@ -445,6 +534,7 @@ export class CinemaRuntime {
       this.camera.far = next.camera.far;
       this.camera.updateProjectionMatrix();
     }
+    if (d.materials) this.applyMaterials();
     if (recapture) this.captureEnvironment();
     this.invalidate();
   }
@@ -483,6 +573,7 @@ export class CinemaRuntime {
     this.raycaster.setFromCamera(this.pointer, this.camera);
     const holders = this.built.filter((b) => !b.spec.environmentSource && b.spec.visible).map((b) => b.holder);
     const hit = this.raycaster.intersectObjects(holders, true)[0];
+    // The innermost holder, so clicking a child selects the child and not its parent.
     for (let n: THREE.Object3D | null = hit?.object ?? null; n; n = n.parent) {
       if (holders.includes(n as THREE.Group)) return n.name;
     }
@@ -506,7 +597,7 @@ export class CinemaRuntime {
   /** Counts of live GPU resources: what the leak check watches. */
   info() {
     const m = this.renderer.info.memory;
-    return { geometries: m.geometries, textures: m.textures, tier: this.tier.id };
+    return { geometries: m.geometries, textures: m.textures, tier: this.tier.id, resolution: this.governor.scale, pixelRatio: this.renderer.getPixelRatio() };
   }
 
   dispose() {
@@ -523,6 +614,7 @@ export class CinemaRuntime {
     this.envTarget?.dispose();
     this.pmrem.dispose();
     this.bloom?.dispose();
+    this.rays?.dispose();
     this.composer?.dispose();
     this.scene.clear();
     this.renderer.dispose();

@@ -29,6 +29,9 @@ const csp = [
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  // proxy.ts makes Next buffer request bodies, cutting them off silently at 10 MB by default.
+  // The Studio accepts GLBs of up to 50 MB, and proxy.ts refuses anything larger before this applies.
+  experimental: { proxyClientMaxBodySize: "51mb" },
   serverExternalPackages: ["better-sqlite3"],
   async headers() {
     return [

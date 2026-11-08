@@ -27,8 +27,31 @@ export function updateObject(s: CinemaScene, id: string, patch: Partial<CinemaOb
   return { ...s, objects: s.objects.map((o) => (o.id === id ? { ...o, ...patch } : o)) };
 }
 
+/** Children of a removed object stay, moved up to its own parent, so nothing vanishes unasked. */
 export function removeObject(s: CinemaScene, id: string): CinemaScene {
-  return { ...s, objects: s.objects.filter((o) => o.id !== id) };
+  const gone = s.objects.find((o) => o.id === id);
+  return {
+    ...s,
+    objects: s.objects.filter((o) => o.id !== id).map((o) => {
+      if (o.parent !== id) return o;
+      const { parent: _old, ...rest } = o;
+      return gone?.parent ? { ...rest, parent: gone.parent } : rest;
+    }),
+  };
+}
+
+/** Objects in hierarchy order, each with its depth, for the Studio's tree. */
+export function hierarchy(s: CinemaScene): { object: CinemaObject; depth: number }[] {
+  const out: { object: CinemaObject; depth: number }[] = [];
+  const walk = (parent: string | undefined, depth: number) => {
+    for (const object of s.objects) {
+      if (object.parent !== parent) continue;
+      out.push({ object, depth });
+      walk(object.id, depth + 1);
+    }
+  };
+  walk(undefined, 0);
+  return out;
 }
 
 /** A copy beside the original, so it can be seen rather than sitting exactly on top. */
@@ -45,7 +68,8 @@ export function duplicateObject(s: CinemaScene, id: string): CinemaScene {
 
 export function renameObject(s: CinemaScene, id: string, wanted: string): CinemaScene {
   if (wanted === id) return s;
-  return updateObject(s, id, { id: uniqueId(wanted, allIds(s)) });
+  const next = uniqueId(wanted, allIds(s));
+  return { ...s, objects: s.objects.map((o) => (o.id === id ? { ...o, id: next } : o.parent === id ? { ...o, parent: next } : o)) };
 }
 
 /* ---------------------------------------------------------- lights */
@@ -154,6 +178,7 @@ export type SceneDiff = {
   addLights: CinemaLight[];
   environment: boolean;
   camera: boolean;
+  materials: boolean;
 };
 
 const same = (a: unknown, b: unknown) => JSON.stringify(a) === JSON.stringify(b);
@@ -169,6 +194,7 @@ export function diffScene(a: CinemaScene, b: CinemaScene): SceneDiff {
     removeLights: [], addLights: [],
     environment: !same(a.environment, b.environment),
     camera: !same(a.camera, b.camera),
+    materials: !same(a.materials, b.materials),
   };
   for (const o of b.objects) {
     const old = before.get(o.id);

@@ -37,10 +37,15 @@ export type CinemaObject = {
   visible: boolean;
   placement?: Placement;
   motion?: Motion;
+  /** Another object's id. This object then moves with it, and its placement is relative to it. */
+  parent?: string;
   /** The sky the reflections are captured from. */
   environmentSource?: boolean;
   params: Record<string, unknown>;
 };
+
+/** A scene's settings for a shared material: the marble or gold every building is made from. */
+export type MaterialSetting = { color?: string; roughness?: number; metalness?: number };
 
 export type CinemaScene = {
   version: number;
@@ -52,11 +57,16 @@ export type CinemaScene = {
     exposure: Animated<number>;
     reflections: Animated<number>;
     bloom: { strength: number; radius: number; threshold: number };
+    /** Shafts of light from a sun in this direction. */
+    rays?: { strength: number; direction: Vec3; color: string };
+    /** How far the sun's shadows reach from what the camera looks at, in world units. */
+    shadowRange?: number;
   };
   /** Named timelines. `seconds` is how long the [from, to] values take to play. */
   timelines: { id: string; seconds: number }[];
   lights: CinemaLight[];
   objects: CinemaObject[];
+  materials?: Record<string, MaterialSetting>;
 };
 
 export type ParseResult = { ok: true; scene: CinemaScene } | { ok: false; errors: string[] };
@@ -142,6 +152,19 @@ export function parseScene(input: unknown): ParseResult {
     if (!animated(e.reflections, (x) => isNumber(x) && x >= 0)) errors.push("environment.reflections: must be 0 or more");
     const b = e.bloom;
     if (!isObject(b) || !isNumber(b.strength) || b.strength < 0 || !isNumber(b.radius) || b.radius < 0 || !isNumber(b.threshold) || b.threshold < 0) errors.push("environment.bloom: needs strength, radius and threshold of 0 or more");
+    const rays = e.rays;
+    if (rays !== undefined && (!isObject(rays) || !isNumber(rays.strength) || rays.strength < 0 || !isVec3(rays.direction) || !isColor(rays.color))) errors.push("environment.rays: needs a strength of 0 or more, a direction and a colour");
+    if (e.shadowRange !== undefined && (!isNumber(e.shadowRange) || e.shadowRange <= 0 || e.shadowRange > 2000)) errors.push("environment.shadowRange: must be above 0 and at most 2000");
+  }
+
+  if (s.materials !== undefined) {
+    if (!isObject(s.materials)) errors.push("materials: must be an object");
+    else for (const [name, m] of Object.entries(s.materials)) {
+      const ok = isObject(m) && ID.test(name) && (m.color === undefined || isColor(m.color))
+        && (m.roughness === undefined || (isNumber(m.roughness) && m.roughness >= 0 && m.roughness <= 1))
+        && (m.metalness === undefined || (isNumber(m.metalness) && m.metalness >= 0 && m.metalness <= 1));
+      if (!ok) errors.push(`materials.${name}: needs a #rrggbb colour, and roughness and metalness from 0 to 1`);
+    }
   }
 
   if (!Array.isArray(s.timelines)) errors.push("timelines: must be a list");
@@ -177,7 +200,20 @@ export function parseScene(input: unknown): ParseResult {
         const floatOk = !isObject(m) || m.float === undefined || (isObject(m.float) && isNumber(m.float.height) && isNumber(m.float.speed));
         if (!isObject(m) || (m.spin !== undefined && !isVec3(m.spin)) || !floatOk) errors.push(`${at}.motion: spin must be [x, y, z], and float needs height and speed`);
       }
+      if (o.parent !== undefined && (typeof o.parent !== "string" || !ID.test(o.parent))) errors.push(`${at}.parent: invalid`);
     });
+    // A parent must exist, and following parents must end, or the hierarchy has no root.
+    const list = s.objects.filter(isObject);
+    const parentOf = new Map(list.map((o) => [o.id, o.parent]));
+    for (const o of list) {
+      if (o.parent === undefined) continue;
+      if (!parentOf.has(o.parent)) { errors.push(`objects: "${String(o.id)}" has no parent called "${String(o.parent)}"`); continue; }
+      const walked = new Set<unknown>([o.id]);
+      for (let p: unknown = o.parent; p !== undefined; p = parentOf.get(p)) {
+        if (walked.has(p)) { errors.push(`objects: "${String(o.id)}" is inside itself`); break; }
+        walked.add(p);
+      }
+    }
   }
 
   return errors.length ? { ok: false, errors } : { ok: true, scene: input as unknown as CinemaScene };

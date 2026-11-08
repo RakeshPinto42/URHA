@@ -1,22 +1,33 @@
 import Link from "next/link";
+import { FrontispieceBand } from "@/components/Frontispiece";
 import { notFound } from "next/navigation";
 import { connection } from "next/server";
 import type { Metadata } from "next";
-import { research } from "@/lib/stocks/discovery";
+import { loadCompany } from "@/lib/stocks/discovery";
+import { MODEL_LABEL } from "@/lib/stocks/universe";
+import { SYMBOL } from "@/lib/api-guard";
 import { CHECK_OUTCOME_LABEL, type CheckOutcome } from "@/lib/stocks/evidence";
 import { STRATEGIES } from "@/lib/stocks/scoring";
-import { allFundamentals, getCompany, listWatch } from "@/lib/stocks/store";
+import { listWatch } from "@/lib/stocks/store";
 import { VERDICT_MEANING, type Technicals } from "@/lib/stocks/technicals";
+import { ELIGIBILITY_LABEL } from "@/lib/stocks/universe";
 import { PageEnter } from "@/components/Motion";
 import { Canvas, Panel, TextLink } from "@/components/ui";
 import { VerdictTag } from "@/components/discovery/VerdictTag";
+import { evidenceLabel, SCORE_STATUS } from "@/lib/stocks/evidence-label";
+import { verdictEvidence } from "@/lib/stocks/validation";
 import { WatchControl } from "@/components/discovery/WatchControl";
 
 type Props = { params: Promise<{ symbol: string }> };
 
+/** An address can hold anything, so it must decode cleanly and look like a symbol. */
+function symbolFrom(raw: string): string | null {
+  try { const s = decodeURIComponent(raw); return SYMBOL.test(s) ? s : null; } catch { return null; }
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   await connection();
-  return { title: decodeURIComponent((await params).symbol) };
+  return { title: symbolFrom((await params).symbol) ?? "Company" };
 }
 
 const OUTCOME_TONE: Record<CheckOutcome, string> = { passed: "text-positive", failed: "text-negative", unavailable: "text-muted", stale: "text-warning", conflict: "text-warning" };
@@ -42,7 +53,10 @@ function technicalRows(t: Technicals) {
     ["Relative strength 3m", `${sign(t.relativeStrength?.pct3m)} points`], ["Relative strength 6m", `${sign(t.relativeStrength?.pct6m)} points`],
     ["Volume trend", t.volumeTrend === null ? "Unavailable" : `${t.volumeTrend.toFixed(2)} times`],
     ["Breakout", t.breakout ? (t.breakout.confirmed ? `Confirmed above ${n(t.breakout.level)}` : `None; 60-session high ${n(t.breakout.level)}`) : "Unavailable"],
-    ["30-session range", t.consolidationPct === null ? "Unavailable" : `${t.consolidationPct.toFixed(1)}%`],
+    ["50 DMA, 20 sessions", `${sign(t.slope.d50Pct)}%`], ["200 DMA, 20 sessions", `${sign(t.slope.d200Pct)}%`],
+    ["20-session range", t.consolidationPct === null ? "Unavailable" : `${t.consolidationPct.toFixed(1)}%`],
+    ["Against prior range", t.rangeRatio === null ? "Unavailable" : `${t.rangeRatio.toFixed(2)} times`],
+    ["Up-day volume", t.upDownVolume === null ? "Unavailable" : `${t.upDownVolume.toFixed(2)} times`],
     ["Structure", t.structure?.replaceAll("-", " ") ?? "Unavailable"],
     ["52-week high", n(t.high52w)], ["From 52-week high", t.fromHighPct === null ? "Unavailable" : `${t.fromHighPct.toFixed(1)}%`],
   ] as const;
@@ -50,45 +64,53 @@ function technicalRows(t: Technicals) {
 
 export default async function CompanyPage({ params }: Props) {
   await connection();
-  const symbol = decodeURIComponent((await params).symbol);
-  const company = getCompany(symbol);
-  if (!company) notFound();
+  const symbol = symbolFrom((await params).symbol);
+  if (!symbol) notFound();
   const watch = listWatch().find((w) => w.symbol === symbol);
-  const r = research(company, allFundamentals().get(symbol) ?? {}, !!watch);
+  const r = loadCompany(symbol, !!watch);
+  if (!r) notFound();
+  const company = r.company;
   const t = company.technicals;
+  const excluded = company.eligibility && company.eligibility !== "eligible" ? ELIGIBILITY_LABEL[company.eligibility] : null;
   const matched = STRATEGIES.filter((s) => r.strategies[s.id] === "match");
   const untestable = STRATEGIES.filter((s) => r.strategies[s.id] === "not-testable").length;
 
   return (
     <PageEnter>
+      <FrontispieceBand section="discovery" height="compact" start={0.62}>
+        <p className="text-[14px] text-white/85">Chamber of Insight · company research</p>
+      </FrontispieceBand>
       <Canvas>
         <nav aria-label="Breadcrumb" className="text-[13px] text-muted"><Link href="/discovery" className="hover:underline">Rare Stock Discovery</Link> <span aria-hidden="true">/</span> {symbol}</nav>
         <header className="mt-2 flex flex-wrap items-end justify-between gap-3">
           <div>
             <h1 className="font-serif text-[38px] leading-[1.05]">{company.name ?? symbol}</h1>
-            <p className="num mt-1 text-[14px] text-muted">NSE: {symbol} · {company.isin ?? "ISIN unavailable"} · {company.segment ? company.segment.replace("-cap", " cap") : "Market cap unknown"}{company.sector ? ` · ${company.sector}` : ""}</p>
+            <p className="num mt-1 text-[14px] text-muted">NSE: {symbol} · {company.isin ?? "ISIN unavailable"} · {company.segment ? company.segment.replace("-cap", " cap") : "Market cap unknown"}{company.sector ? ` · ${company.sector}` : ""} · {MODEL_LABEL[r.model]}{r.modelBasis === "name" ? " (from its name)" : ""}</p>
           </div>
           <div className="text-right">
             <p className="num text-[26px] font-medium">{t ? `₹${n(t.close)}` : "Price unavailable"}</p>
             {t && <p className="num text-[13px] text-muted">Close on {t.date}{r.pricesStale ? ", stale" : ""}, adjusted, via TejHQ</p>}
           </div>
         </header>
+        {excluded && <p role="status" className="mt-3 rounded-[12px] bg-surface p-3 text-[14px]">Not part of equity discovery: {excluded}.</p>}
         {!t && <p role="status" className="mt-3 rounded-[12px] bg-surface p-3 text-[14px]">Prices have not been read for this company. {company.reason}</p>}
 
         <div className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-12">
           <Panel title="Technical assessment" className="lg:col-span-5">
             <VerdictTag verdict={r.verdict.verdict} />
+            {(() => { const e = evidenceLabel(verdictEvidence()?.results ?? null, r.verdict.verdict); return <p className={`mt-1 text-[13px] ${e.tone === "positive" ? "text-positive" : e.tone === "negative" ? "text-negative" : "text-muted"}`}>{e.text}. {e.detail}</p>; })()}
             <p className="mt-2 text-[14px]">{VERDICT_MEANING[r.verdict.verdict]}</p>
             <ul className="mt-2 list-disc pl-4 text-[14px] text-muted">{r.verdict.reasons.map((x) => <li key={x}>{x}</li>)}</ul>
             <p className="mt-3 text-[12px] text-muted">A verdict describes the chart. It does not say this is a good time to buy.</p>
           </Panel>
           <Panel title="Research score" className="lg:col-span-4">
-            <p className="num text-[34px] font-medium leading-none">{r.score.total}<span className="text-[16px] text-muted"> of 100</span></p>
-            <p className="num mt-1 text-[13px] text-muted">{r.score.measuredPoints} of 100 points could be measured. Confidence: {r.score.confidence}.</p>
+            <p className="num text-[34px] font-medium leading-none">{r.score.adjusted ?? "Not scored"}{r.score.adjusted !== null && <span className="text-[16px] text-muted"> adjusted</span>}</p>
+            <p className="num mt-1 text-[13px] text-muted">Earned {r.score.earned} of the {r.score.measuredPoints} points that could be measured, out of 100. Confidence: {r.score.confidence}.</p>
+            <p className="mt-1 text-[13px] text-warning">{SCORE_STATUS}</p>
             <ul className="mt-3 flex flex-col gap-1.5">
               {r.score.pillars.map((p) => (
                 <li key={p.key}>
-                  <p className="flex justify-between text-[13px]"><span>{p.label}</span><span className="num text-muted">{p.measured ? `${p.points} of ${p.max}` : "Not measured"}</span></p>
+                  <p className="flex justify-between text-[13px]"><span>{p.label}</span><span className="num text-muted">{p.measured ? `${Math.round(p.points)} of ${p.max}, ${p.measured} of ${p.total} checks` : "Not measured"}</span></p>
                   <span className={`block h-1.5 overflow-hidden rounded-full ${p.measured ? "bg-control/40" : "border border-dashed border-control"}`}>{p.measured > 0 && <span className="block h-full bg-accent" style={{ width: `${(p.points / p.max) * 100}%` }} />}</span>
                 </li>
               ))}

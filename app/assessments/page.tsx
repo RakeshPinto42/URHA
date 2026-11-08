@@ -30,7 +30,7 @@ export default async function AssessmentsPage() {
 
   return (
     <PageEnter>
-      <FrontispieceBand art="samaritan" section="assessments" height="compact">
+      <FrontispieceBand section="assessments" height="compact">
         <p className="text-[14px] text-[#f7f7f5]/85">Assessments</p>
         <RisingTitle text="The Proving" className="mt-1 font-serif text-[40px] leading-[1.05] sm:text-[52px]" />
         <p className="mt-2 max-w-[62ch] text-[15px] text-[#f7f7f5]/90">

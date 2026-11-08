@@ -106,7 +106,7 @@ export default async function TasksPage({ searchParams }: { searchParams: Promis
 
   return (
     <PageEnter>
-      <FrontispieceBand art="wilderness" section="tasks" height="compact" showCaption={false}>
+      <FrontispieceBand section="tasks" height="compact">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="text-[14px] text-[#f7f7f5]/85">The Discipline</p>

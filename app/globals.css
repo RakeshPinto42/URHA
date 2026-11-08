@@ -106,7 +106,8 @@ textarea.input { min-height: 88px; resize: vertical; line-height: 1.5; }
 .night-rise { animation: urha-rise 600ms cubic-bezier(0.2, 0.8, 0.2, 1) 250ms both; }
 
 @keyframes urha-enter { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-.page-enter { animation: urha-enter 220ms cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+/* Backwards only: a transform left in effect would trap the fixed worlds behind destination pages. */
+.page-enter { animation: urha-enter 220ms cubic-bezier(0.2, 0.8, 0.2, 1) backwards; }
 @supports (animation-timeline: view()) {
   .reveal { animation: urha-rise linear both; animation-timeline: view(); animation-range: entry 0% entry 35%; }
 }
@@ -258,3 +259,159 @@ html[data-motion="paused"] .meter-fill,
 html[data-motion="paused"] .lancet__sheen,
 html[data-motion="paused"] .lit-plate::after,
 html[data-motion="paused"] .drift { animation: none; }
+
+/* The Realm: three destinations, each with its own daylight (lib/realm/destinations.ts). */
+.font-display { font-family: var(--font-display), Georgia, serif; }
+:root { --lapis: #0d1138; --gilt: #e9c46a; }
+.room { background: var(--ground); color: var(--text); }
+.room--marble {
+  --section: #dcae45; --section-deep: #7f5c00;
+  --ground: #fcfaf5; --raised: #ffffff; --surface: #f6f0e3; --active: #ecdfc4; --border: #e8decb; --rule: #f0e9da; --control: #c9bb9c;
+  --text: #241f16; --muted: #625a4b; --faint: #6e6554; --accent: #7f5c00; --primary: #2c2517; --primary-ink: #ffffff;
+}
+.room--midnight {
+  --section: #e9c46a; --section-deep: #e9c46a;
+  --ground: #0a0f33; --raised: #182057; --surface: #121947; --active: #252e70; --border: #2b3578; --rule: #1e2762; --control: #525da6;
+  --text: #eef0ff; --muted: #bcc2ea; --faint: #a7aede; --accent: #e9c46a; --accent-ink: #0a0f33; --primary: #e9c46a; --primary-ink: #0a0f33;
+  --positive: #7ee0a0; --negative: #ff9d92; --warning: #f0b35a; --warning-bg: #2a2414;
+  color-scheme: dark;
+}
+.room--garden {
+  --section: #6fae56; --section-deep: #38662a;
+  --ground: #fafbf4; --raised: #ffffff; --surface: #eff3e3; --active: #dfe8cd; --border: #dde5cb; --rule: #e9eedc; --control: #b6c29c;
+  --text: #1f261a; --muted: #566050; --faint: #5f6a58; --accent: #38662a; --primary: #2c4623; --primary-ink: #ffffff;
+}
+
+/* The Compass: one dark glass bar over every page, light or dark. */
+.compass { position: fixed; z-index: 40; top: 12px; left: 0; right: 0; display: flex; flex-direction: column; align-items: center; pointer-events: none; padding: 0 12px; transition: transform 380ms var(--ease-expo), opacity 300ms; }
+.compass--tucked:not(:focus-within) { transform: translateY(-72px); opacity: 0; }
+@media (prefers-reduced-motion: reduce) { .compass { transition: none; } }
+.compass__bar { pointer-events: auto; display: flex; align-items: center; gap: 4px; height: 46px; padding: 0 6px 0 18px; color: #fff; border-radius: 999px;
+  background: rgb(13 17 56 / 0.62); border: 1px solid rgb(233 196 106 / 0.38); backdrop-filter: blur(14px) saturate(1.3); -webkit-backdrop-filter: blur(14px) saturate(1.3); }
+.compass__mark { margin-right: 14px; color: #fff; }
+.compass__destinations { display: flex; align-items: center; gap: 2px; }
+.compass__link { position: relative; display: inline-flex; align-items: center; height: 36px; padding: 0 14px; border-radius: 999px; font-size: 14px; color: rgb(255 255 255 / 0.9); transition: background-color 200ms, color 200ms; white-space: nowrap; }
+.compass__link:hover { background: rgb(255 255 255 / 0.12); color: #fff; }
+.compass__link[aria-current] { color: var(--gilt); }
+.compass__link[aria-current]::after { content: ""; position: absolute; left: 14px; right: 14px; bottom: 5px; height: 1px; background: var(--gilt); }
+.compass__more { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 999px; margin-left: 6px; color: #fff; }
+.compass__more:hover { background: rgb(255 255 255 / 0.12); }
+.compass a:focus-visible, .compass button:focus-visible { outline-color: var(--gilt); }
+.compass__sheet { pointer-events: auto; margin-top: 8px; width: min(320px, 100%); align-self: center; padding: 10px; color: #fff; border-radius: 22px;
+  background: rgb(13 17 56 / 0.94); border: 1px solid rgb(233 196 106 / 0.38); }
+.compass__sheet a { display: flex; align-items: center; min-height: 40px; padding: 0 12px; border-radius: 12px; font-size: 15px; }
+.compass__sheet a:hover { background: rgb(255 255 255 / 0.1); }
+.compass__motion { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 40px; padding: 0 12px; margin-top: 4px; border-top: 1px solid rgb(255 255 255 / 0.14); font-size: 14px; color: rgb(255 255 255 / 0.86); }
+
+/* The pages inside a destination ride just beneath the Compass. */
+/* The pages of a destination sit under the Compass at the top of the page, and scroll away with it. */
+main { position: relative; }
+.room-tabs { position: absolute; left: 0; right: 0; top: 66px; z-index: 30; height: 0; display: flex; justify-content: center; padding: 0 12px; }
+.room-tabs ul { display: flex; gap: 2px; height: 38px; align-items: center; padding: 0 4px; border-radius: 999px; overflow-x: auto; max-width: 100%; scrollbar-width: none;
+  background: rgb(13 17 56 / 0.58); border: 1px solid rgb(255 255 255 / 0.14); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); margin-top: 6px; }
+.room-tabs a { display: inline-flex; align-items: center; height: 30px; padding: 0 12px; border-radius: 999px; font-size: 13px; color: rgb(255 255 255 / 0.88); white-space: nowrap; }
+.room-tabs a:hover { background: rgb(255 255 255 / 0.12); }
+.room-tabs a[aria-current] { background: rgb(255 255 255 / 0.92); color: #161a40; }
+main:not(:has(.band, .room-hero, .realm-home)) { padding-top: 116px; }
+
+/* The world's own pages. */
+.realm-home__shade { background:
+  radial-gradient(120% 90% at 50% 45%, transparent 55%, rgb(20 12 50 / 0.42) 100%),
+  linear-gradient(180deg, rgb(13 17 56 / 0.5) 0%, transparent 22%, transparent 78%, rgb(13 17 56 / 0.5) 100%); }
+.realm-title { text-shadow: 0 1px 14px rgb(13 17 56 / 0.55); }
+.realm-next { text-shadow: 0 1px 10px rgb(13 17 56 / 0.8); transition: opacity 400ms; }
+@media (min-width: 900px) { .realm-next { left: 24px; bottom: 18px; width: auto; max-width: 300px; transform: none; text-align: left; } }
+.is-leaving .realm-title, .is-leaving .realm-next { opacity: 0; transition: opacity 500ms; }
+
+/* Each destination's name is set on its gateway's lapis plaque: the page projects the plaque's
+   centre, width and tilt every frame (RealmHome), so the words sit in the architecture. */
+.gate-panel { position: absolute; left: 0; top: 0; display: block; width: var(--w, 180px); color: #f6dc97; text-align: center;
+  transform: translate(var(--x), var(--y)) translate(-50%, -50%) rotate(var(--a, 0rad)); will-change: transform; transition: opacity 500ms; --ratio: 0.227; }
+.gate-panel[data-destination="career"] { --x: 24vw; --y: 30vh; }
+.gate-panel[data-destination="stocks"] { --x: 50vw; --y: 78vh; --ratio: 0.19; }
+.gate-panel[data-destination="academy"] { --x: 76vw; --y: 34vh; --ratio: 0.225; }
+.gate-panel__plate { display: flex; flex-direction: column; align-items: center; justify-content: center; height: calc(var(--w, 180px) * var(--ratio)); border-radius: 2px; transition: box-shadow 400ms, background-color 400ms; }
+.gate-panel__name { font-family: var(--font-display), Georgia, serif; font-size: max(13px, calc(var(--w, 180px) * 0.118)); line-height: 1; letter-spacing: 0.14em; text-indent: 0.14em;
+  background: linear-gradient(100deg, #b98a2e 0%, #ffe9a8 35%, #fff6d8 45%, #ffe2a0 55%, #c79a3c 100%) 0 0 / 260% 100%; -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 1px 0 rgb(0 0 0 / 0.55)); animation: gilt 9s ease-in-out infinite; }
+.gate-panel__place { margin-top: 0.3em; font-family: var(--font-serif), Georgia, serif; font-style: italic; font-size: max(11px, calc(var(--w, 180px) * 0.068)); color: #f0dfb2; white-space: nowrap; }
+@keyframes gilt { 0%, 100% { background-position: 100% 0; } 50% { background-position: 0% 0; } }
+.gate-panel__purpose { position: absolute; left: 50%; top: calc(100% + 10px); width: max(240px, var(--w, 180px)); transform: translateX(-50%) translateY(-4px); padding: 8px 14px;
+  font-size: 14px; line-height: 1.4; color: #fff; border-radius: 12px; background: rgb(13 17 56 / 0.72); border: 1px solid rgb(233 196 106 / 0.45);
+  opacity: 0; pointer-events: none; transition: opacity 300ms, transform 400ms var(--ease-expo); }
+.gate-panel[data-destination="stocks"] .gate-panel__purpose { top: auto; bottom: calc(100% + 10px); transform: translateX(-50%) translateY(4px); }
+.gate-panel[data-active] .gate-panel__plate { box-shadow: 0 0 0 1px rgb(255 226 150 / 0.9), 0 0 38px 6px rgb(255 214 120 / 0.42); }
+.gate-panel[data-active] .gate-panel__name { animation-duration: 2.2s; }
+.gate-panel[data-active] .gate-panel__purpose { opacity: 1; transform: translateX(-50%); }
+.is-leaving .gate-panel { opacity: 0 !important; pointer-events: none; }
+.gate-panel:focus-visible { outline: none; }
+.gate-panel:focus-visible .gate-panel__plate { outline: 2px solid #fff; outline-offset: 4px; }
+
+.room-hero { min-height: max(560px, 88svh); display: flex; align-items: flex-end; }
+/* The world stays behind the whole page; the working page rides over it. */
+.room-hero__stage { position: fixed; inset: 0; z-index: -1; background: var(--lapis); }
+.room-hero__shade { transition: background-color 700ms; }
+.room-hero__shade.is-deep { background-color: rgb(13 17 56 / 0.18); }
+.room-hero__shade { background: linear-gradient(0deg, rgb(13 17 56 / 0.78) 0%, rgb(13 17 56 / 0.46) 26%, transparent 56%), linear-gradient(180deg, rgb(13 17 56 / 0.4) 0%, transparent 18%); }
+.room-hero--band { min-height: 0; }
+/* A band's words sit at the left over a bright world: the scrim sweeps from behind them. */
+.room-hero--band .room-hero__shade { background: linear-gradient(90deg, rgb(13 17 56 / 0.78) 0%, rgb(13 17 56 / 0.55) 42%, rgb(13 17 56 / 0.08) 78%), linear-gradient(0deg, rgb(13 17 56 / 0.5) 0%, transparent 40%), linear-gradient(180deg, rgb(13 17 56 / 0.4) 0%, transparent 22%); }
+/* Research tables need width more than margins: the Chamber's sheet is wider. */
+.room--midnight .room-hero ~ div { max-width: 1320px; }
+.room-hero--band .room-hero__copy { padding-top: 112px; padding-bottom: 64px; color: #f7f7f5; }
+.room-hero--band .band__copy { padding: 0; max-width: none; }
+.room-hero__copy { position: relative; z-index: 2; width: 100%; max-width: 1100px; margin: 0 auto; padding: 96px 16px 74px; text-shadow: 0 1px 16px rgb(13 17 56 / 0.5); }
+@media (min-width: 640px) { .room-hero__copy { padding-left: 24px; padding-right: 24px; } }
+/* The working page rises over the world on a sheet of the room's own daylight, with the world
+   still visible in the margins. Specific enough to win over each page's own padding classes. */
+.room .room-hero ~ div { position: relative; z-index: 1; max-width: 1180px; margin: 0 auto 64px; padding: 40px max(16px, 3vw) 56px;
+  background: color-mix(in srgb, var(--ground) 92%, transparent); backdrop-filter: blur(18px) saturate(1.15); -webkit-backdrop-filter: blur(18px) saturate(1.15);
+  border-radius: 34px; border: 1px solid rgb(233 196 106 / 0.5); box-shadow: 0 30px 80px rgb(10 12 40 / 0.28); }
+.room .room-hero ~ div::before { content: ""; position: absolute; top: -9px; left: 50%; width: 16px; height: 16px; transform: translateX(-50%) rotate(45deg);
+  background: linear-gradient(135deg, #fff1c4, #c9962f); border: 1px solid rgb(255 255 255 / 0.6); box-shadow: 0 0 18px rgb(255 214 120 / 0.6); }
+/* Headings inside a destination take its inscriptional voice. */
+.room .room-hero ~ div h2 { font-family: var(--font-display), Georgia, serif; font-weight: 400; letter-spacing: 0.01em; }
+.room .room-hero ~ div h2.text-\[14px\] { font-size: 19px; }
+.band__scrim { background: linear-gradient(0deg, rgb(13 17 56 / 0.86) 0%, rgb(13 17 56 / 0.6) 45%, rgb(13 17 56 / 0.24) 100%); }
+.band__copy { padding-top: 124px; }
+
+/* The Practice yard. */
+.practice__item { display: flex; align-items: center; gap: 8px; width: 100%; min-height: 36px; padding: 6px 10px; border-radius: 10px; font-size: 14px; text-align: left; }
+.practice__item:hover { background: var(--surface); }
+.practice__item[aria-current] { background: var(--active); font-weight: 500; }
+.practice__pass { flex: none; font-size: 11px; padding: 1px 8px; border-radius: 999px; background: color-mix(in srgb, var(--positive) 16%, transparent); color: var(--positive); }
+.practice__editor { display: flex; border-radius: 16px; overflow: hidden; background: #0f1430; border: 1px solid rgb(233 196 106 / 0.45); box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.06); }
+.practice__gutter { flex: none; display: flex; flex-direction: column; padding: 14px 10px 14px 14px; text-align: right; color: #6f78b0; user-select: none; }
+.practice__gutter, .practice__editor textarea, .practice__out, .practice__data { font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-size: 14px; line-height: 1.6; }
+.practice__editor textarea { flex: 1; min-width: 0; padding: 14px 14px 14px 4px; background: transparent; color: #eef0ff; resize: vertical; border: 0; outline: none; white-space: pre; overflow-x: auto; tab-size: 4; caret-color: var(--gilt); }
+.practice__editor:focus-within { border-color: var(--gilt); box-shadow: 0 0 0 2px rgb(233 196 106 / 0.35); }
+.practice__out, .practice__data { margin-top: 10px; padding: 12px 14px; border-radius: 12px; background: var(--surface); border: 1px solid var(--border); max-height: 360px; overflow: auto; white-space: pre; }
+.practice__out--error { color: var(--negative); white-space: pre-wrap; }
+.practice__next { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; width: 100%; margin-top: 10px; padding: 10px 12px; border-radius: 14px; text-align: left;
+  background: color-mix(in srgb, var(--accent) 10%, var(--raised)); border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); }
+.practice__next:hover { border-color: var(--accent); }
+.practice__dot { display: inline-block; flex: none; width: 8px; height: 8px; border-radius: 999px; vertical-align: middle; }
+.practice__dot--foundation { background: #7cc36f; }
+.practice__dot--intermediate { background: #e2a93a; }
+.practice__dot--advanced { background: #c4473d; }
+.practice__tried { flex: none; font-size: 11px; padding: 1px 7px; border-radius: 999px; background: var(--active); color: var(--muted); }
+.practice__hints { display: flex; flex-direction: column; gap: 6px; padding: 12px 16px; border-radius: 14px; background: color-mix(in srgb, #e2a93a 10%, var(--raised)); border: 1px solid color-mix(in srgb, #e2a93a 35%, transparent); font-size: 14px; }
+.practice__explain { padding: 14px 18px; border-radius: 16px; background: var(--surface); border-left: 3px solid var(--accent); }
+.practice__checks { padding: 14px 16px; border-radius: 14px; background: var(--surface); border-left: 3px solid var(--gilt); }
+
+@media (max-width: 899px) {
+  .compass__mark { margin-right: 6px; }
+  .compass__link { padding: 0 9px; font-size: 13px; }
+  .compass__link[aria-current]::after { left: 9px; right: 9px; }
+  .compass__bar { padding-left: 12px; }
+  .realm-gates { top: auto; bottom: 44px; left: 12px; right: 12px; display: flex; flex-direction: column; gap: 8px; }
+  .gate-panel, .gate-panel[data-destination] { position: static; width: 100%; transform: none; opacity: 1 !important; }
+  .gate-panel__plate { height: auto; flex-direction: row; justify-content: space-between; align-items: baseline; gap: 10px; padding: 12px 18px; border-radius: 16px;
+    background: rgb(22 32 94 / 0.84); border: 1px solid rgb(233 196 106 / 0.6); }
+  .gate-panel__name { font-size: 21px; letter-spacing: 0.08em; text-indent: 0; }
+  .gate-panel__place { font-size: 15px; margin-top: 0; }
+  .gate-panel__purpose { display: none; }
+  .realm-next { bottom: 10px; font-size: 13px; }
+}
+@media (prefers-reduced-motion: reduce) { .gate-panel__name { animation: none; } }
+html[data-motion="paused"] .gate-panel__name { animation: none; }
